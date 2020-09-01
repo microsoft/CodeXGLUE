@@ -4,7 +4,7 @@
 This repo includes datasets and codes for CodeXGLUE, a collection of code intelligence tasks and a platform for model evaluation and comparison. CodeXGLUE stands for General Language Understanding Evaluation benchmark for CODE. It includes 14 datasets for 10 diversified programming language tasks covering code-code (clone detection, defect detection, cloze test, code completion, code refinement, and code-to-code translation), text-code (natural language code search, text-to-code generation), code-text (code summarization) and text-text (documentation translation) scenarios. We provide three baseline models to support these tasks, including BERT-style pre-trained model (i.e. [CodeBERT](https://github.com/microsoft/CodeBERT)) which is good at understanding problems, GPT-style pre-trained model which we call CodeGPT to support completion and generation problems, and Encoder-Decoder framework that supports sequence-to-sequence generation problems.
 
 A brief summary of CodeXGLUE is given below, including tasks, datasets, baseline systems, etc. Datasets highlighed in BLUE are fully contributed or partially contributed by Microsoft.
-![A brief summary of CodeXGLUE, including tasks, datasets, baseline systems, etc. Datasets highlighed in BLUE are fully contributed or partially contributed by Microsoft.](https://github.com/microsoft/CodeXGLUE/blob/main/CodeXGLUE-table.jpg)
+![A brief summary of CodeXGLUE, including tasks, datasets, baseline systems, etc. ](https://github.com/microsoft/CodeXGLUE/blob/main/CodeXGLUE-tasks.jpg)
 
 # Relevant Links
 [Leaderboard](to-be-added) | [CodeXGLUE paper](to-be-added)

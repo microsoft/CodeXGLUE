@@ -1,3 +1,15 @@
+## This repo is under construction...
+
+## Introduction
+This repo includes datasets and codes for CodeXGLUE, a collection of code intelligence tasks and a platform for model evaluation and comparison. 
+CodeXGLUE stands for General Language Understanding Evaluation benchmark for CODE.
+It includes 14 datasets for 10 tasks covering code-code (clone detection, defect detection, cloze test, code completion, code refinement, and code-to-code translation), text-code (natural language code search, text-to-code generation), code-text (code summarization) and text-text (documentation translation) scenarios.
+We provide baseline models for each task, most of which are based on large pre-trained models like CodeBERT.
+
+
+
+
+
 
 # Contributing
 

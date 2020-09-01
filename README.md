@@ -6,6 +6,20 @@ This repo includes datasets and codes for CodeXGLUE, a collection of code intell
 A brief summary of CodeXGLUE is given below, including tasks, datasets, baseline systems, etc. Datasets highlighed in BLUE are fully contributed or partially contributed by Microsoft.
 ![A brief summary of CodeXGLUE, including tasks, datasets, baseline systems, etc. Datasets highlighed in BLUE are fully contributed or partially contributed by Microsoft.](https://github.com/microsoft/CodeXGLUE/blob/main/CodeXGLUE-table.jpg)
 
+# Relevant Links
+[Leaderboard](to-be-added) | [CodeXGLUE paper](to-be-added)
+
+# Tasks and Datasets
+
+## ...
+
+
+## ...
+
+## ...
+
+
+
 # CodeXGLUE Submission Instructions
 Once you have built a model that meets your expectations on evaluation with the dev set, you can submit your test results to get official evaluation on the test set. To ensure the integrity of the official test results, we do not release the correct answers for test set to the public. To submit your model for official evaluation on the test set, follow the below steps:
 1. Generate your prediction output for the dev set.

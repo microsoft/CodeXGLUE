@@ -11,14 +11,36 @@ A brief summary of CodeXGLUE is given below, including tasks, datasets, baseline
 
 # Tasks and Datasets
 
-## ...
+## Clone Detection (Daya)
+We have two datasets to detect the semantic equivalence and similairty between codes. 
+The first dataset is ... Given xxx and xxx as input, the task is to predict. .. Models are evaluated by ...
+The second dataset is ... . Given a piece of code as the input, the task is to ... Models are evaluated by ...
 
 
-## ...
-
-## ...
+## Defect Detection (Daya)
 
 
+## Cloze Test (junjie)
+
+## Code Completion (Shuai)
+We have both token-level and line-level completion tasks. ...
+
+## Code Refinement (Shuo)
+
+## Code Translation (Shuo)
+
+## Natural Language Code Search (Daya & Junjie)
+We have two datasets to detect semantic similarity between text in natural language and code in programming langauge. 
+
+The first dataset is (Daya)
+
+The second dataset is (Junjie)
+
+## Text-to-Code Generation (Shuai)
+
+## Code Summarization (Daya)
+
+## Documentation Translation (Long)
 
 # CodeXGLUE Submission Instructions
 Once you have built a model that meets your expectations on evaluation with the dev set, you can submit your test results to get official evaluation on the test set. To ensure the integrity of the official test results, we do not release the correct answers for test set to the public. To submit your model for official evaluation on the test set, follow the below steps:

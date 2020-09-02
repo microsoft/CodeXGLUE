@@ -26,7 +26,7 @@ We follow the original training/dev/testing split of Defects4J <code>\cite{} </c
 ## Cloze Test 
 
 ## Code Completion 
-We have both token-level and line-level completion tasks. ...
+We have both token-level and line-level completion tasks. 
 
 ## Code Refinement 
 
@@ -35,9 +35,9 @@ We have both token-level and line-level completion tasks. ...
 ## Natural Language Code Search 
 We have two subtasks to measure semantic similarity between text and code. 
 
-Dataset for the first subtask is NL-code-search-Adv. Given a text as the input, the task is to find the most semantically relevant code in Python from a collection of codes. The training set come from CodeSearchNet <code>\cite{}</code>. Texts are function docstrings which serve as natural language queries. Although deep neural network models like CodeBERT perform well on the original test data with the same data distribution, we observe that the performance drops dramatically once function names and variables are artificially replaced. To test the generalization ability of models, we create dev and test sets, in which data originally comes from CodeSearchNet but the function names and variables are replaced with default values.
+Dataset for the first subtask is NL-code-search-Adv. Given a text as the input, the task is to find the most semantically relevant code in Python from a collection of codes. The training set come from CodeSearchNet <code>\cite{}</code>. Texts are function docstrings which serve as natural language queries. Although deep neural network models like CodeBERT perform well on the original test data with the same data distribution, we observe that the performance drops dramatically once function names and variables are artificially replaced. To test the generalization ability of models, we create dev and test sets, in which data originally come from CodeSearchNet but the function names and variables are replaced with default values.
 
-Dataset for the second subtask is NL-code-search-WebQuery. Given a text-code pair as the input, the task is to do binary classification (0/1), where 1 stands for relevant and 0 for irrelevant. The training and dev sets come from StacQC <code>\cite</code>, in which natural language queries are questions from StackOverflow. 
+Dataset for the second subtask is NL-code-search-WebQuery. Given a text-code pair as the input, the task is to do binary classification (0/1), where 1 stands for relevant and 0 for irrelevant. The training and dev sets come from StacQC <code>\cite</code>, in which natural language queries are questions from StackOverflow. To test on real user queries, we create a test set where natural language queries come from Bing querylog. 
 
 ## Text-to-Code Generation 
 

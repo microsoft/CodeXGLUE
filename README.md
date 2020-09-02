@@ -7,7 +7,7 @@ A brief summary of CodeXGLUE is given below, including tasks, datasets, baseline
 ![A brief summary of CodeXGLUE, including tasks, datasets, baseline systems, etc.](https://github.com/microsoft/CodeXGLUE/blob/main/tasks.jpg)
 
 # Relevant Links
-[Leaderboard](to-be-added) | [CodeXGLUE paper](to-be-added)
+[Leaderboard](https://microsoft.github.io/CodeXGLUE/) | [CodeXGLUE paper](arxivpaper-to-be-added)
 
 # Tasks and Datasets
 

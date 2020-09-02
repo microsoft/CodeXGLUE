@@ -11,28 +11,28 @@ A brief summary of CodeXGLUE is given below, including tasks, datasets, baseline
 
 # Tasks and Datasets
 
-## Clone Detection (Daya)
+## Clone Detection 
 We have two subtasks to measure the semantic equivalence between codes. 
 
-Dataset for the first subtask is Clone-detection-BigCloneBench. Given two codes as the input, the task is to do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by classification accuracy. The dataset comes from \cite{xxx}, and we follow the training/dev/testing split of \cite{}.
+Dataset for the first subtask is Clone-detection-BigCloneBench. Given two codes as the input, the task is to do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by classification accuracy. The dataset comes from <code>\cite{xxx}</code>, and we follow the training/dev/testing split of <code>\cite{}</code>.
 
-Dataset for the second subtask is Clone-detection-POJ-104. Given a code as the input, the task is to retrieve semantically simliar codes from a collection of codes.  The dataset comes from \cite{}, and we follow the split of \cite{}. Models are evaluated by xxx. 
+Dataset for the second subtask is Clone-detection-POJ-104. Given a code as the input, the task is to retrieve semantically simliar codes from a collection of codes.  The dataset comes from <code>\cite{}</code>, and we follow the split of <code>\cite{}</code>. Models are evaluated by xxx. 
 
 
-## Defect Detection (Daya)
+## Defect Detection 
 The task is to detect whether a source code is an insecure code that may attack software systems, such as resource leaks, use-after-free vulnerabilities and DoS attack.
 We follow the original training/dev/testing split of efects4J <code>\cite{} </code> dataset. 
 
-## Cloze Test (junjie)
+## Cloze Test 
 
-## Code Completion (Shuai)
+## Code Completion 
 We have both token-level and line-level completion tasks. ...
 
-## Code Refinement (Shuo)
+## Code Refinement 
 
-## Code Translation (Shuo)
+## Code Translation
 
-## Natural Language Code Search (Daya & Junjie)
+## Natural Language Code Search 
 We have two subtasks to measure semantic similarity between text and code. 
 
 Dataset for the first subtask is NL-code-search-Adv, which Given a text as the input, the task is to find the most semantically relevant code from a collection of codes. do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by classification accuracy. The dataset comes from \cite{xxx}, and we follow the training/dev/testing split of \cite{}.
@@ -40,11 +40,11 @@ Dataset for the first subtask is NL-code-search-Adv, which Given a text as the i
 Dataset for the second subtask is NL-code-search-WebQuery. Given a code as the input, the task is to retrieve semantically similar codes from a collection of codes.  The dataset comes from \cite{}, and we follow the split of \cite{}. Models are evaluated by xxx. 
 
 
-## Text-to-Code Generation (Shuai)
+## Text-to-Code Generation 
 
-## Code Summarization (Daya)
+## Code Summarization 
 
-## Documentation Translation (Long)
+## Documentation Translation 
 
 
 # How to Cite
@@ -126,25 +126,6 @@ author={Feng, Zhangyin and Guo, Daya and Tang, Duyu and Duan, Nan and Feng, Xiao
 journal={arXiv preprint arXiv:2002.08155},
 year={2020}
 }</code></pre>
-
-
-# CodeXGLUE Submission Instructions
-Once you have built a model that meets your expectations on evaluation with the dev set, you can submit your test results to get official evaluation on the test set. To ensure the integrity of the official test results, we do not release the correct answers for test set to the public. To submit your model for official evaluation on the test set, follow the below steps:
-1. Generate your prediction output for the dev set.
-2. Run the official evaluation methodologies found in the task specific git repo and verify your systems are running as expected.
-3. Generate your prediction output for the test set and submit the following information by emailing us.
-
-Your email should include:
-
-* Prediction results on test set. [Required]
-* Prediction results on dev set. [Recommended]
-* Individual/Team Name: Name of the individual or the team to appear in the leaderboard. [Required]
-* Individual/Team Institution: Name of the institution of the individual or the team to appear in the leaderboard. [Optional]
-* Model code: Training code for the model. [Recommended]
-* Model information: Name of the model/technique to appear in the leaderboard. [Required]
-* Paper Information: Name, Citation, URL of the paper if model is from a published work to appear in the leaderboard. [Optional]
-
-To avoid "P-hacking" we discourage too many submissions from the same group in a short period of time.
 
 # LICENSE
 Our codes follow MIT License.

@@ -105,19 +105,19 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 /home/espnet/tools/venv/bin/python run.py \
 ```
 
 
-## Result
+## Results
 
 The results on the test set are shown as below:
 
-| Direction       |   Dev    | Test |  
-| ----------- | :-------: | :--------: | 
-| English  Danish        |   9.64    |   10.21    |  
-| English  -> Latvian    |   11.18   |   11.59    |   
-| Norwegian -> English   |   11.17   |   11.90    |
-| English -> Chinese     | **12.16** | **14.90**  | 
-| ----------- | :-------: | :--------: | 
-| Danish -> English      |   9.64    |   10.21    |  
-| Latvian -> English     |   11.18   |   11.59    |   
-| Norwegian -> English   |   11.17   |   11.90    |
-| Chinese -> English     | **12.16** | **14.90**  | 
+| Direction              |   Dev     | Test       |  
+| -----------            | :-------: | :--------: | 
+| English  Danish        |   9.64    |   69.46    |  
+| English  -> Latvian    |   11.18   |   55.92    |   
+| Norwegian -> English   |   11.17   |   70.23    |
+| English -> Chinese     |   12.16   |   73.54    | 
+| -----------            | :-------: | :--------: | 
+| Danish -> English      |   9.64    |   75.85    |  
+| Latvian -> English     |   11.18   |   70.73    |   
+| Norwegian -> English   |   11.17   |   74.63    |
+| Chinese -> English     |   12.16   |   67.01    | 
 

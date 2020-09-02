@@ -12,13 +12,15 @@ A brief summary of CodeXGLUE is given below, including tasks, datasets, baseline
 # Tasks and Datasets
 
 ## Clone Detection (Daya)
-We have two datasets to detect the semantic equivalence and similairty between codes. 
-The first dataset is ... Given xxx and xxx as input, the task is to predict. .. Models are evaluated by ...
-The second dataset is ... . Given a piece of code as the input, the task is to ... Models are evaluated by ...
+We have two subtasks to measure the semantic equivalence and similairty between codes. 
+
+Dataset for the first subtask is Clone-detection-BigCloneBench. Given two codes as the input, the task is to do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by classification accuracy. The dataset comes from \cite{xxx}, and we follow the training/dev/testing split of \cite{}.
+
+Dataset for the second subtask is Clone-detection-POJ-104. Given a piece of code as the input, the task is to retrieve semantically similar codes from a collection of codes.  The dataset comes from \cite{}, and we follow the split of \cite{}. Models are evaluated by xxx. 
 
 
 ## Defect Detection (Daya)
-
+The task is to detect whether a piece of code is xxx or not. The data comes from ... 
 
 ## Cloze Test (junjie)
 

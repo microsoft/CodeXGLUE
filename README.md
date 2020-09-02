@@ -20,7 +20,8 @@ Dataset for the second subtask is Clone-detection-POJ-104. Given a code as the i
 
 
 ## Defect Detection (Daya)
-The task is to detect whether a code is xxx or not. The data comes from ... 
+The task is to detect whether a source code is an insecure code that may attack software systems, such as resource leaks, use-after-free vulnerabilities and DoS attack.
+We follow the original training/dev/testing split of efects4J `\cite{}` dataset. 
 
 ## Cloze Test (junjie)
 

@@ -1,5 +1,5 @@
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+# Copyright (c) Microsoft Corporation. 
+# Licensed under the MIT license.
 import torch
 import torch.nn as nn
 import torch

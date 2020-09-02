@@ -16,7 +16,7 @@ We have two subtasks to measure the semantic equivalence and similairty between 
 
 Dataset for the first subtask is Clone-detection-BigCloneBench. Given two codes as the input, the task is to do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by classification accuracy. The dataset comes from \cite{xxx}, and we follow the training/dev/testing split of \cite{}.
 
-Dataset for the second subtask is Clone-detection-POJ-104. Given a piece of code as the input, the task is to retrieve semantically similar codes from a collection of codes.  The dataset comes from \cite{}, and we follow the split of \cite{}. Models are evaluated by xxx. 
+Dataset for the second subtask is Clone-detection-POJ-104. Given a code as the input, the task is to retrieve semantically similar codes from a collection of codes.  The dataset comes from \cite{}, and we follow the split of \cite{}. Models are evaluated by xxx. 
 
 
 ## Defect Detection (Daya)

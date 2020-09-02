@@ -1,0 +1,18 @@
+=======================================
+From keyword can be a variable
+=======================================
+
+var a = Assert.Range(from, to);
+
+---
+
+(compilation_unit
+  (field_declaration
+    (variable_declaration
+      (implicit_type)
+      (variable_declarator
+        (identifier)
+        (equals_value_clause
+          (invocation_expression
+            (member_access_expression (identifier) (identifier))
+            (argument_list (argument (identifier)) (argument (identifier))))))))) 

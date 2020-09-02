@@ -27,7 +27,11 @@ We follow the original training/dev/testing split of Defects4J <code>\cite{} </c
 
 ## Code Completion 
 The task of code completion is to predict following tokens by given contexts of codes. 
-CodeXGLUE includes both token-level and line-level completion tasks. 
+CodeXGLUE includes both token-level and line-level code completion tasks. In both tasks, there are two datasets, one in Python and the other in Java. 
+
+In token-level code completion tasks, we follow the original dataset split of <code>\cite{}</code> for Python and <code>\cite{}</code> for Java. 
+
+In line-level code completion tasks, we create datasets based on <code>\cite{}</code> for Python and <code>\cite{}</code> for Java. 
 
 ## Code Refinement 
 

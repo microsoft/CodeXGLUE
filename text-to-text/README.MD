@@ -107,9 +107,9 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 /home/espnet/tools/venv/bin/python run.py \
 
 ## Results
 
-The results on the test set are shown as below:
+The results on multi-lingual dataset are shown as below:
 
-| Direction              |   Dev     | Test       |  
+| Translation Direction  |   Dev     | Test       |  
 | -----------            | :-------: | :--------: | 
 | English  Danish        |   69.72   |   69.46    |  
 | English  -> Latvian    |   54.38   |   55.92    |   

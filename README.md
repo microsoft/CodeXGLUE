@@ -147,14 +147,5 @@ The CodeXGLUE datasets are intended for non-commercial research purposes only to
 If you have questions about use of the dataset or any research outputs in your products or services, we encourage you to undertake your own independent legal review. For other questions, please feel free to contact us.
 
 # LICENSE
-
-given the CodeGLUE project:
-1. Contains text-only code
-2. Is only for "computational purpose (i.e. machine learning)", and  
-3. All the 3rd party dataset used in this project(listed below) was assembled lawfully from publicly accessible sources
-It applies to Computational Use of Data Agreement. Pls find all info of Computational Use of Data Agreement from the below table
-
-Computational Use of Data Agreement (C-UDA)
-README | Annotated Agreement | Agreement
-Computational Use of Data Agreement GitHub repo
-
+Our codes follow MIT License.
+Our datasets follow Computational Use of Data Agreement (C-UDA) License.

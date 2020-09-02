@@ -32,36 +32,19 @@ We have both token-level and line-level completion tasks. ...
 ## Code Translation (Shuo)
 
 ## Natural Language Code Search (Daya & Junjie)
-We have two datasets to detect semantic similarity between text in natural language and code in programming langauge. 
 
-The first dataset is (Daya)
+We have two subtasks to measure semantic similarity between text and code. 
 
-The second dataset is (Junjie)
+Dataset for the first subtask is NL-code-search-Adv. Given a text as the input, the task is to find the most semantically relevant code from a collection of codes. do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by classification accuracy. The dataset comes from \cite{xxx}, and we follow the training/dev/testing split of \cite{}.
+
+Dataset for the second subtask is NL-code-search-WebQuery. Given a code as the input, the task is to retrieve semantically similar codes from a collection of codes.  The dataset comes from \cite{}, and we follow the split of \cite{}. Models are evaluated by xxx. 
+
 
 ## Text-to-Code Generation (Shuai)
 
 ## Code Summarization (Daya)
 
 ## Documentation Translation (Long)
-
-# CodeXGLUE Submission Instructions
-Once you have built a model that meets your expectations on evaluation with the dev set, you can submit your test results to get official evaluation on the test set. To ensure the integrity of the official test results, we do not release the correct answers for test set to the public. To submit your model for official evaluation on the test set, follow the below steps:
-1. Generate your prediction output for the dev set.
-2. Run the official evaluation methodologies found in the task specific git repo and verify your systems are running as expected.
-3. Generate your prediction output for the test set and submit the following information by emailing us.
-
-Your email should include:
-
-* Prediction results on test set. [Required]
-* Prediction results on dev set. [Recommended]
-* Individual/Team Name: Name of the individual or the team to appear in the leaderboard. [Required]
-* Individual/Team Institution: Name of the institution of the individual or the team to appear in the leaderboard. [Optional]
-* Model code: Training code for the model. [Recommended]
-* Model information: Name of the model/technique to appear in the leaderboard. [Required]
-* Paper Information: Name, Citation, URL of the paper if model is from a published work to appear in the leaderboard. [Optional]
-
-To avoid "P-hacking" we discourage too many submissions from the same group in a short period of time.
-
 
 
 # How to Cite
@@ -144,9 +127,24 @@ journal={arXiv preprint arXiv:2002.08155},
 year={2020}
 }</code></pre>
 
-# Teams and Conditions
-The CodeXGLUE datasets are intended for non-commercial research purposes only to promote advancement in the field of artificial intelligence and related areas, and is made available free of charge without extending any license or other intellectual property rights. The dataset is provided “as is” without warranty and usage of the data has risks since we may not own the underlying rights in the documents. We are not be liable for any damages related to use of the dataset. Feedback is voluntarily given and can be used as we see fit. Upon violation of any of these terms, your rights to use the dataset will end automatically.
-If you have questions about use of the dataset or any research outputs in your products or services, we encourage you to undertake your own independent legal review. For other questions, please feel free to contact us.
+
+# CodeXGLUE Submission Instructions
+Once you have built a model that meets your expectations on evaluation with the dev set, you can submit your test results to get official evaluation on the test set. To ensure the integrity of the official test results, we do not release the correct answers for test set to the public. To submit your model for official evaluation on the test set, follow the below steps:
+1. Generate your prediction output for the dev set.
+2. Run the official evaluation methodologies found in the task specific git repo and verify your systems are running as expected.
+3. Generate your prediction output for the test set and submit the following information by emailing us.
+
+Your email should include:
+
+* Prediction results on test set. [Required]
+* Prediction results on dev set. [Recommended]
+* Individual/Team Name: Name of the individual or the team to appear in the leaderboard. [Required]
+* Individual/Team Institution: Name of the institution of the individual or the team to appear in the leaderboard. [Optional]
+* Model code: Training code for the model. [Recommended]
+* Model information: Name of the model/technique to appear in the leaderboard. [Required]
+* Paper Information: Name, Citation, URL of the paper if model is from a published work to appear in the leaderboard. [Optional]
+
+To avoid "P-hacking" we discourage too many submissions from the same group in a short period of time.
 
 # LICENSE
 Our codes follow MIT License.

@@ -66,65 +66,65 @@ year={2019}
 <pre><code>@article{DBLP:journals/corr/abs-1812-08693,
   title= {An Empirical Study on Learning Bug-Fixing Patches in the Wild via Neural Machine Translation},
   author= {Michele Tufano, Cody Watson, Gabriele Bavota, Massimiliano Di Penta, Martin White and Denys Poshyvanyk},
-  journal= {arXiv abs/1812.08693},
-  yea= {2018}
+  journal= {2018 33rd IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+  year= {2018}
 }</code></pre>
 
-<pre><code>@article{raychev2016probabilistic,
-title={Probabilistic model for code with decision trees},
-author={Raychev, Veselin and Bielik, Pavol and Vechev, Martin},
-journal={ACM SIGPLAN Notices},
-volume={51},
-number={10},
-pages={731--747},
-year={2016},
-publisher={ACM New York, NY, USA}
+<pre><code>@article{raychev2016probabilistic, 
+  title={Probabilistic Model for Code with Decision Trees},
+  author={Raychev, Veselin and Bielik, Pavol and Vechev, Martin},
+  journal={ACM SIGPLAN Notices},
+  pages={731--747},
+  year={2016},
+  publisher={ACM New York, NY, USA}
 }</code></pre>
 
-<pre><code>@inproceedings{allamanis2013mining,
-title={Mining source code repositories at massive scale using language modeling},
-author={Allamanis, Miltiadis and Sutton, Charles},
-booktitle={2013 10th Working Conference on Mining Software Repositories (MSR)},
-pages={207--216},
-year={2013},
-organization={IEEE}
+<pre><code>@inproceedings{allamanis2013mining, 
+  title={Mining Source Code Repositories at Massive Scale using Language Modeling},
+  author={Allamanis, Miltiadis and Sutton, Charles},
+  booktitle={2013 10th Working Conference on Mining Software Repositories (MSR)},
+  pages={207--216},
+  year={2013},
+  organization={IEEE}
 }</code></pre>
 
 <pre><code>@inproceedings{just2014defects4j,
-title={Defects4J: A database of existing faults to enable controlled testing studies for Java programs},
-author={Just, Ren{\'e} and Jalali, Darioush and Ernst, Michael D},
-booktitle={Proceedings of the 2014 International Symposium on Software Testing and Analysis},
-pages={437--440},
-year={2014}
+  title={Defects4J: A Database of Existing Faults to Enable Controlled Testing Studies for Java Programs},
+  author={Just, Ren{\'e} and Jalali, Darioush and Ernst, Michael D},
+  booktitle={Proceedings of the 2014 International Symposium on Software Testing and Analysis},
+  pages={437--440},
+  year={2014}
 }</code></pre>
 
 <pre><code>@article{iyer2018mapping,
-title={Mapping language to code in programmatic context},
-author={Iyer, Srinivasan and Konstas, Ioannis and Cheung, Alvin and Zettlemoyer, Luke},
-journal={arXiv preprint arXiv:1808.09588},
-year={2018}
+  title={Mapping Language to Code in Programmatic Context},
+  author={Iyer, Srinivasan and Konstas, Ioannis and Cheung, Alvin and Zettlemoyer, Luke},
+  journal={Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing},
+  pages={1643–1652},
+  year={2018}
 }</code></pre>
 
-<pre><code>@inproceedings{yao2018staqc, title={Staqc: A systematically mined question-code dataset from stack overflow},
-author={Yao, Ziyu and Weld, Daniel S and Chen, Wei-Peng and Sun, Huan},
-booktitle={Proceedings of the 2018 World Wide Web Conference},
-pages={1693--1703},
-year={2018}
+<pre><code>@inproceedings{yao2018staqc,
+  title={StaQC: A Systematically Mined Question-Code Dataset from Stack Overflow},
+  author={Yao, Ziyu and Weld, Daniel S and Chen, Wei-Peng and Sun, Huan},
+  booktitle={Proceedings of the 2018 World Wide Web Conference},
+  pages={1693--1703},
+  year={2018}
 }</code></pre>
 
 <pre><code>@inproceedings{PanthaplackelETAL20CommentUpdate,
-author = {Panthaplackel, Sheena and Nie, Pengyu and Gligoric, Milos and Li, Junyi Jessy and Mooney, Raymond J.},
-title = {Learning to Update Natural Language Comments Based on Code Changes},
-booktitle = {Association for Computational Linguistics},
-pages = {To appear},
-year = {2020},
+  author = {Panthaplackel, Sheena and Nie, Pengyu and Gligoric, Milos and Li, Junyi Jessy and Mooney, Raymond J.},
+  title = {Learning to Update Natural Language Comments Based on Code Changes},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  pages = {1853--1868},
+  year = {2020},
 }</code></pre>
 
 <pre><code>@article{feng2020codebert,
-title={Codebert: A pre-trained model for programming and natural languages},
-author={Feng, Zhangyin and Guo, Daya and Tang, Duyu and Duan, Nan and Feng, Xiaocheng and Gong, Ming and Shou, Linjun and Qin, Bing and Liu, Ting and Jiang, Daxin and others},
-journal={arXiv preprint arXiv:2002.08155},
-year={2020}
+  title={CodeBERT: A Pre-Trained Model for Programming and Natural Languages},
+  author={Feng, Zhangyin and Guo, Daya and Tang, Duyu and Duan, Nan and Feng, Xiaocheng and Gong, Ming and Shou, Linjun and Qin, Bing and Liu, Ting and Jiang, Daxin and others},
+  journal={arXiv preprint arXiv:2002.08155},
+  year={2020}
 }</code></pre>
 
 # LICENSE

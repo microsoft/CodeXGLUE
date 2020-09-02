@@ -1,0 +1,107 @@
+===================================
+If, elif and else directives
+===================================
+
+#if WIN32
+  string os = "Win32";
+#elif MACOS
+  string os = "MacOS";
+#else
+  string os = "Unknown";
+#endif
+
+---
+
+(compilation_unit
+  (preprocessor_call (preprocessor_directive) (identifier))
+  (field_declaration
+    (variable_declaration
+      (predefined_type)
+      (variable_declarator (identifier) (equals_value_clause (string_literal)))))
+  (preprocessor_call (preprocessor_directive) (identifier))
+  (field_declaration
+    (variable_declaration
+      (predefined_type)
+      (variable_declarator (identifier) (equals_value_clause (string_literal)))))
+  (preprocessor_call (preprocessor_directive))
+  (field_declaration
+    (variable_declaration
+      (predefined_type)
+      (variable_declarator (identifier) (equals_value_clause (string_literal)))))
+  (preprocessor_call (preprocessor_directive)))
+
+===========================
+Region directives
+===========================
+
+#region Here, there, everywhere
+
+// something fast
+
+#endregion
+
+---
+
+(compilation_unit
+  (preprocessor_call
+    (preprocessor_directive)
+    (identifier)
+    (identifier)
+    (identifier))
+  (comment)
+  (preprocessor_call (preprocessor_directive)))
+
+===================================
+Define and undefine directives
+===================================
+
+#define SOMETHING
+#undef BAD
+
+---
+
+(compilation_unit
+  (preprocessor_call (preprocessor_directive) (identifier))
+  (preprocessor_call (preprocessor_directive) (identifier)))
+
+===================================
+Warning and error directives
+===================================
+
+class Of1879 {
+#warning This class is bad.
+#error Okay, just stop.
+}
+
+---
+
+(compilation_unit
+  (class_declaration (identifier) (declaration_list
+    (preprocessor_call (preprocessor_directive) (identifier) (identifier) (identifier) (identifier))
+    (preprocessor_call (preprocessor_directive) (identifier) (identifier) (identifier)))))
+
+===================================
+Line directives
+===================================
+
+class Of1879 {
+  void AMethod() {
+#line 2001 "A Space"
+#line hidden
+#line default
+  }
+}
+
+---
+
+(compilation_unit (class_declaration
+  (identifier)
+  (declaration_list
+    (method_declaration
+      (void_keyword)
+      (identifier)
+      (parameter_list)
+      (block
+        (preprocessor_call (preprocessor_directive) (integer_literal) (string_literal))
+        (preprocessor_call (preprocessor_directive) (identifier))
+        (preprocessor_call (preprocessor_directive) (identifier))))))) 

@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 wget http://files.srl.inf.ethz.ch/data/py150_files.tar.gz
 
 mkdir py150_files

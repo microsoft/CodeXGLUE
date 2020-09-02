@@ -1,0 +1,76 @@
+/* for bootstrap scrollspy */
+html {
+	height: 100%;
+}
+
+:root {
+	--gold: #b7a57a;
+	--purple: #4b2e83;
+	--orange: #d14c00;
+}
+
+body {
+	padding-top: 70px;
+	position: relative;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12pt;
+	text-align: justify;
+}
+
+section {
+	padding: 50px 0;
+}
+
+a { 
+	text-decoration: none; 
+	color: var(--gold);
+}
+
+a:hover {
+	color: var(--purple);
+}
+
+a.black {
+	color: #000000;
+}
+
+h1, h2, h3 {
+	color: var(--purple); 
+}
+
+img.full-width {
+	width: 100%;
+}
+
+.navbar {
+	padding: 0.3rem 1rem;
+}
+
+.nav-item {
+	font-size: 13pt;
+}
+
+.navbar-brand {
+	font-size: 18pt;
+}
+
+.topnav {
+	border-bottom: 3px solid var(--blue);
+	background-color: black;
+}
+
+.navbar a {
+	color: #fff;
+}
+
+p.citation {
+	margin-left: 20px;
+	text-indent: -20px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.journaltitle {
+  /* color: #2a6496; */
+	color: var(--purple);
+}

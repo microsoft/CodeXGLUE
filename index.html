@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://microsoft.github.io/XGLUE/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Information about CodeXGLUE Dataset">
+		<meta name="author" content="Daniel Campos">
+		<title>CodeXGLUE</title>
+		<!-- Bootstrap core CSS -->
+		<link href="./webpage_files/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="./webpage_files/scrolling-nav.css" rel="stylesheet">
+		<link href="./webpage_files/main.css" rel="stylesheet">
+		<link href="./webpage_files/fa-all.css" rel="stylesheet">
+		<link rel="stylesheet" href="./webpage_files/academicons.min.css">
+		<link rel="stylesheet" href="./webpage_files/18-e17dee" type="text/css" media="all">
+		<script type="text/javascript">
+			function gen_mail_to_link(lhs,rhs,subject,hypertext) {
+				document.write("<a href=\"mailto");
+				document.write(":" + lhs + "@");
+				document.write(rhs + "?subject=" + subject + "\">" + hypertext + "<\/a>");
+			}
+		</script>
+		    <script type="text/javascript">
+				var clicked = false;
+				function addDownloadLink() {
+					if (document.getElementById("TA").checked == true) {
+						//Usefulness
+						if (!clicked) {
+							document.getElementById("xgluedata").innerHTML += "<a class=\"btn btn-primary btn-md\" style='margin-right: 3px;' href=\"https://msmarco.blob.core.windows.net/xglue/xglue_public.tar.gz\">CodeXGLUE Data</a>"
+							clicked = true;
+						}
+						alert("Download Links are now viewable")
+					} else {
+						alert("Please Agree to our conditions to download the dataset")
+					}
+				}
+			</script>
+			<style>
+				code {
+					  font-family: Consolas,"courier new";
+					  color: black;
+					  background-color: #f1f1f1;
+					  padding: 2px;
+					  font-size: 90%;
+					}
+			</style>
+	</head>
+	<body id="page-top">
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top topnav" id="mainNav">
+			<div class="container">
+				<link rel="shortcut icon" type="image/x-icon" href="https://microsoft.github.io/XGLUE/favicon.ico">
+				<a class="navbar-brand js-scroll-trigger" href="https://microsoft.github.io/XGLUE/#page-top">CodeXGLUE</a>
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger active" href="	">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="">Intro</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="">Leaderboard</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section id="intro">
+			<div class="container">
+				<center>
+					<img src="./webpage_files/MicrosoftLogo.png">
+				</center>
+				<div class="row">
+					<p>We present the General Language Understanding Evaluation benchmark for CODE, called CodeXGLUE, which includes a collection of code intelligence tasks  and a platform for model evaluation and comparison.
+					</p>
+					<p>CodeXGLUE covers 13 datasets for 11 code intelligence tasks, including code completion, code clone detection, code translation, code defect detection, code refinement, cloze test of source code, code search, text-to-code generation, code summarization, code change summarization, and documentation translation. We provide baseline models for each task, most of which are based on large pre-trained models like CodeBERT. </p>
+				</div>
+				<div class="row">
+					<h2>Terms and Conditions</h2>
+					<p>The CodeXGLUE datasets are intended for non-commercial research purposes only to promote advancement in the field of artificial intelligence and related areas, and is made available free of charge without extending any license or other intellectual property rights.  The dataset is provided “as is” without warranty and usage of the data has risks since we may not own the underlying rights in the documents.  We are not be liable for any damages related to use of the dataset.  Feedback is voluntarily given and can be used as we see fit. Upon violation of any of these terms, your rights to use the dataset will end automatically. <br> If you have questions about use of the dataset or any research outputs in your products or services, we encourage you to undertake your own independent legal review.  For other questions, please feel free to contact us.</p>            
+					<div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="termAgreed" id="TA" value="true">
+                            I agree to terms and conditions. Upon accepting links to dataset will become available.
+                        </label>	
+					</div>
+				</div>
+				<div class="row">
+					<button type="button" class="btn btn-primary btn-default" onclick="return addDownloadLink()">Submit</button>
+				</div>
+			</div>
+		</section>
+		<section id="leaderboard" class="bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="table-responsive">
+						<h2>Leaderboard</h2>
+						<div style="text-align:center">
+							<table class="table table-striped" id="xgluetable">
+							<thead>
+								<tr>
+									<th class="col-md-1">Rank</th>
+									<th class="col-md-1">Model</th>
+									<th class="col-md-1">Organization</th>
+									<th class="col-md-1">Submission Date</th>
+									<th class="col-md-1">completion</th>
+									<th class="col-md-1">clone detection</th>
+									<th class="col-md-1">translation</th>
+									<th class="col-md-1">defect detection</th>
+									<th class="col-md-1">refinement</th>
+									<th class="col-md-1">cloze test</th>
+									<th class="col-md-1">natural languag search</th>
+									<th class="col-md-1">text-to-code generation</th>
+									<th class="col-md-1">code summarization</th>
+									<th class="col-md-1">code change summarization</th>
+									<th class="col-md-1">documentation translation</th>
+									<th class="col-md-1">Overall Score-1 (ACC)</th>
+									<th class="col-md-1">Overall Score-2 (MRR)</th>
+									<th class="col-md-1">Overall Score-3 (BLEU)</th>
+								</tr>
+							</thead>
+						<tbody>
+							<tbody>
+									<tr>
+										<td>CodeBERT Baseline</td>
+										<td>CodeXGLUE Team</td>
+									  <td>2020-06-19</td>
+									  <td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+								  </tr>
+									<tr>
+										<td>CodeBERT Baseline</td>
+										<td>CodeXGLUE Team</td>
+									  <td>2020-06-19</td>
+									  <td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+										<td>--</td>
+								  </tr>
+							</tbody>
+						</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 mx-auto">
+						<h2>CodeXGLUE Submission Instructions</h2>
+						<p>Once you have built a model that meets your expectations on evaluation with the dev set, you can submit your test results to get official evaluation on the test set. To ensure the integrity of the official test results, we do not release the correct answers for test set to the public. To submit your model for official evaluation on the test set, follow the below steps:</p>
+						<ol>
+							<li>Generate your prediction output for the dev set.</li>
+							<li>Run the official evaluation methodologies found in the task specific git repo and verify your systems are running as expected.</li>
+							<li>Generate your prediction output for the test set and submit the following information by </script><a href="">emailing us</a>.</li>
+						</ol>
+						<p>Your email should include:</p>
+						<ol>
+							<li>Prediction results on test set. [Required]</li>
+							<li>Prediction results on dev set. [Recommended]</li>
+							<li>Individual/Team Name: Name of the individual or the team to appear in the leaderboard. [Required]</li>
+							<li>Individual/Team Institution: Name of the institution of the individual or the team to appear in the leaderboard. [Optional]</li>
+							<li>Model code: Training code for the model. [Recommended]</li>
+							<li>Model information: Name of the model/technique to appear in the leaderboard. [Required]</li>
+							<li>Paper Information: Name, Citation, URL of the paper if model is from a published work to appear in the leaderboard. [Optional]</li>
+						</ol>
+						<p>To avoid "P-hacking" we discourage too many submissions from the same group in a short period of time.</p>
+           	 		</div>
+        		</div>
+			</div>
+		</section>
+		<section id="about" class="bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 mx-auto">				
+						<h2>Relevant Links</h2>
+						<a class="btn btn-primary btn-md" style="margin-right: 3px;" href="https://github.com/microsoft/CodeXGLUE">CodeXGLUE Submission Guideline/Github</a>
+						<a class="btn btn-primary btn-md" style="margin-right: 3px;" href="5https://arxiv.org/abs/???">CodeXGLUE Paper</a>
+						<a class="btn btn-primary btn-md" style="margin-right: 3px;" href="5https://arxiv.org/abs/2002.0815">CodeBERT Paper</a>
+						<a class="btn btn-primary btn-md" style="margin-right: 3px;" href="https://github.com/microsoft/CodeBERT">Baselines</a>
+					
+						
+						<h2>How to cite</h2>
+						<div style="overflow-x:scroll; white-space: nowrap">
+						<code>@article{CodeXGLUE,<br>
+							&nbsp;&nbsp;title={CodeXGLUE: An Open Challenge for Code Intelligence},<br>
+							&nbsp;&nbsp;journal={arXiv},<br>
+							&nbsp;&nbsp;year={2020},<br>
+}</code><br>
+						
+						</div>
+						<p></p>
+						<p>CodeXGLUE is built out of the following datasets. Please ensure you cite all of them.</p>
+						<div style="overflow-x:scroll; white-space: nowrap">
+						
+<code>@article{husain2019codesearchnet,<br>
+  title={CodeSearchNet Challenge: Evaluating the State of Semantic Code Search},<br>
+  author={Husain, Hamel and Wu, Ho-Hsiang and Gazit, Tiferet and Allamanis, Miltiadis and Brockschmidt, Marc},<br>
+  journal={arXiv preprint arXiv:1909.09436},<br>
+  year={2019}<br>
+}</code> <br><br>
+
+<code>@article{DBLP:journals/corr/abs-1812-08693,<br>
+						&nbsp;&nbsp;title= {An Empirical Study on Learning Bug-Fixing Patches in the Wild via Neural Machine Translation},<br>
+						&nbsp;&nbsp;author= {Michele Tufano, Cody Watson, Gabriele Bavota, Massimiliano Di Penta, Martin White and Denys Poshyvanyk},<br>
+						&nbsp;&nbsp;journal= {arXiv abs/1812.08693},<br>
+						&nbsp;&nbsp;yea= {2018}<br>
+						}	</code> <br><br>
+
+<code>@article{raychev2016probabilistic, <br>
+  title={Probabilistic model for code with decision trees},<br>
+  author={Raychev, Veselin and Bielik, Pavol and Vechev, Martin},<br>
+  journal={ACM SIGPLAN Notices},<br>
+  volume={51},<br>
+  number={10},<br>
+  pages={731--747},<br>
+  year={2016},<br>
+  publisher={ACM New York, NY, USA}<br>
+} </code> <br><br>
+
+<code>@inproceedings{allamanis2013mining, <br>
+  title={Mining source code repositories at massive scale using language modeling},<br>
+  author={Allamanis, Miltiadis and Sutton, Charles},<br>
+  booktitle={2013 10th Working Conference on Mining Software Repositories (MSR)},<br>
+  pages={207--216},<br>
+  year={2013},<br>
+  organization={IEEE}<br>
+} </code> <br><br>
+
+<code>@inproceedings{just2014defects4j,<br>
+  title={Defects4J: A database of existing faults to enable controlled testing studies for Java programs},<br>
+  author={Just, Ren{\'e} and Jalali, Darioush and Ernst, Michael D},<br>
+  booktitle={Proceedings of the 2014 International Symposium on Software Testing and Analysis},<br>
+  pages={437--440},<br>
+  year={2014}<br>
+}</code> <br><br>
+
+<code>@article{iyer2018mapping,<br>
+  title={Mapping language to code in programmatic context},<br>
+  author={Iyer, Srinivasan and Konstas, Ioannis and Cheung, Alvin and Zettlemoyer, Luke},<br>
+  journal={arXiv preprint arXiv:1808.09588},<br>
+  year={2018}<br>
+}</code> <br><br>
+
+<code>@inproceedings{yao2018staqc,
+  title={Staqc: A systematically mined question-code dataset from stack overflow},<br>
+  author={Yao, Ziyu and Weld, Daniel S and Chen, Wei-Peng and Sun, Huan},<br>
+  booktitle={Proceedings of the 2018 World Wide Web Conference},<br>
+  pages={1693--1703},<br>
+  year={2018}<br>
+} </code> <br><br>
+
+<code>@inproceedings{PanthaplackelETAL20CommentUpdate,<br>
+  author = {Panthaplackel, Sheena and Nie, Pengyu and Gligoric, Milos and Li, Junyi Jessy and Mooney, Raymond J.},<br>
+  title = {Learning to Update Natural Language Comments Based on Code Changes},<br>
+  booktitle = {Association for Computational Linguistics},<br>
+  pages = {To appear},<br>
+  year = {2020},<br>
+}</code> <br> <br>
+
+<code>@article{feng2020codebert,<br>
+  title={Codebert: A pre-trained model for programming and natural languages},<br>
+  author={Feng, Zhangyin and Guo, Daya and Tang, Duyu and Duan, Nan and Feng, Xiaocheng and Gong, Ming and Shou, Linjun and Qin, Bing and Liu, Ting and Jiang, Daxin and others},<br>
+  journal={arXiv preprint arXiv:2002.08155},<br>
+  year={2020}<br>
+}</code>
+
+</div>
+						<h2>&nbsp;</h2>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="footerArea" class="uhf" data-m="{&quot;cN&quot;:&quot;footerArea&quot;,&quot;cT&quot;:&quot;Area_coreuiArea&quot;,&quot;id&quot;:&quot;a2Body&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;Body&quot;}">
+            <div id="footerRegion" data-region-key="footerregion" data-m="{&quot;cN&quot;:&quot;footerRegion&quot;,&quot;cT&quot;:&quot;Region_coreui-region&quot;,&quot;id&quot;:&quot;r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;a2&quot;}">
+				<div id="footerUniversalFooter" data-m="{&quot;cN&quot;:&quot;footerUniversalFooter&quot;,&quot;cT&quot;:&quot;Module_coreui-universalfooter&quot;,&quot;id&quot;:&quot;m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;r1a2&quot;}" data-module-id="Category|footerRegion|coreui-region|footerUniversalFooter|coreui-universalfooter">
+					<footer id="uhf-footer" class="c-uhff context-uhf" data-uhf-mscc-rq="false" data-footer-footprint="/MSTuring/MSTuringFooter, fromService: True" data-m="{&quot;cN&quot;:&quot;Uhf footer_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;m1r1a2&quot;}">
+						<nav class="c-uhff-nav" aria-label="Footer Resource links" data-m="{&quot;cN&quot;:&quot;Footer nav_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c1m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1m1r1a2&quot;}">
+							<div class="c-uhff-nav-row">
+								<div class="c-uhff-nav-group" data-m="{&quot;cN&quot;:&quot;footerNavColumn1_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c1c1m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c1m1r1a2&quot;}">
+									<div class="c-heading-4">What's new</div>
+										<ul class="c-list f-bare">
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/p/surface-pro-x/8vdnrp2m6hhc?activetab=overview" data-m="{&quot;cN&quot;:&quot;Whatsnew_SurfaceProX_nav&quot;,&quot;id&quot;:&quot;n1c1c1c1m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c1c1m1r1a2&quot;}">Surface Pro X</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/p/surface-laptop-3/8VFGGH1R94TM?activetab=overview" data-m="{&quot;cN&quot;:&quot;Whatsnew_SurfaceLaptop3_nav&quot;,&quot;id&quot;:&quot;n2c1c1c1m1r1a2&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c1c1c1m1r1a2&quot;}">Surface Laptop 3</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/p/surface-pro-7/8N17J0M5ZZQS?activetab=overview" data-m="{&quot;cN&quot;:&quot;Whatsnew_SurfacePro7_nav&quot;,&quot;id&quot;:&quot;n3c1c1c1m1r1a2&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c1c1c1m1r1a2&quot;}">Surface Pro 7</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/windows/windows-10-apps" data-m="{&quot;cN&quot;:&quot;Footer_WhatsNew_Windows_10_apps_nav&quot;,&quot;id&quot;:&quot;n4c1c1c1m1r1a2&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c1c1c1m1r1a2&quot;}">Windows 10 apps</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://store.office.com/en-us/appshome.aspx?" data-m="{&quot;cN&quot;:&quot;Footer_WhatsNew_OfficeApps_nav&quot;,&quot;id&quot;:&quot;n5c1c1c1m1r1a2&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c1c1c1m1r1a2&quot;}">Office apps</a>
+											</li>
+										</ul>                            
+									</div>
+									<div class="c-uhff-nav-group" data-m="{&quot;cN&quot;:&quot;footerNavColumn2_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c1c1m1r1a2&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c1c1m1r1a2&quot;}">
+										<div class="c-heading-4">Microsoft Store</div>
+										<ul class="c-list f-bare">
+											<li>
+												<a class="c-uhff-link" href="https://account.microsoft.com/" data-m="{&quot;cN&quot;:&quot;Footer_StoreandSupport_AccountProfile_nav&quot;,&quot;id&quot;:&quot;n1c2c1c1m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c1c1m1r1a2&quot;}">Account profile</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/download" data-m="{&quot;cN&quot;:&quot;Footer_StoreandSupport_DownloadCenter_nav&quot;,&quot;id&quot;:&quot;n2c2c1c1m1r1a2&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c2c1c1m1r1a2&quot;}">Download Center</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://go.microsoft.com/fwlink/p/?LinkID=824761&amp;clcid=0x409" data-m="{&quot;cN&quot;:&quot;Footer_StoreandSupport_SalesAndSupport_nav&quot;,&quot;id&quot;:&quot;n3c2c1c1m1r1a2&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c2c1c1m1r1a2&quot;}">Microsoft Store support</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://go.microsoft.com/fwlink/p/?LinkID=824764&amp;clcid=0x409" data-m="{&quot;cN&quot;:&quot;MicrosoftStore_ExtendedHolidayReturns_nav&quot;,&quot;id&quot;:&quot;n4c2c1c1m1r1a2&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c2c1c1m1r1a2&quot;}">Returns</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://account.microsoft.com/orders" data-m="{&quot;cN&quot;:&quot;Footer_StoreandSupport_OrderTracking_nav&quot;,&quot;id&quot;:&quot;n5c2c1c1m1r1a2&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c2c1c1m1r1a2&quot;}">Order tracking</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS" data-m="{&quot;cN&quot;:&quot;Footer_StoreandSupport_StoreLocations_nav&quot;,&quot;id&quot;:&quot;n6c2c1c1m1r1a2&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c2c1c1m1r1a2&quot;}">Store locations</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/store/b/buy-online-pick-up-in-store?icid=uhf_footer_bopuis" data-m="{&quot;cN&quot;:&quot;StoreandSupport_BuyOnlinePickUpInStore_nav&quot;,&quot;id&quot;:&quot;n7c2c1c1m1r1a2&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c2c1c1m1r1a2&quot;}">Buy online, pick up in store</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/store/locations/events?icid=en_us_store_uhf_events" data-m="{&quot;cN&quot;:&quot;StoreSupport_Instoreevents_nav&quot;,&quot;id&quot;:&quot;n8c2c1c1m1r1a2&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c2c1c1m1r1a2&quot;}">In-store events</a>
+											</li>
+										</ul> 
+									</div>
+									<div class="c-uhff-nav-group" data-m="{&quot;cN&quot;:&quot;footerNavColumn3_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c1c1m1r1a2&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c1c1m1r1a2&quot;}">
+										<div class="c-heading-4">Education</div>
+										<ul class="c-list f-bare">
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/education" data-m="{&quot;cN&quot;:&quot;Footer_Education_MicrosoftInEducation_nav&quot;,&quot;id&quot;:&quot;n1c3c1c1m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c1c1m1r1a2&quot;}">Microsoft in education</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/education/products/office/default.aspx" data-m="{&quot;cN&quot;:&quot;Footer_Education_OfficeForStudents_nav&quot;,&quot;id&quot;:&quot;n2c3c1c1m1r1a2&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c3c1c1m1r1a2&quot;}">Office for students</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://products.office.com/en-us/academic/compare-office-365-education-plans" data-m="{&quot;cN&quot;:&quot;Footer_Education_Office365ForSchools_nav&quot;,&quot;id&quot;:&quot;n3c3c1c1m1r1a2&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c3c1c1m1r1a2&quot;}">Office 365 for schools</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/store/b/education?icid=CNavfooter_Studentsandeducation" data-m="{&quot;cN&quot;:&quot;Footer_Education_DealsForStudentsandParents_nav&quot;,&quot;id&quot;:&quot;n4c3c1c1m1r1a2&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c3c1c1m1r1a2&quot;}">Deals for students &amp; parents</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://azure.microsoft.com/en-us/community/education/" data-m="{&quot;cN&quot;:&quot;Footer_MicrosoftAzureInEducation_nav&quot;,&quot;id&quot;:&quot;n5c3c1c1m1r1a2&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c3c1c1m1r1a2&quot;}">Microsoft Azure in education</a>
+											</li>
+										</ul>   
+									</div>
+								</div>
+								<div class="c-uhff-nav-row">
+									<div class="c-uhff-nav-group" data-m="{&quot;cN&quot;:&quot;footerNavColumn4_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c1c1m1r1a2&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c1c1m1r1a2&quot;}">
+										<div class="c-heading-4">Enterprise</div>
+										<ul class="c-list f-bare">
+											<li>
+												<a class="c-uhff-link" href="https://azure.microsoft.com/" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_MicrosoftAzure_nav&quot;,&quot;id&quot;:&quot;n1c4c1c1m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">Azure</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://go.microsoft.com/fwlink/?LinkID=808093" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_MicrosoftAppSource_nav&quot;,&quot;id&quot;:&quot;n2c4c1c1m1r1a2&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">AppSource </a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/enterprise/automotive" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_Automotive_nav&quot;,&quot;id&quot;:&quot;n3c4c1c1m1r1a2&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">Automotive</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/enterprise/government" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_Government_nav&quot;,&quot;id&quot;:&quot;n4c4c1c1m1r1a2&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">Government</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/enterprise/health" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_Health_nav&quot;,&quot;id&quot;:&quot;n5c4c1c1m1r1a2&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">Healthcare</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/enterprise/manufacturing" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_Manufacturing_nav&quot;,&quot;id&quot;:&quot;n6c4c1c1m1r1a2&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">Manufacturing</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/enterprise/financial-services/banking-and-capital-markets" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_FinanciaServices_nav&quot;,&quot;id&quot;:&quot;n7c4c1c1m1r1a2&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">Financial services</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/enterprise/retail-consumer-goods" data-m="{&quot;cN&quot;:&quot;Footer_Enterprise_Retail_nav&quot;,&quot;id&quot;:&quot;n8c4c1c1m1r1a2&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c4c1c1m1r1a2&quot;}">Retail</a>
+											</li>
+										</ul>   
+									</div>
+									<div class="c-uhff-nav-group" data-m="{&quot;cN&quot;:&quot;footerNavColumn5_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c1c1m1r1a2&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c1c1m1r1a2&quot;}">
+										<div class="c-heading-4">Developer</div>
+											<ul class="c-list f-bare">
+											<li>
+												<a class="c-uhff-link" href="https://visualstudio.microsoft.com/" data-m="{&quot;cN&quot;:&quot;Footer_Developer_MicrosoftVisualStudio_nav&quot;,&quot;id&quot;:&quot;n1c5c1c1m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c1c1m1r1a2&quot;}">Microsoft Visual Studio</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://developer.microsoft.com/en-us/windows" data-m="{&quot;cN&quot;:&quot;Footer_Developer_WindowsDevCenter_nav&quot;,&quot;id&quot;:&quot;n2c5c1c1m1r1a2&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c5c1c1m1r1a2&quot;}">Windows Dev Center</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://msdn.microsoft.com/en-us" data-m="{&quot;cN&quot;:&quot;Footer_Developer_MicrosoftDeveloperNetwork_nav&quot;,&quot;id&quot;:&quot;n3c5c1c1m1r1a2&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c5c1c1m1r1a2&quot;}">Developer Network</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://technet.microsoft.com/en-us" data-m="{&quot;cN&quot;:&quot;Footer_Developer_TechNet_nav&quot;,&quot;id&quot;:&quot;n4c5c1c1m1r1a2&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c5c1c1m1r1a2&quot;}">TechNet</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://developer.microsoft.com/en-us/store/register" data-m="{&quot;cN&quot;:&quot;Footer_Developer_MicrosoftDeveloperProgram_nav&quot;,&quot;id&quot;:&quot;n5c5c1c1m1r1a2&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c5c1c1m1r1a2&quot;}">Microsoft developer program</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://channel9.msdn.com/" data-m="{&quot;cN&quot;:&quot;Footer_Developer_Channel9_nav&quot;,&quot;id&quot;:&quot;n6c5c1c1m1r1a2&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c5c1c1m1r1a2&quot;}">Channel 9</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://developer.microsoft.com/en-us/office" data-m="{&quot;cN&quot;:&quot;Footer_Developer_OfficeDevCenter_nav&quot;,&quot;id&quot;:&quot;n7c5c1c1m1r1a2&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c5c1c1m1r1a2&quot;}">Office Dev Center</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/garage/" data-m="{&quot;cN&quot;:&quot;Microsoft Garage_nav&quot;,&quot;id&quot;:&quot;n8c5c1c1m1r1a2&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c5c1c1m1r1a2&quot;}">Microsoft Garage</a>
+											</li>
+										</ul>
+									</div>
+									<div class="c-uhff-nav-group" data-m="{&quot;cN&quot;:&quot;footerNavColumn6_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c1c1m1r1a2&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c1c1m1r1a2&quot;}">
+										<div class="c-heading-4">Company</div>
+										<ul class="c-list f-bare">
+											<li>
+												<a class="c-uhff-link" href="https://careers.microsoft.com/" data-m="{&quot;cN&quot;:&quot;Footer_Company_Careers_nav&quot;,&quot;id&quot;:&quot;n1c6c1c1m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c1c1m1r1a2&quot;}">Careers</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/about" data-m="{&quot;cN&quot;:&quot;Footer_Company_AboutMicrosoft_nav&quot;,&quot;id&quot;:&quot;n2c6c1c1m1r1a2&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c6c1c1m1r1a2&quot;}">About Microsoft</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://news.microsoft.com/" data-m="{&quot;cN&quot;:&quot;Footer_Company_CompanyNews_nav&quot;,&quot;id&quot;:&quot;n3c6c1c1m1r1a2&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c6c1c1m1r1a2&quot;}">Company news</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://privacy.microsoft.com/en-us" data-m="{&quot;cN&quot;:&quot;Footer_Company_PrivacyAtMicrosoft_nav&quot;,&quot;id&quot;:&quot;n4c6c1c1m1r1a2&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c6c1c1m1r1a2&quot;}">Privacy at Microsoft</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/investor/default.aspx" data-m="{&quot;cN&quot;:&quot;Footer_Company_Investors_nav&quot;,&quot;id&quot;:&quot;n5c6c1c1m1r1a2&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c6c1c1m1r1a2&quot;}">Investors</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/diversity/" data-m="{&quot;cN&quot;:&quot;Footer_Company_DiversityAndInclusion_nav&quot;,&quot;id&quot;:&quot;n6c6c1c1m1r1a2&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c6c1c1m1r1a2&quot;}">Diversity and inclusion</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/accessibility" data-m="{&quot;cN&quot;:&quot;Footer_Company_Accessibility_nav&quot;,&quot;id&quot;:&quot;n7c6c1c1m1r1a2&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c6c1c1m1r1a2&quot;}">Accessibility</a>
+											</li>
+											<li>
+												<a class="c-uhff-link" href="https://www.microsoft.com/en-us/security/default.aspx" data-m="{&quot;cN&quot;:&quot;Footer_Company_Security_nav&quot;,&quot;id&quot;:&quot;n8c6c1c1m1r1a2&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c6c1c1m1r1a2&quot;}">Security</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							
+						</nav>
+						<div class="c-uhff-base">
+							<a id="locale-picker-link" aria-label="Content Language Selector. Currently set to English (United States)" class="c-uhff-link c-uhff-lang-selector c-glyph glyph-world" href="https://www.microsoft.com/en-us/locale.aspx" data-m="{&quot;cN&quot;:&quot;locale_picker(US)_nav&quot;,&quot;id&quot;:&quot;n7c1c1m1r1a2&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c1c1m1r1a2&quot;}">English (United States)</a>
+							<nav aria-label="Microsoft corporate links">
+								<ul class="c-list f-bare" data-m="{&quot;cN&quot;:&quot;Corp links_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c8c1c1m1r1a2&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c1c1m1r1a2&quot;}">
+									<li>
+										<a class="c-uhff-link" href="https://www.microsoft.com/en-us/sitemap1.aspx" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_Sitemap_nav&quot;,&quot;id&quot;:&quot;n1c8c1c1m1r1a2&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c8c1c1m1r1a2&quot;}">Sitemap</a>
+									</li>
+									<li>
+										<a class="c-uhff-link" href="https://support.microsoft.com/en-us/contactus" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_ContactUs_nav&quot;,&quot;id&quot;:&quot;n2c8c1c1m1r1a2&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c8c1c1m1r1a2&quot;}">Contact Microsoft</a>
+									</li>
+									<li>
+										<a class="c-uhff-link" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_PrivacyandCookies_nav&quot;,&quot;id&quot;:&quot;n3c8c1c1m1r1a2&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c8c1c1m1r1a2&quot;}">Privacy &amp; cookies </a>
+									</li>
+									<li>
+										<a class="c-uhff-link" href="https://go.microsoft.com/fwlink/?LinkID=206977" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_TermsOfUse_nav&quot;,&quot;id&quot;:&quot;n4c8c1c1m1r1a2&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c8c1c1m1r1a2&quot;}">Terms of use</a>
+									</li>
+									<li>
+										<a class="c-uhff-link" href="https://www.microsoft.com/trademarks" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_Trademarks_nav&quot;,&quot;id&quot;:&quot;n5c8c1c1m1r1a2&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c8c1c1m1r1a2&quot;}">Trademarks</a>
+									</li>
+									<li>
+										<a class="c-uhff-link" href="https://www.microsoft.com/en-us/devices/safety-and-eco" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_SafetyAndEco_nav&quot;,&quot;id&quot;:&quot;n6c8c1c1m1r1a2&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c8c1c1m1r1a2&quot;}">Safety &amp; eco</a>
+									</li>
+									<li>
+										<a class="c-uhff-link" href="https://choice.microsoft.com/" data-mscc-ic="false" data-m="{&quot;cN&quot;:&quot;Footer_AboutourAds_nav&quot;,&quot;id&quot;:&quot;n7c8c1c1m1r1a2&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c8c1c1m1r1a2&quot;}">About our ads</a>
+									</li>
+									<li>© Microsoft 2020</li>
+								</ul>
+							</nav>
+						</div>
+					</footer>
+				</div>
+			</div>
+    	</div>
+		<!-- Bootstrap core JavaScript -->
+		<script src="./webpage_files/jquery.min.js.download"></script>
+		<script src="./webpage_files/bootstrap.bundle.min.js.download"></script>
+		<!-- Plugin JavaScript -->
+		<script src="./webpage_files/jquery.easing.min.js.download"></script>
+		<script src="./webpage_files/scrolling-nav.js.download"></script>
+		<script>
+			var rankings = ['xgluetable']
+			for(var j=0; j < rankings.length; j++) {
+				var rows = document.getElementById(rankings[j]).rows;
+				for(var i = 1, td; i < rows.length; i++){
+					td = document.createElement('td');
+					td.appendChild(document.createTextNode(i));
+					rows[i].insertBefore(td, rows[i].firstChild);
+				}
+			}
+		</script>
+	
+
+</body></html>

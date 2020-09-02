@@ -3,7 +3,7 @@
 # Introduction
 This repo includes datasets and codes for CodeXGLUE, a collection of code intelligence tasks and a platform for model evaluation and comparison. CodeXGLUE stands for General Language Understanding Evaluation benchmark for CODE. It includes 14 datasets for 10 diversified programming language tasks covering code-code (clone detection, defect detection, cloze test, code completion, code refinement, and code-to-code translation), text-code (natural language code search, text-to-code generation), code-text (code summarization) and text-text (documentation translation) scenarios. We provide three baseline models to support these tasks, including BERT-style pre-trained model (i.e. [CodeBERT](https://github.com/microsoft/CodeBERT)) which is good at understanding problems, GPT-style pre-trained model which we call CodeGPT to support completion and generation problems, and Encoder-Decoder framework that supports sequence-to-sequence generation problems.
 
-A brief summary of CodeXGLUE is given below, including tasks, datasets, baseline systems, etc. Datasets highlighed in BLUE are fully contributed or partially contributed by Microsoft.
+A brief summary of CodeXGLUE is given below, including tasks, datasets, baseline systems, etc. Datasets highlighed in BLUE are contributed by Microsoft.
 ![A brief summary of CodeXGLUE, including tasks, datasets, baseline systems, etc.](https://github.com/microsoft/CodeXGLUE/blob/main/tasks.jpg)
 
 # Relevant Links
@@ -35,12 +35,11 @@ We have both token-level and line-level completion tasks. ...
 ## Natural Language Code Search 
 We have two subtasks to measure semantic similarity between text and code. 
 
-Dataset for the first subtask is NL-code-search-Adv. Given a text as the input, the task is to find the most semantically relevant code from a collection of codes. The training and dev sets come from CodeSearchNet <code>\cite{}</code>. Texts are function docstrings which serve as natural language queries. Although 
+Dataset for the first subtask is NL-code-search-Adv. Given a text as the input, the task is to find the most semantically relevant code in Python from a collection of codes. The training set come from CodeSearchNet <code>\cite{}</code>. Texts are function docstrings which serve as natural language queries. Although deep neural network models like CodeBERT perform well on the original test data with the same data distribution, we observe that the performance drops dramatically once function names and variables are artificially replaced. To test the generalization ability of models, we create dev and test sets, in which data originally comes from CodeSearchNet but the function names and variables are replaced with default values.
 
 do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by classification accuracy. The dataset comes from \cite{xxx}, and we follow the training/dev/testing split of \cite{}.
 
-Dataset for the second subtask is NL-code-search-WebQuery. Given a code as the input, the task is to retrieve semantically similar codes from a collection of codes.  The dataset comes from \cite{}, and we follow the split of \cite{}. Models are evaluated by xxx. 
-
+Dataset for the second subtask is NL-code-search-WebQuery. Given a text-code pair as the input, the task is to do binary classification (0/1), where 1 stands for relevant and 0 for irrelevant. The training and dev sets come from StacQC <code>\cite</code>, in which natural language queries are questions from StackOverflow. 
 
 ## Text-to-Code Generation 
 

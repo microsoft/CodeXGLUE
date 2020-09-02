@@ -42,14 +42,14 @@ batch_size=64
 beam_size=5
 source_length=256
 target_length=256
-data_dir=data
+data_dir=../data/processed
 output_dir=saved_models/multi_model
 train_file=$data_dir/train.all.src,$data_dir/train.all.tgt
 dev_file=$data_dir/dev.all.src,$data_dir/dev.all.tgt
-eval_steps=5000 #400 for ruby, 600 for javascript, 1000 for others
-train_steps=50000 #20000 for ruby, 30000 for javascript, 50000 for others
+eval_steps=5000 
+train_steps=50000 
 pretrained_model=xlm-roberta-base #CodeBERT: path to CodeBERT. Roberta: roberta-base
-#pretrained_model=saved_models/multi_model/checkpoint-last #CodeBERT: path to CodeBERT. Roberta: roberta-base
+
 
 CUDA_VISIBLE_DEVICES=0,1,2,3 /home/espnet/tools/venv/bin/python run.py \
 --do_train \
@@ -82,7 +82,7 @@ batch_size=64
 source_length=256
 target_length=256
 output_dir=saved_models/multi_model
-data_dir=data
+data_dir=../data/processed
 dev_file=$data_dir/dev.all.src,$data_dir/dev.all.tgt
 test_file=$data_dir/test.all.src,$data_dir/test.all.tgt
 test_model=$output_dir/checkpoint-best-bleu/pytorch_model.bin #checkpoint for test
@@ -111,13 +111,12 @@ The results on the test set are shown as below:
 
 | Direction              |   Dev     | Test       |  
 | -----------            | :-------: | :--------: | 
-| English  Danish        |   9.64    |   69.46    |  
-| English  -> Latvian    |   11.18   |   55.92    |   
-| Norwegian -> English   |   11.17   |   70.23    |
-| English -> Chinese     |   12.16   |   73.54    | 
-| -----------            | :-------: | :--------: | 
-| Danish -> English      |   9.64    |   75.85    |  
-| Latvian -> English     |   11.18   |   70.73    |   
-| Norwegian -> English   |   11.17   |   74.63    |
-| Chinese -> English     |   12.16   |   67.01    | 
+| English  Danish        |   69.72   |   69.46    |  
+| English  -> Latvian    |   54.38   |   55.92    |   
+| English -> Norwegian   |   70.00   |   70.23    |
+| English -> Chinese     |   73.89   |   73.54    | 
+| Danish -> English      |   77.22   |   75.85    |  
+| Latvian -> English     |   69.52   |   70.73    |   
+| Norwegian -> English   |   75.18   |   74.63    |
+| Chinese -> English     |   68.24   |   67.01    | 
 

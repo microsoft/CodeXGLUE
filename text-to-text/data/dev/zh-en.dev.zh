@@ -1,0 +1,1000 @@
+& # 124 ; MCDUserNotificationReadStateFilterAny & # 124 ; 0 & # 124 ; 包括 通知 , 而 不 考虑 读取 状态 。 & # 124 ;
+# # &lt ; a name = & quot ; using-the-platform & quot ; &gt ; &lt ; / a & gt ; 使用 平台
+& # 124 ; MCDUserNotificationUserActionStateFilterSnoozed & # 124 ; 4 & # 124 ; 包括 用户 已 暂停 的 通知 。 & # 124 ;
+活动 的 & quot ; 详细 信息 & quot ; 磁 贴 ， 说明 文本 。
+& # 124 ; MCDUserNotificationStatusFilterAny & # 124 ; 0 & # 124 ; 包括 所有 通知 , 不管 状态值 是 什么 。 & # 124 ;
+title : 发布 和 读取 用户 活动 ( Android )
+4 . 修改 文件 ， 并 使用 预览 选 项 卡来确保 所 做 的 更改 显示 良好 。
+& # 124 ; MCDAppServiceResponseStatusMessageTooLarge & # 124 ; 5 & # 124 ; 应用 程序 服务 无法 处理 消息 ， 因为 过大 。 & # 124 ;
+# # # # &lt ; a name = & quot ; how-do-i-know-the-data-coming-from-my-existing-auditing-solution-which-collects-data-from-the-management-activity-api-is-accurate-and-complete & quot ; &gt ; &lt ; / a & gt ; 我 如何 知道 来自 我 现有 审核 解决 方案 （ 该 解决 方案 从 管理 活动 API 收集 数据 ） 的 数据 是否 准确 完整 ？
+- 更新 有效 Webhook 的 属性 。
+& # 124 ; 10 & # 124 ; DataCenterSecurityCmdlet & # 124 ; 数据 中心 安全 cmdlet 事件 。 & # 124 ;
+& # 124 ; 11x17 & # 124 ; Page & # 124 ; 项目 为 页面 。 & # 124 ;
+& # 124 ; FolderModified & # 124 ; 用户 在 SharePoint 或 OneDrive for Business 网站 上 修改 文件 夹 。 此 事件 包含 文件 夹 元数据 更改 ， 如 标签 和 属性 。 & # 124 ;
+& # 124 ; SecurityGroupModified & # 124 ; 用户 在 Project Web App 中 创建 、 修改 或 删除 安全 组 。 & # 124 ;
+& # 124 ; Restarted & # 124 ; 用户 重启 事件 或 工作 流 。 & # 124 ;
+& # 124 ; ClientProcessName & # 124 ; Edm.String & # 124 ; 否 & # 124 ; 用于 访问 邮箱 的 电子邮件 客户 端 。 & # 124 ;
+& # 124 ; 4 & # 124 ; InfoCard & # 124 ; 身份 验证 方法 是 InfoCard 。 & # 124 ;
+# # # &lt ; a name = & quot ; policydetails-complex-type & quot ; &gt ; &lt ; / a & gt ; PolicyDetails 复杂 类型
+& # 124 ; VersionId & # 124 ; Edm.Int64 & # 124 ; 否 & # 124 ; 操作中 文件 的 版本 ID 。 & # 124 ;
+& # 124 ; 名称 & # 124 ; Edm.String & # 124 ; 否 & # 124 ; 仅 用 于 设置 事件 。 已 更改 的 设置 的 名称 。 & # 124 ;
+& # 124 ; 4 & # 124 ; Delete & # 124 ; 策略 操作 是 删除 电子邮件 。 & # 124 ;
+& # 124 ; 类型 & # 124 ; Edm.String & # 124 ; “ ip ” & # 124 ;
+& # 124 ; 双面 & # 124 ; URLlink & # 124 ; 它 是 是 用户 请求 的 来源 ， 用户 可 预览 、 删除 、 发布 、 导出 或 查看 潜在 有 危害 电子邮件 可能 源头 的 标头 。 & # 124 ;
+2 . 在 列表 中 ， 单击 所 选行 中的 链 接 。
+18 . 在 “ 仓库 ” 字 段 中 ， 输入 或 选择 一 个 值 。
+2 . 单击 “ 保存 ” 。
+11 . 单击 “ 更改 状态 ” 。
+6 . 单击 “ 启用 ” 。
+11 . 单击 “ 保存 ” 。
+11 . 单击 “ 筛选 器 ” 。
+title : 结算 客户 的 远期 支票
+10 . 在 “ 输入 位置 ” 字 段 中 ， 单击 下 拉 按钮 以 打开 查找 。
+4 . 在 “ 运行 时间 类别 ” 字 段 中 ， 输入 或 选择 一 个 值 。
+- & # 91 ; 导入 中国 金税 数据 实体 & # 93 ; ( apac-chn-import-golden-tax-data-entity.md )
+& lt ; td &gt ; 成本 行为 计算 日 记帐 &lt ; / td &gt ;
+# # &lt ; a name = & quot ; create-a-depreciation-book & quot ; &gt ; &lt ; / a & gt ; 创建折 旧帐 簿
+1 . 单击 画布 ， 确保 未 选择 任何 工作 流元素 。
+19 . 单击 “ 剪切 ” 。
+5 . 展开 “ 发票 行 ” 的 选 项 卡 。
+title : WebSearchAX 页面 已 停 用
+# # # &lt ; a name = & quot ; modify-the-mobile-device-menu-item-for-adjustment-in-and-adjustment-out & quot ; &gt ; &lt ; / a & gt ; 修改 调入 和 调出 的 移动 设备 菜 单项
+5 . 在 “ 已 签发 支票 的 清算 帐户 ” 字 段 中 ， 指定 所需 的 值 。
+15 . 在 列表 中 ， 找到 并 选择 所需 记录 。
+5 . 在 “ 名称 ” 字 段 中 ， 键入 一 个 值 。
+下 一 天 ， 您 的 经理 通知 您 计算机 降低 了 8 % ， 而 非 10 % ； 因此 ， 您 必须 纠正 重 置 成本 和 保险 额 。 为了 纠正 此 错误 ， 您 可以 使用 以下 两 种 方法 之一 ：
+* “ 设置 ” 页 用 于 选择 ： 作为 此 薪酬 流程 的 一 部分 ， 应 处理 哪 一 计划 ， 以及 针对 每 个 计划 需要 采取 哪些 行动 。
+23 . 单击 “ 添加 ” 。
+7 . 单击 “ 下 一 步 ” 。
+5 . 单击 “ 固定 资产 物料 添加 ” 。
+* 如果 金库 投箱 交易 应 进行 合计 ， 请 选择 “ 是 ” 。
+供应商 请求 在 * * 供应商 协作 用户 请求 * * 页可用 。
+2 . 在 “ 到期日 期 ” 字 段 中 ， 输入 日期 和 时间 。
+- 在 * * 价格 规则 * * 字 段 中 ， 选择 将 使用 的 价格 更改 类型 ：
+10 . 在 列表 中 ， 单击 所 选行 中的 链 接 。
+3 . 在 “ PurchParm 表格 编号 ” 字 段 中 ， 键入 一 个 值 。
+6 . 在 发票 行 中 输入 描述 。
+& lt ; li & gt ; 更改 您 正在 查看 的 报表 的 货币 。 & lt ; / li & gt ;
+2 . 在 “ 停止 装货 ” 字 段 中 选择 “ 是 ” 。
+& lt ; td &gt ; 金属 &lt ; / td &gt ;
+* 例如 ： 选择 “ DEMF OPER ” 银行 帐户 。
+5 . 在 “ 类别 层次 结构 类型 ” 字 段 中 ， 选择 一 个 选 项 。
+13 . 在 “ 实际 销售税 总额 ” 字 段 中 ， 输入 一 个 数字 。
+15 . 在 “ 数量 ” 字 段 中 ， 输入 一 个 数字 。
+5 . 扩展 “ 要 包括 的 记录 ” 部分 。
+3 . 在 “ 配置 文件 编号 ” 字 段 中 ， 输入 一 个 值 。
+在 PowerApp 嵌 入到 页面 上 后 ， 如果 需要 ， 有 两 种 方法 可以 删除 它 ：
+10 . 在 列表 中 ， 标记 所 选 的 行 。
+6 . 仓库 原材料 库位
+在 运行 该 过程 之前 ， 先 运行 “ 设置 银行 融资 和 过 帐模板 ” 和 ” 信用证 创建 银行 融资 协议 ” 过程 。 请 选择 USMF 演示 公司 以 成功 运行 该 过程 。
+# # &lt ; a name = & quot ; verify-export-letter-of-credit & quot ; &gt ; &lt ; / a & gt ; 核实 “ 导出 信用证 ”
+title : 计算化 整折旧 金额
+1 . 在 列表 中选 择 一 个 图像 。
+# # &lt ; a name = & quot ; set-up-electronic-messaging & quot ; &gt ; &lt ; / a & gt ; 设置 电子 消息
+& lt ; td &gt ; 文档 编号 &lt ; / td &gt ;
+31 . 单击 “ 添加 行 ” 。
+4 . 在 “ 有限 物料 ” 字 段 中 ， 选择 “ 否 ” 。
+4 . 切换 “ 付款 服务 帐户 ” 部分 的 扩展 项 。
+& # 124 ; 917 & # 124 ; 数据库 连接 状态 & # 124 ; 此 操作 允许 用户 查看 当前 的 连接 设置 ， 并 可 在 联机 和 脱机 模式 之间 切换 。 & # 124 ; 是 & # 124 ; 是 & # 124 ; 是 & # 124 ; 是 & # 124 ; 无 & # 124 ;
+& # 124 ; 101 & # 124 ; 价格 查询 & # 124 ; 此 操作 允许 用户 查 找 特定 产品 的 价格 。 & # 124 ; 是 & # 124 ; 是 & # 124 ; 是 & # 124 ; 是 & # 124 ; 无 & # 124 ;
+& # 124 ; 916 & # 124 ; Windows Workflow Foundation & # 124 ; 此 操作 不 受 支持 。 & # 124 ; 不 适用 & # 124 ; 不 适用 & # 124 ; 不 适用 & # 124 ; 不 适用 & # 124 ; 无 & # 124 ;
+- 家庭 医疗 休假法 ( FMLA )
+13 . 在 树 中 ， 展开 “ 模型 \ 发票 附件 ” 。
+# # &lt ; a name = & quot ; two-types-of-cost-elements & quot ; &gt ; &lt ; / a & gt ; 成本 元素 的 两 种 类型
+7 . 应用 以下 筛选器 ： 使用 “ 开头 为 ” 筛选器 运算 符 在 “ 配置 名称 ” 字 段 中 输入 筛选器 值 “ ISO20022 贷方 转帐 （ 德国 ） ” 。
+# # &lt ; a name = & quot ; vendor-collaboration-in-consignment-processes & quot ; &gt ; &lt ; / a & gt ; 托运 流程 中的 供应商 协作
+& lt ; td &gt ; 键入 开始 值 ， 然后 是 两 个 句 点 ， 最后 键入 结束 值 。 & lt ; / td &gt ;
+1 . 打开 采购 订单 准备 工作 区 。
+& lt ; li & gt ; 下班 打卡 &lt ; / li & gt ;
+& # 124 ; 已 计划 & # 124 ; 招聘 工作 正在 准备 。 招聘 还 没有 为此 项目 开始 。 & # 124 ;
+4 . 在 “ 销售 代表 的 提示 ” 字 段 中 ， 选择 一 个 选 项 。
+# &lt ; a name = & quot ; configure-the-payroll-integration-between-talent-and-dayforce & quot ; &gt ; &lt ; / a & gt ; 配置 Talent 与 Dayforce 之间 的 工资 单 集成
+- 主要 （ 必填 ）
+& # 124 ; TERMINATION & # 124 ; 终止 & # 124 ; 解雇 工作 人员 & # 124 ;
+& # 124 ; 建筑物 地址 & # 124 ; 地址 行 5 & # 124 ;
+21 . 单击 “ 财务 维度 ” 选 项 卡 。
+& # 124 ; 10 . & # 124 ; 在 “ 工作 订单 类型 ” 字 段 中 ， 选择 “ 联 产品 和 副产品 储存 ” 。 & # 124 ;
+10 . 在 “ 名称 ” 字 段 中 ， 键入 “ 公司 ” 。
+6 . 单击 “ 运行 ” 。
+5 . 单击 “ 路线 ” 。
+5 . 在 “ 维度 层次 结构 名称 ” 字 段 中 ， 键入 “ 组织 USP2 ” 。
+- 完成 所有 其他 模块 的 所有 任务 ， 例如 应收账 款 、 应付 账款 和 库存 。
+# &lt ; a name = & quot ; create-a-production-flow-version & quot ; &gt ; &lt ; / a & gt ; 创建 生产 流 版本
+# # # # &lt ; a name = & quot ; calculation-of-time & quot ; &gt ; &lt ; / a & gt ; 时间 的 计算
+这里 是 计算 之后 工作 人员 当天 的 登记 如何 在 * * 审核 * * 页 显示 。
+13 . 在 “ 物料 编号 ” 字 段 中 ， 键入 或 选择 在 相关 销售 协议 中 指定 的 物料 。
+19 . 单击 “ 验证 ” 选 项 卡 。
+# # # &lt ; a name = & quot ; provision-a-user & quot ; &gt ; &lt ; / a & gt ; 调配 用户
+# &lt ; a name = & quot ; set-up-fixed-assets & quot ; &gt ; &lt ; / a & gt ; 设置 固定 资产
+12 . 单击 “ 专用 位置 安全 ” 选 项 卡 。
+6 . 单击 “ 查看 成本 比较 ” 。
+3 . 输入 利息 单 的 过帐 日期 。
+* 打开 所 选 ER 格式 的 草稿 版本 以 进行 编辑 。
+要 创建 一个 维度 值组 ， 请 执行 这些 步骤 ：
+- * * 信息 代码 * * 快速 选 项 卡 ：
+3 . 在 “ 状态 ” 字 段 中 ， 键入 一 个 值 。
+4 . 切换 发票 合计 匹配 部分 的 扩展 。
+& lt ; td &gt ; 2016 年 11 月 &lt ; / td &gt ;
+# # &lt ; a name = & quot ; service-management-at-a-glance & quot ; &gt ; &lt ; / a & gt ; 通过 服务 管理
+# &lt ; a name = & quot ; define-partial-location-cycle-counting-process & quot ; &gt ; &lt ; / a & gt ; 定义 部分 库位 周期 盘点 流程
+& # 124 ; 已 完成 & # 124 ; 审核 & # 124 ;
+4 . 在 “ 预警 边界 最 大 值 ” 字 段 中 ， 输入 “ 2 ” 。
+- 定义 项目 里程碑 。
+2 . 创建 新 的 服务 模板组 。
+5 . 单击 “ 新建 销售 订单 ” 。
+7 . 选中 “ 跟踪 新 交易 记录 ” 复选 框 。
+2 . 在 树 中 ， 选择 “ 支票 的 模型 ” 。
+25 . 单击 “ 新建 ” 。
+# # # &lt ; a name = & quot ; rehired-employees-or-contractors-show-up-multiple-times-after-termination & quot ; &gt ; &lt ; / a & gt ; 重新 雇用 的 员工 或 合同 工 在 雇用 终止 后 多 次 显示
+- & # 91 ; 库存 日 记帐 报表 & # 93 ; ( emea-set-up-report-inventory-journal-names.md )
+title : 生成 和 处理 客户 返利
+15 . 单击 “ 支票 ” 。
+在 * * 职员 卡 登录 * * 选 项 启用 时 ， 将 扩展 登录 分配 到 POS 凭据 的 工作 人员 可以 使用 磁条 登录 。
+33 . 在 “ 货币 金额 ” 字 段 中 ， 输入 一 个 数字 。
+# &lt ; a name = & quot ; default-order-settings-for-dimensions-and-product-variants & quot ; &gt ; &lt ; / a & gt ; 维度 和 产品 变型 的 默认 订单 设置
+10 . 单击 “ 创建 贷方 通知 单 ” 。
+& # 124 ; 外部 物料 文本 & # 124 ; 客户 的 物料 描述 & # 124 ; 供应商 的 物料 描述 & # 124 ;
+3 . 单击 “ 日 记帐 控制 ” 。
+22 . 单击 “ 添加 ” 以 打开 下拉 对话 框 。
+& # 124 ; 未 完成 & # 124 ; 打开 现有 行 定义 、 列 定义 、 报告 树 定义 或 报表 定义 。 & # 124 ;
+& # 124 ; 帮助 & # 124 ; 打开 财务 报告 的 Finance and Operations 帮助 主题 页 。 & # 124 ;
+# # &lt ; a name = & quot ; set-an-individual-order-for-direct-delivery & quot ; &gt ; &lt ; / a & gt ; 设置 直接 交货 的 单 个 订单
+16 . 切换 “ 硬件 工作 站 ” 部分 的 扩展 项 。
+# &lt ; a name = & quot ; er-configure-format-to-do-counting-and-summing-part-4-run-format & quot ; &gt ; &lt ; / a & gt ; ER 配置 格式 以 执行 盘点 和 合计 （ 第 4 部分 ： 运行 格式 ）
+8 . 在 “ 水平 ” 字段 ， 输入 一 个 数值 。
+5 . 发布 零售 商店 以 将 商店 数据 发送 到 Retail POS 。
+- & # 91 ; Onboard 概述 & # 93 ; ( create-onboarding-experience.md )
+9 . 在 “ 配置 ” 字 段 中 ， 键入 一 个 值 。
+# # # &lt ; a name = & quot ; define-budget-groups & quot ; &gt ; &lt ; / a & gt ; 定义 预算 组
+& # 124 ; * * 针对 早餐 的 缩减 百分比 * * & # 124 ; 输入 针对 早餐 缩减 的 出差 津贴 金额 。 例如 ， 如果 员工 的 早餐 是 免费 的 ， 可以 将 出差 津贴 金额 减少 10 % 。 & # 124 ;
+23 . 单击 “ 添加 数据 源 ” 。
+& lt ; td &gt ; 库存 管理 （ 公司 内部 / 公司 间 ） &lt ; / td &gt ;
+& # 124 ; 预算 代码 & # 124 ; 充当 报表 筛选 依据 的 预算 代码 & # 124 ;
+20 . 展开 “ 联系 信息 ” 部分 。
+28 . 在 “ 帐簿 ” 字 段 中 ， 输入 或 选择 一 个 值 。
+78 . 在 “ 主 科目 ” 字 段 中 ， 指定 所需 值 。
+# # &lt ; a name = & quot ; settle-all-invoices-on-june-29 & quot ; &gt ; &lt ; / a & gt ; 在 6 月 29 日 结算 所有 发票
+9 . 在 “ 提货 邮政 编码 ” 字 段 中 ， 键入 “ 98052 ” 。
+# # &lt ; a name = & quot ; review-and-approve-claims & quot ; &gt ; &lt ; / a & gt ; 审查 和 批准 索赔
+& lt ; th &gt ; 报表 页 &lt ; / th &gt ;
+15 . 在 “ 范围 结束 值 ” 字 段 中 ， 输入 一 个 数字 。
+title : 生产 差异 的 常见 来源
+在 过帐 后 ， 创建 一 个 凭证 。
+& # 124 ; ARPAYM003 & # 124 ; 130100-002 & # 124 ; 客户 - 余额 & # 124 ; & # 124 ; 98.00 & # 124 ;
+7 . 在 “ GL 过 帐 日期 ” 字 段 中 ， 输入 日期 。
+16 . 在 “ 物料 编号 ” 字 段 中 ， 输入 “ 0140 ” 。
+14 . 在 “ 登记 天数 ” 字 段 中 ， 输入 一 个 数字 。
+- 指示 您 办公室 的 方向 。
+16 . 在 “ 单位 价格 ” 字 段 中 ， 输入 一 个 数字 。
+- 查看 现金 流 。
+& lt ; td &gt ; 物料 收货 & lt ; / td &gt ;
+# &lt ; a name = & quot ; on-premises-deployments-home-page & quot ; &gt ; &lt ; / a & gt ; 本 地 部署 主页
+2 . 交易 记录 日期 ， 升序
+* 例如 ： 休假 应用
+模板 的 * * 收 件 人 * * 字 段 无法 编辑 ， 因为 您 在 首 次 创建 模板 时 已经 选择 了 收 件 人 。
+& # 124 ; 主 科目 & # 124 ; 物料 组 & # 124 ; 余额 & # 124 ;
+& # 124 ; 白色 & # 124 ; 白色 & # 124 ;
+# # &lt ; a name = & quot ; apply-for-jobs & quot ; &gt ; &lt ; / a & gt ; 申请 工作
+3 . 在 “ 结果 数量 ” 字 段 中 ， 输入 一 个 数字 。
+& # 124 ; 现金 折扣 金额 & # 124 ; 30.00 & # 124 ;
+# &lt ; a name = & quot ; set-up-warehouse-work-policies-application-may-2016 & quot ; &gt ; &lt ; / a & gt ; 设置 仓库 工作 策略 （ 申请表 ， 2016 年 5 月 ）
+& # 124 ; 大批 雇用 行 & # 124 ; 部门 ， 雇用 类型 和 职位 & # 124 ; 日期 ， 作业 ， 大批 雇用 项目 & # 124 ;
+5 . 展开 “ 路线 运营 ” 部分 。
+5 . 展开 “ 范围 参数 ” 部分 。
+14 . 在 “ 输出 仓库 ” 字 段 中 ， 单击 下 拉 按钮 以 打开 查找 。
+1 . 转到 “ 系统 管理 ” & gt ; “ 安全 ” & gt ; “ 职责 划分 ” & gt ; “ 职责 划分 规则 ” 。
+& # 124 ; 比率 & # 124 ; 1,299.00 & # 124 ;
+& lt ; td &gt ; 评估 原始 凭证 以 确定 它们 是否 包含 某些 特定 的 单词 。 & lt ; / td &gt ;
+50 . 单击 “ 确定 ” 。
+3 . 单击 “ 从 XML 文件 加 载 ” 。
+17 . 单击 “ 销售 税 ” 。
+51 . 单击 “ 添加 ” 。
+# # &lt ; a name = & quot ; update-arrival-information-and-process-a-product-receipt & quot ; &gt ; &lt ; / a & gt ; 更新到 达 信息 并 处理 物料 收货
+& # 124 ; 6 & # 124 ; 成员 访问 & # 124 ; … 。 … & # 124 ;
+& lt ; p & gt ; 在 此 情况 下 ， 可 使用 以下 表达式 获取 瑞士 德语 （ 如果 此 翻译 可用 ） 的 枚 举值 标签 。 如果 瑞士 德语 翻译 不 可 用 ， 标签 将 为 德语 。 & lt ; / p & gt ;
+2 . 在 “ 日 记帐 名称 ” 字 段 中 ， 单击 下 拉 按钮 以 打开 查找 。
+10 . 在 “ 放置 时 覆盖 牌照 ” 字 段 中 选择 “ 是 ” 。
+2 . 单击 “ 职位 详细 信息 ” 。
+14 . 选择 “ 站点 1 ” 。
+2 . 定义 分析 工作 区 选 项 卡 。
+24 . 在 “ 发放 到 仓库 ” 字 段 中 ， 选择 一 个 选 项 。
+& lt ; li & gt ; 巴西 &lt ; / li & gt ;
+& lt ; td &gt ; 巴西 本地化 - ER 配置 &lt ; / td &gt ;
+& lt ; li & gt ; 拉脱维亚 欧盟 销售 清单 XML 格式 &lt ; / li & gt ;
+& lt ; td &gt ; 瑞士 本地化 - ER 配置 &lt ; / td &gt ;
+& # 124 ; 冲 销装 运 。 & # 124 ; 在 仓库 中 ， 您 必须 能够 处理 延迟 更 改 。 例如 ， 一些 货物 可能 已经 损坏 ， 因此 无法 装运 。 或者 ， 客户 可能 进行 延迟 请求 取消 或 更改 订单 。 Dynamics 365 for Operations 现在 可以 冲销装 运 。 因此 ， 您 可以 取消 装 箱单 ， 以便 以后 更新 为 正确 的 数量 。 同样 ， 在 进货 流中 ， 您 可以 取消 产品 收据 ， 以便 创建 更新 版本 。 & # 124 ;
+- 值 除以 0 （ 零 ） 。
+4 . 在 “ 日历 ” 字 段 中 ， 键入 一 个 值 。
+# &lt ; a name = & quot ; add-a-predecessor-to-a-production-flow-activity & quot ; &gt ; &lt ; / a & gt ; 将 前导 活动 添加 到 生产 流活动
+原始 录制 文件 对于 开发 人员 方案 （ 如 测试 代码 生成 ） 很 有用 。 （ 此 功能 尚 未 实现 。 ）
+8 . 在 “ 操作窗 格 ” 上 单击 “ 跟踪 ” 。
+# # # &lt ; a name = & quot ; indicator-of-order-delivery-date & quot ; &gt ; &lt ; / a & gt ; 订单 交货 日期 指示 符
+13 . 在 “ 再 订购 宽限期 添加 到 物料 提前 期 ” 字 段 中 ， 输入 & quot ; 1 & quot ; 。
+2 . 单击 “ 批准 不 符合 项 ” 。
+9 . 在 “ 计划 ” 字 段 中 ， 输入 一 个 值 。
+# # &lt ; a name = & quot ; finding-a-shortcut & quot ; &gt ; &lt ; / a & gt ; 查 找 快捷 方式
+& # 124 ; 在 日期 字 段 中 输入 当前 日期 & # 124 ; T + Tab & # 124 ;
+3 . 用 于 未 计划 的 作业 的 按钮
+& # 124 ; 入站 表现 & # 124 ; 准时 收到 货 & # 124 ; 按时 收到 的 采购 订单 行 的 数量 。 & # 124 ;
+# &lt ; a name = & quot ; actions-in-workflow-approval-processes & quot ; &gt ; &lt ; / a & gt ; 工作流 审核 流程 中的 操作
+6 . 在 “ 大小 ” 字 段 中 ， 输入 一 个 数字 。
+32 . 在 列表 中 ， 标记 所 选 的 行 。
+12 . 在 “ 分析 嵌套 元素 的 顺序 ” 字 段 中 ， 选择 “ 任意 ” 。
+40 . 单击 “ 操作窗 格 ” 上 的 “ 设置 ” 。
+# # # &lt ; a name = & quot ; remove-access-to-a-reporting-unit & quot ; &gt ; &lt ; / a & gt ; 取消 对 报告 单位 的 访问 权
+# # &lt ; a name = & quot ; define-diagnostic-types-for-nonconformance-processing & quot ; &gt ; &lt ; / a & gt ; 定义 未 达标 处理 的 诊断 类型
+* 其 编号 必须 是 唯一 的 。 可 在 “ 产品 编号 ” 字段 设置 编号 顺序 。 在 这 种 情况 下 ， 用户 不 必 输入 一 个 值 。
+2 . 选择 Litware 公司 提供 程序 。
+& # 124 ; 核准 特定 采购 类别 的 供应商 & # 124 ; 全局 & # 124 ;
+# # &lt ; a name = & quot ; my-business-processes-workspace & quot ; &gt ; &lt ; / a & gt ; 我 的 业务 流程 工作 区
+19 . 单击 “ 批量 更改 ” 。
+1 . 转到 “ 运输 管理 ” & gt ; “ 设置 ” & gt ; “ 分级 ” & gt ; “ 附属 分配 ” 。
+46 . 单击 “ 确定 ” 。
+18 . 单击 “ 审核 ” 。
+4 . 在 “ 仓库 ” 字段 ， 单击 下 拉 按钮 以 打开 查找 。
+& # 124 ; 已 计费 收入 分析 & # 124 ; 总 应收账 款 、 按 法人 分类 的 总 应收账 款 、 按 季度 分类 的 总 应收 账款 和 应收 账款 帐户 的 余额 &lt ; blockquote &gt ; & # 91 ; ! NOTE & # 93 ; 此 信息 不 包括 应收 账款 会计 科目 的 期初 余额 。 它 显示 过帐 到 应收 账款 的 新 交易 记录 的 总计 。 & lt ; / blockquote &gt ; & # 124 ;
+以下 是 ProdRouteTrans 表 的 示例 。
+8 . 在 “ 兑换 排名 ” 字 段 中 ， 输入 一 个 数字 。
+3 . 提供 要 用 于 轻松 识别 条码 的 前 缀 。 例如 ， “ 22 ” 。
+9 . 在 “ 货币 ” 字 段 中 ， 键入 一 个 值 。
+- 资产 负债 表 、 资产 、 负债 和 权益 – 这些 主科目 用作 交易 记录 科目 ， 以 记录 法人 持有 或 赊欠 的 金额 。
+2 . 单击 “ 核实 职责 和 角色 ” 。
+& # 124 ; 创建 和 处理 普通 发票 & # 124 ; 全局 & # 124 ;
+& # 124 ; EUR-00012 颁发 欧盟 记账 证书 。 & # 124 ; 欧洲 & # 124 ;
+& # 124 ; 查询 可 扣减 费用 & # 124 ; 日本 & # 124 ;
+& # 124 ; GB-00002 创建 包括 要求 逆向 征收 增值税 的 物料 的 采购 订单 & # 124 ; 英国 & # 124 ;
+& # 124 ; 准备 一 个 法人 以 供 在 合并 流程 中 使用 & # 124 ; 全局 & # 124 ;
+& # 124 ; 定义 库存 盘点 流程 & # 124 ; 全局 & # 124 ;
+& # 124 ; 验证 生产 流和 版本 & # 124 ; 全局 & # 124 ;
+& # 124 ; 为 公共 部门 创建 高级 分类 帐 条目 & # 124 ; 全局 & # 124 ;
+& # 124 ; 成批 创建 销售 报价 单 & # 124 ; 全局 & # 124 ;
+# &lt ; a name = & quot ; create-and-associate-a-device & quot ; &gt ; &lt ; / a & gt ; 创建 和 关联 设备
+& # 124 ; & # 124 ; 付款 期限 & # 124 ; 定义 “ 应收 账款 ” 或 “ 应付 账款 ” 中 分配 给 销售 订单 、 采购 订单 、 客户 和 供应商 的 付款 期限 。 & # 124 ;
+& # 124 ; 手动 每 月 平均 成本 模型 & # 124 ; 在 Finance and Operations 中的 每 月 平均 成本 模型 & # 124 ;
+35 . 单击 “ 价格 组 ” 。
+该 过程 说明 了 如何 查看 积分 卡 信息 ， 以及 如何 调整 奖励 积分 点数 。 创建 此 任务 的 演示 数据 公司 是 USRT 。 此 任务 是为 “ 零售 业务 经理 ” 角色 或 “ 客服 服务 经理 ” 角色 而 设计 的 。
+17 . 单击 “ 选择 产品 ” 。
+& # 124 ; B2 & # 124 ; 15 & # 124 ; 等级 & # 124 ; 15 & # 124 ;
+66 . 单击 “ 绑定 ” 。
+1 . 在 “ 物料 编号 ” 字 段 中 ， 输入 或 选择 一 个 值 。
+32 . 在 “ 名称 ” 字 段 中 ， 键入 “ 供应商 ” 。
+4 . 单击 “ 类别 ” 。
+& lt ; li & gt ; 右 箭头 和 左 箭头 &lt ; / li & gt ;
+24 . 改变 登记 类型 。
+5 . 在 “ 期间 代码 ” 字 段 中 ， 输入 或 选择 一 个 值 。
+4 . 在 “ 核算 生效 日期 ” 字 段 中 输入 日期 。
+8 . 转到 “ 应付 账款 ” & gt ; “ 付款 设置 ” & gt ; “ 现金 折扣 ” 。
+- 确保 存在 所需 的 * * 度量 单位 * * 的 映射 。
+- 并行 查看 银行 对 账单 和 Finance and Operations 银行 交易 记录 。
+48 . 在 “ 帮助 ” 字 段 中 ， 输入 “ 银行 帐户 ” 。
+* 打开 当前 ER 提供 商 Litware 公司 的 ER 存储 库列表 。
+* 示例 ： US-001
+& # 124 ; 10001 & # 124 ; 薪金 & # 124 ; 成本 元素 & # 124 ;
+& # 124 ; 组织 & # 124 ; 首席 执行官 & # 124 ; 产业 组织 大会 & # 124 ; IT & # 124 ; CC003 & # 124 ;
+# # # # # &lt ; a name = & quot ; edit-and-save-personalized-justification-documents & quot ; &gt ; &lt ; / a & gt ; 编辑 并 保存 个性化 的 理由 文档
+17 . 在 “ 描述 ” 字 段 中 ， 输入 “ 银行 代号 ” 。
+53 . 在 “ 描述 ” 字 段 中 ， 输入 “ 交易日 期 ” 。
+10 . 在 “ 主题 ” 字 段 中 ， 键入 一 个 值 。
+- * * 强制 * * ： 工作 人员 将 继续 收到 具有 更 早 的 批次 可 供 领取 的 消息 。
+title : 站点 覆盖 范围 的 主 计划 ， 仓库 非必需
+& # 124 ; 资产 负债表 – 默认 & # 124 ; 查看 组织 的 年度 财务 状况 。 & # 124 ;
+9 . 点击 “ 隐藏 ” 。
+* 请 注意 创建 的 用来 供应 估计 生产 订单 的 M0001 的 看板 。
+在 您 可以 创建 调查 表 、 回答 和 问题 之前 ， 必须 具备 某些 必备 项 。 但是 ， 并 非 所有 必备 项 都 是 完整 功能 必需 的 。
+# # &lt ; a name = & quot ; define-working-times & quot ; &gt ; &lt ; / a & gt ; 定义 工作 时间
+从 列表 中 ， 您 可以 查看 以下 页面 ：
+6 . 单击 “ 设置 ” 。
+- 右键 单击 应 删除 的 工作 表行 旁边 的 行号 ， 然后 选择 * * 删除 * * 。
+& # 124 ; 方法 & # 124 ; 用途 & # 124 ; 物料 交易 记录 的 消耗 & # 124 ;
+title : 预算 计划 概览
+- & # 91 ; 职位 预测 & # 93 ; ( position-forecasting.md )
+在 * * 资金 * * 页 上 ， 可 查看 促销 资金 的 详细 信息 。
+8 . 在 “ 描述 ” 字 段 中 ， 键入 “ 维度 数据 映射 ” 。
+58 . 在 树 中 ， 选择 “ 维度 \ 主 科目 和 维度 ” 。
+- 1002 ， 因为 到期日 期 7 月 20 日 不 在 付款 日期 范围 内 。
+# # &lt ; a name = & quot ; configuring-a-workflow-for-purchase-requisitions & quot ; &gt ; &lt ; / a & gt ; 配置 采购 申请 的 工作 流
+也 可以 一次性 过 帐列表 中的 所有 支出 报表 。 选择 所有 支出 报表 ， 然后 选择 * * 过 帐 * * 。
+& # 124 ; 应付 帐款 ( Fabrikam ) & # 124 ; 600.00 & # 124 ; & # 124 ;
+# # &lt ; a name = & quot ; exclude-users-from-automatic-role-assignment & quot ; &gt ; &lt ; / a & gt ; 将 用户 从 自动 角色 分配 中 排除
+在 您 选择 一 个 选 项 后 ， * * 薪酬 结构 * * 页 将 打开 ， 并且 ， 您 可以 对 新 的 薪酬 网格 或 现有 薪酬 网格 进行 更改 。
+* 此 页 自动 将 收款 代理 添加 到 一 个 收款 团队 。 在 “ 应收 账款 参数 ” 页 的 “ 团队 ” 字 段 中 所 选择 的 团队 就 是 收款 代理 添加 的 团队 。 如果 未 选择 团队 ， 则 将 自动 创建 一 个 名 为 “ 收款 ” 的 新 团队 ， 同时 收 款 代理 也 添加 到 该 团队 。
+title : 人力 资源
+3 . 在 “ 操作窗 格 ” 上 单击 “ 模型 ” 。
+& # 124 ; 四月 & # 124 ; 750 & # 124 ;
+& # 124 ; 减少 值 & # 124 ; 如果 同意 受益人 和 主要 审核 ， 则 减少 货币值 。 & # 124 ;
+* 在 此 示例 中 ， 您 正在 更新 特定 客户 的 价格 ， 这 意味 着 您 需要 选择 表格 。 如果 您 正在 更新 产品 的 目录 价格 ， 您 可以 选择 “ 全部 ” ， 如此 新 价格 将 对 所有 客户 有效 。 如果 您 正在 区分 不同 客户 细分 的 价格 ， 则 您 可以 选择 组 。 若 要 选择 “ 组 ” ， 您 必须 设置 “ 客户 价格 组 ” 。
+& # 124 ; 段落 2 & # 124 ; 定额 & # 124 ; 支出 & # 124 ;
+title : 总帐 的 外币 重估
+1 . 转至 “ 项目 管理 与 核算 &gt ; 设置 &gt ; 价格 & gt ; 成本价 ( 工时 ) ” 。
+17 . 在 “ 描述 ” 字 段 中 ， 输入 预缴 税金 组 的 名称 。
+1 . 转到 “ 仓库 管理 ” & gt ; “ 设置 ” & gt ; “ 集装箱 ” & gt ; “ 集装箱 生成 模板 ” 。
+# # &lt ; a name = & quot ; reports-and-inquiries & quot ; &gt ; &lt ; / a & gt ; 报表 和 查询
+4 . 在 “ 新建 ” 字 段 中 ， 输入 “ 基于 数据 模型 付款 模型 的 格式 ” 。
+* 新建 付款 日记 帐 。
+& # 124 ; & # 124 ; 按物料组 分类 的 库存 周转率 & # 124 ;
+& # 124 ; 类别 层次 结构 （ 已 分配 给 角色 成本 管理 ） & # 124 ; 类别 层次 结构 ， 类别 级别 & # 124 ;
+# # &lt ; a name = & quot ; copy-service-template-lines-into-a-service-agreement & quot ; &gt ; &lt ; / a & gt ; 将 服务 模板行 复制 到 服务 协议
+10 . 在 “ 提前 天数 ” 字 段 中 ， 输入 “ 30 ” 。
+6 . 在 “ 约束 值 ” 字 段 中 ， 输入 一 个 数字 。
+1 . 转到 “ 仓库 管理 参数 ” 。
+- ER 配置 ：
+& # 124 ; 净额 & # 124 ; 271.60 & # 124 ; 221.52 & # 124 ; 22.61 % & # 124 ; 失败 & # 124 ;
+- 在 “ 物料 价格 容差 组 ” 页 上 ， 设置 物料 价格 的 容差组 。
+2 . 在 “ 存储 维度 组 ” 字 段 中 ， 输入 或 选择 一 个 值 。
+1 . 转至 “ 零售 和 商业 ” & gt ; “ 查询 和 报表 ” & gt ; “ 销售 报表 ” & gt ; “ 组织 销售 报表 ” 。
+在 需求 分解 过程 中 ， 如果 某 一 物料 具有 “ 生产 ” 这一 默认 订单 类型 ， 计划 引擎 将 基于 站点 查 找 有效 的 物料 清单 版本 。
+若 要 打印 一 个 财务 报表 ， 在 操作 窗格 中 ， 单击 * * 打印 * * ， 然后 按照 一个 或 多 个 以下 步骤 来 设置 打 印选 项 ：
+1 . 单击 “ 显示 筛选 器 ” 。
+# &lt ; a name = & quot ; accounting-distributions-and-subledger-journal-entries-for-vendor-invoices & quot ; &gt ; &lt ; / a & gt ; 会计 分配 和 供应商 发票 的 子分类 日 记帐 条目
+10 . 选择 重复 执行 模式 。
+11 . 展开 “ 银行 帐户 信息 ” 部分 。
+title : 删除 退货 单
+& # 91 ; 计划 您 的 会计 科目 表 & # 93 ; ( plan-chart-of-accounts.md )
+4 . 在 “ 尺寸 ” 字 段 中 ， 输入 或 选择 一 个 值 。
+46 . 单击 “ 测试 ” 。
+# # &lt ; a name = & quot ; configure-the-application & quot ; &gt ; &lt ; / a & gt ; 配置 应用 程序
+* 选择 值 GBSI OPER 。
+title : 零售 渠道 的 会计 集成
+# # # &lt ; a name = & quot ; ipc-built-in & quot ; &gt ; &lt ; / a & gt ; IPC （ 内 置 ）
+& # 124 ; HP & # 124 ; F7M67AA & # 124 ; OPOS & # 124 ; 带 电 USB & # 124 ;
+& # 124 ; 生产 废料 & # 124 ; 输入 每 个 物料 清单 ( BOM ) 行 在 生产 过程 中 产生 的 废品 数量 。 & # 124 ;
+& lt ; td &gt ; 开始 位置 盘点 。 工作 人员 必须 盘点 一个 位置 的 所有 物料 。 如果 盘点 的 结果 少于 预期 数量 ， 缺失 的 数量 将 视为 损失 。 & lt ; / td &gt ;
+& # 124 ; 挑选 & # 124 ; 领取 物料 时 要求 确认 。 & # 124 ;
+- & # 91 ; 增值税 客户 发票 常见 问题 & # 93 ; ( apac-chn-tax-integration-vat-customer-invoices.md )
+- & # 91 ; 为 仓库 工作 设置 移动 设备 & # 93 ; ( configure-mobile-devices-warehouse.md )
+3 . 切换 “ 详细 信息 ” 部分 的 展开 项 。
+3 . 在 树 中 ， 选择 “ 财务 维度 示例 模型 \ 包含 可 水平 扩展 范围 的 示例 报表 ” 。
+2 . 展开 “ 期间 产能 事实 资料箱 ”
+& lt ; td &gt ; 如果 您 从 项目 创建 物料 需求 ， 可以 使用 此 方法 采购 物料 。 & lt ; / td &gt ;
+您 可以 使用 Finance and Operations 来 可视化 和 修改 基准 预测 。 手动 调整 必须 授权 ， 然后 预测 才 能 用 于 计划 。
+10 . 我们 具有 多 个 系统 实例 。
+19 . 单击 “ 发票 ” 。
+2 . 单击 “ 结果 ” 。
+2 . 在 “ 操作 ” 字 段 中 ， 选择 一个 “ 固定 薪酬 ” 操作 类型 “ 雇用 / 再 雇用 ” ， 说明 雇员 薪酬 的 变化 。
+* 此 选 项 用 于 按 库存 交易 的 发货 状态 筛选 。 例如 ， 您 可以 为 “ 已 拣货 ” 和 “ 物理 保留 ” 状态 创建 日记帐 行 。
+& # 124 ; * * 弃用 / 移除 的 原因 * * & # 124 ; 已 被 电子 消息 可 配置 功能 取代 。 & # 124 ;
+& # 124 ; * * 弃用 / 移除 的 原因 * * & # 124 ; 有限 使用 & # 124 ;
+# # # &lt ; a name = & quot ; worker-reminders-in-human-resources & quot ; &gt ; &lt ; / a & gt ; 人力 资源 中的 工作 人员 提醒
+# # # &lt ; a name = & quot ; malaysia-and-singapore-bank-cash-flow-report & quot ; &gt ; &lt ; / a & gt ; 马来西亚 和 新加坡 银行 现金 流量 报表
+# &lt ; a name = & quot ; release-a-dimension-based-product-master & quot ; &gt ; &lt ; / a & gt ; 发布 基于 维度 的 基础 产品
+9 . 在 “ 目标 ” 字 段 中 ， 键入 一 个 值 。
+42 . 在 树 中 ， 展开 “ 内部 统计 \ 数据 : 序列 ” 。
+# &lt ; a name = & quot ; centralized-payments-for-accounts-receivable & quot ; &gt ; &lt ; / a & gt ; 应收 账款 的 集中 付款
+20 . 在 “ 描述 ” 字 段 中 ， 键入 一 个 值 。
+title : 项目 开票
+6 . 在 “ 运行 报表 的 时间 ” 字 段 中 ， 选择 应该 运行 报表 的 时间 。 如果 您 输入 的 时间 早于 当前 系统 时间 ， 报表 将 在 下 一 个 计划 日期 运行 。
+& # 124 ; 10001 & # 124 ; 电 & # 124 ;
+# # &lt ; a name = & quot ; why-cant-i-change-the-costs-for-a-budget-cost-element-on-the-compensation-group-page & quot ; &gt ; &lt ; / a & gt ; 为什么 无法 更改 薪酬 组页 中的 预算 成本 元素 的 成本 ？
+- 支持 有 差异 的 客户群 的 服务 级别 协议 。
+* 输入 事故 发生 时 ， 该 工作 人员 正在 执行 的 作业 或 任务 。 示 例 ： 装箱
+本 主题 提供 了 175 % 余额 递减法 折旧 方法 的 概览 。
+2 . 可 将 “ 扩展 分类 日 记帐 ” 字段 设置 为 “ 是 ” 或 “ 否 ” 。 如果 设置 为 “ 是 ” ， 报表 输出 将 不同 。
+2 . 单击 “ 重复 执行 ” 。
+37 . 在 树 中 ， 展开 “ 存档 \ & lt ; 关系 ” 。
+# # # &lt ; a name = & quot ; examples-of-ascending-and-descending-column-values & quot ; &gt ; &lt ; / a & gt ; 升序 和 降 序列值 的 示例
+有关 详细 信息 ， 请 参阅 & # 91 ; 会计 分配 和 普通 发票 的 子分类 日 记帐 条目 & # 93 ; ( accounting-distributions-subledger-journal-entries-vendor-invoices.md ) 。
+5 . 在 树形 图 中 ， 请 选择 “ 角色 \ 机器 操作员 ” 。
+title : 更正 普通 发票
+& # 124 ; 步骤 & # 124 ; 入口 点 & # 124 ; 说明 & # 124 ;
+* 选择 站点 1 ， 因为 仓库 13 位于 站点 1 。
+# # &lt ; a name = & quot ; can-i-run-more-than-one-trace-and-then-compare-the-details & quot ; &gt ; &lt ; / a & gt ; 可 不 可以 同时 进行 多 个 跟踪 并 比较 详细 信息 ？
+* 选择 物料 编号 A0002 ， HDMI 12 & apos ; 电缆 。
+与 生产 流中 的 其他 活动 一样 ， 已 转包 活动 可以 消耗 和 供应 库存 、 非 库存 （ 在 制品 ， \ & # 91 ; WIP \ & # 93 ; ） 和 半成品 物料 和 产品 。 在 任何 情况 下 ， 安排 和 执行 已 转包 活动 的 流程 都 相同 。 此外 ， 这些 流程 还 与 内部 工作 的 流程 相同 。
+# # &lt ; a name = & quot ; define-journal-names & quot ; &gt ; &lt ; / a & gt ; 定义 日 记帐 名称
+7 . 展开 或 折叠 “ 流程 ” 部分 。
+2 . 选择 一 位 有 余额 的 客户 。
+& # 124 ; 设置 OIOUBL 电子 开票 & # 124 ; 丹麦 & # 124 ;
+& # 124 ; 设置 最小 - 最 大 补货 流程 & # 124 ; 全局 & # 124 ;
+11 . 选择 您 希望 用来 保存 任务 录制 的 方式 。
+& lt ; td &gt ; 正 在 过 帐 & lt ; / td &gt ;
+18 . 在 “ 名称 ” 字 段 中 ， 键入 “ 附加 文件 ” 。
+- & # 91 ; 创建 工作 流 & # 93 ; ( create-workflow.md )
+& # 124 ; & # 124 ; 生产性 能 Power BI 报表 & # 124 ; 是 & # 124 ; 无 & # 124 ;
+17 . 展开 “ 财务 报表 ” 快速 选 项 卡 。
+- 工作 订单 类型 ： 成品 入库
+- 供应商 的 VAT ID 登记
+& # 124 ; ER 配置 格式 以 执行 盘点 和 合计 （ 第 2 部分 ： 配置 计算 ） & # 124 ; 德国 & # 124 ;
+& # 124 ; 向 产品 添加 图像 & # 124 ; 全局 & # 124 ;
+& # 91 ; 新 的 或 更新 任务 指南 已 推出 （ 2016 年 5 月 ） & # 93 ; ( new-updated-task-guides-available-may-2016.md )
+# # &lt ; a name = & quot ; how-do-i-transmit-a-payment-file-to-the-bank & quot ; &gt ; &lt ; / a & gt ; 如何 将 付款 文件 发送 到 银行 ？
+title : 制造 执行 的 登记
+- * * 项目 类型 ： * * 时间 和 材料
+- 显示 名称 - 定义 将 显示 为 Finance and Operations 的 链接 的 名称 。 此 数据 当前 没有 翻译 。
+title : 销售 订单 的 精益 限定 标准
+18 . 单击 “ 添加 ” 以 打开 下拉 对话 框 。
+9 . 在 “ 银行 文档 类型 ” 字 段 中 ， 选择 “ 保函 ” 。
+1 . 转至 “ 零售 和 商业 ” & gt ; “ 库存 管理 ” & gt ; “ 补货 ” & gt ; “ 产品 包装 ” 。
+27 . 折叠 “ 工会 ” 部分 。
+& # 124 ; & # 124 ; & # 124 ; 欧盟 销售 清单 （ 德国 ） & # 124 ; 德国 欧盟 销售 清单 TXT 格式 & # 124 ;
+& # 124 ; & # 124 ; & # 124 ; 冲销 费用 销售 清单 & # 124 ; 冲销 费用 销售 清单 格式 & # 124 ;
+13 . 单击 “ 更新 匹配 状态 ” 。
+& gt ; 在 行 定义 中 使用 * * CAL * * 格式 代码 时 ， 您 不 能 向下 钻取 到 交易 记录 明 细 。
+title : 创建 服务 对象 关系
+- 使用 * * 包括 实际 成本 * * 选 项 时 的 加权 平均 日期 汇总 结算
+& lt ; td &gt ; 已 取消 &lt ; / td &gt ;
+11 . 在 “ GTIN ” 字 段 中 ， 键入 一 个 值 。
+1 . 转到 “ 运输 管理 ” & gt ; “ 设置 ” & gt ; “ 评级 ” & gt ; “ 中心 附加 费 ” 。
+& # 124 ; 在 云 中 创建 可 从 许多 设备 访问 的 基于 Web 的 解决 方案 。 & # 124 ; 不可用 & # 124 ; Dynamics AX 的 当前 版本 是 以 新 的 基于 Web 的 客户 端 和 客户 端 框架 为 基础 的 。 & # 124 ; 您 可以 为 您 的 最终 用户 提供 代下 一 解决 方案 。 & # 124 ;
+& lt ; td &gt ; 将 模式 用于 增强 窗体 的 开发 经验 。 & lt ; / td &gt ;
+& lt ; td &gt ; 这 将 统一并 简化 欧盟 销售 清单 报告 的 配置 。 舍入 设置 的 调整 不 再 需要 开发 工作 。 & lt ; / td &gt ;
+& lt ; li & gt ; 跟踪 给定 商店 或 商店 组 的 班次 状态 。 & lt ; / li & gt ;
+& lt ; li & gt ; 该 停止 对 MPOS （ 传统 设备 ） 的 未 授权 远程 使用 。 & lt ; / li & gt ;
+& # 124 ; 实施 和 维护 两 层 体系 结构 。 & # 124 ; 数据 导出 / 导入 框架 能 让 您 在 AX 2012 和 第三 方 系统 之间 移动 数据 。 & # 124 ; 创建 了 数据 实体 可 提高 对 两 层 体系 结构 的 支持 。 & # 124 ; 数据 实体 和 OData 应用 程序 提供 一 个 抽象 层 ， 使 两 层 方案 更 易于 实施 和 维护 。 & # 124 ;
+15 . 在 “ 交易 类型 ” 字 段 中 ， 选择 一 个 选 项 。
+# &lt ; a name = & quot ; associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge & quot ; &gt ; &lt ; / a & gt ; 将 燃油 指数 作为 附属 费用 与 承运 人 关联
+3 . 在 “ 期间 开始 ” 字 段 中 ， 输入 日期 。
+* 选择 “ 成本 对象 维度 层次 结构 ” 之后 ， 展开 “ 成本 元素 维度 层次 结构 ” 以 查看 所需 成本 值 。 例如 ， 可以 将 层次 结构 展开 到 “ 制造 开销 ” 以 查看 值 。
+6 . 在 “ 目标 仓库 ” 字 段 中 ， 输入 或 选择 一 个 值 。
+2 . 单击 “ 查看 历史 记录 ” 。
+* 在 “ 数量 ” 字 段 中 ， 为 此 示例 选择 “ 订购 数量 ” 。 这 确保 处理 随 订单 行 创建 的 整个 订购 数量 的 装运 。
+8 . 展开 “ 关系 ” 部分 。
+19 . 单击 “ 应用 ” 。
+# # # &lt ; a name = & quot ; all-vendor-invoices-list-page & quot ; &gt ; &lt ; / a & gt ; 所有 供应商 发票 列 表页
+命名 空间 ： Microsoft WebView2 \
+# # # 查看 来源 详细 信息
+& lt ; td &gt ; 在 基元值 或 JSON 值 （ 如果 已 请求 ） 的 情况 下 的 远程 对象 值 。 & lt ; / td &gt ;
+如果 设置 ， 则 将 显示 为 & quot ; 未 发生 导航 & quot ; ， 并且 当前 页面 的 内容 将 保持 不 变 。 出于 性能 原因 ， 可能 会 发生 & quot ; 获取 HTTP 请求 & quot ; ， 而 主机 响应 。 这 意味 着 可以 在 导航 的 请求 中 设置 和 使用 cookie 。
+& gt ; 取消 停靠 DevTools
+* 在 生成 过程 中 调整 图像 大小 。
+& gt ; ! & # 91 ; 删除 不 必要 的 JavaScript 工作 后 的 审核 报告 & # 93 ; & # 91 ; ImageReport6 & # 93 ;
+# EdgeHTML 17 中的 新 增 功能
+由 数 组 引用 的 arrayBuffer 的 起始处 的 偏移 量 （ 以 字节 为 单位 ） 。
+选择 一个 函数 以 在 & quot ; * * 源 * * & quot ; 面板 中 查看 定义 。
+DevToolsProtocolEventReceived 事件 的 事件 参数 。
+& # 124 ; 计时器 ID & # 124 ; 计时器 ID 。 & # 124 ;
+为 MoveFocusRequested 事件 添加 事件 处理 程序 。
+跳出 & # 124 ; ` Shift ` + ` F11 `
+主机 可以 替代 请求 、 响应 标头 和 响应 内容 。
+& gt ; 名 为 & quot ; 社交 组织 & quot ; 的 组织 拥有 域 ` social.example ` 和 ` social-videos.example ` 。
+d . 注意 显示 的 计算机 IP 地址 和 连接 端口 （ 50443 ） 。
+虽然 Microsoft Edge 扩展 无法 在 Microsoft Edge 之外 运行 ， 但 它们 的 管理 可能 会 在 Windows 内 发生 。 例如 ， 用户 可以 在 & quot ; 设置 & quot ; 应用 中 管理 其 扩展 ：
+CoreWebView2NavigationStartingEventArgs & # 124 ; NavigationStarting 事件 的 事件 参数 。
+断开 连接 & # 124 ; 互联网 连接 已 丢失 。
+权限 请求 的 状态 ， 即
+# 添加 、 移动 和 删除 Microsoft Edge 的 扩展
+激活 / 停 用 页面 上 的 所有 断点 。
+& lt ; td &gt ; 源代码 中的 位置 。 & lt ; / td &gt ;
+title : 覆盖 Microsoft Edge DevTools 中的 用户 代理 字 符串
+& # 124 ; & # 124 ; 要求 & # 124 ; 详细 信息 & # 124 ;
+* 要 向 * * web 视图 * * 中的 文档 公开 的 对象 。
+* * 隔离 选定 的 元素 * * 筛选器 实质上 是 一 个 中的 三 个 按钮 。 此 按钮 下面 有 两 个 复选框 ： 一个 是 & quot ; 显示 所有 父 级 & quot ; 和 & quot ; 仅 保留 具有 新 堆栈 上 下文 的 父 级 & quot ; 。
+& lt ; td &gt ; 已 分离 的 帧 的 Id 。 & lt ; / td &gt ;
+如果 CanGoForward 更改 值 ， 将 引发 HistoryChanged 事件 。
+要 投影 的 WinRT 命名 空间 。
+& quot ; * * 元素 * * & quot ; 面板 可 帮助 你 ：
+& gt ; & quot ; 样式 & quot ; 选 项 卡位 于 DOM 树 的 右侧
+& gt ; ! & # 91 ; 主页 & # 93 ; & # 91 ; ImageCssExternal10 & # 93 ;
+& lt ; td &gt ; 突出 显示 外观 的 描述 符 。 & lt ; / td &gt ;
+& lt ; td &gt ; & quot ; 内容 & quot ; 框 突出 显示 & quot ; 填充 颜色 & quot ; 。 默认 值 为 透明 。 & lt ; / td &gt ;
+& quot ; * * 样式 * * & quot ; 窗格 现在 将 伪 元素 分组 在 其 自己 的 标题 下 ， 不 再 显示 其 内容 ， 如带 删除 线 。
+# CoreWebView2CompositionController 类 的 WebView2
+获取 指针 事件 的 TouchOrientation 。
+# # # # 1.5.3 与 第三 方 共享 数据
+# # 画图 和 复合
+删除 以前 使用 add _ NavigationCompleted 添加 的 事件 处理 程序 。
+# # # 跳出 代码 行
+请 参阅 & # 91 ; 从 任意 页面 运行 代码 片段 & # 93 ; & # 91 ; DevToolsJavascriptSnippets & # 93 ; 以 了解 详细 信息 。
+& gt ; ! & # 91 ; 从 控制台 与 sessionStorage 交互 & # 93 ; & # 91 ; ImageSessionStorageConsole & # 93 ;
+收到 * * 付款 响应 * * 后 ， 网站 将 向 其 付款 处理者 提交 付款 信息 。 在 处理 付款 时 ， 浏览器 将 显示 一 个 微调 框 页面 。
+& gt ; 在 & quot ; 通知 & quot ; 窗格 中 查看 事件 的 详细 信息
+& # 124 ; ` JsErrorInProfileCallback ` & # 124 ; 脚本 上下文 位 于 配置 文件 回调 的 中间 。 & # 124 ;
+7 . 打开 Microsoft Edge 并 验证 为 区域 设置 定义 的 字 符串 是否 按 预期 方式 显示 。
+创建 新 的 JavaScript 函 数 。
+get _ CanGoBack DocumentStateChanged 事件 更改 值 。
+表示 3D 变换 的 矩阵 。
+只要 Chakra 运行 时 存储 在 本地 变量 或 参数 （ 即 堆栈 ） 上 ， 它 就 会 自动 跟踪 JsRef 引用 。 将 JsRef 存储 在 堆栈 之外 的 其他 位置 需要 调用 JsAddRef 和 JsRelease 来 管理 对象 的 生存 期 ， 否则 垃圾 回收器 可能 会 在 对象 仍 在 使用 时 释放 该 对象 。
+有关 更 多 详细 信息 ， 请 参阅 & # 91 ; 在 JavaScript 中 使用 Windows 运行 时 & # 93 ; & # 91 ; WindowRuntimeUsingJavascript & # 93 ; 。
+图 2 ： ` $ _ ` 评估 新 命令 时 的 更改
+对于 JsMemoryAllocate 事件 ， 返回 true 将 允许 运行 时 继续 分配 。 返回 false 表示 分配 请求 被 拒绝 。 对于 其他 分配 事件 ， 将 忽略 返回 值 。
+& # 124 ; CSS3115 & # 124 ; & quot ; @ font 面 无法 加载 无效 的 OpenType 字体 。 & quot ; & # 124 ; 字体 正面 对于 此 用途 无效 。 & # 124 ; 获取 当前 和 有效 字体 的 权限 或许 可 证 。 & # 124 ;
+& # 124 ; HTTP409 & # 124 ; 协调 & # 124 ; 由于 与 资源 的 当前 状态 发生 冲突 ， 无法 完成 请求 。 & # 124 ;
+& # 124 ; XML5611 & # 124 ; & quot ; 预期 & quot ; = & quot ; 。 & quot ; & # 124 ;
+& # 124 ; XML5667 & # 124 ; & quot ; 已 超过 最大 嵌套 元素 深度 。 & quot ; & # 124 ;
+& gt ; 从 & quot ; 命令 & quot ; 菜 单打 开 & quot ; 覆盖 范围 & quot ; 选 项 卡
+1 . 选中 或 取消 选中 声明 旁边 的 复选 框 。 取消 选中 某个 声明 后 ， DevTools 将 其 置于 外 ， 以 指示 它 不 再 处于 活动 状态 。
+# Microsoft Edge （ EdgeHTML ） 开发 人员 工具
+# # 记录 代码 覆盖率
+& gt ; ! & # 91 ; 使用 & quot ; 命令 & quot ; 菜 单 禁用 JavaScript & # 93 ; & # 91 ; ImageDisableJS & # 93 ;
+有关 详细 信息 ， 请 参阅 & # 91 ; 如何 从 VS 代码 调试 Microsoft Edge & # 93 ; & # 91 ; VisualStudioCodeDebuggerEdgeExtension & # 93 ; 。
+& gt ; ` Portrait upside down ` 从 & quot ; * * 方向 * * & quot ; 列表 中选 择
+* * 已 接收 * * & # 124 ; 由 服务器 发送 的 响应 的 大小 （ 不 是 针对 缓存 的 响应 进行 计算 ）
+下面 介绍 了 如何 使用 * PWA 生成 器 * 生成 用 于 上 载到 Windows 开发 人员 中心 的 应用 包 。
+& # 124 ; 描述 & # 124 ; 主要 & # 124 ; 辅助 边 框 & # 124 ;
+& # 124 ; 选 项 卡 & # 124 ; 提供 对 API 的 访问 权限 ` tabs ` ， 以便 与 浏览器 的 选 项 卡 系统 交互 。 这 允许 在 浏览器 中 创建 、 修改 和 重新 排列 选 项 卡 ， 包括 与 每 个 选 项 卡 相关联 的 Url 。 & # 124 ;
+# # 常规 可用性
+返回 - 1 、 0 或 1 ， 具体 取决于 version1 是否 小于 、 等于 或 大于 version2 。
+title : 在 JavaScript 中 使用 Windows 运行 时
+# DevTools 协议 版本 0.1 发行 说明
+这 只 是 由 Puppeteer 和 的 自动化 和 测试 方案 所 支持 的 简单 示 例 ` puppeteer-core ` 。 有关 Puppeteer 及 其 工作 原理 的 详细 信息 ， 请 参阅 & # 91 ; Puppeteer & # 93 ; & # 91 ; & # 124 ; : : ref2 : : & # 124 ; Main & # 93 ; 。
+# 实时 监视 JavaScript 表达 式值 和 实时 表达 式
+# 远程 调试 Windows 10 设备 入门
+& # 124 ; 删除 所有 cookie & # 124 ; ` Ctrl ` + ` Shift ` + ` Del ` & # 124 ;
+2 . 在 网站 URL 上 运行 PWA 生成 器 ：
+* 仅 使用 能够 生成 源映射 的 preprocessors 。
+查看 & # 91 ; PushManager & # 93 ; & # 91 ; MDNPushManager & # 93 ; 界面 上 的 MDN 文档 和 & # 91 ; Web 推送 & # 93 ; & # 91 ; NPMWebPushUsage & # 93 ; 库 上 的 NPM 文档 ， 以 了解 有关 api 如何 工作 以及 各种 相关 选 项 的 详细 信息 。
+title : JsCreateContext 函 数 & # 124 ; Microsoft 文档
+& gt ; ! & # 91 ; 页面 窗格 & # 93 ; & # 91 ; ImagePage & # 93 ;
+1 . 使用 & # 91 ; 推 送 API & # 93 ; & # 91 ; MDNPushApi & # 93 ; 订阅 消息 服务
+& # 124 ; 显示 命令 菜单 & # 124 ; ` Ctrl ` + ` Shift ` + ` P ` & # 124 ; ` Command ` + ` Shift ` + ` P ` & # 124 ;
+* 当 请求 的 URL 与 你 提供 的 子字符串 匹配 时 触发 的 XHR 断点 。
+# # 步骤 1 ： 开始 新 提交
+& gt ; 代理 设置 适用于 每 个 网络 。
+打开 & quot ; * * 辅助 功能 * * & quot ; 窗格 ：
+title : 编写 自 定义 全 息 远程 处理 播放 器
+# # # &lt ; a name = & quot ; rotating-an-objectbr & quot ; &gt ; &lt ; / a & gt ; 旋转 对象 &lt ; br &gt ;
+& # 124 ; 手型 的 & quot ; Open & quot ; 姿势 （ 默认 值 ） & # 124 ; 8 & # 124 ; & # 124 ; & # 124 ;
+title : 4 . 使 场景 具有 交互性
+title : 显示 进度
+在 仍 选中 了 所有 LunarModuleParts 子 对象 的 情况 下 ， 添加 “ 音频 源 ” 组件 ， 然后 按 如下 所述 对 其 进行 配置 ：
+# # # &lt ; a name = & quot ; encouraging-three-dimensional-design-thinking-and-solutions & quot ; &gt ; &lt ; / a & gt ; 鼓励 三维 设计 思想 和 解决 方案
+全 息 影像 可以 有 许多 不同 的 外观 和 行为 。 有些 是 真实 的 、 坚实 的 ， 而 有些 则 是 cartoonish 和 ethereal 。 全 息 影像 可以 突出 显示 你 的 环境 中的 功能 ， 并且 它们 可以 是 应用 用户 界面 中的 元素 。
+& quot ; 环境 & quot ; 文件 夹 中的 文件 名将 用 在 & quot ; 位置 & quot ; 选取 器中 。 若 要 更改 环境 的 名称 ， 只 需 重 命名 环境 文件 名称 ， 然后 重启 混合 现实 门户 。
+# # &lt ; a name = & quot ; chapter-9--create-the-gazeinput-class & quot ; &gt ; &lt ; / a & gt ; 第9 章 – 创建 GazeInput 类
+* 蓝 牙 耳机 可能 会 干扰 运动 控制 器 。 建议 在 Windows Mixed Reality 会话 期间 取消 配对 或 关闭 蓝 牙 控制 器 。
+* 应用 程序 可能 需要 特定 的 图面 配置 ， 例如 两 个 大型 、 平整 、 相反 的 壁 ， 以 创建 全 息 的 镜像厅 。
+* 将 ASA 集成 到 共享 体验 ， 以 实现 多 设备 空间 配准
+1 ) OnConnected ： 成功 建立 到 设备 的 连接 后 触发 。
+* & # 91 ; 针对 Unity 的 性能 建议 & # 93 ; ( performance-recommendations-for-unity.md )
+下面 所述 的 所有 类型 都 驻 留在 ` Microsoft.MixedReality.SceneUnderstanding ` 命名 空间 中 。
+此 SpatialPointerPose 包含 根据 & # 91 ; 用户 的 当前 标题 & # 93 ; ( gaze-in-directx.md ) 放置 全 息 影像 所需 的 信息 。
+* 混合 现实 捕获 记录 将 从 仅 音频源 的 0.5-1 秒 开始 。
+* 概念 、 创建 、 集成 和 迭 代流 *
+* * * 向 右 （ 接近 数字 现实 ） 。 * * 用户 将 完全 体验 到 一 个 数字 环境 ， 并且 不 会 意识 到 其 周围 物理 环境 中 发生 的 情况 。
+可以 在 & # 91 ; HoloLens 仿真器 存档 & # 93 ; ( hololens-emulator-archive.md ) 页 上 找到 HoloLens 仿真器 的 发行 说明 和 旧 版本 。
+如果 Visual Studio 中的 调试 目标 列表 为 空 （ 例如 ， “ 启动 ” 是 唯一 选 项 ） ， 并且 你 已 遵循 上述 所有 故障 排除 步骤 ：
+* 应用 仍 可 更改 视区 大小 ， 其 方式 与 为 HoloLens 1 的 操作 方式 相同 。 这 不 会 导致 内存 在 GPU 上 重新 分配 ， 因此 它 可以 在 很 高 的 频率 下 进行 更改 ， 但 不 能 用于 减少 GPU 上 的 内存 压力 。
++ 选择 “ HoloLens ” 并 检查 “ 空间 感知 ” 。
+在 “ 层次 结构 ” 窗口 中 选择 “ Lunarcom ” 对象 ， 然后 在 “ 检查器 ” 窗口 中 ， 使用 “ 添加 组件 ” 按钮 将 “ Lunarcom 意向 识别 器 ( 脚 本 ) ” 组件 添加 到 Lunarcom 对象 中 ：
+然后 单击 “ 分配 资源 ” 按钮 ， 将 Azure 预测 资源 分配 到 应用 ：
+* 为 HoloLens 开发 配置 Unreal 项目
+8 . 查找 Azure 定位 点 （ 将 “ 火箭 发射器 ” 体验 定位 在 步骤 3 所述 的 位置 ） 。
+# # &lt ; a name = & quot ; expanding-your-teams-skills & quot ; &gt ; &lt ; / a & gt ; 拓展 团队 技能
+全 息 远程 处理 示例 应用 在 发布 配置 中 启用 了 Spectre 缓解 （ / Qspectre ） 。
+* 记 下 & quot ; 共 享 服务 控制 台 & quot ; 窗口 中 显示 的 IPv4 地址 。 此 IP 与 运行 服务 的 计算机 的 IP 相同 。
+# # &lt ; a name = & quot ; day-4---prototype & quot ; &gt ; &lt ; / a & gt ; 第4 天 - 原型
+* 内容 通常 应 2m ， 但 不 能 比 5 分钟 更 接近 1.25 或 更 远 。
+* 视图 的 user 字段 之外 的 相关 内容 可 通过 视觉 对象 和 / 或 音频 提示 来 发现 。
+然后 单击 “ 更新 集合 ” 按钮 以 应用 新 配置 ：
+* & quot ; * * 别名 * * & quot ; -深思熟虑 后 得出 的 ， 它 是 锯齿 、 锯齿 或 & quot ; 楼梯 段 & quot ; 的 边缘 与 现实 世界 之间 的 边缘 。 如果 使用 具有 高 细节 的 纹理 ， 则 会 加剧 此 效果 。 应映射 和 筛选 已 启用 纹理 。 请 考虑 在 对象 周围 创建 黑色 边 缘边 框 ， 以 淡化 全 息 影像 边缘 或 添加 纹理 。 尽可能 避免 精简 几何 。
+3 . 将 “ 手动 交互 触摸 ( 脚 本 ) ” 组件 添加 到 对象
+* 如果 游戏 需要 运动 控制 器 ， 但 通过 麦克风 接受 语音 输入 ， 请 选择 & quot ; Windows Mixed Reality 运动 控制 器 & quot ; 旁边 的 & quot ; 最小 硬件 & quot ; 复 选框 ， 但 & quot ; 麦克风 & quot ; 旁边 的 & quot ; 推荐 的 硬件 & quot ; 复选 框 。
+3 . 取消 订阅 InteractionSourceDetected 和 InteractionSourceLost 事件 。
+* & # 91 ; 使用 手指向 和 提交 & # 93 ; ( point-and-commit.md )
+* 环 回 ： 捕获 应用 音频 ： true 或 false （ 默 认为 false ）
+* 当 Unity 完成 生成 后 ， 将 显示 文件 资源 管理器 窗口 。
+* 在 & quot ; * * 检查器 * * & quot ; 面板 中 ， 找到 地球 材料 （ 底部 组件 ） 。
+Windows Mixed Reality 包含 许多 内置 应用 ， 例如 ：
+Lars Simkins ， MRDL surface 应用 后 的 高级 设计 人员 将 讨论 应用 的 设计 故事 和 技术 要点 。
+& # 124 ; 功能 & # 124 ; 说明 & # 124 ; 支持 的 最 大 值 & # 124 ; 文档 & # 124 ;
+问 - 我 在 AltspaceVR 中 找 不 到 该 活动
+下面 是 * * TagalongAction.cs * * 的 解决 方案 ：
+* 如何 在 Unity 中 创建 全息 应用 。
+# # &lt ; a name = & quot ; pairing-your-device & quot ; &gt ; &lt ; / a & gt ; 配对 设备
+* 使用 声音 提高 全 息 图 的 真实感 。
+# # # # &lt ; a name = & quot ; cpu-usage & quot ; &gt ; &lt ; / a & gt ; CPU 使用 情况
+1 . Vuforia 的 目标 跟踪器 识别 目标
+* 设计 针对 HoloLens 语音 引擎 进行 了 优化 的 语音 命令 。
+若 要 开始 使用 Unity 构建 混合 现实 应用 ， 请 先 & # 91 ; 安装 工具 & # 93 ; ( install-the-tools.md ) 。
+最 重要 的 步骤 是 确保 您 的 应用 程序 清除 为 透明 黑色 ， 而 不 是 清除 为 不 透明 的 黑色 。 在 Unity 中 ， 这 是 默认 情况 下 通过 MixedRealityToolkit 完成 的 ， 但是 如果 是 在 非 Unity 中 进行 开发 ， 则 可能 需要 更改 一行 。
+& lt ; td &gt ; 尚 不 支持 &lt ; / td &gt ;
+# # # &lt ; a name = & quot ; hololens-first-generation & quot ; &gt ; &lt ; / a & gt ; HoloLens （ 第一代 ）
+在 CPU 上 ：
+& # 91 ; 场景 理解 SDK 概述 & # 93 ; ( scene-understanding-SDK.md )
+# # &lt ; a name = & quot ; compile-dependenciesplugins-for-arm-processor & quot ; &gt ; &lt ; / a & gt ; 编译 ARM 处理器 的 依赖 项 / 插件
+然后 处理 DictationComplete 回 调 ：
+- 搜索 和 引用 内部 链接 和 书签 （ 指向 页面 内 特定 部分 的 链接 ） 。
+& # 124 ; & # 124 ; 移动 电话 号码 & # 124 ; 摄像机 & # 124 ;
+* 用 任意 名称 * * 将 场景 保存 * * 在 场景 文件 夹下
+# &lt ; a name = & quot ; 3-sharing-object-movements-with-multiple-users & quot ; &gt ; &lt ; / a & gt ; 3 . 与 多 个 用户 共享 对象 运动
+title : 案例 研究 - 创建 HoloTour 的 不可能 透视
+title : 语音 输入
+1 . 用户 执行 导致 应用 程序 代码 调用 * TouchScreenKeyboard * 的 操作
+等待 Unity 完成 添加 SDK 的 操作 ：
+在 本 部分 中 ， 你 要 将 Unity 项目 连接 到 在 上 一部分 中 创建 的 PUN 应用 程序 。
+* * 移动 * * 脚 本 是 需要 创建 的 下 一 个 脚 本 。 它 负责 ：
+QR 码 通过 Unreal 的 AR 跟踪 几何 系统 显示 为 跟踪 图像 。 若 要 实现 此 操作 ， 需 执行 以下 操作 ：
+& gt ; Azure 空间 定位 点 将 使用 Internet 来 保存 和 加载 定位 点 数据 ， 因此 请 确保 设备 已 连接 到 Internet 。
+- & # 91 ; 如何 在 混合 现实 应用 程序 中 使用 声音 & # 93 ; ( spatial-sound-design.md )
+在 本 章 中 , 你 还 将 找到 服务 密钥 , 你 可以 通过 它 调用 * Microsoft Graph * 来 访问 你 的 帐户 内容 。
+# # # &lt ; a name = & quot ; occluding-everything-but-the-virtual-hole & quot ; &gt ; &lt ; / a & gt ; Occluding 除 虚拟 洞 以外 的 所有 内容
+* 支持 新 的 PerceptionDevice Api （ Windows 10 11 月 2019 更新 ） 。
+# # # &lt ; a name = & quot ; 6-what-devices-are-they-using & quot ; &gt ; &lt ; / a & gt ; 6 . 它们 使用 哪些 设备 ？
+6 . 然后 添加 * 唤醒 （ ） * 方法 ， 在 类 初始化 时 将 调用 此 方法 。
+1 . 在 Azure 门户 中 选择 为 服务 实例 设置 的 区域 。
+# # # &lt ; a name = & quot ; 1-create-and-configure-the-user & quot ; &gt ; &lt ; / a & gt ; 1 . 创建 和 配置 用户
+通过 AppMain 中的 事件 处理 程序 ：
+* 由于 这 是 新 场景 ， 因此 需要 将 其 命名 为 。 名称 并 不 重要 ， 但 我们 使用 的 是 SharedMixedReality 。
+* 新 的 * 360 视频 * 应用 , 用于 发现 特选 选择 的 360 度 视频 。
+- 删除 了 ` Get-AzBatchNodeAgentSku ` 并 将 其 替换 为 ` Get-AzBatchSupportedImage ` 。
+Cmdlet ` Update-AzSqlServerVulnerabilityAssessmentSettings ` 已 替换 为 ` Update-AzSqlServerVulnerabilityAssessmentSetting `
+- “ New-AzureRmEventHubNamespaceAuthorizationRule ” cmdlet 已 删除 。 请 使用 “ New-AzureRmEventHubAuthorizationRule ” cmdlet
+- ` PSVirtualMachine ` 对象 的 顶级 属性 ` DataDiskNames ` 和 ` NetworkInterfaceIDs ` 已 从 输出 类型 中 删除 。 这些 属性 始终 在 ` PSVirtualMachine ` 对象 的 ` StorageProfile ` 和 ` NetworkProfile ` 属性 中 提供 ， 并且 以后 这 将 是 访问 它们 时 需要 使用 的 方式 。
+- 从 Blob 、 队列 和 文件 cmdlet 返回 的 类型 的 命名 空间 已 将 其 命名 空间 从 ` Microsoft.WindowsAzure.Storage ` 更改 为 ` Microsoft.Azure.Storage ` 。 虽然 根据 中断性 变更 策略 的 标准 ， 这 在 技术 上 不 属于 中断性 变更 ， 但 可能 需要 在 使用 存储 . Net SDK 提供 的 方法 的 代码 中 进行 一些 更改 ， 以便 与 这些 cmdlet 返回 的 对象 进行 交互 。
+然后 注册 该 呈现 器 ， 如下 所 示 ：
+& # 124 ; 参数 & # 124 ; & # 124 ;
+可以 通过 XCode IB 编辑 XIB 。
+# &lt ; a name = & quot ; extensibility---net-html & quot ; &gt ; &lt ; / a & gt ; 扩展性 - . NET HTML
+# &lt ; a name = & quot ; getting-started---net-image & quot ; &gt ; &lt ; / a & gt ; 入门 - . NET 映像
+& # 124 ; 所有 输入 & # 124 ; ac-input & # 124 ;
+title : 扩展性 - . NET 图像 呈现 SDK
+要 更改 此 设置 ， 请 执行 以下 操作 ：
+现在 可以 开始 & # 91 ; 设置 本地 Git 存储 库 & # 93 ; ( get-started-setup-local.md ) 了 。
+1 . 查看 对 . openpublishing.redirection.json 文件 的 更改
+title : 标签 和 项目 路线 图
+# # # &lt ; a name = & quot ; provisioning-the-device-with-required-packages & quot ; &gt ; &lt ; / a & gt ; 用 所需 的 包预配 设备
+2 . 将 Raspberry Pi 连接 到 外部 显示器 。
+相较于 以前 的 TPM 1.2 ， 更改 和 增强 功能 如下 所 示 ：
+* 如果 你 启用 Microsoft 帐户 ， 并且 你 有权 访问 最终 用户 数据 ， 则 在 最终 用户 删除 Microsoft 帐户 时 ， 你 必须 在 设备 上 启用 所有 最终 用户 的 Microsoft 帐户 数据 的 同时 删除 。
+本 文档 旨 在 为 此 版本 Windows 10 IoT 的 其他 内容 和 文档 提供 补充 。
+* 我 是否 已 提供 一 个 （ 仅 一 个 ） # 级 标题 （ 等同于 HTML 中的 H1 ） ？
+* ` IotSettings get uilanguage ` 显示 当前 UI 语言
+SPI 时钟 固定 在 4.8mhz 。 请求 的 SPI 时钟 将 被 忽略 。
+* 状态 从 & quot ; 未 连接 & quot ; 更改 为 & quot ; 已 连接 & quot ; 。
+# # # &lt ; a name = & quot ; using-the-shell & quot ; &gt ; &lt ; / a & gt ; 使用 shell
+# # &lt ; a name = & quot ; controlling-other-devices-and-app-services-from-an-iot-core-device & quot ; &gt ; &lt ; / a & gt ; 从 IoT Core 设备 控制 其他 设备 和 应用 服务
+一旦 要 临时 禁用 BitLocker ， 请 通过 IoT 设备 初始化 远程 PowerShell 会话 ， 并 运行 以下 命令 ： ` sectask.exe -disable ` 。
+将 StartupTask.cs 中的 代码 替换 为 此
+# &lt ; a name = & quot ; install-the-microsoft-quantum-development-kit-qdk & quot ; &gt ; &lt ; / a & gt ; 安装 Microsoft 量 子 开发 工具 包 ( QDK )
+* * 重要 提示 * * ： 若 要 使 图像 在 暗色 模式 下 正确 呈现 ， 必须 避免 使用 透明 胶片 。
+在 Linux 根 文件 系统 中 创建 、 修改 或 访问 的 任何 文件 都 遵循 标准 Linux 约定 ， 例如 将 umask 应用 到 新 创建 的 文件 。
+- 使用 复制 的 IP 地址 连接 到 任何 Windows 服务器 。
+# # &lt ; a name = & quot ; git-config-file-setup & quot ; &gt ; &lt ; / a & gt ; Git 配置 文件 设置
+如果 忘记 了 Linux 分发版 的 密码 ：
+使用 Azure 资源 管理器 可以 部署 和 管理 Azure 解决 方案 的 基础 结构 。 可 在 资源 组 中 组织 相关 的 资源 ， 并 使用 JSON 模板 部署 资源 。
+title : PidTagMessageSecurityLabel 规范 属性
+& gt ; 显示 当前 标记 为 软 删除 的 项目 , 即 它们 处于 & quot ; 已 删除 邮件 & quot ; 保留 时间 阶段 。
+title : 所有 邮件 的 收件 人 属性
+& # 91 ; MAPI 接口 & # 93 ; ( mapi-interfaces.md )
+Visio Services 包括 用 于 从 图表 中的 页面 或 形状 读取 注释 的 JavaScript api 。
+# &lt ; a name = & quot ; rightmargin-cell-text-block-format-section & quot ; &gt ; &lt ; / a & gt ; RightMargin 单元 格 （ “ Text Block Format ” 内容 ）
+# &lt ; a name = & quot ; error-handling-in-mapi & quot ; &gt ; &lt ; / a & gt ; MAPI 中的 错误 处理
+通讯簿 容器 通过 对 其 内容 表 应用 限制 来 建立 搜索 条件 。 有关 搜索 条件 和 通讯簿 容器 的 详细 信息 , 请 参阅 & # 91 ; 实施 高级 搜索 & # 93 ; ( implementing-advanced-searching.md ) 。
+title : RotationZAngle 单元 格 ( & quot ; 三维 旋转 属性 & quot ; 部分 )
+时间 ( 15 、 30 、 30 )
+有关 何时 设置 此 标志 以及 如何 在 客户 端中 实现 线程 安全 的 详细 信息 , 请 参阅 & # 91 ; MAPI 中的 线程 处理 & # 93 ; ( threading-in-mapi.md ) 。
+title : 示例 限制 代码
+- & # 91 ; 基本 身份 验证 & # 93 ; ( basic-authentication.md )
+title : E 单元 格 （ “ Geometry ” 内容 ）
+绿色 ( Sheet 4 ! FillForegnd
+# &lt ; a name = & quot ; prompt-cell-actions-section & quot ; &gt ; &lt ; / a & gt ; Prompt 单元 格 （ “ Actions ” 内容 ）
+添加 一些 客户 和 员工 后 ， 打开 & quot ; 问题 列 表 & quot ; 视图 并 开始 添加 问题 。 在 & quot ; 客户 & quot ; 框 中 键入 客户 的 名称 时 ， 将 出现 一个 或 多 个 客户 名称 ， 如 图 6 中 所 示 。
+* 表达 式 * 。 更新
+有关 详细 信息 , 请 参阅 将 & # 91 ; 表 单 安装 到 库 & # 93 ; ( installing-a-form-into-a-library.md ) 中 。
+包含 用户 地址 的 省 / 市 / 自治区 部分 。
+# &lt ; a name = & quot ; properties-collection-ado & quot ; &gt ; &lt ; / a & gt ; Properties 集合 ( ADO )
+& # 91 ; 状态表 和 状态 对象 &#93 ; ( status-table-and-status-objects.md )
+& gt ; 提供 属性 集 定义 和 对 相关 Microsoft Exchange Server 协议 规范 的 引用 。
+- 创建 或 编辑 资源 日历 。
+# &lt ; a name = & quot ; glue-cell-layers-section & quot ; &gt ; &lt ; / a & gt ; Glue 单元 格 （ “ Layers ” 内容 ）
+显示 使用 “ 域 ” 对话 框 在 形状 的 文本 中 插入 的 函数 和 公式 。
+设置 或 返回 一个 表示 表 、 架构 或 目录 的 名称 的 * * String * * 值 。
+& gt ; 实时 指向 & # 91 ; MAPIAllocateMore & # 93 ; ( mapiallocatemore.md ) 函数 的 指针 , 用于 在 需要 时 分配 更 多 内存 。
+& # 124 ; 向 左 滚动 一 屏 &lt ; br / & gt ; & # 124 ; 按 Ctrl + Pageup 。 & lt ; br / & gt ; & # 124 ;
+1 . 在 Visual Studio 2008 中 创建 和 调试 表 单模板 。
+- IPM 根 文件 夹 中的 & quot ; 已 删除 邮件 & quot ; 文件 夹
+& # 124 ; 多 选列表 框 &lt ; br / & gt ; & # 124 ; 如果 其中 一 个 列 是 条目 标识 符 , 则 刷新 列表 框 。 相应 的 对象 不 会 关闭 或 重新 加载 。 & lt ; br / & gt ; & # 124 ;
+逻辑 实体 （ 如 Resource 或 Project ） 可 跨 多 个 表 ， 并且 针对 某个 特殊 实体 的 所有 表 都 具有 相同 的 主键 。 主键 是 单 个 列 中的 GUID ， 用于 唯一 标识 特殊 实体 的 一 个 实例 。
+& # 124 ; 格鲁吉亚语 &lt ; br / & gt ; & # 124 ; 1079 & lt ; br / & gt ; & # 124 ;
+& # 124 ; 斯瓦希里语 & lt ; br / & gt ; & # 124 ; 1089 &lt ; br / & gt ; & # 124 ;
+title : LockVtxEdit 单元 格 （ “ Protection ” 内容 ）
+& # 124 ; 标头 文件 ： &lt ; br / & gt ; & # 124 ; Imessage &lt ; br / & gt ; & # 124 ;
+返回 一 个 & # 91 ; MAPIERROR & # 93 ; ( mapierror.md ) 结构 , 该 结构 包含 以前 的 通讯簿 提供 程序 错误 的 相关 信息 。
+# &lt ; a name = & quot ; drawingscaletype-cell-page-properties-section & quot ; &gt ; &lt ; / a & gt ; DrawingScaleType 单元 格 （ “ Page Properties ” 内容 ）
+& # 124 ; 实现 者 ： &lt ; br / & gt ; & # 124 ; 表 单 查看器 &lt ; br / & gt ; & # 124 ;
+使用 * * Key * * 对象 的 属性 和 集合 ， 可以 执行 下列 操作 ：
+当 调用 客户 端 * 代理 * 上 的 某 种 方法 时 ， 服务器 上 的 实际 程序 将 执行 该 方法 。 在 该 步骤 中 ， 将 在 服务器 上 执行 查询 。
+- 以 存储 视 图 。
+& gt ; 表 无法 执行 此 操作 , 因为 _ lpRestriction _ 参数 指向 的 特定 筛选器 过于 复杂 。
+title : Excel 命令 、 函数 和 状态
+- 将 地址 格式 化为 Internet 地址 。
+存储 容器 、 列 表 、 标注 和 形状 之间 的 关系 。
+此外 ， 还 必须 将 您 的 表单 模板 作为 沙盒 解决 方案 或 经管理员 核准 的 解决 方案 部署 到 服务器 中 。 有关 这些 部署 选 项 的 详细 信息 ， 请 参阅 & # 91 ; 发布 包含 代码 的 表单 & # 93 ; ( publishing-forms-with-code.md ) 。
+包含 & quot ; 提醒 & quot ; 文件 夹 的 * * EntryID * * 。
+包含 在 忙 / 闲 邮件 中 出现 的 类型 为 & quot ; 忙碌 & quot ; 或 & quot ; 外出 & quot ; ( OOF ) 的 忙 / 闲 数据 的 月份 列 表 。
+有关 如何 使用 通讯 簿模板 标识 符 的 详细 信息 , 请 参阅 & # 91 ; 充当 外部 通讯簿 提供 程序 & # 93 ; ( acting-as-a-foreign-address-book-provider.md ) 。
+# &lt ; a name = & quot ; disabled-cell-action-tags-section & quot ; &gt ; &lt ; / a & gt ; Disabled 单元 格 （ “ Action Tags ” 内容 ）
+& gt ; 标准 .net Framework 是 要 使用 的 正确 框架 。 请 勿 使用 & quot ; .net Framework 4 客户 端 配置 文件 & quot ; 。
+& gt ; 已 成功 检索 层次 结构 表 。
+title : SplineKnot 行 （ “ Geometry ” 内容 ）
+- 文件 将 在 编辑 ( ofe ) 模式 下 打开 的 声明
+您 可以 在 Microsoft Visio 中 添加 新 行 、 更改 现 有 行 的 类型 或 删除 ShapeSheet 中的 行 。
+& gt ; 实时 指向 * * DTPAGE * * 结构 数 组 的 指针 , 该 数 组 包含 要 生成 的 显示 表页 的 相关 信息 。
+- & # 91 ; 必需 的 报告 邮件 属性 & # 93 ; ( required-report-message-properties.md )
+& gt ; 当前 未 使用 。
+对于 * * Field2 * * 对象 ， 下表 中 描述 了 可能 的 设置 和 返回 值 。
+& # 124 ; FALSE &lt ; br / & gt ; & # 124 ; 可以 更改 页面 或 形状 的 变体 。 & lt ; br / & gt ; & # 124 ;
+& gt ; 由 _ lpEntryID _ 标识 的 邮件 被 MAPI 后台 处理 程序 锁定 , 无法 中止 该 操作 。
+& gt ; 传递 到 物理 传递 系统 patron , 如 常规 邮政 邮箱 。
+& # 124 ; 单元 格名称 ： &lt ; br / & gt ; & # 124 ; ShdwOffsetX &lt ; br / & gt ; & # 124 ;
+返回 Sheet.4 的 填充 前 景色 的 色调 。
+title : 暂 留 层次 记录 集
+# &lt ; a name = & quot ; reshape-name-dynamic-property-ado & quot ; &gt ; &lt ; / a & gt ; 重新 调整 名称 动态 属性 ( ADO )
+- * * 取 消 * * ： 返回 ` 0x800000e ` ， 无法 取消 应用 操作 。
+- 记录 中 没有 可 更新 的 字段 。
+title : Disabled 单元 格 （ “ Actions ” 内容 ）
+& # 91 ; 编写 自动 客户 端 & # 93 ; ( writing-an-automated-client.md )
+# # # &lt ; a name = & quot ; create-the-sample-form-template-and-form & quot ; &gt ; &lt ; / a & gt ; 创建 示例 表 单模板 和 表单
+用于 计算 第 n 个 斐波纳 契数 的 用户 定义 的 工作 表函 数 示 例 。 当 加载 了 GENERIC xll 时 , 它 将 注册 此 函数 , 以便 可以 从 工作 表 中 调用 它 。
+& # 91 ; PidTagControlType 规范 属性 & # 93 ; ( pidtagcontroltype-canonical-property.md )
+# # # &lt ; a name = & quot ; invoking-excel-commands-that-use-dialog-boxes & quot ; &gt ; &lt ; / a & gt ; 调用 使用 对话 框 的 Excel 命令
+# &lt ; a name = & quot ; recordset2validationtext-property-dao & quot ; &gt ; &lt ; / a & gt ; Recordset2 属性 ( DAO )
+- 任何 对象 事件 ( 已 创建 、 修改 、 删除 、 移动 或 复制 )
+# &lt ; a name = & quot ; procedures-collection-adox & quot ; &gt ; &lt ; / a & gt ; 过程 集合 ( ADOX )
+# &lt ; a name = & quot ; create-a-sendable-item-for-a-specific-account-based-on-the-current-folder & quot ; &gt ; &lt ; / a & gt ; 为 基于 当前 文件 夹 的 特定 帐户 创建 可 发送 项
+title : 远程 数据 访问 解决 方案
+# # # &lt ; a name = & quot ; specify-a-forms-security-level & quot ; &gt ; &lt ; / a & gt ; 指定 表单 的 安全 级别
+& # 124 ; 未 发送 邮件 &lt ; br / & gt ; & # 124 ; 0x00000103 & lt ; br / & gt ; & # 124 ;
+title : PidLidPostalAddressId 规范 属性
+title : EllipticalArcTo 行 （ “ Geometry ” 内容 ）
+& # 124 ; 导出者 : &lt ; br / & gt ; & # 124 ; olmapi32 &lt ; br / & gt ; & # 124 ;
+# # &lt ; a name = & quot ; defining-context-with-a-url & quot ; &gt ; &lt ; / a & gt ; 使用 URL 定义 上 下文
+& # 124 ; 存档 Web 服务 （ 备份 和 还原 ） 错误 代码 & # 124 ; 说明 & # 124 ;
+# &lt ; a name = & quot ; about-setting-the-resolution-order-for-address-lists-in-outlook & quot ; &gt ; &lt ; / a & gt ; 关于 设置 在 Outlook 中 地址 列表 的 解析 顺序
+返回 一 个 字 符串 , 表示 社交 网络 名称 。
+# &lt ; a name = & quot ; recordsetmovelast-method-dao & quot ; &gt ; &lt ; / a & gt ; MoveLast 方法 ( DAO )
+# &lt ; a name = & quot ; using-a-separate-application-domain-to-avoid-crashing & quot ; &gt ; &lt ; / a & gt ; 使用 独立 应用 程序域 以免 发生 故障
+- & # 91 ; 创建 使用 YearNth 模式 的 年度 定期 约会 & # 93 ; ( how-to-create-an-annual-recurring-appointment-that-uses-a-yearnth-pattern.md )
+- & # 91 ; 添加 作为 邮件 项 响应 的 自定义 操作 & # 93 ; ( how-to-add-a-custom-action-as-a-response-to-a-mail-item.md )
+& # 91 ; 验证 附件 是否 已 被 阻止 & # 93 ; ( how-to-verify-an-attachment-is-blocked.md )
+& # 124 ; 区域 ： &lt ; br / & gt ; & # 124 ; MAPI 邮件 &lt ; br / & gt ; & # 124 ;
+& gt ; 由 * * lpft * * 成员 指向 的 数 组 中的 值 的 计数 。
+& # 124 ; 0 & lt ; br / & gt ; & # 124 ; 形状 文本 使用 深 字体 颜色 。 & lt ; br / & gt ; & # 124 ;
+如果 数字 或 公式 包含 错误 , Visio 将 显示 一 条 消息 , 然后 在 编辑 栏 或 单元 格 中 突出 显示 错误 。 更正 错误 , 然后 按 enter 接受 更正 。
+title : 初始化 MAPI 实用 工具
+title : 渐 变 停止 行 ( & quot ; 填充 渐 变 & quot ; 部分 )
+默认 情况 下 ， * * TransferSQLDatabase * * 操作会 复制 数据 、 数据 定义 、 数据库 对象 和 扩展 属性 ， 例如 默认 值 、 文本 约束 和 查阅 值 。
+# &lt ; a name = & quot ; recordsetnextrecordset-method-dao & quot ; &gt ; &lt ; / a & gt ; NextRecordset 方法 ( DAO )
+- 将 数据库 中的 字段 绑定 到 能够 识别 数据 的 组件 。
+& gt ; 排除 一 个 指针 , 指向 要 枚举 的 对象 的 数目 。
+title : PidTagRecipientProposedStartTime 规范 属性
+当 “ 删除 后 ” * * * * 事件 结束 时 ， 已 删除 记录 中 包含 的 值将 被 永久 删除 。
+& # 124 ; 非 DPI 感知 & # 124 ; 应用 程序 始终 呈现 为 如同 在 DPI 值 为 96 的 显示器 上 显示 。 & # 124 ; 应用 程序 在 主 显示器 和 辅助 显示器 上 将 位 图拉伸 到 预期 大 小 。 & # 124 ;
+& # 124 ; 单元 格名称 ： &lt ; br / & gt ; & # 124 ; LineColor &lt ; br / & gt ; & # 124 ;
+title : PlowCode 单元 格 （ “ Page Layout ” 内容 ）
+& gt ; 排除 一 个 指针 , 指向 由 _ lpppUIDArray _ 参数 指向 的 数 组 中的 项 的 计数 。
+& gt ; 排除 一 个 缓冲 区 , 用 于 接收 由 lpString2 参数 指向 的 字 符串 的 内容 。
+* * RelLineTo * * 行 包含 以下 单元 格 。
+- & # 91 ; 显示表 实现 & # 93 ; ( display-table-implementation.md )
+& gt ; 实时 指向 要 搜索 的 以 null 结尾 的 字 符串 的 指针 。
+如果 当前 页 为 背景 页 （ 未 编号 ） ， 或者 发生 了 错误 ， 则 PageNumber 函数 将 返回 零 。
+- Web 服务 提交
+# &lt ; a name = & quot ; using-custom-xslt-in-infopath-form-templates & quot ; &gt ; &lt ; / a & gt ; 在 InfoPath 表 单模板 中 使用 自 定义 XSLT
+返回 对 传入 的 行 单元 格 的 * * xltypeRef * * 外部 引用 。
+# &lt ; a name = & quot ; bevelbottomtype-cell-bevel-properties-section & quot ; &gt ; &lt ; / a & gt ; BevelBottomType 单元 格 ( & quot ; 棱 台属性 & quot ; 部分 )
+# &lt ; a name = & quot ; visio-file-format-reference & quot ; &gt ; &lt ; / a & gt ; Visio 文件 格式 参考
+store API 提供 了 各种 存储 提供 程序 的 其他 存储 功能 。 它 提供 以下 defintions 、 数据 类型 、 属性 和 接口 。
+包含 要 配置 的 个人 存储 表 ( .pst 文件 ) 的 密码 。
+title : mapisvc.inf 邮件 服务 部分 中的 属性 条目
+- & # 91 ; BOUNDINGBOXRECT 函 数 & # 93 ; ( boundingboxrect-function.md )
+- & # 91 ; HASCATEGORY 函 数 & # 93 ; ( hascategory-function.md )
+- & # 91 ; OPENSHEETWIN 函数 & # 93 ; ( opensheetwin-function.md )
+- & # 91 ; THEMECBV 函数 & # 93 ; ( themecbv-function.md )
+title : & quot ; \ & quot ; QueryDef \ & quot ; 属性 ( DAO ) & quot ;
+下面 是 使用 CSOM 支持 的 部分 应用 程序 类型 的 示 例 。 CSOM 可 代替 PSI 用于 多 种 方案 ：
+& gt ; 实时 指向 以 null 结尾 的 Unicode 字符 串数 组 的 指针 。
+& # 124 ; 单位 &lt ; br / & gt ; & # 124 ; MM &lt ; br / & gt ; & # 124 ;
+& # 124 ; 单元 格名称 ： &lt ; br / & gt ; & # 124 ; ShapeShdwType &lt ; br / & gt ; & # 124 ;
+* * Max * * 函数 包含 以下 参数 。
+- & # 91 ; Parent 属性 & # 93 ; ( parent-property-ado-md.md )
+& gt ; 要 获取 关于 某 种 样式 的 信息 ， 您 可以 在 * * “ 样式 资源 管理器 ” * * 窗口 中 右击 该 样式 ， 以 查看 其 ShapeSheet 。
+直接 或 通过 服务 提供 程序 向 ADO 应用 程序 公开 数据 的 软件 。 另 请 参阅 * * 服务 提供 程序 * * 。
+# # &lt ; a name = & quot ; updating-joined-results-unique-table & quot ; &gt ; &lt ; / a & gt ; 更新 JOINed 结果 ： 唯一 表
+& # 124 ; 扩展 名 为 . cfg 的 文件 &lt ; br / & gt ; & # 124 ; 包含 表单 的 配置 信息 。 & lt ; br / & gt ; & # 124 ;
+此 属性 在 autoforwarded 消息 中 使用 。 如果 不 允许 autoforwarding , 或者 未 指定 备用 收 件 人 , 则 应 生成 nondelivery 报告 。
+& gt ; 收 件 人 地址 必须 存在 。
+title : 关于 单元 格 引用
+title : PidLidNonSendableBcc 规范 属性
+& # 124 ; 公开 者 : &lt ; br / & gt ; & # 124 ; 进度 对象 &lt ; br / & gt ; & # 124 ;
+请 注意 ， 零 长度 字 符串 与 null 并 不 相同 。
+- & # 91 ; MAPI 服务 提供 程序 对象 &#93 ; ( mapi-service-provider-objects.md )
+下面 的 代码 演示 如何 使用 & # 91 ; Command & # 93 ; ( command-property-adox.md ) 属性 更新 过程 的 文本 。
+& # 124 ; FALSE &lt ; br / & gt ; & # 124 ; 不 询问 用户 输入 数据 。 & lt ; br / & gt ; & # 124 ;
+# &lt ; a name = & quot ; recordset-object-ado-reference & quot ; &gt ; &lt ; / a & gt ; Recordset 对象 ( ADO ) 引用
+title : PidTagWizardNoPstPage 规范 属性
+# &lt ; a name = & quot ; fetchcomplete-event-ado & quot ; &gt ; &lt ; / a & gt ; FetchComplete 事件 ( ADO )
+& # 124 ; FALSE &lt ; br / & gt ; & # 124 ; 选 中 形状 后 显示 选择 手 柄 。 & lt ; br / & gt ; & # 124 ;
+使用 筛选 常量 ， 更 便于 解决 批 更新 模式 下 的 个别 记录 冲突 问题 ， 例如 ， 允许 您 只 查看 上次 调用 * * UpdateBatch * * 方法 过程 中 受 影响 的 记录 ， 如 以下 示例 所 示 ：
+- & # 91 ; SendEmail 宏操作 & # 93 ; ( sendemail-macro-action.md )
+- & # 91 ; 使用 Delete 方法 删除 记录 & # 93 ; ( deleting-records-using-the-delete-method.md )
+& gt ; 已 成功 获取 搜索 条件 。
+# &lt ; a name = & quot ; y-justify-cell-action-tags-section & quot ; &gt ; &lt ; / a & gt ; Y Justify 单元 格 （ “ Action Tags ” 内容 ）
+从 缓 存 中 检索 的 记录 不 反映 其他 用户 对源 数据 所 做 的 并 发 更改 。 若 要 强制 对 所有 缓存 数据 进行 更新 ， 请 使用 & # 91 ; Resync & # 93 ; ( resync-method-ado.md ) 方法 。
+# # &lt ; a name = & quot ; internal-and-external-worksheet-references & quot ; &gt ; &lt ; / a & gt ; 内部 和 外部 工作 表 引用
+& # 91 ; Excel 中的 多 线程 和 内存 争用 & # 93 ; ( multithreading-and-memory-contention-in-excel.md )
+- & # 91 ; ADOX 代码 示 例 & # 93 ; ( adox-code-examples.md )
+- & # 91 ; PidLidFileUnder 规范 属性 & # 93 ; ( pidlidfileunder-canonical-property.md )
+- & # 91 ; PidNameExchangeJunkEmailMoveStamp 规范 属性 & # 93 ; ( pidnameexchangejunkemailmovestamp-canonical-property.md )
+# &lt ; a name = & quot ; field-object-ado & quot ; &gt ; &lt ; / a & gt ; Field 对象 ( ADO )
+title : PidTagFormMessageBehavior 规范 属性
+& # 124 ; 相关 属性 ： &lt ; br / & gt ; & # 124 ; dispidPageDirStream &lt ; br / & gt ; & # 124 ;
+& # 124 ; & # 91 ; 获取 会议 组织者 & # 93 ; ( how-to-get-the-organizer-of-a-meeting.md ) & # 124 ; 介绍 了 如何 以 编程 方式 返回 会议 组织者 。 & # 124 ;
+& # 124 ; 4 & lt ; br / & gt ; & # 124 ; 文本 &lt ; br / & gt ; & # 124 ;
+- & # 91 ; RunCode 宏 操作 & # 93 ; ( runcode-macro-action.md )
+& # 124 ; 5 & lt ; br / & gt ; & # 124 ; 过重 &lt ; br / & gt ; & # 124 ;
+- & # 91 ; 打开 邮件 & # 93 ; ( opening-a-message.md ) : 介绍 如何 打开 邮件 。
+& gt ; _ lpEntryID _ 所 代表 的 条目 不 存在 。
+# &lt ; a name = & quot ; sending-across-messaging-domains & quot ; &gt ; &lt ; / a & gt ; 跨 邮件 域 发送
+# # # &lt ; a name = & quot ; wrapped-pst-and-unicode-paths & quot ; &gt ; &lt ; / a & gt ; 打包 的 PST 和 Unicode 路径
+# # &lt ; a name = & quot ; purpose-of-the-outlook-pia-reference & quot ; &gt ; &lt ; / a & gt ; Outlook PIA 参考 的 用途
+如果 没有 文本 ， 则 结果 为 零 。 如果 无法 对 文本 求 值 ， 则 该 函数 将 返回 错误 。
+比较 关系 运算符 用来 建立 逻辑 表达 式 。 逻辑 表达式 的 结果 为 TRUE 或 FALSE 。
+title : 作为 代码 示例 的 MFCMAPI
+title : 开发 MAPI 传输 提供 程序
+& # 124 ; 单元 格名称 ： &lt ; br / & gt ; & # 124 ; LineRouteExt &lt ; br / & gt ; & # 124 ;
+# &lt ; a name = & quot ; getting-and-setting-properties-with-getprops-and-setprops & quot ; &gt ; &lt ; / a & gt ; 使用 GetProps 和 SetProps 获取 并 设置 属性
+# # # &lt ; a name = & quot ; h-6-interoperability-considerations & quot ; &gt ; &lt ; / a & gt ; H-6 . 互 操作性 的 注意 事项
+有 几 个 条目 , 其中 一些 必须 出现 在 mapisvc.inf 配置 文件 中 , 这些 条目 包含 在 每 个 通讯簿 提供 程序 的 & quot ; 配置 文件 & quot ; 部分 中 。 下 表列 出 了 这些 配置 文件 节项 , 以及 mapisvc.inf 文件 是否 必须 包含 它们 。
+- & # 91 ; 关于 注册 新域 以 进行 自动 配置 & # 93 ; ( about-registering-a-new-domain-for-automatic-configuration.md )
+title : 查 找 配置 文件 名称
+用于 为 可 更新 的 & # 91 ; Recordset & # 93 ; ( recordset-object-ado.md ) 对象 创建 新 记录 。
+& # 124 ; utf-8 & lt ; br / & gt ; & # 124 ; 将 制表 符 转换 为 一 组 空格 。 & lt ; br / & gt ; & # 124 ;
+# # # &lt ; a name = & quot ; content-controls-in-word-2010 & quot ; &gt ; &lt ; / a & gt ; Word 2010 中的 内容 控件
+- & # 91 ; ConvertToString 方法 示 例 & # 93 ; ( converttostring-method-example-vb.md )
+title : 窗口 管理 ( Access 桌面 数据库 参考 )
+本 节 中的 过程 使用 JavaScript 对象 模型 更新 项目 的 开始 * * 日期 * * 属性 。 此 过程 包括 下列 高级 步骤 ：
+& # 124 ; 提供 程序 &lt ; br / & gt ; & # 124 ; 由 MAPI 实现 。 由 客户 端 使用 。 & lt ; br / & gt ; & # 124 ;
+一般 而 言 ， 在 创建 部分 副本 时 ， 以及 无论 何时 更改 副本 筛选器 时 ， 都 应该 使用 * * PopulatePartial * * 方法 。 如果 应用 程序 更改 了 副本 筛选 器 ， 应 遵循 以下 步骤 ：
+& # 124 ; 单元 格名称 ： &lt ; br / & gt ; & # 124 ; FillForegndTrans &lt ; br / & gt ; & # 124 ;
+title : PidTagImapCachedMsgsize 规范 属性
+- & # 91 ; 设置 窗体 、 报表 和 控件 属性 & # 93 ; ( set-form-report-and-control-properties.md )
+- & # 91 ; Prepared 属性 & # 93 ; ( prepared-property-ado.md )
+& # 124 ; TRUE &lt ; br / & gt ; & # 124 ; 将 文本 格式 设 为 带 删除 线 。 & lt ; br / & gt ; & # 124 ;
+title : Excel 中的 多 线程 和 内存 争用
+title : PidTagSearchFolderEfpFlags 规范 属性
+& # 124 ; TRUE &lt ; br / & gt ; & # 124 ; 包括 文本 属性 。 & lt ; br / & gt ; & # 124 ;
+& gt ; 排除 目标 文件 夹 信息 ( 如果 项目 已 移动 ) 。
+title : 删除 邮件
+- 使用 message 对象 将 传入 邮件 数据 传递 到 MAPI 后台 处理 程序 。
+Microsoft Access 使用 保留 关键 字 来 定义 、 处理 和 访问 数据库 。 保留 关键 字 是 用于 分析 和 理解 SQL 语句 的 Access 所 使用 的 语言 的 语法 的 一 部分 。
+title : PidTagAttachmentHidden 规范 属性
+PROCEDURE 子 句 包含 以下 部分 ：
+- 恶意 使用 InfoPath 对象 模型 中的 属性 和 方法 。
+title : LockCrop 单元 格 （ “ Protection ” 内容 ）
+& gt ; 打 印 作业 已 成功 完成 。
+- & # 91 ; SetWarnings 宏操作 & # 93 ; ( setwarnings-macro-action.md )
+- 创建 自 定义 服务 提供 程序 ， 如 通讯簿 提供 程序 、 传输 提供 程序 或 存储 提供 程序 。
+title : 发送 答复
+# &lt ; a name = & quot ; relquadbezto-row-geometry-section & quot ; &gt ; &lt ; / a & gt ; RelQuadBezTo 行 ( & quot ; Geometry & quot ; 部分 )
+& # 124 ; 双 面 &lt ; br / & gt ; & # 124 ; 形状 填充 颜色 继承 自 & quot ; 强调 文字 颜色 1 & quot ; 主题 颜色 &lt ; br / & gt ; & # 124 ;
+# &lt ; a name = & quot ; whats-new-in-ado & quot ; &gt ; &lt ; / a & gt ; ADO 中的 新 增 功能
+下 表列 出 了 要 存储 在 * * USysRibbons * * 表 中 的 功能区 自 定义 设置 。
+& # 124 ; TRUE &lt ; br / & gt ; & # 124 ; 已 锁定 垂直 位置 。 & lt ; br / & gt ; & # 124 ;
+# &lt ; a name = & quot ; infopath-developer-reference-for-external-automation & quot ; &gt ; &lt ; / a & gt ; InfoPath 外部 自动化 开发 人员 参考
+& # 124 ; TRUE &lt ; br / & gt ; & # 124 ; 不 能 编辑 文本 。 & lt ; br / & gt ; & # 124 ;
+title : PidTagLocaleId 规范 属性
+& # 91 ; Project PSI 参考 概述 & # 93 ; ( project-psi-reference-overview.md )
+# # &lt ; a name = & quot ; example-applications-of-mtr & quot ; &gt ; &lt ; / a & gt ; MTR 应用 示例
+* * 在 邮件 服务 中 配置 所有 服务 提供 程序 * *
+# &lt ; a name = & quot ; index-object-adox-reference & quot ; &gt ; &lt ; / a & gt ; Index 对象 ( ADOX ) 引用
+MAPI 存储 提供 程序 的 邮件 服务 入口 点 函数 , 用 于 将 基于 PST 的 本地 存储 包装 为 NST 存储 。
+& gt ; 内存 不足 , 无法 检索 标识 符 。
+& gt ; 实时 指向 服务器 文件 夹 的 指针 。
+# # &lt ; a name = & quot ; enhanced-features-of-microsoft-access-sql & quot ; &gt ; &lt ; / a & gt ; Microsoft Access SQL 的 增强 功能
+& # 124 ; 相关 属性 ： &lt ; br / & gt ; & # 124 ; dispidEmail3EmailAddress &lt ; br / & gt ; & # 124 ;
+& gt ; 由 string 类型 的 多 值 属性 填充 的 多 值列表框 。
+# # &lt ; a name = & quot ; externalstandalone-application-development-environment & quot ; &gt ; &lt ; / a & gt ; 外部 / 独立 应用 程序 开发 环境
+* * 将 呈现 信息 添加 到 格式化 的 邮件 文本 中 * *
+使用 * * SizedSSortOrderSet * * 宏 创建 具有 显式 边界 的 排序 次序 集 。
+& # 124 ; 邮件 存储 &lt ; br / & gt ; & # 124 ; 充当 以 分层 方式 组织 的 邮件 数据库 。 & lt ; br / & gt ; & # 124 ;
+# &lt ; a name = & quot ; relations-collection-dao & quot ; &gt ; &lt ; / a & gt ; 关系 集合 ( DAO )
+& gt ; 已 成功 删除 属性 。
+& gt ; 介绍 如何 初始化 MAPI 实用 工具 。
+title : RotationYAngle 单元 格 ( & quot ; 三维 旋转 属性 & quot ; 部分 )
+有 一些 宏 可 帮助 确定 对象 的 属性 , 例如 , 它 是 本地 、 远程 还 是 受 安全性 控制 的 对象 。 这些 宏 包括 :
+Microsoft Visio 中的 每 个 元素 （ 每 个 文档 、 绘图 页 、 样式 、 形状 、 组合 、 组合 中的 形状 或 对象 、 主控 形状 、 来自 其他 程序 的 对象 、 参考 线 以及 辅助 点 ） 都 具有 用来 保存 与 该 对象 有关 的 信息 的 ShapeSheet 电子 表格 。 此 电子 表格 包含 诸如 高度 、 宽度 、 角度 、 颜色 以及 其他 决定 形状 的 外观 和 行为 的 属性 信息 。
+& gt ; InfoPath 从 不 修改 架构 文件 ( .xsd ) 的 内容 ， 但 它 可能 会 为了 设计 目的 ， 从 逻辑 上 推断 架构 文件 的 子集 。 无论 在 设计 时 还 是 在 运行 时 ， 表 单模板 内 的 架构 文件 都 始终 保持 不 变 。
+& # 124 ; 单元 格名称 ： &lt ; br / & gt ; & # 124 ; QuickStyleVariation &lt ; br / & gt ; & # 124 ;
+title : 了解 记录 集结 构
+title : PidTagEmailAddress 规范 属性
+* 表达 式 * 。 集
+# # &lt ; a name = & quot ; time -- date-functions & quot ; &gt ; &lt ; / a & gt ; 时间 & amp ; 日期 函数
+- FormRegionClass 类 定义 FormRegion 的 所有 方法 、 属性 和 事件 成员 。 它 是 FormRegion 接口 在 后台 所 关联 的 类 ， 以便 您 可以 编写 代码 来 创建 FormRegion 接口 的 实例 。 但是 ， 不 要 直接 在 代码 中 使用 此 接口 。
+& lt ; li & gt ; 第 & lt ; / li & gt ;
+& # 124 ; 选择 文本 &lt ; br / & gt ; & # 124 ; 在 文本 上 拖动 鼠标 指针 。 & lt ; br / & gt ; & # 124 ;
+title : MAPI 功能 和 体系 结构
+本 节 讨论 InfoPath 托管 代码 解决 方案 的 对象 模型 ， 并 介绍 常见 编程 任务 。
+& gt ; 排除 & # 91 ; UPMOV & # 93 ; ( upmov.md ) 结构 的 链 。
+- & # 91 ; MAPI 进度 指示器 & # 93 ; ( mapi-progress-indicators.md )
+title : 自动 接受 会议 请求
+& gt ; 实时 指向 由 调用方 提供 的 回调 函数 的 指针 。 如果 将 _ lpfnFilterColumns _ 参数 设置 为 NULL , 则 不 会 进行 任何 回 调 。
+此 属性 仅 适用于 通过 HTTP 或 HTTPS 协议 发送 的 请求 。
+以下 属性 由 profile 节 对象 公开 。
+# &lt ; a name = & quot ; papersource-cell-printproperties-section & quot ; &gt ; &lt ; / a & gt ; PaperSource 单元 格 （ “ PrintProperties ” 内容 ）
+title : 上传表 状态
+此 代码 示例 展示 了 如何 以 编程 方式 将 Outlook 与 SharePoint 文件 夹 连接 ， 并 同步 文件 夹 内容 。
+# &lt ; a name = & quot ; get-the-organizer-of-a-meeting & quot ; &gt ; &lt ; / a & gt ; 获取 会议 组织者
+title : 用户 属性 、 方法 和 事件 ( ADOX )
+# # &lt ; a name = & quot ; step-d-final-testing-before-release & quot ; &gt ; &lt ; / a & gt ; 步骤 D : 发布 前 的 最终 测试
+- 本地 目录 。 例如 ：
+若 要 生成 引用 头 字 段 , 客户 端 必须 将 这些 属性 设置 为 所需 的 值 。 MIME 编写器 必须 将 这些 属性 的 值 复制 到 & quot ; 引用 标题 & quot ; 字 段 中 。
+2 . 检索 项目 信息 ， 包括 任务 属性 。
+# &lt ; a name = & quot ; clone-method-ado & quot ; &gt ; &lt ; / a & gt ; Clone 方法 ( ADO )
+通过 使用 * * TableDef * * 对象 及 其 方法 和 属性 来 操作 表定义 。
+title : PidTagServiceDllName 规范 属性
+此 成员 必须 始终 返回 E _ NOTIMPL 。
+& # 124 ; 相关 属性 ： &lt ; br / & gt ; & # 124 ; dispidApptProposedEndWhole &lt ; br / & gt ; & # 124 ;
+对于 MSI 安装 的 Office
+# &lt ; a name = & quot ; share-freebusy-schedule-within-a-specified-period-in-a-calendar & quot ; &gt ; &lt ; / a & gt ; 共 享 日历 中 指定 时间 段 内 闲 / 忙 日程 安排
+对于 有 比例 绘图 上 的 可 测量 形状 或 无 比例 绘图 上 的 不可测量 形状 ， 此 值 是 100 % 。
+- 指定 默认 邮件 存储 。
+本 节 介绍 了 Outlook 导出 的 函数 。
+title : PidLidEmail1OriginalEntryId 规范 属性
+# &lt ; a name = & quot ; name-cell-reviewer-section & quot ; &gt ; &lt ; / a & gt ; Name 单元 格 （ “ Reviewer ” 内容 ）
+有关 如何 使用 传出队 列表 的 详细 信息 , 请 参阅 & # 91 ; 使用 邮件 存储 提供 程序 发送 邮件 & # 93 ; ( sending-messages-by-using-message-store-providers.md ) 。
+- 使用 & # 91 ; Properties & # 93 ; ( properties-collection-ado.md ) 集合 访问 提供 程序 特定 的 索引 属性 。
+- & # 91 ; PageCount 属性 & # 93 ; ( pagecount-property-ado.md )
+& # 124 ; 选择 指向 好友 的 配置 文件 页 的 链接 。 & lt ; br / & gt ; & # 124 ; 社交 网络 上 的 好友 页面 在 登录 用户 的 默认 浏览器 中 打开 。 & lt ; br / & gt ; & # 124 ;
+本 示例 将 目录 作为 文件 夹 , 将 OLE 2.0 文档 文件 作为 邮件 使用 。 该 示例 支持 默认 邮件 存储区 所需 的 所有 功能 。
+# &lt ; a name = & quot ; skipline-method-ado & quot ; &gt ; &lt ; / a & gt ; SkipLine 方法 ( ADO )
+如果 为 “ 宏 名 ” * * * * 参数 输入 宏组 名 ， Access 将 运行 宏组 中的 第一 个 宏 。
+2 . 添加 一个 可 呈现 错误 消息 的 失败 回调 函数 ， 如下 所 示 。
+还 可以 将 IN 子 句 与 这些 语句 一起 使用 ， 以 修改 另 一 个 数据库 中的 数据 。
+4 . 选择 F5 键 以 调试 解决 方案 。 该 程序 完成 运行 后 ， 选择 任意 键退出 。
+- & # 91 ; CacheSize 属性 示 例 & # 93 ; ( cachesize-property-example-vj.md )
+title : 响应 表单 事件
+title : PidTagConversionEits 规范 属性
+# &lt ; a name = & quot ; address-book-data-binding-object & quot ; &gt ; &lt ; / a & gt ; 通讯簿 数据 绑定 对象
+& # 124 ; 单元 格名称 ： &lt ; br / & gt ; & # 124 ; PageLineJumpDirX &lt ; br / & gt ; & # 124 ;
+& gt ; 实时 指向 预 处理器 函数 名称 的 指针 。 _ lpszPreprocess _ 参数 可以 为 NULL 。
+- 关闭 窗 体 。
+- 将 服务 提供 程序 添加 到 邮件 服务 。
+& # 124 ; Windows 版本 & # 124 ; 支持 的 ONNX 版本 & # 124 ; 支持 的 ONNX opset & # 124 ;
+图像 在 Windows ML 中 以 张量 格式 表示 。 张 量化 是 指 将 图像 转换 为 张量 的 过程 ， 并且 发生 在 绑定 期间 。
+title : 工具 和 示例
+title : IMLOperatorShapeInferenceContext . IsOutputValid 方法
+若 要 释放 内存 ， 请 在 模型 或 会话 上 调用 * * Dispose * * 。 不 要 直接 删除 它们 ， 因为 某些 语言 会 执行 延迟 垃圾 回收 。
+8 . 首先 ， 我们 将 实现 ` LoadModel ` 方法 。 在 ` main ` 方法 后面 添加 以下 方法 。 此 方法 加载 模型 并 输出 它 所 用 时间 ：
+& # 124 ; String & # 124 ; 8 & # 124 ; 字符 串 ( 不 受 支持 ) 。 & # 124 ;
+架构 包含 许多 & # 91 ; StartTime & # 93 ; ( starttime.md ) 元素 。
+1 . 获取 客户 端 计算机 的 Active Directory 站点 名称 。
+- 在 & quot ; 日历 & quot ; 文件 夹 中 搜索 定期 约会 。
+* * Name * * 元素 表示 设置 的 名称 。
+2 . 现在 设置 收 件 人 ： 电子邮件 的 行收 件 人 。 若 要 执行 此 操作 ， 将 ` user1 @ contoso.com ` 更 改为 使用 SMTP 地址 。
+& # 124 ; String &lt ; br / & gt ; & # 124 ; 指示 字符 串 。 & lt ; br / & gt ; & # 124 ;
+# # &lt ; a name = & quot ; addimcontacttogroup-operation-errorinvalidimcontactid-error-response & quot ; &gt ; &lt ; / a & gt ; AddImContactToGroup 操作 ErrorInvalidImContactId 错误 响应
+* * GetFederatedDirectoryGroup * * 元素 仅 供 内部 使用 。
+title : 在 Exchange 中 控制 对 EWS 的 访问
+* * RelevanceScore * * 元素 指定 一 个 整数 ， 该 整数 表示 关联 的 角色 对 客户 端 的 相关 程度 。
+& # 124 ; ResponseClass &lt ; br / & gt ; & # 124 ; 指示 响应 的 类 。 & lt ; br / & gt ; & # 124 ;
+* * UpdateInboxRules * * 请求 包括 以下 元素 ：
+Build 15.00.0847.032 （ Exchange Server 2013 SP1 ） 中 引入 了 以下 cmdlet ：
+title : 断 开 连接 （ UM web 服务 ）
+* * HasEndTimeChanged * * 元素 指定 会议 的 结束 时间 是否 已 更改 。
+7 . 订阅 的 超时 计时器 将 重 置 。
+- EWS 无法 访问 或 创建 & quot ; 仅 客户 端 & quot ; 规则 或 在 Outlook 中 设置 为 & quot ; 仅 在 此 计算机 上 运行 & quot ; 的 规则 。
+title : 使用 Exchange 中的 EWS 执行 分页 搜索
+# # &lt ; a name = & quot ; using-the-addnewimcontacttogroup-operation & quot ; &gt ; &lt ; / a & gt ; 使用 AddNewImContactToGroup 操作
+# # # # &lt ; a name = & quot ; version-attribute-values & quot ; &gt ; &lt ; / a & gt ; 版本 属性 值
+* * GetUserConfigurationResponseMessage * * 元素 表示 返回 用户 配置 对象 的 响应 。
+* * SyncFolderId * * 元素 表示 包含 要 同步 的 项目 的 文件 夹 。
+* * DisplayNameFirstLast * * 元素 的 文本 值 是 一 个 包含 显示 名称 的 字 符串 值 ， 其中 先 具有 给定 的 名称 。
+* * Meetingsuggestion.meetingstring * * 元素 指定 实体 提取 的 结果 会议 的 名称 。
+* * AppointmentSequenceNumber * * 元素 指定 约会 的 一 个 版本 的 序列 号 。
+& # 124 ; False &lt ; br / & gt ; & # 124 ; 不 返回 公用 联系人 的 完整 联系人 详细 信息 。 & lt ; br / & gt ; & # 124 ;
+* * 组织者 * * 元素 表示 会议 的 组织者 。
+此 元素 需要 一 个 文本 值 。 值 为 字 符串 类型 。 以下 是 & # 91 ; BusyType & # 93 ; ( busytype.md ) 元素 的 可能 值 ：
+此 MoveFolder 请求 包括 以下 元素 ：
+& # 124 ; 浮点 &lt ; br / & gt ; & # 124 ; 32 位 浮点 值 。 & lt ; br / & gt ; & # 124 ;
+* * 图 1 。 通知 订阅 返回 的 事件 类型 * *
+# # &lt ; a name = & quot ; work-with-email-and-mail-folders & quot ; &gt ; &lt ; / a & gt ; 使用 电子邮件 和 邮件 文件 夹
+- 日历 文件 夹 、 日历 项目 和 日历 视 图
+& # 91 ; 组 & # 93 ; ( groups.md )
+# # &lt ; a name = & quot ; get-inbox-rules-by-using-ews & quot ; &gt ; &lt ; / a & gt ; 使用 EWS 获取 收件 箱 规则
+* * 表 1 。 可用 定期 模式 * *
+若 要 对 SMTP 服务器 连接 进行 身份 验证 ， 客户 端 将 必须 使用 ` AUTH ` 以下 格式 的 命令 进行 响应 ：
+& # 124 ; 元素 & # 124 ; 说明 & # 124 ;
+& # 124 ; ErrorExceededSubscriptionCount &lt ; br / & gt ; & # 124 ; 此错误 指示 已 超出 用户 的 限制 策略 最 大 订阅 数 。 & lt ; br / & gt ; & # 124 ;
+& # 124 ; ErrorInvalidTimeInterval &lt ; br / & gt ; & # 124 ; 此错误 指示 指定 的 时间 间隔 无效 。 开始 时间 必须 大于 或 等于 结束 时间 。 & lt ; br / & gt ; & # 124 ;
+& # 124 ; ErrorSubmissionQuotaExceeded &lt ; br / & gt ; & # 124 ; 此错误 指示 用户 不 能 立即 发送 更 多 请求 ， 因为 已 达到 提交 配额 。 & lt ; br / & gt ; & # 124 ;
+& # 124 ; ErrorCalendarIsGroupMailboxForAccept &lt ; br / & gt ; & # 124 ; 此 错误 仅 供 内部 使用 。 & lt ; br / & gt ; & # 124 ;
+title : 响应 （ GetFederationInformation ） （ SOAP ）
+您 可以 使用 EWS 托管 API 或 EWS 在 邮箱 中 移动 和 复制 电子邮件 。
+- & # 91 ; 建议 & # 93 ; ( suggestion.md )
+* * 结束 * * 日期 元素 表示 定期 任务 或 具有 EndDateRecurrence 模式 类型 的 日历 项目 的 结束 日期 。
+& # 124 ; AlternateMailboxes &lt ; br / & gt ; & # 124 ; 备用 邮箱 的 集合 。 & lt ; br / & gt ; & # 124 ;
+下图 显示 了 Exchange 2013 服务器 角色 之间 的 交互 。
+VSS 协调 以下 组件 之间 的 通信 ：
+* * GlobalItemClasses * * 元素 包含 项 类 的 列 表 ， 这些 类 表示 邮箱 中 会话 项目 的 所有 项目 类 。
+& # 124 ; 浅 &lt ; br / & gt ; & # 124 ; 仅 返回 文件 夹 中 项 的 标识 。 & lt ; br / & gt ; & # 124 ;
+# &lt ; a name = & quot ; setting-up-your-ews-application & quot ; &gt ; &lt ; / a & gt ; 设置 EWS 应用 程序
+# # # &lt ; a name = & quot ; handling-errors-warnings-and-exceptions & quot ; &gt ; &lt ; / a & gt ; 处理 错误 、 警告 和 异常

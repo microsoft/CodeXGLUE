@@ -12,15 +12,15 @@ A brief summary of CodeXGLUE is given below, including tasks, datasets, baseline
 # Tasks and Datasets
 
 ## Clone Detection (Daya)
-We have two subtasks to measure the semantic equivalence and similairty between codes. 
+We have two subtasks to measure the semantic equivalence between codes. 
 
 Dataset for the first subtask is Clone-detection-BigCloneBench. Given two codes as the input, the task is to do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by classification accuracy. The dataset comes from \cite{xxx}, and we follow the training/dev/testing split of \cite{}.
 
-Dataset for the second subtask is Clone-detection-POJ-104. Given a code as the input, the task is to retrieve semantically similar codes from a collection of codes.  The dataset comes from \cite{}, and we follow the split of \cite{}. Models are evaluated by xxx. 
+Dataset for the second subtask is Clone-detection-POJ-104. Given a code as the input, the task is to retrieve semantically simliar codes from a collection of codes.  The dataset comes from \cite{}, and we follow the split of \cite{}. Models are evaluated by xxx. 
 
 
 ## Defect Detection (Daya)
-The task is to detect whether a piece of code is xxx or not. The data comes from ... 
+The task is to detect whether a code is xxx or not. The data comes from ... 
 
 ## Cloze Test (junjie)
 
@@ -32,10 +32,9 @@ We have both token-level and line-level completion tasks. ...
 ## Code Translation (Shuo)
 
 ## Natural Language Code Search (Daya & Junjie)
-
 We have two subtasks to measure semantic similarity between text and code. 
 
-Dataset for the first subtask is NL-code-search-Adv. Given a text as the input, the task is to find the most semantically relevant code from a collection of codes. do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by classification accuracy. The dataset comes from \cite{xxx}, and we follow the training/dev/testing split of \cite{}.
+Dataset for the first subtask is NL-code-search-Adv, which Given a text as the input, the task is to find the most semantically relevant code from a collection of codes. do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by classification accuracy. The dataset comes from \cite{xxx}, and we follow the training/dev/testing split of \cite{}.
 
 Dataset for the second subtask is NL-code-search-WebQuery. Given a code as the input, the task is to retrieve semantically similar codes from a collection of codes.  The dataset comes from \cite{}, and we follow the split of \cite{}. Models are evaluated by xxx. 
 

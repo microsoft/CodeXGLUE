@@ -51,7 +51,7 @@ train_steps=50000
 pretrained_model=xlm-roberta-base #CodeBERT: path to CodeBERT. Roberta: roberta-base
 
 
-CUDA_VISIBLE_DEVICES=0,1,2,3 /home/espnet/tools/venv/bin/python run.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3 python run.py \
 --do_train \
 --do_eval \
 --model_type roberta \
@@ -87,7 +87,7 @@ dev_file=$data_dir/dev.all.src,$data_dir/dev.all.tgt
 test_file=$data_dir/test.all.src,$data_dir/test.all.tgt
 test_model=$output_dir/checkpoint-best-bleu/pytorch_model.bin #checkpoint for test
 
-CUDA_VISIBLE_DEVICES=0,1,2,3 /home/espnet/tools/venv/bin/python run.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3 python run.py \
 --do_test \
 --model_type roberta \
 --model_name_or_path xlm-roberta-base \

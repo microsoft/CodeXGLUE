@@ -21,7 +21,7 @@ Dataset for the second subtask is Clone-detection-POJ-104. Given a code as the i
 
 ## Defect Detection 
 The task is to detect whether a source code is an insecure code that may attack software systems, such as resource leaks, use-after-free vulnerabilities and DoS attack.
-We follow the original training/dev/testing split of efects4J <code>\cite{} </code> dataset. 
+We follow the original training/dev/testing split of Defects4J <code>\cite{} </code> dataset. 
 
 ## Cloze Test 
 
@@ -35,7 +35,9 @@ We have both token-level and line-level completion tasks. ...
 ## Natural Language Code Search 
 We have two subtasks to measure semantic similarity between text and code. 
 
-Dataset for the first subtask is NL-code-search-Adv, which Given a text as the input, the task is to find the most semantically relevant code from a collection of codes. do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by classification accuracy. The dataset comes from \cite{xxx}, and we follow the training/dev/testing split of \cite{}.
+Dataset for the first subtask is NL-code-search-Adv. Given a text as the input, the task is to find the most semantically relevant code from a collection of codes. The training and dev sets come from CodeSearchNet <code>\cite{}</code>. Texts are function docstrings which serve as natural language queries. Although 
+
+do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by classification accuracy. The dataset comes from \cite{xxx}, and we follow the training/dev/testing split of \cite{}.
 
 Dataset for the second subtask is NL-code-search-WebQuery. Given a code as the input, the task is to retrieve semantically similar codes from a collection of codes.  The dataset comes from \cite{}, and we follow the split of \cite{}. Models are evaluated by xxx. 
 

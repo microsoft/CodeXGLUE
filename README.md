@@ -12,7 +12,7 @@ A brief summary of CodeXGLUE is given below, including tasks, datasets, baseline
 # Tasks and Datasets
 
 ## Clone Detection 
-We have two subtasks to measure the semantic equivalence between codes. 
+CodeXGLUE includes two subtasks to measure the semantic equivalence between codes. 
 
 Dataset for the first subtask is Clone-detection-BigCloneBench. Given two codes as the input, the task is to do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by classification accuracy. The dataset comes from <code>\cite{xxx}</code>, and we follow the training/dev/testing split of <code>\cite{}</code>.
 
@@ -26,14 +26,15 @@ We follow the original training/dev/testing split of Defects4J <code>\cite{} </c
 ## Cloze Test 
 
 ## Code Completion 
-We have both token-level and line-level completion tasks. 
+The task of code completion is to predict following tokens by given contexts of codes. 
+CodeXGLUE includes both token-level and line-level completion tasks. 
 
 ## Code Refinement 
 
 ## Code Translation
 
 ## Natural Language Code Search 
-We have two subtasks to measure semantic similarity between text and code. 
+CodeXGLUE includes  two subtasks to measure semantic similarity between text and code. 
 
 Dataset for the first subtask is NL-code-search-Adv. Given a text as the input, the task is to find the most semantically relevant code in Python from a collection of codes. The training set come from CodeSearchNet <code>\cite{}</code>. Texts are function docstrings which serve as natural language queries. Although deep neural network models like CodeBERT perform well on the original test data with the same data distribution, we observe that the performance drops dramatically once function names and variables are artificially replaced. To test the generalization ability of models, we create dev and test sets, in which data originally come from CodeSearchNet but the function names and variables are replaced with default values.
 

@@ -1,4 +1,4 @@
-# CodeXGLUE -- CodeSearch-webQuery
+# CodeXGLUE -- NL-code-search-WebQuery
 
 Here is the pipeline for NL-code-search-WebQuery task.
 
@@ -11,7 +11,7 @@ Here is the pipeline for NL-code-search-WebQuery task.
 
 ## Data
 
-The  training and validation sets of CodeSearch-webQuery data are collected from StaQC, where each instance contains a StackOverflow title, a code snippet and a 0/1 annotation of whether the code answers the title.
+The  training and validation sets of NL-code-search-WebQuery data are collected from StaQC, where each instance contains a StackOverflow title, a code snippet and a 0/1 annotation of whether the code answers the title.
 
 As for test set, we include the original test set of StaQC. Also to apply to a wider scenario, we create a new test set where each instance contains a Bing Search query, a python code function and a 0/1 annotation of whether the code answers the query. The newly created test set is in `./data/test_search.txt` .
 
@@ -24,7 +24,7 @@ python data_preprocess.py
 
 The processed data can be found in `./data` directory. 
 
-Data statistics of CodeSearch-webQuery are shown in the below table:
+Data statistics of NL-code-search-WebQuery are shown in the below table:
 
 |             | #Examples |
 | ----------- | :-------: |
@@ -80,7 +80,7 @@ python run_classifier.py \
 			--test_result_dir ./model_testfinal/test_results_staqc
 ```
 
-To test on the webQuery test set, you run the following command:
+To test on the web query test set, you run the following command:
 
 ```shell
 python run_classifier.py \
@@ -99,7 +99,7 @@ python run_classifier.py \
 
 ## Results
 
-The results on CodeSearch-webQuery are shown as below:
+The results on NL-code-search-WebQuery are shown as below:
 
 |    testset    |  model   | Precision | Recall |  F1   | Accuracy |
 | :-----------: | :------: | :-------: | :----: | :---: | :------: |

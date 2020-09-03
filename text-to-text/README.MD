@@ -111,7 +111,7 @@ The results on multi-lingual dataset are shown as below:
 
 | Translation Direction  |   Dev (BLEU)     | Test (BLEU)       |  
 | -----------            | :-------: | :--------: | 
-| English  Danish        |   69.72   |   69.46    |  
+| English -> Danish        |   69.72   |   69.46    |  
 | English  -> Latvian    |   54.38   |   55.92    |   
 | English -> Norwegian   |   70.00   |   70.23    |
 | English -> Chinese     |   73.89   |   73.54    | 

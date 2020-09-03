@@ -50,7 +50,7 @@ A predications file that has predictions in TXT format, such as evaluator/predic
 16765164	17526811	1
 ```
 
-## Pipeline
+## Pipeline-CodeBERT
 
 ### Dependency
 
@@ -62,7 +62,6 @@ A predications file that has predictions in TXT format, such as evaluator/predic
 
 ### Fine-tune
 
-To fine-tune encoder-decoder on the dataset
 
 ```shell
 cd code

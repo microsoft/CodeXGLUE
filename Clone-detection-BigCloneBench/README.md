@@ -15,7 +15,7 @@ We use [BigCloneBench](https://www.cs.usask.ca/faculty/croy/papers/2014/Svajlenk
    - **func:** the function
    - **idx:** index of the example
 
-2.  train.txt/valid.txt/test.txt 
+2. train.txt/valid.txt/test.txt provides examples, stored in the following format:    idx1	idx2	label
 
 ### Data Statistics
 

@@ -26,8 +26,8 @@ def calculate_scores(answers,predictions):
 	y_trues,y_preds=[],[]
 	for key in answers:
 		if key not in predictions:
-				logging.error("Missing prediction for ({},{}) pair.".format(key[0],key[1]))
-				sys.exit()
+			logging.error("Missing prediction for ({},{}) pair.".format(key[0],key[1]))
+			sys.exit()
 		y_trues.append(answers[key])
 		y_preds.append(predictions[key])
 	scores={}

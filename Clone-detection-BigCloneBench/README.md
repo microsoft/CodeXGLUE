@@ -15,7 +15,7 @@ The dataset we use is [BigCloneBench](https://www.cs.usask.ca/faculty/croy/paper
    - **func:** the function
    - **idx:** index of the example
 
-2. train.txt/valid.txt/test.txt provides examples, stored in the following format:    idx1	idx2	label
+2. train.txt/valid.txt/test.txt provide examples, stored in the following format:    idx1	idx2	label
 
 ### Data Statistics
 

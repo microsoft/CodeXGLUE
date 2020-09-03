@@ -6,7 +6,7 @@ Given two codes as the input, the task is to do binary classification (0/1), whe
 
 ## Dataset
 
-We use [BigCloneBench](https://www.cs.usask.ca/faculty/croy/papers/2014/SvajlenkoICSME2014BigERA.pdf) dataset and the dataset is filtered by the paper [Detecting Code Clones with Graph Neural Network and Flow-Augmented Abstract Syntax Tree](https://arxiv.org/pdf/2002.08653.pdf).
+The dataset we use is [BigCloneBench](https://www.cs.usask.ca/faculty/croy/papers/2014/SvajlenkoICSME2014BigERA.pdf) and filtered following the paper [Detecting Code Clones with Graph Neural Network and Flow-Augmented Abstract Syntax Tree](https://arxiv.org/pdf/2002.08653.pdf).
 
 ### Data Format
 
@@ -52,6 +52,7 @@ A predications file that has predictions in TXT format, such as evaluator/predic
 
 ## Pipeline-CodeBERT
 
+We also provide a pipeline that fine-tunes [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf) on this task. 
 ### Dependency
 
 - python 3.6 or 3.7

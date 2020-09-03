@@ -1,16 +1,66 @@
 # CodeXGLUE -- Clone Detection (BCB)
 
-Here is the pipeline for clone detection task on the BigCloneBench dataset.
+## Task Definition
 
+Given two codes as the input, the task is to do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by F1 score.
 
-## Dependency
+## Dataset
+
+We use [BigCloneBench](https://www.cs.usask.ca/faculty/croy/papers/2014/SvajlenkoICSME2014BigERA.pdf) dataset and the dataset is filtered by the paper [Detecting Code Clones with Graph Neural Network and Flow-Augmented Abstract Syntax Tree](https://arxiv.org/pdf/2002.08653.pdf).
+
+### Data Format
+
+1. dataset/data.jsonl is stored in jsonlines format. Each line in the uncompressed file represents one function.  One row is illustrated below.
+
+   - **func:** the function
+   - **idx:** index of the example
+
+2.  train.txt/valid.txt/test.txt 
+
+### Data Statistics
+
+Data statistics of the dataset are shown in the below table:
+
+|       | #Examples |
+| ----- | :-------: |
+| Train |  901,028  |
+| Dev   |  415,416  |
+| Test  |  415,416  |
+
+## Evaluator
+
+We provide a script to evaluate predictions for this task, and report F1 score
+
+### Example
+
+```bash
+python evaluator/evaluator.py -a evaluator/answers.txt -p evaluator/predictions.txt
+```
+
+{'Recall': 0.25, 'Prediction': 0.5, 'F1': 0.3333333333333333}
+
+### Input predictions
+
+A predications file that has predictions in TXT format, such as evaluator/predictions.txt. For example:
+
+```b
+13653451	21955002	0
+1188160	8831513	1
+1141235	14322332	0
+16765164	17526811	1
+```
+
+## Pipeline
+
+### Dependency
 
 - python 3.6 or 3.7
 - torch==1.4.0
 - transformers>=2.5.0
+- pip install scikit-learn
 
 
-## Fine-tune
+### Fine-tune
 
 To fine-tune encoder-decoder on the dataset
 
@@ -38,7 +88,7 @@ python run.py \
 ```
 
 
-## Evaluation
+### Evaluation
 
 ```shell
 cd code
@@ -67,11 +117,11 @@ python run.py \
 
 The results on the test set are shown as below:
 
-| Method     |    F1     |
-| ---------- | :-------: |
-| Deckard    |   0.03    |
-| RtvNN      |   0.01    |
-| CDLH       |   0.82    |
-| ASTNN      |   0.93    |
-| FA-AST-GMN |   0.95    |
-| CodeBERT   | **0.965** |
+| Method     | Precision |  Recall   |    F1     |
+| ---------- | :-------: | :-------: | :-------: |
+| Deckard    |   0.93    |   0.02    |   0.03    |
+| RtvNN      |   0.95    |   0.01    |   0.01    |
+| CDLH       |   0.92    |   0.74    |   0.82    |
+| ASTNN      |   0.92    |   0.94    |   0.93    |
+| FA-AST-GMN |   0.96    |   0.94    |   0.95    |
+| CodeBERT   | **0.973** | **0.968** | **0.965** |

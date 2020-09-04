@@ -10,6 +10,20 @@ Translate code documentation between human languages. Models are evaluated by BL
 The dataset we use is crawled and filtered from [Microsoft Documentation](https://docs.microsoft.com/), whose document located at https://github.com/MicrosoftDocs/.  
 
 
+
+
+### Data Statistics
+The source language and target language are stored in two files, one line corresponding to one line.
+Data statistics of Microsoft multi-lingual documentation dataset are shown in the below table:
+
+| Language Pairs        |   #Train    |   #Dev      |  #Test       |
+| --------------------- | :---------: | :---------: |  :---------: |
+| Danish <-> English    |    43K      |    1K       |   1K         |
+| Latvian <-> English   |    19K      |    1K       |   1K         |
+| Norwegian <-> English |    44K      |    1K       |   1K         |
+|  Chinese <-> English  |    50K      |    1K       |   1K         |
+
+
 ### Data Preprocess
 
 Preprocess dataset (add language sign at the begin of source language and combine all language pairs):
@@ -20,17 +34,6 @@ cd data
 python preprocessing.py
 
 ```
-
-### Data Statistics
-
-Data statistics of Microsoft multi-lingual documentation dataset are shown in the below table:
-
-| Language Pairs        |   #Train    |   #Dev      |  #Test       |
-| --------------------- | :---------: | :---------: |  :---------: |
-| Danish <-> English    |    43K      |    1K       |   1K         |
-| Latvian <-> English   |    19K      |    1K       |   1K         |
-| Norwegian <-> English |    44K      |    1K       |   1K         |
-|  Chinese <-> English  |    50K      |    1K       |   1K         |
 
 ## Evaluator
 

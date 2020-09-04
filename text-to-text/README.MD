@@ -7,18 +7,19 @@ Translate code documentation between human languages. Models are evaluated by BL
 
 ## Dataset
 
-The dataset we use is crawled and filtered from [Microsoft Documentation](https://docs.microsoft.com/). 
+The dataset we use is crawled and filtered from [Microsoft Documentation](https://docs.microsoft.com/), whose document located at https://github.com/MicrosoftDocs/.  
 
 
+### Data Preprocess
 
-### Data Format
+Preprocess dataset (add language sign at the begin of source language and combine all language pairs):
 
-1. dataset/data.jsonl is stored in jsonlines format. Each line in the uncompressed file represents one function.  One row is illustrated below.
+```shell
 
-   - **func:** the function
-   - **idx:** index of the example
+cd data
+python preprocessing.py
 
-2. train.txt/valid.txt/test.txt provide examples, stored in the following format:    idx1	idx2	label
+```
 
 ### Data Statistics
 
@@ -38,25 +39,15 @@ We provide a script to evaluate predictions for this task, and report BLEU score
 ### Example
 
 ```bash
-python evaluator/evaluator.py -a evaluator/answers.txt -p evaluator/predictions.txt
+python evaluator/evaluator.py  evaluator/output.txt -p evaluator/gold.txt
 ```
 
-{'Recall': 0.25, 'Prediction': 0.5, 'F1': 0.3333333333333333}
+{bleu-4:  67.75}
 
-### Input predictions
-
-A predications file that has predictions in TXT format, such as evaluator/predictions.txt. For example:
-
-```b
-13653451	21955002	0
-1188160	8831513	1
-1141235	14322332	0
-16765164	17526811	1
-```
 
 ## Pipeline
 
-We also provide a pipeline that use Transformer architecture or fine-tunes [XLM-Roberta](https://arxiv.org/pdf/1911.02116.pdf) on this task. 
+We also provide a pipeline that use Transformer architecture or fine-tunes [XLM-Roberta](https://arxiv.org/pdf/1911.02116.pdf) (--using_pretrain_model) on this task. 
 
 ### Dependency
 
@@ -88,6 +79,7 @@ pretrained_model=xlm-roberta-base #CodeBERT: path to CodeBERT. Roberta: roberta-
 CUDA_VISIBLE_DEVICES=0,1,2,3 python run.py \
 --do_train \
 --do_eval \
+--using_pretrain_model \
 --model_type roberta \
 --model_name_or_path $pretrained_model \
 --config_name xlm-roberta-base \

@@ -143,16 +143,15 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python run.py \
 
 The results on multi-lingual test dataset are shown as below:
 
-|                        |  Transformer           | Pretrained Transformer |
-| -----------            | :-------: | :--------: | :-------: | :--------: | 
-| Translation Direction  |    Dev    |    Test    |    Dev    |    Test    |  
-| -----------            | :-------: | :--------: | :-------: | :--------: | 
-| English -> Danish      |   62.21   |   61.60    |    69.72  |   69.46    |  
-| English  -> Latvian    |   43.20   |   44.06    |  54.38    |   55.92    |   
-| English -> Norwegian   |   61.01   |   61.17    | 70.00     |   70.23    |
-| English -> Chinese     |   66.16   |   64.69    | 73.89     |   73.54    | 
-| Danish -> English      |   65.12   |   64.88    | 77.22     |   75.85    |  
-| Latvian -> English     |   56.00   |   56.50    | 69.52     |   70.73    |   
-| Norwegian -> English   |   63.07   |   63.05    |  75.18    |   74.63    |
-| Chinese -> English     |   57.52   |   55.29    |  68.24    |   67.01    | 
+
+| Translation Direction  | Transformer | Pretrained Transformer|   
+| -----------            |   :-------: |  :--------: | 
+| English -> Danish      |    61.60    |    69.46    |  
+| English  -> Latvian    |    44.06    |   55.92     |   
+| English -> Norwegian   |    61.17    |    70.23    |
+| English -> Chinese     |    64.69    |   73.54     | 
+| Danish -> English      |    64.88    |    75.85    |  
+| Latvian -> English     |   56.50     |   70.73     |   
+| Norwegian -> English   |    63.05    |    74.63    |
+| Chinese -> English     |    55.29    |    67.01    | 
 

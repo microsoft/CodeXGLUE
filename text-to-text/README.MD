@@ -141,10 +141,11 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python run.py \
 
 ## Result
 
-The results on multi-lingual dataset are shown as below:
+The results on multi-lingual test dataset are shown as below:
 
 |                        |  Transformer           | Pretrained Transformer |
-| Translation Direction  |    Dev    |    Test    | Dev (BLEU)| Test (BLEU)|  
+| -----------            | :-------: | :--------: | :-------: | :--------: | 
+| Translation Direction  |    Dev    |    Test    |    Dev    |    Test    |  
 | -----------            | :-------: | :--------: | :-------: | :--------: | 
 | English -> Danish      |   62.21   |   61.60    |    69.72  |   69.46    |  
 | English  -> Latvian    |   43.20   |   44.06    |  54.38    |   55.92    |   

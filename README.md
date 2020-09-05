@@ -9,18 +9,16 @@ A brief summary of CodeXGLUE is given below, including tasks, datasets, baseline
 
 # Tasks and Datasets
 
-1. Clone detection. 
-A model is tasked with measure the semantic similarity between codes. Two existing datasets are included. One is for binary classification between codes and the another is for retrieving semantically similar code given code as the query. 
-2. Defect Detection. 
-A model is tasked with identifying whether a source code is an insecure code that may attack software systems, such as resource leaks, use-after-free vulnerabilities and DoS attack. An existing dataset is included.
-3.	Cloze test. A model is tasked with predicting the masked token from a code, formulated as a multi-choice classification problem. Two datasets are newly created, one with candidates from the (filtered) vocabulary and the other with candidates among “max” and “min”. 
-4.	Code completion. A model is tasked with predicting following tokens given contexts of codes. Both token-level and line-level completion are covered. Token-level task is analogous to language modeling, and we include two influential datasets here. Line-level datasets are newly created to test model’s ability to autocomplete a line. 
-5.	Code Translation.  A model is tasked to translate the code in one programming language to the code in another one. A dataset between Java and C# is newly created.
-6.	Code Search. A model is tasked to measure the semantic similarity between text and code. In retrieval scenario, a test set is newly created where function names and variables in test sets are replaced to test the generalization ability of a model. In text-code classification scenario, a test set where natural language queries come from Bing query log is created to test on real user queries.
-7.	Code Refinement. A model is tasked to try to automatically refine the code, which could be buggy or complex. An existing dataset is included.
-8.	Text-to-code generation. A model is tasked to generate a code given natural language description. An existing dataset is included.
-9.	Code summarization. A model is tasked to generate natural language comments for a code. Existing datasets are included.  
-10.	Documentation translation. A model is tasked to translate code documentation between human languages. A dataset, focusing on low-resource multilingual translation, is newly created.
+1.	**Clone detection**. A model is tasked with measure the semantic similarity between codes. Two existing datasets are included. One is for binary classification between codes and the another is for retrieving semantically similar code given code as the query. 
+2.	**Defect Detection**. A model is tasked with identifying whether a source code is an insecure code that may attack software systems, such as resource leaks, use-after-free vulnerabilities and DoS attack. An existing dataset is included.
+3.	**Cloze test**. A model is tasked with predicting the masked token from a code, formulated as a multi-choice classification problem. Two datasets are newly created, one with candidates from the (filtered) vocabulary and the other with candidates among “max” and “min”. 
+4.	**Code completion**. A model is tasked with predicting following tokens given contexts of codes. Both token-level and line-level completion are covered. Token-level task is analogous to language modeling, and we include two influential datasets here. Line-level datasets are newly created to test model’s ability to autocomplete a line. 
+5.	**Code Translation**.  A model is tasked to translate the code in one programming language to the code in another one. A dataset between Java and C# is newly created.
+6.	**Code Search**. A model is tasked to measure the semantic similarity between text and code. In retrieval scenario, a test set is newly created where function names and variables in test sets are replaced to test the generalization ability of a model. In text-code classification scenario, a test set where natural language queries come from Bing query log is created to test on real user queries.
+7.	**Code Refinement**. A model is tasked to try to automatically refine the code, which could be buggy or complex. An existing dataset is included.
+8.	**Text-to-code generation**. A model is tasked to generate a code given natural language description. An existing dataset is included.
+9.	**Code summarization**. A model is tasked to generate natural language comments for a code. Existing datasets are included.  
+10.	**Documentation translation**. A model is tasked to translate code documentation between human languages. A dataset, focusing on low-resource multilingual translation, is newly created.
 
 
 

@@ -2,7 +2,7 @@
 
 According to [Evans Data Corporation](https://evansdata.com/press/viewRelease.php?pressID=278), there are 23.9 million professional developers in 2019, and the population is expected to reach 28.7 million in 2024. With the growing population of developers, code intelligence, which aims at using AI tools to help enormous software developers improve the productivity of developments, is increasingly important in both communities of software engineering and artificial intelligence. When developers want to find codes written by others with the same intent, [code search](https://arxiv.org/abs/1909.09436) systems could help on automatically retrieving semantically relevant codes given natural language queries. When developers are confused about what tokens to write next, [code completion](https://arxiv.org/abs/1912.00742) systems could help on autocompleting following tokens given contexts of codes. When developers want to implement Java codes with the same function of existing Python codes, [code-to-code translation](https://arxiv.org/abs/2006.03511) systems could help on translating codes from one programming language to another programming language. 
 
-At Microsoft. ...
+Code intelligence plays a vital role in Microsoft’s mission to empower developers. As highlighted by Satya Nadella at [Build conference 2020](https://mybuild.microsoft.com/sessions/23912de2-1531-4684-b85a-d57ac30af09e), role of developers is more important than ever. GitHub is the home for developers, and Visual Studio Code is the most popular code editor. Microsoft is building the most complete toolchain for developers, bringing together the best of GitHub, Visual Studio and Azure to help developers to go from idea to code and code to cloud. 
 
 Past years have seen the surge of application of statistical models including neural nets in code intelligence tasks. More recently, inspired by the great success of large pre-trained models like [BERT](https://arxiv.org/abs/1810.04805) and [GPT](https://arxiv.org/abs/1908.09203) in natural language processing, pre-trained models learnt from big programming language data including [IntelliCode](https://arxiv.org/pdf/2005.08025.pdf) and [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf) obtain further surprising improvements on code understanding and generation problems. However, the area of code intelligence lacks a benchmark that covers a wide range of tasks. We have seen that a diversified benchmark dataset is significant for the growth of an area, like [ImageNet](http://image-net.org/) for CV and [GLUE](https://gluebenchmark.com/) for NLP. 
 
@@ -113,7 +113,13 @@ year={2019}
   year={2020}
 }</code></pre>
 
+
 # LICENSE
 Our codes follow MIT License.
 
 Our datasets follow Computational Use of Data Agreement (C-UDA) License.
+
+# Team
+This research was conducted by Ambrosio Blanco, Colin Clement, Dawn Drain, Nan Duan, Shengyu Fu, Ming Gong, Daya Guo, Niklas Gustafsson, Junjie Huang, Daxin Jiang,  Shujie Liu, Shuai Lu, Shuo Ren, Linjun Shou, Neel Sundaresan, Alexey Svyatkovskiy, Duyu Tang, Michele Tufano, Lidong Zhou, Long Zhou, Ming Zhou (authors in alphabet order). 
+
+Contact: Duyu Tang (dutang@microsoft.com), Shujie Liu (shujliu@microsoft.com)

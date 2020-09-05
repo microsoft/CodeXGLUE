@@ -43,6 +43,8 @@ except:
 from tqdm import tqdm, trange
 import multiprocessing
 from model import Model
+gpu_list = '2,3'
+os.environ["CUDA_VISIBLE_DEVICES"] = gpu_list
 cpu_cont = multiprocessing.cpu_count()
 from transformers import (WEIGHTS_NAME, AdamW, get_linear_schedule_with_warmup,
                           BertConfig, BertForMaskedLM, BertTokenizer,
@@ -68,11 +70,13 @@ class InputFeatures(object):
     def __init__(self,
                  input_tokens,
                  input_ids,
+                 idx,
                  label,
 
     ):
         self.input_tokens = input_tokens
         self.input_ids = input_ids
+        self.idx=str(idx)
         self.label=label
 
         
@@ -84,7 +88,7 @@ def convert_examples_to_features(js,tokenizer,args):
     source_ids =  tokenizer.convert_tokens_to_ids(source_tokens)
     padding_length = args.block_size - len(source_ids)
     source_ids+=[tokenizer.pad_token_id]*padding_length
-    return InputFeatures(source_tokens,source_ids,js['target'])
+    return InputFeatures(source_tokens,source_ids,js['idx'],js['target'])
 
 class TextDataset(Dataset):
     def __init__(self, tokenizer, args, file_path=None):
@@ -108,12 +112,13 @@ class TextDataset(Dataset):
         return torch.tensor(self.examples[i].input_ids),torch.tensor(self.examples[i].label)
             
 
-def set_seed(args):
-    random.seed(args.seed)
-    np.random.seed(args.seed)
-    torch.manual_seed(args.seed)
-    if args.n_gpu > 0:
-        torch.cuda.manual_seed_all(args.seed)
+def set_seed(seed=42):
+    random.seed(seed)
+    os.environ['PYHTONHASHSEED'] = str(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.backends.cudnn.deterministic = True
 
 
 def train(args, train_dataset, model, tokenizer):
@@ -124,7 +129,7 @@ def train(args, train_dataset, model, tokenizer):
     train_dataloader = DataLoader(train_dataset, sampler=train_sampler, 
                                   batch_size=args.train_batch_size,num_workers=4,pin_memory=True)
     args.max_steps=args.epoch*len( train_dataloader)
-    args.save_steps=len( train_dataloader)//10
+    args.save_steps=len( train_dataloader)
     args.warmup_steps=len( train_dataloader)
     args.logging_steps=len( train_dataloader)
     args.num_train_epochs=args.epoch
@@ -180,7 +185,6 @@ def train(args, train_dataset, model, tokenizer):
     best_acc=0.0
     # model.resize_token_embeddings(len(tokenizer))
     model.zero_grad()
-    set_seed(args)  # Added here for reproducibility (even between python 2 and 3)
  
     for idx in range(args.start_epoch, int(args.num_train_epochs)): 
         bar = tqdm(train_dataloader,total=len(train_dataloader))
@@ -244,16 +248,11 @@ def train(args, train_dataset, model, tokenizer):
                         output_dir = os.path.join(args.output_dir, '{}'.format(checkpoint_prefix))                        
                         if not os.path.exists(output_dir):
                             os.makedirs(output_dir)                        
-                        model_to_save = model.module.encoder if hasattr(model,'module') else model.encoder 
-                        model_to_save.save_pretrained(output_dir)
-                        torch.save(args, os.path.join(output_dir, 'training_args.bin'))
+                        model_to_save = model.module if hasattr(model,'module') else model
+                        output_dir = os.path.join(output_dir, '{}'.format('model.bin')) 
+                        torch.save(model_to_save.state_dict(), output_dir)
                         logger.info("Saving model checkpoint to %s", output_dir)
                         
-                        model_to_save = model.module if hasattr(model,'module') else model
-                        output_dir = os.path.join(args.output_dir, '{}'.format('model.bin'))   
-                        torch.save(model_to_save.state_dict(), output_dir)
-                        
-                    # _rotate_checkpoints(args, checkpoint_prefix)
 
 
 
@@ -299,15 +298,11 @@ def evaluate(args, model, tokenizer,eval_when_training=False):
     eval_acc=np.mean(labels==preds)
     eval_loss = eval_loss / nb_eval_steps
     perplexity = torch.tensor(eval_loss)
-
-    
             
     result = {
         "eval_loss": float(perplexity),
         "eval_acc":round(eval_acc,4),
     }
-
-
     return result
 
 def test(args, model, tokenizer):
@@ -344,18 +339,13 @@ def test(args, model, tokenizer):
     logits=np.concatenate(logits,0)
     labels=np.concatenate(labels,0)
     preds=logits[:,0]>0.5
-    eval_acc=np.mean(labels==preds)
+    with open(os.path.join(args.output_dir,"predictions.txt"),'w') as f:
+        for example,pred in zip(eval_dataset.examples,preds):
+            if pred:
+                f.write(example.idx+'\t1\n')
+            else:
+                f.write(example.idx+'\t0\n')    
     
-            
-    result = {
-        "ACC": round(float(eval_acc),4)
-    }
-
-    logger.info("***** Test results *****")
-    for key in sorted(result.keys()):
-        logger.info("  %s = %s", key, str(round(result[key],4)))
-
-    return result
                         
                         
 def main():
@@ -488,7 +478,7 @@ def main():
 
 
     # Set seed
-    set_seed(args)
+    set_seed(args.seed)
 
     # Load pretrained model and tokenizer
     if args.local_rank not in [-1, 0]:
@@ -551,11 +541,8 @@ def main():
     # Evaluation
     results = {}
     if args.do_eval and args.local_rank in [-1, 0]:
-            checkpoint_prefix = 'checkpoint-best-acc'
+            checkpoint_prefix = 'checkpoint-best-acc/model.bin'
             output_dir = os.path.join(args.output_dir, '{}'.format(checkpoint_prefix))  
-            model = model_class.from_pretrained(output_dir)
-            model=Model(model,config,tokenizer,args)
-            output_dir = os.path.join(args.output_dir, '{}'.format('model.bin'))
             model.load_state_dict(torch.load(output_dir))      
             model.to(args.device)
             result=evaluate(args, model, tokenizer)
@@ -564,11 +551,8 @@ def main():
                 logger.info("  %s = %s", key, str(round(result[key],4)))
             
     if args.do_test and args.local_rank in [-1, 0]:
-            checkpoint_prefix = 'checkpoint-best-acc'
+            checkpoint_prefix = 'checkpoint-best-acc/model.bin'
             output_dir = os.path.join(args.output_dir, '{}'.format(checkpoint_prefix))  
-            model = model_class.from_pretrained(output_dir)
-            model=Model(model,config,tokenizer,args)
-            output_dir = os.path.join(args.output_dir, '{}'.format('model.bin'))
             model.load_state_dict(torch.load(output_dir))                  
             model.to(args.device)
             test(args, model, tokenizer)

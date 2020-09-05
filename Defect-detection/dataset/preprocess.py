@@ -27,14 +27,17 @@ with open('test.txt') as f:
 with open('train.jsonl','w') as f:
     for idx,js in enumerate(js_all):
         if idx in train_index:
+            js['idx']=idx
             f.write(json.dumps(js)+'\n')
             
 with open('valid.jsonl','w') as f:
     for idx,js in enumerate(js_all):
         if idx in valid_index:
+            js['idx']=idx
             f.write(json.dumps(js)+'\n')
             
 with open('test.jsonl','w') as f:
     for idx,js in enumerate(js_all):
         if idx in test_index:
+            js['idx']=idx
             f.write(json.dumps(js)+'\n')

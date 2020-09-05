@@ -9,9 +9,9 @@ A brief summary of CodeXGLUE is given below, including tasks, datasets, baseline
 
 # Tasks and Datasets
 
-##	Clone detection. 
+1. Clone detection. 
 A model is tasked with measure the semantic similarity between codes. Two existing datasets are included. One is for binary classification between codes and the another is for retrieving semantically similar code given code as the query. 
-##	Defect Detection. 
+2. Defect Detection. 
 A model is tasked with identifying whether a source code is an insecure code that may attack software systems, such as resource leaks, use-after-free vulnerabilities and DoS attack. An existing dataset is included.
 3.	Cloze test. A model is tasked with predicting the masked token from a code, formulated as a multi-choice classification problem. Two datasets are newly created, one with candidates from the (filtered) vocabulary and the other with candidates among “max” and “min”. 
 4.	Code completion. A model is tasked with predicting following tokens given contexts of codes. Both token-level and line-level completion are covered. Token-level task is analogous to language modeling, and we include two influential datasets here. Line-level datasets are newly created to test model’s ability to autocomplete a line. 

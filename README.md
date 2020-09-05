@@ -113,7 +113,7 @@ year={2019}
   year={2020}
 }</code></pre>
 
-# Acknowledgment
+# Team
 This research was conducted by Ambrosio Blanco, Colin Clement, Dawn Drain, Nan Duan, Shengyu Fu, Ming Gong, Daya Guo, Niklas Gustafsson, Junjie Huang, Daxin Jiang,  Shujie Liu, Shuai Lu, Shuo Ren, Linjun Shou, Neel Sundaresan, Alexey Svyatkovskiy, Duyu Tang, Michele Tufano, Lidong Zhou, Long Zhou, Ming Zhou (authors in alphabet order). 
 
 Contact: Duyu Tang (dutang@microsoft.com), Shujie Liu (shujliu@microsoft.com)

@@ -43,6 +43,8 @@ except:
 from tqdm import tqdm, trange
 import multiprocessing
 from model import Model
+gpu_list = '0,1'
+os.environ["CUDA_VISIBLE_DEVICES"] = gpu_list
 cpu_cont = 16
 from transformers import (WEIGHTS_NAME, AdamW, get_linear_schedule_with_warmup,
                           BertConfig, BertForMaskedLM, BertTokenizer,
@@ -121,62 +123,43 @@ def convert_examples_to_features(code1_tokens,code2_tokens,label,url1,url2,token
 class TextDataset(Dataset):
     def __init__(self, tokenizer, args, file_path='train', block_size=512,pool=None):
         postfix=file_path.split('/')[-1].split('.txt')[0]
-        cached_features_file = os.path.join('data/',postfix+'.pkl')
+        self.examples = []
+        index_filename=file_path
+        logger.info("Creating features from index file at %s ", index_filename)
+        url_to_code={}
+        with open('/'.join(index_filename.split('/')[:-1])+'/data.jsonl') as f:
+            for line in f:
+                line=line.strip()
+                js=json.loads(line)
+                url_to_code[js['idx']]=js['func']
 
-        if os.path.exists(cached_features_file) and not args.overwrite_cache:
-            logger.info("Loading features from cached file %s", cached_features_file)
-            with open(cached_features_file, 'rb') as handle:
-                self.examples = pickle.load(handle)
-            if 'train' in postfix:
-                for idx, example in enumerate(self.examples[:3]):
-                        logger.info("*** Example ***")
-                        logger.info("idx: {}".format(idx))
-                        logger.info("label: {}".format(example.label))
-                        logger.info("input_tokens: {}".format([x.replace('\u0120','_') for x in example.input_tokens]))
-                        logger.info("input_ids: {}".format(' '.join(map(str, example.input_ids))))        
-        else:
-            self.examples = []
-            index_filename=file_path
-            logger.info("Creating features from index file at %s ", index_filename)
-            url_to_code={}
-            with open('/'.join(index_filename.split('/')[:-1])+'/data.jsonl') as f:
-                for line in f:
-                    line=line.strip()
-                    js=json.loads(line)
-                    url_to_code[js['idx']]=js['func']
+        data=[]
+        cache={}
+        f=open(index_filename)
+        with open(index_filename) as f:
+            for line in f:
+                line=line.strip()
+                url1,url2,label=line.split('\t')
+                if url1 not in url_to_code or url2 not in url_to_code:
+                    continue
+                if label=='0':
+                    label=0
+                else:
+                    label=1
+                data.append((url1,url2,label,tokenizer, args,cache,url_to_code))
+        if 'test' not in postfix:
+            data=random.sample(data,int(len(data)*0.1))
 
-            data=[]
-            cache={}
-            f=open(index_filename)
-            with open(index_filename) as f:
-                for line in f:
-                    line=line.strip()
-                    url1,url2,label=line.split('\t')
-                    if url1 not in url_to_code or url2 not in url_to_code:
-                        continue
-                    if label=='0':
-                        label=0
-                    else:
-                        label=1
-                    data.append((url1,url2,label,tokenizer, args,cache,url_to_code))
+        self.examples=pool.map(get_example,tqdm(data,total=len(data)))
+        if 'train' in postfix:
+            for idx, example in enumerate(self.examples[:3]):
+                    logger.info("*** Example ***")
+                    logger.info("idx: {}".format(idx))
+                    logger.info("label: {}".format(example.label))
+                    logger.info("input_tokens: {}".format([x.replace('\u0120','_') for x in example.input_tokens]))
+                    logger.info("input_ids: {}".format(' '.join(map(str, example.input_ids))))
 
 
-            self.examples=pool.map(get_example,tqdm(data,total=len(data)))
-            if 'train' in postfix:
-                for idx, example in enumerate(self.examples[:3]):
-                        logger.info("*** Example ***")
-                        logger.info("idx: {}".format(idx))
-                        logger.info("label: {}".format(example.label))
-                        logger.info("input_tokens: {}".format([x.replace('\u0120','_') for x in example.input_tokens]))
-                        logger.info("input_ids: {}".format(' '.join(map(str, example.input_ids))))
-
-            # Note that we are loosing the last truncated example here for the sake of simplicity (no padding)
-            # If your dataset is small, first you should loook for a bigger one :-) and second you
-            # can change this behavior by adding (model specific) padding.
-            if 'test' not in cached_features_file:
-                logger.info("Saving features into cached file %s", cached_features_file)
-                with open(cached_features_file, 'wb') as handle:
-                    pickle.dump(self.examples, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
     def __len__(self):
         return len(self.examples)
@@ -187,65 +170,16 @@ class TextDataset(Dataset):
 
 
 def load_and_cache_examples(args, tokenizer, evaluate=False,test=False,pool=None):
-    dataset = TextDataset(tokenizer, args, file_path=args.test_data_file if test else (args.eval_data_file if evaluate else args.train_data_file),
-                          block_size=args.block_size,pool=pool)
+    dataset = TextDataset(tokenizer, args, file_path=args.test_data_file if test else (args.eval_data_file if evaluate else args.train_data_file),block_size=args.block_size,pool=pool)
     return dataset
 
-
-def _truncate_seq_pair(tokens_a, tokens_b, max_length):
-    """Truncates a sequence pair in place to the maximum length."""
-
-    # This is a simple heuristic which will always truncate the longer sequence
-    # one token at a time. This makes more sense than truncating an equal percent
-    # of tokens from each, since if one sequence is very short then each token
-    # that's truncated likely contains more information than a longer sequence.
-    
-    while True:
-        total_length = len(tokens_a) + len(tokens_b)
-        if total_length <= max_length:
-            break
-        if len(tokens_a) > len(tokens_b):
-            tokens_a.pop()
-        else:
-            tokens_b.pop()
-            
-
-def set_seed(args):
-    random.seed(args.seed)
-    np.random.seed(args.seed)
-    torch.manual_seed(args.seed)
-    if args.n_gpu > 0:
-        torch.cuda.manual_seed_all(args.seed)
-
-
-def _rotate_checkpoints(args, checkpoint_prefix, use_mtime=False):
-    if not args.save_total_limit:
-        return
-    if args.save_total_limit <= 0:
-        return
-
-    # Check if we should delete older checkpoint(s)
-    glob_checkpoints = glob.glob(os.path.join(args.output_dir, '{}-*'.format(checkpoint_prefix)))
-    if len(glob_checkpoints) <= args.save_total_limit:
-        return
-
-    ordering_and_checkpoint_path = []
-    for path in glob_checkpoints:
-        if use_mtime:
-            ordering_and_checkpoint_path.append((os.path.getmtime(path), path))
-        else:
-            regex_match = re.match('.*{}-([0-9]+)-.*'.format(checkpoint_prefix), path)
-            if regex_match and regex_match.groups():
-                ordering_and_checkpoint_path.append((int(regex_match.groups()[0]), path))
-
-    checkpoints_sorted = sorted(ordering_and_checkpoint_path)
-    checkpoints_sorted = [checkpoint[1] for checkpoint in checkpoints_sorted]
-    number_of_checkpoints_to_delete = max(0, len(checkpoints_sorted) - args.save_total_limit)
-    checkpoints_to_be_deleted = checkpoints_sorted[:number_of_checkpoints_to_delete]
-    for checkpoint in checkpoints_to_be_deleted:
-        logger.info("Deleting older checkpoint [{}] due to args.save_total_limit".format(checkpoint))
-        shutil.rmtree(checkpoint)
-
+def set_seed(seed=42):
+    random.seed(seed)
+    os.environ['PYHTONHASHSEED'] = str(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.backends.cudnn.deterministic = True
 
 def train(args, train_dataset, model, tokenizer,pool):
     """ Train the model """
@@ -255,7 +189,7 @@ def train(args, train_dataset, model, tokenizer,pool):
     
     train_dataloader = DataLoader(train_dataset, sampler=train_sampler, batch_size=args.train_batch_size)
     args.max_steps=args.epoch*len( train_dataloader)
-    args.save_steps=len( train_dataloader)//10
+    args.save_steps=len( train_dataloader)
     args.warmup_steps=len( train_dataloader)
     args.logging_steps=len( train_dataloader)
     args.num_train_epochs=args.epoch
@@ -311,7 +245,7 @@ def train(args, train_dataset, model, tokenizer,pool):
     best_f1=0
     # model.resize_token_embeddings(len(tokenizer))
     model.zero_grad()
-    set_seed(args)  # Added here for reproducibility (even between python 2 and 3)
+    set_seed(args.seed)  # Added here for reproducibility (even between python 2 and 3)
  
     for idx in range(args.start_epoch, int(args.num_train_epochs)): 
         bar = tqdm(train_dataloader,total=len(train_dataloader))
@@ -373,30 +307,21 @@ def train(args, train_dataset, model, tokenizer,pool):
                         output_dir = os.path.join(args.output_dir, '{}'.format(checkpoint_prefix))                        
                         if not os.path.exists(output_dir):
                             os.makedirs(output_dir)                        
-                        model_to_save = model.module.encoder if hasattr(model,'module') else model.encoder  # Take care of distributed/parallel training
-                        model_to_save.save_pretrained(output_dir)
-                        torch.save(args, os.path.join(output_dir, 'training_args.bin'))
+                        model_to_save = model.module if hasattr(model,'module') else model
+                        output_dir = os.path.join(output_dir, '{}'.format('model.bin')) 
+                        torch.save(model_to_save.state_dict(), output_dir)
                         logger.info("Saving model checkpoint to %s", output_dir)
                         
-                    # _rotate_checkpoints(args, checkpoint_prefix)
-
-
         if args.max_steps > 0 and global_step > args.max_steps:
             train_iterator.close()
             break
-
-    if args.local_rank in [-1, 0]:
-        tb_writer.close()
-
     return global_step, tr_loss / global_step
 
 
 def evaluate(args, model, tokenizer, prefix="",pool=None,eval_when_training=False):
     # Loop to handle MNLI double evaluation (matched, mis-matched)
     eval_output_dir = args.output_dir
-
     eval_dataset = load_and_cache_examples(args, tokenizer, evaluate=True,pool=pool)
-
     if not os.path.exists(eval_output_dir) and args.local_rank in [-1, 0]:
         os.makedirs(eval_output_dir)
 
@@ -469,7 +394,6 @@ def test(args, model, tokenizer, prefix="",pool=None,best_threshold=0):
     # Loop to handle MNLI double evaluation (matched, mis-matched)
     eval_dataset = load_and_cache_examples(args, tokenizer, test=True,pool=pool)
 
-
     args.eval_batch_size = args.per_gpu_eval_batch_size * max(1, args.n_gpu)
     # Note that DistributedSampler samples randomly
     eval_sampler = SequentialSampler(eval_dataset) if args.local_rank == -1 else DistributedSampler(eval_dataset)
@@ -498,31 +422,14 @@ def test(args, model, tokenizer, prefix="",pool=None,best_threshold=0):
             y_trues.append(labels.cpu().numpy())
         nb_eval_steps += 1
     logits=np.concatenate(logits,0)
-    y_trues=np.concatenate(y_trues,0)
     y_preds=logits[:,1]>best_threshold
-    from sklearn.metrics import recall_score
-    recall=recall_score(y_trues, y_preds, average='macro')
-    from sklearn.metrics import precision_score
-    precision=precision_score(y_trues, y_preds, average='macro')   
-    from sklearn.metrics import f1_score
-    f1=f1_score(y_trues, y_preds, average='macro') 
-     
-    result = {
-        "eval_recall": float(recall),
-        "eval_precision": float(precision),
-        "eval_f1": float(f1),
-        
-    }
-
-    logger.info("***** Eval results {} *****".format(prefix))
-    for key in sorted(result.keys()):
-        logger.info("  %s = %s", key, str(round(result[key],4)))
-
-    return result
-
-
-                        
-                        
+    with open(os.path.join(args.output_dir,"predictions.txt"),'w') as f:
+        for example,pred in zip(eval_dataset.examples,y_preds):
+            if pred:
+                f.write(example.url1+'\t'+example.url2+'\t'+'1'+'\n')
+            else:
+                f.write(example.url1+'\t'+example.url2+'\t'+'0'+'\n')
+                                                
 def main():
     parser = argparse.ArgumentParser()
 
@@ -650,7 +557,7 @@ def main():
                    args.local_rank, device, args.n_gpu, bool(args.local_rank != -1), args.fp16)
 
     # Set seed
-    set_seed(args)
+    set_seed(args.seed)
 
     # Load pretrained model and tokenizer
     if args.local_rank not in [-1, 0]:
@@ -708,44 +615,21 @@ def main():
             torch.distributed.barrier()
 
         global_step, tr_loss = train(args, train_dataset, model, tokenizer,pool)
-        logger.info(" global_step = %s, average loss = %s", global_step, tr_loss)
 
-    # Saving best-practices: if you use save_pretrained for the model and tokenizer, you can reload them using from_pretrained()
-    if args.do_train and (args.local_rank == -1 or torch.distributed.get_rank() == 0):
-        # Create output directory if needed
-        if not os.path.exists(args.output_dir) and args.local_rank in [-1, 0]:
-            os.makedirs(args.output_dir)
-
-        logger.info("Saving model checkpoint to %s", args.output_dir)
-        # Save a trained model, configuration and tokenizer using `save_pretrained()`.
-        # They can then be reloaded using `from_pretrained()`
-        model_to_save = model.module.encoder if hasattr(model,'module') else model.encoder  # Take care of distributed/parallel training
-        model_to_save.save_pretrained(args.output_dir)
-        tokenizer.save_pretrained(args.output_dir)
-
-        # Good practice: save your training arguments together with the trained model
-        torch.save(args, os.path.join(args.output_dir, 'training_args.bin'))
-
-        # Load a trained model and vocabulary that you have fine-tuned
-        model = model_class.from_pretrained(args.output_dir)
-        tokenizer = tokenizer_class.from_pretrained(args.output_dir, do_lower_case=args.do_lower_case)
-        model.to(args.device)
 
     # Evaluation
     results = {}
     if args.do_eval and args.local_rank in [-1, 0]:
-        checkpoint_prefix = 'checkpoint-best-f1'
+        checkpoint_prefix = 'checkpoint-best-f1/model.bin'
         output_dir = os.path.join(args.output_dir, '{}'.format(checkpoint_prefix))  
-        model = model_class.from_pretrained(output_dir)
-        model=Model(model,config,tokenizer,args)
+        model.load_state_dict(torch.load(output_dir))
         model.to(args.device)
         result=evaluate(args, model, tokenizer,pool=pool)
         
     if args.do_test and args.local_rank in [-1, 0]:
-        checkpoint_prefix = 'checkpoint-best-f1'
+        checkpoint_prefix = 'checkpoint-best-f1/model.bin'
         output_dir = os.path.join(args.output_dir, '{}'.format(checkpoint_prefix))  
-        model = model_class.from_pretrained(output_dir)
-        model=Model(model,config,tokenizer,args)
+        model.load_state_dict(torch.load(output_dir))
         model.to(args.device)
         test(args, model, tokenizer,pool=pool,best_threshold=0.5)
 

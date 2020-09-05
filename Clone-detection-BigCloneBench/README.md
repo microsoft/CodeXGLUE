@@ -13,6 +13,7 @@ The dataset we use is [BigCloneBench](https://www.cs.usask.ca/faculty/croy/paper
 1. dataset/data.jsonl is stored in jsonlines format. Each line in the uncompressed file represents one function.  One row is illustrated below.
 
    - **func:** the function
+
    - **idx:** index of the example
 
 2. train.txt/valid.txt/test.txt provide examples, stored in the following format:    idx1	idx2	label
@@ -60,13 +61,13 @@ We also provide a pipeline that fine-tunes [CodeBERT](https://arxiv.org/pdf/2002
 - transformers>=2.5.0
 - pip install scikit-learn
 
-
 ### Fine-tune
+
+We only use 10% training data to fine-tune and 10% valid data to evaluate.
 
 
 ```shell
 cd code
-mkdir data
 python run.py \
     --output_dir=./saved_models \
     --model_type=roberta \
@@ -77,18 +78,19 @@ python run.py \
     --train_data_file=../dataset/train.txt \
     --eval_data_file=../dataset/valid.txt \
     --test_data_file=../dataset/test.txt \
-    --epoch 1 \
-    --block_size 512 \
-    --train_batch_size 32 \
-    --eval_batch_size 64 \
+    --epoch 2 \
+    --block_size 400 \
+    --train_batch_size 16 \
+    --eval_batch_size 32 \
     --learning_rate 5e-5 \
     --max_grad_norm 1.0 \
     --evaluate_during_training \
-    --seed 123456 
+    --seed 123456 2>&1| tee train.log
 ```
 
+### Inference
 
-### Evaluation
+We use full test data for inference. 
 
 ```shell
 cd code
@@ -103,15 +105,23 @@ python run.py \
     --train_data_file=../dataset/train.txt \
     --eval_data_file=../dataset/valid.txt \
     --test_data_file=../dataset/test.txt \
-    --epoch 1 \
-    --block_size 512 \
-    --train_batch_size 32 \
-    --eval_batch_size 64 \
+    --epoch 2 \
+    --block_size 400 \
+    --train_batch_size 16 \
+    --eval_batch_size 32 \
     --learning_rate 5e-5 \
     --max_grad_norm 1.0 \
     --evaluate_during_training \
-    --seed 123456 
+    --seed 123456 2>&1| tee test.log
 ```
+
+### Evaluation
+
+```shell
+python ../evaluator/evaluator.py -a ../dataset/test.txt -p saved_models/predictions.txt
+```
+
+{'Recall': 0.9687694680849823, 'Prediction': 0.9603497142447242, 'F1': 0.9645034096215225}
 
 ## Result
 
@@ -124,4 +134,5 @@ The results on the test set are shown as below:
 | CDLH       |   0.92    |   0.74    |   0.82    |
 | ASTNN      |   0.92    |   0.94    |   0.93    |
 | FA-AST-GMN |   0.96    |   0.94    |   0.95    |
-| CodeBERT   | **0.973** | **0.968** | **0.965** |
+| CodeBERT   | **0.960** | **0.969** | **0.965** |
+

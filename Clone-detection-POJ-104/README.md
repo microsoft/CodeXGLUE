@@ -16,6 +16,7 @@ We use [POJ-104](https://arxiv.org/pdf/1409.5718.pdf) dataset on this task.
 
 ```shell
 cd dataset
+pip install gdown
 gdown https://drive.google.com/uc?id=0B2i-vWnOu7MxVlJwQXN6eVNONUU
 tar -xvf programs.tar.gz
 cd ..
@@ -124,18 +125,18 @@ python run.py \
     --train_data_file=../dataset/train.jsonl \
     --eval_data_file=../dataset/valid.jsonl \
     --test_data_file=../dataset/test.jsonl \
-    --epoch 10 \
+    --epoch 2 \
     --block_size 400 \
-    --train_batch_size 32 \
-    --eval_batch_size 64 \
+    --train_batch_size 8 \
+    --eval_batch_size 16 \
     --learning_rate 5e-5 \
     --max_grad_norm 1.0 \
     --evaluate_during_training \
-    --seed 123456 
+    --seed 123456 2>&1| tee train.log
 ```
 
 
-### Evaluation
+### Inference
 
 ```shell
 cd code
@@ -150,15 +151,24 @@ python run.py \
     --train_data_file=../dataset/train.jsonl \
     --eval_data_file=../dataset/valid.jsonl \
     --test_data_file=../dataset/test.jsonl \
-    --epoch 10 \
+    --epoch 2 \
     --block_size 400 \
-    --train_batch_size 32 \
-    --eval_batch_size 64 \
+    --train_batch_size 8 \
+    --eval_batch_size 16 \
     --learning_rate 5e-5 \
     --max_grad_norm 1.0 \
     --evaluate_during_training \
-    --seed 123456 
+    --seed 123456 2>&1| tee test.log
 ```
+
+### Evaluation
+
+```shell
+python ../evaluator/extract_answers.py -c ../dataset/test.jsonl -o saved_models/answers.jsonl 
+python ../evaluator/evaluator.py -a saved_models/answers.jsonl   -p saved_models/predictions.jsonl 
+```
+
+{'MAP': 0.8429}
 
 ## Result
 
@@ -172,5 +182,5 @@ The results on the test set are shown as below:
 | Aroma-Dot        |   52.08   |
 | Aroma-Cos        |   55.12   |
 | MISIM-GNN        |   82.45   |
-| CodeBERT         | **84.13** |
+| CodeBERT         | **84.29** |
 

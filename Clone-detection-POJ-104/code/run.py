@@ -62,7 +62,6 @@ MODEL_CLASSES = {
 }
 
 
-
 class InputFeatures(object):
     """A single training/test features for a example."""
     def __init__(self,
@@ -131,12 +130,13 @@ class TextDataset(Dataset):
                 torch.tensor(n_example.input_ids),torch.tensor(label))
             
 
-def set_seed(args):
-    random.seed(args.seed)
-    np.random.seed(args.seed)
-    torch.manual_seed(args.seed)
-    if args.n_gpu > 0:
-        torch.cuda.manual_seed_all(args.seed)
+def set_seed(seed=42):
+    random.seed(seed)
+    os.environ['PYHTONHASHSEED'] = str(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.backends.cudnn.deterministic = True
 
 
 def train(args, train_dataset, model, tokenizer):
@@ -200,12 +200,9 @@ def train(args, train_dataset, model, tokenizer):
     
     global_step = args.start_step
     tr_loss, logging_loss,avg_loss,tr_nb,tr_num,train_loss = 0.0, 0.0,0.0,0,0,0
-    best_mrr=0.0
     best_acc=0.0
     # model.resize_token_embeddings(len(tokenizer))
     model.zero_grad()
-    set_seed(args)  # Added here for reproducibility (even between python 2 and 3)
- 
     for idx in range(args.start_epoch, int(args.num_train_epochs)): 
         bar = train_dataloader
         tr_num=0
@@ -274,16 +271,10 @@ def train(args, train_dataset, model, tokenizer):
                         output_dir = os.path.join(args.output_dir, '{}'.format(checkpoint_prefix))                        
                         if not os.path.exists(output_dir):
                             os.makedirs(output_dir)                        
-                        model_to_save = model.module.encoder if hasattr(model,'module') else model.encoder 
-                        model_to_save.save_pretrained(output_dir)
-                        torch.save(args, os.path.join(output_dir, 'training_args.bin'))
-                        logger.info("Saving model checkpoint to %s", output_dir)
-                        
                         model_to_save = model.module if hasattr(model,'module') else model
-                        output_dir = os.path.join(args.output_dir, '{}'.format('model.bin'))   
+                        output_dir = os.path.join(output_dir, '{}'.format('model.bin'))   
                         torch.save(model_to_save.state_dict(), output_dir)
-                    
-                    # _rotate_checkpoints(args, checkpoint_prefix)
+                        logger.info("Saving model checkpoint to %s", output_dir)
 
 
 eval_dataset=None
@@ -348,9 +339,7 @@ def evaluate(args, model, tokenizer,eval_when_training=False):
             if int(labels[index])==label:
                 cont+=1
         MAP.append(cont/dic[label])
-            
-    
-            
+          
     result = {
         "eval_loss": float(perplexity),
         "eval_map":float(np.mean(MAP))
@@ -399,33 +388,21 @@ def test(args, model, tokenizer):
     perplexity = torch.tensor(eval_loss)
 
     scores=np.matmul(vecs,vecs.T)
-    dic={}
     for i in range(scores.shape[0]):
         scores[i,i]=-1000000
-        if int(labels[i]) not in dic:
-            dic[int(labels[i])]=-1
-        dic[int(labels[i])]+=1
     sort_ids=np.argsort(scores, axis=-1, kind='quicksort', order=None)[:,::-1]
-    MAP=[]
-    for i in range(scores.shape[0]):
-        cont=0
-        label=int(labels[i])
-        for j in range(dic[label]):
-            index=sort_ids[i,j]
-            if int(labels[index])==label:
-                cont+=1
-        MAP.append(cont/dic[label])
-    
-    result = {
-        "eval_loss": float(perplexity),
-        "eval_map":float(np.mean(MAP))
-    }
+    indexs=[]
+    for example in eval_dataset.examples:
+        indexs.append(example.index)
+    with open(os.path.join(args.output_dir,"predictions.jsonl"),'w') as f:
+        for index,sort_id in zip(indexs,sort_ids):
+            js={}
+            js['index']=index
+            js['answers']=[]
+            for idx in sort_id[:499]:
+                js['answers'].append(indexs[int(idx)])
+            f.write(json.dumps(js)+'\n')
 
-    logger.info("***** Test results *****")
-    for key in sorted(result.keys()):
-        logger.info("  %s = %s", key, str(round(result[key],4)))
-
-    return result
                         
                         
 def main():
@@ -556,7 +533,7 @@ def main():
 
 
     # Set seed
-    set_seed(args)
+    set_seed(args.seed)
 
     # Load pretrained model and tokenizer
     if args.local_rank not in [-1, 0]:
@@ -619,23 +596,21 @@ def main():
     # Evaluation
     results = {}
     if args.do_eval and args.local_rank in [-1, 0]:
-            model = model_class.from_pretrained(args.model_name_or_path)
-            model=Model(model,config,tokenizer,args)
-            output_dir = os.path.join(args.output_dir, '{}'.format('model.bin'))
-            model.load_state_dict(torch.load(output_dir))      
-            model.to(args.device)
-            result=evaluate(args, model, tokenizer)
-            logger.info("***** Eval results *****")
-            for key in sorted(result.keys()):
-                logger.info("  %s = %s", key, str(round(result[key],4)))
+        checkpoint_prefix = 'checkpoint-best-map/model.bin'
+        output_dir = os.path.join(args.output_dir, '{}'.format(checkpoint_prefix))  
+        model.load_state_dict(torch.load(output_dir))      
+        model.to(args.device)
+        result=evaluate(args, model, tokenizer)
+        logger.info("***** Eval results *****")
+        for key in sorted(result.keys()):
+            logger.info("  %s = %s", key, str(round(result[key],4)))
             
     if args.do_test and args.local_rank in [-1, 0]:
-            model = model_class.from_pretrained(args.model_name_or_path)
-            model=Model(model,config,tokenizer,args)
-            output_dir = os.path.join(args.output_dir, '{}'.format('model.bin'))
-            model.load_state_dict(torch.load(output_dir))                  
-            model.to(args.device)
-            test(args, model, tokenizer)
+        checkpoint_prefix = 'checkpoint-best-map/model.bin'
+        output_dir = os.path.join(args.output_dir, '{}'.format(checkpoint_prefix))  
+        model.load_state_dict(torch.load(output_dir))                  
+        model.to(args.device)
+        test(args, model, tokenizer)
 
     return results
 

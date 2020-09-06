@@ -31,7 +31,7 @@ def process_string(token):
         return ""
     return (
         f"{qualifier}{start_quote}{str_lit}{end_quote}"
-        if len(str_lit) < 15 and "\n" not in str_lit
+        if len(str_lit) < 15 and "\n" not in str_lit and "</s>" not in str_lit and "<s>" not in str_lit and "<pad>" not in str_lit and "<EOL>" not in str_lit
         else f"{qualifier}{start_quote}{end_quote}"
     )
 
@@ -45,6 +45,9 @@ def py_tokenize(args, file_name, file_type):
             out_tokens = []
             prev_eol = False
             for toknum, tokval, _, _, _ in token_gen:
+                tokval = " ".join(tokval.split())
+                if len(tokval) > 100:
+                    continue
                 if toknum == STRING:
                     add_token = process_string(tokval)
                     if len(add_token) > 0:

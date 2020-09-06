@@ -358,6 +358,9 @@ def eval_acc(args, model, tokenizer, file_type='test'):
     correct = 0.0
     total = 0
 
+    total_pred = []
+    total_gt = []
+
     for step, batch in enumerate(eval_dataloader):
         inputs = batch.to(args.device)
 
@@ -416,6 +419,9 @@ def eval_acc(args, model, tokenizer, file_type='test'):
                     now_pred.append(pred[i-1])
         assert len(all_pred) == len(all_gt)
 
+        total_pred.extend(all_pred)
+        total_gt.extend(all_gt)
+
         for x, y in zip(all_pred, all_gt):
             if y not in ["<s>", "</s>", "<EOL>", "<pad>"]:
                 total += 1
@@ -425,6 +431,9 @@ def eval_acc(args, model, tokenizer, file_type='test'):
         if step % args.logging_steps == 0:
             logger.info(f"{step} are done!")
             logger.info(f"{total}, {correct/total}")
+
+    pickle.dumps(total_pred, open(os.path.join(args.output_dir, "preds.pkl"), "wb"))
+    pickle.dumps(total_gt, open(os.path.join(args.output_dir, "gts.pkl"), "wb"))
     
     return total, correct
 

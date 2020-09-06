@@ -1,17 +1,16 @@
-# CodeXGLUE -- Code Completion
+# CodeXGLUE -- Code Completion (token level)
 
-Here is the pipeline for code completion task.
+Here is the pipeline for token level code completion task.
 
+## Task Definition
 
-## Dependency
-
-- python 3.6 or 3.7
-- torch==1.4.0
-- transformers>=2.5.0
-- fuzzywuzzy
+Predict next code token given context of previous tokens. Models are evaluated by token level accuracy.
 
 
-## Data Preprocess
+## Dataset
+
+We collect and provide two datasets for code completion. One in python, the other in java. Both two datasets are used for two code completion tasks -- token level completion and line level completion. These two tasks share train/dev set but not test set. Here, we introduce token level code completion. Test sets for line level completion are already in `dataset/py150/line_completion` and `dataset/javaCorpus/line_completion`.
+
 
 ### py150 dataset
 
@@ -22,6 +21,27 @@ To download and preprocess the dataset, navigate to `dataset/py150` directory, a
 bash download_and_extract.sh
 python preprocess.py --base_dir=py150_files --output_dir=token_completion
 ```
+
+### Github Java Corpus
+
+We use java corpus dataset mined by Allamanis, in his MSR 2013 paper [Mining Source Code Repositories at Massive Scale using Language Modeling](https://homepages.inf.ed.ac.uk/csutton/publications/msr2013.pdf). We follow the same split and preprocessing in Karampatsis's ICSE 2020 paper [Big Code != Big Vocabulary: Open-Vocabulary Models for Source Code](http://homepages.inf.ed.ac.uk/s1467463/documents/icse20-main-1325.pdf).
+
+To download the preprocessed dataset, navigate to `dataset/javaCorpus` directory, and run
+```shell
+bash download.sh
+```
+
+### Data Format
+
+Code corpus are saved in txt format files. one line is a tokenized code snippets:
+```
+<s> from django . utils . translation import ugettext_lazy as _ <EOL> import horizon <EOL> from openstack_dashboard . dashboards . project import dashboard <EOL> class Stacks ( horizon . Panel ) : <EOL> name = _ ( "Stacks" ) <EOL> slug = "stacks" <EOL> permissions = ( '' , ) <EOL> dashboard . Project . register ( Stacks ) </s>
+```
+
+We have added `<s>` and `</s>` to indicate the start and the end of one piece of code. `<EOL>` is also added in python corpus to mark end of a line since in python there is no `;` or `}` to mark the end of a statement like in java.
+
+
+### Data Statistics
 
 Data statistics of py150 dataset are shown in the below table, note that there doesn't exist dev set in the origin py150 dataset, we choose the first 5,000 files in test set as dev set.
 
@@ -35,32 +55,56 @@ Data statistics of py150 dataset are shown in the below table, note that there d
 | ---------- | :---------: | :----------------------: | :-----------------------: |
 |    Test    |    10,000   |          489.11          |          6.56             |
 
-### Github Java Corpus
-
-We use java corpus dataset mined by Allamanis, in his MSR 2013 paper [Mining Source Code Repositories at Massive Scale using Language Modeling](https://homepages.inf.ed.ac.uk/csutton/publications/msr2013.pdf). We follow the same split and preprocessing in Karampatsis's ICSE 2020 paper [Big Code != Big Vocabulary: Open-Vocabulary Models for Source Code](http://homepages.inf.ed.ac.uk/s1467463/documents/icse20-main-1325.pdf).
-
-To download the preprocessed dataset, navigate to `dataset/javaCorpus` directory, and run
-```shell
-bash download.sh
-```
-
 Data statistics of Github Java Corpus dataset are shown in the below table:
 
 | Token Level |   #Files   |   #Tokens   |
 | ----------- | :--------: | :---------: |
 |    Train    |   12,934   |   15.74M    |
 |     Dev     |    7,189   |    3.83M    |
-|    Test     |    8,268   |    5.33M    |
+|    Test     |    8,268   |    5.32M    |
 
 | Line Level |  #Examples  | Average tokens of inputs | Average tokens of outputs |
 | ---------- | :---------: | :----------------------: | :-----------------------: |
 |    Test    |    3,000    |          350.62          |          10.49            |
 
+## Evaluator
 
-Both two datasets are used for two code completion tasks -- token level completion and line level completion. These two tasks share train/dev set but not test set. Test sets for line level completion are already in `dataset/py150/line_completion` and `dataset/javaCorpus/line_completion`.
+We provide a script to evaluate predictions for this task, and report accuracy score. You can run the script like this:
+
+```bash
+python evaluator/evaluator.py -a=evaluator/answers.txt -p=evaluator/predictions.txt
+```
+
+The outputs are:
+```
+```
+
+### Input Format
+
+A legal prediction file is expected to be a txt format file. It should have the same number of lines as answer file. And for each line, it should contain the same number of tokens (split by space) as the corresponding line in the answer file. Note that `<s>`, `</s>`, `<EOL>` are not evaluated so that you don't need worry about how to predict the first token. You can put any token you like at first. For example, one line in the answer file is:
+```
+<s> import json <EOL> json . load ( f ) </s>
+```
+
+And the corresponding line in your prediction file is:
+```
+. import numpy <EOL> json . dump ( open ) <EOL>
+```
+The accuracy on this line is 62.5%
 
 
-## Fine-tune
+## Pipeline
+
+We provide a pipeline that fine-tunes our pre-trained GPT-2 model on this task.
+
+### Dependency
+
+- python 3.6 or 3.7
+- torch==1.4.0
+- transformers>=2.5.0
+- fuzzywuzzy
+
+### Fine-tune
 To fine-tune CodeGPT on javaCorpus dataset for code completion in multi-GPU on a single machine, navigate to `code` directory, run:
 
 ```shell
@@ -97,7 +141,7 @@ python -m torch.distributed.launch --nproc_per_node=$PER_NODE_GPU run_lm.py \
 ```
 
 
-## Evaluation
+### Evaluation
 
 It's recommanded to run evaluation on single GPU
 
@@ -154,20 +198,20 @@ python -u run_lm.py \
 | ----------------------------------------------------- | :--------: |
 | LSTM (Kim, 2020)                                      |    58.0    |
 | Transformer (Facebook, 6L) (Kim, 2020)                |    68.1    |
-| Transformer (12L)                                     |    73.35   |
-| Transformer w/ GPT-2 (12L)                            |    74.51   |
-| Transformer w/ CodeGPT (12L)                          |    75.09   |
-| Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |  **75.28** |
+| Transformer (12L)                                     |    73.46   |
+| Transformer w/ GPT-2 (12L)                            |    74.61   |
+| Transformer w/ CodeGPT (12L)                          |    75.19   |
+| Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |  **75.38** |
 
 #### javaCorpus
 
 | Model                                                 |  Accuracy  |
 | ----------------------------------------------------- | :--------: |
-| BPE+LSTM (ICSE 2020*)                                 |    55.91   |
-| Transformer (12L)                                     |    64.01   |
-| Transformer w/ GPT-2 (12L)                            |    74.72   |
-| Transformer w/ CodeGPT (12L)                          |    76.29   |
-| Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |  **77.13** |
+| BPE+LSTM (ICSE 2020*)                                 |    56.02   |
+| Transformer (12L)                                     |    64.16   |
+| Transformer w/ GPT-2 (12L)                            |    74.89   |
+| Transformer w/ CodeGPT (12L)                          |    76.45   |
+| Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |  **77.31** |
 
 \* We reproduced his experiment since this paper only reported MRR on the first 1,000,000 tokens in test set.
 

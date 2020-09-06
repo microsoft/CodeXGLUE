@@ -43,8 +43,7 @@ except:
 from tqdm import tqdm, trange
 import multiprocessing
 from model import Model
-gpu_list = '0,1'
-os.environ["CUDA_VISIBLE_DEVICES"] = gpu_list
+
 cpu_cont = 16
 from transformers import (WEIGHTS_NAME, AdamW, get_linear_schedule_with_warmup,
                           BertConfig, BertForMaskedLM, BertTokenizer,

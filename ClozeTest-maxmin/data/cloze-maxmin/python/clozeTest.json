@@ -1,6 +1,6 @@
 [
  {
-  "word": "min",
+  "idx": "maxmin-1",
   "nl_tokens": [
    "Returns",
    "intermediary",
@@ -227,7 +227,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-2",
   "nl_tokens": [
    "Map",
    "-",
@@ -730,7 +730,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-3",
   "nl_tokens": [
    "From",
    "http",
@@ -800,7 +800,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-4",
   "nl_tokens": [
    "Plots",
    "an",
@@ -1223,7 +1223,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-5",
   "nl_tokens": [
    "The",
    "minimum",
@@ -1291,7 +1291,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-6",
   "nl_tokens": [
    "Runs",
    "the",
@@ -2731,7 +2731,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-7",
   "nl_tokens": [
    "Pretty",
    "-",
@@ -2809,7 +2809,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-8",
   "nl_tokens": [
    ":",
    "py",
@@ -2884,7 +2884,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-9",
   "nl_tokens": [
    "Accepts",
    "log",
@@ -2990,7 +2990,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-10",
   "nl_tokens": [
    "Manage",
    "the",
@@ -3086,7 +3086,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-11",
   "nl_tokens": [
    "Estimate",
    "the",
@@ -3294,7 +3294,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-12",
   "nl_tokens": [
    "Synchronize",
    "the",
@@ -3460,7 +3460,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-13",
   "nl_tokens": [
    "Return",
    "the",
@@ -3594,7 +3594,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-14",
   "nl_tokens": [
    "When",
    "given",
@@ -3710,7 +3710,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-15",
   "nl_tokens": [
    "A",
    "subfunc",
@@ -4001,7 +4001,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-16",
   "nl_tokens": [
    "Return",
    "the",
@@ -4078,7 +4078,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-17",
   "nl_tokens": [
    "Return",
    "the",
@@ -4310,7 +4310,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-18",
   "nl_tokens": [
    "Convert",
    "reflection",
@@ -4375,7 +4375,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-19",
   "nl_tokens": [
    "Optimal",
    "FIR",
@@ -4687,7 +4687,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-20",
   "nl_tokens": [
    "filter",
    "for",
@@ -4792,7 +4792,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-21",
   "nl_tokens": [
    "Return",
    "the",
@@ -5392,7 +5392,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-22",
   "nl_tokens": [
    "See",
    "the",
@@ -5536,7 +5536,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-23",
   "nl_tokens": [
    "Like",
    "itertools",
@@ -5809,7 +5809,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-24",
   "nl_tokens": [
    "Helper",
    "method",
@@ -5893,7 +5893,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-25",
   "nl_tokens": [
    "Eigenvector",
    "centrality",
@@ -6276,7 +6276,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-26",
   "nl_tokens": [
    "Implementation",
    "of",
@@ -6518,7 +6518,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-27",
   "nl_tokens": [
    "Given",
    "two",
@@ -6589,7 +6589,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-28",
   "nl_tokens": [
    "Normalize",
    "a",
@@ -6746,7 +6746,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-29",
   "nl_tokens": [
    "Does",
    "photometry",
@@ -7083,7 +7083,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-30",
   "nl_tokens": [
    "Sample",
    "a",
@@ -7232,7 +7232,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-31",
   "nl_tokens": [
    "Use",
    "\\\\",
@@ -7336,7 +7336,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-32",
   "nl_tokens": [
    "Like",
    "union",
@@ -7387,7 +7387,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-33",
   "nl_tokens": [
    "Returns",
    "a",
@@ -7529,7 +7529,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-34",
   "nl_tokens": [
    "A",
    "time",
@@ -8151,7 +8151,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-35",
   "nl_tokens": [
    "Returns",
    "a",
@@ -8203,7 +8203,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-36",
   "nl_tokens": [
    "Returns",
    "the",
@@ -8276,7 +8276,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-37",
   "nl_tokens": [
    "Fit",
    "empirical",
@@ -8795,7 +8795,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-38",
   "nl_tokens": [
    "Return",
    "the",
@@ -8952,7 +8952,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-39",
   "nl_tokens": [
    "List",
    "bot",
@@ -9065,7 +9065,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-40",
   "nl_tokens": [
    "Format",
    "a",
@@ -9275,7 +9275,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-41",
   "nl_tokens": [
    "An",
    "integer",
@@ -9403,7 +9403,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-42",
   "nl_tokens": [
    "Initializes",
    "internal",
@@ -9687,7 +9687,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-43",
   "nl_tokens": [
    "Modify",
    "a",
@@ -10030,7 +10030,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-44",
   "nl_tokens": [
    "r",
    "Method",
@@ -10267,7 +10267,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-45",
   "nl_tokens": [
    "Called",
    "after",
@@ -10345,7 +10345,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-46",
   "nl_tokens": [
    "Iterates",
    "the",
@@ -10549,7 +10549,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-47",
   "nl_tokens": [
    "Get",
    "a",
@@ -11058,7 +11058,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-48",
   "nl_tokens": [
    "Renders",
    "the",
@@ -11360,7 +11360,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-49",
   "nl_tokens": [
    "Get",
    "tuple",
@@ -11476,7 +11476,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-50",
   "nl_tokens": [
    "Calculates",
    "kappa",
@@ -11770,7 +11770,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-51",
   "nl_tokens": [
    "!"
   ],
@@ -11806,7 +11806,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-52",
   "nl_tokens": [
    "Parameters",
    "----------",
@@ -12034,7 +12034,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-53",
   "nl_tokens": [
    "See",
    "comments",
@@ -12198,7 +12198,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-54",
   "nl_tokens": [
    "This",
    "runs",
@@ -12994,7 +12994,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-55",
   "nl_tokens": [
    "Receives",
    "a",
@@ -13206,7 +13206,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-56",
   "nl_tokens": [
    "applies",
    "max",
@@ -13427,7 +13427,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-57",
   "nl_tokens": [
    "Add",
    "new",
@@ -13900,7 +13900,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-58",
   "nl_tokens": [
    "Determine",
    "zoom",
@@ -13981,7 +13981,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-59",
   "nl_tokens": [
    "This",
    "estimates",
@@ -14052,7 +14052,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-60",
   "nl_tokens": [
    "!"
   ],
@@ -14094,7 +14094,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-61",
   "nl_tokens": [
    "Convert",
    "the",
@@ -14689,7 +14689,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-62",
   "nl_tokens": [
    "Takes",
    "in",
@@ -14773,7 +14773,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-63",
   "nl_tokens": [
    "Rebuilds",
    "the",
@@ -14924,7 +14924,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-64",
   "nl_tokens": [
    "Remove",
    "labels",
@@ -15226,7 +15226,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-65",
   "nl_tokens": [
    "LML",
    "fixed",
@@ -15472,7 +15472,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-66",
   "nl_tokens": [
    "graph_data_on_the_same_graph",
    ":",
@@ -15956,7 +15956,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-67",
   "nl_tokens": [
    "Perform",
    "a",
@@ -16260,7 +16260,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-68",
   "nl_tokens": [
    "Compute",
    "the",
@@ -16507,7 +16507,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-69",
   "nl_tokens": [
    "Add",
    "a",
@@ -16690,7 +16690,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-70",
   "nl_tokens": [
    ":",
    "param",
@@ -16903,7 +16903,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-71",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -16982,7 +16982,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-72",
   "nl_tokens": [
    "Compare",
    "the",
@@ -17369,7 +17369,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-73",
   "nl_tokens": [
    "Updates",
    "the",
@@ -17459,7 +17459,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-74",
   "nl_tokens": [
    "Shows",
    "an",
@@ -17672,7 +17672,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-75",
   "nl_tokens": [
    "Make",
    "a",
@@ -18075,7 +18075,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-76",
   "nl_tokens": [
    "Input",
    "a",
@@ -18259,7 +18259,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-77",
   "nl_tokens": [
    "Extract",
    "the",
@@ -18479,7 +18479,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-78",
   "nl_tokens": [
    "Predict",
    "if",
@@ -18561,7 +18561,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-79",
   "nl_tokens": [
    "The",
    "speed",
@@ -18677,7 +18677,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-80",
   "nl_tokens": [
    "If",
    "intervals",
@@ -18758,7 +18758,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-81",
   "nl_tokens": [
    "The",
    "angle",
@@ -18858,7 +18858,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-82",
   "nl_tokens": [
    "Run",
    "a",
@@ -19048,7 +19048,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-83",
   "nl_tokens": [
    "Helper",
    "method",
@@ -19128,7 +19128,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-84",
   "nl_tokens": [
    "returns",
    "the",
@@ -19385,7 +19385,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-85",
   "nl_tokens": [
    "Compute",
    "the",
@@ -19510,7 +19510,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-86",
   "nl_tokens": [
    "Get",
    "the",
@@ -19628,7 +19628,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-87",
   "nl_tokens": [
    "Plots",
    "the",
@@ -19889,7 +19889,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-88",
   "nl_tokens": [
    "Populate",
    "array",
@@ -20050,7 +20050,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-89",
   "nl_tokens": [
    "This",
    "calculates",
@@ -20285,7 +20285,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-90",
   "nl_tokens": [
    "This",
    "wraps",
@@ -20561,7 +20561,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-91",
   "nl_tokens": [
    "Process",
    "one",
@@ -21203,7 +21203,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-92",
   "nl_tokens": [
    "Creates",
    "a",
@@ -21753,7 +21753,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-93",
   "nl_tokens": [
    "Merge",
    "PE",
@@ -22866,7 +22866,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-94",
   "nl_tokens": [
    "Return",
    "the",
@@ -23011,7 +23011,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-95",
   "nl_tokens": [
    "Extract",
    "the",
@@ -23365,7 +23365,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-96",
   "nl_tokens": [
    "Horizontally",
    "concatenates",
@@ -23611,7 +23611,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-97",
   "nl_tokens": [
    "Creates",
    "a",
@@ -23982,7 +23982,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-98",
   "nl_tokens": [
    "This",
    "just",
@@ -24168,7 +24168,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-99",
   "nl_tokens": [
    "This",
    "method",
@@ -24618,7 +24618,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-100",
   "nl_tokens": [
    "Run",
    "one",
@@ -25079,7 +25079,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-101",
   "nl_tokens": [
    "Retrieves",
    "the",
@@ -25193,7 +25193,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-102",
   "nl_tokens": [
    "Prepares",
    "the",
@@ -25482,7 +25482,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-103",
   "nl_tokens": [
    "Convert",
    "key_vals_dict",
@@ -25626,7 +25626,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-104",
   "nl_tokens": [
    "Creates",
    "and",
@@ -26084,7 +26084,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-105",
   "nl_tokens": [
    "Given",
    "a",
@@ -26274,7 +26274,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-106",
   "nl_tokens": [
    "Given",
    "two",
@@ -26815,7 +26815,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-107",
   "nl_tokens": [
    "Trim",
    "the",
@@ -27150,7 +27150,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-108",
   "nl_tokens": [
    "Internal",
    "function",
@@ -27536,7 +27536,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-109",
   "nl_tokens": [
    "Projection",
    "onto",
@@ -27703,7 +27703,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-110",
   "nl_tokens": [
    "Returns",
    "dictionary",
@@ -27904,7 +27904,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-111",
   "nl_tokens": [
    "Determine",
    "good",
@@ -28110,7 +28110,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-112",
   "nl_tokens": [
    "Return",
    "the",
@@ -28175,7 +28175,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-113",
   "nl_tokens": [
    "An",
    "elliptical",
@@ -28681,7 +28681,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-114",
   "nl_tokens": [
    "Display",
    "an",
@@ -28995,7 +28995,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-115",
   "nl_tokens": [
    "Return",
    "Snowball",
@@ -30018,7 +30018,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-116",
   "nl_tokens": [
    "Given",
    "a",
@@ -30173,7 +30173,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-117",
   "nl_tokens": [
    "Plots",
    "but",
@@ -30282,7 +30282,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-118",
   "nl_tokens": [
    "Return",
    "the",
@@ -31488,7 +31488,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-119",
   "nl_tokens": [
    "Write",
    "STRUCTURE",
@@ -32013,7 +32013,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-120",
   "nl_tokens": [
    "Generate",
    "the",
@@ -32378,7 +32378,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-121",
   "nl_tokens": [
    "r",
    "Format",
@@ -32518,7 +32518,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-122",
   "nl_tokens": [
    "Generate",
    "markdown",
@@ -32823,7 +32823,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-123",
   "nl_tokens": [
    "Returns",
    "the",
@@ -33011,7 +33011,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-124",
   "nl_tokens": [
    "parallelized",
    "version",
@@ -33624,7 +33624,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-125",
   "nl_tokens": [
    "Do",
    "some",
@@ -33677,7 +33677,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-126",
   "nl_tokens": [
    "Convert",
    "a",
@@ -33880,7 +33880,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-127",
   "nl_tokens": [
    "Create",
    "a",
@@ -34321,7 +34321,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-128",
   "nl_tokens": [
    "Returns",
    "----------",
@@ -34541,7 +34541,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-129",
   "nl_tokens": [
    "Relocate",
    "the",
@@ -34847,7 +34847,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-130",
   "nl_tokens": [
    "r",
    "Discrete",
@@ -35181,7 +35181,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-131",
   "nl_tokens": [
    "See",
    "comments",
@@ -35295,7 +35295,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-132",
   "nl_tokens": [
    "Extract",
    "contour",
@@ -35512,7 +35512,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-133",
   "nl_tokens": [
    "Turn",
    "tokens",
@@ -35663,7 +35663,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-134",
   "nl_tokens": [
    "Intraday",
    "strategies",
@@ -36008,7 +36008,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-135",
   "nl_tokens": [
    "This",
    "finds",
@@ -36355,7 +36355,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-136",
   "nl_tokens": [
    "Checks",
    "for",
@@ -36550,7 +36550,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-137",
   "nl_tokens": [
    "A",
    "new",
@@ -37080,7 +37080,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-138",
   "nl_tokens": [
    "stats",
    "cleanup",
@@ -37743,7 +37743,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-139",
   "nl_tokens": [
    "Uploads",
    "an",
@@ -37996,7 +37996,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-140",
   "nl_tokens": [
    "Returns",
    "the",
@@ -38069,7 +38069,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-141",
   "nl_tokens": [
    "rects",
    ":",
@@ -38300,7 +38300,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-142",
   "nl_tokens": [
    "Calls",
    "fortran",
@@ -38558,7 +38558,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-143",
   "nl_tokens": [
    "Convert",
    "GRIB",
@@ -38977,7 +38977,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-144",
   "nl_tokens": [
    "Actually",
    "calculates",
@@ -39766,7 +39766,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-145",
   "nl_tokens": [
    "Get",
    "support",
@@ -39871,7 +39871,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-146",
   "nl_tokens": [
    "The",
    "images",
@@ -40060,7 +40060,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-147",
   "nl_tokens": [
    "Return",
    "the",
@@ -40136,7 +40136,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-148",
   "nl_tokens": [
    "Draw",
    "the",
@@ -40624,7 +40624,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-149",
   "nl_tokens": [
    "write",
    "the",
@@ -40835,7 +40835,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-150",
   "nl_tokens": [
    "Sample",
    "a",
@@ -41095,7 +41095,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-151",
   "nl_tokens": [
    "Finds",
    "the",
@@ -41180,7 +41180,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-152",
   "nl_tokens": [
    "Compare",
    "this",
@@ -41341,7 +41341,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-153",
   "nl_tokens": [
    "Simulate",
    "timestamps",
@@ -41636,7 +41636,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-154",
   "nl_tokens": [
    "Hack",
    "to",
@@ -41805,7 +41805,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-155",
   "nl_tokens": [
    "A",
    "loop",
@@ -42032,7 +42032,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-156",
   "nl_tokens": [
    "Return",
    "the",
@@ -42589,7 +42589,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-157",
   "nl_tokens": [
    "See",
    "comments",
@@ -42644,7 +42644,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-158",
   "nl_tokens": [
    "Reads",
    "data",
@@ -42858,7 +42858,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-159",
   "nl_tokens": [
    "todo"
   ],
@@ -43023,7 +43023,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-160",
   "nl_tokens": [
    "No",
    "reads",
@@ -43368,7 +43368,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-161",
   "nl_tokens": [
    "Return",
    "the",
@@ -43580,7 +43580,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-162",
   "nl_tokens": [
    "Grows",
    "the",
@@ -43840,7 +43840,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-163",
   "nl_tokens": [
    "Return",
    "the",
@@ -47920,7 +47920,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-164",
   "nl_tokens": [
    "Rotates",
    "the",
@@ -48353,7 +48353,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-165",
   "nl_tokens": [
    "Return",
    "the",
@@ -48561,7 +48561,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-166",
   "nl_tokens": [
    "Create",
    "a",
@@ -48945,7 +48945,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-167",
   "nl_tokens": [
    "Gets",
    "an",
@@ -49059,7 +49059,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-168",
   "nl_tokens": [
    "Add",
    "the",
@@ -49333,7 +49333,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-169",
   "nl_tokens": [
    "Produce",
    "two",
@@ -49503,7 +49503,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-170",
   "nl_tokens": [
    "Displays",
    "a",
@@ -49631,7 +49631,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-171",
   "nl_tokens": [
    "Determine",
    "if",
@@ -49936,7 +49936,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-172",
   "nl_tokens": [
    "Draw",
    "the",
@@ -50064,7 +50064,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-173",
   "nl_tokens": [
    "This",
    "is",
@@ -50833,7 +50833,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-174",
   "nl_tokens": [
    "Makes",
    "list",
@@ -51053,7 +51053,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-175",
   "nl_tokens": [
    "Flattens",
    "all",
@@ -51630,7 +51630,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-176",
   "nl_tokens": [
    "Finds",
    "the",
@@ -51836,7 +51836,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-177",
   "nl_tokens": [
    "Generate",
    "some",
@@ -52118,7 +52118,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-178",
   "nl_tokens": [
    "Returns",
    "True",
@@ -52307,7 +52307,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-179",
   "nl_tokens": [
    "Simulate",
    "mouse",
@@ -52576,7 +52576,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-180",
   "nl_tokens": [
    "Returns",
    "colors",
@@ -52792,7 +52792,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-181",
   "nl_tokens": [
    "The",
    "average",
@@ -52943,7 +52943,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-182",
   "nl_tokens": [
    "Gets",
    "the",
@@ -53083,7 +53083,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-183",
   "nl_tokens": [
    "Slice",
    "the",
@@ -53284,7 +53284,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-184",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -53469,7 +53469,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-185",
   "nl_tokens": [
    "Computes",
    "the",
@@ -53549,7 +53549,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-186",
   "nl_tokens": [
    "This",
    "method",
@@ -54004,7 +54004,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-187",
   "nl_tokens": [
    "!"
   ],
@@ -54078,7 +54078,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-188",
   "nl_tokens": [
    "Return",
    "a",
@@ -54179,7 +54179,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-189",
   "nl_tokens": [
    "Maps",
    "a",
@@ -54578,7 +54578,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-190",
   "nl_tokens": [
    "implements",
    "the",
@@ -54682,7 +54682,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-191",
   "nl_tokens": [
    "Transform",
    "a",
@@ -54970,7 +54970,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-192",
   "nl_tokens": [
    "Returns",
    "bounds",
@@ -55069,7 +55069,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-193",
   "nl_tokens": [
    "Check",
    "if",
@@ -55150,7 +55150,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-194",
   "nl_tokens": [
    "Formats",
    "bullets",
@@ -55499,7 +55499,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-195",
   "nl_tokens": [
    "Genetic",
    "recombination",
@@ -55715,7 +55715,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-196",
   "nl_tokens": [
    "Execute",
    "an",
@@ -55868,7 +55868,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-197",
   "nl_tokens": [
    "Returns",
    "the",
@@ -56099,7 +56099,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-198",
   "nl_tokens": [
    "Explicitly",
    "specify",
@@ -56253,7 +56253,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-199",
   "nl_tokens": [
    "Get",
    "chunk",
@@ -56395,7 +56395,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-200",
   "nl_tokens": [
    "Compare",
    "two",
@@ -56605,7 +56605,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-201",
   "nl_tokens": [
    "!"
   ],
@@ -56692,7 +56692,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-202",
   "nl_tokens": [
    "Determine",
    "if",
@@ -56806,7 +56806,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-203",
   "nl_tokens": [
    "Tabulate",
    "an",
@@ -56911,7 +56911,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-204",
   "nl_tokens": [
    "LMLs",
    "fixed",
@@ -57215,7 +57215,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-205",
   "nl_tokens": [
    ":",
    "return",
@@ -57409,7 +57409,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-206",
   "nl_tokens": [
    "Get",
    "contour",
@@ -57505,7 +57505,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-207",
   "nl_tokens": [
    "r",
    "Correlation",
@@ -57928,7 +57928,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-208",
   "nl_tokens": [
    "Add",
    "constraints",
@@ -58085,7 +58085,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-209",
   "nl_tokens": [
    "Generate",
    "according",
@@ -58337,7 +58337,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-210",
   "nl_tokens": [
    "Return",
    "an",
@@ -58393,7 +58393,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-211",
   "nl_tokens": [
    "Attempts",
    "to",
@@ -58490,7 +58490,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-212",
   "nl_tokens": [
    "!"
   ],
@@ -58560,7 +58560,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-213",
   "nl_tokens": [
    "Return",
    "the",
@@ -58652,7 +58652,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-214",
   "nl_tokens": [
    "Generic",
    "Metropolis",
@@ -59055,7 +59055,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-215",
   "nl_tokens": [
    "Takes",
    "your",
@@ -59150,7 +59150,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-216",
   "nl_tokens": [
    "Return",
    "InputTile",
@@ -59426,7 +59426,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-217",
   "nl_tokens": [
    "Roughly",
    "the",
@@ -59719,7 +59719,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-218",
   "nl_tokens": [
    "Pour",
    "chaque",
@@ -59836,7 +59836,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-219",
   "nl_tokens": [
    "Checks",
    "whether",
@@ -59914,7 +59914,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-220",
   "nl_tokens": [
    "Perform",
    "inference",
@@ -59995,7 +59995,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-221",
   "nl_tokens": [
    "Generates",
    "ngrams",
@@ -60126,7 +60126,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-222",
   "nl_tokens": [
    "Determines",
    "a",
@@ -60321,7 +60321,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-223",
   "nl_tokens": [
    ":",
    "returns",
@@ -60387,7 +60387,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-224",
   "nl_tokens": [
    "Sets",
    "up",
@@ -60612,7 +60612,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-225",
   "nl_tokens": [
    "For",
    "step",
@@ -61183,7 +61183,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-226",
   "nl_tokens": [
    "Given",
    "the",
@@ -61327,7 +61327,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-227",
   "nl_tokens": [
    "Removes",
    "a",
@@ -62113,7 +62113,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-228",
   "nl_tokens": [
    "Remove",
    "common",
@@ -62178,7 +62178,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-229",
   "nl_tokens": [
    "r",
    "Solves",
@@ -62418,7 +62418,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-230",
   "nl_tokens": [
    "builds",
    "snps",
@@ -63838,7 +63838,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-231",
   "nl_tokens": [
    "Generates",
    "length",
@@ -64080,7 +64080,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-232",
   "nl_tokens": [
    "This",
    "calculates",
@@ -64232,7 +64232,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-233",
   "nl_tokens": [
    "Add",
    "a",
@@ -64462,7 +64462,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-234",
   "nl_tokens": [
    "Calculates",
    "the",
@@ -64533,7 +64533,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-235",
   "nl_tokens": [
    "signature",
    "..."
@@ -64779,7 +64779,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-236",
   "nl_tokens": [
    "pretty",
    "print",
@@ -64982,7 +64982,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-237",
   "nl_tokens": [
    "Return",
    "the",
@@ -66014,7 +66014,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-238",
   "nl_tokens": [
    "Figure",
    "of",
@@ -66074,7 +66074,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-239",
   "nl_tokens": [
    "Train",
    "the",
@@ -67134,7 +67134,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-240",
   "nl_tokens": [
    "Get",
    "the",
@@ -67202,7 +67202,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-241",
   "nl_tokens": [
    "Get",
    "LanguageTool",
@@ -67390,7 +67390,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-242",
   "nl_tokens": [
    "Re",
    "-",
@@ -67577,7 +67577,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-243",
   "nl_tokens": [
    "check",
    "whether",
@@ -67852,7 +67852,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-244",
   "nl_tokens": [
    "This",
    "calculates",
@@ -68168,7 +68168,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-245",
   "nl_tokens": [
    "Returns",
    "index",
@@ -68286,7 +68286,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-246",
   "nl_tokens": [
    "The",
    "range",
@@ -68379,7 +68379,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-247",
   "nl_tokens": [
    "Outlines",
    "each",
@@ -68643,7 +68643,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-248",
   "nl_tokens": [
    "r",
    "Method",
@@ -68873,7 +68873,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-249",
   "nl_tokens": [
    "Determine",
    "the",
@@ -69585,7 +69585,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-250",
   "nl_tokens": [
    "This",
    "calculates",
@@ -69882,7 +69882,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-251",
   "nl_tokens": [
    "Returns",
    "bounds",
@@ -70004,7 +70004,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-252",
   "nl_tokens": [
    "Execute",
    "SAM",
@@ -70334,7 +70334,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-253",
   "nl_tokens": [
    "Do",
    "various",
@@ -70941,7 +70941,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-254",
   "nl_tokens": [
    "Use",
    "CGNN",
@@ -71301,7 +71301,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-255",
   "nl_tokens": [
    "returns",
    "tuple",
@@ -71612,7 +71612,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-256",
   "nl_tokens": [
    "Run",
    "the",
@@ -71853,7 +71853,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-257",
   "nl_tokens": [
    "Sample",
    "minibatch",
@@ -72028,7 +72028,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-258",
   "nl_tokens": [
    "Counts",
    "the",
@@ -72304,7 +72304,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-259",
   "nl_tokens": [
    "!"
   ],
@@ -72470,7 +72470,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-260",
   "nl_tokens": [
    "Read",
    "points",
@@ -72748,7 +72748,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-261",
   "nl_tokens": [
    "Plots",
    "timespans",
@@ -73092,7 +73092,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-262",
   "nl_tokens": [
    "chunkMs",
    "should",
@@ -73544,7 +73544,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-263",
   "nl_tokens": [
    "r",
    "Computes",
@@ -73866,7 +73866,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-264",
   "nl_tokens": [
    "Return",
    "the",
@@ -74455,7 +74455,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-265",
   "nl_tokens": [
    "Convert",
    "weird",
@@ -74771,7 +74771,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-266",
   "nl_tokens": [
    "Return",
    "True",
@@ -74857,7 +74857,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-267",
   "nl_tokens": [
    "If",
    "exposure",
@@ -74949,7 +74949,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-268",
   "nl_tokens": [
    "Draws",
    "a",
@@ -75213,7 +75213,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-269",
   "nl_tokens": [
    "create",
    "a",
@@ -75587,7 +75587,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-270",
   "nl_tokens": [
    "Handle",
    "a",
@@ -75738,7 +75738,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-271",
   "nl_tokens": [
    "Adds",
    "a",
@@ -76023,7 +76023,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-272",
   "nl_tokens": [
    "r",
    "Method",
@@ -76721,7 +76721,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-273",
   "nl_tokens": [
    "Returns",
    "a",
@@ -76991,7 +76991,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-274",
   "nl_tokens": [
    "Runs",
    "the",
@@ -78239,7 +78239,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-275",
   "nl_tokens": [
    "Annotation",
    "filtering",
@@ -78303,7 +78303,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-276",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -78501,7 +78501,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-277",
   "nl_tokens": [
    "Optional",
    "baselevels",
@@ -78719,7 +78719,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-278",
   "nl_tokens": [
    "Returns",
    "an",
@@ -78884,7 +78884,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-279",
   "nl_tokens": [
    "Plot",
    "the",
@@ -79415,7 +79415,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-280",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -79730,7 +79730,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-281",
   "nl_tokens": [
    "Create",
    "a",
@@ -79985,7 +79985,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-282",
   "nl_tokens": [
    "let",
    "s",
@@ -80698,7 +80698,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-283",
   "nl_tokens": [
    "Create",
    "a",
@@ -80841,7 +80841,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-284",
   "nl_tokens": [
    "Smooth",
    "(",
@@ -81148,7 +81148,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-285",
   "nl_tokens": [
    "See",
    "the",
@@ -81279,7 +81279,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-286",
   "nl_tokens": [
    "This",
    "generates",
@@ -81665,7 +81665,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-287",
   "nl_tokens": [
    "An",
    "integer",
@@ -81903,7 +81903,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-288",
   "nl_tokens": [
    "Format",
    "a",
@@ -81976,7 +81976,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-289",
   "nl_tokens": [
    ":",
    "param",
@@ -82094,7 +82094,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-290",
   "nl_tokens": [
    "This",
    "generates",
@@ -82493,7 +82493,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-291",
   "nl_tokens": [
    "Generate",
    "plots",
@@ -82825,7 +82825,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-292",
   "nl_tokens": [
    "Learn",
    "the",
@@ -82935,7 +82935,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-293",
   "nl_tokens": [
    "Convert",
    "heatmaps",
@@ -83104,7 +83104,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-294",
   "nl_tokens": [
    "Compute",
    "the",
@@ -83303,7 +83303,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-295",
   "nl_tokens": [
    "Create",
    "a",
@@ -83392,7 +83392,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-296",
   "nl_tokens": [
    "Swirl",
    "an",
@@ -83699,7 +83699,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-297",
   "nl_tokens": [
    "Compute",
    "the",
@@ -83762,7 +83762,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-298",
   "nl_tokens": [
    "return",
    "the",
@@ -84031,7 +84031,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-299",
   "nl_tokens": [
    "Do",
    "the",
@@ -84117,7 +84117,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-300",
   "nl_tokens": [
    "Return",
    "nearest",
@@ -84199,7 +84199,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-301",
   "nl_tokens": [
    "Builds",
    "a",
@@ -84803,7 +84803,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-302",
   "nl_tokens": [
    "strcmp",
    "symbolic",
@@ -85021,7 +85021,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-303",
   "nl_tokens": [
    "Converts",
    "a",
@@ -85188,7 +85188,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-304",
   "nl_tokens": [
    "Find",
    "an",
@@ -85260,7 +85260,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-305",
   "nl_tokens": [
    "Returns",
    "a",
@@ -85356,7 +85356,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-306",
   "nl_tokens": [
    "Prediction",
    "polynomial",
@@ -85597,7 +85597,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-307",
   "nl_tokens": [
    "Copy",
    "stream",
@@ -85689,7 +85689,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-308",
   "nl_tokens": [
    "Return",
    "course",
@@ -85772,7 +85772,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-309",
   "nl_tokens": [
    "a",
    "simple",
@@ -86156,7 +86156,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-310",
   "nl_tokens": [
    "Scatter",
    "plot",
@@ -86355,7 +86355,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-311",
   "nl_tokens": [
    "Check",
    "if",
@@ -86638,7 +86638,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-312",
   "nl_tokens": [
    "Builds",
    "a",
@@ -87044,7 +87044,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-313",
   "nl_tokens": [
    "Call",
    "the",
@@ -87184,7 +87184,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-314",
   "nl_tokens": [
    "Get",
    "the",
@@ -87238,7 +87238,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-315",
   "nl_tokens": [
    "Its",
    "actually",
@@ -87562,7 +87562,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-316",
   "nl_tokens": [
    "Tuple",
    "(",
@@ -87644,7 +87644,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-317",
   "nl_tokens": [
    "Return",
    "a",
@@ -87704,7 +87704,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-318",
   "nl_tokens": [
    ":",
    "param",
@@ -87778,7 +87778,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-319",
   "nl_tokens": [
    "Point",
    "area",
@@ -87842,7 +87842,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-320",
   "nl_tokens": [
    "Constructs",
    "a",
@@ -87919,7 +87919,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-321",
   "nl_tokens": [
    "m1",
    "and",
@@ -88342,7 +88342,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-322",
   "nl_tokens": [
    "Rescale",
    "numeric",
@@ -88408,7 +88408,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-323",
   "nl_tokens": [
    "Parameters",
    "----------",
@@ -88536,7 +88536,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-324",
   "nl_tokens": [
    "Update",
    "the",
@@ -88732,7 +88732,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-325",
   "nl_tokens": [
    "Calculate",
    "breaks",
@@ -88851,7 +88851,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-326",
   "nl_tokens": [
    "Returns",
    "index",
@@ -88970,7 +88970,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-327",
   "nl_tokens": [
    "Returns",
    "a",
@@ -89105,7 +89105,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-328",
   "nl_tokens": [
    "r",
    "Method",
@@ -89309,7 +89309,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-329",
   "nl_tokens": [
    "Record",
    "the",
@@ -89589,7 +89589,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-330",
   "nl_tokens": [
    "Print",
    "a",
@@ -89821,7 +89821,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-331",
   "nl_tokens": [
    "Print",
    "column",
@@ -89952,7 +89952,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-332",
   "nl_tokens": [
    "Get",
    "result",
@@ -90016,7 +90016,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-333",
   "nl_tokens": [
    "Define",
    "delay",
@@ -90125,7 +90125,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-334",
   "nl_tokens": [
    "Accumulate",
    "a",
@@ -90262,7 +90262,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-335",
   "nl_tokens": [
    "Isolate",
    "change",
@@ -90558,7 +90558,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-336",
   "nl_tokens": [
    "Update",
    "gapfilling",
@@ -90862,7 +90862,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-337",
   "nl_tokens": [
    "Create",
    "fiji",
@@ -91319,7 +91319,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-338",
   "nl_tokens": [
    "Ks",
    "as",
@@ -91393,7 +91393,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-339",
   "nl_tokens": [
    "Convert",
    "weird",
@@ -91699,7 +91699,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-340",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -91755,7 +91755,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-341",
   "nl_tokens": [
    "Develop",
    "a",
@@ -92462,7 +92462,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-342",
   "nl_tokens": [
    "Calculates",
    "the",
@@ -92930,7 +92930,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-343",
   "nl_tokens": [
    "Given",
    "a",
@@ -93044,7 +93044,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-344",
   "nl_tokens": [
    "Return",
    "the",
@@ -93258,7 +93258,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-345",
   "nl_tokens": [
    "Iteratively",
    "finds",
@@ -93330,7 +93330,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-346",
   "nl_tokens": [
    "Sorts",
    "and",
@@ -93461,7 +93461,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-347",
   "nl_tokens": [
    "NBASE",
    "=",
@@ -93702,7 +93702,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-348",
   "nl_tokens": [
    "Make",
    "phylip",
@@ -93809,7 +93809,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-349",
   "nl_tokens": [
    "Returns",
    "the",
@@ -93894,7 +93894,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-350",
   "nl_tokens": [
    "Logs",
    "an",
@@ -93980,7 +93980,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-351",
   "nl_tokens": [
    "Format",
    "x",
@@ -94270,7 +94270,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-352",
   "nl_tokens": [
    "Updates",
    "the",
@@ -94389,7 +94389,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-353",
   "nl_tokens": [
    "Wait",
    "until",
@@ -94593,7 +94593,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-354",
   "nl_tokens": [
    "Return",
    "parameter",
@@ -94696,7 +94696,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-355",
   "nl_tokens": [
    "Calculate",
    "error",
@@ -95016,7 +95016,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-356",
   "nl_tokens": [
    "Merge",
    "sorted",
@@ -95240,7 +95240,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-357",
   "nl_tokens": [
    "Get",
    "trip",
@@ -95451,7 +95451,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-358",
   "nl_tokens": [
    "Produces",
    "a",
@@ -95586,7 +95586,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-359",
   "nl_tokens": [
    "Get",
    "the",
@@ -95640,7 +95640,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-360",
   "nl_tokens": [
    "Return",
    "the",
@@ -95763,7 +95763,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-361",
   "nl_tokens": [
    "Identify",
    "the",
@@ -96190,7 +96190,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-362",
   "nl_tokens": [
    "Return",
    "the",
@@ -96560,7 +96560,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-363",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -96690,7 +96690,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-364",
   "nl_tokens": [
    "Returns",
    "min",
@@ -96738,7 +96738,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-365",
   "nl_tokens": [
    "Return",
    "the",
@@ -96856,7 +96856,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-366",
   "nl_tokens": [
    "Normalised",
    "data",
@@ -96961,7 +96961,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-367",
   "nl_tokens": [
    "Rotates",
    "the",
@@ -97097,7 +97097,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-368",
   "nl_tokens": [
    "!"
   ],
@@ -97272,7 +97272,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-369",
   "nl_tokens": [
    "Given",
    "model",
@@ -97377,7 +97377,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-370",
   "nl_tokens": [
    "docstring",
    "for",
@@ -97836,7 +97836,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-371",
   "nl_tokens": [
    "perform",
    "AP",
@@ -98986,7 +98986,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-372",
   "nl_tokens": [
    "Compute",
    "an",
@@ -99094,7 +99094,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-373",
   "nl_tokens": [
    "Parses",
    "the",
@@ -99432,7 +99432,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-374",
   "nl_tokens": [
    "Update",
    "priorities",
@@ -99528,7 +99528,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-375",
   "nl_tokens": [
    "Takes",
    "as",
@@ -99695,7 +99695,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-376",
   "nl_tokens": [
    "Selects",
    "bytes",
@@ -99922,7 +99922,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-377",
   "nl_tokens": [
    "Get",
    "responses",
@@ -100151,7 +100151,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-378",
   "nl_tokens": [
    "!"
   ],
@@ -100191,7 +100191,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-379",
   "nl_tokens": [
    "Projective",
    "transform",
@@ -100360,7 +100360,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-380",
   "nl_tokens": [
    "[",
    "virtual",
@@ -100597,7 +100597,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-381",
   "nl_tokens": [
    "Returns",
    "3",
@@ -100833,7 +100833,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-382",
   "nl_tokens": [
    "groups",
    "together",
@@ -101068,7 +101068,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-383",
   "nl_tokens": [
    "r",
    "Method",
@@ -101165,7 +101165,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-384",
   "nl_tokens": [
    "Identify",
    "the",
@@ -101264,7 +101264,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-385",
   "nl_tokens": [
    "Inserts",
    "all",
@@ -101769,7 +101769,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-386",
   "nl_tokens": [
    "Find",
    "min",
@@ -101832,7 +101832,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-387",
   "nl_tokens": [
    "Create",
    "an",
@@ -102675,7 +102675,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-388",
   "nl_tokens": [
    "Moves",
    "the",
@@ -102740,7 +102740,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-389",
   "nl_tokens": [
    "distributes",
    "cluster",
@@ -103122,7 +103122,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-390",
   "nl_tokens": [
    "Plots",
    "a",
@@ -103319,7 +103319,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-391",
   "nl_tokens": [
    "Fill",
    "the",
@@ -103398,7 +103398,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-392",
   "nl_tokens": [
    "This",
    "calculates",
@@ -104410,7 +104410,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-393",
   "nl_tokens": [
    "Compute",
    "the",
@@ -104487,7 +104487,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-394",
   "nl_tokens": [
    "Provide",
    "a",
@@ -104816,7 +104816,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-395",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -105112,7 +105112,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-396",
   "nl_tokens": [
    "Find",
    "the",
@@ -105379,7 +105379,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-397",
   "nl_tokens": [
    "Computes",
    "the",
@@ -105611,7 +105611,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-398",
   "nl_tokens": [
    "Compute",
    "the",
@@ -105723,7 +105723,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-399",
   "nl_tokens": [
    "Set",
    "pixel",
@@ -105825,7 +105825,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-400",
   "nl_tokens": [
    "Generate",
    "a",
@@ -105891,7 +105891,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-401",
   "nl_tokens": [
    "Round",
    "a",
@@ -105974,7 +105974,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-402",
   "nl_tokens": [
    "Adds",
    "a",
@@ -106041,7 +106041,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-403",
   "nl_tokens": [
    "Return",
    "the",
@@ -106281,7 +106281,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-404",
   "nl_tokens": [
    "return",
    "probability",
@@ -106425,7 +106425,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-405",
   "nl_tokens": [
    "Generate",
    "a",
@@ -106813,7 +106813,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-406",
   "nl_tokens": [
    "Process",
    "a",
@@ -106949,7 +106949,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-407",
   "nl_tokens": [
    "The",
    "range",
@@ -107090,7 +107090,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-408",
   "nl_tokens": [
    "write",
    "the",
@@ -107431,7 +107431,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-409",
   "nl_tokens": [
    "Parses",
    "a",
@@ -107658,7 +107658,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-410",
   "nl_tokens": [
    "get",
    "stats",
@@ -107930,7 +107930,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-411",
   "nl_tokens": [
    "Generate",
    "table",
@@ -108058,7 +108058,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-412",
   "nl_tokens": [
    "generate",
    "word",
@@ -108181,7 +108181,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-413",
   "nl_tokens": [
    "Perform",
    "a",
@@ -108360,7 +108360,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-414",
   "nl_tokens": [
    "This",
    "function",
@@ -108505,7 +108505,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-415",
   "nl_tokens": [
    "Generate",
    "a",
@@ -108637,7 +108637,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-416",
   "nl_tokens": [
    "Format",
    "traceback",
@@ -108941,7 +108941,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-417",
   "nl_tokens": [
    "A",
    "loop",
@@ -109130,7 +109130,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-418",
   "nl_tokens": [
    "Moves",
    "the",
@@ -109202,7 +109202,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-419",
   "nl_tokens": [
    "Solves",
    "a",
@@ -109267,7 +109267,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-420",
   "nl_tokens": [
    "Returns",
    "colors",
@@ -109418,7 +109418,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-421",
   "nl_tokens": [
    "Return",
    "the",
@@ -109819,7 +109819,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-422",
   "nl_tokens": [
    "Constructs",
    "a",
@@ -110460,7 +110460,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-423",
   "nl_tokens": [
    "Returns",
    "an",
@@ -110661,7 +110661,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-424",
   "nl_tokens": [
    "Projection",
    "onto",
@@ -110757,7 +110757,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-425",
   "nl_tokens": [
    "r",
    "Method",
@@ -110969,7 +110969,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-426",
   "nl_tokens": [
    "This",
    "calculates",
@@ -111766,7 +111766,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-427",
   "nl_tokens": [
    "Create",
    "a",
@@ -111994,7 +111994,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-428",
   "nl_tokens": [
    "checks",
    "for",
@@ -112187,7 +112187,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-429",
   "nl_tokens": [
    "r",
    "Return",
@@ -112256,7 +112256,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-430",
   "nl_tokens": [
    "If",
    "intervals",
@@ -112317,7 +112317,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-431",
   "nl_tokens": [
    "Multitapering",
    "spectral",
@@ -112919,7 +112919,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-432",
   "nl_tokens": [
    "Generate",
    "a",
@@ -113013,7 +113013,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-433",
   "nl_tokens": [
    "used",
    "when",
@@ -113139,7 +113139,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-434",
   "nl_tokens": [
    "Search",
    "game",
@@ -113435,7 +113435,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-435",
   "nl_tokens": [
    "Calibrate",
    "noisy",
@@ -113590,7 +113590,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-436",
   "nl_tokens": [
    "Renders",
    "an",
@@ -115340,7 +115340,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-437",
   "nl_tokens": [
    "Return",
    "the",
@@ -115393,7 +115393,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-438",
   "nl_tokens": [
    "Calculates",
    "string",
@@ -115662,7 +115662,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-439",
   "nl_tokens": [
    "Move",
    "n",
@@ -115737,7 +115737,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-440",
   "nl_tokens": [
    "Returns",
    "an",
@@ -116027,7 +116027,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-441",
   "nl_tokens": [
    "Determine",
    "the",
@@ -116513,7 +116513,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-442",
   "nl_tokens": [
    "Return",
    "the",
@@ -116598,7 +116598,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-443",
   "nl_tokens": [
    "!"
   ],
@@ -116801,7 +116801,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-444",
   "nl_tokens": [
    "Split",
    "the",
@@ -116905,7 +116905,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-445",
   "nl_tokens": [
    "Mechanism",
    "function",
@@ -117031,7 +117031,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-446",
   "nl_tokens": [
    "Redefine",
    "the",
@@ -117230,7 +117230,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-447",
   "nl_tokens": [
    "A",
    "Cherrypy",
@@ -117317,7 +117317,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-448",
   "nl_tokens": [
    "This",
    "generates",
@@ -117683,7 +117683,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-449",
   "nl_tokens": [
    "[",
    "Fig",
@@ -117913,7 +117913,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-450",
   "nl_tokens": [
    "Generate",
    "a",
@@ -117979,7 +117979,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-451",
   "nl_tokens": [
    "Algorithm",
    "from",
@@ -118155,7 +118155,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-452",
   "nl_tokens": [
    "Load",
    "a",
@@ -118232,7 +118232,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-453",
   "nl_tokens": [
    "Returns",
    "the",
@@ -118341,7 +118341,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-454",
   "nl_tokens": [
    "function",
    "that",
@@ -118578,7 +118578,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-455",
   "nl_tokens": [
    "Rescale",
    "numeric",
@@ -118777,7 +118777,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-456",
   "nl_tokens": [
    "Calculates",
    "the",
@@ -119018,7 +119018,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-457",
   "nl_tokens": [
    "Gets",
    "within",
@@ -119186,7 +119186,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-458",
   "nl_tokens": [
    "Return",
    "the",
@@ -119385,7 +119385,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-459",
   "nl_tokens": [
    "Return",
    "a",
@@ -119464,7 +119464,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-460",
   "nl_tokens": [
    "Prepare",
    "the",
@@ -119624,7 +119624,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-461",
   "nl_tokens": [
    "This",
    "function",
@@ -120451,7 +120451,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-462",
   "nl_tokens": [
    "A",
    "dask",
@@ -120671,7 +120671,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-463",
   "nl_tokens": [
    "Convert",
    "line",
@@ -120893,7 +120893,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-464",
   "nl_tokens": [
    "Given",
    "a",
@@ -121319,7 +121319,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-465",
   "nl_tokens": [
    "Format",
    "the",
@@ -121552,7 +121552,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-466",
   "nl_tokens": [
    "Render",
    "the",
@@ -121809,7 +121809,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-467",
   "nl_tokens": [
    "Return",
    "Snowball",
@@ -122329,7 +122329,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-468",
   "nl_tokens": [
    "Get",
    "support",
@@ -122545,7 +122545,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-469",
   "nl_tokens": [
    "reads",
    "in",
@@ -122808,7 +122808,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-470",
   "nl_tokens": [
    "Return",
    "the",
@@ -122983,7 +122983,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-471",
   "nl_tokens": [
    "maxSearchSeconds",
    ":",
@@ -123124,7 +123124,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-472",
   "nl_tokens": [
    "Add",
    "the",
@@ -123359,7 +123359,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-473",
   "nl_tokens": [
    "z",
    "value",
@@ -123498,7 +123498,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-474",
   "nl_tokens": [
    "Remix",
    "the",
@@ -123777,7 +123777,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-475",
   "nl_tokens": [
    "Compute",
    "a",
@@ -124140,7 +124140,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-476",
   "nl_tokens": [
    "Generates",
    "a",
@@ -124253,7 +124253,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-477",
   "nl_tokens": [
    "r",
    "Calculates",
@@ -124377,7 +124377,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-478",
   "nl_tokens": [
    "Compute",
    "the",
@@ -124461,7 +124461,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-479",
   "nl_tokens": [
    "Lowest",
    "value",
@@ -124539,7 +124539,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-480",
   "nl_tokens": [
    "Pad",
    "short",
@@ -124604,7 +124604,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-481",
   "nl_tokens": [
    "Resolve",
    "the",
@@ -124813,7 +124813,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-482",
   "nl_tokens": [
    "Sonify",
    "multi",
@@ -124994,7 +124994,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-483",
   "nl_tokens": [
    "axis",
    "is",
@@ -125445,7 +125445,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-484",
   "nl_tokens": [
    "Determine",
    "if",
@@ -125685,7 +125685,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-485",
   "nl_tokens": [
    "Convert",
    "a",
@@ -125950,7 +125950,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-486",
   "nl_tokens": [
    "Adds",
    "options",
@@ -126134,7 +126134,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-487",
   "nl_tokens": [
    "Scans",
    "through",
@@ -126355,7 +126355,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-488",
   "nl_tokens": [
    "return",
    "the",
@@ -126492,7 +126492,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-489",
   "nl_tokens": [
    "Plot",
    "the",
@@ -126627,7 +126627,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-490",
   "nl_tokens": [
    "Returns",
    "a",
@@ -126844,7 +126844,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-491",
   "nl_tokens": [
    "Tiles",
    "open",
@@ -127117,7 +127117,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-492",
   "nl_tokens": [
    "Return",
    "the",
@@ -127336,7 +127336,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-493",
   "nl_tokens": [
    "Determine",
    "the",
@@ -127541,7 +127541,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-494",
   "nl_tokens": [
    "Connect",
    "the",
@@ -127742,7 +127742,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-495",
   "nl_tokens": [
    "write",
    "the",
@@ -128323,7 +128323,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-496",
   "nl_tokens": [
    "Cyan",
    "magenta",
@@ -128419,7 +128419,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-497",
   "nl_tokens": [
    "This",
    "is",
@@ -128523,7 +128523,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-498",
   "nl_tokens": [
    "Compute",
    "the",
@@ -128652,7 +128652,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-499",
   "nl_tokens": [
    "Create",
    "a",
@@ -128804,7 +128804,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-500",
   "nl_tokens": [
    "Compute",
    "updated",
@@ -129166,7 +129166,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-501",
   "nl_tokens": [
    "Add",
    "lines",
@@ -129231,7 +129231,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-502",
   "nl_tokens": [
    "Yield",
    "CPU",
@@ -129467,7 +129467,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-503",
   "nl_tokens": [
    "Effective",
    "process",
@@ -129539,7 +129539,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-504",
   "nl_tokens": [
    "write",
    "a",
@@ -129781,7 +129781,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-505",
   "nl_tokens": [
    "Plays",
    "the",
@@ -129989,7 +129989,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-506",
   "nl_tokens": [
    "Get",
    "proper",
@@ -130367,7 +130367,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-507",
   "nl_tokens": [
    "Convert",
    "IPA",
@@ -130507,7 +130507,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-508",
   "nl_tokens": [
    "Listens",
    "on",
@@ -130676,7 +130676,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-509",
   "nl_tokens": [
    "Call",
    "bash",
@@ -131377,7 +131377,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-510",
   "nl_tokens": [
    "!"
   ],
@@ -131436,7 +131436,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-511",
   "nl_tokens": [
    "r",
    "Compute",
@@ -131653,7 +131653,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-512",
   "nl_tokens": [
    "Converts",
    "multiple",
@@ -132071,7 +132071,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-513",
   "nl_tokens": [
    "Accepts",
    "log",
@@ -132198,7 +132198,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-514",
   "nl_tokens": [
    "See",
    "comments",
@@ -132453,7 +132453,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-515",
   "nl_tokens": [
    "Returns",
    "a",
@@ -132674,7 +132674,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-516",
   "nl_tokens": [
    "Initializes",
    "the",
@@ -133233,7 +133233,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-517",
   "nl_tokens": [
    "Input",
    "RGB",
@@ -133543,7 +133543,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-518",
   "nl_tokens": [
    "Implementation",
    "of",
@@ -133764,7 +133764,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-519",
   "nl_tokens": [
    "Called",
    "at",
@@ -134223,7 +134223,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-520",
   "nl_tokens": [
    "Calls",
    "Fortran",
@@ -134469,7 +134469,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-521",
   "nl_tokens": [
    "Transforms",
    "a",
@@ -134612,7 +134612,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-522",
   "nl_tokens": [
    "Return",
    "the",
@@ -134709,7 +134709,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-523",
   "nl_tokens": [
    "Return",
    "the",
@@ -135172,7 +135172,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-524",
   "nl_tokens": [
    "Convert",
    "this",
@@ -135254,7 +135254,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-525",
   "nl_tokens": [
    "Compare",
    "the",
@@ -135590,7 +135590,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-526",
   "nl_tokens": [
    "Return",
    "Affine",
@@ -135748,7 +135748,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-527",
   "nl_tokens": [
    "Return",
    "reasonable",
@@ -135821,7 +135821,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-528",
   "nl_tokens": [
    "write",
    "the",
@@ -136002,7 +136002,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-529",
   "nl_tokens": [
    "http",
    ":",
@@ -136073,7 +136073,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-530",
   "nl_tokens": [
    "t",
    "-",
@@ -136393,7 +136393,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-531",
   "nl_tokens": [
    "Compute",
    "the",
@@ -136478,7 +136478,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-532",
   "nl_tokens": [
    "z",
    "as",
@@ -136652,7 +136652,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-533",
   "nl_tokens": [
    "Interacts",
    "with",
@@ -136906,7 +136906,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-534",
   "nl_tokens": [
    "Parses",
    "a",
@@ -137199,7 +137199,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-535",
   "nl_tokens": [
    "Normalised",
    "data",
@@ -137299,7 +137299,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-536",
   "nl_tokens": [
    "Inserts",
    "a",
@@ -137437,7 +137437,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-537",
   "nl_tokens": [
    "Return",
    "Snowball",
@@ -138431,7 +138431,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-538",
   "nl_tokens": [
    "Get",
    "the",
@@ -138484,7 +138484,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-539",
   "nl_tokens": [
    "r",
    "Method",
@@ -138670,7 +138670,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-540",
   "nl_tokens": [
    "Choose",
    "n",
@@ -138930,7 +138930,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-541",
   "nl_tokens": [
    "See",
    "comments",
@@ -139114,7 +139114,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-542",
   "nl_tokens": [
    "Submits",
    "the",
@@ -139638,7 +139638,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-543",
   "nl_tokens": [
    "set",
    "the",
@@ -140205,7 +140205,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-544",
   "nl_tokens": [
    "!"
   ],
@@ -140309,7 +140309,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-545",
   "nl_tokens": [
    "Reads",
    "data",
@@ -140607,7 +140607,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-546",
   "nl_tokens": [
    "Reads",
    "up",
@@ -140707,7 +140707,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-547",
   "nl_tokens": [
    "Button",
    "action",
@@ -141161,7 +141161,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-548",
   "nl_tokens": [
    "Find",
    "a",
@@ -141583,7 +141583,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-549",
   "nl_tokens": [
    "Performs",
    "inhibition",
@@ -141728,7 +141728,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-550",
   "nl_tokens": [
    "Gets",
    "several",
@@ -143774,7 +143774,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-551",
   "nl_tokens": [
    "Internal",
    ".",
@@ -143876,7 +143876,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-552",
   "nl_tokens": [
    "Builds",
    "list",
@@ -144089,7 +144089,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-553",
   "nl_tokens": [
    "The",
    "delimiter",
@@ -144839,7 +144839,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-554",
   "nl_tokens": [
    "Used",
    "to",
@@ -145137,7 +145137,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-555",
   "nl_tokens": [
    "Combine",
    "structure",
@@ -145390,7 +145390,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-556",
   "nl_tokens": [
    "Fit",
    "a",
@@ -145835,7 +145835,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-557",
   "nl_tokens": [
    "!"
   ],
@@ -146138,7 +146138,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-558",
   "nl_tokens": [
    "Return",
    "a",
@@ -146342,7 +146342,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-559",
   "nl_tokens": [
    "Plots",
    "total",
@@ -146643,7 +146643,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-560",
   "nl_tokens": [
    "Extract",
    "the",
@@ -146743,7 +146743,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-561",
   "nl_tokens": [
    "given",
    "a",
@@ -147376,7 +147376,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-562",
   "nl_tokens": [
    "This",
    "calculates",
@@ -147534,7 +147534,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-563",
   "nl_tokens": [
    "Calculate",
    "statistics",
@@ -147803,7 +147803,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-564",
   "nl_tokens": [
    "Finds",
    "the",
@@ -148087,7 +148087,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-565",
   "nl_tokens": [
    "Highest",
    "value",
@@ -148160,7 +148160,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-566",
   "nl_tokens": [
    "Args",
    ":",
@@ -148497,7 +148497,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-567",
   "nl_tokens": [
    "Find",
    "reactions",
@@ -148673,7 +148673,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-568",
   "nl_tokens": [
    "Turns",
    "an",
@@ -149141,7 +149141,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-569",
   "nl_tokens": [
    "Loads",
    "the",
@@ -149242,7 +149242,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-570",
   "nl_tokens": [
    "Build",
    "per",
@@ -149380,7 +149380,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-571",
   "nl_tokens": [
    "Clips",
    "bounds",
@@ -149465,7 +149465,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-572",
   "nl_tokens": [
    "!"
   ],
@@ -149511,7 +149511,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-573",
   "nl_tokens": [
    "Return",
    "true",
@@ -149591,7 +149591,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-574",
   "nl_tokens": [
    "This",
    "generates",
@@ -149998,7 +149998,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-575",
   "nl_tokens": [
    "Runs",
    "the",
@@ -151514,7 +151514,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-576",
   "nl_tokens": [
    "This",
    "is",
@@ -151914,7 +151914,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-577",
   "nl_tokens": [
    "Returns",
    "intersection",
@@ -152051,7 +152051,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-578",
   "nl_tokens": [
    "builds",
    "a",
@@ -152445,7 +152445,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-579",
   "nl_tokens": [
    "Return",
    "the",
@@ -152782,7 +152782,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-580",
   "nl_tokens": [
    "Return",
    "the",
@@ -153111,7 +153111,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-581",
   "nl_tokens": [
    "receive",
    "-",
@@ -153350,7 +153350,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-582",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -153483,7 +153483,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-583",
   "nl_tokens": [
    "adds",
    "number",
@@ -153575,7 +153575,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-584",
   "nl_tokens": [
    "Determine",
    "the",
@@ -153937,7 +153937,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-585",
   "nl_tokens": [
    "Sets",
    "the",
@@ -154040,7 +154040,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-586",
   "nl_tokens": [
    "!"
   ],
@@ -154099,7 +154099,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-587",
   "nl_tokens": [
    "Compute",
    "the",
@@ -154402,7 +154402,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-588",
   "nl_tokens": [
    "Awake",
    "process",
@@ -154528,7 +154528,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-589",
   "nl_tokens": [
    "decimate",
    "data",
@@ -154751,7 +154751,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-590",
   "nl_tokens": [
    "Utility",
    "function",
@@ -154859,7 +154859,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-591",
   "nl_tokens": [
    "Given",
    "a",
@@ -155167,7 +155167,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-592",
   "nl_tokens": [
    "Check",
    "if",
@@ -155271,7 +155271,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-593",
   "nl_tokens": [
    "Given",
    "a",
@@ -155381,7 +155381,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-594",
   "nl_tokens": [
    "Start",
    "the",
@@ -155851,7 +155851,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-595",
   "nl_tokens": [
    "Compute",
    "the",
@@ -155914,7 +155914,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-596",
   "nl_tokens": [
    "A",
    "function",
@@ -156485,7 +156485,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-597",
   "nl_tokens": [
    "Prepare",
    "the",
@@ -156695,7 +156695,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-598",
   "nl_tokens": [
    "Solving",
    "an",
@@ -156865,7 +156865,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-599",
   "nl_tokens": [
    "Returns",
    "a",
@@ -157129,7 +157129,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-600",
   "nl_tokens": [
    "Computes",
    "the",
@@ -157311,7 +157311,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-601",
   "nl_tokens": [
    "addition",
    "of",
@@ -157377,7 +157377,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-602",
   "nl_tokens": [
    "Return",
    "the",
@@ -157465,7 +157465,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-603",
   "nl_tokens": [
    "Computes",
    "output",
@@ -157698,7 +157698,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-604",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -157820,7 +157820,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-605",
   "nl_tokens": [
    "r",
    "Return",
@@ -157889,7 +157889,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-606",
   "nl_tokens": [
    "Draw",
    "people",
@@ -158497,7 +158497,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-607",
   "nl_tokens": [
    "Returns",
    "the",
@@ -158667,7 +158667,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-608",
   "nl_tokens": [
    "Create",
    "a",
@@ -158795,7 +158795,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-609",
   "nl_tokens": [
    "Variance",
    "ratio",
@@ -158878,7 +158878,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-610",
   "nl_tokens": [
    "Create",
    "a",
@@ -158959,7 +158959,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-611",
   "nl_tokens": [
    "For",
    "each",
@@ -159104,7 +159104,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-612",
   "nl_tokens": [
    "Remove",
    "labels",
@@ -159436,7 +159436,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-613",
   "nl_tokens": [
    "Count",
    "bit",
@@ -160154,7 +160154,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-614",
   "nl_tokens": [
    "This",
    "plots",
@@ -160658,7 +160658,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-615",
   "nl_tokens": [
    "Play",
    "the",
@@ -160728,7 +160728,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-616",
   "nl_tokens": [
    "Plugin",
    "to",
@@ -160972,7 +160972,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-617",
   "nl_tokens": [
    "Returns",
    "radius",
@@ -161054,7 +161054,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-618",
   "nl_tokens": [
    "Takes",
    "a",
@@ -161222,7 +161222,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-619",
   "nl_tokens": [
    "Return",
    "an",
@@ -161304,7 +161304,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-620",
   "nl_tokens": [
    "submits",
    "a",
@@ -161735,7 +161735,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-621",
   "nl_tokens": [
    "Transforms",
    "this",
@@ -161900,7 +161900,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-622",
   "nl_tokens": [
    "Return",
    "the",
@@ -162256,7 +162256,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-623",
   "nl_tokens": [
    "Calculates",
    "the",
@@ -162346,7 +162346,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-624",
   "nl_tokens": [
    "Called",
    "at",
@@ -162658,7 +162658,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-625",
   "nl_tokens": [
    "Search",
    "the",
@@ -162919,7 +162919,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-626",
   "nl_tokens": [
    "Return",
    "the",
@@ -163078,7 +163078,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-627",
   "nl_tokens": [
    "Sonify",
    "beats",
@@ -163275,7 +163275,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-628",
   "nl_tokens": [
    "Finds",
    "the",
@@ -163378,7 +163378,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-629",
   "nl_tokens": [
    "Get",
    "the",
@@ -163546,7 +163546,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-630",
   "nl_tokens": [
    "Typically",
    "called",
@@ -163703,7 +163703,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-631",
   "nl_tokens": [
    "Some",
    "common",
@@ -164165,7 +164165,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-632",
   "nl_tokens": [
    "Format",
    "intraday",
@@ -164329,7 +164329,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-633",
   "nl_tokens": [
    "dual",
    "I",
@@ -164471,7 +164471,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-634",
   "nl_tokens": [
    "r",
    "Method",
@@ -164638,7 +164638,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-635",
   "nl_tokens": [
    "Accepts",
    "log",
@@ -164784,7 +164784,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-636",
   "nl_tokens": [
    "Return",
    "the",
@@ -165456,7 +165456,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-637",
   "nl_tokens": [
    "Get",
    "the",
@@ -165503,7 +165503,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-638",
   "nl_tokens": [
    "Args"
   ],
@@ -165594,7 +165594,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-639",
   "nl_tokens": [
    "Determine",
    "the",
@@ -165759,7 +165759,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-640",
   "nl_tokens": [
    "Given",
    "a",
@@ -165827,7 +165827,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-641",
   "nl_tokens": [
    "Pads",
    "each",
@@ -166153,7 +166153,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-642",
   "nl_tokens": [
    "Return",
    "the",
@@ -166667,7 +166667,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-643",
   "nl_tokens": [
    "Reads",
    "data",
@@ -167355,7 +167355,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-644",
   "nl_tokens": [
    "Return",
    "whether",
@@ -167439,7 +167439,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-645",
   "nl_tokens": [
    "Compute",
    "the",
@@ -167516,7 +167516,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-646",
   "nl_tokens": [
    "Iteratively",
    "finds",
@@ -167571,7 +167571,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-647",
   "nl_tokens": [
    "r",
    "Method",
@@ -167766,7 +167766,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-648",
   "nl_tokens": [
    "Nsymb",
    "Nerr",
@@ -168616,7 +168616,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-649",
   "nl_tokens": [
    "Return",
    "the",
@@ -168764,7 +168764,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-650",
   "nl_tokens": [
    "This",
    "method",
@@ -168899,7 +168899,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-651",
   "nl_tokens": [
    "Writes",
    "data",
@@ -169282,7 +169282,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-652",
   "nl_tokens": [
    "This",
    "function",
@@ -169477,7 +169477,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-653",
   "nl_tokens": [
    "Context",
    "manager",
@@ -169716,7 +169716,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-654",
   "nl_tokens": [
    "Rescale",
    "numeric",
@@ -169838,7 +169838,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-655",
   "nl_tokens": [
    "Identifies",
    "regions",
@@ -170082,7 +170082,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-656",
   "nl_tokens": [
    "Populate",
    "array",
@@ -170411,7 +170411,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-657",
   "nl_tokens": [
    "Find",
    "the",
@@ -170651,7 +170651,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-658",
   "nl_tokens": [
    "Given",
    "a",
@@ -170865,7 +170865,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-659",
   "nl_tokens": [
    "num_datapoints",
    "=",
@@ -170946,7 +170946,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-660",
   "nl_tokens": [
    "pads",
    "names",
@@ -171027,7 +171027,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-661",
   "nl_tokens": [
    "Get",
    "get",
@@ -171091,7 +171091,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-662",
   "nl_tokens": [
    "This",
    "plots",
@@ -172372,7 +172372,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-663",
   "nl_tokens": [
    "Generate",
    "a",
@@ -172522,7 +172522,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-664",
   "nl_tokens": [
    "Python",
    "implementation",
@@ -172971,7 +172971,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-665",
   "nl_tokens": [
    "Plot",
    "the",
@@ -173391,7 +173391,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-666",
   "nl_tokens": [
    "Increment",
    "version",
@@ -173547,7 +173547,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-667",
   "nl_tokens": [
    "Generate",
    "a",
@@ -173599,7 +173599,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-668",
   "nl_tokens": [
    "For",
    "each",
@@ -173732,7 +173732,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-669",
   "nl_tokens": [
    "!"
   ],
@@ -173846,7 +173846,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-670",
   "nl_tokens": [
    "make",
    "toyplot",
@@ -174438,7 +174438,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-671",
   "nl_tokens": [
    "Yield",
    "CPU",
@@ -174710,7 +174710,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-672",
   "nl_tokens": [
    "Creates",
    "an",
@@ -174873,7 +174873,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-673",
   "nl_tokens": [
    "Load",
    "IMDB",
@@ -175360,7 +175360,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-674",
   "nl_tokens": [
    "check",
    "the",
@@ -175510,7 +175510,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-675",
   "nl_tokens": [
    "np",
    ".",
@@ -175654,7 +175654,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-676",
   "nl_tokens": [
    "!"
   ],
@@ -175806,7 +175806,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-677",
   "nl_tokens": [
    "Generate",
    "the",
@@ -176023,7 +176023,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-678",
   "nl_tokens": [
    "Convert",
    "an",
@@ -176209,7 +176209,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-679",
   "nl_tokens": [
    "Indent",
    "representation",
@@ -176539,7 +176539,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-680",
   "nl_tokens": [
    "Orders",
    "images",
@@ -176800,7 +176800,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-681",
   "nl_tokens": [
    "Save",
    "multiple",
@@ -177098,7 +177098,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-682",
   "nl_tokens": [
    "Override",
    "of",
@@ -177441,7 +177441,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-683",
   "nl_tokens": [
    "Return",
    "the",
@@ -177502,7 +177502,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-684",
   "nl_tokens": [
    "Create",
    "a",
@@ -178152,7 +178152,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-685",
   "nl_tokens": [
    "Recurse",
    "through",
@@ -178632,7 +178632,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-686",
   "nl_tokens": [
    "return",
    "a",
@@ -179544,7 +179544,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-687",
   "nl_tokens": [
    "r",
    "Method",
@@ -179641,7 +179641,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-688",
   "nl_tokens": [
    "Compute",
    "the",
@@ -179740,7 +179740,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-689",
   "nl_tokens": [
    "Add",
    "a",
@@ -180351,7 +180351,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-690",
   "nl_tokens": [
    "Updates",
    "synapses",
@@ -180490,7 +180490,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-691",
   "nl_tokens": [
    "Standardizing",
    "the",
@@ -181129,7 +181129,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-692",
   "nl_tokens": [
    "Complete",
    "the",
@@ -181214,7 +181214,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-693",
   "nl_tokens": [
    "Wait",
    "for",
@@ -181291,7 +181291,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-694",
   "nl_tokens": [
    "Returns",
    "a",
@@ -181567,7 +181567,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-695",
   "nl_tokens": [
    "Does",
    "phase",
@@ -181681,7 +181681,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-696",
   "nl_tokens": [
    "Get",
    "the",
@@ -181830,7 +181830,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-697",
   "nl_tokens": [
    "Tests",
    "all",
@@ -181941,7 +181941,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-698",
   "nl_tokens": [
    "Add",
    "weighted",
@@ -182148,7 +182148,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-699",
   "nl_tokens": [
    "Accepts",
    "log",
@@ -182359,7 +182359,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-700",
   "nl_tokens": [
    "Return",
    "the",
@@ -182581,7 +182581,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-701",
   "nl_tokens": [
    "Runs",
    "the",
@@ -183738,7 +183738,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-702",
   "nl_tokens": [
    "Applies",
    "the",
@@ -183952,7 +183952,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-703",
   "nl_tokens": [
    "Resize",
    "an",
@@ -184002,7 +184002,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-704",
   "nl_tokens": [
    "Sample",
    "a",
@@ -184422,7 +184422,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-705",
   "nl_tokens": [
    "Get",
    "the",
@@ -184462,7 +184462,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-706",
   "nl_tokens": [
    "Checks",
    "for",
@@ -184663,7 +184663,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-707",
   "nl_tokens": [
    "Given",
    "model",
@@ -184768,7 +184768,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-708",
   "nl_tokens": [
    "Compute",
    "closeness",
@@ -184987,7 +184987,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-709",
   "nl_tokens": [
    "Finds",
    "the",
@@ -185155,7 +185155,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-710",
   "nl_tokens": [
    "Compute",
    "the",
@@ -185215,7 +185215,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-711",
   "nl_tokens": [
    "Count",
    "bit",
@@ -185709,7 +185709,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-712",
   "nl_tokens": [
    "Convert",
    "a",
@@ -185854,7 +185854,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-713",
   "nl_tokens": [
    "Return",
    "the",
@@ -186010,7 +186010,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-714",
   "nl_tokens": [
    "Generates",
    "a",
@@ -186191,7 +186191,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-715",
   "nl_tokens": [
    "Creates",
    "nDesiredNewSynapes",
@@ -186377,7 +186377,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-716",
   "nl_tokens": [
    "Crops",
    "img",
@@ -186571,7 +186571,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-717",
   "nl_tokens": [
    "Decode",
    "geohash",
@@ -186698,7 +186698,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-718",
   "nl_tokens": [
    "r",
    "Solves",
@@ -187090,7 +187090,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-719",
   "nl_tokens": [
    "Returns",
    "the",
@@ -187177,7 +187177,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-720",
   "nl_tokens": [
    "Validate",
    "a",
@@ -187637,7 +187637,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-721",
   "nl_tokens": [
    "1",
    ".",
@@ -187776,7 +187776,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-722",
   "nl_tokens": [
    "Get",
    "the",
@@ -187882,7 +187882,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-723",
   "nl_tokens": [
    "Draws",
    "a",
@@ -188264,7 +188264,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-724",
   "nl_tokens": [
    "Return",
    "the",
@@ -188407,7 +188407,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-725",
   "nl_tokens": [
    "Convert",
    "reflection",
@@ -188470,7 +188470,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-726",
   "nl_tokens": [
    "function",
    "that",
@@ -188654,7 +188654,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-727",
   "nl_tokens": [
    "Gets",
    "the",
@@ -188794,7 +188794,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-728",
   "nl_tokens": [
    "Paginate",
    "an",
@@ -188970,7 +188970,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-729",
   "nl_tokens": [
    "Print",
    "up",
@@ -189057,7 +189057,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-730",
   "nl_tokens": [
    "Checks",
    "to",
@@ -189197,7 +189197,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-731",
   "nl_tokens": [
    "See",
    "comments",
@@ -189287,7 +189287,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-732",
   "nl_tokens": [
    "Return",
    "a",
@@ -189360,7 +189360,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-733",
   "nl_tokens": [
    "Makes",
    "a",
@@ -189437,7 +189437,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-734",
   "nl_tokens": [
    "Pickle",
    "and",
@@ -189529,7 +189529,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-735",
   "nl_tokens": [
    "given",
    "a",
@@ -190154,7 +190154,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-736",
   "nl_tokens": [
    "Finds",
    "the",
@@ -190530,7 +190530,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-737",
   "nl_tokens": [
    "Shift",
    "the",
@@ -190734,7 +190734,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-738",
   "nl_tokens": [
    "implements",
    "30",
@@ -190830,7 +190830,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-739",
   "nl_tokens": [
    "signature",
    "..."
@@ -191238,7 +191238,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-740",
   "nl_tokens": [
    "convert",
    "mercator",
@@ -191422,7 +191422,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-741",
   "nl_tokens": [
    "Transforms",
    "predictions",
@@ -191477,7 +191477,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-742",
   "nl_tokens": [
    "Return",
    "the",
@@ -191544,7 +191544,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-743",
   "nl_tokens": [
    "Return",
    "the",
@@ -191969,7 +191969,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-744",
   "nl_tokens": [
    "Plots",
    "a",
@@ -193304,7 +193304,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-745",
   "nl_tokens": [
    "Update",
    "boost",
@@ -193410,7 +193410,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-746",
   "nl_tokens": [
    "Based",
    "on",
@@ -193888,7 +193888,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-747",
   "nl_tokens": [
    "Writes",
    "the",
@@ -193964,7 +193964,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-748",
   "nl_tokens": [
    "Shift",
    "the",
@@ -194125,7 +194125,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-749",
   "nl_tokens": [
    "Parameters",
    "----------",
@@ -194296,7 +194296,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-750",
   "nl_tokens": [
    "A",
    "floating",
@@ -194412,7 +194412,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-751",
   "nl_tokens": [
    "Takes",
    "ciphertext",
@@ -194570,7 +194570,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-752",
   "nl_tokens": [
    "Print",
    "a",
@@ -194674,7 +194674,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-753",
   "nl_tokens": [
    "Optimize",
    "an",
@@ -194916,7 +194916,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-754",
   "nl_tokens": [
    "Copy",
    "code",
@@ -195159,7 +195159,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-755",
   "nl_tokens": [
    "This",
    "calculates",
@@ -195400,7 +195400,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-756",
   "nl_tokens": [
    "Return",
    "the",
@@ -195549,7 +195549,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-757",
   "nl_tokens": [
    "!"
   ],
@@ -195603,7 +195603,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-758",
   "nl_tokens": [
    "Return",
    "the",
@@ -195653,7 +195653,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-759",
   "nl_tokens": [
    "Finds",
    "the",
@@ -195802,7 +195802,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-760",
   "nl_tokens": [
    "Pad",
    "each",
@@ -195881,7 +195881,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-761",
   "nl_tokens": [
    "Removes",
    "any",
@@ -196005,7 +196005,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-762",
   "nl_tokens": [
    "Computes",
    "the",
@@ -196324,7 +196324,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-763",
   "nl_tokens": [
    "Returns",
    "the",
@@ -196394,7 +196394,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-764",
   "nl_tokens": [
    "Count",
    "the",
@@ -196456,7 +196456,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-765",
   "nl_tokens": [
    "Solves",
    "a",
@@ -196521,7 +196521,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-766",
   "nl_tokens": [
    "addition",
    "of",
@@ -196617,7 +196617,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-767",
   "nl_tokens": [
    "Plots",
    "DataFrame",
@@ -196795,7 +196795,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-768",
   "nl_tokens": [
    "we",
    "expect",
@@ -197166,7 +197166,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-769",
   "nl_tokens": [
    "addition",
    "of",
@@ -197232,7 +197232,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-770",
   "nl_tokens": [
    "Check",
    "to",
@@ -197356,7 +197356,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-771",
   "nl_tokens": [
    "Identify",
    "a",
@@ -197486,7 +197486,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-772",
   "nl_tokens": [
    "Get",
    "the",
@@ -197567,7 +197567,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-773",
   "nl_tokens": [
    "Build",
    "the",
@@ -197686,7 +197686,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-774",
   "nl_tokens": [
    "Convert",
    "a",
@@ -197871,7 +197871,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-775",
   "nl_tokens": [
    "get",
    "merged",
@@ -198162,7 +198162,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-776",
   "nl_tokens": [
    "Plot",
    "the",
@@ -198743,7 +198743,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-777",
   "nl_tokens": [
    "Computes",
    "the",
@@ -198862,7 +198862,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-778",
   "nl_tokens": [
    "Return",
    "a",
@@ -199072,7 +199072,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-779",
   "nl_tokens": [
    "Shade",
    "*",
@@ -199293,7 +199293,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-780",
   "nl_tokens": [
    "Keeps",
    "track",
@@ -199351,7 +199351,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-781",
   "nl_tokens": [
    "Pre",
    "-",
@@ -199480,7 +199480,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-782",
   "nl_tokens": [
    "Plot",
    "the",
@@ -199570,7 +199570,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-783",
   "nl_tokens": [
    "Function",
    "for",
@@ -199643,7 +199643,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-784",
   "nl_tokens": [
    "\u0412\u044b\u0447\u0438\u0441\u043b\u0435\u043d\u0438\u0435",
    "h",
@@ -199794,7 +199794,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-785",
   "nl_tokens": [
    "Processes",
    "a",
@@ -200098,7 +200098,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-786",
   "nl_tokens": [
    "This",
    "function",
@@ -200278,7 +200278,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-787",
   "nl_tokens": [
    "Produce",
    "a",
@@ -200386,7 +200386,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-788",
   "nl_tokens": [
    "\u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442",
    "\u0432\u0441\u0435",
@@ -200496,7 +200496,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-789",
   "nl_tokens": [
    "Get",
    "file",
@@ -200604,7 +200604,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-790",
   "nl_tokens": [
    "Align",
    "iteration",
@@ -200794,7 +200794,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-791",
   "nl_tokens": [
    "List",
    "teams",
@@ -200871,7 +200871,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-792",
   "nl_tokens": [
    "Packs",
    "a",
@@ -201005,7 +201005,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-793",
   "nl_tokens": [
    "Update",
    "the",
@@ -201073,7 +201073,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-794",
   "nl_tokens": [
    "Return",
    "a",
@@ -201188,7 +201188,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-795",
   "nl_tokens": [
    "Turn",
    "a",
@@ -201510,7 +201510,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-796",
   "nl_tokens": [
    "Give",
    "the",
@@ -201584,7 +201584,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-797",
   "nl_tokens": [
    "benjamini",
    "hocheberg",
@@ -201748,7 +201748,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-798",
   "nl_tokens": [
    "What",
    "percentage",
@@ -201828,7 +201828,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-799",
   "nl_tokens": [
    "Render",
    "the",
@@ -202030,7 +202030,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-800",
   "nl_tokens": [
    "Populates",
    "a",
@@ -202334,7 +202334,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-801",
   "nl_tokens": [
    "compute",
    "the",
@@ -202523,7 +202523,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-802",
   "nl_tokens": [
    "When",
    "the",
@@ -202609,7 +202609,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-803",
   "nl_tokens": [
    "This",
    "searches",
@@ -202774,7 +202774,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-804",
   "nl_tokens": [
    "Returns",
    "the",
@@ -202895,7 +202895,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-805",
   "nl_tokens": [
    ":",
    "type",
@@ -203137,7 +203137,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-806",
   "nl_tokens": [
    "The",
    "bounding",
@@ -203206,7 +203206,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-807",
   "nl_tokens": [
    "r",
    "Construct",
@@ -203524,7 +203524,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-808",
   "nl_tokens": [
    "Create",
    "a",
@@ -203841,7 +203841,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-809",
   "nl_tokens": [
    "Resolve",
    "ports",
@@ -204116,7 +204116,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-810",
   "nl_tokens": [
    "r",
    "Return",
@@ -204341,7 +204341,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-811",
   "nl_tokens": [
    "Return",
    "a",
@@ -204471,7 +204471,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-812",
   "nl_tokens": [
    "Optimise",
    "data",
@@ -205835,7 +205835,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-813",
   "nl_tokens": [
    "Calculates",
    "the",
@@ -206872,7 +206872,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-814",
   "nl_tokens": [
    "r",
    "Return",
@@ -206949,7 +206949,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-815",
   "nl_tokens": [
    "Gets",
    "the",
@@ -207016,7 +207016,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-816",
   "nl_tokens": [
    "Plot",
    "the",
@@ -208154,7 +208154,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-817",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -208254,7 +208254,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-818",
   "nl_tokens": [
    "Return",
    "random",
@@ -208415,7 +208415,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-819",
   "nl_tokens": [
    "Insert",
    "size",
@@ -208682,7 +208682,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-820",
   "nl_tokens": [
    "Returns",
    "the",
@@ -208753,7 +208753,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-821",
   "nl_tokens": [
    "Get",
    "the",
@@ -208870,7 +208870,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-822",
   "nl_tokens": [
    "Computes",
    "BLEU",
@@ -209217,7 +209217,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-823",
   "nl_tokens": [
    "computes",
    "the",
@@ -209321,7 +209321,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-824",
   "nl_tokens": [
    "meaning",
    "pvalues",
@@ -209627,7 +209627,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-825",
   "nl_tokens": [
    "Compute",
    "edge",
@@ -209699,7 +209699,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-826",
   "nl_tokens": [
    "Computes",
    "the",
@@ -209804,7 +209804,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-827",
   "nl_tokens": [
    "Returns",
    "the",
@@ -210259,7 +210259,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-828",
   "nl_tokens": [
    "Compute",
    "the",
@@ -210341,7 +210341,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-829",
   "nl_tokens": [
    "List",
    "team",
@@ -210435,7 +210435,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-830",
   "nl_tokens": [
    "Plots",
    "CDF",
@@ -210778,7 +210778,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-831",
   "nl_tokens": [
    "Update",
    "the",
@@ -210856,7 +210856,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-832",
   "nl_tokens": [
    "Returns",
    "a",
@@ -210920,7 +210920,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-833",
   "nl_tokens": [
    "Processes",
    "a",
@@ -210970,7 +210970,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-834",
   "nl_tokens": [
    "Returns",
    "the",
@@ -211051,7 +211051,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-835",
   "nl_tokens": [
    "Extract",
    "(",
@@ -211116,7 +211116,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-836",
   "nl_tokens": [
    "Returns",
    "the",
@@ -211223,7 +211223,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-837",
   "nl_tokens": [
    "Fast",
    "forward",
@@ -211701,7 +211701,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-838",
   "nl_tokens": [
    "From",
    "a",
@@ -211922,7 +211922,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-839",
   "nl_tokens": [
    "Expands",
    "the",
@@ -212093,7 +212093,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-840",
   "nl_tokens": [
    "Prints",
    "out",
@@ -212213,7 +212213,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-841",
   "nl_tokens": [
    "Generate",
    "the",
@@ -212326,7 +212326,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-842",
   "nl_tokens": [
    "Automatically",
    "separates",
@@ -213053,7 +213053,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-843",
   "nl_tokens": [
    "Build",
    "the",
@@ -213224,7 +213224,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-844",
   "nl_tokens": [
    ":",
    "type",
@@ -213416,7 +213416,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-845",
   "nl_tokens": [
    "For",
    "each",
@@ -213766,7 +213766,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-846",
   "nl_tokens": [
    "Visualize",
    "the",
@@ -214178,7 +214178,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-847",
   "nl_tokens": [
    "Parses",
    "the",
@@ -214334,7 +214334,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-848",
   "nl_tokens": [
    "Return",
    "best",
@@ -214726,7 +214726,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-849",
   "nl_tokens": [
    "Make",
    "a",
@@ -215249,7 +215249,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-850",
   "nl_tokens": [
    "return",
    "a",
@@ -215312,7 +215312,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-851",
   "nl_tokens": [
    "Give",
    "the",
@@ -215386,7 +215386,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-852",
   "nl_tokens": [
    "Enumerate",
    "all",
@@ -216016,7 +216016,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-853",
   "nl_tokens": [
    "Format",
    "*",
@@ -216126,7 +216126,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-854",
   "nl_tokens": [
    "Give",
    "the",
@@ -216204,7 +216204,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-855",
   "nl_tokens": [
    "Check",
    "all",
@@ -216316,7 +216316,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-856",
   "nl_tokens": [
    "Sets",
    "the",
@@ -216419,7 +216419,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-857",
   "nl_tokens": [
    "bandwidths",
    "are",
@@ -216488,7 +216488,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-858",
   "nl_tokens": [
    "TODO",
    ":",
@@ -216614,7 +216614,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-859",
   "nl_tokens": [
    "From",
    "a",
@@ -216988,7 +216988,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-860",
   "nl_tokens": [
    "Converts",
    "branch",
@@ -217704,7 +217704,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-861",
   "nl_tokens": [
    "Calculates",
    "F",
@@ -217922,7 +217922,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-862",
   "nl_tokens": [
    "Function",
    "to",
@@ -218909,7 +218909,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-863",
   "nl_tokens": [
    "Get",
    "a",
@@ -219073,7 +219073,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-864",
   "nl_tokens": [
    "If",
    "temporal",
@@ -219578,7 +219578,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-865",
   "nl_tokens": [
    "Clears",
    "a",
@@ -219860,7 +219860,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-866",
   "nl_tokens": [
    "Squeeze",
    "trits",
@@ -220026,7 +220026,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-867",
   "nl_tokens": [
    "Get",
    "the",
@@ -220228,7 +220228,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-868",
   "nl_tokens": [
    "Start",
    "processing",
@@ -220760,7 +220760,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-869",
   "nl_tokens": [
    "Modify",
    "the",
@@ -220836,7 +220836,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-870",
   "nl_tokens": [
    "Return",
    "the",
@@ -221034,7 +221034,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-871",
   "nl_tokens": [
    "Get",
    "height",
@@ -221172,7 +221172,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-872",
   "nl_tokens": [
    "Get",
    "the",
@@ -221235,7 +221235,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-873",
   "nl_tokens": [
    "Returns",
    "a",
@@ -221443,7 +221443,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-874",
   "nl_tokens": [
    "display",
    "a",
@@ -221532,7 +221532,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-875",
   "nl_tokens": [
    "Sub",
    "-",
@@ -221685,7 +221685,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-876",
   "nl_tokens": [
    "How",
    "many",
@@ -221731,7 +221731,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-877",
   "nl_tokens": [
    "Feature",
    "-",
@@ -222287,7 +222287,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-878",
   "nl_tokens": [
    "Will",
    "return",
@@ -222421,7 +222421,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-879",
   "nl_tokens": [
    "Plot",
    "the",
@@ -222767,7 +222767,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-880",
   "nl_tokens": [
    "This",
    "utility",
@@ -222904,7 +222904,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-881",
   "nl_tokens": [
    "Point",
    "to",
@@ -223157,7 +223157,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-882",
   "nl_tokens": [
    "Send",
    "all",
@@ -223322,7 +223322,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-883",
   "nl_tokens": [
    "Pre",
    "-",
@@ -223807,7 +223807,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-884",
   "nl_tokens": [
    "Plot",
    "a",
@@ -224448,7 +224448,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-885",
   "nl_tokens": [
    "Returns",
    "Twitter",
@@ -224533,7 +224533,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-886",
   "nl_tokens": [
    "Split",
    "the",
@@ -224769,7 +224769,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-887",
   "nl_tokens": [
    "Count",
    "of",
@@ -224833,7 +224833,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-888",
   "nl_tokens": [
    "Computes",
    "the",
@@ -224951,7 +224951,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-889",
   "nl_tokens": [
    "Internal",
    "function",
@@ -225110,7 +225110,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-890",
   "nl_tokens": [
    "Print",
    "a",
@@ -225504,7 +225504,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-891",
   "nl_tokens": [
    "Set",
    "branch",
@@ -225581,7 +225581,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-892",
   "nl_tokens": [
    "Parameters",
    "----------",
@@ -225720,7 +225720,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-893",
   "nl_tokens": [
    "Get",
    "datetime",
@@ -225900,7 +225900,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-894",
   "nl_tokens": [
    "Estimates",
    "K",
@@ -226328,7 +226328,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-895",
   "nl_tokens": [
    "calculates",
    "the",
@@ -226394,7 +226394,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-896",
   "nl_tokens": [
    "Update",
    "the",
@@ -226491,7 +226491,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-897",
   "nl_tokens": [
    "List",
    "events",
@@ -226646,7 +226646,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-898",
   "nl_tokens": [
    "Returns",
    "a",
@@ -226783,7 +226783,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-899",
   "nl_tokens": [
    "List",
    "rooms",
@@ -226896,7 +226896,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-900",
   "nl_tokens": [
    "Construct",
    "a",
@@ -227133,7 +227133,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-901",
   "nl_tokens": [
    "Pick",
    "two",
@@ -227190,7 +227190,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-902",
   "nl_tokens": [
    "Make",
    "the",
@@ -228116,7 +228116,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-903",
   "nl_tokens": [
    "Creates",
    "a",
@@ -228191,7 +228191,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-904",
   "nl_tokens": [
    "Uses",
    "a",
@@ -228666,7 +228666,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-905",
   "nl_tokens": [
    "Check",
    "that",
@@ -228956,7 +228956,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-906",
   "nl_tokens": [
    "return",
    "the",
@@ -229365,7 +229365,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-907",
   "nl_tokens": [
    "Add",
    "keyword",
@@ -229552,7 +229552,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-908",
   "nl_tokens": [
    "Run",
    "it",
@@ -229679,7 +229679,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-909",
   "nl_tokens": [
    "Display",
    "a",
@@ -229973,7 +229973,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-910",
   "nl_tokens": [
    "Pre",
    "-",
@@ -230140,7 +230140,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-911",
   "nl_tokens": [
    "Cuts",
    "the",
@@ -230446,7 +230446,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-912",
   "nl_tokens": [
    "Estimates",
    "the",
@@ -230771,7 +230771,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-913",
   "nl_tokens": [
    "Processes",
    "a",
@@ -230931,7 +230931,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-914",
   "nl_tokens": [
    "Creates",
    "a",
@@ -231136,7 +231136,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-915",
   "nl_tokens": [
    "Right",
    "-",
@@ -231224,7 +231224,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-916",
   "nl_tokens": [
    "Plot",
    "a",
@@ -231726,7 +231726,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-917",
   "nl_tokens": [
    "Prepare",
    "the",
@@ -231817,7 +231817,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-918",
   "nl_tokens": [
    "Get",
    "maximum",
@@ -231887,7 +231887,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-919",
   "nl_tokens": [
    "Y",
    "=",
@@ -232270,7 +232270,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-920",
   "nl_tokens": [
    "Computes",
    "the",
@@ -232427,7 +232427,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-921",
   "nl_tokens": [
    "Create",
    "new",
@@ -232550,7 +232550,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-922",
   "nl_tokens": [
    "Returns",
    "the",
@@ -232994,7 +232994,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-923",
   "nl_tokens": [
    "Computes",
    "the",
@@ -233123,7 +233123,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-924",
   "nl_tokens": [
    "Change",
    "the",
@@ -233183,7 +233183,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-925",
   "nl_tokens": [
    "Generator",
    "that",
@@ -233423,7 +233423,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-926",
   "nl_tokens": [
    "r",
    "Return",
@@ -233481,7 +233481,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-927",
   "nl_tokens": [
    "Estimate",
    "tx",
@@ -233623,7 +233623,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-928",
   "nl_tokens": [
    "Return",
    "a",
@@ -234628,7 +234628,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-929",
   "nl_tokens": [
    "encoding",
    "--",
@@ -234818,7 +234818,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-930",
   "nl_tokens": [
    "Parses",
    "arguments",
@@ -235440,7 +235440,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-931",
   "nl_tokens": [
    "Add",
    "missing",
@@ -235914,7 +235914,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-932",
   "nl_tokens": [
    "Create",
    "a",
@@ -236169,7 +236169,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-933",
   "nl_tokens": [
    "Convert",
    "a",
@@ -236361,7 +236361,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-934",
   "nl_tokens": [
    "Calculate",
    "optimal",
@@ -236481,7 +236481,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-935",
   "nl_tokens": [
    "Return",
    "the",
@@ -236568,7 +236568,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-936",
   "nl_tokens": [
    "This",
    "function",
@@ -236716,7 +236716,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-937",
   "nl_tokens": [
    "Core",
    "dynamic",
@@ -236947,7 +236947,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-938",
   "nl_tokens": [
    "An",
    "endpoint",
@@ -237117,7 +237117,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-939",
   "nl_tokens": [
    "Sort",
    "clusters",
@@ -237258,7 +237258,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-940",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -237335,7 +237335,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-941",
   "nl_tokens": [
    "poll",
    "for",
@@ -237499,7 +237499,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-942",
   "nl_tokens": [
    "Returns",
    "the",
@@ -237607,7 +237607,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-943",
   "nl_tokens": [
    "Run",
    "the",
@@ -237810,7 +237810,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-944",
   "nl_tokens": [
    "Simultaneous",
    "backward",
@@ -238356,7 +238356,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-945",
   "nl_tokens": [
    "find",
    "similarities",
@@ -238531,7 +238531,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-946",
   "nl_tokens": [
    "Determine",
    "the",
@@ -238627,7 +238627,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-947",
   "nl_tokens": [
    "Plot",
    "an",
@@ -238909,7 +238909,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-948",
   "nl_tokens": [
    "Transform",
    "a",
@@ -238992,7 +238992,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-949",
   "nl_tokens": [
    "Find",
    "a",
@@ -239890,7 +239890,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-950",
   "nl_tokens": [
    "r",
    "Return",
@@ -239966,7 +239966,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-951",
   "nl_tokens": [
    "if",
    "branch_length",
@@ -240087,7 +240087,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-952",
   "nl_tokens": [
    "Overrideable",
    "function",
@@ -240373,7 +240373,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-953",
   "nl_tokens": [
    "Plots",
    "all",
@@ -240676,7 +240676,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-954",
   "nl_tokens": [
    "Make",
    "a",
@@ -240804,7 +240804,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-955",
   "nl_tokens": [
    "Normalize",
    "an",
@@ -241206,7 +241206,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-956",
   "nl_tokens": [
    "Renders",
    "a",
@@ -241347,7 +241347,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-957",
   "nl_tokens": [
    "Automatically",
    "separates",
@@ -241704,7 +241704,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-958",
   "nl_tokens": [
    ":",
    "param",
@@ -241880,7 +241880,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-959",
   "nl_tokens": [
    "Returns",
    "the",
@@ -241955,7 +241955,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-960",
   "nl_tokens": [
    "\u0412\u044b\u0447\u0438\u0441\u043b\u044f\u0435\u0442",
    "\u043c\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u0443\u044e",
@@ -242157,7 +242157,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-961",
   "nl_tokens": [
    "r",
    "Return",
@@ -242220,7 +242220,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-962",
   "nl_tokens": [
    "Get",
    "parameters",
@@ -242534,7 +242534,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-963",
   "nl_tokens": [
    "Compute",
    "the",
@@ -242876,7 +242876,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-964",
   "nl_tokens": [
    "Return",
    "a",
@@ -242934,7 +242934,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-965",
   "nl_tokens": [
    "calculates",
    "the",
@@ -243489,7 +243489,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-966",
   "nl_tokens": [
    "Helper",
    "function",
@@ -243574,7 +243574,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-967",
   "nl_tokens": [
    "Parse",
    "Retry",
@@ -243677,7 +243677,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-968",
   "nl_tokens": [
    "Keep",
    "the",
@@ -243800,7 +243800,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-969",
   "nl_tokens": [
    "Get",
    "range",
@@ -243849,7 +243849,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-970",
   "nl_tokens": [
    "Widget",
    "for",
@@ -244417,7 +244417,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-971",
   "nl_tokens": [
    "0",
    "-",
@@ -244588,7 +244588,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-972",
   "nl_tokens": [
    "Get",
    "source",
@@ -244792,7 +244792,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-973",
   "nl_tokens": [
    "Computes",
    "the",
@@ -245276,7 +245276,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-974",
   "nl_tokens": [
    "Evaluates",
    "int_tau",
@@ -245618,7 +245618,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-975",
   "nl_tokens": [
    "Assess",
    "the",
@@ -245828,7 +245828,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-976",
   "nl_tokens": [
    "Sets",
    "the",
@@ -245963,7 +245963,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-977",
   "nl_tokens": [
    ":",
    "type",
@@ -246020,7 +246020,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-978",
   "nl_tokens": [
    "Convenience",
    "function",
@@ -246135,7 +246135,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-979",
   "nl_tokens": [
    "Returns",
    "a",
@@ -248001,7 +248001,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-980",
   "nl_tokens": [
    "r",
    "Return",
@@ -248059,7 +248059,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-981",
   "nl_tokens": [
    "Evaluates",
    "max_tau",
@@ -248195,7 +248195,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-982",
   "nl_tokens": [
    "Updates",
    "the",
@@ -248364,7 +248364,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-983",
   "nl_tokens": [
    "Increment",
    "the",
@@ -248447,7 +248447,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-984",
   "nl_tokens": [
    "r",
    "Return",
@@ -248549,7 +248549,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-985",
   "nl_tokens": [
    "Heartbeats",
    "update",
@@ -248794,7 +248794,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-986",
   "nl_tokens": [
    "Returns",
    "a",
@@ -248953,7 +248953,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-987",
   "nl_tokens": [
    "Return",
    "a",
@@ -249170,7 +249170,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-988",
   "nl_tokens": [
    "Runs",
    "the",
@@ -249430,7 +249430,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-989",
   "nl_tokens": [
    "Handles",
    "the",
@@ -249689,7 +249689,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-990",
   "nl_tokens": [
    "Return",
    "the",
@@ -249839,7 +249839,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-991",
   "nl_tokens": [
    "Build",
    "/",
@@ -250406,7 +250406,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-992",
   "nl_tokens": [
    "Shortcut",
    "for",
@@ -250489,7 +250489,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-993",
   "nl_tokens": [
    "Plotting",
    "but",
@@ -250654,7 +250654,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-994",
   "nl_tokens": [
    "Loads",
    "a",
@@ -251099,7 +251099,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-995",
   "nl_tokens": [
    "The",
    "maximum",
@@ -251170,7 +251170,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-996",
   "nl_tokens": [
    "Return",
    "a",
@@ -252236,7 +252236,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-997",
   "nl_tokens": [
    "Find",
    "the",
@@ -252397,7 +252397,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-998",
   "nl_tokens": [
    "get",
    "max",
@@ -252444,7 +252444,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-999",
   "nl_tokens": [
    "Returns",
    "the",
@@ -253211,7 +253211,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1000",
   "nl_tokens": [
    "Clears",
    "out",
@@ -253292,7 +253292,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1001",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -253372,7 +253372,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1002",
   "nl_tokens": [
    "Split",
    "an",
@@ -253548,7 +253548,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1003",
   "nl_tokens": [
    "Find",
    "lines",
@@ -253806,7 +253806,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1004",
   "nl_tokens": [
    "Fetch",
    "the",
@@ -253997,7 +253997,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1005",
   "nl_tokens": [
    "add",
    "a",
@@ -254073,7 +254073,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1006",
   "nl_tokens": [
    "Find",
    "the",
@@ -254257,7 +254257,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1007",
   "nl_tokens": [
    "Parses",
    "arguments",
@@ -254766,7 +254766,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1008",
   "nl_tokens": [
    "Determine",
    "whether",
@@ -254967,7 +254967,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1009",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -255114,7 +255114,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1010",
   "nl_tokens": [
    "Bounded",
    "auto",
@@ -255268,7 +255268,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1011",
   "nl_tokens": [
    "Given",
    "the",
@@ -255437,7 +255437,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1012",
   "nl_tokens": [
    "A",
    "Python",
@@ -255753,7 +255753,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1013",
   "nl_tokens": [
    "Render",
    "the",
@@ -256013,7 +256013,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1014",
   "nl_tokens": [
    "Normalizes",
    "features",
@@ -256066,7 +256066,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1015",
   "nl_tokens": [
    "Plots",
    "the",
@@ -256363,7 +256363,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1016",
   "nl_tokens": [
    "Helper",
    "returning",
@@ -256473,7 +256473,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1017",
   "nl_tokens": [
    "Final",
    "post",
@@ -256576,7 +256576,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1018",
   "nl_tokens": [
    "Function",
    "for",
@@ -258078,7 +258078,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1019",
   "nl_tokens": [
    "Draw",
    "a",
@@ -258297,7 +258297,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1020",
   "nl_tokens": [
    "Calculates",
    "the",
@@ -258401,7 +258401,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1021",
   "nl_tokens": [
    "generate",
    "strings",
@@ -258529,7 +258529,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1022",
   "nl_tokens": [
    "Keep",
    "the",
@@ -258652,7 +258652,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1023",
   "nl_tokens": [
    "Finding",
    "all",
@@ -259385,7 +259385,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1024",
   "nl_tokens": [
    "Components",
    "are",
@@ -259555,7 +259555,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1025",
   "nl_tokens": [
    "save",
    "es",
@@ -259766,7 +259766,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1026",
   "nl_tokens": [
    "Drop",
    "a",
@@ -260351,7 +260351,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1027",
   "nl_tokens": [
    "Sonifies",
    "the",
@@ -260536,7 +260536,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1028",
   "nl_tokens": [
    "Each",
    "layer",
@@ -260829,7 +260829,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1029",
   "nl_tokens": [
    "Populate",
    "Filterbank",
@@ -261309,7 +261309,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1030",
   "nl_tokens": [
    "Print",
    "a",
@@ -261434,7 +261434,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1031",
   "nl_tokens": [
    "Sends",
    "the",
@@ -261499,7 +261499,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1032",
   "nl_tokens": [
    "Gets",
    "the",
@@ -261579,7 +261579,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1033",
   "nl_tokens": [
    "return",
    "dateobj",
@@ -261638,7 +261638,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1034",
   "nl_tokens": [
    "Print",
    "count",
@@ -261728,7 +261728,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1035",
   "nl_tokens": [
    "Save",
    "a",
@@ -261820,7 +261820,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1036",
   "nl_tokens": [
    "Report",
    "how",
@@ -262015,7 +262015,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1037",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -262152,7 +262152,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1038",
   "nl_tokens": [
    "Initial",
    "rendering",
@@ -262428,7 +262428,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1039",
   "nl_tokens": [
    "Draw",
    "bboxes",
@@ -262677,7 +262677,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1040",
   "nl_tokens": [
    "This",
    "method",
@@ -263318,7 +263318,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1041",
   "nl_tokens": [
    "parse",
    "an",
@@ -263696,7 +263696,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1042",
   "nl_tokens": [
    "Make",
    "a",
@@ -263945,7 +263945,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1043",
   "nl_tokens": [
    "Trim",
    "leading",
@@ -264125,7 +264125,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1044",
   "nl_tokens": [
    "Print",
    "generated",
@@ -264635,7 +264635,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1045",
   "nl_tokens": [
    "\u0412\u044b\u0447\u0438\u0441\u043b\u044f\u0435\u0442",
    "\u043c\u0438\u043d\u0438\u043c\u0430\u043b\u044c\u043d\u0443\u044e",
@@ -264940,7 +264940,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1046",
   "nl_tokens": [
    "Returns",
    "an",
@@ -265389,7 +265389,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1047",
   "nl_tokens": [
    "Convert",
    "flow",
@@ -265756,7 +265756,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1048",
   "nl_tokens": [
    "Select",
    "a",
@@ -265862,7 +265862,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1049",
   "nl_tokens": [
    "Send",
    "information",
@@ -266109,7 +266109,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1050",
   "nl_tokens": [
    "Extract",
    "a",
@@ -266267,7 +266267,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1051",
   "nl_tokens": [
    "A",
    "text",
@@ -266495,7 +266495,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1052",
   "nl_tokens": [
    "Returns",
    "the",
@@ -266543,7 +266543,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1053",
   "nl_tokens": [
    "Calculates",
    "Exact",
@@ -266717,7 +266717,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1054",
   "nl_tokens": [
    "Give",
    "the",
@@ -266830,7 +266830,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1055",
   "nl_tokens": [
    "Initialization",
    "done",
@@ -267119,7 +267119,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1056",
   "nl_tokens": [
    "Gets",
    "value",
@@ -267310,7 +267310,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1057",
   "nl_tokens": [
    "Resize",
    "image",
@@ -267463,7 +267463,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1058",
   "nl_tokens": [
    "Give",
    "the",
@@ -267583,7 +267583,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1059",
   "nl_tokens": [
    "Return",
    "the",
@@ -267677,7 +267677,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1060",
   "nl_tokens": [
    "Parses",
    "the",
@@ -267790,7 +267790,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1061",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -267889,7 +267889,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1062",
   "nl_tokens": [
    "Return",
    "the",
@@ -267940,7 +267940,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1063",
   "nl_tokens": [
    "Decorator",
    "for",
@@ -268440,7 +268440,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1064",
   "nl_tokens": [
    "Generate",
    "a",
@@ -268510,7 +268510,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1065",
   "nl_tokens": [
    "Compute",
    "some",
@@ -268594,7 +268594,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1066",
   "nl_tokens": [
    "Format",
    "target",
@@ -268709,7 +268709,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1067",
   "nl_tokens": [
    "Updates",
    "the",
@@ -269152,7 +269152,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1068",
   "nl_tokens": [
    "Process",
    "a",
@@ -269440,7 +269440,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1069",
   "nl_tokens": [
    "Return",
    "load",
@@ -270048,7 +270048,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1070",
   "nl_tokens": [
    "Naive",
    "neighborhoods",
@@ -270275,7 +270275,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1071",
   "nl_tokens": [
    "[",
    "string",
@@ -270464,7 +270464,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1072",
   "nl_tokens": [
    "Visualizes",
    "the",
@@ -270842,7 +270842,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1073",
   "nl_tokens": [
    "Calculate",
    "end",
@@ -270896,7 +270896,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1074",
   "nl_tokens": [
    "Computes",
    "the",
@@ -270995,7 +270995,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1075",
   "nl_tokens": [
    "List",
    "room",
@@ -271109,7 +271109,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1076",
   "nl_tokens": [
    "r",
    "Return",
@@ -271171,7 +271171,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1077",
   "nl_tokens": [
    "TODO",
    ":",
@@ -272058,7 +272058,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1078",
   "nl_tokens": [
    "Adds",
    "two",
@@ -272167,7 +272167,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1079",
   "nl_tokens": [
    "Clip",
    "values",
@@ -272230,7 +272230,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1080",
   "nl_tokens": [
    "Determine",
    "FDR",
@@ -272330,7 +272330,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1081",
   "nl_tokens": [
    "Try",
    "to",
@@ -272697,7 +272697,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1082",
   "nl_tokens": [
    "Return",
    "the",
@@ -272748,7 +272748,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1083",
   "nl_tokens": [
    "Parse",
    "lines",
@@ -273007,7 +273007,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1084",
   "nl_tokens": [
    "Dumps",
    "the",
@@ -274030,7 +274030,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1085",
   "nl_tokens": [
    "Short",
    "-",
@@ -274310,7 +274310,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1086",
   "nl_tokens": [
    "Retrieve",
    "the",
@@ -274479,7 +274479,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1087",
   "nl_tokens": [
    "Compute",
    "the",
@@ -274925,7 +274925,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1088",
   "nl_tokens": [
    "Resolve",
    "name",
@@ -274999,7 +274999,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1089",
   "nl_tokens": [
    "Estimate",
    "local",
@@ -275483,7 +275483,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1090",
   "nl_tokens": [
    "Create",
    "a",
@@ -275623,7 +275623,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1091",
   "nl_tokens": [
    "A",
    "pure",
@@ -276350,7 +276350,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1092",
   "nl_tokens": [
    "Calculates",
    "the",
@@ -276791,7 +276791,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1093",
   "nl_tokens": [
    "Compute",
    "the",
@@ -276843,7 +276843,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1094",
   "nl_tokens": [
    "Hands",
    "-",
@@ -277451,7 +277451,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1095",
   "nl_tokens": [
    "determine",
    "the",
@@ -277956,7 +277956,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1096",
   "nl_tokens": [
    "Perform",
    "optimization",
@@ -278267,7 +278267,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1097",
   "nl_tokens": [
    "Gets",
    "the",
@@ -278337,7 +278337,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1098",
   "nl_tokens": [
    "calculate",
    "H",
@@ -279280,7 +279280,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1099",
   "nl_tokens": [
    "Update",
    "learning",
@@ -279641,7 +279641,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1100",
   "nl_tokens": [
    "Identify",
    "a",
@@ -279937,7 +279937,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1101",
   "nl_tokens": [
    "Execute",
    "the",
@@ -280531,7 +280531,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1102",
   "nl_tokens": [
    "Expands",
    "this",
@@ -280611,7 +280611,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1103",
   "nl_tokens": [
    "This",
    "utility",
@@ -280776,7 +280776,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1104",
   "nl_tokens": [
    "Generates",
    "a",
@@ -280912,7 +280912,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1105",
   "nl_tokens": [
    "Updates",
    "the",
@@ -281100,7 +281100,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1106",
   "nl_tokens": [
    "Transform",
    "boolean",
@@ -281329,7 +281329,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1107",
   "nl_tokens": [
    "This",
    "function",
@@ -281610,7 +281610,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1108",
   "nl_tokens": [
    "\u0412\u044b\u0447\u0438\u0441\u043b\u044f\u0435\u0442",
    "\u0442\u0440\u0430\u043d\u0441\u0434\u0443\u043a\u0446\u0438\u044e",
@@ -281790,7 +281790,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1109",
   "nl_tokens": [
    "Plots",
    "PDF",
@@ -282023,7 +282023,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1110",
   "nl_tokens": [
    "Create",
    "a",
@@ -282259,7 +282259,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1111",
   "nl_tokens": [
    "r",
    "Return",
@@ -282335,7 +282335,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1112",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -282465,7 +282465,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1113",
   "nl_tokens": [
    "Returns",
    "max",
@@ -282550,7 +282550,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1114",
   "nl_tokens": [
    "Compare",
    "version",
@@ -282698,7 +282698,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1115",
   "nl_tokens": [
    "Converts",
    "a",
@@ -282933,7 +282933,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1116",
   "nl_tokens": [
    "Plot",
    "a",
@@ -283178,7 +283178,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1117",
   "nl_tokens": [
    "Fetch",
    "the",
@@ -283377,7 +283377,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1118",
   "nl_tokens": [
    "Program",
    "graph",
@@ -283565,7 +283565,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1119",
   "nl_tokens": [
    "Get",
    "the",
@@ -283639,7 +283639,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1120",
   "nl_tokens": [
    "Parse",
    "a",
@@ -283873,7 +283873,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1121",
   "nl_tokens": [
    "Merges",
    "derived",
@@ -284335,7 +284335,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1122",
   "nl_tokens": [
    "Creates",
    "the",
@@ -284626,7 +284626,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1123",
   "nl_tokens": [
    "Plot",
    "root",
@@ -285492,7 +285492,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1124",
   "nl_tokens": [
    "Basic",
    "onset",
@@ -285793,7 +285793,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1125",
   "nl_tokens": [
    "Program",
    "counter",
@@ -286000,7 +286000,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1126",
   "nl_tokens": [
    "generator",
    "that",
@@ -286723,7 +286723,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1127",
   "nl_tokens": [
    ":",
    "param",
@@ -287283,7 +287283,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1128",
   "nl_tokens": [
    "Perform",
    "connection",
@@ -287679,7 +287679,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1129",
   "nl_tokens": [
    "Initialization",
    "done",
@@ -287884,7 +287884,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1130",
   "nl_tokens": [
    "Merges",
    "parameters",
@@ -288746,7 +288746,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1131",
   "nl_tokens": [
    "Set",
    "auxilliary",
@@ -288936,7 +288936,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1132",
   "nl_tokens": [
    "Computes",
    "the",
@@ -289070,7 +289070,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1133",
   "nl_tokens": [
    "Partially",
    "match",
@@ -289245,7 +289245,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1134",
   "nl_tokens": [
    "Takes",
    "a",
@@ -289365,7 +289365,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1135",
   "nl_tokens": [
    "Similar",
    "to",
@@ -289536,7 +289536,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1136",
   "nl_tokens": [
    "recursive",
    "function",
@@ -289693,7 +289693,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1137",
   "nl_tokens": [
    "Plot",
    "the",
@@ -290654,7 +290654,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1138",
   "nl_tokens": [
    "Get",
    "depth",
@@ -290787,7 +290787,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1139",
   "nl_tokens": [
    "Plots",
    "a",
@@ -292632,7 +292632,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1140",
   "nl_tokens": [
    "Lists",
    "messages",
@@ -292764,7 +292764,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1141",
   "nl_tokens": [
    "Run",
    "complete",
@@ -293419,7 +293419,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1142",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -293634,7 +293634,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1143",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -293721,7 +293721,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1144",
   "nl_tokens": [
    "Plotting",
    "but",
@@ -293881,7 +293881,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1145",
   "nl_tokens": [
    "Select",
    "an",
@@ -294188,7 +294188,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1146",
   "nl_tokens": [
    "Compute",
    "the",
@@ -294444,7 +294444,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1147",
   "nl_tokens": [
    "Plots",
    "PDF",
@@ -295061,7 +295061,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1148",
   "nl_tokens": [
    "Prepare",
    "Safe",
@@ -295428,7 +295428,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1149",
   "nl_tokens": [
    "Get",
    "the",
@@ -295497,7 +295497,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1150",
   "nl_tokens": [
    "Roll",
    "up",
@@ -295779,7 +295779,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1151",
   "nl_tokens": [
    "Remove",
    "standard",
@@ -295989,7 +295989,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1152",
   "nl_tokens": [
    "Generates",
    "a",
@@ -296193,7 +296193,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1153",
   "nl_tokens": [
    "Create",
    "artificial",
@@ -296331,7 +296331,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1154",
   "nl_tokens": [
    "Return",
    "the",
@@ -296374,7 +296374,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1155",
   "nl_tokens": [
    "given",
    "a",
@@ -296503,7 +296503,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1156",
   "nl_tokens": [
    "List",
    "people"
@@ -296629,7 +296629,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1157",
   "nl_tokens": [
    "\u041f\u0440\u0435\u0434\u0432\u044b\u0447\u0438\u0441\u043b\u044f\u0435\u0442",
    "\u0431\u0443\u0434\u0443\u0449\u0438\u0435",
@@ -296858,7 +296858,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1158",
   "nl_tokens": [
    "Returns",
    "total",
@@ -296911,7 +296911,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1159",
   "nl_tokens": [
    "Squeeze",
    "trits",
@@ -297133,7 +297133,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1160",
   "nl_tokens": [
    "Return",
    "best",
@@ -297261,7 +297261,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1161",
   "nl_tokens": [
    "Executes",
    "a",
@@ -297398,7 +297398,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1162",
   "nl_tokens": [
    "Created",
    "to",
@@ -297512,7 +297512,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1163",
   "nl_tokens": [
    "Returns",
    "the",
@@ -297757,7 +297757,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1164",
   "nl_tokens": [
    "Plot",
    "an",
@@ -298038,7 +298038,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1165",
   "nl_tokens": [
    "This",
    "function",
@@ -298154,7 +298154,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1166",
   "nl_tokens": [
    "Apply",
    "layer",
@@ -299171,7 +299171,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1167",
   "nl_tokens": [
    "Main",
    "function",
@@ -299385,7 +299385,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1168",
   "nl_tokens": [
    "Receive",
    "data",
@@ -299538,7 +299538,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1169",
   "nl_tokens": [
    "Run",
    "complete",
@@ -299899,7 +299899,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1170",
   "nl_tokens": [
    "Iterates",
    "over",
@@ -300010,7 +300010,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1171",
   "nl_tokens": [
    "\u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442",
    "\u0432\u0441\u0435",
@@ -300246,7 +300246,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1172",
   "nl_tokens": [
    "Get",
    "the",
@@ -300312,7 +300312,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1173",
   "nl_tokens": [
    "Absorb",
    "trits",
@@ -300464,7 +300464,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1174",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -300547,7 +300547,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1175",
   "nl_tokens": [
    "Return",
    "datetime",
@@ -300642,7 +300642,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1176",
   "nl_tokens": [
    "Absorb",
    "trits",
@@ -300821,7 +300821,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1177",
   "nl_tokens": [
    "Send",
    "information",
@@ -301085,7 +301085,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1178",
   "nl_tokens": [
    "Computes",
    "the",
@@ -301142,7 +301142,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1179",
   "nl_tokens": [
    "Inverse",
    "short",
@@ -301496,7 +301496,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1180",
   "nl_tokens": [
    "Resize",
    "image",
@@ -301660,7 +301660,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1181",
   "nl_tokens": [
    "Overrideable",
    "function",
@@ -302042,7 +302042,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1182",
   "nl_tokens": [
    "Plot",
    "frequency",
@@ -302505,7 +302505,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1183",
   "nl_tokens": [
    "Sorts",
    "a",
@@ -302643,7 +302643,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1184",
   "nl_tokens": [
    "calculates",
    "the",
@@ -303558,7 +303558,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1185",
   "nl_tokens": [
    "Estimate",
    "pi0",
@@ -304056,7 +304056,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1186",
   "nl_tokens": [
    "Returns",
    "normalized",
@@ -304187,7 +304187,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1187",
   "nl_tokens": [
    "Returns",
    "the",
@@ -304228,7 +304228,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1188",
   "nl_tokens": [
    "Updates",
    "the",
@@ -304677,7 +304677,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1189",
   "nl_tokens": [
    "read",
    "(",
@@ -304834,7 +304834,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1190",
   "nl_tokens": [
    "Writes",
    "a",
@@ -305242,7 +305242,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1191",
   "nl_tokens": [
    "Compactly",
    "display",
@@ -305469,7 +305469,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1192",
   "nl_tokens": [
    "Create",
    "a",
@@ -305702,7 +305702,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1193",
   "nl_tokens": [
    "Align",
    "numbers",
@@ -305893,7 +305893,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1194",
   "nl_tokens": [
    "A",
    "sqrt",
@@ -306050,7 +306050,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1195",
   "nl_tokens": [
    "return",
    "a",
@@ -306159,7 +306159,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1196",
   "nl_tokens": [
    "r",
    "Return",
@@ -306745,7 +306745,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1197",
   "nl_tokens": [
    "Determine",
    "a",
@@ -306920,7 +306920,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1198",
   "nl_tokens": [
    "Returns",
    "a",
@@ -307052,7 +307052,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1199",
   "nl_tokens": [
    "Input",
    "-",
@@ -307261,7 +307261,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1200",
   "nl_tokens": [
    "Generator",
    "that",
@@ -307588,7 +307588,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1201",
   "nl_tokens": [
    "Handles",
    "parsing",
@@ -307818,7 +307818,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1202",
   "nl_tokens": [
    "Gets",
    "the",
@@ -307889,7 +307889,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1203",
   "nl_tokens": [
    "Generate",
    "the",
@@ -307976,7 +307976,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1204",
   "nl_tokens": [
    "Find",
    "the",
@@ -308063,7 +308063,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1205",
   "nl_tokens": [
    "Walk",
    "enumerated",
@@ -308404,7 +308404,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1206",
   "nl_tokens": [
    "Return",
    "circuit",
@@ -308662,7 +308662,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1207",
   "nl_tokens": [
    "Parse",
    "number",
@@ -308980,7 +308980,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1208",
   "nl_tokens": [
    "0",
    "-",
@@ -309203,7 +309203,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1209",
   "nl_tokens": [
    "This",
    "function",
@@ -309450,7 +309450,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1210",
   "nl_tokens": [
    "Store",
    "decodeTable",
@@ -309607,7 +309607,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1211",
   "nl_tokens": [
    "This",
    "utility",
@@ -310132,7 +310132,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1212",
   "nl_tokens": [
    "Reverse",
    "byteorder",
@@ -310208,7 +310208,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1213",
   "nl_tokens": [
    "multiplies",
    "a",
@@ -310589,7 +310589,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1214",
   "nl_tokens": [
    "Get",
    "common",
@@ -310709,7 +310709,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1215",
   "nl_tokens": [
    "Helper",
    "method",
@@ -310906,7 +310906,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1216",
   "nl_tokens": [
    "Returns",
    "the",
@@ -311414,7 +311414,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1217",
   "nl_tokens": [
    "r",
    "Continuous",
@@ -311600,7 +311600,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1218",
   "nl_tokens": [
    "Give",
    "gaps",
@@ -312343,7 +312343,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1219",
   "nl_tokens": [
    "get",
    "label",
@@ -312521,7 +312521,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1220",
   "nl_tokens": [
    "Returns",
    "a",
@@ -312820,7 +312820,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1221",
   "nl_tokens": [
    "Compute",
    "a",
@@ -313373,7 +313373,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1222",
   "nl_tokens": [
    "Converts",
    "kwargs",
@@ -313855,7 +313855,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1223",
   "nl_tokens": [
    "Create",
    "a",
@@ -314097,7 +314097,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1224",
   "nl_tokens": [
    "TODO",
    ":",
@@ -314295,7 +314295,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1225",
   "nl_tokens": [
    "Computes",
    "the",
@@ -314435,7 +314435,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1226",
   "nl_tokens": [
    "Guesses",
    "the",
@@ -314532,7 +314532,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1227",
   "nl_tokens": [
    "Plots",
    "the",
@@ -314955,7 +314955,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1228",
   "nl_tokens": [
    "Puts",
    "each",
@@ -315410,7 +315410,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1229",
   "nl_tokens": [
    "convert",
    "python",
@@ -315567,7 +315567,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1230",
   "nl_tokens": [
    ":",
    "return",
@@ -315808,7 +315808,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1231",
   "nl_tokens": [
    "Roundtrip",
    "all",
@@ -316361,7 +316361,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1232",
   "nl_tokens": [
    "Return",
    "a",
@@ -316711,7 +316711,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1233",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -316790,7 +316790,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1234",
   "nl_tokens": [
    "Return",
    "maximum",
@@ -316869,7 +316869,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1235",
   "nl_tokens": [
    "Helper",
    "function",
@@ -316955,7 +316955,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1236",
   "nl_tokens": [
    "Frame",
    "-",
@@ -317051,7 +317051,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1237",
   "nl_tokens": [
    "set",
    "current",
@@ -317180,7 +317180,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1238",
   "nl_tokens": [
    "Match",
    "one",
@@ -317339,7 +317339,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1239",
   "nl_tokens": [
    "Processes",
    "a",
@@ -317556,7 +317556,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1240",
   "nl_tokens": [
    "Sets",
    "all",
@@ -317777,7 +317777,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1241",
   "nl_tokens": [
    "Determine",
    "when",
@@ -317845,7 +317845,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1242",
   "nl_tokens": [
    "Function",
    "for",
@@ -318153,7 +318153,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1243",
   "nl_tokens": [
    "Retrieve",
    "all",
@@ -318313,7 +318313,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1244",
   "nl_tokens": [
    "Helper",
    "property",
@@ -318368,7 +318368,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1245",
   "nl_tokens": [
    "Converts",
    "an",
@@ -318604,7 +318604,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1246",
   "nl_tokens": [
    "Renders",
    "into",
@@ -319047,7 +319047,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1247",
   "nl_tokens": [
    "Handles",
    "mouse",
@@ -319177,7 +319177,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1248",
   "nl_tokens": [
    "Build",
    "a",
@@ -319404,7 +319404,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1249",
   "nl_tokens": [
    "Show",
    "all",
@@ -319570,7 +319570,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1250",
   "nl_tokens": [
    "#",
    "Return",
@@ -319801,7 +319801,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1251",
   "nl_tokens": [
    "Start",
    "the",
@@ -320159,7 +320159,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1252",
   "nl_tokens": [
    "Write",
    "numpy",
@@ -320981,7 +320981,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1253",
   "nl_tokens": [
    "Read",
    "a",
@@ -321270,7 +321270,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1254",
   "nl_tokens": [
    "Return",
    "earliest",
@@ -321348,7 +321348,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1255",
   "nl_tokens": [
    "Generate",
    "a",
@@ -321692,7 +321692,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1256",
   "nl_tokens": [
    "Compute",
    "the",
@@ -322111,7 +322111,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1257",
   "nl_tokens": [
    "Returns",
    "a",
@@ -322209,7 +322209,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1258",
   "nl_tokens": [
    "Converts",
    "a",
@@ -322289,7 +322289,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1259",
   "nl_tokens": [
    "return",
    "dateobj",
@@ -322380,7 +322380,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1260",
   "nl_tokens": [
    "Process",
    "a",
@@ -322608,7 +322608,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1261",
   "nl_tokens": [
    "Builds",
    "word",
@@ -322962,7 +322962,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1262",
   "nl_tokens": [
    "Compute",
    "the",
@@ -323536,7 +323536,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-1263",
   "nl_tokens": [
    "How",
    "many",
@@ -323587,7 +323587,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-1264",
   "nl_tokens": [
    "Transforms",
    "a",

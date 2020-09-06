@@ -62,7 +62,6 @@ MODEL_CLASSES = {
 }
 
 
-
 class InputFeatures(object):
     """A single training/test features for a example."""
     def __init__(self,
@@ -70,12 +69,16 @@ class InputFeatures(object):
                  code_ids,
                  nl_tokens,
                  nl_ids,
+                 url,
+                 idx,
 
     ):
         self.code_tokens = code_tokens
         self.code_ids = code_ids
         self.nl_tokens = nl_tokens
         self.nl_ids = nl_ids
+        self.url=url
+        self.idx=idx
 
         
 def convert_examples_to_features(js,tokenizer,args):
@@ -97,7 +100,7 @@ def convert_examples_to_features(js,tokenizer,args):
     padding_length = args.block_size - len(nl_ids)
     nl_ids+=[tokenizer.pad_token_id]*padding_length    
     
-    return InputFeatures(code_tokens,code_ids,nl_tokens,nl_ids)
+    return InputFeatures(code_tokens,code_ids,nl_tokens,nl_ids,js['url'],js['idx'])
 
 class TextDataset(Dataset):
     def __init__(self, tokenizer, args, file_path=None):
@@ -126,12 +129,13 @@ class TextDataset(Dataset):
         return (torch.tensor(self.examples[i].code_ids),torch.tensor(self.examples[i].nl_ids))
             
 
-def set_seed(args):
-    random.seed(args.seed)
-    np.random.seed(args.seed)
-    torch.manual_seed(args.seed)
-    if args.n_gpu > 0:
-        torch.cuda.manual_seed_all(args.seed)
+def set_seed(seed=42):
+    random.seed(seed)
+    os.environ['PYHTONHASHSEED'] = str(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.backends.cudnn.deterministic = True
 
 
 def train(args, train_dataset, model, tokenizer):
@@ -199,7 +203,7 @@ def train(args, train_dataset, model, tokenizer):
     best_acc=0.0
     # model.resize_token_embeddings(len(tokenizer))
     model.zero_grad()
-    set_seed(args)  # Added here for reproducibility (even between python 2 and 3)
+
  
     for idx in range(args.start_epoch, int(args.num_train_epochs)): 
         bar = train_dataloader
@@ -267,16 +271,10 @@ def train(args, train_dataset, model, tokenizer):
                         output_dir = os.path.join(args.output_dir, '{}'.format(checkpoint_prefix))                        
                         if not os.path.exists(output_dir):
                             os.makedirs(output_dir)                        
-                        model_to_save = model.module.encoder if hasattr(model,'module') else model.encoder 
-                        model_to_save.save_pretrained(output_dir)
-                        torch.save(args, os.path.join(output_dir, 'training_args.bin'))
-                        logger.info("Saving model checkpoint to %s", output_dir)
-                        
                         model_to_save = model.module if hasattr(model,'module') else model
-                        output_dir = os.path.join(args.output_dir, '{}'.format('model.bin'))   
+                        output_dir = os.path.join(output_dir, '{}'.format('model.bin')) 
                         torch.save(model_to_save.state_dict(), output_dir)
-                    
-                    # _rotate_checkpoints(args, checkpoint_prefix)
+                        logger.info("Saving model checkpoint to %s", output_dir)
 
 
 eval_dataset=None
@@ -378,25 +376,21 @@ def test(args, model, tokenizer):
     perplexity = torch.tensor(eval_loss)
 
     scores=np.matmul(nl_vecs,code_vecs.T)
-    ranks=[]
-    for i in range(len(scores)):
-        score=scores[i,i]
-        rank=1
-        for j in range(len(scores)):
-            if i!=j and scores[i,j]>score:
-                rank+=1
-        ranks.append(1/rank)  
-    
-    result = {
-        "eval_loss": float(perplexity),
-        "eval_mrr":float(np.mean(ranks))
-    }
 
-    logger.info("***** Test results *****")
-    for key in sorted(result.keys()):
-        logger.info("  %s = %s", key, str(round(result[key],4)))
-
-    return result
+    sort_ids=np.argsort(scores, axis=-1, kind='quicksort', order=None)[:,::-1]
+    indexs=[]
+    urls=[]
+    for example in eval_dataset.examples:
+        indexs.append(example.idx)
+        urls.append(example.url)
+    with open(os.path.join(args.output_dir,"predictions.jsonl"),'w') as f:
+        for index,url,sort_id in zip(indexs,urls,sort_ids):
+            js={}
+            js['url']=url
+            js['answers']=[]
+            for idx in sort_id[:100]:
+                js['answers'].append(indexs[int(idx)])
+            f.write(json.dumps(js)+'\n')
                         
                         
 def main():
@@ -528,7 +522,7 @@ def main():
 
 
     # Set seed
-    set_seed(args)
+    set_seed(args.seed)
 
     # Load pretrained model and tokenizer
     if args.local_rank not in [-1, 0]:
@@ -592,23 +586,21 @@ def main():
     # Evaluation
     results = {}
     if args.do_eval and args.local_rank in [-1, 0]:
-            model = model_class.from_pretrained(args.model_name_or_path)
-            model=Model(model,config,tokenizer,args)
-            output_dir = os.path.join(args.output_dir, '{}'.format('model.bin'))
-            model.load_state_dict(torch.load(output_dir))      
-            model.to(args.device)
-            result=evaluate(args, model, tokenizer)
-            logger.info("***** Eval results *****")
-            for key in sorted(result.keys()):
-                logger.info("  %s = %s", key, str(round(result[key],4)))
+        checkpoint_prefix = 'checkpoint-best-mrr/model.bin'
+        output_dir = os.path.join(args.output_dir, '{}'.format(checkpoint_prefix))  
+        model.load_state_dict(torch.load(output_dir))      
+        model.to(args.device)
+        result=evaluate(args, model, tokenizer)
+        logger.info("***** Eval results *****")
+        for key in sorted(result.keys()):
+            logger.info("  %s = %s", key, str(round(result[key],4)))
             
     if args.do_test and args.local_rank in [-1, 0]:
-            model = model_class.from_pretrained(args.model_name_or_path)
-            model=Model(model,config,tokenizer,args)
-            output_dir = os.path.join(args.output_dir, '{}'.format('model.bin'))
-            model.load_state_dict(torch.load(output_dir))                  
-            model.to(args.device)
-            test(args, model, tokenizer)
+        checkpoint_prefix = 'checkpoint-best-mrr/model.bin'
+        output_dir = os.path.join(args.output_dir, '{}'.format(checkpoint_prefix))  
+        model.load_state_dict(torch.load(output_dir))                  
+        model.to(args.device)
+        test(args, model, tokenizer)
 
     return results
 

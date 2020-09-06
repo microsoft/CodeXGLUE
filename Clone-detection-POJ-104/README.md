@@ -1,22 +1,22 @@
 # CodeXGLUE -- Clone Detection (POJ-104)
 
-Here is the pipeline for clone detection task on the POJ-104 dataset.
+
+## Task Definition
+
+Given a code and a collection of candidates as the input, the task is to return Top K codes with the same semantic. Models are evaluated by MAP score.
 
 
-## Dependency
+## Dataset
 
-- python 3.6 or 3.7
-- torch==1.4.0
-- transformers>=2.5.0
-- pip install gdown
+We use [POJ-104](https://arxiv.org/pdf/1409.5718.pdf) dataset on this task.
 
-
-## Data Preprocess
+### Download and Preprocess
 
 1.Download dataset from [website](https://drive.google.com/file/d/0B2i-vWnOu7MxVlJwQXN6eVNONUU/view?usp=sharing) or run the following command:
 
 ```shell
 cd dataset
+pip install gdown
 gdown https://drive.google.com/uc?id=0B2i-vWnOu7MxVlJwQXN6eVNONUU
 tar -xvf programs.tar.gz
 cd ..
@@ -30,9 +30,88 @@ python preprocess.py
 cd ..
 ```
 
-## Fine-tune
+### Data Format
 
-To fine-tune CodeBERT on the dataset
+After preprocessing dataset, you can obtain three .jsonl files, i.e. train.jsonl, valid.jsonl, test.jsonl
+
+For each file, each line in the uncompressed file represents one function.  One row is illustrated below.
+
+   - **code:** the source code
+   - **label:** the number of problem that the source code solves
+   - **index:** the index of example
+
+### Data Statistics
+
+Data statistics of the dataset are shown in the below table:
+
+|       | #Problems | #Examples |
+| ----- | --------- | :-------: |
+| Train | 64        |  32,000   |
+| Dev   | 16        |   8,000   |
+| Test  | 24        |  12,000   |
+
+## Evaluator
+
+We provide a script to evaluate predictions for this task, and report MAP score.
+
+### Example
+
+Given a codes file evaluator/test.jsonl:
+
+```bash
+{"label": "65", "index": "0", "code": "function0"}
+{"label": "65", "index": "1", "code": "function1"}
+{"label": "65", "index": "2", "code": "function2"}
+{"label": "66", "index": "3", "code": "function3"}
+{"label": "66", "index": "4", "code": "function4"}
+{"label": "66", "index": "5", "code": "function5"}
+```
+
+We first extract answers from codes file.
+
+```she
+python evaluator/extract_answers.py -c evaluator/test.jsonl -o evaluator/answers.jsonl 
+```
+
+The answers is:
+
+```bash
+cat evaluator/answers.jsonl 
+{"index": "0", "answers": ["1", "2"]}
+{"index": "1", "answers": ["0", "2"]}
+{"index": "2", "answers": ["0", "1"]}
+{"index": "4", "answers": ["3", "5"]}
+{"index": "3", "answers": ["4", "5"]}
+{"index": "5", "answers": ["4", "3"]}
+```
+
+Report MAP score
+
+```shell
+python evaluator/evaluator.py -a evaluator/answers.jsonl  -p evaluator/predictions.jsonl 
+```
+
+{'MAP': 0.6667}
+
+### Input Predictions
+
+For each index, return Top K (K=2 for this example, but K=499 in the task) codes. For example:
+
+```shell
+cat evaluator/predictions.jsonl 
+{"index": "0", "answers": ["3", "2"]}
+{"index": "1", "answers": ["0", "4"]}
+{"index": "2", "answers": ["0", "1"]}
+{"index": "4", "answers": ["1", "5"]}
+{"index": "3", "answers": ["4", "2"]}
+{"index": "5", "answers": ["4", "3"]}
+```
+
+## Pipeline-CodeBERT
+
+We also provide a pipeline that fine-tunes [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf) on this task. 
+
+### Fine-tune
 
 ```shell
 cd code
@@ -46,18 +125,18 @@ python run.py \
     --train_data_file=../dataset/train.jsonl \
     --eval_data_file=../dataset/valid.jsonl \
     --test_data_file=../dataset/test.jsonl \
-    --epoch 10 \
+    --epoch 2 \
     --block_size 400 \
-    --train_batch_size 32 \
-    --eval_batch_size 64 \
+    --train_batch_size 8 \
+    --eval_batch_size 16 \
     --learning_rate 5e-5 \
     --max_grad_norm 1.0 \
     --evaluate_during_training \
-    --seed 123456 
+    --seed 123456 2>&1| tee train.log
 ```
 
 
-## Evaluation
+### Inference
 
 ```shell
 cd code
@@ -72,21 +151,30 @@ python run.py \
     --train_data_file=../dataset/train.jsonl \
     --eval_data_file=../dataset/valid.jsonl \
     --test_data_file=../dataset/test.jsonl \
-    --epoch 10 \
+    --epoch 2 \
     --block_size 400 \
-    --train_batch_size 32 \
-    --eval_batch_size 64 \
+    --train_batch_size 8 \
+    --eval_batch_size 16 \
     --learning_rate 5e-5 \
     --max_grad_norm 1.0 \
     --evaluate_during_training \
-    --seed 123456 
+    --seed 123456 2>&1| tee test.log
 ```
+
+### Evaluation
+
+```shell
+python ../evaluator/extract_answers.py -c ../dataset/test.jsonl -o saved_models/answers.jsonl 
+python ../evaluator/evaluator.py -a saved_models/answers.jsonl   -p saved_models/predictions.jsonl 
+```
+
+{'MAP': 0.8429}
 
 ## Result
 
 The results on the test set are shown as below:
 
-| Method           | MAP@R (%) |
+| Method           |  MAP(%)   |
 | ---------------- | :-------: |
 | code2vec         |   1.98    |
 | NCC              |   39.95   |
@@ -94,5 +182,5 @@ The results on the test set are shown as below:
 | Aroma-Dot        |   52.08   |
 | Aroma-Cos        |   55.12   |
 | MISIM-GNN        |   82.45   |
-| CodeBERT         | **84.13** |
+| CodeBERT         | **84.29** |
 

@@ -1,6 +1,6 @@
-# coding=utf-8
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
+# Copyright (c) Microsoft Corporation. 
+# Licensed under the MIT license.
+
 
 from __future__ import absolute_import
 import os
@@ -205,6 +205,8 @@ def main():
     parser.add_argument("--max_target_length", default=32, type=int,
                         help="The maximum total target sequence length after tokenization. Sequences longer "
                              "than this will be truncated, sequences shorter will be padded.")
+    parser.add_argument("--using_pretrain_model", action='store_true',
+                        help="Initialize Transformer encoder with pre-trained model") 
     
     parser.add_argument("--do_train", action='store_true',
                         help="Whether to run training.")
@@ -274,7 +276,10 @@ def main():
     tokenizer = tokenizer_class.from_pretrained(args.tokenizer_name,do_lower_case=args.do_lower_case)
     
     #budild model
-    encoder = model_class.from_pretrained(args.model_name_or_path,config=config)    
+    if args.using_pretrain_model:
+        encoder = model_class.from_pretrained(args.model_name_or_path,config=config)    
+    else:    
+        encoder = model_class(config)    
     decoder_layer = nn.TransformerDecoderLayer(d_model=config.hidden_size, nhead=config.num_attention_heads)
     decoder = nn.TransformerDecoder(decoder_layer, num_layers=6)
     model=Seq2Seq(encoder=encoder,decoder=decoder,config=config,

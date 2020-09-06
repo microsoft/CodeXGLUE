@@ -1,19 +1,17 @@
-
 # CodeXGLUE -- Text-to-Text
 
-## Task Definition
-
-Translate code documentation between human languages. Models are evaluated by BLEU score.
-
-## Dataset
-
-The dataset we use is crawled and filtered from [Microsoft Documentation](https://docs.microsoft.com/), whose document located at https://github.com/MicrosoftDocs/.  
+Here is the pipeline for text-to-text task.
 
 
+## Dependency
+
+- python 3.6 or 3.7
+- torch==1.6.0
+- transformers>=2.5.0
 
 
-### Data Statistics
-The source language and target language are stored in two files, one line corresponding to one line.
+## Data Preprocess
+
 Data statistics of Microsoft multi-lingual documentation dataset are shown in the below table:
 
 | Language Pairs        |   #Train    |   #Dev      |  #Test       |
@@ -22,9 +20,6 @@ Data statistics of Microsoft multi-lingual documentation dataset are shown in th
 | Latvian <-> English   |    19K      |    1K       |   1K         |
 | Norwegian <-> English |    44K      |    1K       |   1K         |
 |  Chinese <-> English  |    50K      |    1K       |   1K         |
-
-
-### Data Preprocess
 
 Preprocess dataset (add language sign at the begin of source language and combine all language pairs):
 
@@ -35,33 +30,10 @@ python preprocessing.py
 
 ```
 
-## Evaluator
 
-We provide a script to evaluate predictions for this task, and report BLEU score
+## Fine-tune
 
-### Example
-
-```bash
-python evaluator/evaluator.py  evaluator/output.txt -p evaluator/gold.txt
-```
-
-{bleu-4:  67.75}
-
-
-## Pipeline
-
-We also provide a pipeline that use Transformer architecture or fine-tunes [XLM-Roberta](https://arxiv.org/pdf/1911.02116.pdf) (--using_pretrain_model) on this task. 
-
-### Dependency
-
-- python 3.6 or 3.7
-- torch==1.6.0
-- transformers>=2.5.0
-
-
-
-### Fine-tune
-
+To fine-tune encoder-decoder (based on XLM-Roberta) on the dataset
 
 ```shell
 
@@ -82,7 +54,6 @@ pretrained_model=xlm-roberta-base #CodeBERT: path to CodeBERT. Roberta: roberta-
 CUDA_VISIBLE_DEVICES=0,1,2,3 python run.py \
 --do_train \
 --do_eval \
---using_pretrain_model \
 --model_type roberta \
 --model_name_or_path $pretrained_model \
 --config_name xlm-roberta-base \
@@ -102,7 +73,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python run.py \
 ```
 
 
-### Evaluation
+## Evaluation
 
 ```shell
 
@@ -131,22 +102,21 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python run.py \
 --beam_size $beam_size \
 --eval_batch_size $batch_size
 
-    
 ```
 
-## Result
 
-The results on multi-lingual test dataset are shown as below:
+## Results
 
+The results on multi-lingual dataset are shown as below:
 
-| Translation Direction  | Transformer | Pretrained Transformer|   
-| -----------            |   :-------: |  :--------: | 
-| English -> Danish      |    61.60    |    69.46    |  
-| English  -> Latvian    |    44.06    |   55.92     |   
-| English -> Norwegian   |    61.17    |    70.23    |
-| English -> Chinese     |    64.69    |   73.54     | 
-| Danish -> English      |    64.88    |    75.85    |  
-| Latvian -> English     |   56.50     |   70.73     |   
-| Norwegian -> English   |    63.05    |    74.63    |
-| Chinese -> English     |    55.29    |    67.01    | 
+| Translation Direction  |   Dev (BLEU)     | Test (BLEU)       |  
+| -----------            | :-------: | :--------: | 
+| English -> Danish        |   69.72   |   69.46    |  
+| English  -> Latvian    |   54.38   |   55.92    |   
+| English -> Norwegian   |   70.00   |   70.23    |
+| English -> Chinese     |   73.89   |   73.54    | 
+| Danish -> English      |   77.22   |   75.85    |  
+| Latvian -> English     |   69.52   |   70.73    |   
+| Norwegian -> English   |   75.18   |   74.63    |
+| Chinese -> English     |   68.24   |   67.01    | 
 

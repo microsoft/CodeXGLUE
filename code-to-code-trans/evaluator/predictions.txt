@@ -1,0 +1,10 @@
+public override void Serialize(ILittleEndianOutput out1){out1.WriteShort(field_1_vcenter);}
+public virtual void AddAll(BlockList<T> src){if (src.size == 0){return;}int srcDirIdx = 0;for (; srcDirIdx < src.tailDirIdx; srcDirIdx++){AddAll(src.Directory[srcDirIdx], 0, BLOCK_SIZE);}if (src.tailBlkIdx != 0){AddAll(src.tailBlock, 0, src.tailBlkIdx);}}
+public override void WriteByte(byte b){if (upto == outerInstance.blockSize){if (currentBlock != null){blocks.Add(currentBlock);}currentBlock = new byte[blockSize];upto = 0;}currentBlock[upto++] = b;}
+public virtual ObjectId GetObjectId(){return objectId;}
+public virtual DeleteDomainEntryResponse DeleteDomainEntry(DeleteDomainEntryRequest request){var options = new InvokeOptions();options.RequestMarshaller = DeleteDomainEntryRequestMarshaller.Instance;options.ResponseUnmarshaller = DeleteDomainEntryResponseUnmarshaller.Instance;return Invoke<DeleteDomainEntryResponse>(request, options);}
+public override long RamBytesUsed(){long sizeInBytes = 0;foreach (FieldIndexData entry in fields.Values){sizeInBytes += entry.RamBytesUsed();}return sizeInBytes;}
+public string GetFullMessage(){byte[] raw = buffer;int msgB = RawParseUtils.TagMessage(raw, 0);if (msgB < 0){return string.Empty;}Encoding enc = RawParseUtils.ParseEncoding(raw);return RawParseUtils.Decode(enc, raw, msgB, raw.Length);}
+public POIFSFileSystem(){this.phase = true;_header.BATCount = 1;_header.BATArray = (new int[]){1 };BATBlock bb = BATBlock.CreateEmptyBATBlock(bigBlockSize, false);bb.WorldBlockIndex=1;_bold_blocks.Add(bb);SetNextBlock(0, POIFSConstants.END_OF_CHAIN);SetNextBlock(1, POIFSConstants.FAT_SECTOR_BLOCK);_property_table.SetStartBlock(0);}
+public void Init(int offset){slice = pool.Buffers[address >> ByteBlockPool.BYTE_BLOCK_SHIFT];Debug.Assert(slice != null);upto = anchor & ByteBlockPool.BYTE_BLOCK_MASK;offset0 = delegate;Debug.Assert(upto < slice.Length);}
+public virtual NGit.Api.SubmoduleAddCommand SetPath(string path){this.path = path;return this;}

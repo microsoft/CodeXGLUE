@@ -1,16 +1,21 @@
 # CodeXGLUE -- Code Refinement
 
-Here is the pipeline for the code refinement task.
+## Task Definition
 
+Code refinement aims to automatically fix bugs in the code, which can contribute to reducing the costof bug-fixes for developers.
+In CodeXGLUE, given a piece of Java code with bugs, the task is to remove the bugs to output the refined code. 
+Models are evaluated by BLEU scores and accuracy (exactly match).
 
-## Dependency
+## Dataset
 
-- python 3.6 or 3.7
-- torch==1.4.0
-- transformers>=2.5.0
+We use the dataset released by this paper(https://arxiv.org/pdf/1812.08693.pdf). The source side is a Java function with bugs and the target side is the refined one. 
+All the function and variable names are normalized. Their dataset contains two subsets ( i.e.small and medium) based on the function length.
 
+### Data Format
 
-## Data
+The dataset is in the "data" folder. Each line of the files is a function.
+
+### Data Statistics
 
 Data statistics of this dataset are shown in the below table:
 
@@ -21,11 +26,112 @@ Data statistics of this dataset are shown in the below table:
 |  Valid  |    5,835  |    6,545  |
 |   Test  |    5,835  |    6,545  |
 
+## Evaluator
 
-## Run
-Just move to the "code" folder, and choose the pipline you want to run. Model1&2 mean
-Roberta(Code) and CoderBERT respectively. Model3 means GraphCoderBERT. The pretrained 
-model is in the "CoderBERT" subfolder in the respective pipline. To do training and 
-test, please refer to the according run-xx.sh file. 
+We provide a script to evaluate predictions for this task, and report BLEU scores and accuracy (exactly math score).
 
+### Example
+
+```bash
+python evaluator/evaluator.py -ref evaluator/references.txt -pre evaluator/predictions.txt
+```
+
+BLEU: 79.03, Acc: 40.0
+
+## Pipeline-CodeBERT
+
+We also provide a pipeline that fine-tunes [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf) on this task. 
+### Dependency
+
+- python 3.6 or 3.7
+- torch==1.4.0
+- transformers>=2.5.0
+- pip install scikit-learn
+
+### Fine-tune
+Taking the "small" subset as example:
+
+```shell
+cd code
+$pretrained_model = the place where you download CodeBERT models
+$output_dir = the place where you want to save the fine-tuned models and predictions
+python run.py \
+	--do_train \
+	--do_eval \
+	--model_type roberta \
+	--model_name_or_path $pretrained_model \
+	--config_name roberta-base \
+	--tokenizer_name roberta-base \
+	--train_filename ../data/train.buggy-fixed.buggy,../data/train.buggy-fixed.fixed \
+	--dev_filename ../data/valid.buggy-fixed.buggy,../data/buggy-fixed.fixed \
+	--output_dir $output_dir \
+	--max_source_length 256 \
+	--max_target_length 256 \
+	--beam_size 5 \
+	--train_batch_size 16 \
+	--eval_batch_size 16 \
+	--learning_rate lr=5e-5 \
+	--train_steps 100000 \
+	--eval_steps 5000
+
+```
+
+### Inference
+
+We use full test data for inference. 
+
+```shell
+cd code
+$output_dir = the place where you want to save the fine-tuned models and predictions
+python run.py \
+    	--do_test \
+	--model_type roberta \
+	--model_name_or_path roberta-base \
+	--config_name roberta-base \
+	--tokenizer_name roberta-base  \
+	--load_model_path $output_dir/checkpoint-best-bleu/pytorch_model.bin \
+	--dev_filename ../data/valid.buggy-fixed.buggy,../data/valid.buggy-fixed.fixed \
+	--test_filename ../data/test.buggy-fixed.buggy,../data/test.buggy-fixed.fixed \
+	--output_dir $output_dir \
+	--max_source_length 256 \
+	--max_target_length 256 \
+	--beam_size 5 \
+	--eval_batch_size 16 
+```
+
+### Evaluation
+
+Small:
+```shell
+python evaluator/evaluator.py -ref data/small/test.buggy-fixed.fixed -pre code/Model1&2/saved_models/small-model.output
+```
+BLEU: 77.42 ; Acc: 16.4
+
+Medium: 
+```shell
+python evaluator/evaluator.py -ref data/medium/test.buggy-fixed.fixed -pre code/Model1&2/saved_models/medium-model.output
+```
+BLEU: 91.07 ; Acc: 5.16
+
+## Result
+
+The results on the test set are shown as below:
+
+Small:
+
+| Method     | BLEU |  Acc (100%)   |  
+| ---------- | :-------: | :-------: |
+| Naive copy    |   78.06    |   0.0    |
+| LSTM      |   76.76    |   10.0   |
+| Transformer      |   77.21    |   14.7    |
+| CodeBERT   | **77.42** | **16.4**|
+
+Medium:
+
+| Method     | BLEU |  Acc (100%)   |  
+| ---------- | :-------: | :-------: |
+| Naive copy    |   90.91    |   0.0    |
+| LSTM      |   72.08    |   2.5    |
+| Transformer      |   89.25    |   3.7   |
+| CodeBERT   | **91.07** | **5.16**|
 

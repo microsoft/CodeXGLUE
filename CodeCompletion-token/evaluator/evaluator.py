@@ -30,7 +30,7 @@ def main():
                 if x == y:
                     correct += 1
     
-    logger.info(f"{total} tokens, accuracy: {round(correct/total*100, 2)}")
+    logger.info(f"Total {total} tokens, accuracy: {round(correct/total*100, 2)}")
 
 if __name__ == "__main__":
     main()

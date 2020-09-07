@@ -358,6 +358,9 @@ def eval_acc(args, model, tokenizer, file_type='test'):
     correct = 0.0
     total = 0
 
+    total_pred = []
+    total_gt = []
+
     for step, batch in enumerate(eval_dataloader):
         inputs = batch.to(args.device)
 
@@ -416,6 +419,9 @@ def eval_acc(args, model, tokenizer, file_type='test'):
                     now_pred.append(pred[i-1])
         assert len(all_pred) == len(all_gt)
 
+        total_pred.extend(all_pred)
+        total_gt.extend(all_gt)
+
         for x, y in zip(all_pred, all_gt):
             if y not in ["<s>", "</s>", "<EOL>", "<pad>"]:
                 total += 1
@@ -425,8 +431,37 @@ def eval_acc(args, model, tokenizer, file_type='test'):
         if step % args.logging_steps == 0:
             logger.info(f"{step} are done!")
             logger.info(f"{total}, {correct/total}")
+
+    pickle.dump(total_pred, open(os.path.join(args.output_dir, "preds.pkl"), "wb"))
+    pickle.dump(total_gt, open(os.path.join(args.output_dir, "gts.pkl"), "wb"))
+
+    saved_file = os.path.join(args.output_dir, "predictions.txt")
+    total_samples = post_process(args, total_pred, total_gt, open(os.path.join(args.data_dir, f"{file_type}.txt")).readlines(), saved_file)
+    logger.info(f"Eval on {total_samples}, saved at {saved_file}")
     
     return total, correct
+
+def post_process(args, preds, gts, true_gts, saved_file):
+    wf = open(saved_file, "w")
+
+    cnt = 0
+    new_gt = []
+    new_pred = []
+    for i, (pred,gt) in enumerate(zip(preds,gts)):
+        if gt in ["", "<pad>"]:
+            continue
+        new_gt.append(gt)
+        new_pred.append(pred.replace(" ", ""))
+        if gt == "</s>":
+            gt_str = " ".join(new_gt)
+            pred_str = " ".join(new_pred)
+            assert gt_str == true_gts[cnt].strip(), f"{cnt} sample gt_str != true_gt"
+            wf.write(pred_str+"\n")
+            cnt += 1
+            new_gt = []
+            new_pred = []
+    
+    return cnt
 
 def eval_line_completion(args, model, tokenizer, file_type='test'):
     """
@@ -506,6 +541,11 @@ def eval_line_completion(args, model, tokenizer, file_type='test'):
                 em += 1 if text == gt[0] else 0
         if step % args.logging_steps == 0:
             logger.info(f"{step} are done!")
+
+    saved_file = os.path.join(args.output_dir, "predictions_line.txt")
+    with open(saved_file, "w") as f:
+        for pred_text in preds:
+            f.write(pred_text+"\n")
             
     logger.info(f"Test {len(preds)} samples")
     logger.info(f"Edit sim: {edit_sim/len(preds)}, EM: {em/len(preds)}")

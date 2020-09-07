@@ -120,6 +120,6 @@ Our codes follow MIT License.
 Our datasets follow Computational Use of Data Agreement (C-UDA) License.
 
 # Team
-This research was conducted by Ambrosio Blanco, Colin Clement, Dawn Drain, Nan Duan, Shengyu Fu, Ming Gong, Daya Guo, Niklas Gustafsson, Junjie Huang, Daxin Jiang,  Shujie Liu, Shuai Lu, Shuo Ren, Linjun Shou, Neel Sundaresan, Alexey Svyatkovskiy, Duyu Tang, Michele Tufano, Lidong Zhou, Long Zhou, Ming Zhou (authors in alphabet order). 
+This research was conducted by Ambrosio Blanco, Colin Clement, Shao Kun Deng, Dawn Drain, Nan Duan, Shengyu Fu, Ming Gong, Daya Guo, Niklas Gustafsson, Junjie Huang, Daxin Jiang,  Shujie Liu, Shuai Lu, Shuo Ren, Linjun Shou, Neel Sundaresan, Alexey Svyatkovskiy, Duyu Tang, Michele Tufano, Lidong Zhou, Long Zhou, Ming Zhou (authors in alphabet order). 
 
 Contact: Duyu Tang (dutang@microsoft.com), Shujie Liu (shujliu@microsoft.com)

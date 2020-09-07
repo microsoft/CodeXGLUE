@@ -9,6 +9,7 @@ Models are evaluated by BLEU scores and accuracy (exactly match).
 ## Dataset
 
 The dataset is collected from several public repos, including Lucene(http://lucene.apache.org/), POI(http://poi.apache.org/), JGit(https://github.com/eclipse/jgit/) and Antlr(https://github.com/antlr/).
+
 We collect both the Java and C# versions of the codes and find the parallel functions. After removing duplicates and functions with the empty body, we split the whole dataset into training, validation and test sets.
 
 ### Data Format
@@ -20,6 +21,7 @@ The dataset is in the "data" folder. Each line of the files is a function, and t
 Data statistics of the dataset are shown in the below table:
 
 |       | #Examples |
+| ------- | :-------: |
 |  Train  |   10,300  |
 |  Valid  |      500   |
 |   Test  |    1,000  |
@@ -100,6 +102,7 @@ python run.py \
 ### Evaluation
 
 Model1 (Roberta(Code)):
+
 (1) Java to C#
 ```shell
 python evaluator/evaluator.py -ref data/test.java-cs.txt.cs -pre code/Model1&2/saved_models/java-cs-model1.output
@@ -113,6 +116,7 @@ python evaluator/evaluator.py -ref data/test.java-cs.txt.java -pre code/Model1&2
 BLEU: 71.99 ; Acc: 57.9
 
 Model2 (CodeBERT):
+
 (1) Java to C#
 ```shell
 python evaluator/evaluator.py -ref data/test.java-cs.txt.cs -pre code/Model1&2/saved_models/java-cs-model2.output
@@ -148,3 +152,4 @@ C# to Java:
 | Transformer      |   50.47    |   37.9   |
 | Roborta (code)     |   71.99  |   57.9    |
 | CodeBERT   | **72.14** | **58.8**|
+

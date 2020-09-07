@@ -135,3 +135,15 @@ Medium:
 | Transformer      |   89.25    |   3.7   |
 | CodeBERT   | **91.07** | **5.16**|
 
+# Reference
+<pre><code>@article{tufano2019empirical,
+  title={An empirical study on learning bug-fixing patches in the wild via neural machine translation},
+  author={Tufano, Michele and Watson, Cody and Bavota, Gabriele and Penta, Massimiliano Di and White, Martin and Poshyvanyk, Denys},
+  journal={ACM Transactions on Software Engineering and Methodology (TOSEM)},
+  volume={28},
+  number={4},
+  pages={1--29},
+  year={2019},
+  publisher={ACM New York, NY, USA}
+}</code></pre>
+

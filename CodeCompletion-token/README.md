@@ -6,10 +6,12 @@ Here is the pipeline for token level code completion task.
 
 Predict next code token given context of previous tokens. Models are evaluated by token level accuracy.
 
+Code completion is a one of the most widely used features in software development through IDEs. An effective code completion tool could improve software developers' productivity. We provide code completion evaluation tasks in two granularities -- token level and line level. Here we introduce token level code completion. Token level task is analogous to language modeling. Models should have be able to predict the next token in arbitary types.
+
 
 ## Dataset
 
-We collect and provide two datasets for code completion. One in python, the other in java. Both two datasets are used for two code completion tasks -- token level completion and line level completion. These two tasks share train/dev set but not test set. Here, we introduce token level code completion. Test sets for line level completion are already in `dataset/py150/line_completion` and `dataset/javaCorpus/line_completion`.
+We collect and provide two datasets for code completion. One in python, the other in java.
 
 
 ### py150 dataset
@@ -29,6 +31,7 @@ We use java corpus dataset mined by Allamanis, in his MSR 2013 paper [Mining Sou
 To download the preprocessed dataset, navigate to `dataset/javaCorpus` directory, and run
 ```shell
 bash download.sh
+python preprocess.py --base_dir=token_completion --output_dir=token_completion
 ```
 
 ### Data Format
@@ -45,27 +48,20 @@ We have added `<s>` and `</s>` to indicate the start and the end of one piece of
 
 Data statistics of py150 dataset are shown in the below table, note that there doesn't exist dev set in the origin py150 dataset, we choose the first 5,000 files in test set as dev set.
 
-| Token Level |   #Files    |   #Tokens   |
+| Data Split  |   #Files    |   #Tokens   |
 | ----------- | :---------: | :---------: |
 |    Train    |   100,000   |    76.3M    |
 |     Dev     |    5,000    |     3.8M    |
 |    Test     |    50,000   |    37.2M    |
 
-| Line Level |  #Examples  | Average tokens of inputs | Average tokens of outputs |
-| ---------- | :---------: | :----------------------: | :-----------------------: |
-|    Test    |    10,000   |          489.11          |          6.56             |
-
 Data statistics of Github Java Corpus dataset are shown in the below table:
 
-| Token Level |   #Files   |   #Tokens   |
+| Data Split  |   #Files   |   #Tokens   |
 | ----------- | :--------: | :---------: |
 |    Train    |   12,934   |   15.74M    |
 |     Dev     |    7,189   |    3.83M    |
 |    Test     |    8,268   |    5.32M    |
 
-| Line Level |  #Examples  | Average tokens of inputs | Average tokens of outputs |
-| ---------- | :---------: | :----------------------: | :-----------------------: |
-|    Test    |    3,000    |          350.62          |          10.49            |
 
 ## Evaluator
 
@@ -77,11 +73,12 @@ python evaluator/evaluator.py -a=evaluator/answers.txt -p=evaluator/predictions.
 
 The outputs are:
 ```
+Total 5315204 tokens, accuracy: 76.45
 ```
 
 ### Input Format
 
-A legal prediction file is expected to be a txt format file. It should have the same number of lines as answer file. And for each line, it should contain the same number of tokens (split by space) as the corresponding line in the answer file. Note that `<s>`, `</s>`, `<EOL>` are not evaluated so that you don't need worry about how to predict the first token. You can put any token you like at first. For example, one line in the answer file is:
+Answer file is in the same format of the preprocessed dev dataset file. A legal prediction file is expected to be a txt format file. It should have the same number of lines as answer file. And for each line, it should contain the same number of tokens (split by space) as the corresponding line in the answer file. Note that `<s>`, `</s>`, `<EOL>` are not evaluated so that you don't need worry about how to predict the first token. You can put any token you like at first. For example, one line in the answer file is:
 ```
 <s> import json <EOL> json . load ( f ) </s>
 ```
@@ -140,12 +137,12 @@ python -m torch.distributed.launch --nproc_per_node=$PER_NODE_GPU run_lm.py \
         --not_pretrain
 ```
 
+It might take 20 hours for fine-tuning on py150 dataset and 2 hours on java Corpus on 4 32G NVIDIA V100.
 
 ### Evaluation
 
 It's recommanded to run evaluation on single GPU
 
-### Token level completion
 ```shell
 LANG=java                       # set python for py150
 DATADIR=../dataset/javaCorpus/token_completion
@@ -167,32 +164,12 @@ python -u run_lm.py \
         --seed=42 
 ```
 
-### Line level completion
-```shell
-LANG=java                       # set python for py150
-DATADIR=../dataset/javaCorpus/line_completion
-OUTPUTDIR=../save/javaCorpus
-PRETRAINDIR=../save/javaCorpus/checkpoint
-LOGFILE=completion_javaCorpus_eval.log
+It might take 60 minutes for inferencing on py150 dataset and 15 minutes on java Corpus on a single 16G NVIDIA P100.
 
-python -u run_lm.py \
-        --data_dir=$DATADIR \
-        --langs=$LANG \
-        --output_dir=$OUTPUTDIR \
-        --pretrain_dir=$PRETRAINDIR \
-        --log_file=$LOGFILE \
-        --model_type=gpt2 \
-        --block_size=1024 \
-        --eval_line \
-        --logging_steps=100 \
-        --seed=42 
-```
 
 ## Result
 
-### Token level completion
-
-#### py150
+### py150
 
 | Model                                                 |  Accuracy  |
 | ----------------------------------------------------- | :--------: |
@@ -203,7 +180,7 @@ python -u run_lm.py \
 | Transformer w/ CodeGPT (12L)                          |    75.19   |
 | Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |  **75.38** |
 
-#### javaCorpus
+### javaCorpus
 
 | Model                                                 |  Accuracy  |
 | ----------------------------------------------------- | :--------: |
@@ -215,26 +192,4 @@ python -u run_lm.py \
 
 \* We reproduced his experiment since this paper only reported MRR on the first 1,000,000 tokens in test set.
 
-
-### Line level completion
-
-#### py150
-
-| Model                                                 |     EM     |  Edit similarity  |
-| ----------------------------------------------------- | :--------: | :---------------: |
-| BPE+LSTM                                              |    17.93   |       50.05       |
-| Transformer (12L)                                     |    36.80   |       67.66       |
-| Transformer w/ GPT-2 (12L)                            |    38.96   |       69.29       |
-| Transformer w/ CodeGPT (12L)                          |    39.37   |       70.02       |
-| Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |  **40.48** |     **70.48**     |
-
-#### javaCorpus
-
-| Model                                                 |     EM     |  Edit similarity  |
-| ----------------------------------------------------- | :--------: | :---------------: |
-| BPE+LSTM                                              |    10.30   |       41.55       |
-| Transformer (12L)                                     |    15.33   |       50.39       |
-| Transformer w/ GPT-2 (12L)                            |    24.30   |       60.70       |
-| Transformer w/ CodeGPT (12L)                          |    25.30   |       61.54       |
-| Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |  **26.43** |     **63.03**     |
 

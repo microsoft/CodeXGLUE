@@ -30,7 +30,7 @@ def main():
         if pred.split() == gt.split():
             EM += 1
 
-    logger.info(f"Edit sim: {edit_sim/total}, EM: {EM/total}")
+    logger.info(f"Edit sim: {round(edit_sim/total, 2)}, EM: {round(EM/total*100, 2)}")
 
 if __name__ == "__main__":
     main()

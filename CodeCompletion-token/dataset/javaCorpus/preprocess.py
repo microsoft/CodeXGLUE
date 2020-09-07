@@ -6,6 +6,9 @@ import argparse
 import re
 
 def preprocess(args, file_name, file_type):
+    """
+    remove extreme long tokens
+    """
     contents = open(os.path.join(args.base_dir, file_name)).readlines()
     wf = open(os.path.join(args.output_dir, f"{file_type}.txt"), 'w')
 

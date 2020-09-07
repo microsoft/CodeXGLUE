@@ -18,6 +18,7 @@
 from __future__ import absolute_import, division, print_function
 
 import csv
+import json
 import logging
 import os
 import sys
@@ -75,38 +76,40 @@ class DataProcessor(object):
         raise NotImplementedError()
 
     @classmethod
-    def _read_tsv(cls, input_file, quotechar=None):
+    def _read_json(cls, input_file, quotechar=None):
         """Reads a tab separated value file."""
         with open(input_file, "r", encoding='utf-8') as f:
-            lines = []
-            for line in f.readlines():
-                line = line.strip().split('<CODESPLIT>')
-                # if len(line) != 5:
-                #     continue
-                lines.append(line)
-            return lines
+            lines = json.load(f)
+            examples = []
+            for line in lines:
+                if 'label' in line:
+                    line = [line['idx'], line['doc'], line['code'], str(line['label'])]
+                else:
+                    line = [line['idx'], line['doc'], line['code']]
+                examples.append(line)
+            return examples
 
 
-class CodesearchProcessor(DataProcessor):
-    """Processor for the MRPC data set (GLUE version)."""
+class WebQueryProcessor(DataProcessor):
+    """Processor for the NL-code-search-WebQuery data set."""
 
     def get_train_examples(self, data_dir, train_file):
         """See base class."""
         logger.info("LOOKING AT {}".format(os.path.join(data_dir, train_file)))
         return self._create_examples(
-            self._read_tsv(os.path.join(data_dir, train_file)), "train")
+            self._read_json(os.path.join(data_dir, train_file)), "train")
 
     def get_dev_examples(self, data_dir, dev_file):
         """See base class."""
         logger.info("LOOKING AT {}".format(os.path.join(data_dir, dev_file)))
         return self._create_examples(
-            self._read_tsv(os.path.join(data_dir, dev_file)), "dev")
+            self._read_json(os.path.join(data_dir, dev_file)), "dev")
 
     def get_test_examples(self, data_dir, test_file):
         """See base class."""
         logger.info("LOOKING AT {}".format(os.path.join(data_dir, test_file)))
         return self._create_examples(
-            self._read_tsv(os.path.join(data_dir, test_file)), "test")
+            self._read_json(os.path.join(data_dir, test_file)), "test")
 
     def get_labels(self):
         """See base class."""
@@ -116,13 +119,13 @@ class CodesearchProcessor(DataProcessor):
         """Creates examples for the training and dev sets."""
         examples = []
         for (i, line) in enumerate(lines):
-            guid = "%s-%s" % (set_type, i)
-            text_a = line[3]
-            text_b = line[4]
+            guid = line[0]
+            text_a = line[1]
+            text_b = line[2]
             if (set_type == 'test'):
                 label = self.get_labels()[0]
             else:
-                label = line[0]
+                label = line[3]
             examples.append(
                 InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
         if (set_type == 'test'):
@@ -138,19 +141,19 @@ class StaQCProcessor(DataProcessor):
         """See base class."""
         logger.info("LOOKING AT {}".format(os.path.join(data_dir, train_file)))
         return self._create_examples(
-            self._read_tsv(os.path.join(data_dir, train_file)), "train")
+            self._read_json(os.path.join(data_dir, train_file)), "train")
 
     def get_dev_examples(self, data_dir, dev_file):
         """See base class."""
         logger.info("LOOKING AT {}".format(os.path.join(data_dir, dev_file)))
         return self._create_examples(
-            self._read_tsv(os.path.join(data_dir, dev_file)), "dev")
+            self._read_json(os.path.join(data_dir, dev_file)), "dev")
 
     def get_test_examples(self, data_dir, test_file):
         """See base class."""
         logger.info("LOOKING AT {}".format(os.path.join(data_dir, test_file)))
         return self._create_examples(
-            self._read_tsv(os.path.join(data_dir, test_file)), "test")
+            self._read_json(os.path.join(data_dir, test_file)), "test")
 
     def get_labels(self):
         """See base class."""
@@ -160,14 +163,13 @@ class StaQCProcessor(DataProcessor):
         """Creates examples for the training and dev sets."""
         examples = []
         for (i, line) in enumerate(lines):
-            guid = "%s-%s" % (set_type, i)
+            guid = line[0]
             text_a = line[1]
             text_b = line[2]
-            # if (set_type == 'test'):
-            #     label = self.get_labels()[0]
-            # else:
-            #     label = line[0]
-            label = line[0]
+            if (set_type == 'test'):
+                label = self.get_labels()[0]
+            else:
+                label = line[3]
             examples.append(
                 InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
         if (set_type == 'test'):
@@ -326,7 +328,7 @@ def acc_and_f1(preds, labels):
 
 def compute_metrics(task_name, preds, labels):
     assert len(preds) == len(labels)
-    if task_name == "codesearch":
+    if task_name == "webquery":
         return acc_and_f1(preds, labels)
     if task_name == "staqc":
         return acc_and_f1(preds, labels)
@@ -335,16 +337,16 @@ def compute_metrics(task_name, preds, labels):
 
 
 processors = {
-    "codesearch": CodesearchProcessor,
+    "webquery": WebQueryProcessor,
     "staqc": StaQCProcessor,
 }
 
 output_modes = {
-    "codesearch": "classification",
+    "webquery": "classification",
     "staqc": "classification",
 }
 
 GLUE_TASKS_NUM_LABELS = {
-    "codesearch": 2,
+    "webquery": 2,
     "staqc": 2,
 }

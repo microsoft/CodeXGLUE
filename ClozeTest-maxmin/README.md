@@ -46,6 +46,6 @@ The results on ClozeTest-maxmin are shown as below:
 
 |               | RUBY  | JAVASCRIPT |  GO   | PYTHON | JAVA  |  PHP  |  ALL  |
 | :-----------: | :---: | :--------: | :---: | :----: | :---: | :---: | :---: |
-| RoBERTa-base  | 47.64 |   59.97    | 40.98 | 54.49  | 50.75 | 60.38 | 53.69 |
-| CodeBERT(MLM) | 80.17 |   81.77    | 83.31 | 87.21  | 80.63 | 85.05 | 83.89 |
+| RoBERTa-base  | 73.68 |   65.81    | 73.68 | 59.18  | 59.75 | 69.78 | 62.68 |
+| CodeBERT(MLM) | 86.84 |   84.93    | 92.76 | 81.25  | 91.70 | 89.93 | 85.66 |
 

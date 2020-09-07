@@ -1,6 +1,6 @@
 [
  {
-  "word": "max",
+  "idx": "maxmin-1",
   "nl_tokens": [
    "Read",
    "the",
@@ -80,7 +80,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-2",
   "nl_tokens": [
    "RAND",
    "."
@@ -164,7 +164,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-3",
   "nl_tokens": [
    "Writes",
    "body",
@@ -360,7 +360,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-4",
   "nl_tokens": [
    "Query",
    "Builder",
@@ -460,7 +460,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-5",
   "nl_tokens": [
    "{"
   ],
@@ -705,7 +705,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-6",
   "nl_tokens": [
    "Checks",
    "the",
@@ -1055,7 +1055,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-7",
   "nl_tokens": [
    "Create",
    "all",
@@ -1226,7 +1226,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-8",
   "nl_tokens": [
    "Prioritize",
    "the",
@@ -1510,7 +1510,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-9",
   "nl_tokens": [
    "Generate",
    "the",
@@ -2318,7 +2318,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-10",
   "nl_tokens": [
    "Sets",
    "the",
@@ -2396,7 +2396,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-11",
   "nl_tokens": [
    "Get",
    "max",
@@ -2496,7 +2496,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-12",
   "nl_tokens": [
    "Get",
    "extra",
@@ -2609,7 +2609,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-13",
   "nl_tokens": [
    "Return",
    "worksheet",
@@ -3011,7 +3011,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-14",
   "nl_tokens": [
    "Gets",
    "at",
@@ -3083,7 +3083,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-15",
   "nl_tokens": [
    "Set",
    "AutoFilter",
@@ -3232,7 +3232,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-16",
   "nl_tokens": [
    "Minutes",
    "with",
@@ -3284,7 +3284,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-17",
   "nl_tokens": [
    "/",
    "*",
@@ -3549,7 +3549,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-18",
   "nl_tokens": [
    "DDB",
    "."
@@ -3921,7 +3921,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-19",
   "nl_tokens": [
    "@link",
    "https",
@@ -3985,7 +3985,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-20",
   "nl_tokens": [
    "(",
    "non",
@@ -4114,7 +4114,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-21",
   "nl_tokens": [
    "\u56fe\u50cf\u6dfb\u52a0\u6587\u5b57"
   ],
@@ -4917,7 +4917,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-22",
   "nl_tokens": [
    "XNPV",
    "."
@@ -5186,7 +5186,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-23",
   "nl_tokens": [
    "{"
   ],
@@ -5347,7 +5347,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-24",
   "nl_tokens": [
    "Max",
    "."
@@ -5455,7 +5455,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-25",
   "nl_tokens": [
    "Validates",
    "a",
@@ -5762,7 +5762,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-26",
   "nl_tokens": [
    "Gets",
    "one",
@@ -6063,7 +6063,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-27",
   "nl_tokens": [
    "Generate",
    "the",
@@ -6606,7 +6606,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-28",
   "nl_tokens": [
    "Converts",
    "a",
@@ -6765,7 +6765,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-29",
   "nl_tokens": [
    "Generate",
    "a",
@@ -6856,7 +6856,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-30",
   "nl_tokens": [
    "#",
    "Returns",
@@ -6945,7 +6945,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-31",
   "nl_tokens": [
    "[[",
    "@doctodo",
@@ -7106,7 +7106,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-32",
   "nl_tokens": [
    "Return",
    "worksheet",
@@ -7654,7 +7654,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-33",
   "nl_tokens": [
    "@link",
    "https",
@@ -7718,7 +7718,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-34",
   "nl_tokens": [
    "Sets",
    "the",
@@ -7769,7 +7769,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-35",
   "nl_tokens": [
    "{"
   ],
@@ -7915,7 +7915,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-36",
   "nl_tokens": [
    "Logs",
    "successful",
@@ -8059,7 +8059,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-37",
   "nl_tokens": [
    "\u751f\u6210\u7f29\u7565\u56fe"
   ],
@@ -8829,7 +8829,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-38",
   "nl_tokens": [
    "Extract",
    "a",
@@ -9025,7 +9025,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-39",
   "nl_tokens": [
    "Returns",
    "the",
@@ -9379,7 +9379,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-40",
   "nl_tokens": [
    "Get",
    "the",
@@ -9578,7 +9578,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-41",
   "nl_tokens": [
    "Applies",
    "a",
@@ -9794,7 +9794,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-42",
   "nl_tokens": [
    "SUMX2MY2",
    "."
@@ -9977,7 +9977,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-43",
   "nl_tokens": [
    "Clips",
    "a",
@@ -10195,7 +10195,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-44",
   "nl_tokens": [
    "{"
   ],
@@ -10369,7 +10369,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-45",
   "nl_tokens": [
    "\u6b21\u306e",
    "1",
@@ -10462,7 +10462,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-46",
   "nl_tokens": [
    "\u6307\u5b9a\u3055\u308c\u305f\u6642\u523b\u3092\u30bf\u30a4\u30e0\u30b9\u30bf\u30f3\u30d7\u306b\u5909\u63db\u3057\u307e\u3059",
    "."
@@ -10572,7 +10572,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-47",
   "nl_tokens": [
    "\u6307\u5b9a\u3055\u308c\u305f\u5024\u306e\u7e70\u308a\u4e0a\u304c\u308a\u51e6\u7406\u3092\u884c\u3044\u307e\u3059",
    ".",
@@ -10720,7 +10720,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-48",
   "nl_tokens": [
    "Take",
    "a",
@@ -10993,7 +10993,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-49",
   "nl_tokens": [
    "Finds",
    "or",
@@ -11229,7 +11229,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-50",
   "nl_tokens": [
    "Alias",
    "inverse",
@@ -11282,7 +11282,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-51",
   "nl_tokens": [
    "Give",
    "the",
@@ -11356,7 +11356,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-52",
   "nl_tokens": [
    "@param",
    "array",
@@ -11498,7 +11498,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-53",
   "nl_tokens": [
    "Get",
    "extra",
@@ -11661,7 +11661,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-54",
   "nl_tokens": [
    "@link",
    "https",
@@ -11715,7 +11715,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-55",
   "nl_tokens": [
    "Checks",
    "that",
@@ -11885,7 +11885,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-56",
   "nl_tokens": [
    "Returns",
    "the",
@@ -12065,7 +12065,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-57",
   "nl_tokens": [
    "Get",
    "a",
@@ -12162,7 +12162,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-58",
   "nl_tokens": [
    "Reverse",
    "iterate",
@@ -12302,7 +12302,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-59",
   "nl_tokens": [
    "\u6307\u5b9a\u3055\u308c\u305f\u914d\u5217\u306e\u5404\u8981\u7d20\u306e\u4e2d\u3067\u300c\u6700\u3082\u5927\u304d\u3044\u300d\u5024\u3092\u8fd4\u3057\u307e\u3059",
    "."
@@ -12342,7 +12342,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-60",
   "nl_tokens": [
    "\u6307\u5b9a\u3055\u308c\u305f",
    "Unicode",
@@ -12409,7 +12409,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-61",
   "nl_tokens": [
    "List",
    "materials",
@@ -12485,7 +12485,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-62",
   "nl_tokens": [
    "Adiciona",
    "um",
@@ -12606,7 +12606,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-63",
   "nl_tokens": [
    "Variable",
    "Form"
@@ -13421,7 +13421,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-64",
   "nl_tokens": [
    "{"
   ],
@@ -13795,7 +13795,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-65",
   "nl_tokens": [
    "Show",
    "the",
@@ -14187,7 +14187,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-66",
   "nl_tokens": [
    "{"
   ],
@@ -14425,7 +14425,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-67",
   "nl_tokens": [
    "{"
   ],
@@ -14761,7 +14761,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-68",
   "nl_tokens": [
    "Given",
    "an",
@@ -14936,7 +14936,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-69",
   "nl_tokens": [
    "Create",
    "a",
@@ -15169,7 +15169,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-70",
   "nl_tokens": [
    "\u6307\u5b9a\u3055\u308c\u305f\u914d\u5217\u306e\u5404\u8981\u7d20\u306e\u4e2d\u3067\u300c\u6700\u3082\u5c0f\u3055\u3044\u300d\u5024\u3092\u8fd4\u3057\u307e\u3059",
    "."
@@ -15209,7 +15209,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-71",
   "nl_tokens": [
    "Finds",
    "the",
@@ -15335,7 +15335,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-72",
   "nl_tokens": [
    "@link",
    "https",
@@ -15474,7 +15474,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-73",
   "nl_tokens": [
    "Checks",
    "if",
@@ -15628,7 +15628,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-74",
   "nl_tokens": [
    "Set",
    "the",
@@ -15872,7 +15872,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-75",
   "nl_tokens": [
    "This",
    "method",
@@ -16039,7 +16039,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-76",
   "nl_tokens": [
    "Calculate",
    "an",
@@ -16345,7 +16345,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-77",
   "nl_tokens": [
    "@param",
    "array|object",
@@ -16555,7 +16555,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-78",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -16774,7 +16774,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-79",
   "nl_tokens": [
    "Find",
    "a",
@@ -17297,7 +17297,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-80",
   "nl_tokens": [
    "Write",
    "BIFF",
@@ -17592,7 +17592,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-81",
   "nl_tokens": [
    "@param",
    "Lead",
@@ -18169,7 +18169,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-82",
   "nl_tokens": [
    "@param",
    "Tokens",
@@ -18405,7 +18405,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-83",
   "nl_tokens": [
    "{"
   ],
@@ -18647,7 +18647,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-84",
   "nl_tokens": [
    "Min",
    "."
@@ -18755,7 +18755,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-85",
   "nl_tokens": [
    "Iterate",
    "through",
@@ -18895,7 +18895,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-86",
   "nl_tokens": [
    "Loads",
    "configuration",
@@ -19318,7 +19318,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-87",
   "nl_tokens": [
    "Creates",
    "invoice",
@@ -19641,7 +19641,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-88",
   "nl_tokens": [
    "Alias",
    "avec",
@@ -19696,7 +19696,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-89",
   "nl_tokens": [
    "\u6307\u5b9a\u3055\u308c\u305f\u30bf\u30a4\u30e0\u30b9\u30bf\u30f3\u30d7\u3092",
    "Timestamp",
@@ -19814,7 +19814,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-90",
   "nl_tokens": [
    "Sets",
    "the",
@@ -19881,7 +19881,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-91",
   "nl_tokens": [
    "Test",
    "if",
@@ -19983,7 +19983,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-92",
   "nl_tokens": [
    "Checks",
    "that",
@@ -20158,7 +20158,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-93",
   "nl_tokens": [
    "Schedules",
    "jobs",
@@ -20327,7 +20327,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-94",
   "nl_tokens": [
    "Returns",
    "the",
@@ -20590,7 +20590,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-95",
   "nl_tokens": [
    "Gets",
    "the",
@@ -20657,7 +20657,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-96",
   "nl_tokens": [
    "Build",
    "the",
@@ -21376,7 +21376,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-97",
   "nl_tokens": [
    "Resolves",
    "the",
@@ -21784,7 +21784,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-98",
   "nl_tokens": [
    "Generates",
    "the",
@@ -21939,7 +21939,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-99",
   "nl_tokens": [
    "@param",
    "string",
@@ -22107,7 +22107,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-100",
   "nl_tokens": [
    "Return",
    "a",
@@ -22350,7 +22350,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-101",
   "nl_tokens": [
    "Alias",
    "inverse",
@@ -22408,7 +22408,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-102",
   "nl_tokens": [
    "Finds",
    "or",
@@ -22644,7 +22644,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-103",
   "nl_tokens": [
    "Returns",
    "the",
@@ -22706,7 +22706,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-104",
   "nl_tokens": [
    "Add",
    "comments",
@@ -23662,7 +23662,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-105",
   "nl_tokens": [
    "@inheritdoc"
   ],
@@ -23753,7 +23753,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-106",
   "nl_tokens": [
    "\u6307\u5b9a\u3055\u308c\u305f\u30d1\u30bf\u30fc\u30f3\u6587\u5b57\u3092",
    "\u5bfe\u5fdc\u3059\u308b\u30d5\u30a3\u30fc\u30eb\u30c9\u306e\u5024\u306b\u5909\u63db\u3057\u307e\u3059",
@@ -24010,7 +24010,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-107",
   "nl_tokens": [
    "Get",
    "highest",
@@ -24133,7 +24133,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-108",
   "nl_tokens": [
    "Verifica",
    "se",
@@ -24230,7 +24230,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-109",
   "nl_tokens": [
    "Get",
    "GD",
@@ -24396,7 +24396,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-110",
   "nl_tokens": [
    "get",
    "an",
@@ -24884,7 +24884,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-111",
   "nl_tokens": [
    "Writes",
    "HAL",
@@ -25061,7 +25061,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-112",
   "nl_tokens": [
    "Creates",
    "a",
@@ -25148,7 +25148,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-113",
   "nl_tokens": [
    "\u751f\u6210\u7f29\u7565\u56fe"
   ],
@@ -25820,7 +25820,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-114",
   "nl_tokens": [
    "Get",
    "highest",
@@ -25931,7 +25931,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-115",
   "nl_tokens": [
    "\u3053\u306e\u30aa\u30d6\u30b8\u30a7\u30af\u30c8\u306e\u6642\u523b\u90e8\u5206\u306e\u6587\u5b57\u5217\u3092",
    "hh",
@@ -25994,7 +25994,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-116",
   "nl_tokens": [
    "Constant",
    "-",
@@ -26152,7 +26152,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-117",
   "nl_tokens": [
    "YYYY",
    "-",
@@ -26364,7 +26364,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-118",
   "nl_tokens": [
    "{"
   ],
@@ -26709,7 +26709,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-119",
   "nl_tokens": [
    "Verifica",
    "se",
@@ -26791,7 +26791,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-120",
   "nl_tokens": [
    "Sets",
    "the",
@@ -26873,7 +26873,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-121",
   "nl_tokens": [
    "\u5f15\u6570\u306b\u6e21\u3055\u308c\u305f\u6642\u9593\u30aa\u30d6\u30b8\u30a7\u30af\u30c8\u306e\u4e2d\u3067\u6700\u3082\u53e4\u3044\u3082\u306e\u3092\u8fd4\u3057\u307e\u3059",
    ".",
@@ -26956,7 +26956,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-122",
   "nl_tokens": [
    "{"
   ],
@@ -27079,7 +27079,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-123",
   "nl_tokens": [
    "Validates",
    "the",
@@ -27427,7 +27427,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-124",
   "nl_tokens": [
    "@link",
    "https",
@@ -27481,7 +27481,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-125",
   "nl_tokens": [
    "Returns",
    "the",
@@ -27655,7 +27655,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-126",
   "nl_tokens": [
    "Returns",
    "a",
@@ -27758,7 +27758,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-127",
   "nl_tokens": [
    "Write",
    "BIFF",
@@ -28165,7 +28165,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-128",
   "nl_tokens": [
    "Generate",
    "the",
@@ -28624,7 +28624,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-129",
   "nl_tokens": [
    "Tests",
    "whether",
@@ -28759,7 +28759,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-130",
   "nl_tokens": [
    "Return",
    "worksheet",
@@ -29042,7 +29042,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-131",
   "nl_tokens": [
    "If",
    "maxlength",
@@ -29187,7 +29187,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-132",
   "nl_tokens": [
    "Gets",
    "all",
@@ -29283,7 +29283,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-133",
   "nl_tokens": [
    "{"
   ],
@@ -29403,7 +29403,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-134",
   "nl_tokens": [
    "Add",
    "a",
@@ -30002,7 +30002,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-135",
   "nl_tokens": [
    "Return",
    "a",
@@ -31171,7 +31171,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-136",
   "nl_tokens": [
    "Extract",
    "requested",
@@ -31323,7 +31323,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-137",
   "nl_tokens": [
    "{"
   ],
@@ -31570,7 +31570,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-138",
   "nl_tokens": [
    "Returns",
    "the",
@@ -31699,7 +31699,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-139",
   "nl_tokens": [
    "Logs",
    "an",
@@ -31793,7 +31793,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-140",
   "nl_tokens": [
    "Guesses",
    "the",
@@ -31958,7 +31958,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-141",
   "nl_tokens": [
    "Trim",
    "leading",
@@ -32132,7 +32132,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-142",
   "nl_tokens": [
    "{"
   ],
@@ -32467,7 +32467,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-143",
   "nl_tokens": [
    "\u6307\u5b9a\u3055\u308c\u305f\u30bf\u30a4\u30e0\u30b9\u30bf\u30f3\u30d7\u3092",
    "Datetime",
@@ -32571,7 +32571,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-144",
   "nl_tokens": [
    "Returns",
    "the",
@@ -32677,7 +32677,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-145",
   "nl_tokens": [
    "Get",
    "the",
@@ -32787,7 +32787,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-146",
   "nl_tokens": [
    "Sets",
    "the",
@@ -32865,7 +32865,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-147",
   "nl_tokens": [
    "Ajoute",
    "une",
@@ -32968,7 +32968,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-148",
   "nl_tokens": [
    "Resolves",
    "the",
@@ -33135,7 +33135,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-149",
   "nl_tokens": [
    "\u6642\u523b\u306e\u4e0d\u6574\u5408\u3092\u8abf\u6574\u3057\u307e\u3059",
    "."
@@ -33299,7 +33299,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-150",
   "nl_tokens": [
    "Return",
    "worksheet",
@@ -33673,7 +33673,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-151",
   "nl_tokens": [
    "Returns",
    "random",
@@ -33746,7 +33746,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-152",
   "nl_tokens": [
    "Move",
    "the",
@@ -34289,7 +34289,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-153",
   "nl_tokens": [
    "Generate",
    "a",
@@ -34339,7 +34339,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-154",
   "nl_tokens": [
    "Finds",
    "the",
@@ -34894,7 +34894,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-155",
   "nl_tokens": [
    "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u044f",
    "\u043f\u0435\u0440\u0435\u0434",
@@ -35101,7 +35101,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-156",
   "nl_tokens": [
    "Look",
    "for",
@@ -35455,7 +35455,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-157",
   "nl_tokens": [
    "Provides",
    "a",
@@ -35555,7 +35555,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-158",
   "nl_tokens": [
    "\u6307\u5b9a\u3055\u308c\u305f\u5024\u3092\u6574\u6570\u306b\u5909\u63db\u3057\u307e\u3059",
    ".",
@@ -35747,7 +35747,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-159",
   "nl_tokens": [
    "@param",
    "float",
@@ -35804,7 +35804,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-160",
   "nl_tokens": [
    "Simplifies",
    "the",
@@ -36053,7 +36053,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-161",
   "nl_tokens": [
    "Returns",
    "the",
@@ -39166,7 +39166,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-162",
   "nl_tokens": [
    "Look",
    "for",
@@ -39682,7 +39682,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-163",
   "nl_tokens": [
    "Read",
    "the",
@@ -39833,7 +39833,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-164",
   "nl_tokens": [
    "Write",
    "the",
@@ -40087,7 +40087,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-165",
   "nl_tokens": [
    "Gets",
    "many",
@@ -40306,7 +40306,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-166",
   "nl_tokens": [
    "Sets",
    "min",
@@ -40402,7 +40402,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-167",
   "nl_tokens": [
    "Get",
    "row",
@@ -40508,7 +40508,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-168",
   "nl_tokens": [
    "Sets",
    "min",
@@ -40625,7 +40625,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-169",
   "nl_tokens": [
    "{"
   ],
@@ -41038,7 +41038,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-170",
   "nl_tokens": [
    "save",
    "the",
@@ -41266,7 +41266,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-171",
   "nl_tokens": [
    "{",
    "@inheritdoc",
@@ -41373,7 +41373,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-172",
   "nl_tokens": [
    "Check",
    "if",
@@ -41618,7 +41618,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-173",
   "nl_tokens": [
    "\u6307\u5b9a\u3055\u308c\u305f",
    "Unicode",
@@ -41804,7 +41804,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-174",
   "nl_tokens": [
    "Return",
    "the",
@@ -42045,7 +42045,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-175",
   "nl_tokens": [
    "Count",
    "the",
@@ -42210,7 +42210,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-176",
   "nl_tokens": [
    "Renders",
    "the",
@@ -42661,7 +42661,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-177",
   "nl_tokens": [
    "Sets",
    "the",
@@ -42705,7 +42705,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-178",
   "nl_tokens": [
    "Sends",
    "a",
@@ -42883,7 +42883,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-179",
   "nl_tokens": [
    "Works",
    "out",
@@ -42958,7 +42958,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-180",
   "nl_tokens": [
    "@link",
    "https",
@@ -43088,7 +43088,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-181",
   "nl_tokens": [
    "Read",
    "data",
@@ -43388,7 +43388,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-182",
   "nl_tokens": [
    "@param",
    "Tokens",
@@ -43547,7 +43547,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-183",
   "nl_tokens": [
    "@param",
    "Tokens",
@@ -43650,7 +43650,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-184",
   "nl_tokens": [
    "Properties",
    "."
@@ -43784,7 +43784,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-185",
   "nl_tokens": [
    "Searches",
    "for",
@@ -43895,7 +43895,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-186",
   "nl_tokens": [
    "{"
   ],
@@ -44280,7 +44280,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-187",
   "nl_tokens": [
    "Renders",
    "the",
@@ -44707,7 +44707,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-188",
   "nl_tokens": [
    "Checks",
    "the",
@@ -44978,7 +44978,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-189",
   "nl_tokens": [
    "Limit"
   ],
@@ -45126,7 +45126,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-190",
   "nl_tokens": [
    "Set",
    "up",
@@ -45250,7 +45250,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-191",
   "nl_tokens": [
    "GET",
    "JSON",
@@ -45640,7 +45640,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-192",
   "nl_tokens": [
    "@param",
    "string",
@@ -45693,7 +45693,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-193",
   "nl_tokens": [
    "{"
   ],
@@ -46065,7 +46065,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-194",
   "nl_tokens": [
    "Finds",
    "a",
@@ -46170,7 +46170,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-195",
   "nl_tokens": [
    "@param",
    "int",
@@ -46299,7 +46299,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-196",
   "nl_tokens": [
    "Determine",
    "the",
@@ -46494,7 +46494,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-197",
   "nl_tokens": [
    "Humanize",
    "the",
@@ -46591,7 +46591,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-198",
   "nl_tokens": [
    "Gets",
    "the",
@@ -46676,7 +46676,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-199",
   "nl_tokens": [
    "{"
   ],
@@ -46951,7 +46951,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-200",
   "nl_tokens": [
    "Move",
    "the",
@@ -47223,7 +47223,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-201",
   "nl_tokens": [
    "@since",
    "160715",
@@ -47311,7 +47311,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-202",
   "nl_tokens": [
    "Wrapper",
    "around",
@@ -47412,7 +47412,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-203",
   "nl_tokens": [
    "Prints",
    "the",
@@ -47823,7 +47823,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-204",
   "nl_tokens": [
    "Increase",
    "the",
@@ -48259,7 +48259,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-205",
   "nl_tokens": [
    "D\u00e9termine",
    "la",
@@ -48392,7 +48392,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-206",
   "nl_tokens": [
    "{"
   ],
@@ -48515,7 +48515,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-207",
   "nl_tokens": [
    "Paginate",
    "collection",
@@ -48593,7 +48593,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-208",
   "nl_tokens": [
    "Copy",
    "the",
@@ -48823,7 +48823,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-209",
   "nl_tokens": [
    "\u8fd4\u56de\u4e00\u4e2a\u6307\u5b9a\u957f\u5ea6\u7684\u968f\u673a\u6570"
   ],
@@ -48971,7 +48971,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-210",
   "nl_tokens": [
    "lookup",
    "next",
@@ -49080,7 +49080,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-211",
   "nl_tokens": [
    "Return",
    "the",
@@ -49403,7 +49403,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-212",
   "nl_tokens": [
    "Apply",
    "a",
@@ -49533,7 +49533,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-213",
   "nl_tokens": [
    "Add",
    "Style",
@@ -49669,7 +49669,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-214",
   "nl_tokens": [
    "Output",
    "formatted",
@@ -49946,7 +49946,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-215",
   "nl_tokens": [
    "Replaces",
    "the",
@@ -50041,7 +50041,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-216",
   "nl_tokens": [
    "{"
   ],
@@ -50252,7 +50252,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-217",
   "nl_tokens": [
    "@param",
    "int",
@@ -50344,7 +50344,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-218",
   "nl_tokens": [
    "Get",
    "the",
@@ -50470,7 +50470,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-219",
   "nl_tokens": [
    "PgSQL\u7684limit\u5982\u679c\u6709\u7b2c\u4e8c\u4e2a\u53c2\u6570",
    "\u90a3\u4e48\u548cmysql\u7684limit\u884c\u4e3a\u4fdd\u6301\u4e00\u81f4",
@@ -50560,7 +50560,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-220",
   "nl_tokens": [
    "Function",
    "to",
@@ -50688,7 +50688,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-221",
   "nl_tokens": [
    "{"
   ],
@@ -50876,7 +50876,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-222",
   "nl_tokens": [
    "@param",
    "string",
@@ -51301,7 +51301,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-223",
   "nl_tokens": [
    "Summary",
    "start",
@@ -51642,7 +51642,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-224",
   "nl_tokens": [
    "Verify",
    "if",
@@ -51779,7 +51779,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-225",
   "nl_tokens": [
    "Resize",
    "image",
@@ -52408,7 +52408,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-226",
   "nl_tokens": [
    "Saves",
    "the",
@@ -52531,7 +52531,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-227",
   "nl_tokens": [
    "@return",
    "$this"
@@ -52602,7 +52602,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-228",
   "nl_tokens": [
    "Set|update",
    "cache",
@@ -52889,7 +52889,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-229",
   "nl_tokens": [
    "Human",
    "time",
@@ -53376,7 +53376,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-230",
   "nl_tokens": [
    "Add",
    "column",
@@ -53522,7 +53522,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-231",
   "nl_tokens": [
    "Formatte",
    "un",
@@ -53608,7 +53608,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-232",
   "nl_tokens": [
    "Locate",
    "the",
@@ -54359,7 +54359,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-233",
   "nl_tokens": [
    "\u6700\u5927\u503c"
   ],
@@ -54415,7 +54415,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-234",
   "nl_tokens": [
    "Sets",
    "a",
@@ -54731,7 +54731,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-235",
   "nl_tokens": [
    "Move",
    "a",
@@ -55007,7 +55007,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-236",
   "nl_tokens": [
    "Consume",
    "lines",
@@ -55312,7 +55312,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-237",
   "nl_tokens": [
    "Max",
    "allowed",
@@ -55442,7 +55442,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-238",
   "nl_tokens": [
    "D\u00e9termine",
    "la",
@@ -55591,7 +55591,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-239",
   "nl_tokens": [
    "Encodes",
    "the",
@@ -55958,7 +55958,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-240",
   "nl_tokens": [
    "Create",
    "a",
@@ -56409,7 +56409,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-241",
   "nl_tokens": [
    "Get",
    "rectangle",
@@ -56489,7 +56489,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-242",
   "nl_tokens": [
    "Optimize",
    "order",
@@ -56629,7 +56629,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-243",
   "nl_tokens": [
    "{"
   ],
@@ -56739,7 +56739,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-244",
   "nl_tokens": [
    "@param",
    "int",
@@ -56870,7 +56870,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-245",
   "nl_tokens": [
    "Built",
    "-",
@@ -56980,7 +56980,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-246",
   "nl_tokens": [
    "num_pack",
    "."
@@ -57311,7 +57311,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-247",
   "nl_tokens": [
    "{"
   ],
@@ -57672,7 +57672,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-248",
   "nl_tokens": [
    "Get",
    "help",
@@ -57915,7 +57915,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-249",
   "nl_tokens": [
    "Returns",
    "true",
@@ -58131,7 +58131,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-250",
   "nl_tokens": [
    "Built",
    "-",
@@ -58259,7 +58259,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-251",
   "nl_tokens": [
    "Handles",
    "removal",
@@ -58537,7 +58537,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-252",
   "nl_tokens": [
    "@param",
    "array",
@@ -58669,7 +58669,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-253",
   "nl_tokens": [
    "Process",
    "the",
@@ -59010,7 +59010,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-254",
   "nl_tokens": [
    "Function",
    "to",
@@ -59199,7 +59199,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-255",
   "nl_tokens": [
    "Interface",
    "required",
@@ -59442,7 +59442,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-256",
   "nl_tokens": [
    "Calculates",
    "and",
@@ -59579,7 +59579,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-257",
   "nl_tokens": [
    "Process",
    "each",
@@ -59797,7 +59797,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-258",
   "nl_tokens": [
    "{"
   ],
@@ -59971,7 +59971,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-259",
   "nl_tokens": [
    "Returns",
    "the",
@@ -60042,7 +60042,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-260",
   "nl_tokens": [
    "CloudFront",
    "URL",
@@ -60185,7 +60185,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-261",
   "nl_tokens": [
    "------------------------------------------------------------------"
   ],
@@ -60647,7 +60647,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-262",
   "nl_tokens": [
    "Function",
    "to",
@@ -60775,7 +60775,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-263",
   "nl_tokens": [
    "\u6c42\u6982\u7387",
    "\u8fd4\u56dekey",
@@ -60881,7 +60881,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-264",
   "nl_tokens": [
    "\u56fe\u50cf\u6dfb\u52a0\u6587\u5b57"
   ],
@@ -61700,7 +61700,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-265",
   "nl_tokens": [
    "Parse",
    "formatted",
@@ -62082,7 +62082,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-266",
   "nl_tokens": [
    "Compress",
    "image",
@@ -62490,7 +62490,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-267",
   "nl_tokens": [
    "Define",
    "o",
@@ -62625,7 +62625,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-268",
   "nl_tokens": [
    "{"
   ],
@@ -62848,7 +62848,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-269",
   "nl_tokens": [
    "Output",
    "the",
@@ -63019,7 +63019,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-270",
   "nl_tokens": [
    "Build",
    "pagination",
@@ -63746,7 +63746,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-271",
   "nl_tokens": [
    "Mark",
    "a",
@@ -63907,7 +63907,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-272",
   "nl_tokens": [
    "@param",
    "array",
@@ -64023,7 +64023,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-273",
   "nl_tokens": [
    "Get",
    "depth",
@@ -64194,7 +64194,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-274",
   "nl_tokens": [
    "binadd",
    "."
@@ -64374,7 +64374,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-275",
   "nl_tokens": [
    "Registers",
    "the",
@@ -64682,7 +64682,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-276",
   "nl_tokens": [
    "@param",
    "DataObjectInterface",
@@ -64852,7 +64852,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-277",
   "nl_tokens": [
    "Returns",
    "the",
@@ -64923,7 +64923,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-278",
   "nl_tokens": [
    "Get",
    "Total",
@@ -64970,7 +64970,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-279",
   "nl_tokens": [
    "Set",
    "an",
@@ -65224,7 +65224,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-280",
   "nl_tokens": [
    "\u5e26\u5206\u9875\u7684\u6570\u636e\u67e5\u8be2"
   ],
@@ -65433,7 +65433,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-281",
   "nl_tokens": [
    "@param",
    "(",
@@ -65555,7 +65555,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-282",
   "nl_tokens": [
    "Simplifies",
    "path",
@@ -65752,7 +65752,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-283",
   "nl_tokens": [
    "Reads",
    "a",
@@ -65936,7 +65936,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-284",
   "nl_tokens": [
    "Increments",
    "value",
@@ -66167,7 +66167,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-285",
   "nl_tokens": [
    "Get",
    "average",
@@ -66246,7 +66246,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-286",
   "nl_tokens": [
    "Touch",
    "a",
@@ -66366,7 +66366,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-287",
   "nl_tokens": [
    "\u5220\u9664\u914d\u7f6e",
    "."
@@ -66621,7 +66621,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-288",
   "nl_tokens": [
    "@param",
    "DataObjectInterface",
@@ -66851,7 +66851,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-289",
   "nl_tokens": [
    "Displays",
    "the",
@@ -67094,7 +67094,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-290",
   "nl_tokens": [
    "process",
    "multiple",
@@ -67548,7 +67548,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-291",
   "nl_tokens": [
    "Calculates",
    "percentage",
@@ -67699,7 +67699,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-292",
   "nl_tokens": [
    "Parses",
    "the",
@@ -67893,7 +67893,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-293",
   "nl_tokens": [
    "Generate",
    "a",
@@ -67974,7 +67974,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-294",
   "nl_tokens": [
    "Determine",
    "if",
@@ -68222,7 +68222,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-295",
   "nl_tokens": [
    "Run",
    "the",
@@ -68479,7 +68479,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-296",
   "nl_tokens": [
    "Prints",
    "analyzer",
@@ -69338,7 +69338,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-297",
   "nl_tokens": [
    "Create",
    "the",
@@ -69442,7 +69442,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-298",
   "nl_tokens": [
    "Process",
    "tri",
@@ -69637,7 +69637,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-299",
   "nl_tokens": [
    "Gets",
    "a",
@@ -69841,7 +69841,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-300",
   "nl_tokens": [
    "\u8fd4\u56de\u5b57\u4f53\u53c2\u6570",
    "."
@@ -70425,7 +70425,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-301",
   "nl_tokens": [
    "Get",
    "pad",
@@ -70497,7 +70497,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-302",
   "nl_tokens": [
    "Normalize",
    "precision",
@@ -70544,7 +70544,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-303",
   "nl_tokens": [
    "\u8bbe\u7f6e\u914d\u7f6e",
    "."
@@ -70815,7 +70815,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-304",
   "nl_tokens": [
    "Get",
    "the",
@@ -70896,7 +70896,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-305",
   "nl_tokens": [
    "Converts",
    "the",
@@ -71166,7 +71166,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-306",
   "nl_tokens": [
    "Gets",
    "a",
@@ -71614,7 +71614,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-307",
   "nl_tokens": [
    "A",
    "better",
@@ -72801,7 +72801,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-308",
   "nl_tokens": [
    "Conditions",
    "for",
@@ -73033,7 +73033,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-309",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -73246,7 +73246,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-310",
   "nl_tokens": [
    "Create",
    "command"
@@ -73445,7 +73445,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-311",
   "nl_tokens": [
    "@coroutine"
   ],
@@ -73566,7 +73566,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-312",
   "nl_tokens": [
    "Get",
    "Sorted",
@@ -73646,7 +73646,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-313",
   "nl_tokens": [
    "Define",
    "o",
@@ -73781,7 +73781,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-314",
   "nl_tokens": [
    "Advance",
    "progress",
@@ -73882,7 +73882,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-315",
   "nl_tokens": [
    "\u6700\u5c0f\u503c"
   ],
@@ -73938,7 +73938,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-316",
   "nl_tokens": [
    "Called",
    "before",
@@ -74058,7 +74058,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-317",
   "nl_tokens": [
    "{",
    "@inheritdoc",
@@ -74256,7 +74256,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-318",
   "nl_tokens": [
    "{"
   ],
@@ -74385,7 +74385,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-319",
   "nl_tokens": [
    "Reads",
    "until",
@@ -74625,7 +74625,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-320",
   "nl_tokens": [
    "Render",
    "property",
@@ -74826,7 +74826,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-321",
   "nl_tokens": [
    "Get",
    "configured",
@@ -74882,7 +74882,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-322",
   "nl_tokens": [
    "Locate",
    "the",
@@ -75035,7 +75035,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-323",
   "nl_tokens": [
    "The",
    "options",
@@ -75174,7 +75174,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-324",
   "nl_tokens": [
    "The",
    "static",
@@ -75247,7 +75247,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-325",
   "nl_tokens": [
    "\u8ba1\u7b97\u8981\u53d1\u9001\u7684\u5b57\u8282\u8303\u56f4"
   ],
@@ -75417,7 +75417,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-326",
   "nl_tokens": [
    "CLI",
    "trace"
@@ -75594,7 +75594,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-327",
   "nl_tokens": [
    "/",
    "*",
@@ -75644,7 +75644,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-328",
   "nl_tokens": [
    "Remove",
    "members",
@@ -75694,7 +75694,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-329",
   "nl_tokens": [
    "Calculate",
    "estimated",
@@ -75757,7 +75757,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-330",
   "nl_tokens": [
    "Teste",
    "la",
@@ -75967,7 +75967,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-331",
   "nl_tokens": [
    "Convert",
    "css",
@@ -78519,7 +78519,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-332",
   "nl_tokens": [
    "conn",
    "sta",
@@ -78648,7 +78648,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-333",
   "nl_tokens": [
    "Displays",
    "this",
@@ -78765,7 +78765,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-334",
   "nl_tokens": [
    "Adjust",
    "luminosity",
@@ -78908,7 +78908,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-335",
   "nl_tokens": [
    "Get",
    "a",
@@ -79054,7 +79054,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-336",
   "nl_tokens": [
    "Texturize",
    "image",
@@ -79886,7 +79886,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-337",
   "nl_tokens": [
    "\u6dfb\u52a0"
   ],
@@ -80066,7 +80066,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-338",
   "nl_tokens": [
    "Restricts",
    "the",
@@ -80338,7 +80338,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-339",
   "nl_tokens": [
    "Compute",
    "the",
@@ -80504,7 +80504,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-340",
   "nl_tokens": [
    "Add",
    "Script",
@@ -80634,7 +80634,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-341",
   "nl_tokens": [
    "Return",
    "true",
@@ -80700,7 +80700,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-342",
   "nl_tokens": [
    "Returns",
    "the",
@@ -80796,7 +80796,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-343",
   "nl_tokens": [
    "\u83b7\u53d6\u6587\u4ef6\u4ee3\u7801"
   ],
@@ -80944,7 +80944,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-344",
   "nl_tokens": [
    "@param",
    "string",
@@ -81049,7 +81049,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-345",
   "nl_tokens": [
    "Print",
    "statistics",
@@ -81191,7 +81191,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-346",
   "nl_tokens": [
    "Runs",
    "through",
@@ -81384,7 +81384,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-347",
   "nl_tokens": [
    "Greater",
    "than"
@@ -81432,7 +81432,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-348",
   "nl_tokens": [
    "Returns",
    "found",
@@ -81602,7 +81602,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-349",
   "nl_tokens": [
    "Built",
    "-",
@@ -81712,7 +81712,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-350",
   "nl_tokens": [
    "Gets",
    "the",
@@ -81899,7 +81899,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-351",
   "nl_tokens": [
    "A",
    "partir",
@@ -82120,7 +82120,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-352",
   "nl_tokens": [
    "Filter",
    "the",
@@ -82335,7 +82335,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-353",
   "nl_tokens": [
    "Get",
    "count",
@@ -82390,7 +82390,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-354",
   "nl_tokens": [
    "Calculate",
    "the",
@@ -82438,7 +82438,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-355",
   "nl_tokens": [
    "Reduce",
    "the",
@@ -83255,7 +83255,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-356",
   "nl_tokens": [
    "Determine",
    "the",
@@ -83446,7 +83446,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-357",
   "nl_tokens": [
    "Get",
    "rectangle",
@@ -83526,7 +83526,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-358",
   "nl_tokens": [
    "Generate",
    "a",
@@ -83609,7 +83609,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-359",
   "nl_tokens": [
    "\u6574\u7406trace\u6570\u636e"
   ],
@@ -83860,7 +83860,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-360",
   "nl_tokens": [
    "cURL",
    "for",
@@ -85076,7 +85076,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-361",
   "nl_tokens": [
    "Test",
    "if",
@@ -85439,7 +85439,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-362",
   "nl_tokens": [
    "Run",
    "this",
@@ -85952,7 +85952,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-363",
   "nl_tokens": [
    "Gets",
    "all",
@@ -86223,7 +86223,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-364",
   "nl_tokens": [
    "Returns",
    "next",
@@ -86860,7 +86860,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-365",
   "nl_tokens": [
    "Verify",
    "if",
@@ -87030,7 +87030,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-366",
   "nl_tokens": [
    "Are",
    "we",
@@ -87404,7 +87404,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-367",
   "nl_tokens": [
    "Get",
    "least",
@@ -87585,7 +87585,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-368",
   "nl_tokens": [
    "{"
   ],
@@ -87868,7 +87868,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-369",
   "nl_tokens": [
    "@param",
    "int",
@@ -87986,7 +87986,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-370",
   "nl_tokens": [
    "{"
   ],
@@ -88178,7 +88178,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-371",
   "nl_tokens": [
    "Equal",
    "to",
@@ -88225,7 +88225,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-372",
   "nl_tokens": [
    "Display",
    "errors",
@@ -88343,7 +88343,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-373",
   "nl_tokens": [
    "Abbreviated",
    "byte",
@@ -88532,7 +88532,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-374",
   "nl_tokens": [
    "{"
   ],
@@ -88612,7 +88612,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-375",
   "nl_tokens": [
    "Max",
    "execution",
@@ -88668,7 +88668,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-376",
   "nl_tokens": [
    "GET",
    "JSON",
@@ -89030,7 +89030,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-377",
   "nl_tokens": [
    "Compress",
    "PNG",
@@ -89431,7 +89431,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-378",
   "nl_tokens": [
    "Sets",
    "an",
@@ -89673,7 +89673,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-379",
   "nl_tokens": [
    "Compress",
    "SVG",
@@ -89963,7 +89963,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-380",
   "nl_tokens": [
    "Get",
    "depth",
@@ -90079,7 +90079,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-381",
   "nl_tokens": [
    "Retrieve",
    "the",
@@ -90145,7 +90145,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-382",
   "nl_tokens": [
    "\u7528\u4e8e\u975e\u81ea\u52a8\u63d0\u4ea4\u72b6\u6001\u4e0b\u9762\u7684\u67e5\u8be2\u63d0\u4ea4",
    "."
@@ -90268,7 +90268,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-383",
   "nl_tokens": [
    "Less",
    "than"
@@ -90312,7 +90312,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-384",
   "nl_tokens": [
    "Add",
    "the",
@@ -90477,7 +90477,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-385",
   "nl_tokens": [
    "Method",
    "to",
@@ -91052,7 +91052,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-386",
   "nl_tokens": [
    "{",
    "@inheritdoc",
@@ -91312,7 +91312,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-387",
   "nl_tokens": [
    "Get",
    "information",
@@ -91760,7 +91760,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-388",
   "nl_tokens": [
    "Calculates",
    "the",
@@ -91838,7 +91838,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-389",
   "nl_tokens": [
    "Pads",
    "our",
@@ -91930,7 +91930,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-390",
   "nl_tokens": [
    "\u4e8b\u52a1\u56de\u6eda",
    "."
@@ -92067,7 +92067,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-391",
   "nl_tokens": [
    "Link",
    "history",
@@ -92524,7 +92524,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-392",
   "nl_tokens": [
    "{"
   ],
@@ -92692,7 +92692,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-393",
   "nl_tokens": [
    "{"
   ],
@@ -92738,7 +92738,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-394",
   "nl_tokens": [
    "Mask",
    "certain",
@@ -92902,7 +92902,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-395",
   "nl_tokens": [
    "Set",
    "a",
@@ -93172,7 +93172,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-396",
   "nl_tokens": [
    "Parse",
    "responses"
@@ -93539,7 +93539,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-397",
   "nl_tokens": [
    "Takes",
    "a",
@@ -93775,7 +93775,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-398",
   "nl_tokens": [
    "Check",
    "that",
@@ -94270,7 +94270,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-399",
   "nl_tokens": [
    "Se",
    "definido",
@@ -94638,7 +94638,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-400",
   "nl_tokens": [
    "Runs",
    "the",
@@ -94775,7 +94775,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-401",
   "nl_tokens": [
    "identify",
    "a",
@@ -95001,7 +95001,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-402",
   "nl_tokens": [
    "Get",
    "the",
@@ -95076,7 +95076,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-403",
   "nl_tokens": [
    "show",
    "Help",
@@ -95370,7 +95370,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-404",
   "nl_tokens": [
    "Get",
    "a",
@@ -95521,7 +95521,7 @@
   ]
  },
  {
-  "word": "min",
+  "idx": "maxmin-405",
   "nl_tokens": [
    "Get",
    "the",
@@ -95596,7 +95596,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-406",
   "nl_tokens": [
    "@param",
    "DataObjectInterface",
@@ -95882,7 +95882,7 @@
   ]
  },
  {
-  "word": "max",
+  "idx": "maxmin-407",
   "nl_tokens": [
    "The",
    "arguments",

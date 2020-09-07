@@ -148,13 +148,13 @@ def convert_examples_to_features(examples, tokenizer, args,stage=None):
 
 
 
-def set_seed(args):
-    """set random seed."""
-    random.seed(args.seed)
-    np.random.seed(args.seed)
-    torch.manual_seed(args.seed)
-    if args.n_gpu > 0:
-        torch.cuda.manual_seed_all(args.seed)
+def set_seed(seed=42):
+    random.seed(seed)
+    os.environ['PYHTONHASHSEED'] = str(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.backends.cudnn.deterministic = True
         
 def main():
     parser = argparse.ArgumentParser()
@@ -214,7 +214,7 @@ def main():
                         help="Epsilon for Adam optimizer.")
     parser.add_argument("--max_grad_norm", default=1.0, type=float,
                         help="Max gradient norm.")
-    parser.add_argument("--num_train_epochs", default=3.0, type=float,
+    parser.add_argument("--num_train_epochs", default=3, type=int,
                         help="Total number of training epochs to perform.")
     parser.add_argument("--max_steps", default=-1, type=int,
                         help="If > 0: set total number of training steps to perform. Override num_train_epochs.")
@@ -245,7 +245,7 @@ def main():
                     args.local_rank, device, args.n_gpu, bool(args.local_rank != -1))
     args.device = device
     # Set seed
-    set_seed(args)
+    set_seed(args.seed)
     # make dir if output_dir not exist
     if os.path.exists(args.output_dir) is False:
         os.makedirs(args.output_dir)
@@ -278,9 +278,6 @@ def main():
         # multi-gpu training
         model = torch.nn.DataParallel(model)
 
-
-
-
     if args.do_train:
         # Prepare training data loader
         train_examples = read_examples(args.train_filename)
@@ -307,49 +304,46 @@ def main():
             {'params': [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
         ]
         optimizer = AdamW(optimizer_grouped_parameters, lr=args.learning_rate, eps=args.adam_epsilon)
-        scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=args.warmup_steps,
-                                                    num_training_steps=num_train_optimization_steps)
+        scheduler = get_linear_schedule_with_warmup(optimizer, 
+                                                    num_warmup_steps=int(len(train_dataloader)*args.num_train_epochs*0.1),
+                                                    num_training_steps=len(train_dataloader)*args.num_train_epochs)
     
-        
         #Start training
         logger.info("***** Running training *****")
         logger.info("  Num examples = %d", len(train_examples))
         logger.info("  Batch size = %d", args.train_batch_size)
-        logger.info("  Num epoch = %d", num_train_optimization_steps*args.train_batch_size//len(train_examples))
+        logger.info("  Num epoch = %d", args.num_train_epochs)
         
 
         model.train()
         dev_dataset={}
         nb_tr_examples, nb_tr_steps,tr_loss,global_step,best_bleu,best_loss = 0, 0,0,0,0,1e6 
-        bar = tqdm(range(num_train_optimization_steps),total=num_train_optimization_steps)
-        train_dataloader=cycle(train_dataloader)
-        eval_flag = True
-        for step in bar:
-            batch = next(train_dataloader)
-            batch = tuple(t.to(device) for t in batch)
-            source_ids,source_mask,target_ids,target_mask = batch
-            loss,_,_ = model(source_ids=source_ids,source_mask=source_mask,target_ids=target_ids,target_mask=target_mask)
-            
-            if args.n_gpu > 1:
-                loss = loss.mean() # mean() to average on multi-gpu.
-            if args.gradient_accumulation_steps > 1:
-                loss = loss / args.gradient_accumulation_steps
-            tr_loss += loss.item()
-            train_loss=round(tr_loss*args.gradient_accumulation_steps/(nb_tr_steps+1),4)
-            bar.set_description("loss {}".format(train_loss))
-            nb_tr_examples += source_ids.size(0)
-            nb_tr_steps += 1
-            loss.backward()
+        for epoch in range(args.num_train_epochs):
+            bar = tqdm(train_dataloader,total=len(train_dataloader))
+            for batch in bar:
+                batch = tuple(t.to(device) for t in batch)
+                source_ids,source_mask,target_ids,target_mask = batch
+                loss,_,_ = model(source_ids=source_ids,source_mask=source_mask,target_ids=target_ids,target_mask=target_mask)
 
-            if (nb_tr_steps + 1) % args.gradient_accumulation_steps == 0:
-                #Update parameters
-                optimizer.step()
-                optimizer.zero_grad()
-                scheduler.step()
-                global_step += 1
-                eval_flag = True
-                
-            if args.do_eval and ((global_step + 1) %args.eval_steps == 0) and eval_flag:
+                if args.n_gpu > 1:
+                    loss = loss.mean() # mean() to average on multi-gpu.
+                if args.gradient_accumulation_steps > 1:
+                    loss = loss / args.gradient_accumulation_steps
+                tr_loss += loss.item()
+                train_loss=round(tr_loss*args.gradient_accumulation_steps/(nb_tr_steps+1),4)
+                bar.set_description("epoch {} loss {}".format(epoch,train_loss))
+                nb_tr_examples += source_ids.size(0)
+                nb_tr_steps += 1
+                loss.backward()
+
+                if (nb_tr_steps + 1) % args.gradient_accumulation_steps == 0:
+                    #Update parameters
+                    optimizer.step()
+                    optimizer.zero_grad()
+                    scheduler.step()
+                    global_step += 1
+
+            if args.do_eval:
                 #Eval model with dev dataset
                 tr_loss = 0
                 nb_tr_examples, nb_tr_steps = 0, 0                     
@@ -367,7 +361,7 @@ def main():
                     dev_dataset['dev_loss']=eval_examples,eval_data
                 eval_sampler = SequentialSampler(eval_data)
                 eval_dataloader = DataLoader(eval_data, sampler=eval_sampler, batch_size=args.eval_batch_size)
-                
+
                 logger.info("\n***** Running evaluation *****")
                 logger.info("  Num examples = %d", len(eval_examples))
                 logger.info("  Batch size = %d", args.eval_batch_size)
@@ -393,7 +387,7 @@ def main():
                 for key in sorted(result.keys()):
                     logger.info("  %s = %s", key, str(result[key]))
                 logger.info("  "+"*"*20)   
-                
+
                 #save last checkpoint
                 last_output_dir = os.path.join(args.output_dir, 'checkpoint-last')
                 if not os.path.exists(last_output_dir):
@@ -412,8 +406,8 @@ def main():
                     model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
                     output_model_file = os.path.join(output_dir, "pytorch_model.bin")
                     torch.save(model_to_save.state_dict(), output_model_file)  
-                            
-                            
+
+
                 #Calculate bleu  
                 if 'dev_bleu' in dev_dataset:
                     eval_examples,eval_data=dev_dataset['dev_bleu']
@@ -427,7 +421,7 @@ def main():
                     dev_dataset['dev_bleu']=eval_examples,eval_data
 
 
-                
+
                 eval_sampler = SequentialSampler(eval_data)
                 eval_dataloader = DataLoader(eval_data, sampler=eval_sampler, batch_size=args.eval_batch_size)
 

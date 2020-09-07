@@ -63,7 +63,7 @@ python run.py \
 	--config_name roberta-base \
 	--tokenizer_name roberta-base \
 	--train_filename ../data/train.buggy-fixed.buggy,../data/train.buggy-fixed.fixed \
-	--dev_filename ../data/valid.buggy-fixed.buggy,../data/buggy-fixed.fixed \
+	--dev_filename ../data/valid.buggy-fixed.buggy,../data/valid.buggy-fixed.fixed \
 	--output_dir $output_dir \
 	--max_source_length 256 \
 	--max_target_length 256 \

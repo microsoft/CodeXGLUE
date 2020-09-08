@@ -32,7 +32,11 @@ We propose weighted n-gram match and syntactic AST match to measure grammatical 
 
 ### Examples
 
+Here we will give two toy examples and show the qualitative advantages of CodeBLEU compared with the traditional BLEU score.
+
 ![Example](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/example.png)
+
+
 
 
 ## Experiments

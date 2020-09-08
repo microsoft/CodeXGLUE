@@ -262,23 +262,10 @@ def evaluate(args, model, tokenizer, checkpoint=None, prefix="", mode='dev'):
                     logger.info("  %s = %s", key, str(result[key]))
                     writer.write("%s = %s\n" % (key, str(result[key])))
         elif (mode == 'test'):
-            output_test_file = args.test_result_dir
-            output_dir = os.path.dirname(output_test_file)
-            if not os.path.exists(output_dir):
-                os.makedirs(output_dir)
-            with open(os.path.join(output_dir, 'test_acc.txt'), 'a') as writer_acc:
-                with open(output_test_file, "w") as writer:
-                    logger.info("***** Output test results *****")
-                    all_logits = preds.tolist()
-                    for i, logit in tqdm(enumerate(all_logits), desc='Testing'):
-                        instance_rep = '<CODESPLIT>'.join(
-                            [item.encode('ascii', 'ignore').decode('ascii') for item in instances[i]])
-
-                        writer.write(instance_rep + '<CODESPLIT>' + '<CODESPLIT>'.join([str(l) for l in logit]) + '\n')
-                    for key in sorted(result.keys()):
-                        writer_acc.write("%s = %s\n" % (key, str(result[key])))
-                        print("%s = %s" % (key, str(result[key])))
-                    writer_acc.write('\n')
+            with open(args.prediction_file, "w", encoding='utf-8') as writer_prediction:
+                logger.info("***** Output test results *****")
+                for i, (preds_i, example) in enumerate(zip(preds_label, instances)):
+                    writer_prediction.write(example[0] + '\t' + str(preds_i) + '\n')
 
     return results
 
@@ -352,7 +339,7 @@ def main():
                         help="Model type selected in the list: " + ", ".join(MODEL_CLASSES.keys()))
     parser.add_argument("--model_name_or_path", default=None, type=str, required=True,
                         help="Path to pre-trained model or shortcut name")
-    parser.add_argument("--task_name", default='codesearch', type=str, required=True,
+    parser.add_argument("--task_name", default='webquery', type=str, required=True,
                         help="The name of the task to train selected in the list: " + ", ".join(processors.keys()))
     parser.add_argument("--output_dir", default=None, type=str, required=True,
                         help="The output directory where the model predictions and checkpoints will be written.")
@@ -433,6 +420,8 @@ def main():
                         help='model for prediction')
     parser.add_argument("--test_result_dir", default='test_results.tsv', type=str,
                         help='path to store test result')
+    parser.add_argument("--prediction_file", default='predictions.txt', type=str,
+                        help='path to save predictions result, note to specify task name')
     args = parser.parse_args()
 
     # Setup distant debugging if needed

@@ -1,0 +1,5 @@
+staqc-test-1	0
+staqc-test-2	0
+staqc-test-3	0
+staqc-test-4	1
+staqc-test-5	1

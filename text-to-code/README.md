@@ -142,12 +142,12 @@ It might take 40 minutes for inferencing on a single 16G NVIDIA P100.
 
 The results on concode test set are shown as below:
 
-| Model                                                 |   EM    |   BLEU   |
-| ----------------------------------------------------- | :-----: | :------: |
-| Seq2Seq                                               |  3.05   |  21.31   |
-| Seq2Action+MAML (ACL 2019)                            |  10.05  |  24.40   |
-| Iyer-Simp+200 idoms (EMNLP 2020)                      |  12.20  |  26.60   |
-| Transformer w/ GPT-2 (12L)                            |  17.35  |  25.37   |
-| Transformer w/ CodeGPT (12L)                          |  18.25  |  28.69   |
-| Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |**20.10**|**32.79** |
+| Model                                                 |   EM    |   BLEU   | CodeBLEU |
+| ----------------------------------------------------- | :-----: | :------: | :------: |
+| Seq2Seq                                               |  3.05   |  21.31   |   17.61  |
+| Seq2Action+MAML (ACL 2019)                            |  10.05  |  24.40   |   20.99  |
+| Iyer-Simp+200 idoms (EMNLP 2020)                      |  12.20  |  26.60   |     -    |
+| Transformer w/ GPT-2 (12L)                            |  17.35  |  25.37   |   22.79  |
+| Transformer w/ CodeGPT (12L)                          |  18.25  |  28.69   |   25.69  |
+| Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |**20.10**|**32.79** | **27.74**|
 

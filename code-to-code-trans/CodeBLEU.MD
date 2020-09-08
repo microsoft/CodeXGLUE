@@ -12,17 +12,17 @@ BLEU, but can also consider the grammatical correctness and the logic correctnes
 
 ### The current metrics (BLEU, acc) for code synthesis tasks, such as code translation, are not suitable enough.
 
-(1) BLEU: just consider n-gram match, ignore code structure
+       (1) BLEU: just consider n-gram match, ignore code structure
 
-(2) Accuracy (exactly match): too strict for code evaluation
+       (2) Accuracy (exactly match): too strict for code evaluation
 
 ### Program language vs. Natural language
 
-(1) Limited keywords vs. millions of words.
+       (1) Limited keywords vs. millions of words.
 
-(2) Tree structure vs. sequential structure.
+       (2) Tree structure vs. sequential structure.
 
-(3) Unique instructions vs. ambiguous semantic.
+       (3) Unique instructions vs. ambiguous semantic.
 
 ## Methods
 
@@ -44,6 +44,8 @@ We conduct experiments on three code generation tasks (text-to-code, code transl
 
 （4）Calculate the correlation coefficient of the CodeBLEU and human evaluation scores
 
+### 
+
 ### Results
 
 
@@ -57,10 +59,14 @@ We conduct experiments on three code generation tasks (text-to-code, code transl
 ### Abation Study
 
 
+| Components     | Text-to-code | Code Translation | Code Refinement |   
+| ----------- |   :-------: |  :--------: |  :--------: | 
+| n-gram       |   0.967    |    0.940    |  0.923   |
+| weighted n-gram |    0.960    |   0.934  |   0.985 |
+| syntactic AST   |  0.985      | 0.977    | 0.967 |
+| semantic data-flow |  0.978   | 0.974    | 0.983 |
+| CodeBLEU           |  0.977   | 0.970    | 0.979 |
 
-We provide three baseline models to support these tasks, including BERT-style pre-trained model (i.e. [CodeBERT](https://github.com/microsoft/CodeBERT)) which is good at understanding problems, GPT-style pre-trained model which we call CodeGPT to support completion and generation problems, and Encoder-Decoder framework that supports sequence-to-sequence generation problems. 
-Three pipelines including CodeBERT, CodeGPT and Encoder-Decoder are given below.
-![baselines](https://github.com/microsoft/CodeXGLUE/blob/main/baselines.jpg)
 
 
 # Conclusion

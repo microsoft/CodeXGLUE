@@ -30,6 +30,11 @@ An ideal evaluation metric should consider the grammatical correctness and the l
 We propose weighted n-gram match and syntactic AST match to measure grammatical correctness, and introduce semantic data-flow match to calculate logic correctness.
 ![CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.jpg)
 
+### Examples
+
+![Example1](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/example1.jpg)
+
+![Example2](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/example2.jpg)
 
 ## Experiments
 

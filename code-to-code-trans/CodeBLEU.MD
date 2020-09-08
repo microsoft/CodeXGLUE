@@ -12,9 +12,9 @@ BLEU, but can also consider the grammatical correctness and the logic correctnes
 
 (1) The current metrics (BLEU, acc) for code synthesis tasks, such as code translation, are not suitable enough.
 
-       - BLEU: just consider n-gram match, ignore code structure
+       - BLEU: just consider n-gram match, ignore code structure.
 
-       - Accuracy (exactly match): too strict for code evaluation
+       - Accuracy (exactly match): too strict for code evaluation.
 
 (2) Program language vs. Natural language
 
@@ -27,7 +27,8 @@ BLEU, but can also consider the grammatical correctness and the logic correctnes
 ## Methods
 
 An ideal evaluation metric should consider the grammatical correctness and the logic correctness.
-![We propose weighted n-gram match and syntactic AST match to measure grammatical correctness, and introduce semantic data-flow match to calculate logic correctness](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.jpg)
+We propose weighted n-gram match and syntactic AST match to measure grammatical correctness, and introduce semantic data-flow match to calculate logic correctness.
+![CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.jpg)
 
 
 ## Experiments
@@ -36,17 +37,44 @@ We conduct experiments on three code generation tasks (text-to-code, code transl
 
 ### Steps
 
-（1）Translate or generate codes with different systems
+（1）Translate or generate codes with different systems.
 
-（2）Calculate the CodeBLEU of the code synthesis results
+（2）Calculate the CodeBLEU of the code synthesis results.
 
 （3）Carry out human evaluation on code synthesis results.
 
-（4）Calculate the correlation coefficient of the CodeBLEU and human evaluation scores
+（4）Calculate the correlation coefficient of the CodeBLEU and human evaluation scores.
 
 ### 
 
 ### Results 
+
+The results of all baselines of the given three tasks evaluated by BLEU, accuracy (exactly match), CodeBLEU and human evaluation scores.
+
+Text-to-code
+| System     | BLEU        | ACC        | CodeBLEU | Human score |   
+| ----------- | :-------: | :--------: | :--------: | :--------:| 
+| Sys1       |    12.02    |    3.05     |  18.04    |  1.88    |
+| Sys2        |    16.82    |   10.50     |  21.71   |  1.99    |
+| Sys3       |    21.18    |    17.35    |   24.95   |  2.56    |
+| Sys4       |    26.45    |    20.10    |    30.96  |  3.13    |
+
+Code Translation
+| System     | BLEU        | ACC        | CodeBLEU | Human score |   
+| ----------- | :-------: | :--------: | :--------: | :--------:| 
+| Sys1       |    12.02    |    3.05     |  18.04    |  1.88    |
+| Sys2        |    16.82    |   10.50     |  21.71   |  1.99    |
+| Sys3       |    21.18    |    17.35    |   24.95   |  2.56    |
+| Sys4       |    26.45    |    20.10    |    30.96  |  3.13    |
+
+Code Refinement
+| System     | BLEU        | ACC        | CodeBLEU | Human score |   
+| ----------- | :-------: | :--------: | :--------: | :--------:| 
+| Sys1       |    12.02    |    3.05     |  18.04    |  1.88    |
+| Sys2        |    16.82    |   10.50     |  21.71   |  1.99    |
+| Sys3       |    21.18    |    17.35    |   24.95   |  2.56    |
+| Sys4       |    26.45    |    20.10    |    30.96  |  3.13    |
+
 
 Comparison of the Pearson correlation coefficients between human evaluation scores and three different metrics.
 
@@ -54,7 +82,7 @@ Comparison of the Pearson correlation coefficients between human evaluation scor
 | ----------- |   :-------: |  :--------: |  :--------: | 
 | BLEU       |    0.967    |    0.940    |  0.923 |
 | ACC        |    0.912    |   0.968     |   **0.999** |
-| CodeBLEU   |  **0.977** (+1%) | **0.970** (+3%) | 0.979 (+5.6%) |
+| CodeBLEU   |  **0.977** (+1.0%) | **0.970** (+3.0%) | 0.979 (+5.6%) |
 
 
 ### Abation Study

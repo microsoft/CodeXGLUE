@@ -49,7 +49,7 @@ We conduct experiments on three code generation tasks (text-to-code, code transl
 
 ### Results 
 
-The results of all baselines of the given three tasks evaluated by BLEU, accuracy (exactly match), CodeBLEU and human evaluation scores.
+(1) The results of all baselines of the given three tasks evaluated by BLEU, accuracy (exactly match), CodeBLEU and human evaluation scores.
 
 -Text-to-code
 | System     | BLEU        | ACC        | CodeBLEU | Human score |   
@@ -75,7 +75,7 @@ The results of all baselines of the given three tasks evaluated by BLEU, accurac
 | Sys3       |    92.80    |    17.6    |   83.85   |  2.02    |
 
 
-Comparison of the Pearson correlation coefficients between human evaluation scores and three different metrics.
+(2) Comparison of the Pearson correlation coefficients between human evaluation scores and three different metrics.
 
 | Metric     | Text-to-code | Code Translation | Code Refinement |   
 | ----------- |   :-------: |  :--------: |  :--------: | 

@@ -2,9 +2,9 @@
 
 ## Task Definition
 
-Code translation aims to migrate legacysoftware from one programming language in a platform toanother.
+Code translation aims to migrate legacy software from one programming language in a platform toanother.
 In CodeXGLUE, given a piece of Java (C#) code, the task is to translate the code into C# (Java) version. 
-Models are evaluated by BLEU scores and accuracy (exactly match).
+Models are evaluated by BLEU scores, accuracy (exactly match), and [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.MD).
 
 ## Dataset
 
@@ -135,7 +135,7 @@ The results on the test set are shown as below:
 
 Java to C#:
 
-|     Method     |    BLEU    | Acc (100%) |  CodeBLEU |  
+|     Method     |    BLEU    | Acc (100%) |  [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.MD) |  
 |    ----------  | :--------: | :-------:  | :-------: |
 | Naive copy     |   18.54    |    0.0     |      -    |
 | PBSMT      	 |   43.53    |   12.5     |   42.71   |
@@ -145,7 +145,7 @@ Java to C#:
 
 C# to Java:
 
-|     Method     |    BLEU    | Acc (100%) |  CodeBLEU | 
+|     Method     |    BLEU    | Acc (100%) |  [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.MD) | 
 |    ----------  | :--------: | :-------:  | :-------: |
 | Naive copy     |   18.69    |     0.0    |      -    |
 | PBSMT          |   40.06    |    16.1    |   43.48   |

@@ -10,19 +10,19 @@ BLEU, but can also consider the grammatical correctness and the logic correctnes
 
 ## Motivation
 
-### The current metrics (BLEU, acc) for code synthesis tasks, such as code translation, are not suitable enough.
+(1) The current metrics (BLEU, acc) for code synthesis tasks, such as code translation, are not suitable enough.
 
-       (1) BLEU: just consider n-gram match, ignore code structure
+       - BLEU: just consider n-gram match, ignore code structure
 
-       (2) Accuracy (exactly match): too strict for code evaluation
+       - Accuracy (exactly match): too strict for code evaluation
 
-### Program language vs. Natural language
+(2) Program language vs. Natural language
 
-       (1) Limited keywords vs. millions of words.
+       - Limited keywords vs. millions of words.
 
-       (2) Tree structure vs. sequential structure.
+       - Tree structure vs. sequential structure.
 
-       (3) Unique instructions vs. ambiguous semantic.
+       - Unique instructions vs. ambiguous semantic.
 
 ## Methods
 
@@ -46,25 +46,27 @@ We conduct experiments on three code generation tasks (text-to-code, code transl
 
 ### 
 
-### Results
+### Results 
 
+Comparison of the Pearson correlation coefficients between human evaluation scores and three different metrics.
 
 | Metric     | Text-to-code | Code Translation | Code Refinement |   
 | ----------- |   :-------: |  :--------: |  :--------: | 
 | BLEU       |    0.967    |    0.940    |  0.923 |
-| ACC        |    0.912    |   0.968     |   0.999 |
-| CodeBLEU   |  0.977 (+1%) | 0.970 (+3%) | 0.979 (+5.6%) |
+| ACC        |    0.912    |   0.968     |   **0.999** |
+| CodeBLEU   |  **0.977** (+1%) | **0.970** (+3%) | 0.979 (+5.6%) |
 
 
 ### Abation Study
 
+Resutls of the respective Pearson correlation between the human evaluation scores and the scores given by different components.
 
 | Components     | Text-to-code | Code Translation | Code Refinement |   
 | ----------- |   :-------: |  :--------: |  :--------: | 
 | n-gram       |   0.967    |    0.940    |  0.923   |
-| weighted n-gram |    0.960    |   0.934  |   0.985 |
-| syntactic AST   |  0.985      | 0.977    | 0.967 |
-| semantic data-flow |  0.978   | 0.974    | 0.983 |
+| weighted n-gram |    0.960    |   0.934  |   **0.985** |
+| syntactic AST   |  **0.985**      | **0.977**    | 0.967 |
+| semantic data-flow |  **0.978**   | **0.974**    | **0.983** |
 | CodeBLEU           |  0.977   | 0.970    | 0.979 |
 
 

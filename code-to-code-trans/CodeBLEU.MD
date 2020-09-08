@@ -51,7 +51,7 @@ We conduct experiments on three code generation tasks (text-to-code, code transl
 
 The results of all baselines of the given three tasks evaluated by BLEU, accuracy (exactly match), CodeBLEU and human evaluation scores.
 
-Text-to-code
+-Text-to-code
 | System     | BLEU        | ACC        | CodeBLEU | Human score |   
 | ----------- | :-------: | :--------: | :--------: | :--------:| 
 | Sys1       |    12.02    |    3.05     |  18.04    |  1.88    |
@@ -59,21 +59,20 @@ Text-to-code
 | Sys3       |    21.18    |    17.35    |   24.95   |  2.56    |
 | Sys4       |    26.45    |    20.10    |    30.96  |  3.13    |
 
-Code Translation
+-Code Translation
 | System     | BLEU        | ACC        | CodeBLEU | Human score |   
 | ----------- | :-------: | :--------: | :--------: | :--------:| 
-| Sys1       |    12.02    |    3.05     |  18.04    |  1.88    |
-| Sys2        |    16.82    |   10.50     |  21.71   |  1.99    |
-| Sys3       |    21.18    |    17.35    |   24.95   |  2.56    |
-| Sys4       |    26.45    |    20.10    |    30.96  |  3.13    |
+| Sys1       |    44.53    |    13.2     |  45.71    |  3.25    |
+| Sys2        |    54.84    |   31.75     |  61.14   |  3.77    |
+| Sys3       |    80.18    |    60.2    |   82.74   |  4.04    |
+| Sys4       |    81.44    |    63.5    |    84.75  |  4.25    |
 
-Code Refinement
+-Code Refinement
 | System     | BLEU        | ACC        | CodeBLEU | Human score |   
 | ----------- | :-------: | :--------: | :--------: | :--------:| 
-| Sys1       |    12.02    |    3.05     |  18.04    |  1.88    |
-| Sys2        |    16.82    |   10.50     |  21.71   |  1.99    |
-| Sys3       |    21.18    |    17.35    |   24.95   |  2.56    |
-| Sys4       |    26.45    |    20.10    |    30.96  |  3.13    |
+| Sys1       |    90.35    |    3.00     |  80.81    |  1.38    |
+| Sys2        |   91.40    |   7.01     |  82.16   |  1.54    |
+| Sys3       |    92.80    |    17.6    |   83.85   |  2.02    |
 
 
 Comparison of the Pearson correlation coefficients between human evaluation scores and three different metrics.
@@ -98,8 +97,6 @@ Resutls of the respective Pearson correlation between the human evaluation score
 | CodeBLEU           |  0.977   | 0.970    | 0.979 |
 
 
-
-# Conclusion
 
 
 

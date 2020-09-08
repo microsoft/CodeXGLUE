@@ -119,21 +119,21 @@ The results on the test set are shown as below:
 
 Small:
 
-| Method     | BLEU |  Acc (100%)   |  
-| ---------- | :-------: | :-------: |
-| Naive copy    |   78.06    |   0.0    |
-| LSTM      |   76.76    |   10.0   |
-| Transformer      |   77.21    |   14.7    |
-| CodeBERT   | **77.42** | **16.4**|
+| Method     |    BLEU   | Acc (100%) |  CodeBLEU  |  
+| ---------- | :-------: | :-------:  | :-------:  |
+| Naive copy |   78.06   |     0.0    |     -      |
+| LSTM       |   76.76   |    10.0    |     -      |
+| Transformer|   77.21   |    14.7    |    73.31   | 
+| CodeBERT   | **77.42** |  **16.4**  |  **75.58** |
 
 Medium:
 
-| Method     | BLEU |  Acc (100%)   |  
-| ---------- | :-------: | :-------: |
-| Naive copy    |   90.91    |   0.0    |
-| LSTM      |   72.08    |   2.5    |
-| Transformer      |   89.25    |   3.7   |
-| CodeBERT   | **91.07** | **5.16**|
+| Method     |    BLEU   | Acc (100%) |  CodeBLEU  |  
+| ---------- | :-------: | :-------:  | :-------:  |
+| Naive copy |   90.91   |    0.0     |     -      |
+| LSTM       |   72.08   |    2.5     |     -      |
+| Transformer|   89.25   |    3.7     |   81.72    |
+| CodeBERT   | **91.07** |  **5.16**  | **87.52**  |  
 
 # Reference
 <pre><code>@article{tufano2019empirical,

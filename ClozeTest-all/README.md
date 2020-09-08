@@ -1,6 +1,6 @@
 # CodeXGLUE -- ClozeTest-all
 
-We present two kinds of ClozeTest: ClozeTest-maxmin and ClozeTest-all. Here is the pipeline for ClozeTest-all task.
+We present two kinds of ClozeTest: ClozeTest-maxmin and ClozeTest-all. Here is the ClozeTest-all task.
 
 ## Task Description
 
@@ -32,12 +32,23 @@ Data statistics of ClozeTest-all are shown in the below table:
 
 ## Run ClozeTest
 
-You can run ClozeTest-all by the following command:
+You can run ClozeTest-all by the following command. It will automatically generate predictions to ` --output_dir`.
 
 ```shell
-python run_cloze.py \
+python code/run_cloze.py \
 			--model microsoft/codebert-base-mlm \
-			--cloze_mode all
+			--cloze_mode all \
+			--output_dir evaluator/predictions/
+```
+
+## Evaluator
+
+We provide a script to evaluate predictions for ClozeTest-all, and report accuracy for the task. You can run by the following command:
+
+```shell
+python evaluator/evaluator.py \
+			--answers evaluator/answers \
+			--predictions evaluator/predictions
 ```
 
 ## Result
@@ -48,4 +59,23 @@ The results on ClozeTest-all are shown as below:
 | :-----------: | :---: | :--------: | :---: | :----: | :---: | :---: | :---: |
 | RoBERTa-base  | 47.64 |   59.97    | 40.98 | 54.49  | 50.75 | 60.38 | 53.69 |
 | CodeBERT(MLM) | 80.17 |   81.77    | 83.31 | 87.21  | 80.63 | 85.05 | 83.89 |
+
+## Cite
+
+ClozeTest-all is built upon CodeSearchNet dataset. If you use this code or our ClozeTest-all dataset, please considering citing CodeXGLUE and CodeSearchNet:	
+
+<pre><code>@article{CodeXGLUE,
+  title={CodeXGLUE: An Open Challenge for Code Intelligence},
+  journal={arXiv},
+  year={2020},
+}</code>
+</pre>
+<pre>
+<code>@article{husain2019codesearchnet,
+  title={CodeSearchNet Challenge: Evaluating the State of Semantic Code Search},
+  author={Husain, Hamel and Wu, Ho-Hsiang and Gazit, Tiferet and Allamanis, Miltiadis and Brockschmidt, Marc},
+  journal={arXiv preprint arXiv:1909.09436},
+  year={2019}
+}</code> 
+</pre>
 

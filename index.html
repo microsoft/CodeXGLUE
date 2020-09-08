@@ -101,7 +101,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="table-responsive">
-						<h2>Leaderboard</h2>
+						<h2>Leaderboard-Overall</h2>
 						<div style="text-align:center">
 							<table class="table table-striped" id="codexgluetable">
 							<thead>
@@ -126,7 +126,6 @@
 									<th class="col-md-1">Overall Score-3 (BLEU)</th>
 								</tr>
 							</thead>
-						<tbody>
 							<tbody>
 									<tr>
 										<td>CodeBERT Baseline</td>
@@ -169,6 +168,52 @@
 							</tbody>
 						</table>
 						</div>
+					</div>
+
+					<div class="table-responsive">
+					<br>
+					<br>
+						<h2>Leaderboard-CodeCompletion-line</h2>
+						<div style="text-align:center">
+							<table class="table table-striped" id="codexgluetable" width="2000px"  cellspacing="50px" height="100px" cellpadding="100px">
+							<thead>
+								<tr>
+									<th width="30%"class="col-md-1">Rank</th>
+									<th class="col-md-1">Model</th>
+									<th class="col-md-1">Organization</th>
+									<th class="col-md-1">Submission Date</th>
+									<th class="col-md-1">CodeCompletion-line-py150-EM</th>
+									<th class="col-md-1">CodeCompletion-line-py150-Edit similarity</th>
+									<th class="col-md-1">CodeCompletion-line-java-EM</th>
+									<th class="col-md-1">CodeCompletionline-java-Edit similarity</th>
+								</tr>
+							</thead>
+							<tbody>
+									<tr>
+										<td>1</td>
+										<td>Transformer w/GPT-2(12L)</td>
+										<td>CodeXGLUE Team</td>
+										<td>2020-06-19</td>
+										<td>38.96</td>
+										<td>69.29</td>
+										<td>24.30</td>
+										<td>60.70</td>
+								  </tr>
+									<tr>
+										<td>2</td>
+										<td>Transformer (12L)</td>
+										<td>CodeXGLUE Team</td>
+										<td>2020-06-19</td>
+										<td>36.80</td>
+										<td>67.66</td>
+										<td>15.33</td>
+										<td>50.39</td>
+								  </tr>
+							</tbody>
+						</table>
+						</div>
+
+
 					</div>
 				</div>
 			</div>

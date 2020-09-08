@@ -149,5 +149,5 @@ The results on concode test set are shown as below:
 | Iyer-Simp+200 idoms (EMNLP 2020)                      |  12.20  |  26.60   |     -    |
 | Transformer w/ GPT-2 (12L)                            |  17.35  |  25.37   |   22.79  |
 | Transformer w/ CodeGPT (12L)                          |  18.25  |  28.69   |   25.69  |
-| Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |**20.10**|**32.79** |   27.74  |
+| Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |**20.10**|**32.79** | **27.74**|
 

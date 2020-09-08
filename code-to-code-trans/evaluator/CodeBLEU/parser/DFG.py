@@ -40,7 +40,7 @@ def DFG_python(root_node,index_to_code,states):
         else:
             name_indexs=tree_to_variable_index(name,index_to_code)
             value_indexs=tree_to_variable_index(value,index_to_code)
-            temp,states=DFG_java(value,index_to_code,states)
+            temp,states=DFG_python(value,index_to_code,states)
             DFG+=temp            
             for index1 in name_indexs:
                 idx1,code1=index_to_code[index1]
@@ -566,7 +566,7 @@ def DFG_ruby(root_node,index_to_code,states):
         else:
             name_indexs=tree_to_variable_index(name,index_to_code)
             value_indexs=tree_to_variable_index(value,index_to_code)
-            temp,states=DFG_java(value,index_to_code,states)
+            temp,states=DFG_ruby(value,index_to_code,states)
             DFG+=temp            
             for index1 in name_indexs:
                 idx1,code1=index_to_code[index1]

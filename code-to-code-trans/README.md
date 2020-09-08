@@ -135,21 +135,21 @@ The results on the test set are shown as below:
 
 Java to C#:
 
-| Method     | BLEU |  Acc (100%)   |  
-| ---------- | :-------: | :-------: |
-| Naive copy    |   18.54    |   0.0    |
-| PBSMT      |   43.53    |   12.5    |
-| Transformer      |   55.84    |   33.0    |
-| Roborta (code)     |   77.46    |   56.1    |
-| CodeBERT   | **79.92** | **59.0**|
+|     Method     |    BLEU    | Acc (100%) |  CodeBLEU |  
+|    ----------  | :--------: | :-------:  | :-------: |
+| Naive copy     |   18.54    |    0.0     |      -    |
+| PBSMT      	 |   43.53    |   12.5     |   42.71   |
+| Transformer    |   55.84    |   33.0     |   63.74   |
+| Roborta (code) |   77.46    |   56.1     |   83.07   |
+| CodeBERT   	 | **79.92**  | **59.0**   | **85.10** |
 
 C# to Java:
 
-| Method     | BLEU |  Acc (100%)   |  
-| ---------- | :-------: | :-------: |
-| Naive copy    |   18.69    |   0.0    |
-| PBSMT      |   40.06    |   16.1    |
-| Transformer      |   50.47    |   37.9   |
-| Roborta (code)     |   71.99  |   57.9    |
-| CodeBERT   | **72.14** | **58.8**|
+|     Method     |    BLEU    | Acc (100%) |  CodeBLEU | 
+|    ----------  | :--------: | :-------:  | :-------: |
+| Naive copy     |   18.69    |     0.0    |      -    |
+| PBSMT          |   40.06    |    16.1    |   43.48   |
+| Transformer    |   50.47    |    37.9    |   61.59   |
+| Roborta (code) |   71.99    |    57.9    | **80.18** |
+| CodeBERT       | **72.14**  |  **58.8**  |   79.41   |
 

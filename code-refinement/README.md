@@ -4,7 +4,7 @@
 
 Code refinement aims to automatically fix bugs in the code, which can contribute to reducing the costof bug-fixes for developers.
 In CodeXGLUE, given a piece of Java code with bugs, the task is to remove the bugs to output the refined code. 
-Models are evaluated by BLEU scores and accuracy (exactly match).
+Models are evaluated by BLEU scores, accuracy (exactly match) and [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.MD).
 
 ## Dataset
 
@@ -119,7 +119,7 @@ The results on the test set are shown as below:
 
 Small:
 
-| Method     |    BLEU   | Acc (100%) |  CodeBLEU  |  
+| Method     |    BLEU   | Acc (100%) |  [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.MD)  |  
 | ---------- | :-------: | :-------:  | :-------:  |
 | Naive copy |   78.06   |     0.0    |     -      |
 | LSTM       |   76.76   |    10.0    |     -      |
@@ -128,7 +128,7 @@ Small:
 
 Medium:
 
-| Method     |    BLEU   | Acc (100%) |  CodeBLEU  |  
+| Method     |    BLEU   | Acc (100%) |  [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.MD)  |  
 | ---------- | :-------: | :-------:  | :-------:  |
 | Naive copy |   90.91   |    0.0     |     -      |
 | LSTM       |   72.08   |    2.5     |     -      |

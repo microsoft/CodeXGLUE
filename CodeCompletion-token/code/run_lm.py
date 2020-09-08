@@ -683,7 +683,7 @@ def main():
     args.start_epoch = 0
     args.start_step = 0
     checkpoint_last = os.path.join(args.output_dir, 'checkpoint-last')
-    if os.path.exists(checkpoint_last) and os.listdir(checkpoint_last):
+    if args.do_train and os.path.exists(checkpoint_last) and os.listdir(checkpoint_last):
         args.pretrain_dir = os.path.join(checkpoint_last)
         args.config_name = os.path.join(checkpoint_last, 'config.json')
         idx_file = os.path.join(checkpoint_last, 'idx_file.txt')

@@ -179,12 +179,12 @@
 							<table class="table table-striped" id="codexgluetable">
 								<thead>
 								<tr>
-									<th rowspan="2" valign="middle" >Rank</th>
-									<th rowspan="2" valign="middle">Model</th>
-									<th rowspan="2" valign="middle">Organization</th>
-									<th rowspan="2" valign="middle">Submission Date</th>
-									<th colspan="4" valign="middle" width="2000px">CodeCompletion-line</th>
-									<th colspan="2" valign="middle" width="1000px">CodeCompletion-token</th>
+									<th rowspan="2" valign="middle" width="50px" >Rank</th>
+									<th rowspan="2" valign="middle" width="100px" >Model</th>
+									<th rowspan="2" valign="middle" width="100px" >Organization</th>
+									<th rowspan="2" valign="middle" width="100px" >Submission Date</th>
+									<th colspan="4" valign="middle" width="350px">CodeCompletion-line</th>
+									<th colspan="2" valign="middle" width="180px">CodeCompletion-token</th>
 								</tr>
 								<tr>
 									<th >py150-EM</th>
@@ -259,9 +259,753 @@
 							</tbody>
 						</table>
 						</div>
-
-
 					</div>
+
+
+					<div class="table-responsive">
+						<br>
+						<br>
+							<h2>Leaderboard-CloneDetection</h2>
+							<div style="text-align:center">
+								<!-- <table class="table table-striped" id="codexgluetable" width="2000px"  cellspacing="50px" height="100px" cellpadding="100px"> -->
+								<table class="table table-striped" id="codexgluetable">
+									<thead>
+									<tr>
+										<th rowspan="2" valign="middle" width="50px">Rank</th>
+										<th rowspan="2" valign="middle" width="100px">Model</th>
+										<th rowspan="2" valign="middle" width="100px">Organization</th>
+										<th rowspan="2" valign="middle" width="100px">Submission Date</th>
+										<th colspan="3" valign="middle"  width="350px">BigCloneBench</th>
+										<th valign="middle"  width="180px">POJ-104</th>
+									</tr>
+									<tr>
+										<th >Precision</th>
+										<th >Recall</th>
+										<th >F1</th>
+										<th >MAP(%)</th>
+									</tr>
+								</thead>
+								<tbody>
+										<tr>
+												<td>1</td>
+												<td>CodeBERT</td>
+												<td>CodeXGLUE Team</td>
+												<td>2020-08-30</td>
+												<td>0.960</td>
+												<td>0.969</td>
+												<td>0.965</td>
+												<td>84.29</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>FA-AST-GMN</td>
+											<td>CodeXGLUE Team</td>
+											<td>2020-08-30</td>
+											<td>0.96</td>
+											<td>0.94</td>
+											<td>0.95</td>
+											<td>--</td>
+									  </tr>
+									  <tr>
+										  <td>3</td>
+										  <td>ASTNN</td>
+										  <td>CodeXGLUE Team</td>
+										  <td>2020-08-30</td>
+										  <td>0.92</td>
+										  <td>0.94</td>
+										  <td>0.94</td>
+										  <td>--</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>CDLH</td>
+										<td>CodeXGLUE Team</td>
+										<td>2020-08-30</td>
+										<td>0.92</td>
+										<td>0.74</td>
+										<td>0.82</td>
+										<td>--</td>
+								  </tr>
+								  <tr>
+									  <td>5</td>
+									  <td>RtvNN</td>
+									  <td>CodeXGLUE Team</td>
+									  <td>2020-08-30</td>
+									  <td>0.95</td>
+									  <td>0.01</td>
+									  <td>0.01</td>
+									  <td>--</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>Deckard</td>
+									<td>CodeXGLUE Team</td>
+									<td>2020-08-30</td>
+									<td>0.93</td>
+									<td>0.02</td>
+									<td>0.03</td>
+									<td>--</td>
+							  </tr>
+													<tr>
+														<td>7</td>
+														<td>MISIM-GNN</td>
+														<td>CodeXGLUE Team</td>
+														<td>2020-08-30</td>
+														<td>--</td>
+														<td>--</td>
+														<td>--</td>
+														<td>82.45</td>
+													</tr>
+													<tr>
+														<td>8</td>
+														<td>Aroma-Cos</td>
+														<td>CodeXGLUE Team</td>
+														<td>2020-08-30</td>
+														<td>--</td>
+														<td>--</td>
+														<td>--</td>
+														<td>55.12</td>
+													</tr>
+													<tr>
+														<td>9</td>
+														<td>Aroma-Dot</td>
+														<td>CodeXGLUE Team</td>
+														<td>2020-08-30</td>
+														<td>--</td>
+														<td>--</td>
+														<td>--</td>
+														<td>52.08</td>
+													</tr>
+													<tr>
+														<td>10</td>
+														<td>NCC-w/0-inst2vec</td>
+														<td>CodeXGLUE Team</td>
+														<td>2020-08-30</td>
+														<td>--</td>
+														<td>--</td>
+														<td>--</td>
+														<td>54.19</td>
+													</tr>
+													<tr>
+														<td>11</td>
+														<td>NCC</td>
+														<td>CodeXGLUE Team</td>
+														<td>2020-08-30</td>
+														<td>--</td>
+														<td>--</td>
+														<td>--</td>
+														<td>39.95</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>code2vec</td>
+														<td>CodeXGLUE Team</td>
+														<td>2020-08-30</td>
+														<td>--</td>
+														<td>--</td>
+														<td>--</td>
+														<td>1.98</td>
+													</tr>
+									
+								</tbody>
+							</table>
+							</div>
+						</div>
+	
+
+
+						<div class="table-responsive">
+							<br>
+							<br>
+								<h2>Leaderboard-ClozeTest</h2>
+								<div style="text-align:center">
+									<!-- <table class="table table-striped" id="codexgluetable" width="2000px"  cellspacing="50px" height="100px" cellpadding="100px"> -->
+									<table class="table table-striped" id="codexgluetable">
+										<thead>
+										<tr>
+											<th rowspan="2" valign="middle" width="20px">Rank</th>
+											<th rowspan="2" valign="middle" width="100px">Model</th>
+											<th rowspan="2" valign="middle" width="100px">Organization</th>
+											<th rowspan="2" valign="middle" width="80px">Submission Date</th>
+											<th colspan="7" valign="middle"  width="210px">ClozeTest-all</th>
+											<th colspan="7" valign="middle"  width="210px">ClozeTest-maxmin</th>
+										</tr>
+										<tr>
+											<th >All</th>
+											<th >Ruby</th>
+											<th >JavaScript</th>
+											<th >Go</th>
+											<th >Python</th>
+											<th >Java</th>
+											<th >PHP</th>
+											<th >All</th>
+											<th >Ruby</th>
+											<th >JavaScript</th>
+											<th >Go</th>
+											<th >Python</th>
+											<th >Java</th>
+											<th >PHP</th>
+										</tr>
+									</thead>
+									<tbody>
+											<tr>
+													<td>1</td>
+													<td>CodeBERT(MLM)</td>
+													<td>CodeXGLUE Team</td>
+													<td>2020-08-30</td>
+													<td>83.89</td>
+													<td>80.17</td>
+													<td>81.77</td>
+													<td>83.31</td>
+													<td>87.21</td>
+													<td>80.63</td>
+													<td>85.05</td>
+													<td>85.66</td>
+													<td>86.84</td>
+													<td>84.93</td>
+													<td>92.76</td>
+													<td>81.25</td>
+													<td>91.70</td>
+													<td>89.93</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>RoBERTa-base</td>
+												<td>CodeXGLUE Team</td>
+												<td>2020-08-30</td>
+												<td>53.69</td>
+												<td>47.64</td>
+												<td>59.97</td>
+												<td>40.98</td>
+												<td>54.49</td>
+												<td>50.75</td>
+												<td>60.38</td>
+												<td>62.68</td>
+												<td>73.68</td>
+												<td>65.81</td>
+												<td>73.68</td>
+												<td>59.18</td>
+												<td>59.75</td>
+												<td>69.78</td>
+										  </tr>
+									</tbody>
+								</table>
+								</div>
+							</div>
+
+
+							<div class="table-responsive">
+								<br>
+								<br>
+									<h2>Leaderboard-NL-code-search</h2>
+									<div style="text-align:center">
+										<!-- <table class="table table-striped" id="codexgluetable" width="2000px"  cellspacing="50px" height="100px" cellpadding="100px"> -->
+										<table class="table table-striped" id="codexgluetable">
+											<thead>
+											<tr>
+												<th rowspan="2" valign="middle" width="50px">Rank</th>
+												<th rowspan="2" valign="middle" width="100px">Model</th>
+												<th rowspan="2" valign="middle" width="100px">Organization</th>
+												<th rowspan="2" valign="middle" width="100px">Submission Date</th>
+												<th valign="middle"  width="200px">NL-code-search-Adv</th>
+												<th colspan="4" valign="middle"  width="200px">NL-code-search-WebQuery</th>
+											</tr>
+											<tr>
+												<th >MRR</th>
+												<th >Acc-WebQuery</th>
+												<th >F1-WebQuery</th>
+												<th >Acc-StaQC</th>
+												<th >F1-StaQC</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr>
+														<td>1</td>
+														<td>CodeBERT</td>
+														<td>CodeXGLUE Team</td>
+														<td>2020-08-30</td>
+														<td>0.2891</td>
+														<td>0.504</td>
+														<td>0.572</td>
+														<td>0.827</td>
+														<td>0.821</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>RoBERTa-base</td>
+													<td>CodeXGLUE Team</td>
+													<td>2020-08-30</td>
+													<td>0.1833</td>
+													<td>0.483</td>
+													<td>0.518</td>
+													<td>0.813</td>
+													<td>0.798</td>
+											  </tr>
+												<tr>
+													<td>3</td>
+													<td>Code-HNN</td>
+													<td>OSU Team</td>
+													<td>2018</td>
+													<td>--</td>
+													<td>--</td>
+													<td>--</td>
+													<td>--</td>
+													<td>0.812</td>
+											  </tr>
+										</tbody>
+									</table>
+									</div>
+								</div>
+			
+		
+
+
+								<div class="table-responsive">
+									<br>
+									<br>
+										<h2>Leaderboard-DefectDetection</h2>
+										<div style="text-align:center">
+											<!-- <table class="table table-striped" id="codexgluetable" width="2000px"  cellspacing="50px" height="100px" cellpadding="100px"> -->
+											<table class="table table-striped" id="codexgluetable">
+												<thead>
+												<tr>
+													<th rowspan="1" valign="middle" width="50px">Rank</th>
+													<th rowspan="1" valign="middle" width="100px">Model</th>
+													<th rowspan="1" valign="middle" width="100px">Organization</th>
+													<th rowspan="1" valign="middle" width="100px">Submission Date</th>
+													<th rowspan="1" valign="middle" width="730px">Accuracy</th>
+												</tr>
+											</thead>
+											<tbody>
+													<tr>
+															<td>1</td>
+															<td>CodeBERT</td>
+															<td>CodeXGLUE Team</td>
+															<td>2020-08-30</td>
+															<td>62.08</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>RoBERTa</td>
+														<td>CodeXGLUE Team</td>
+														<td>2020-08-30</td>
+														<td>61.05</td>
+												  </tr>
+													<tr>
+														<td>3</td>
+														<td>TextCNN</td>
+														<td>CodeXGLUE Team</td>
+														<td>2020-08-30</td>
+														<td>60.69</td>
+												  </tr>
+												  <tr>
+													  <td>4</td>
+													  <td>BiLSTM</td>
+													  <td>CodeXGLUE Team</td>
+													  <td>2020-08-30</td>
+													  <td>59.37</td>
+												</tr>
+											</tbody>
+										</table>
+										</div>
+									</div>
+				
+
+									<div class="table-responsive">
+										<br>
+										<br>
+											<h2>Leaderboard-CodeRefinement</h2>
+											<div style="text-align:center">
+												<!-- <table class="table table-striped" id="codexgluetable" width="2000px"  cellspacing="50px" height="100px" cellpadding="100px"> -->
+												<table class="table table-striped" id="codexgluetable">
+													<thead>
+													<tr>
+														<th rowspan="2" valign="middle" width="50px">Rank</th>
+														<th rowspan="2" valign="middle" width="100px">Model</th>
+														<th rowspan="2" valign="middle" width="100px">Organization</th>
+														<th rowspan="2" valign="middle" width="100px">Submission Date</th>
+														<th colspan="3" valign="middle"  width="200px">small test set</th>
+														<th colspan="3" valign="middle"  width="200px">medium test set</th>
+													</tr>
+													<tr>
+														<th >BLEU</th>
+														<th >Acc(%)</th>
+														<th >CodeBLEU</th>
+														<th >BLEU</th>
+														<th >Acc(%)</th>
+														<th >CodeBLEU</th>
+													</tr>
+												</thead>
+												<tbody>
+														<tr>
+																<td>1</td>
+																<td>CodeBERT</td>
+																<td>CodeXGLUE Team</td>
+																<td>2020-08-30</td>
+																<td>77.42</td>
+																<td>16.4</td>
+																<td>75.58</td>
+																<td>91.07</td>
+																<td>5.16</td>
+																<td>87.52</td>
+														</tr>
+														<tr>
+															<td>2</td>
+															<td>Transformer</td>
+															<td>CodeXGLUE Team</td>
+															<td>2020-08-30</td>
+																<td>77.21</td>
+																<td>14.7</td>
+																<td>73.31</td>
+																<td>89.25</td>
+																<td>3.7</td>
+																<td>81.72</td>
+													  </tr>
+														<tr>
+															<td>3</td>
+															<td>LSTM</td>
+															<td>CodeXGLUE Team</td>
+															<td>2020-08-30</td>
+															<td>76.76</td>
+															<td>10.0</td>
+															<td>--</td>
+															<td>72.08</td>
+															<td>2.5</td>
+															<td>--</td>
+													  </tr>
+													  <tr>
+														  <td>4</td>
+														  <td>Naive copy</td>
+														  <td>CodeXGLUE Team</td>
+														  <td>2020-08-30</td>
+														  <td>78.06</td>
+														  <td>0.0</td>
+														  <td>--</td>
+														  <td>90.91</td>
+														  <td>0.0</td>
+														  <td>--</td>
+													</tr>
+												</tbody>
+											</table>
+											</div>
+										</div>
+					
+
+
+										<div class="table-responsive">
+											<br>
+											<br>
+												<h2>Leaderboard-Code2Code Translation</h2>
+												<div style="text-align:center">
+													<!-- <table class="table table-striped" id="codexgluetable" width="2000px"  cellspacing="50px" height="100px" cellpadding="100px"> -->
+													<table class="table table-striped" id="codexgluetable">
+														<thead>
+														<tr>
+															<th rowspan="2" valign="middle" width="50px">Rank</th>
+															<th rowspan="2" valign="middle" width="100px">Model</th>
+															<th rowspan="2" valign="middle" width="100px">Organization</th>
+															<th rowspan="2" valign="middle" width="100px">Submission Date</th>
+															<th colspan="3" valign="middle"  width="200px">Java to C# </th>
+															<th colspan="3" valign="middle"  width="200px">C# to Java</th>
+														</tr>
+														<tr>
+															<th >BLEU</th>
+															<th >Acc(%)</th>
+															<th >CodeBLEU</th>
+															<th >BLEU</th>
+															<th >Acc(%)</th>
+															<th >CodeBLEU</th>
+														</tr>
+													</thead>
+													<tbody>
+															<tr>
+																	<td>1</td>
+																	<td>CodeBERT</td>
+																	<td>CodeXGLUE Team</td>
+																	<td>2020-08-30</td>
+																	<td>79.92</td>
+																	<td>59.0</td>
+																	<td>85.10</td>
+																	<td>72.14</td>
+																	<td>58.8</td>
+																	<td>79.41</td>
+															</tr>
+															<tr>
+																<td>2</td>
+																<td>RoBERTa(code)</td>
+																<td>CodeXGLUE Team</td>
+																<td>2020-08-30</td>
+																	<td>77.46</td>
+																	<td>56.1</td>
+																	<td>83.07</td>
+																	<td>71.99</td>
+																	<td>57.9</td>
+																	<td>80.18</td>
+														  </tr>
+															<tr>
+																<td>3</td>
+																<td>Transformer</td>
+																<td>CodeXGLUE Team</td>
+																<td>2020-08-30</td>
+																<td>55.84</td>
+																<td>33.0</td>
+																<td>63.74</td>
+																<td>50.47</td>
+																<td>37.9</td>
+																<td>61.59</td>
+														  </tr>
+														  <tr>
+															  <td>4</td>
+															  <td>PBSMT</td>
+															  <td>CodeXGLUE Team</td>
+															  <td>2020-08-30</td>
+															  <td>43.53</td>
+															  <td>12.5</td>
+															  <td>42.71</td>
+															  <td>40.06</td>
+															  <td>16.1</td>
+															  <td>43.48</td>
+														</tr>
+														<tr>
+															<td>5</td>
+															<td>Naive copy</td>
+															<td>CodeXGLUE Team</td>
+															<td>2020-08-30</td>
+															<td>18.54</td>
+															<td>0.0</td>
+															<td>--</td>
+															<td>18.69</td>
+															<td>0.0</td>
+															<td>--</td>
+													  </tr>
+													</tbody>
+												</table>
+												</div>
+											</div>
+						
+					
+
+											<div class="table-responsive">
+												<br>
+												<br>
+													<h2>Leaderboard-Code2Text Generation</h2>
+													<div style="text-align:center">
+														<!-- <table class="table table-striped" id="codexgluetable" width="2000px"  cellspacing="50px" height="100px" cellpadding="100px"> -->
+														<table class="table table-striped" id="codexgluetable">
+															<thead>
+															<tr>
+																<th rowspan="2" valign="middle" width="50px">Rank</th>
+																<th rowspan="2" valign="middle" width="100px">Model</th>
+																<th rowspan="2" valign="middle" width="100px">Organization</th>
+																<th rowspan="2" valign="middle" width="100px">Submission Date</th>
+																<th colspan="7" valign="middle"  width="200px">BLEU</th>
+															</tr>
+															<tr>
+																<th >All</th>
+																<th >Ruby</th>
+																<th >JavaScript</th>
+																<th >Go</th>
+																<th >Python</th>
+																<th >Java</th>
+																<th >PHP</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																		<td>1</td>
+																		<td>CodeBERT</td>
+																		<td>CodeXGLUE Team</td>
+																		<td>2020-08-30</td>
+																		<td>17.83</td>
+																		<td>12.16</td>
+																		<td>14.90</td>
+																		<td>18.07</td>
+																		<td>19.06</td>
+																		<td>17.65</td>
+																		<td>25.16</td>
+																</tr>
+																<tr>
+																	<td>2</td>
+																	<td>RoBERTa</td>
+																	<td>CodeXGLUE Team</td>
+																	<td>2020-08-30</td>
+																		<td>16.57</td>
+																		<td>11.17</td>
+																		<td>11.90</td>
+																		<td>17.72</td>
+																		<td>18.14</td>
+																		<td>16.47</td>
+																		<td>24.02</td>
+															  </tr>
+																<tr>
+																	<td>3</td>
+																	<td>Transformer</td>
+																	<td>CodeXGLUE Team</td>
+																	<td>2020-08-30</td>
+																	<td>15.56</td>
+																	<td>11.18</td>
+																	<td>11.59</td>
+																	<td>16.38</td>
+																	<td>15.81</td>
+																	<td>16.26</td>
+																	<td>22.12</td>
+															  </tr>
+															  <tr>
+																  <td>4</td>
+																  <td>Seq2Seq</td>
+																  <td>CodeXGLUE Team</td>
+																  <td>2020-08-30</td>
+																  <td>14.32</td>
+																  <td>9.64</td>
+																  <td>10.21</td>
+																  <td>13.98</td>
+																  <td>15.93</td>
+																  <td>15.09</td>
+																  <td>21.08</td>
+															</tr>
+														</tbody>
+													</table>
+													</div>
+												</div>
+							
+	
+												<div class="table-responsive">
+													<br>
+													<br>
+														<h2>Leaderboard-Text2Code Generation</h2>
+														<div style="text-align:center">
+															<!-- <table class="table table-striped" id="codexgluetable" width="2000px"  cellspacing="50px" height="100px" cellpadding="100px"> -->
+															<table class="table table-striped" id="codexgluetable">
+																<thead>
+																<tr>
+																	<th rowspan="2" valign="middle" width="50px">Rank</th>
+																	<th rowspan="2" valign="middle" width="100px">Model</th>
+																	<th rowspan="2" valign="middle" width="100px">Organization</th>
+																	<th rowspan="2" valign="middle" width="100px">Submission Date</th>
+																	<th colspan="3" valign="middle" width="729px">Text2Code Generation</th>
+																</tr>
+																<tr>
+																	<th  width="243px">EM</th>
+																	<th  width="243px">BLEU</th>
+																	<th  width="243px">CodeBLEU</th>
+																</tr>
+															</thead>
+															<tbody>
+																	<tr>
+																			<td>1</td>
+																			<td>Transformer w/ CodeGPT (12L)</td>
+																			<td>CodeXGLUE Team</td>
+																			<td>2020-08-30</td>
+																			<td>18.25</td>
+																			<td>28.69</td>
+																			<td>25.69</td>
+																	</tr>
+																	<tr>
+																		<td>2</td>
+																		<td>Transformer w/ GPT-2 (12L)</td>
+																		<td>CodeXGLUE Team</td>
+																		<td>2020-08-30</td>
+																		<td>17.35</td>
+																		<td>25.37</td>
+																		<td>22.79</td>
+																  </tr>
+																	<tr>
+																		<td>3</td>
+																		<td>Iyer-Simp+200 idoms</td>
+																		<td>UW</td>
+																		<td>2019</td>
+																		<td>12.20</td>
+																		<td>26.60</td>
+																		<td>--</td>
+																  </tr>
+																  <tr>
+																	  <td>4</td>
+																	  <td>Seq2Action+MAML</td>
+																	  <td>CodeXGLUE Team</td>
+																	  <td>2018</td>
+																	  <td>10.05</td>
+																	  <td>24.40</td>
+																	  <td>20.99</td>
+																</tr>
+																<tr>
+																	<td>5</td>
+																	<td>Seq2Seq</td>
+																	<td>CodeXGLUE Team</td>
+																	<td>2020-08-30</td>
+																	<td>3.05</td>
+																	<td>21.31</td>
+																	<td>17.61</td>
+															  </tr>
+															</tbody>
+														</table>
+														</div>
+													</div>
+								
+	
+													<div class="table-responsive">
+														<br>
+														<br>
+															<h2>Leaderboard-Text2Text Generation</h2>
+															<div style="text-align:center">
+																<!-- <table class="table table-striped" id="codexgluetable" width="2000px"  cellspacing="50px" height="100px" cellpadding="100px"> -->
+																<table class="table table-striped" id="codexgluetable">
+																	<thead>
+																	<tr>
+																		<th rowspan="2" valign="middle" width="50px">Rank</th>
+																		<th rowspan="2" valign="middle" width="100px">Model</th>
+																		<th rowspan="2" valign="middle" width="100px">Organization</th>
+																		<th rowspan="2" valign="middle" width="100px">Submission Date</th>
+																		<th colspan="8" valign="middle"  width="200px">Translation Direction</th>
+																	</tr>
+																	<tr>
+																		<th >EN->DA</th>
+																		<th >EN->LV</th>
+																		<th >EN->NO</th>
+																		<th >EN->ZH</th>
+																		<th >DA->EN</th>
+																		<th >LV->EN</th>
+																		<th >NO->EN</th>
+																		<th >ZH->EN</th>
+																	</tr>
+																</thead>
+																<tbody>
+																		<tr>
+																				<td>1</td>
+																				<td>Pretrained Transformer</td>
+																				<td>CodeXGLUE Team</td>
+																				<td>2020-08-30</td>
+																				<td>69.46</td>
+																				<td>55.92</td>
+																				<td>70.23</td>
+																				<td>73.54</td>
+																				<td>75.85</td>
+																				<td>70.73</td>
+																				<td>74.63</td>
+																				<td>67.01</td>
+																		</tr>
+																		<tr>
+																			<td>2</td>
+																			<td>Transformer</td>
+																			<td>CodeXGLUE Team</td>
+																			<td>2020-08-30</td>
+																			<td>61.60</td>
+																			<td>44.06</td>
+																			<td>61.17</td>
+																			<td>64.69</td>
+																			<td>64.88</td>
+																			<td>56.50</td>
+																			<td>63.05</td>
+																			<td>55.29</td>
+																	  </tr>
+																</tbody>
+															</table>
+															</div>
+														</div>
+									
+																							
+	
+
+
 				</div>
 			</div>
 		</section>

@@ -32,9 +32,9 @@ We propose weighted n-gram match and syntactic AST match to measure grammatical 
 
 ### Examples
 
-![Example1](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/example1.jpg)
+![Example1](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/example1.png)
 
-![Example2](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/example2.jpg)
+![Example2](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/example2.png)
 
 ## Experiments
 

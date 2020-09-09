@@ -507,7 +507,7 @@ class SmoothingFunction:
         """
         Smoothing method 5:
         The matched counts for similar values of n should be similar. To a
-        calculate the n-gram matched count, it averages the nâˆ?, n and n+1 gram
+        calculate the n-gram matched count, it averages the nâˆ’1, n and n+1 gram
         matched counts.
         """
         hyp_len = hyp_len if hyp_len else len(hypothesis)
@@ -525,7 +525,7 @@ class SmoothingFunction:
         Smoothing method 6:
         Interpolates the maximum likelihood estimate of the precision *p_n* with
         a prior estimate *pi0*. The prior is estimated by assuming that the ratio
-        between pn and pnâˆ? will be the same as that between pnâˆ? and pnâˆ?; from
+        between pn and pnâˆ’1 will be the same as that between pnâˆ’1 and pnâˆ’2; from
         Gao and He (2013) Training MRF-Based Phrase Translation Models using
         Gradient Ascent. In NAACL.
         """

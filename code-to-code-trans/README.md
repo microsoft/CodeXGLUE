@@ -53,7 +53,7 @@ Taking Java to C# translation as example:
 
 ```shell
 cd code
-$pretrained_model = the place where you download CodeBERT models
+$pretrained_model = the place where you download CodeBERT models e.g. microsoft/codebert-base
 $output_dir = the place where you want to save the fine-tuned models and predictions
 python run.py \
 	--do_train \

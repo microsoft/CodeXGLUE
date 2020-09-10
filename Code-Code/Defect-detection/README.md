@@ -92,7 +92,7 @@ python run.py \
     --block_size 400 \
     --train_batch_size 32 \
     --eval_batch_size 64 \
-    --learning_rate 5e-5 \
+    --learning_rate 2e-5 \
     --max_grad_norm 1.0 \
     --evaluate_during_training \
     --seed 123456  2>&1 | tee train.log
@@ -117,7 +117,7 @@ python run.py \
     --block_size 400 \
     --train_batch_size 32 \
     --eval_batch_size 64 \
-    --learning_rate 5e-5 \
+    --learning_rate 2e-5 \
     --max_grad_norm 1.0 \
     --evaluate_during_training \
     --seed 123456 2>&1 | tee test.log
@@ -129,7 +129,7 @@ python run.py \
 python ../evaluator/evaluator.py -a ../dataset/test.jsonl -p saved_models/predictions.txt
 ```
 
-{'Acc': 0.6207906295754027}
+{'Acc': 0.6255490483162518}
 
 ## Result
 
@@ -140,5 +140,5 @@ The results on the test set are shown as below:
 | BiLSTM   |   59.37   |
 | TextCNN  |   60.69   |
 | RoBERTa  |   61.05   |
-| CodeBERT | **62.08** |
+| CodeBERT | **62.55** |
 

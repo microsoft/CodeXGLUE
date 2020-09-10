@@ -114,7 +114,7 @@ python run.py \
     --eval_data_file=../dataset/valid.jsonl \
     --test_data_file=../dataset/test.jsonl \
     --epoch 5 \
-    --block_size 256 \
+    --block_size 400 \
     --train_batch_size 32 \
     --eval_batch_size 64 \
     --learning_rate 5e-5 \

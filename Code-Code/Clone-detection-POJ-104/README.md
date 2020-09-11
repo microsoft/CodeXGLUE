@@ -129,7 +129,7 @@ python run.py \
     --block_size 400 \
     --train_batch_size 8 \
     --eval_batch_size 16 \
-    --learning_rate 5e-5 \
+    --learning_rate 2e-5 \
     --max_grad_norm 1.0 \
     --evaluate_during_training \
     --seed 123456 2>&1| tee train.log
@@ -155,7 +155,7 @@ python run.py \
     --block_size 400 \
     --train_batch_size 8 \
     --eval_batch_size 16 \
-    --learning_rate 5e-5 \
+    --learning_rate 2e-5 \
     --max_grad_norm 1.0 \
     --evaluate_during_training \
     --seed 123456 2>&1| tee test.log
@@ -168,7 +168,7 @@ python ../evaluator/extract_answers.py -c ../dataset/test.jsonl -o saved_models/
 python ../evaluator/evaluator.py -a saved_models/answers.jsonl   -p saved_models/predictions.jsonl 
 ```
 
-{'MAP': 0.8429}
+{'MAP': 0.8674}
 
 ## Result
 
@@ -182,5 +182,5 @@ The results on the test set are shown as below:
 | Aroma-Dot        |   52.08   |
 | Aroma-Cos        |   55.12   |
 | MISIM-GNN        |   82.45   |
-| CodeBERT         | **84.29** |
+| CodeBERT         | **86.74** |
 

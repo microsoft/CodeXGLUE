@@ -141,12 +141,12 @@ The results on multi-lingual test dataset are shown as below:
 
 | Translation Direction  | Transformer | Pretrained Transformer|   
 | -----------            |   :-------: |  :--------: | 
-| English -> Danish      |    61.60    |    69.46    |  
-| English  -> Latvian    |    44.06    |   55.92     |   
-| English -> Norwegian   |    61.17    |    70.23    |
-| English -> Chinese     |    64.69    |   73.54     | 
-| Danish -> English      |    64.88    |    75.85    |  
-| Latvian -> English     |   56.50     |   70.73     |   
-| Norwegian -> English   |    63.05    |    74.63    |
-| Chinese -> English     |    55.29    |    67.01    | 
+| English -> Danish      |    53.31    |    67.09    |  
+| English  -> Latvian    |    37.85    |   51.92     |   
+| English -> Norwegian   |    53.84    |    68.00    |
+| English -> Chinese     |    59.90    |   70.60     | 
+| Danish -> English      |    58.73    |    67.02    |  
+| Latvian -> English     |   50.37     |   68.30     |   
+| Norwegian -> English   |    57.33    |    71.84    |
+| Chinese -> English     |    50.00    |    64.47    | 
 

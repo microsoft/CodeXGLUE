@@ -1,0 +1,1000 @@
+&#124; MCDUserNotificationReadStateFilterAny &#124; 0 &#124; Include notifications regardless of read state . &#124;
+# # Using the platform
+&#124; MCDUserNotificationUserActionStateFilterSnoozed &#124; 4 &#124; Include notifications that have been snoozed by the user . &#124;
+The description text for the &quot; details &quot; tile of the activity .
+&#124; MCDUserNotificationStatusFilterAny &#124; 0 &#124; Include all notifications regardless of status value . &#124;
+title : Publishing and reading User Activities ( Android )
+4 . Modify the file and use the preview tab to ensure the changes look good .
+&#124; MCDAppServiceResponseStatusMessageTooLarge &#124; 5 &#124; The app service failed to process the message because it is too large . &#124;
+# # # # How do I know the data coming from my existing auditing solution , which collects data from the Management Activity API , is accurate and complete ?
+- Update the properties of an active webhook .
+&#124; 10 &#124; DataCenterSecurityCmdlet &#124; Data Center security cmdlet events . &#124;
+&#124; 11 &#124; Page &#124; The item is a Page . &#124;
+&#124; FolderModified &#124; User modifies a folder on a SharePoint or OneDrive for Business site . This event includes folder metadata changes , such as tags and properties . &#124;
+&#124; SecurityGroupModified &#124; User creates , modifies or deletes a security group in Project Web App . &#124;
+&#124; Restarted &#124; The user restarted an event or workflow . &#124;
+&#124; ClientProcessName &#124; Edm.String &#124; No &#124; The email client that was used to access the mailbox . &#124;
+&#124; 4 &#124; InfoCard &#124; The authentication method is an InfoCard &#124;
+# # # PolicyDetails complex type
+&#124; VersionId &#124; Edm.Int64 &#124; No &#124; Version ID of the file in the operation . &#124;
+&#124; Name &#124; Edm.String &#124; No &#124; Only present for settings events . Name of the setting that changed . &#124;
+&#124; 4 &#124; Delete &#124; Policy action is to delete ( drop ) the email message . &#124;
+&#124; Type &#124; Edm.String &#124; &quot; ip &quot; &#124;
+&#124; 2 &#124; URLlink &#124; This is a source where the request from a user to preview , delete , release , export , or view the header of potentially harmful email message can originate from . &#124;
+2 . In the list , click the link in the selected row .
+18 . In the Warehouse field , enter or select a value .
+2 . Click Save .
+11 . Click Change status .
+6 . Click Activate .
+11 . Click Save .
+11 . Click Filter .
+title : Settle a postdated check from a customer
+10 . In the Input location field , click the drop-down button to open the lookup .
+4 . In the Run time category field , enter or select a value .
+- &#91; Import the Chinese Golden Tax data entity &#93; ( apac-chn-import-golden-tax-data-entity.md )
+&lt; td &gt; Cost behavior calculation journal &lt; / td &gt;
+# # Create a depreciation book
+1 . Click the canvas to make sure that no workflow element is selected .
+19 . Click Cut .
+5 . Expand the Invoice lines tab .
+title : WebSearchAX page has been retired
+# # # Modify the mobile device menu item for Adjustment in and Adjustment out
+5 . In the Clearing account for issued checks field , specify the desired values .
+15 . In the list , find and select the desired record .
+5 . In the Name field , type a value .
+The next day , your manager informs you that computers decreased 8 percent instead of 10 percent , so that you have to correct the replacement costs and insured values . To fix the error , you can use either of two methods :
+* The Setup page is used to select which plans to process as part of this compensation process , as well as which actions should be taken against each plan .
+23 . Click Add .
+7 . Click Next .
+5 . Click Fixed asset additions .
+* Select &quot; Yes &quot; if Safe drop transactions should get aggregated .
+Vendor requests are available on the * * Vendor collaboration user requests * * page .
+2 . In the Expiration date field , enter a date and time .
+- In the * * Price rule * * field , select the type of price change to use :
+10 . In the list , click the link in the selected row .
+3 . In the PurchParmTable _ Num field , type a value .
+6 . Enter a Description into the invoice line .
+&lt; li &gt; Change the currency of the report that you &apos;re viewing . &lt; / li &gt;
+2 . Select Yes in the Closed for pickup field .
+&lt; td &gt; Metal &lt; / td &gt;
+* For example , select the &quot; DEMF OPER &quot; bank account .
+5 . In the Category hierarchy type field , select an option .
+13 . In the Total actual sales tax amount field , enter a number .
+15 . In the Quantity field , enter a number .
+5 . Expand the Records to include section .
+3 . In the Profile number field , type a value .
+After a PowerApp has been embedded onto a page , there are two ways to remove it if needed :
+10 . In the list , mark the selected row .
+6 . Warehouse locations for raw material
+Run the &apos; Set up bank facilities and posting profiles &apos; procedure and the &apos; Letter of Credit _ Create a bank facility agreement &apos; procedure prior to this procedure . The USMF demo company must be selected in order to run this procedure successfully .
+# # Verify Export letter of credit
+title : Round-off amount for depreciation calculations
+1 . Select an image in the list .
+# # Set up electronic messaging
+&lt; td &gt; Document number &lt; / td &gt;
+31 . Click Add line .
+4 . Select No in the Finite material field .
+4 . Toggle the expansion of the Payment service account section .
+&#124; 917 &#124; Database connection status &#124; This operation lets the user view the current connection settings , and switch between online and offline modes . &#124; Yes &#124; Yes &#124; Yes &#124; Yes &#124; No &#124;
+&#124; 101 &#124; Price check &#124; This operation lets the user look up the price for a specified product . &#124; Yes &#124; Yes &#124; Yes &#124; Yes &#124; No &#124;
+&#124; 916 &#124; Windows workflow foundation &#124; This operation isn &apos;t supported . &#124; Not applicable &#124; Not applicable &#124; Not applicable &#124; Not applicable &#124; No &#124;
+- Family and Medical Leave Act ( FMLA )
+13 . In the tree , expand &apos; model \ Invoice attachments &apos; .
+# # Two types of cost elements
+7 . Apply the following filters : Enter a filter value of &quot; ISO20022 Credit transfer ( DE ) &quot; on the &quot; Configuration name &quot; field using the &quot; begins with &quot; filter operator
+# # Vendor collaboration in consignment processes
+&lt; td &gt; Type the from-value , then two periods , and then the to-value . &lt; / td &gt;
+1 . Open the purchase order preparation workspace .
+&lt; li &gt; Clock-out &lt; / li &gt;
+&#124; Scheduled &#124; Recruiting efforts are being prepared . Recruiting has not yet started for this project . &#124;
+4 . In the Prompt for sales representative field , select an option .
+# Configure the payroll integration between Talent and Dayforce
+- Primary ( required )
+&#124; TERMINATION &#124; Termination &#124; Terminate worker &#124;
+&#124; Building Complement &#124; Address Line 5 &#124;
+21 . Click the Financial dimension tab .
+&#124; 10 . &#124; In the Work order type field , select &apos; Co-product and by-product put away &apos; . &#124;
+10 . In the Name field , type &apos; Company &apos; .
+6 . Click Run .
+5 . Click Routes .
+5 . In the Dimension hierarchy name field , type &apos; Oganization USP2 &apos; .
+- Complete all the tasks for all other modules , such as Accounts receivable , Accounts payable , and Inventory .
+# Create a production flow version
+# # # # Calculation of Time
+Here is how the worker &apos;s registrations for the day appear on the * * Approve * * page after calculation .
+13 . In the Item number field , type or select the item that is specified on the associated sales agreement .
+19 . Click the Validations tab .
+# # # Provision a user
+# Set up fixed assets
+12 . Click the Private location security tab .
+6 . Click View cost comparison .
+3 . Enter the posting date for the interest note .
+* Open the draft version of the selected ER format for editing .
+To create a dimension value group , follow these steps :
+- * * Info codes * * FastTab :
+3 . In the State field , type a value .
+4 . Toggle the expansion of the Invoice totals matching section .
+&lt; td &gt; November 2016 &lt; / td &gt;
+# # Service management at a glance
+# Define partial location cycle counting process
+&#124; Complete &#124; Approve &#124;
+4 . In the Alert boundary maximum field , enter &apos; 2&apos; .
+- Define the project milestones .
+2 . Create a new service template group .
+5 . Click New sales order .
+7 . Select the Track new transactions check box .
+2 . In the tree , select &apos; Model for cheques &apos; .
+25 . Click New .
+# # # Rehired employees or contractors show up multiple times after termination
+- &#91; Inventory journal reports &#93; ( emea-set-up-report-inventory-journal-names.md )
+title : Generate and process customer rebates
+15 . Click Checks .
+When the * * Staff card logon * * option is enabled , workers who have an extended logon assigned to their POS credentials can log on by using a magnetic stripe .
+33 . In the Amount in currency field , enter a number .
+# Default order settings for dimensions and product variants
+10 . Click Create credit note .
+&#124; External item text &#124; The customer &apos;s item description &#124; The vendor &apos;s item description &#124;
+3 . Click Journal control .
+22 . Click Add to open the drop dialog .
+&#124; Open &#124; Open an existing row definition , column definition , reporting tree definition , or report definition . &#124;
+&#124; Help &#124; Open the Finance and Operations help topic page for financial reporting . &#124;
+# # Set an individual order for direct delivery
+16 . Toggle the expansion of the Hardware stations section .
+# ER Configure format to do counting and summing ( Part 4 : Run format )
+8 . In the Level field , enter a number .
+5 . Publish the retail store to send store data to Retail POS .
+- &#91; Onboard overview &#93; ( create-onboarding-experience.md )
+9 . In the Configuration field , type a value .
+# # # Define budget groups
+&#124; * * Reduction in percentage for breakfast * * &#124; Enter the amount that the per diem is reduced for breakfast . For example , if an employee receives a complimentary breakfast , you may want to reduce the amount of the per diem by 10 percent . &#124;
+23 . Click Add data source .
+&lt; td &gt; Inventory management ( intercompany / intracompany ) &lt; / td &gt;
+&#124; Budget Codes &#124; Budget codes to filter reports by &#124;
+20 . Expand the Contact information section .
+28 . In the Book field , enter or select a value .
+78 . In the Main account field , specify the desired values .
+# # Settle all invoices on June 29
+9 . In the Pick-up Postal Code field , type &apos; 98052 &apos; .
+# # Review and approve claims
+&lt; th &gt; Report page &lt; / th &gt;
+15 . In the Range to field , enter a number .
+title : Common sources of production variances
+After posting , one voucher is created .
+&#124; ARPAYM003 &#124; 130100-002 &#124; Customer balance &#124; &#124; 98.00 &#124;
+7 . In the GL posting date field , enter a date .
+16 . In the Item number field , type &apos; 0140 &apos; .
+14 . In the Days to enroll field , enter a number .
+- Directions to your office .
+16 . In the Unit price field , enter a number .
+- View the cash flow .
+&lt; td &gt; Product receipt &lt; / td &gt;
+# On-premises deployments home page
+2 . Transaction date , Ascending
+* For example : Leave for adoption
+The * * To * * field for a template can &apos;t be edited , because you already selected the recipient when you first created the template .
+&#124; Main account &#124; Item group &#124; Balance &#124;
+&#124; White &#124; White &#124;
+# # Apply for jobs
+3 . In the Result quantity field , enter a number .
+&#124; Cash discount amount &#124; 30.00 &#124;
+# Set up warehouse work policies ( Application , May 2016 )
+&#124; Mass Hire Line &#124; Department , employment type , and position &#124; Date , Job , Mass Hire Project &#124;
+5 . Expand the Route operations section .
+5 . Expand the Scope parameters section .
+14 . In the Output warehouse field , click the drop-down button to open the lookup .
+1 . Go to System administration &gt; Security &gt; Segregation of duties &gt; Segregation of duties rules .
+&#124; Rate &#124; 1,299.00 &#124;
+&lt; td &gt; Evaluate source documents to determine whether they contain certain words . &lt; / td &gt;
+50 . Click OK .
+3 . Click Load from XML file .
+17 . Click Sales tax .
+51 . Click Add .
+# # Update arrival information and process a product receipt
+&#124; 6 &#124; Member access &#124; … . … &#124;
+&lt; p &gt; In this case , you can use the following expression to get the label of the enumeration value in Swiss German , if this translation is available . If the Swiss German translation isn &apos;t available , the label is in German . &lt; / p &gt;
+2 . In the Name of journal field , click the drop-down button to open the lookup .
+10 . Select Yes in the Override license plate during put field .
+2 . Click Position details .
+14 . Select site 1 .
+2 . Define an analytical workspace tab .
+24 . In the Release to warehouse field , select an option .
+&lt; li &gt; Brazil &lt; / li &gt;
+&lt; td &gt; Brazil localization – ER configurations &lt; / td &gt;
+&lt; li &gt; EU sales list XML format for Latvia &lt; / li &gt;
+&lt; td &gt; Switzerland localization – ER configurations &lt; / td &gt;
+&#124; Reverse shipments . &#124; In a warehouse , you must be able to handle late changes . For example , some goods might be damaged , so that you can &apos;t ship them . Alternatively , a customer might make a late request to cancel or change an order . Dynamics 365 for Operations now lets you reverse a shipment . Therefore , you can cancel a packing slip so that you can update it with the correct quantities later . Similarly , on the inbound flow , you can cancel product receipts so that an updated version can be created . &#124;
+- A value is divided by 0 ( zero ) .
+4 . In the Calendar field , type a value .
+# Add a predecessor to a production flow activity
+The raw recording file will be useful for developer scenarios such as test code generation . ( This feature isn &apos;t yet implemented . )
+8 . On the Action Pane , click Tracing .
+# # # Indicator of order delivery date
+13 . In the Reorder margin added to item lead time field , enter &apos; 1&apos; .
+2 . Click Approve non conformance .
+9 . In the Plan field , type a value .
+# # Finding a shortcut
+&#124; Enter the current date in a date field &#124; T + Tab &#124;
+3 . Button for unplanned jobs
+&#124; Inbound Performance &#124; Received on time &#124; The number of purchase order lines that are received on time . &#124;
+# Actions in workflow approval processes
+6 . In the Size field , enter a number .
+32 . In the list , mark the selected row .
+12 . In the Parsing order of nested elements field , select &apos; Any &apos; .
+40 . On the Action Pane , click Set up .
+# # # Remove access to a reporting unit
+# # Define diagnostic types for nonconformance processing
+* The number must be unique . A number sequence can be set for the Product number field . In this case , the user doesn &apos;t have to enter a value .
+2 . Select Litware , inc. provider .
+&#124; Approve vendors for specific procurement categories &#124; Global &#124;
+# # My business processes workspace
+19 . Click Mass change .
+1 . Go to Transportation management &gt; Setup &gt; Rating &gt; Accessorial assignments .
+46 . Click OK .
+18 . Click Approve .
+4 . In the Warehouse field , click the drop-down button to open the lookup .
+&#124; Billed Revenue Analysis &#124; Total accounts receivable , total accounts receivable by legal entity , total accounts receivable by quarter , and balances for accounts receivable accounts &lt; blockquote &gt; &#91; ! NOTE &#93; The information doesn &apos;t include beginning balances for the accounts receivable ledger accounts . It shows the total of new transactions that are posted to Accounts receivable . &lt; / blockquote &gt; &#124;
+Here is an example of the ProdRouteTrans table .
+8 . In the Redeem ranking field , enter a number .
+3 . Provide a prefix to be used to easily identify the bar code . For example , ‘ 22 ’ .
+9 . In the Currency field , type a value .
+- Balance sheet , Asset , Liability , and Equity – These main accounts are used as transaction accounts to record the amounts that a legal entity owns or owes .
+2 . Click Validate duties and roles .
+&#124; Create and process free text invoices &#124; Global &#124;
+&#124; EUR-00012 Issue an EU entry certificate &#124; Europe &#124;
+&#124; Inquiry on deductible expenses &#124; Japan &#124;
+&#124; GB-00002 Create a purchase order that includes items subject to reverse charge VAT &#124; United Kingdom &#124;
+&#124; Prepare a legal entity for use in the consolidation process &#124; Global &#124;
+&#124; Define inventory counting processes &#124; Global &#124;
+&#124; Validate production flow and version &#124; Global &#124;
+&#124; Create an advanced ledger entry for Public sector &#124; Global &#124;
+&#124; Mass create sales quotations &#124; Global &#124;
+# Create and associate a device
+&#124; &#124; Terms of payment &#124; Define the terms of payment that you assign to sales orders , purchase orders , customers , and vendors in either Accounts receivable or Accounts payable . &#124;
+&#124; Manual monthly average cost model &#124; Monthly average cost model in Finance and Operations &#124;
+35 . Click Price groups .
+This procedure demonstrates how to look up loyalty card information and adjust loyalty reward points . The demo data company used to create this task is USRT . This task is intended for the Retail operations manager role or a Customer service manager role .
+17 . Click Select products .
+&#124; B2 &#124; 15 &#124; Grade &#124; 15 &#124;
+66 . Click Bind .
+1 . In the Item number field , enter or select a value .
+32 . In the Name field , type &apos; Vendor &apos; .
+4 . Click Categories .
+&lt; li &gt; Right Arrow and Left Arrow &lt; / li &gt;
+24 . ResolveChanges the Registration type .
+5 . In the Period code field , enter or select a value .
+4 . In the Valid from accounting date field , enter a date .
+8 . Go to Accounts payable &gt; Payment setup &gt; Cash discounts .
+- Make sure that the required mapping exists for * * Unit of measure * * .
+- View bank statements and Finance and Operations bank transactions side by side .
+48 . In the Help field , enter &apos; Bank Account &apos; .
+* Open the list of ER repositories for the current ER provider , Litware , Inc .
+* Example : US-001
+&#124; 10001 &#124; Salaries &#124; Cost elements &#124;
+&#124; Organization &#124; CEO &#124; CIO &#124; IT &#124; CC003 &#124;
+# # # # # Edit and save personalized justification documents
+17 . In the Description field , enter &apos; Routing number &apos; .
+53 . In the Description field , enter &apos; Transaction date &apos; .
+10 . In the Subject field , type a value .
+- * * Force * * : Workers will continue to receive the message that there is an older batch to pick .
+title : Master planning for site coverage , warehouse not mandatory
+&#124; Balance Sheet – Default &#124; View the organization &apos;s financial position for the year . &#124;
+9 . Click Hide .
+* Notice the kanban created to supply M0001 for the estimated production order .
+Some prerequisites must be in place before you can create questionnaires , answers , and questions . However , not all prerequisites are required for full functionality .
+# # Define working times
+From the list , you can view the following pages :
+6 . Click Setup .
+- Right-click the row number next to the worksheet row that should be deleted , and then select * * Delete * * .
+&#124; Method &#124; Purpose &#124; Consumption of item transactions &#124;
+title : Budget planning overview
+- &#91; Position forecasting &#93; ( position-forecasting.md )
+On the * * Funds * * page , you can view the details of promotional funds .
+8 . In the Description field , type &apos; Dimensions data mapping &apos; .
+58 . In the tree , select &apos; Dimensions \ Main account and dimensions &apos; .
+- 1002 , because the due date of July 20 is outside the range of payment dates .
+# # Configuring a workflow for purchase requisitions
+You can also post all the expense reports in the list at the same time . Select all the expense reports , and then select * * Post * * .
+&#124; Accounts payable ( Fabrikam ) &#124; 600.00 &#124; &#124;
+# # Exclude users from automatic role assignment
+After you select an option , the * * Compensation structure * * page opens , and you can make changes to the new compensation grid or the existing compensation grid .
+* Collections agents that are set up in this page are automatically added to a collections team . If a team is selected in the Team field in the Accounts receivable parameters page , collections agents are added to that team . If a team is not selected , a new team named Collections is created automatically and the collections agents are added to that team .
+title : Human resources
+3 . On the Action Pane , click Model .
+&#124; April &#124; 750 &#124;
+&#124; Decrease value &#124; If the beneficiary and the principal agree , decrease the monetary value . &#124;
+* In this example , you &apos;re updating the price for a specific customer , which means you need to choose Table . If you were updating the product &apos;s list price , you would select All , so that the new price is valid for all customers . If you were differentiating prices among different customer segments , then you would select Group . To select Group , you must have set up Customer price groups .
+&#124; Segment 2 &#124; Constant &#124; -EXPENSE- &#124;
+title : Foreign currency revaluation for General ledger
+1 . Go to Project management and accounting &gt; Setup &gt; Prices &gt; Cost price ( hour ) .
+17 . In the Description field , enter the name of the withholding tax group .
+1 . Go to Warehouse management &gt; Setup &gt; Containers &gt; Container build templates .
+# # Reports and inquiries
+4 . In the New field , enter &apos; Format based on data model PaymentModel &apos; .
+* Create a new payment journal .
+&#124; &#124; Inventory turnover ratio by item group &#124;
+&#124; Category hierarchies ( Assigned to role Cost management ) &#124; Category hierarchy , Category level &#124;
+# # Copy service template lines into a service agreement
+10 . In the Days ahead field , enter &apos; 30 &apos; .
+6 . In the Constraint value field , enter a number .
+1 . Go to Warehouse management parameters .
+- ER configurations :
+&#124; Net amount &#124; 271.60 &#124; 221.52 &#124; 22.61 % &#124; Failed &#124;
+- On the Item price tolerance groups page , set up tolerance groups for item prices .
+2 . In the Storage dimension group field , enter or select a value .
+1 . Go to Retail and commerce &gt; Inquiries and reports &gt; Sales reports &gt; Organization sales report .
+During a demand explosion , if an item has a default order type of Production , the planning engine finds a valid BOM version based on the site .
+To print a financial report , on the Action Pane , click * * Print * * , and then follow one or more of these steps to set the print options :
+1 . Click Show filters .
+# Accounting distributions and subledger journal entries for vendor invoices
+10 . Select the recurrence pattern .
+11 . Expand the Bank account information section .
+title : Delete a return order
+&#91; Plan your chart of accounts &#93; ( plan-chart-of-accounts.md )
+4 . In the Size field , enter or select a value .
+46 . Click Test .
+# # Configure the application
+* Select the value GBSI OPER .
+title : Fiscal integration for Retail channel
+# # # IPC ( built-in )
+&#124; HP &#124; F7M67AA &#124; OPOS &#124; Powered USB &#124;
+&#124; Production scrap &#124; Enter the quantity of scrap that was created during production for each bill of materials ( BOM ) line . &#124;
+&lt; td &gt; Start a count for a location . The worker must count all items in the location . When the result of a count is less than the expected quantity , the missing quantity is considered a loss . &lt; / td &gt;
+&#124; Pick &#124; Require confirmation when items are picked . &#124;
+- &#91; VAT customer invoices FAQ &#93; ( apac-chn-tax-integration-vat-customer-invoices.md )
+- &#91; Set up mobile devices for warehouse work &#93; ( configure-mobile-devices-warehouse.md )
+3 . Toggle the expansion of the Details section .
+3 . In the tree , select &apos; Financial dimensions sample model \ Sample report with horizontally expandable ranges &apos; .
+2 . Expand the Period capacity fact box
+&lt; td &gt; Use this method to purchase items when you create an item requirement from a project . &lt; / td &gt;
+You can use Finance and Operations to visualize and modify the baseline forecasts . Manual adjustments must be authorized before the forecasts can be used for planning .
+10 . We have more than one instance of the system .
+19 . Click Invoice .
+2 . Click Result .
+2 . In the Action field , select a Fixed compensation action of type Hire / Rehire to describe the change in the employee &apos;s compensation .
+* This option lets you filter by the issue status of the inventory transactions . For example , you can create journal lines for inventory that has the Picked and Reserved physical statuses .
+&#124; * * Reason for deprecation / removal * * &#124; Replaced with electronic messages configurable feature . &#124;
+&#124; * * Reason for deprecation / removal * * &#124; Limited usage &#124;
+# # # Worker reminders in Human Resources
+# # # Malaysia and Singapore bank cash flow report
+# Release a dimension-based product master
+9 . In the Target field , type a value .
+42 . In the tree , expand &apos; Intrastat \ Data : Sequence &apos; .
+# Centralized payments for Accounts receivable
+20 . In the Description field , type a value .
+title : Project invoicing
+6 . In the Run report at field , select the time when the report should run . If you enter a time that is before the current system time , the report runs on the next scheduled date .
+&#124; 10001 &#124; Electricity &#124;
+# # Why can ’ t I change the costs for a budget cost element on the Compensation group page ?
+- Service-level agreements that support a differentiated customer base
+* Enter the job or task the worker was performing when the incident occurred . Example : Loading boxes
+This topic gives an overview of the 175 percent reducing balance method of depreciation .
+2 . The Extended ledger journal field can be set to Yes or No . If Yes , the report output will be different .
+2 . Click Recurrence .
+37 . In the tree , expand &apos; Archive \ &lt; Relations &apos; .
+# # # Examples of ascending and descending column values
+For more information , see &#91; Accounting distributions and subledger journal entries for free text invoices &#93; ( accounting-distributions-subledger-journal-entries-vendor-invoices.md ) .
+5 . In the tree , select &apos; Roles \ Machine operator &apos; .
+title : Correct a free text invoice
+&#124; Step &#124; Entry point &#124; Description &#124;
+* Select Site 1 because Warehouse 13 is on Site 1 .
+# # Can I run more than one trace and then compare the details ?
+* Select item number A0002 , HDMI 12 &apos; Cables .
+Like any other activity in a production flow , subcontracted activities can consume and supply inventoried , non-inventoried ( work in process \ &#91; WIP \ &#93; ) , and semi-finished material and products . In all cases , the processes for scheduling and executing subcontracted activities are the same . Additionally , these process the same as the processes for internal work .
+# # Define journal names
+7 . Expand or collapse the Process section .
+2 . Select a customer with a balance .
+&#124; Set up OIOUBL electronic invoicing &#124; Denmark &#124;
+&#124; Set up a min-max replenishment process &#124; Global &#124;
+11 . Choose how you want to save the task recording .
+&lt; td &gt; Posting &lt; / td &gt;
+18 . In the Name field , type &apos; Attached file &apos; .
+- &#91; Create a workflow &#93; ( create-workflow.md )
+&#124; &#124; Production performance Power BI reports &#124; Yes &#124; No &#124;
+17 . Expand the Financial reporting fast tab .
+- Work order type : Finished goods put way
+- VAT ID registration of vendor
+&#124; ER Configure format to do counting and summing ( Part 2 : Configure computations ) &#124; Germany &#124;
+&#124; Add an image to a product &#124; Global &#124;
+&#91; New or updated task guides available ( May 2016 ) &#93; ( new-updated-task-guides-available-may-2016.md )
+# # How do I transmit a payment file to the bank ?
+title : Registration for manufacturing execution
+- * * Project type : * * Time and material
+- Display name - Define the name that will appear as a link to Finance and Operations . This data is currently is not translated .
+title : Lean pegging from sales orders
+18 . Click Add to open the drop dialog .
+9 . In the Bank document type field , select &apos; Letter of guarantee &apos; .
+1 . Go to Retail and commerce &gt; Inventory management &gt; Replenishment &gt; Product packages .
+27 . Collapse the Labor union section .
+&#124; &#124; &#124; EU Sales list ( DE ) &#124; EU Sales list TXT format for Germany &#124;
+&#124; &#124; &#124; Reverse charge sales list &#124; Reverse charge sales list format &#124;
+13 . Click Update match status .
+&gt; When you use the * * CAL * * format code in the row definition , you can &apos;t drill down into transaction detail .
+title : Create service object relations
+- Weighted average date summarized settlement when the * * Include physical value * * option is used
+&lt; td &gt; Cancelled &lt; / td &gt;
+11 . In the GTIN field , type a value .
+1 . Go to Transportation management &gt; Setup &gt; Rating &gt; Hub accessorial charges .
+&#124; Create web-based solutions in the cloud that are accessible on many devices . &#124; Not available &#124; The current version of Dynamics AX is based on a new web-based client and client framework . &#124; You can provide next-generation solutions to your end users . &#124;
+&lt; td &gt; Use patterns for an enhanced form development experience . &lt; / td &gt;
+&lt; td &gt; This unifies and simplifies the configuration of the EU sales list reporting . Adjustment of rounding settings no longer requires development efforts . &lt; / td &gt;
+&lt; li &gt; Track shift status for a given store or group of stores . &lt; / li &gt;
+&lt; li &gt; It stops unauthorized remote use of MPOS ( brick device ) . &lt; / li &gt;
+&#124; Implement and maintain two-tier architecture . &#124; The Data import / export framework provides the ability to move data between AX 2012 and third-party systems . &#124; Data entities created to enhance support for two-tier architecture . &#124; Data entities and OData applications provide an abstraction layer to make two-tier scenarios easier to implement and maintain . &#124;
+15 . In the Transaction type field , select an option .
+# Associate a fuel index with a carrier as an accessorial charge
+3 . In the Period start field , enter a date .
+* After you &apos;ve selected a Cost object dimension hierarchy , expand the Cost element dimension hierarchy to see the desired cost values . For example , you can expand the hierarchy to Manufacturing overhead to see the value .
+6 . In the To warehouse field , enter or select a value .
+2 . Click View history .
+* In the Quantity field , select Ordered quantity for this example . This ensures that the shipment will be processed for the full ordered quantity that the order lines were created with .
+8 . Expand the Relationships section .
+19 . Click Apply .
+# # # All vendor invoices list page
+Namespace : Microsoft.Web.WebView2.Core \
+# # # View origin details
+&lt; td &gt; Remote object value in case of primitive values or JSON values ( if it was requested ) . &lt; / td &gt;
+If set , it will be as if the navigation never happened and the current page &apos;s content will be intact . For performance reasons , GET HTTP requests may happen , while the host is responding . This means cookies can be set and used part of a request for the navigation .
+&gt; Undocked DevTools
+* Resize images during your build process .
+&gt; ! &#91; An Audits report after removing unnecessary JavaScript work &#93; &#91; ImageReport6 &#93;
+# What &apos;s new in EdgeHTML 17
+The offset in bytes from the start of arrayBuffer referenced by the array .
+Select on a function to view the definition in the * * Sources * * panel .
+Event args for the DevToolsProtocolEventReceived event .
+&#124; Timer ID &#124; The timer ID . &#124;
+Add an event handler for the MoveFocusRequested event .
+Step out &#124; `Shift` + `F11`
+The host can override request , response headers and response content .
+&gt; An organization named Social Org owns the domains `social.example` and `social-videos.example` .
+d . Note the machine IP address and connection port ( 50443 ) displayed .
+While Microsoft Edge extensions don &apos;t run outside of Microsoft Edge , the management of them can occur within Windows . For example , users can manage their extensions in the Settings app :
+CoreWebView2NavigationStartingEventArgs &#124; Event args for the NavigationStarting event .
+Disconnected &#124; The Internet connection has been lost .
+The status of a permission request , i.e .
+# Adding , moving , and removing extensions for Microsoft Edge
+Activates / deactivates all breakpoints on the page .
+&lt; td &gt; Location in the source code . &lt; / td &gt;
+title : Override The User Agent String From Microsoft Edge DevTools
+&#124; &#124; Requirement &#124; Details &#124;
+* The object to expose to the document in the * * webview * * .
+The * * Isolate selected element * * filter is essentially three buttons in one . There are two checkboxes below this button : one is &quot; Show all parents &quot; and &quot; Keep only parents with new stacking context . &quot;
+&lt; td &gt; Id of the frame that has been detached . &lt; / td &gt;
+The HistoryChanged event will fire if CanGoForward changes value .
+The WinRT namespace to be projected .
+The * * Elements * * panel helps you to :
+&gt; The Styles tab is to the right of the DOM Tree
+&gt; ! &#91; The home page &#93; &#91; ImageCssExternal10 &#93;
+&lt; td &gt; Descriptor of the highlight appearance . &lt; / td &gt;
+&lt; td &gt; The content box highlight fill color . Default is transparent . &lt; / td &gt;
+The * * Styles * * pane now groups pseudo-elements under their own headings and no longer displays their content as crossed out .
+# Microsoft.Web.WebView2.Core.CoreWebView2CompositionController class
+Get the TouchOrientation of the pointer event .
+# # # # 1.5.3 Sharing data with third parties
+# # Paint and composite
+Remove an event handler previously added with add _ NavigationCompleted .
+# # # Step out of line of code
+See &#91; Run Snippets of Code From Any Page &#93; &#91; DevToolsJavascriptSnippets &#93; to learn more .
+&gt; ! &#91; Interacting with sessionStorage from the Console &#93; &#91; ImageSessionStorageConsole &#93;
+Upon receiving the * * Payment Response * * , the website submits the payment information to their payment processor . The browser will display a spinner page while the payment is being processed .
+&gt; Viewing the details of an event in the Notifications pane
+&#124; `JsErrorInProfileCallback` &#124; A script context is in the middle of a profile callback . &#124;
+7 . Open Microsoft Edge and verify that the strings defined for the locale appear as expected .
+Creates a new JavaScript function .
+get _ CanGoBack change value with the DocumentStateChanged event .
+Matrix that represents a 3D transform .
+A Chakra runtime will automatically track JsRef references as long as they are on stored in local variables or in parameters ( i.e. on the stack ) . Storing a JsRef somewhere other than on the stack requires calling JsAddRef and JsRelease to manage the lifetime of the object , otherwise the garbage collector may free the object while it is still in use .
+For more details , see &#91; Using the Windows Runtime in JavaScript &#93; &#91; WindowRuntimeUsingJavascript &#93; .
+Figure 2 : ` $ _ ` changes when new commands are evaluated
+For the JsMemoryAllocate event , returning true allows the runtime to continue with allocation . Returning false indicates the allocation request is rejected . The return value is ignored for other allocation events .
+&#124; CSS3115 &#124; &quot; @ font-face unable to load invalid OpenType font . &quot; &#124; The font-face is not valid for this use . &#124; Get the permission or licenses for the current and valid font-face . &#124;
+&#124; HTTP409 &#124; CONFLICT &#124; The request couldn &apos;t be completed because of a conflict with the current state of the resource . &#124;
+&#124; XML5611 &#124; &quot; Expected &quot; = &quot; . &quot; &#124;
+&#124; XML5667 &#124; &quot; Exceeded maximum depth of nested elements . &quot; &#124;
+&gt; Opening the Coverage tab from the Command Menu
+1 . Check or uncheck the checkbox next to the declaration . When you uncheck a declaration , DevTools crosses it out to indicate that it is no longer active .
+# Microsoft Edge ( EdgeHTML ) Developer Tools
+# # Record code coverage
+&gt; ! &#91; Using the Command Menu to disable JavaScript &#93; &#91; ImageDisableJS &#93;
+For more information , check out &#91; how to debug Microsoft Edge from VS Code &#93; &#91; VisualStudioCodeDebuggerEdgeExtension &#93; .
+&gt; Selecting `Portrait upside down` from the * * Orientation * * list
+* * Received * * &#124; Size of the response as delivered by the server ( not calculated for cached responses )
+Here &apos;s how to use * PWA Builder * to generate an app package for upload to the Windows Dev Center .
+&#124; Description &#124; Primary &#124; Secondary &#124;
+&#124; tabs &#124; Gives access to the `tabs` API to interact with the browser &apos;s tab system . This enables creating , modifying , and rearranging tabs in the browser , including the URLs associated with each tab . &#124;
+# # General availability
+Returns -1 , 0 or 1 depending on whether version1 is less than , equal to or greater than version2 , respectively .
+title : &quot; Using the Windows Runtime in JavaScript &quot;
+# DevTools Protocol Version 0.1 Release Notes
+This is just a simple example of the automation and testing scenarios enabled by Puppeteer and `puppeteer-core` . For more information about Puppeteer and how it works , see &#91; Puppeteer &#93; &#91; PuppeteerMain &#93; .
+# Watch JavaScript Expression Values In Real-Time With Live Expressions
+# Get Started with Remote Debugging Windows 10 Devices
+&#124; Delete all cookies &#124; `Ctrl` + `Shift` + `Del` &#124;
+2 . Run PWA Builder on your website URL :
+* Only use preprocessors capable of producing Source Maps .
+Review the MDN documentation on the &#91; PushManager &#93; &#91; MDNPushManager &#93; interface and NPM docs on the &#91; Web-Push &#93; &#91; NPMWebPushUsage &#93; library for more details on how the APIs work and various related options .
+title : &quot; JsCreateContext Function &#124; Microsoft Docs &quot;
+&gt; ! &#91; The Page pane &#93; &#91; ImagePage &#93;
+1 . Subscribe to a messaging service using the &#91; Push API &#93; &#91; MDNPushApi &#93;
+&#124; Show the Command Menu &#124; `Ctrl` + `Shift` + `P` &#124; `Command` + `Shift` + `P` &#124;
+* XHR breakpoints that are triggered when the requested URL matches a substring that you provide .
+# # Step 1 : Start a New Submission
+&gt; Proxy settings apply per network .
+To open the * * Accessibility * * pane :
+title : Writing a custom Holographic Remoting player
+# # # Rotating an object &lt; br &gt;
+&#124; Hand &apos; Open &apos; Pose ( default ) &#124; 8 &#124; &#124; &#124;
+title : 4 . Making your scene interactive
+title : Displaying progress
+With all the LunarModuleParts child objects still selected , add an * * Audio Source * * component and then configure it as follows :
+# # # Encouraging three-dimensional design thinking and solutions
+Holograms can have many different appearances and behaviors . Some are realistic and solid , and others are cartoonish and ethereal . Holograms can highlight features in your surroundings , and they can be elements in your app &apos;s user interface .
+The file name in the environments folder will be used in the Places picker . To change the name of your environment simply rename the environment file name , and then restart Mixed Reality Portal .
+# # Chapter 9 – Create the GazeInput class
+* Bluetooth headphones can cause interference with motion controllers . We recommend unpairing or powering down Bluetooth controllers during Windows Mixed Reality sessions .
+* An application may require a specific configuration of surfaces , for example two large , flat , opposing walls to create a holographic hall of mirrors .
+* Integrate ASA into a shared experience for multi-device alignment
+1 ) OnConnected : Triggered when a connection to the device has been successfully established .
+* &#91; Performance recommendations for Unity &#93; ( performance-recommendations-for-unity.md )
+All of the types described below reside in the `Microsoft.MixedReality.SceneUnderstanding` namespace .
+This SpatialPointerPose has the information needed to position the hologram according to the &#91; user &apos;s current heading &#93; ( gaze-in-directx.md ) .
+* Mixed Reality Capture recordings would begin with 0.5-1 second of audio only feed .
+* Concept , creation , integration and iteration flow *
+* * * Towards the right ( near digital reality ) . * * Users experience a completely digital environment , and are unaware of what occurs in the physical environment around them .
+You can find release notes and older builds of the HoloLens Emulator on the &#91; HoloLens Emulator archive &#93; ( hololens-emulator-archive.md ) page .
+If your debug target list in Visual Studio is empty ( for example , Start is the only option ) and you &apos;ve followed all troubleshooting steps above :
+* Apps can still change the viewport size in the same way that they did for HoloLens 1 . This does not cause memory reallocation on the GPU , so it can be changed at high frequency , but it cannot be used to reduce memory pressure on the GPU .
++ Select * * HoloLens * * and check * * Spatial Perception * * .
+In the Hierarchy window , select the * * Lunarcom * * object , then in the Inspector window , use the * * Add Component * * button to add the * * Lunarcom Intent Recognizer ( Script ) * * component to the Lunarcom object :
+Then click the * * Assign resource * * button to assign the Azure prediction resource to your app :
+* Configuring an Unreal project for HoloLens development
+8 . Find Azure Anchor ( positions the Rocket Launcher experience at the location from step 3 ) .
+# # Expanding your team &apos;s skills
+Holographic Remoting sample apps have Spectre mitigation ( / Qspectre ) enabled in Release configuration .
+* Note down the IPv4 address displayed in the Sharing Service console window . This is the same IP as the machine the service is being run on .
+# # DAY 4 - Prototype
+* Content should typically be 2m away , but no closer than 1.25 or further than 5m .
+* Relevant content outside of the user field of view is discoverable through visual and / or audio cues .
+Then click the * * Update Collection * * button to apply the new configuration :
+* * * Aliasing * * - Be considerate of aliasing , jagged or “ stair steps ” where the edge of a hologram ’ s geometry meets the real world . Using textures with high detail can aggravate this effect . Textures should be mapped and filtering enabled . Consider fading the edges of holograms or adding a texture that creates a black edge border around objects . Avoid thin geometry where possible .
+3 . Add the Hand Interaction Touch ( Script ) component to the object
+* If your game requires motion controllers , but accepts voice input via microphone , select the &quot; minimum hardware &quot; checkbox next to &quot; Windows Mixed Reality motion controllers , &quot; but the &quot; recommended hardware &quot; checkbox next to &quot; Microphone . &quot;
+3 . Unsubscribes from the InteractionSourceDetected and InteractionSourceLost events .
+* &#91; Point and commit with hands &#93; ( point-and-commit.md )
+* loopback : capture app audio : true or false ( defaults to false )
+* When Unity is done building , a File Explorer window will appear .
+* In the * * Inspector * * panel , find the Earth &apos;s material ( bottom component ) .
+Windows Mixed Reality has a number of built-in apps , such as :
+Lars Simkins , Senior designer behind the MRDL Surfaces app talks about the app &apos;s design story and technical highlights .
+&#124; Feature &#124; Description &#124; Max Supported &#124; Documentation &#124;
+* * Q * * - I cannot find the event in AltspaceVR
+Here &apos;s our solution , from * * TagalongAction.cs * * :
+* How to create a holographic app in Unity .
+# # Pairing your device
+* Enhance hologram realism using sound .
+# # # # CPU usage
+1 . Vuforia ’ s target Tracker recognizes the target
+* Design voice commands that are optimized for the HoloLens speech engine .
+To get started building mixed reality apps with Unity , first &#91; install the tools &#93; ( install-the-tools.md ) .
+The most important step is to make sure your app is clearing to transparent black instead of clearing to opaque black . In Unity , this is done by default with the MixedRealityToolkit but if you are developing in non-Unity , you may need to make a one line change .
+&lt; td &gt; Not supported yet &lt; / td &gt;
+# # # HoloLens ( first-generation )
+On the CPU :
+&#91; Scene Understanding SDK overview &#93; ( scene-understanding-SDK.md )
+# # Compile dependencies / plugins for ARM processor
+Then handle the DictationComplete callback :
+- Search and reference internal links and bookmarks ( links to specific sections within a page ) .
+&#124; &#124; Mobile &#124; Video Camera &#124;
+* * * Save * * your scene under Scenes folder with any name
+# 3 . Sharing object movements with multiple users
+title : Case study - Creating impossible perspectives for HoloTour
+title : Voice Input
+1 . The user performs an action causing app code to call * TouchScreenKeyboard *
+Wait for Unity to finish adding the SDK :
+In this section , you will connect your Unity project to the PUN application you created in the previous section .
+The * * Movement * * script is the next script you will need to create . It is responsible for :
+QR codes are surfaced through Unreal ’ s AR tracked geometry system as a tracked image . To get this working , you &apos;ll need to :
+&gt; Azure Spatial Anchors uses the internet to save and load the anchor data so make sure your device is connected to the internet .
+- &#91; How to use sound in mixed-reality applications &#93; ( spatial-sound-design.md )
+In this Chapter you will also find the Service Key that will allow you to make calls to * Microsoft Graph * to access your account content .
+# # # Occluding everything but the virtual hole
+* Support for new PerceptionDevice APIs ( Windows 10 November 2019 Update ) .
+# # # 6 . What devices are they using ?
+6 . Then add the * Awake ( ) * method , which will be called when the class initializes .
+1 . Select the region you set for service instance in the Azure Portal .
+# # # 1 . Create and configure the user
+From our event handler in AppMain.cpp :
+* Since this is a new scene , you &apos;ll need to name it . Name doesn &apos;t matter , but we use SharedMixedReality .
+* New * 360 Videos * app for discovering a regularly-curated selection of 360-degree videos .
+- Removed `Get-AzBatchNodeAgentSku` and replaced it with `Get-AzBatchSupportedImage` .
+Cmdlet `Update-AzSqlServerVulnerabilityAssessmentSettings` is repleaced by `Update-AzSqlServerVulnerabilityAssessmentSetting`
+- The &apos; New-AzureRmEventHubNamespaceAuthorizationRule &apos; cmdlet has been removed . Please use the &apos; New-AzureRmEventHubAuthorizationRule &apos; cmdlet
+- Top level properties `DataDiskNames` and `NetworkInterfaceIDs` of nthe `PSVirtualMachine` object have been removed from the output type . These properties have always been available in the `StorageProfile` and `NetworkProfile` properties of the `PSVirtualMachine` object and will be the way they will need to be accessed going forward .
+- Namespaces for types returned from Blob , Queue , and File cmdlets have changed their namespace from `Microsoft.WindowsAzure.Storage` to `Microsoft.Azure.Storage`. While this is not technically a breaking change according to the breaking change policy , it may require some changes in code that uses the methods from the Storage .Net SDK to interact with the objects returned from these cmdlets .
+We then register this renderer like so :
+&#124; Parameters &#124; &#124;
+XIB can be edited through XCode IB .
+# Extensibility - .NET HTML
+# Getting started - .NET Image
+&#124; All Inputs &#124; ac-input &#124;
+title : Extensibility - .NET Image Rendering SDK
+To change this setting :
+Now you are ready to &#91; Set up a local Git repository &#93; ( get-started-setup-local.md ) .
+1 . Observe changes to * .openpublishing.redirection.json * file
+title : Labels and projects roadmap
+# # # Provisioning the device with required packages
+2 . Hook up your Raspberry Pi to an external display .
+The changes and enhancements compared to the previous TPM 1.2 include :
+* If you enable Microsoft Accounts and you have access to end user data , if the end user deletes the Microsoft Account , you must enable simultaneous deletion of all the end user &apos;s Microsoft Account data on the device .
+This document provides information that supplements other content and documentation for this release of Windows 10 IoT .
+* Have I included one , and only one , # -level title ( equivalent to H1 in HTML ) ?
+* `IotSettings get uilanguage` displays current UI language
+The SPI clock is fixed at 4.8mhz. The requested SPI clock will be ignored .
+* The state is changed from Not Connected to Connected .
+# # # Using the shell
+# # Controlling other devices and app services from an IoT Core device
+Should there arise a need to temporarily disable BitLocker , initate a remote PowerShell session with your IoT device and run the following command : `sectask.exe -disable` .
+Replace the code in StartupTask.cs with this
+# Install the Microsoft Quantum Development Kit ( QDK )
+* * IMPORTANT * * : to have the images rendering properly in dark mode you must avoid transparencies .
+Any files created , modified , or accessed in the Linux root file system follow standard Linux conventions , such as applying the umask to a newly created file .
+- Connect to any Windows server using the copied IP address .
+# # Git config file setup
+If you forgot the password for your Linux distribution :
+Azure Resource Manager enables you to deploy and manage the infrastructure for your Azure solutions . Organize related resources in resource groups and deploy your resources via JSON templates .
+title : &quot; PidTagMessageSecurityLabel Canonical Property &quot;
+&gt; Shows items that are currently marked as soft deleted — that is , they are in the deleted item retention time phase .
+title : &quot; Recipient Properties for All Messages &quot;
+&#91; MAPI Interfaces &#93; ( mapi-interfaces.md )
+Visio Services includes JavaScript APIs to read the comments from a page or shape in a diagram .
+# RightMargin Cell ( Text Block Format Section )
+# Error handling in MAPI
+Address book containers establish search criteria by applying restrictions to their contents tables . For more information about search criteria and address book containers , see &#91; Implementing Advanced Searching &#93; ( implementing-advanced-searching.md ) .
+title : &quot; RotationZAngle Cell ( 3-D Rotation Properties Section ) &quot;
+TIME ( 15,30,30 )
+For more information about when to set this flag and how to implement thread safety in a client , see &#91; Threading in MAPI &#93; ( threading-in-mapi.md ) .
+title : &quot; Sample restriction code &quot;
+- &#91; Basic Authentication &#93; ( basic-authentication.md )
+title : &quot; E Cell ( Geometry Section ) &quot;
+GREEN ( Sheet.4 ! FillForegnd )
+# Prompt Cell ( Actions Section )
+Once you &apos;ve added some customers and employees open the Issues List view and start adding an issue . As you type the name of a customer into the into the Customer box , one or more of the customer names will appear , as shown in Figure 6 .
+* expression * .Updatable
+For more information , see &#91; Installing a Form into a Library &#93; ( installing-a-form-into-a-library.md ) .
+Contains the state or province portion of a user &apos;s address .
+# Properties collection ( ADO )
+&#91; Status Table and Status Objects &#93; ( status-table-and-status-objects.md )
+&gt; Provides property set definitions and references to related Microsoft Exchange Server protocol specifications .
+- Creating or editing resource calendars .
+# Glue Cell ( Layers Section )
+Displays functions and formulas inserted in the shape &apos;s text by using the Field dialog box .
+Sets or returns a * * String * * value that is the name of a table , schema , or catalog .
+&gt; &#91; in &#93; Pointer to the &#91; MAPIAllocateMore &#93; ( mapiallocatemore.md ) function , to be used to allocate additional memory where required .
+&#124; Scroll left one screen &lt; br / &gt; &#124; Press CTRL + PAGEUP . &lt; br / &gt; &#124;
+1 . Create and debug your form template in Visual Studio 2012 .
+- Deleted Items folder in the IPM root folder
+&#124; Multiple selection list box &lt; br / &gt; &#124; If one of the columns is an entry identifier , refreshes the list box . The corresponding object is not closed or reloaded . &lt; br / &gt; &#124;
+Logical entities such as Resource or Project can span multiple tables , and all tables for a particular entity have the same primary key . The primary key is a GUID in a single column that uniquely identifies one instance of a particular entity .
+&#124; Georgian &lt; br / &gt; &#124; 1079 &lt; br / &gt; &#124;
+&#124; Swahili &lt; br / &gt; &#124; 1089 &lt; br / &gt; &#124;
+title : &quot; LockVtxEdit Cell ( Protection Section ) &quot;
+&#124; Header file : &lt; br / &gt; &#124; Imessage.h &lt; br / &gt; &#124;
+Returns a &#91; MAPIERROR &#93; ( mapierror.md ) structure that contains information about the previous address book provider error .
+# DrawingScaleType Cell ( Page Properties Section )
+&#124; Implemented by : &lt; br / &gt; &#124; Form viewers &lt; br / &gt; &#124;
+With the properties and collections of a * * Key * * object , you can :
+When you invoke a method on the client * proxy * , the actual program on the server executes the method . In this step , you &apos;ll execute a query on the server .
+- To store views .
+&gt; The table cannot perform the operation because the particular filter pointed to by the _ lpRestriction _ parameter is too complicated .
+title : &quot; Excel Commands , Functions , and States &quot;
+- The address is formatted as an Internet address .
+Stores the relationships between containers , lists , callouts , and shapes .
+Additionally , your form template must be deployed to the server as either a sandboxed or administrator-approved solution . For more information about these deployment options , see &#91; Publishing Forms with Code &#93; ( publishing-forms-with-code.md ) .
+Contains the * * EntryID * * of the reminders folder .
+Contains a list of the months for which free / busy data of type busy or an out of office ( OOF ) message is present in the free / busy message .
+For more information about how to work with address book template identifiers , see &#91; Acting as a Foreign Address Book Provider &#93; ( acting-as-a-foreign-address-book-provider.md ) .
+# Disabled Cell ( Action Tags Section )
+&gt; The standard .NET Framework is the correct framework to use . Do not use the &quot; .NET Framework 4 Client Profile &quot; .
+&gt; The hierarchy table was successfully retrieved .
+title : &quot; SplineKnot Row ( Geometry Section ) &quot;
+- The declaration that the file will be opened for edit ( ofe )
+You can add new rows , change the type for existing rows , or delete rows in the ShapeSheet in Microsoft Visio .
+&gt; &#91; in &#93; Pointer to an array of * * DTPAGE * * structures that contain information about the display table pages to be built .
+- &#91; Required Report Message Properties &#93; ( required-report-message-properties.md )
+&gt; Not currently used .
+For a * * Field2 * * object , the possible settings and return values are described in the following table .
+&#124; FALSE &lt; br / &gt; &#124; The variation of the page or shape can be changed . &lt; br / &gt; &#124;
+&gt; The message identified by _ lpEntryID _ is locked by the MAPI spooler , and the operation cannot be aborted .
+&gt; Delivered to a physical delivery system patron , such as a conventional postal mailbox .
+&#124; Cell name : &lt; br / &gt; &#124; ShdwOffsetX &lt; br / &gt; &#124;
+Returns the hue of Sheet.4 &apos;s fill foreground color .
+title : Persisting hierarchical Recordsets
+# Reshape Name dynamic property ( ADO )
+- * * Cancel * * : Returns `0x800000e` , the Apply action cannot be canceled .
+- No fields in the record are updatable .
+title : &quot; Disabled Cell ( Actions Section ) &quot;
+&#91; Writing an Automated Client &#93; ( writing-an-automated-client.md )
+# # # Create the sample form template and form
+Example user-defined worksheet function that computes the Nth Fibonacci number . When GENERIC.xll is loaded , it registers this function so that it can be called from the worksheet .
+&#91; PidTagControlType Canonical Property &#93; ( pidtagcontroltype-canonical-property.md )
+# # # Invoking Excel Commands that Use Dialog Boxes
+# Recordset2.ValidationText property ( DAO )
+- Any of the object events ( created , modified , deleted , moved , or copied )
+# Procedures collection ( ADOX )
+# Create a sendable item for a specific account based on the current folder
+title : Solutions for Remote Data Access
+# # # Specify a form &apos;s security level
+&#124; Unsent mail &lt; br / &gt; &#124; 0x00000103 &lt; br / &gt; &#124;
+title : &quot; PidLidPostalAddressId Canonical Property &quot;
+title : &quot; EllipticalArcTo Row ( Geometry Section ) &quot;
+&#124; Exported by : &lt; br / &gt; &#124; olmapi32.dll &lt; br / &gt; &#124;
+# # Defining context with a URL
+&#124; Archive web service ( backup and restore ) error code &#124; Description &#124;
+# About Setting the Resolution Order for Address Lists in Outlook
+Returns a string that represents the social network name .
+# Recordset.MoveLast method ( DAO )
+# Using a separate application domain to avoid crashing
+- &#91; Create an annual recurring appointment that uses a YearNth pattern &#93; ( how-to-create-an-annual-recurring-appointment-that-uses-a-yearnth-pattern.md )
+- &#91; Add a custom action as a response to a mail item &#93; ( how-to-add-a-custom-action-as-a-response-to-a-mail-item.md )
+&#91; Verify an Attachment is Blocked &#93; ( how-to-verify-an-attachment-is-blocked.md )
+&#124; Area : &lt; br / &gt; &#124; MAPI message &lt; br / &gt; &#124;
+&gt; Count of values in the array pointed to by the * * lpft * * member .
+&#124; 0 &lt; br / &gt; &#124; The shape text uses the Dark font color . &lt; br / &gt; &#124;
+If the number or formula contains an error , Visio displays a message and then highlights the error in the formula bar or cell . Correct the error , and press ENTER to accept the correction .
+title : &quot; Initializing the MAPI Utilities &quot;
+title : &quot; Gradient Stop Row ( Fill Gradient Section ) &quot;
+The * * TransferSQLDatabase * * action , by default , copies data , data definitions , database objects , and extended properties , such as default values , text constraints , and lookup values .
+# Recordset.NextRecordset method ( DAO )
+- Binding database fields to data-aware components .
+&gt; &#91; out &#93; A pointer to the number of objects being enumerated .
+title : &quot; PidTagRecipientProposedStartTime Canonical Property &quot;
+The values contained in the deleted record are deleted permanently when the * * After Delete * * event ends .
+&#124; DPI unaware &#124; Application always renders as if it is on a display with a DPI value of 96 . &#124; Application is bitmap stretched to expected size on primary and secondary displays . &#124;
+&#124; Cell name : &lt; br / &gt; &#124; LineColor &lt; br / &gt; &#124;
+title : &quot; PlowCode Cell ( Page Layout Section ) &quot;
+&gt; &#91; out &#93; A pointer to the count of entries in the array pointed to by the _ lpppUIDArray _ parameter .
+&gt; &#91; out &#93; A buffer to receive the contents of the string pointed to by the lpString2 parameter .
+A * * RelLineTo * * row contains the following cells .
+- &#91; Display table implementation &#93; ( display-table-implementation.md )
+&gt; &#91; in &#93; Pointer to the null-terminated string to be searched .
+If the current page is a background page ( unnumbered ) , or if an error occurs , the PAGENUMBER function returns zero .
+- Web Service Submit
+# Using Custom XSLT in InfoPath Form Templates
+Returns an * * xltypeRef * * external reference to row cells passed in .
+# BevelBottomType Cell ( Bevel Properties Section )
+# Visio file format reference
+The Store API provides miscellaneous store functionality to store providers . It provides the following defintions , data types , properties , and interfaces .
+Contains the password of the personal storage table ( .pst file ) being configured .
+title : &quot; Property Entries in MapiSvc.inf Message Service Sections &quot;
+- &#91; BOUNDINGBOXRECT Function &#93; ( boundingboxrect-function.md )
+- &#91; HASCATEGORY Function &#93; ( hascategory-function.md )
+- &#91; OPENSHEETWIN Function &#93; ( opensheetwin-function.md )
+- &#91; THEMECBV Function &#93; ( themecbv-function.md )
+title : QueryDef.Properties property ( DAO )
+Following are examples of some kinds of apps that the CSOM supports . The CSOM can be used instead of the PSI for many scenarios :
+&gt; &#91; in &#93; Pointer to an array of null-terminated Unicode strings .
+&#124; Millimeters &lt; br / &gt; &#124; MM &lt; br / &gt; &#124;
+&#124; Cell name : &lt; br / &gt; &#124; ShapeShdwType &lt; br / &gt; &#124;
+The * * Max * * function contains the following argument .
+- &#91; Parent property &#93; ( parent-property-ado-md.md )
+&gt; To get information about a style , you can right-click the style in the * * Style Explorer * * window to view its ShapeSheet .
+Software that exposes data to an ADO application either directly or via a service provider . See also * * service provider * * .
+# # Updating JOINed results : Unique Table
+&#124; Files with the .cfg extension &lt; br / &gt; &#124; Contains configuration information for a form . &lt; br / &gt; &#124;
+This property is used in autoforwarded messages . If autoforwarding is not permitted or if no alternate recipient has been designated , a nondelivery report should be generated .
+&gt; The recipient address must exist .
+title : &quot; About Cell References &quot;
+title : &quot; PidLidNonSendableBcc Canonical Property &quot;
+&#124; Exposed by : &lt; br / &gt; &#124; Progress objects &lt; br / &gt; &#124;
+Note that a zero-length string is not the same as null .
+- &#91; MAPI Service Provider Objects &#93; ( mapi-service-provider-objects.md )
+The following code demonstrates how to use the &#91; Command &#93; ( command-property-adox.md ) property to update the text of a procedure .
+&#124; FALSE &lt; br / &gt; &#124; Do not ask user to enter data . &lt; br / &gt; &#124;
+# Recordset object ( ADO ) reference
+title : &quot; PidTagWizardNoPstPage Canonical Property &quot;
+# FetchComplete event ( ADO )
+&#124; FALSE &lt; br / &gt; &#124; Selection handles are displayed when a shape is selected . &lt; br / &gt; &#124;
+The filter constants make it easier to resolve individual record conflicts during batch update mode by allowing you to view , for example , only those records that were effected during the last * * UpdateBatch * * method call , as shown in the following example :
+- &#91; SendEmail macro action &#93; ( sendemail-macro-action.md )
+- &#91; Deleting records using the Delete method &#93; ( deleting-records-using-the-delete-method.md )
+&gt; The search criteria was successfully obtained .
+# Y Justify Cell ( Action Tags Section )
+Records retrieved from the cache do not reflect concurrent changes that other users made to the source data . To force an update of all the cached data , use the &#91; Resync &#93; ( resync-method-ado.md ) method .
+# # Internal and External Worksheet References
+&#91; Multithreading and Memory Contention in Excel &#93; ( multithreading-and-memory-contention-in-excel.md )
+- &#91; ADOX code examples &#93; ( adox-code-examples.md )
+- &#91; PidLidFileUnder Canonical Property &#93; ( pidlidfileunder-canonical-property.md )
+- &#91; PidNameExchangeJunkEmailMoveStamp Canonical Property &#93; ( pidnameexchangejunkemailmovestamp-canonical-property.md )
+# Field object ( ADO )
+title : &quot; PidTagFormMessageBehavior Canonical Property &quot;
+&#124; Associated properties : &lt; br / &gt; &#124; dispidPageDirStream &lt; br / &gt; &#124;
+&#124; &#91; Get the organizer of a meeting &#93; ( how-to-get-the-organizer-of-a-meeting.md ) &#124; Programmatically returns the organizer of a meeting . &#124;
+&#124; 4 &lt; br / &gt; &#124; Text &lt; br / &gt; &#124;
+- &#91; RunCode macro action &#93; ( runcode-macro-action.md )
+&#124; 5 &lt; br / &gt; &#124; Flood &lt; br / &gt; &#124;
+- &#91; Opening a Message &#93; ( opening-a-message.md ) : Describes how to open a message .
+&gt; The entry represented by _ lpEntryID _ does not exist .
+# Sending Across Messaging Domains
+# # # Wrapped PST and Unicode paths
+# # Purpose of the Outlook PIA reference
+If there is no text , the result is zero . If the text cannot be evaluated , the function returns an error .
+Comparison operators are used to construct logical expressions . A logical expression evaluates to either TRUE or FALSE .
+title : &quot; MFCMAPI as a code sample &quot;
+title : &quot; Developing a MAPI Transport Provider &quot;
+&#124; Cell name : &lt; br / &gt; &#124; LineRouteExt &lt; br / &gt; &#124;
+# Getting and setting properties with GetProps and SetProps
+# # # H-6 . Interoperability Considerations
+There are several entries , some of which must appear in the mapisvc.inf configuration file , that are included in the profile section of every address book provider . The following table lists these profile section entries and whether or not the mapisvc.inf file must include them .
+- &#91; About registering a new domain for automatic configuration &#93; ( about-registering-a-new-domain-for-automatic-configuration.md )
+title : &quot; Finding a Profile Name &quot;
+Creates a new record for an updatable &#91; Recordset &#93; ( recordset-object-ado.md ) object .
+&#124; 8 &lt; br / &gt; &#124; Convert tabs to a set of spaces . &lt; br / &gt; &#124;
+# # # Content controls in Word 2010
+- &#91; ConvertToString method example &#93; ( converttostring-method-example-vb.md )
+title : Window management ( Access desktop database reference )
+The procedure in this section updates the * * startDate * * property of a project by using the JavaScript object model . The procedure includes the following high-level steps :
+&#124; Provider &lt; br / &gt; &#124; Implemented by MAPI . Used by clients . &lt; br / &gt; &#124;
+Generally , you should use the * * PopulatePartial * * method when you create a partial replica and whenever you change your replica filters . If your application changes replica filters , you should follow these steps :
+&#124; Cell name : &lt; br / &gt; &#124; FillForegndTrans &lt; br / &gt; &#124;
+title : &quot; PidTagImapCachedMsgsize Canonical Property &quot;
+- &#91; Set form , report , and control properties &#93; ( set-form-report-and-control-properties.md )
+- &#91; Prepared property &#93; ( prepared-property-ado.md )
+&#124; TRUE &lt; br / &gt; &#124; Text is formatted as strikethrough . &lt; br / &gt; &#124;
+title : &quot; Multithreading and Memory Contention in Excel &quot;
+title : &quot; PidTagSearchFolderEfpFlags Canonical Property &quot;
+&#124; TRUE &lt; br / &gt; &#124; Include text properties . &lt; br / &gt; &#124;
+&gt; &#91; out &#93; Destination folder information if item has been moved .
+title : &quot; Deleting a Message &quot;
+- Pass incoming message data to the MAPI spooler by using message objects .
+Microsoft Access uses reserved keywords for defining , manipulating , and accessing databases . Reserved keywords are part of the grammar of the language that is used by Access to parse and understand SQL statements .
+title : &quot; PidTagAttachmentHidden Canonical Property &quot;
+The PROCEDURE clause has these parts :
+- The malicious use of properties and methods from the InfoPath object model .
+title : &quot; LockCrop Cell ( Protection Section ) &quot;
+&gt; The printing job has finished successfully .
+- &#91; SetWarnings macro action &#93; ( setwarnings-macro-action.md )
+- Create a custom service provider such as an address book provider , transport provider , or store provider .
+title : &quot; Sending a reply &quot;
+# RelQuadBezTo Row ( Geometry Section )
+&#124; 2 &lt; br / &gt; &#124; The shape fill color inherits from the Accent 1 theme color &lt; br / &gt; &#124;
+# What &apos;s new in ADO
+The following table lists the ribbon customization settings to store in the * * USysRibbons * * table .
+&#124; TRUE &lt; br / &gt; &#124; Vertical position is locked . &lt; br / &gt; &#124;
+# InfoPath developer reference for external automation
+&#124; TRUE &lt; br / &gt; &#124; Text cannot be edited . &lt; br / &gt; &#124;
+title : &quot; PidTagLocaleId Canonical Property &quot;
+&#91; Project PSI reference overview &#93; ( project-psi-reference-overview.md )
+# # Example applications of MTR
+* * To configure all the service providers in a message service * *
+# Index object ( ADOX ) reference
+Message service entry point function for a MAPI store provider to wrap a PST-based local store as an NST store .
+&gt; Insufficient memory was available to retrieve the identifiers .
+&gt; &#91; in &#93; Pointer to server folder .
+# # Enhanced features of Microsoft Access SQL
+&#124; Associated properties : &lt; br / &gt; &#124; dispidEmail3EmailAddress &lt; br / &gt; &#124;
+&gt; A multivalued list box populated by a multivalued property of type string .
+# # External / standalone application development environment
+* * To add rendering information to formatted message text * *
+Use the * * SizedSSortOrderSet * * macro to create a sort order set with explicit bounds .
+&#124; Message store &lt; br / &gt; &#124; Acts as a hierarchically organized database of messages . &lt; br / &gt; &#124;
+# Relations collection ( DAO )
+&gt; Properties were successfully deleted .
+&gt; Describes how to initialize MAPI utilities .
+title : &quot; RotationYAngle Cell ( 3-D Rotation Properties Section ) &quot;
+There are some macros that can help determine attributes of an object such as whether it is local , remote , or security-controlled . These macros include :
+Everything in Microsoft Visio , every document , page , style , shape , group , shape or object within a group , master , object from another program , guide , and guide point , has a ShapeSheet spreadsheet where information about that object is stored . This spreadsheet contains information such as height , width , angle , color , and other attributes that determine the shape &apos;s appearance and behavior .
+&gt; InfoPath never modifies the content of the schema file ( .xsd ) , but it may logically infer a subset of it for design purposes . The schema file is always untouched within the form template at both design time and run time .
+&#124; Cell name : &lt; br / &gt; &#124; QuickStyleVariation &lt; br / &gt; &#124;
+title : Understanding Recordset Structure
+title : &quot; PidTagEmailAddress Canonical Property &quot;
+* expression * .Recordsets
+# # Time &amp; Date functions
+- The FormRegionClass class defines all the method , property , and event members of FormRegion . This is the class that the FormRegion interface is attributed to associate with behind the scenes so that you can write code to create an instance of the FormRegion interface . However , you do not use this interface directly in code .
+&lt; li &gt; 9 &lt; / li &gt;
+&#124; Select text &lt; br / &gt; &#124; Drag the pointer over the text . &lt; br / &gt; &#124;
+title : &quot; MAPI Features and Architecture &quot;
+This section discusses the object model for InfoPath managed-code solutions , and describes common programming tasks .
+&gt; &#91; out &#93; Chain of &#91; UPMOV &#93; ( upmov.md ) structures .
+- &#91; MAPI Progress Indicators &#93; ( mapi-progress-indicators.md )
+title : Automatically accept a meeting request
+&gt; &#91; in &#93; Pointer to a callback function furnished by the caller . If the _ lpfnFilterColumns _ parameter is set to NULL , no callback is made .
+This property applies only to requests sent with the HTTP or HTTPS protocols .
+The following properties are exposed by profile section objects .
+# PaperSource Cell ( PrintProperties Section )
+title : &quot; Upload Table State &quot;
+This example shows how to programmatically connect Outlook with a SharePoint folder and to synchronize the folder contents .
+# Get the organizer of a meeting
+title : User properties , methods , and events ( ADOX )
+# # Step D : Final testing before release
+- A local directory . For example :
+To generate a References header field , clients must set these properties to the desired value . MIME writers must copy the value of these properties to the References header field .
+2 . Retrieve the project information , including the Task properties .
+# Clone method ( ADO )
+You manipulate a table definition using a * * TableDef * * object and its methods and properties .
+title : &quot; PidTagServiceDllName Canonical Property &quot;
+This member must always return E _ NOTIMPL .
+&#124; Associated properties : &lt; br / &gt; &#124; dispidApptProposedEndWhole &lt; br / &gt; &#124;
+For an MSI installation of Office
+# Share Free / Busy schedule within a specified period in a calendar
+This value is 100 % for measured shapes on scaled drawings or unmeasured shapes on unscaled drawings .
+- Specify a default message store .
+This section describes the functions that Outlook exports .
+title : &quot; PidLidEmail1OriginalEntryId Canonical Property &quot;
+# Name Cell ( Reviewer Section )
+For more information about how the outgoing queue table is used , see &#91; Sending Messages by Using Message Store Providers &#93; ( sending-messages-by-using-message-store-providers.md ) .
+- Access provider-specific index properties with the &#91; Properties &#93; ( properties-collection-ado.md ) collection .
+- &#91; PageCount property &#93; ( pagecount-property-ado.md )
+&#124; Selecting the link to the profile page of a friend . &lt; br / &gt; &#124; The friend &apos;s page on the social network opens in the logged-on user &apos;s default browser . &lt; br / &gt; &#124;
+This sample uses directories as folders and OLE 2.0 document files as messages . The sample supports all required features for a default message store .
+# SkipLine method ( ADO )
+If you enter a macro group name for the * * Macro Name * * argument , Access runs the first macro in the macro group .
+2 . Add a failure callback function that renders an error message , as follows .
+You can also use an IN clause with these statements to modify data in another database .
+4 . Choose the F5 key to debug the solution . When the program has completed running , choose any key to exit .
+- &#91; CacheSize property example &#93; ( cachesize-property-example-vj.md )
+title : &quot; Respond to Form Events &quot;
+title : &quot; PidTagConversionEits Canonical Property &quot;
+# Address Book Data-Binding object
+&#124; Cell name : &lt; br / &gt; &#124; PageLineJumpDirX &lt; br / &gt; &#124;
+&gt; &#91; in &#93; A pointer to the name of the preprocessor function . The _ lpszPreprocess _ parameter can be NULL .
+- The form is closed .
+- Add service providers to a message service .
+&#124; Windows release &#124; ONNX versions supported &#124; ONNX opsets supported &#124;
+Images are represented in Windows ML in a tensor format . Tensorization is the process of converting an image into a tensor and happens during bind .
+title : Tools and samples
+title : IMLOperatorShapeInferenceContext.IsOutputValid method
+To release the memory , call * * Dispose * * on either the model or session . Don &apos;t just delete them , as some languages perform lazy garbage collection .
+8 . First , we &apos;ll implement the `LoadModel` method . Add the following method after the `main` method . This method loads the model and outputs how long it took :
+&#124; String &#124; 8 &#124; String ( unsupported ) . &#124;
+The schema includes many &#91; StartTime &#93; ( starttime.md ) elements .
+1 . Get the Active Directory site name of the client computer .
+- Search your calendar folder for recurrence appointments .
+The * * Name * * element represents the name of a setting .
+2 . Now set the To : line recipient of the email message . To do this , change `user1 @ contoso.com` to use your SMTP address .
+&#124; String &lt; br / &gt; &#124; Indicates a string . &lt; br / &gt; &#124;
+# # AddImContactToGroup operation ErrorInvalidImContactId error response
+The * * GetFederatedDirectoryGroup * * element is intended for internal use only .
+title : &quot; Control access to EWS in Exchange &quot;
+The * * RelevanceScore * * element specifies an integer that represents how relevant the associated persona is to the client .
+&#124; ResponseClass &lt; br / &gt; &#124; Indicates the class of the response . &lt; br / &gt; &#124;
+The * * UpdateInboxRules * * request includes the following elements :
+The following cmdlets were introduced in build 15.00.0847.032 ( Exchange Server 2013 SP1 ) :
+title : &quot; Disconnect ( UM web service ) &quot;
+The * * HasEndTimeChanged * * element specifies whether the end time for a meeting has changed .
+7 . The timeout timer for the subscription is reset .
+- EWS cannot access or create &quot; client-only &quot; rules or rules that are set in Outlook to run &quot; on this computer only &quot; .
+title : &quot; Perform paged searches by using EWS in Exchange &quot;
+# # Using the AddNewImContactToGroup operation
+# # # # Version attribute values
+The * * GetUserConfigurationResponseMessage * * element represents a response that returns a user configuration object .
+The * * SyncFolderId * * element represents the folder that contains the items to synchronize .
+The text value of the * * DisplayNameFirstLast * * element is a string value containing the display name , with the given name first .
+The * * MeetingString * * element specifies the name of the meeting as the result of entity extraction .
+The * * AppointmentSequenceNumber * * element specifies the sequence number of a version of an appointment .
+&#124; False &lt; br / &gt; &#124; Full contact details for public contacts are not returned . &lt; br / &gt; &#124;
+The * * Organizer * * element represents the organizer of a meeting .
+A text value is required for this element . The value is a string type . The following are the possible values for the &#91; BusyType &#93; ( busytype.md ) element :
+This MoveFolder request includes the following elements :
+&#124; Float &lt; br / &gt; &#124; A 32-bit floating-point value . &lt; br / &gt; &#124;
+* * Figure 1 . Event types returned by notification subscriptions * *
+# # Work with email and mail folders
+- Calendar folders , calendar items , and calendar views
+&#91; Groups &#93; ( groups.md )
+# # Get Inbox rules by using EWS
+* * Table 1 . Available recurrence patterns * *
+To authenticate a SMTP server connection , the client will have to respond with an `AUTH` command in the following format :
+&#124; Element &#124; Description &#124;
+&#124; ErrorExceededSubscriptionCount &lt; br / &gt; &#124; This error indicates that a user &apos;s throttling policy maximum subscription count has been exceeded . &lt; br / &gt; &#124;
+&#124; ErrorInvalidTimeInterval &lt; br / &gt; &#124; This error indicates that the specified time interval is invalid . The start time must be greater than or equal to the end time . &lt; br / &gt; &#124;
+&#124; ErrorSubmissionQuotaExceeded &lt; br / &gt; &#124; This error Indicates that a user cannot immediately send more requests because the submission quota has been reached . &lt; br / &gt; &#124;
+&#124; ErrorCalendarIsGroupMailboxForAccept &lt; br / &gt; &#124; This error is intended for internal use only . &lt; br / &gt; &#124;
+title : &quot; Response ( GetFederationInformation ) ( SOAP ) &quot;
+You can use the EWS Managed API or EWS to move and copy email messages in a mailbox .
+- &#91; Suggestion &#93; ( suggestion.md )
+The * * EndDate * * element represents the end date of a recurring task or a calendar item that has the EndDateRecurrence pattern type .
+&#124; AlternateMailboxes &lt; br / &gt; &#124; Collection of alternate mailboxes . &lt; br / &gt; &#124;
+The following figure shows the interactions between the Exchange 2013 server roles .
+VSS coordinates communication between the following components :
+The * * GlobalItemClasses * * element contains a list of item classes that represents all the item classes of the conversation items in a mailbox .
+&#124; Shallow &lt; br / &gt; &#124; Returns only the identities of items in the folder . &lt; br / &gt; &#124;
+# Setting up your EWS application
+# # # Handling errors , warnings , and exceptions

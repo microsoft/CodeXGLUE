@@ -1,0 +1,1298 @@
+=====================================
+Ternary Expression
+=====================================
+
+class Foo {
+  void Test() {
+    x ? "foo" : "bar";
+  }
+}
+
+---
+
+(compilation_unit
+  (class_declaration
+    name: (identifier)
+    body: (declaration_list
+      (method_declaration
+        type: (void_keyword)
+        name: (identifier)
+        parameters: (parameter_list)
+        body: (block
+          (expression_statement
+            (conditional_expression
+              condition: (identifier)
+              consequence: (string_literal)
+              alternative: (string_literal))))))))
+
+=====================================
+Binary Expressions
+=====================================
+
+class Foo {
+  void Test() {
+    x == y;
+    1 + 2;
+  }
+}
+
+---
+
+(compilation_unit
+  (class_declaration
+    name: (identifier)
+    body: (declaration_list
+      (method_declaration
+        type: (void_keyword)
+        name: (identifier)
+        parameters: (parameter_list)
+        body: (block
+          (expression_statement
+            (binary_expression
+              left: (identifier)
+              right: (identifier)))
+          (expression_statement
+            (binary_expression
+              left: (integer_literal)
+              right: (integer_literal))))))))
+
+=====================================
+Ternary expressions vs nullable types
+=====================================
+
+class Foo {
+  void Test() {
+    x is int?;
+    x is int
+      ? a
+      : b;
+    x is int?
+      ? a
+      : b;
+  }
+}
+
+---
+
+(compilation_unit
+  (class_declaration
+    (identifier)
+    (declaration_list
+      (method_declaration
+        (void_keyword)
+        (identifier)
+        (parameter_list)
+        (block
+          (expression_statement
+            (binary_expression (identifier) (nullable_type (predefined_type))))
+          (expression_statement
+            (conditional_expression
+              (binary_expression (identifier) (predefined_type))
+              (identifier)
+              (identifier)))
+          (expression_statement
+            (conditional_expression
+              (binary_expression (identifier) (nullable_type (predefined_type)))
+              (identifier)
+              (identifier))))))))
+
+=====================================
+Prefix-Unary Expressions
+=====================================
+
+class Foo {
+  void Test() {
+    ++x;
+    --y;
+  }
+}
+
+---
+
+(compilation_unit
+  (class_declaration
+    (identifier)
+    (declaration_list
+      (method_declaration
+        (void_keyword)
+        (identifier)
+        (parameter_list)
+        (block
+        (expression_statement
+          (prefix_unary_expression
+            (identifier)))
+        (expression_statement
+          (prefix_unary_expression
+            (identifier))))))))
+
+=====================================
+Cast expressions
+=====================================
+
+void Test() {
+  a = (B)c + (C)d;
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (expression_statement (assignment_expression
+        (identifier)
+        (assignment_operator)
+        (binary_expression
+          (cast_expression (identifier) (identifier))
+          (cast_expression (identifier) (identifier))))))))
+
+============================
+Anonymous object creation with empty body
+============================
+
+void b() {
+  var x = new {
+  };
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+          (identifier)
+            (equals_value_clause
+              (anonymous_object_creation_expression))))))))
+
+============================
+Anonymous object creation with single unnamed
+============================
+
+void b() {
+  var x = new {
+    args
+  };
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+          (identifier)
+            (equals_value_clause
+              (anonymous_object_creation_expression (identifier)))))))))
+
+============================
+Anonymous object creation with single named
+============================
+
+void b() {
+  var x = new {
+    test = "This"
+  };
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+          (identifier)
+            (equals_value_clause
+              (anonymous_object_creation_expression
+                (name_equals
+                  (identifier))
+                (string_literal)))))))))
+
+============================
+Checked expressions
+============================
+
+void b() {
+  var three = checked(1 + 2);
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+            (identifier)
+            (equals_value_clause
+              (checked_expression
+                (binary_expression
+                  (integer_literal)
+                  (integer_literal))))))))))
+
+============================
+Object creation expressions
+============================
+
+void b() {
+  new C.D(1, "hi");
+  a = new E
+  {
+    Foo = bar,
+  };
+
+  b = new E(1);
+
+  c = new E(1) { };
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (expression_statement
+        (object_creation_expression
+          (qualified_name (identifier) (identifier))
+          (argument_list
+            (argument (integer_literal))
+            (argument (string_literal)))))
+      (expression_statement
+        (assignment_expression
+          (identifier)
+          (assignment_operator)
+          (object_creation_expression
+            (identifier)
+            (initializer_expression
+              (assignment_expression
+                (identifier) (assignment_operator) (identifier))))))
+      (expression_statement
+        (assignment_expression
+          (identifier)
+          (assignment_operator)
+          (object_creation_expression
+            (identifier)
+            (argument_list (argument (integer_literal))))))
+      (expression_statement
+        (assignment_expression
+          (identifier)
+          (assignment_operator)
+          (object_creation_expression
+            (identifier)
+            (argument_list (argument (integer_literal)))
+            (initializer_expression)))))))
+
+============================
+Anonymous method expressions
+============================
+
+void a() {
+  delegate(int a) {
+    return a;
+  };
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (expression_statement
+        (anonymous_method_expression
+          (parameter_list (parameter (predefined_type) (identifier)))
+          (block
+            (return_statement (identifier))))))))
+
+============================
+Lambda expressions
+============================
+
+void a() {
+  x => x + 1;
+  (A a, B b) => { return a.c(b); };
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (expression_statement
+        (lambda_expression
+          (identifier)
+          (binary_expression (identifier) (integer_literal))))
+      (expression_statement
+        (lambda_expression
+          (parameter_list
+            (parameter (identifier) (identifier))
+            (parameter (identifier) (identifier)))
+          (block (return_statement
+            (invocation_expression
+              (member_access_expression (identifier) (identifier))
+              (argument_list (argument (identifier)))))))))))
+
+============================
+Invocation expressions
+============================
+
+void a() {
+  b(c, in d, out e, ref f, out var g);
+}
+
+---
+
+(compilation_unit (method_declaration
+  (void_keyword)
+  (identifier)
+  (parameter_list)
+  (block
+    (expression_statement
+      (invocation_expression
+        (identifier)
+        (argument_list
+          (argument (identifier))
+          (argument (identifier))
+          (argument (identifier))
+          (argument (identifier))
+          (argument (declaration_expression (implicit_type) (identifier)))))))))
+
+============================
+Tuple expressions
+============================
+
+void a() {
+  b = (c, d: "e");
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (expression_statement (assignment_expression
+        (identifier)
+        (assignment_operator)
+        (tuple_expression
+          (argument (identifier))
+          (argument
+            (name_colon (identifier))
+            (string_literal))))))))
+
+============================
+Implicit array creation
+============================
+
+void b() {
+  var z = new [] { 1, 2, 3 };
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+            (identifier)
+            (equals_value_clause
+              (implicit_array_creation_expression
+                (initializer_expression
+                  (integer_literal)
+                  (integer_literal)
+                  (integer_literal))))))))))
+
+============================
+Implicit multi array creation
+============================
+
+void b() {
+  var z = new [,] { { 1, 1 }, { 2, 2 }, { 3, 3 } };
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+            (identifier)
+            (equals_value_clause
+              (implicit_array_creation_expression
+                (initializer_expression
+                  (initializer_expression
+                    (integer_literal)
+                    (integer_literal))
+                  (initializer_expression
+                    (integer_literal)
+                    (integer_literal))
+                  (initializer_expression
+                    (integer_literal)
+                    (integer_literal)))))))))))
+
+============================
+Stackalloc implicit array
+============================
+
+void b() {
+  var z = stackalloc [] { 1, 2, 3 };
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+            (identifier)
+            (equals_value_clause
+              (implicit_stack_alloc_array_creation_expression
+                (initializer_expression
+                  (integer_literal)
+                  (integer_literal)
+                  (integer_literal))))))))))
+
+============================
+Stackalloc explicit array
+============================
+
+void b() {
+  var z = stackalloc int[] { 1, 2, 3 };
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+            (identifier)
+            (equals_value_clause
+              (stack_alloc_array_creation_expression
+                (array_type (predefined_type) (array_rank_specifier))
+                (initializer_expression
+                  (integer_literal)
+                  (integer_literal)
+                  (integer_literal))))))))))
+
+============================
+Explicit array creation
+============================
+
+void b() {
+  var z = new int[3] { 1, 2, 3 };
+  var b = new byte[,] { { 1, 2 }, { 2, 3 } };
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+            (identifier)
+            (equals_value_clause
+              (array_creation_expression
+                (array_type
+                  (predefined_type)
+                  (array_rank_specifier (integer_literal)))
+                (initializer_expression
+                  (integer_literal)
+                  (integer_literal)
+                  (integer_literal)))))))
+        (local_declaration_statement
+          (variable_declaration
+            (implicit_type)
+            (variable_declarator
+              (identifier)
+              (equals_value_clause
+                (array_creation_expression
+                  (array_type
+                    (predefined_type)
+                    (array_rank_specifier))
+                  (initializer_expression
+                    (initializer_expression
+                      (integer_literal)
+                      (integer_literal))
+                    (initializer_expression
+                      (integer_literal)
+                      (integer_literal)))))))))))
+
+============================
+Explicit multi array creation
+============================
+
+void b() {
+  var z = new int[3,2] { { 1, 1 }, { 2, 2 }, { 3, 3 } };
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+            (identifier)
+            (equals_value_clause
+              (array_creation_expression
+                (array_type
+                  (predefined_type)
+                  (array_rank_specifier
+                    (integer_literal)
+                    (integer_literal)))
+                (initializer_expression
+                  (initializer_expression
+                    (integer_literal)
+                    (integer_literal))
+                  (initializer_expression
+                    (integer_literal)
+                    (integer_literal))
+                  (initializer_expression
+                    (integer_literal)
+                    (integer_literal)))))))))))
+
+============================
+Makeref
+============================
+
+void b() {
+  var gp = __makeref(g);
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+            (identifier)
+            (equals_value_clause
+              (make_ref_expression
+                (identifier)))))))))
+
+============================
+Postfix unary
+============================
+
+void b() {
+  a--;
+  a++;
+  var b=a!;
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (expression_statement (postfix_unary_expression (identifier)))
+      (expression_statement (postfix_unary_expression (identifier)))
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+            (identifier)
+            (equals_value_clause
+              (postfix_unary_expression
+                (identifier)))))))))
+
+============================
+__reftype
+============================
+
+void b() {
+  var z = __reftype(g);
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+            (identifier)
+            (equals_value_clause
+              (ref_type_expression
+                (identifier)))))))))
+
+============================
+__refvalue
+============================
+
+void b() {
+  var z = __refvalue(g, int);
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+            (identifier)
+            (equals_value_clause
+              (ref_value_expression
+                (identifier)
+                (predefined_type)))))))))
+
+============================
+sizeof
+============================
+
+void b() {
+  var z = sizeof(int);
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+            (identifier)
+            (equals_value_clause
+              (size_of_expression
+                (predefined_type)))))))))
+
+============================
+typeof
+============================
+
+void b() {
+  var z = typeof(int);
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+            (identifier)
+            (equals_value_clause
+              (type_of_expression
+                (predefined_type)))))))))
+
+============================
+switch expression
+============================
+
+void b() {
+  var r = operation switch {
+      1 => "one",
+      2 => "two",
+      _ => "more"
+  };
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (local_declaration_statement
+        (variable_declaration
+          (implicit_type)
+          (variable_declarator
+            (identifier)
+            (equals_value_clause
+              (switch_expression
+                (identifier)
+                (switch_expression_arm
+                  (constant_pattern (integer_literal))
+                  (string_literal))
+                (switch_expression_arm
+                  (constant_pattern (integer_literal))
+                  (string_literal))
+                (switch_expression_arm
+                  (discard)
+                  (string_literal))))))))))
+
+=====================================
+await Expression
+=====================================
+
+class Foo {
+  void Test() {
+    await x;
+  }
+}
+
+---
+
+(compilation_unit
+  (class_declaration
+    (identifier)
+    (declaration_list
+      (method_declaration
+        (void_keyword)
+        (identifier)
+        (parameter_list)
+        (block
+        (expression_statement
+          (await_expression
+            (identifier))))))))
+
+=====================================
+throw expression
+=====================================
+
+class Foo {
+  void Test() {
+    x = x ?? throw y;
+  }
+}
+
+---
+
+(compilation_unit
+  (class_declaration
+    (identifier)
+    (declaration_list
+      (method_declaration
+        (void_keyword)
+        (identifier)
+        (parameter_list)
+        (block
+          (expression_statement
+            (assignment_expression
+              (identifier)
+              (assignment_operator)
+              (binary_expression
+                (identifier)
+                (throw_expression (identifier))))))))))
+
+=====================================
+range expressions full
+=====================================
+
+class Foo {
+  void Test() {
+    var a = b[1..4];
+    var c = 1..^4;
+  }
+}
+
+---
+
+(compilation_unit
+  (class_declaration
+    (identifier)
+    (declaration_list
+      (method_declaration
+        (void_keyword)
+        (identifier)
+        (parameter_list)
+        (block
+          (local_declaration_statement
+            (variable_declaration
+              (implicit_type)
+              (variable_declarator
+                (identifier)
+                (equals_value_clause
+                  (element_access_expression
+                    (identifier)
+                    (bracketed_argument_list
+                      (argument
+                        (range_expression
+                          (integer_literal)
+                          (integer_literal)))))))))
+            (local_declaration_statement
+              (variable_declaration
+                (implicit_type)
+                  (variable_declarator
+                    (identifier)
+                    (equals_value_clause
+                      (range_expression
+                        (integer_literal)
+                        (prefix_unary_expression (integer_literal))))))))))))
+
+=====================================
+range expressions partial
+=====================================
+
+class Foo {
+  void Test() {
+    var a = b[..4];
+    var c = ^1..;
+    var d = b[..];
+  }
+}
+
+---
+
+(compilation_unit
+  (class_declaration
+    (identifier)
+    (declaration_list
+      (method_declaration
+        (void_keyword)
+        (identifier)
+        (parameter_list)
+        (block
+          (local_declaration_statement
+            (variable_declaration
+              (implicit_type)
+              (variable_declarator
+                (identifier)
+                (equals_value_clause
+                  (element_access_expression
+                    (identifier)
+                    (bracketed_argument_list
+                      (argument
+                        (range_expression
+                          (integer_literal)))))))))
+            (local_declaration_statement
+              (variable_declaration
+                (implicit_type)
+                  (variable_declarator
+                    (identifier)
+                    (equals_value_clause
+                      (range_expression
+                        (prefix_unary_expression (integer_literal)))))))
+              (local_declaration_statement
+                (variable_declaration
+                  (implicit_type)
+                  (variable_declarator
+                    (identifier)
+                    (equals_value_clause
+                      (element_access_expression
+                        (identifier)
+                        (bracketed_argument_list (argument (range_expression)))))))))))))
+
+=====================================
+conditional access expression
+=====================================
+
+class Foo {
+  void Test() {
+    var a = b?.Something;
+    c.Something();
+  }
+}
+
+---
+
+(compilation_unit
+  (class_declaration
+    (identifier)
+    (declaration_list
+      (method_declaration
+        (void_keyword)
+        (identifier)
+        (parameter_list)
+        (block
+          (local_declaration_statement
+            (variable_declaration
+              (implicit_type)
+              (variable_declarator
+                (identifier)
+                (equals_value_clause
+                  (conditional_access_expression
+                    (identifier)
+                    (member_binding_expression
+                    (identifier)))))))
+          (expression_statement
+            (invocation_expression
+              (member_access_expression
+                (identifier)
+                (identifier))
+              (argument_list))))))))
+
+=====================================
+cast expression
+=====================================
+
+class Foo {
+  void Test() {
+    x = (int) y;
+      }
+}
+
+---
+
+(compilation_unit
+  (class_declaration
+    (identifier)
+    (declaration_list
+      (method_declaration
+        (void_keyword)
+        (identifier)
+        (parameter_list)
+        (block
+          (expression_statement
+            (assignment_expression
+              (identifier)
+              (assignment_operator)
+              (cast_expression (predefined_type) (identifier)))))))))
+
+=====================================
+Generic type name no type args
+=====================================
+
+var d = typeof(Dictionary<,>);
+var t = typeof(Tuple<,,,>);
+
+---
+
+(compilation_unit
+  (field_declaration
+    (variable_declaration
+      (implicit_type)
+      (variable_declarator
+        (identifier)
+        (equals_value_clause
+          (type_of_expression
+            (generic_name
+              (identifier)
+              (type_argument_list)))))))
+  (field_declaration
+    (variable_declaration
+      (implicit_type)
+      (variable_declarator
+        (identifier)
+        (equals_value_clause
+          (type_of_expression
+            (generic_name
+              (identifier)
+              (type_argument_list))))))))
+
+=====================================
+default expression
+=====================================
+
+var a = default(int);
+int b = default;
+
+---
+(compilation_unit
+  (field_declaration
+    (variable_declaration
+      (implicit_type)
+      (variable_declarator
+        (identifier)
+        (equals_value_clause
+          (default_expression
+            (predefined_type))))))
+  (field_declaration
+    (variable_declaration
+      (predefined_type)
+      (variable_declarator
+        (identifier)
+        (equals_value_clause
+          (default_expression))))))
+
+=====================================
+Generic type name no type args
+=====================================
+
+ref VeryLargeStruct reflocal = ref veryLargeStruct;
+ref var elementRef = ref arr[0];
+
+---
+
+(compilation_unit
+  (field_declaration
+    (modifier)
+    (variable_declaration
+      (identifier)
+      (variable_declarator
+        (identifier)
+        (equals_value_clause
+          (ref_expression
+            (identifier))))))
+  (field_declaration
+    (modifier)
+    (variable_declaration
+      (implicit_type)
+      (variable_declarator
+        (identifier)
+        (equals_value_clause
+          (ref_expression
+            (element_access_expression
+              (identifier)
+              (bracketed_argument_list
+                (argument
+                  (integer_literal))))))))))
+
+=====================================
+Element binding expression
+=====================================
+
+var x = new Dictionary<string,int> { ["a"] = 65 };
+
+---
+
+(compilation_unit
+  (field_declaration
+    (variable_declaration
+      (implicit_type)
+      (variable_declarator
+        (identifier)
+        (equals_value_clause
+          (object_creation_expression
+            (generic_name
+              (identifier)
+              (type_argument_list (predefined_type) (predefined_type)))
+            (initializer_expression
+              (assignment_expression
+                (element_binding_expression
+                  (bracketed_argument_list (argument (string_literal))))
+                (assignment_operator)
+                (integer_literal)))))))))
+
+=====================================
+Conditional access to element (should be implicit_element_access)
+=====================================
+
+var x = dict?["a"];
+
+---
+
+(compilation_unit
+  (field_declaration
+    (variable_declaration
+      (implicit_type)
+      (variable_declarator
+        (identifier)
+        (equals_value_clause
+          (conditional_access_expression
+            (identifier)
+              (element_binding_expression
+                (bracketed_argument_list (argument (string_literal))))))))))
+
+=====================================
+Member access expression
+=====================================
+
+void Test(){
+  a.IsInfinity(value);
+  double.IsInfinity(value);
+  string.Empty;
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+    (block
+      (expression_statement
+        (invocation_expression
+          (member_access_expression
+            (identifier)
+            (identifier))
+          (argument_list
+            (argument
+              (identifier)))))
+      (expression_statement
+        (invocation_expression
+          (member_access_expression
+            (predefined_type)
+            (identifier))
+          (argument_list
+            (argument
+              (identifier)))))
+      (expression_statement
+        (member_access_expression
+          (predefined_type)
+          (identifier))))))
+
+=====================================
+is expression
+=====================================
+
+var b = s is string;
+
+---
+
+(compilation_unit
+  (field_declaration
+    (variable_declaration
+      (implicit_type)
+      (variable_declarator
+        (identifier)
+        (equals_value_clause
+          (binary_expression
+            (identifier)
+            (predefined_type)))))))
+
+=====================================
+is pattern
+=====================================
+
+var b = s is string s2;
+var c = s is "test";
+
+---
+
+(compilation_unit
+  (field_declaration
+    (variable_declaration
+      (implicit_type)
+      (variable_declarator
+        (identifier)
+        (equals_value_clause
+          (is_pattern_expression
+            (identifier)
+            (declaration_pattern
+              (predefined_type)
+              (identifier)))))))
+  (field_declaration
+    (variable_declaration
+      (implicit_type)
+      (variable_declarator
+        (identifier)
+        (equals_value_clause
+          (is_pattern_expression
+            (identifier)
+              (constant_pattern
+                (string_literal))))))))
+
+=====================================
+Discard pattern
+=====================================
+
+void Do() {
+  DateTime.TryParse(dateString, out _);
+}
+
+---
+
+(compilation_unit
+  (method_declaration
+    (void_keyword)
+    (identifier)
+    (parameter_list)
+      (block
+        (expression_statement
+          (invocation_expression
+            (member_access_expression (identifier) (identifier))
+            (argument_list (argument (identifier)) (argument (identifier))))))))
+
+=====================================
+Null-forgiving operator
+=====================================
+
+var x = name!.Length;
+
+---
+
+(compilation_unit
+  (field_declaration
+    (variable_declaration
+      (implicit_type)
+      (variable_declarator
+        (identifier)
+        (equals_value_clause
+          (member_access_expression (postfix_unary_expression (identifier))
+          (identifier)))))))

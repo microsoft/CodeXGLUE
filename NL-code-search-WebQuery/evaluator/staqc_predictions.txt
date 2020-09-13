@@ -1,5 +1,0 @@
-staqc-test-1	1
-staqc-test-2	1
-staqc-test-3	1
-staqc-test-4	1
-staqc-test-5	1

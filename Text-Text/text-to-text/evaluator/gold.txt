@@ -1,0 +1,4 @@
+- Warehouse , aisle , rack , shelf , and bin position
+3 . Click BOM versions .
+4 . Expand the Details section .
+On the * * Change catalog * * page , employees can easily select any store , or they can search for products across all stores .

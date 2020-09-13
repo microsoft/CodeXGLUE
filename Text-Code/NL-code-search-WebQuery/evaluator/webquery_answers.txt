@@ -1,0 +1,5 @@
+webquery-test-1	1
+webquery-test-2	1
+webquery-test-3	1
+webquery-test-4	0
+webquery-test-5	0

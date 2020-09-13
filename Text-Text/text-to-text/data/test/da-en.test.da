@@ -1,0 +1,1000 @@
+4 . Kør modellen , og udgiv den som en webtjeneste .
+I denne procedure kommer du til at planlægge ud fra et behov fra en salgsordre . Behovslinjerne repræsenterer salgslinjer og ikke komponentlinjer som ved produktionsbehov .
+Du kan oprette salgstilbud for kontakter , der ikke er registreret som debitorer .
+For kontrakter , der ikke er detaljerede , beregnes det fakturerede beløb på følgende måde :
+# &lt; a name = &quot; design-details-warehouse-management &quot; &gt; &lt; / a &gt; Designoplysninger : Logistik
+title : Opret en Power BI-datakilde med din Dynamics NAV
+title : &quot; Designoplysninger - Bogføringslinje i finanskladde &quot;
+En planlægningslinje være en af følgende typer :
+title : &quot; Fremgangsmåde : Opsætte produktionskalendere &quot;
+# # # &lt; a name = &quot; example-of-dimension-setup &quot; &gt; &lt; / a &gt; Eksempel på dimensionsopsætning
+Når du har indtastet de generelle oplysninger om målgruppen , skal du vælge de kontakter , der skal inkluderes i målgruppen .
+Da underleverandøropgaver er en udliciteret kapacitet , skal du oprette omkostningerne for både direkte og indirekte underleverandørtjenester på det arbejdscenterkort , der repræsenterer underleverandøroperationen .
+Gå nu tilbage til købsreturvareordren for at annullere Fortryd bogføring .
+# # &lt; a name = &quot; to-set-up-a-service-price-adjustment-group &quot; &gt; &lt; / a &gt; Sådan oprettes serviceprisreguleringsgrupper
+# &lt; a name = &quot; how-to-register-new-vendors &quot; &gt; &lt; / a &gt; Fremgangsmåde : Registrere nye kreditorer
+7 . Kontroller , at alle relevante finansposter har dimensionsværdier , der svarer til et omkostningssted og et omkostningsobjekt .
+# # # &lt; a name = &quot; to-test-the-data-before-you-consolidate &quot; &gt; &lt; / a &gt; Sådan kontrolleres dataene , før du konsoliderer
+# # &lt; a name = &quot; to-specify-posting-periods &quot; &gt; &lt; / a &gt; Sådan angives bogføringsperioder
+title : Registrere og regulere ressourceforbrug og priser
+# # # &lt; a name = &quot; example--fixed-application-in-sales-return &quot; &gt; &lt; / a &gt; Eksempel – Fast udligning i salgsreturvare
+* Hvis forsyning-behov-sæt er sammenkædet af en ordre-til-ordre-politik .
+7 . Planlagt lagerbeholdning kontrolleres , og genbestillingspunkt er ikke krydset .
+# # # &lt; a name = &quot; to-export-a-report-layout-to-a-file &quot; &gt; &lt; / a &gt; Sådan eksporterer du et rapportlayout til en fil
+title : &quot; Oprette regnskabsperioder for regnskabsår &quot;
+- Sådan oprettes en XMLport for filen , der er baseret på et XML-skema
+- Manuelt ved at tildele et specifikt nummer til hver vareenhed .
+# &lt; a name = &quot; how-to-enable-workflows &quot; &gt; &lt; / a &gt; Fremgangsmåde : Aktivere arbejdsgange
+4 . Bogfør tilbageførslen ved at bogføre kladden .
+title : Administrere bankkonti
+# # # &lt; a name = &quot; finished-production-order &quot; &gt; &lt; / a &gt; Færdig produktionsordre
+Manuel metode anvender afgangskladden , som angiver tidsforbrug og produceret antal .
+# # &lt; a name = &quot; to-assign-an-alternate-address &quot; &gt; &lt; / a &gt; Sådan tildeles alternative adresser
+Følgende illustration viser typiske lagerstrømme .
+- Du har oprettet en forkert fast udligning .
+# # &lt; a name = &quot; calculate-and-process-sales-tax &quot; &gt; &lt; / a &gt; Beregn og behandl moms
+5 . Vælg de returvareleverancelinjer , der skal indgå i fakturaen .
+&gt; Indhold til notifikationsskabeloner af typen Mail er i HTML-format . Indhold til notifikationsskabeloner af typen Note er i TXT-format .
+Opgavekøposter kører på basis af tilladelser . Disse tilladelser skal tillade kørsel af rapporten eller codeunit &apos; en .
+På nuværende tidspunkt er en af disse to situationer aktuelle :
+# &lt; a name = &quot; how-to-reconcile-customer-payments-manually &quot; &gt; &lt; / a &gt; Fremgangsmåde : Afstemme debitorbetalinger manuelt
+# # &lt; a name = &quot; to-cancel-a-posted-purchase-invoice &quot; &gt; &lt; / a &gt; Sådan annulleres en bogført købsfaktura
+- Indstilling af SØLV-lokation til læg-på-lager-aktiviteter .
+# &lt; a name = &quot; how-to-set-up-the-bank-data-conversion-service &quot; &gt; &lt; / a &gt; Fremgangsmåde : Konfigurere tjenesten til konvertering af bankdata
+Du har nu tømt de placeringer , hvor varerne plejede at være . Standardplaceringerne for varerne er nu ændret til de nye placeringer .
+# # &lt; a name = &quot; to-register-spare-parts &quot; &gt; &lt; / a &gt; Registrere reservedele
+Anlægsaktivet vil blive skilt fra den forkerte forsikringspolice på den anden linje og knyttet til den rette forsikringspolice på den første linje .
+&#124; Måned &#124; Alle finansposter i den samme kalendermåned overføres som én post til den tilsvarende pristype . &#124;
+title : Angive et prioritetsniveau for en kreditor
+# &lt; a name = &quot; how-to-set-up-items-and-locations-for-directed-put-away-and-pick &quot; &gt; &lt; / a &gt; Fremgangsmåde : Konfigurere varer og lokationer til styret læg-på-lager og pluk
+Du kan kun tilknytte organisationsniveau til kontaktpersoner , ikke kontaktvirksomheder . Du kan kun tildele ét kompetenceniveau pr. kontakt .
+På de individuelle sagskort skal du angvie priser for sagsvarer , sagsressourcer og sagsfinanskonti , og du skal oprette sagsbogføringsgrupper .
+# &lt; a name = &quot; how-to-set-up-job-responsibilities-for-contact-persons &quot; &gt; &lt; / a &gt; Fremgangsmåde : Definere dine kontaktpersoners ansvarsområder
+# # &lt; a name = &quot; to-post-depreciation-manually-from-the-fixed-asset-gl-journal &quot; &gt; &lt; / a &gt; Sådan bogføres afskrivning manuelt fra anlægskassekladden
+# &lt; a name = &quot; how-to-analyze-actual-amounts-versus-budgeted-amounts &quot; &gt; &lt; / a &gt; Fremgangsmåde : Analysere faktiske beløb sammenlignet med budgetterede beløb
+&gt; De bedste fremgangsmåder til planlægningsparametrene på varekortet gælder også for de samme felter på varekortene .
+2 . Åbn den købsordre , der er oprettet på basis af underleverandørkladden .
+title : &quot; Fremgangsmåde : Indtaste data i felter &quot;
+&#124; 2U &#124; 2 uger fra i dag &#124;
+Når du vil konfigurere koder for importmoms , skal du gøre følgende :
+- Strukturen af diagrammet over omkostningstyper ligner resultatopgørelseskontiene i finanskontoplanen . Herefter kan du overføre finanskontoplanen til diagrammet over omkostningstyper . Du kan foretage de nødvendige justeringer efter overførslen .
+&gt; Spildmængden forøger ikke afgangsantallet .
+# # &lt; a name = &quot; to-reserve-items-for-sales &quot; &gt; &lt; / a &gt; Sådan reserveres varer til salg
+# &lt; a name = &quot; how-to-calculate-order-promising-dates &quot; &gt; &lt; / a &gt; Fremgangsmåde : Beregne ordrebekræftelsesdatoer
+# # &lt; a name = &quot; to-set-up-email &quot; &gt; &lt; / a &gt; Sådan konfigurer du mail
+Hvis du vil bruge disse vinduer med interne operationer , f.eks til at plukke og flytte komponenter til produktion , skal du foretage nogle eller alle følgende konfigurationstrin , afhængigt af hvor meget kontrol du har behov for :
+2 . Vælg en eller flere linjer for indgående dokumentposter , der skal vises i standardvisningen .
+title : &quot; Om planlægningsfunktionen &quot;
+Følgende viser eksempler på brugen af flere kontrakter .
+Hvis der opstår fejl i opsætningen af dimensioner under bogføring af lagerværdien i finansregnskabet , vil bogføringen blive afsluttet med en fejl .
+Du definerer omkostningstyper , omkostningssteder og omkostningsobjekter for at analysere , hvad omkostningerne er , hvor omkostningerne kommer fra , og hvem skal bære omkostningerne .
+Følgende fremgangsmåde gælder for lagerdokumenter som f.eks. læg-på-lager ( logistik ) , bevægelse og pluklinjer eller læg-på-lager ( lager ) , bevægelse og pluklinjer .
+Når du opdaterer en lagervare , kan planlægningssystemet registrere , om lagervarer med genbestillingssystemet Overførsel er konfigureret med cirkulære referencer .
+&#124; Genbestillingsmetode &#124; Sikkerhedslager &#124; Akkumuleringsperiode for lot &#124; Ændringsperiode &#124;
+I denne gennemgang bruges projektteammedlemmet ( Tina ) som person .
+# # # &lt; a name = &quot; example---declining-balance-1-depreciation &quot; &gt; &lt; / a &gt; Eksempel – Saldo 1 afskrivning
+# # &lt; a name = &quot; to-fill-in-and-post-an-intercompany-journal &quot; &gt; &lt; / a &gt; Sådan udfyldes og bogføres en IC-kladde
+&#124; Definer , om varen skal planlægges &#124; Genbestillingsmetode = Tom &#124;
+- Anvendelse af forudbetalinger på en ordre
+Du har også bogført en forudbetalingsfaktura , oprettet endnu en forudbetalingsfaktura , når ordren er ændret , og bogført den endelige faktura for restbeløbet .
+2 . Åbn den relevante kreditor med poster , der allerede er blevet bogført .
+title : &quot; Designoplysninger - Søgning efter dimensionskombinationer &quot;
+# # &lt; a name = &quot; to-encrypt-your-logon-information &quot; &gt; &lt; / a &gt; Sådan krypterer du logonoplysningerne
+# # # &lt; a name = &quot; to-set-up-transaction-nature-codes &quot; &gt; &lt; / a &gt; Sådan konfigurerer du koder for transaktionsarter
+# &lt; a name = &quot; how-to-work-with-bills-of-material &quot; &gt; &lt; / a &gt; Fremgangsmåde : Arbejde med styklister
+title : Oversigt over opgaver til konfiguration af salgsprocesser
+En timeseddel skal sendes til godkendelse , før den kan bruges . Du kan godkende og afvise individuelle linjer på en timeseddel eller sende dem tilbage til afsenderen til yderligere behandling . En timeseddel kan godkendes på to måder :
+# # &lt; a name = &quot; camt-data-mapping-to-fields-in-the-bank-acc-reconciliation-line-table-274 &quot; &gt; &lt; / a &gt; CAMT-datatilknytning til felter i tabellen Bankkto.afstemningslinje ( 274 )
+* En linje med anskaffelsen .
+- Registrere lagerpluk for montagekomponenter og derefter for montageelementer .
+Dernæst skal du udføre vælgerens opgave .
+title : Udvidelser til Dynamics NAV leveret af andre firmaer
+- Oprettet af din koncerninterne partner
+# # &lt; a name = &quot; to-process-customer-payments-with-discounts-manually &quot; &gt; &lt; / a &gt; Sådan behandler du debitorbetalinger med rabatter manuelt
+&gt; Den gamle post findes stadigvæk , men dens status opdateres automatisk på følgende måde :
+&gt; Brugere vil stadig være i stand til at få vist alle bogførte dokumenter og poster og altså ikke kun dem , der har relation til deres ansvarscenter .
+# &lt; a name = &quot; how-to-work-with-production-families &quot; &gt; &lt; / a &gt; Fremgangsmåde : Arbejde med produktionsfamilier
+6 . Du kan nu vælge at knytte linkbasen til skemaet . Gentag fremgangsmåden , indtil du har indlæst alle linkbaser .
+&#124; Montageordrelinje &#124; Vare &#124; Varebogføringsgruppe &#124; Produktbogføringsgruppe &#124;
+&gt; Kun bevægelse kan gøres på placeringer af typen MODTAG og KK . Ligeledes kan kun bevægelser foretages fra placeringer af typen LEVER og KK .
+Følgende tabel indeholder en forenklet oversigt over XML for en brugerdefineret XML-del .
+2 . Vælg den vare , som der skal knyttes en optællingsperiode til .
+Programmet opretter et ordre-til-ordre-link , der fungerer som en indledende forbindelse mellem forsyningen , en forsyningsordre eller lager og det behov , som den eller det skal opfylde .
+12 . Fortsæt med at udfylde linjer for alle de operationer , der kræves for at producere den pågældende vare .
+# # # &lt; a name = &quot; setup-3 &quot; &gt; &lt; / a &gt; Opsætning 3 :
+* Ikke-planlagte ændringer i lageret .
+# # # &lt; a name = &quot; to-review-the-location-setup &quot; &gt; &lt; / a &gt; Sådan gennemgås lokationsopsætningen
+# # # &lt; a name = &quot; composing-the-warning-message &quot; &gt; &lt; / a &gt; Oprettelse af advarselsmeddelelsen
+Derefter skal du købe racerstel fra Custom Metals Incorporated .
+# &lt; a name = &quot; how-to-manage-users-and-permissions &quot; &gt; &lt; / a &gt; Fremgangsmåde : Administrere brugere og rettigheder
+- Angiv filterkriterier i feltet . Se næste afsnit kan få flere oplysninger .
+* Åbne kreditorposter , hvor der ydes kontantrabat , arrangeret efter kreditornummer .
+Du kan også udligne udgående betalinger manuelt i vinduet * * Udbetalingskladde * * eller fra de relaterede kreditor- eller medarbejderposter .
+Afgangsantallet angiver arbejdsforløbet i form af det færdige antal .
+2 . Vælg en bogført modtagelse , der evt. skal lægges på lager .
+# # &lt; a name = &quot; to-set-up-opportunity-sales-cycle-codes &quot; &gt; &lt; / a &gt; Sådan oprettes salgsproceskoder for leads
+Moms beregnes på basis af momsbogføringsopsætningen og de momsbogføringsgrupper , du har oprettet .
+# # &lt; a name = &quot; to-view-the-availability-of-an-item-in-different-periods &quot; &gt; &lt; / a &gt; Sådan får du vist disponeringen for en vare i forskellige perioder
+Fra salgsordrer og salgsfakturaer kan du bruge funktioner til hurtig oprettelse af indkøbsdokumenter for manglende vareantal , der kræves til salget . Du kan bruge to forskellige funktioner afhængigt af dokumenttypen .
+Da salgspriser og salgslinjerabatter er baseret på en kombination af vare og debitor , kan du også udføre denne konfiguration fra varekortet for den vare , som reglerne og værdierne gælder for .
+For både købs- og salgsdokumenter , kan du tildele et varegebyr på to måder :
+* Kopiering af koden er elimineret .
+title : Registrere fakturerbart og budgetteret forbrug for sagsressourcer
+title : &quot; Fremgangsmåde : Sende varer &quot;
+title : Anvende workflows
+# # &lt; a name = &quot; inventory-valuation-report &quot; &gt; &lt; / a &gt; Lagerværdirapport
+Gentag disse trin for hver webkilde , du vil tildele .
+# # # &lt; a name = &quot; to-add-remove-and-arrange-columns &quot; &gt; &lt; / a &gt; Sådan tilføjer , fjerner og arrangerer du kolonner
+# # &lt; a name = &quot; to-set-up-a-service-contract-group &quot; &gt; &lt; / a &gt; Sådan defineres servicekontraktgrupper
+I montage efter ordre-processen samles varen som svar på en salgsordre og med en én til én-sammenkædning mellem montageordren og salgsordren .
+Du kan samle oplysninger om hver enkelt forsikringspolice på forsikringskortet .
+# # &lt; a name = &quot; item-dimensions-are-separated &quot; &gt; &lt; / a &gt; Varedimensioner er adskilt
+Du kan bruge tidsvinduer til at optimere planlægningen af serviceordrelinjer .
+Du kan udligne finanstransaktionerne ved at følge disse trin .
+# # &lt; a name = &quot; create-an-import-or-export-job &quot; &gt; &lt; / a &gt; Oprette et import- eller eksportjob
+1 . Gå til Virksomhedsadministration &gt; Ressourcer &gt; Ressourcegrupper .
+* Vælg en kunde , der er aktiveret til elektronisk fakturering .
+- Konfigurations-id eller -navn
+1 . Gå til Alle arbejdsområder &gt; Detailbutiksregnskab .
+Dette emne indeholder en oversigt over produktionsprocessen . Den beskriver de forskellige stadier af produktionsordrer , batchordrer og kanbans fra oprettelse af ordre til afslutning af regnskabsperioden .
+* Kontroller , at det valgte produktionsflow har en version i udkast , og vælg den version .
+15 . Markér række 2 på listen .
+* Minimumtakttiden skal være mindre end eller lig med den gennemsnitlige takttid .
+3 . Skriv &apos; Eksempeldatamodel &apos; i feltet Navn .
+# # &lt; a name = &quot; use-an-existing-er-model-mapping-configuration &quot; &gt; &lt; / a &gt; Du kan bruge en eksisterende ER-modeltilknytningskonfiguration
+1 . Gå til Lagerstedsstyring &gt; Opsætning &gt; Lokalitetsvejledninger .
+18 . Vælg rækken Varer .
+2 . Klik på Skift visning .
+- Under varedisponering , når et materiale i er en formel erstattes med et andet materiale , fordi det er udsolgt
+- Ændring af køb år for-år ( efter leverandørgruppe og indkøbskategori )
+6 . Opdater værdierne for de påkrævede attributter i følgende oversigtspaneler :
+3 . Produktionsindlagringslokation
+- Hvis du vil fjerne en aktivitet , skal du udvide aktiviteten og derefter vælge papirkurvsknappen i overskriften til aktiviteten .
++ Vedhæftet dokument til kreditorfaktura
+Følgende rettigheder giver skrivebeskyttet adgang eller læse- og skriveadgang til fremviseren for fremhævnings- , blokerings- og anmærkningshandlinger .
+- Vedligehold produkter , der ikke opfylder kravene , og koordiner disse produkter med ekstra oplysninger om uoverensstemmelse for at spore den oprindelige årsag til et problem .
+Behovsprognoser bruges til at forudsige uafhængigt behov fra salgsordrer og afhængigt behov ved ethvert afkoblingspunkt for debitorordrer . De forbedrede reduceringsregler for behovsprognoser i er en ideel løsning til massetilpasning .
+title : Designe konfigurationer til at generere dokumenter , der har programdata
+title : Opret en standardstatus for produktlivscyklus
+&gt; Dette emne forklarer ikke , hvordan du redigerer regnskabsfordelinger , fordi denne funktion i øjeblikket ikke understøttes for mobilscenarier .
+# # # &lt; a name = &quot; searching-for-a-page &quot; &gt; &lt; / a &gt; Sådan søger du efter en side
+title : Definere delvis cyklusoptællingsproces for lokalitet
+# &lt; a name = &quot; movement-of-inventory-with-associated-work-in-warehouse-management &quot; &gt; &lt; / a &gt; Flytning af lager med tilknyttet arbejde i Lokationsstyring
+I følgende eksempel er overførselsaktiviteten for udbetalingskanban &apos; en konfigureret til overførsel mellem to steder på samme lagersted . Overførselsaktivitet for udbetalings-kanbanen er konfigureret , så den fuldføres automatisk .
+title : Indgå salgsaftaler
+Middeltal bruges som dimensionsværdier i økonomiske kontonumre , hvor en dimension er knyttet til et middel . Offentlige organisationer kræver normalt afstemte poster for økonomiske dimensioner , der er relateret til midler .
+# # # &lt; a name = &quot; purchase-requisition-control-rule &quot; &gt; &lt; / a &gt; Regel for styring af indkøbsrekvisition
+* Du kan f.eks. vælge M0002 , der har lagersted 12 .
+# # # &lt; a name = &quot; areas-of-responsibility &quot; &gt; &lt; / a &gt; Ansvarsområder
+Standardbrugergrænsefladen i Datastyring er den gamle brugergrænseflade , som er den standardbrugergrænseflade , der vises for brugerne , når de besøger arbejdsområdet til datastyring .
+Navnene på chefen og den generelle revisor i en virksomhed kan angives i firmaoplysningerne og bruges i forskellige lokale rapportudskrifter .
+# # # &lt; a name = &quot; mexican-cfd-electronic-invoice &quot; &gt; &lt; / a &gt; Mexicansk elektronisk CFD-faktura .
+5 . Markér eller fjern markeringen af afkrydsningsfeltet Batchbehandling .
+1 . Start appen på din mobilenhed .
+15 . Skriv &quot; Firma &quot; feltet Navn .
+* Angiv et navn til reglen .
+3 . Skriv en værdi i feltet Lagersted .
+6 . Klik på rullelisten i feltet Midlertidig lokalitetstype for at åbne opslaget .
+# # &lt; a name = &quot; define-fixed-picking-locations &quot; &gt; &lt; / a &gt; Definere faste plukpladser
+I følgende illustration vises de tre operationer og de materialer , de forbruger .
+# # &lt; a name = &quot; interest-rates-based-on-a-percentage &quot; &gt; &lt; / a &gt; Rentesatser baseret på en procentdel
+&#124; Detaljeret råbalance – standard &#124; Råbalance – standard &#124; Detaljeret råbalance – standard &#124;
+# # &lt; a name = &quot; percentage-of-net-amount &quot; &gt; &lt; / a &gt; Procent af nettobeløb
+4 . På listen skal du klikke på det lagerreguleringsjournalnavn , du vil bruge .
+Dette emne beskriver , hvordan du kan bruge strategien for problemløser til at forbedre ydeevnen for produktkonfiguration .
+title : Registrere og bogføre en fremdateret check for en debitor
+# &lt; a name = &quot; change-a-fixed-asset-group &quot; &gt; &lt; / a &gt; Ændre en anlægsaktivgruppe
+Du kan gemme et bud , når som helst før udløbsdatoen . Du kan derefter vende tilbage senere for at afslutte og afgive buddet . Når du har afgivet et bud , kan du tilbagekalde og opdatere det før udløbsdatoen .
+9 . Vælg det produkt , der skal føjes til salgsordren
+* Arbejdsgang-id &apos; et er identifikationskoden for den arbejdsgang , der behandler eller har behandlet dokumentet .
+# # # # # &lt; a name = &quot; benefits &quot; &gt; &lt; / a &gt; Frynsegoder
+- Økonomisk område ( påkrævet )
+&#124; PENSION &#124; Pension &#124; Lad arbejder fratræde &#124;
+# &lt; a name = &quot; modify-electronic-reporting-formats-by-reapplying-excel-templates &quot; &gt; &lt; / a &gt; Redigere elektroniske rapporteringsformater ved at genanvende Excel-skabeloner
+9 . Angiv &quot; 1 &quot; i feltet Automatisk planlægningsantal .
+- LIFO-dato med markering af indstillingen * * Medtag fysisk værdi * *
+10 . Vælg &apos; Betalingsmodel &apos; i træet .
+# # &lt; a name = &quot; use-the-created-configuration-for-testing-of-payment-journals-processing &quot; &gt; &lt; / a &gt; Bruge den oprettede konfiguration til at teste betalingskladdebehandling
+10 . Indtast eller vælg en værdi i feltet Kriterier .
+Du kan distribuere data i en budgetplan på en række forskellige måder at give et præcist billede af de forventede beløb .
+# &lt; a name = &quot; system-grouping-on-an-open-work-list &quot; &gt; &lt; / a &gt; Systemgruppering på en åben opgaveliste
+4 . Luk formen for at gemme ændringerne .
+# # &lt; a name = &quot; working-with-the-esl &quot; &gt; &lt; / a &gt; Arbejde med ESL
+# # # # &lt; a name = &quot; registered-breaks &quot; &gt; &lt; / a &gt; Registrerede pauser
+&gt; Du kan ikke navigere til nogle sider i tabellen nedenfor , medmindre der er angivet data eller parameterindstillinger på andre sider .
+12 . Klik på rullelisten i feltet Udlagringslokation for at åbne opslaget .
+Alle attributtyper , der understøttes til variantstyring , kan angives til målattributter undtagen tekst uden en fast liste .
+Desuden kan du bruge den anslåede tid i reglerne til automatisk at opdele arbejde under arbejdsoprettelsen . På denne måde kan du afbalancere arbejdet ud fra tid , det forventes at fuldføre opgaverne .
+- Faktureringsklassifikationskode ( op til 15 alfanumeriske tegn )
+Sammenholdelse af gebyrer styres for den juridiske enhed af knappen Sammenhold gebyrer på siden Kreditorparametre . Du kan konfigurere procenter for afvigelsestolerance for gebyrer på siden Gebyrtolerancer .
+title : Oprette og behandle en overensstemmelse
+&#124; Bogføring af anlægsaktiver &#124; Bogfør anlægsaktivposter . &#124; Anlægsaktiver &#124;
+* Denne indstilling kan kun vælges , når Finans vælges i indstillingen Gebyr .
+title : Vedligehold standardskabeloner for økonomiske dimensioner
+* Bemærk , at adressens formål for være Læsning .
+&#91; Søge efter produkter og produktvarianter under ordreindtastning &#93; ( search-products-product-variants.md )
+* Standardværdien i feltet Planlagt retur på siden Lånt udstyr beregnes som den aktuelle dato plus dette tal .
+For hver kørsel af lukningsproceduren angiver systemet , om en logfil , der indeholder advarsler , er gemt og kan ses .
+Markér dette afkrydsningsfelt , hvis du vil udelade køtid i planlægningen .
+27 . Klik op linket i den valgte række på listen .
+# # &lt; a name = &quot; packing-units-on-purchase-order-lines &quot; &gt; &lt; / a &gt; Pakkeenheder på indkøbsordrelinjer
+- En bestemt person
+6 . Vælg Ja i feltet Kræv bemyndigelse .
+- Hvis der findes en modkonto , hvad er kontoen ?
+En computer sendes til reparation , fordi der opstår fejl på harddisken efter længere tids brug . Harddiskfejlen forårsager blå skærm . Den tekniker , der modtager computeren , angiver følgende symptomer og betingelser :
+14 . Skriv en værdi i feltet Svar .
+5 . Klik på Vis filtre .
+- Forskellige varemodtagelsesmuligheder
+4 . Slå udvidelse af sektionen Sammenholdelse af fakturatotaler til / fra .
+Opret den afskrivningskonto , der bruges til afskrivningsposten i finansmodulet , når en transaktion afskrives . Denne konto gemmes i debitorposteringsprofilen .
+8 . Markér den valgte række på listen .
+- Angivelse af pris ved hjælp af lagerdimensionerne Lokation og Lagersted .
+&#124; Tendensanalyse af antal beskæftigede &#124; Antal beskæftigede i år sammenlignet med sidste år pr. firma og rullende antal beskæftigede for de seneste 12 måneder &#124;
+- Når brugeren indlæser en skabelon i et dataprojekt
+Hvis du vælger Regnskab , kan du vælge mellem følgende indstillinger i feltet Periodefrekvens :
+7 . Indtast eller vælg hovedkontoen til fakturalinjen .
+# # &lt; a name = &quot; set-up-journal-control &quot; &gt; &lt; / a &gt; Opsæt kladdekontrol .
+title : Spore løbende gennemsnitskostpris pr. lagerdimension
+# # # # &lt; a name = &quot; pin-pad &quot; &gt; &lt; / a &gt; Pinkodetastatur
+En formatkomponent er skemaet for det indgående dokument , der importeres på kørselstidspunktet . Et skema består af følgende elementer :
+28 . Markér den valgte række på listen .
+1 . Klik på Vedhæftede filer .
+# &lt; a name = &quot; maintain-employee-injury-and-illness-information &quot; &gt; &lt; / a &gt; Vedligeholde oplysninger om skade og sygdom for medarbejder
+27 . Udvid sektionen Behandlinger af skade eller sygdom .
+# # &lt; a name = &quot; assign-a-free-text-invoice-template-to-a-customer-and-enter-recurrence-details &quot; &gt; &lt; / a &gt; Tildele en fritekstfakturaskabelon til en debitor , og angiv oplysninger om gentagelse
+Ved at følge disse anbefalinger kan du bedre sikre ensartet repræsentation af den brugerdefinerede rækkefølge i hele systemet .
+Hvis metoderne i Finance and Operations-datakilder har parametre , bruges følgende syntaks til at kalde disse metoder :
+Når du har identificeret afvigelse , kan det være nødvendigt at kontakte kreditoren , hvis du mener , at oplysningerne på fakturaen er forkerte . Afhængigt af den indgåede aftale med kreditoren , kan du gøre en af følgende :
+6 . Vælg en indstilling i feltet Tidszone .
+- De poster , der viser Lønninger-hovedkontoen , stammer fra lønsystemet og bogføres i bærere .
+Elektricitetsregninger består ofte af to dele :
+Yderligere konfigurationstrin for bestemte funktioner er omfattet af artiklen for hver funktion .
++ Dato for arbejdsdag
+# # # &lt; a name = &quot; features-that-are-implemented-in-the-sample-er-format &quot; &gt; &lt; / a &gt; Funktioner , der er implementeret i ER-eksempelformatet
+# # &lt; a name = &quot; bom-and-formula-lines &quot; &gt; &lt; / a &gt; Stykliste- og formellinjer
+12 . Fjern værdien , så feltet er tomt , i feltet Datointervalkode .
+3 . Klik på Satsbutik .
+- Metode til oprettelse af arbejde : cross docking
+1 . Opret en ny stregkodemaske , og vælg typen &apos; Produkt &apos; .
+4 . Indtast eller vælg en værdi i feltet Varemodelgruppe .
+2 . Indtast eller vælg en værdi i feltet Afregningsperiode .
+- Cyklusoptælling ( mobilenhed )
+* Typen af fragtbrev definerer , hvordan fragtbreve og fragtfakturaer skal sammenholdes .
+&#124; Notationen infix &#124; Betegnelse &#124;
+33 . Klik på Sæt ind .
+title : Administrere frynsegoders udløbsdatoer
+7 . Indtast eller vælg en værdi i feltet Varenummer .
+# # # &lt; a name = &quot; view-job-status &quot; &gt; &lt; / a &gt; Se jobstatus
+Sådan anmoder du om , at en bruger deaktiveres :
+* Angiv de resterende kriterier for anlægsaktiverne , du vil hente med dette forslag .
+6 . Angiv en beskrivelse til interne formål i feltet Kort beskrivelse .
+title : Arbejdsgang for udgift
+title : Fastlægge gebyrer for debitorbetaling
+&#124; Dele pulje &#124; Kun de puljer , som brugeren opretter &#124; Kun de puljer , som brugeren opretter &#124; Ingen adgang &#124;
+* En engangsbetaling kan føjes til en betalingskladde når som helst før bogføringen . Dette gøres ved at klikke på knappen Ny og derefter tilføje betalingsoplysningerne manuelt frem for at bruge Betalingsforslaget .
+6 . I træet skal du vælge den biblioteksnode for forretningsproces , som opgaveregistreringen er tilknyttet .
+- Rykkersager – Kolonnerne på listesiden viser oplysninger om sager , der har en sagskategori med sagstypen Rykkere .
+13 . Klik på Ny kategorinode .
+I dette emne beskrives de genopfyldningsstrategier , der er tilgængelige for lagersteder , der bruger den funktionalitet , der findes i Lagerstedsstyring . Oplysningerne i dette emne gælder ikke for lagerstedsløsninger , der findes i Lagerstyring .
+Du kan også tilføje en eller flere afgrænsninger for at indsnævre målingerne fra kildetabellen .
+# # # &lt; a name = &quot; derived-dimensions-and-entities &quot; &gt; &lt; / a &gt; Afledte dimensioner og enheder
+- Konfigurere debitorkonti til elektronisk OIOUBL-fakturering
+* IBAN-nummeret skal være i det korrekte format . Du kan f.eks. bruge DE89370400440532013000 .
+15 . Skriv &quot; RoutingNumber &quot; i feltet Navn .
+36 . Klik på Skift varereference .
+16 . Udvid sektionen 1099-skat .
+&gt; Dette dokument bruger følgende Power BI-terminologi :
+* Vælg en dato , der er forskellig fra den forrige udløbsdato .
+11 . Indtast eller vælg en værdi i feltet Kreditorkonto .
+14 . Udvis eller skjul sektionen Adresser .
+* Vælg MXMF-omkostningselementer i dette eksempel .
+- Giv debitoren DTT-oplysninger for en individuel produktvariant for en bestemt lokation .
+* De næste par trin kigger på betingelserne for aftale USMF-000001 . Dette gør det nemmere at forstå , hvordan kundekreditværdier beregnes senere i proceduren .
+5 . Indtast eller vælg en værdi i feltet Fra hovedkonto .
+# # # &lt; a name = &quot; rehired-employees-or-contractors-show-up-multiple-times-after-termination &quot; &gt; &lt; / a &gt; Genansatte medarbejdere eller kontrahenter vises flere gange efter afslutning
+&#124; Slet rapporteringsenhed &#124; Slet den markerede række for rapporteringsenhed fra definitionen af rapporteringstræ . Denne kommando er tilgængelig fra en trædiagramdefinition . &#124;
+Når du bruger en projektkontrakt , kan du fakturere ét eller flere projekter på én gang . Med projektkontrakten kan du også sikre en konsistent faktureringsprocedure til hvert underprojekt i en projektstruktur .
+- Milepæl 3 : Fremlæggelse af rapport om produktets levedygtighed - 31. maj
+&#91; Debitor i den offentlige sektor &#93; ( accounts-receivable-public-sector.md )
+&#124; Rækkekode &#124; Beløb uden afrunding &#124; Beløb med afrunding til hele tusinder &#124;
+- Du kan tilføje flere færdighedsmærker for bedre at identificere en kandidats færdigheder .
+* Bemærk , at Modtagelseslokalitet er lager 13 . Det betyder , at denne kanban-regel udløses for denne lokalitet .
+6 . Vælg rækken for Felt = Varenummer på listen .
+* Angiv bankoplysninger om den udstedende bank .
+* Vælg det ønskede LCS-projekt . Du skal have adgang til projektet .
+Du skal konfigurere appen på enheden at oprette forbindelse til Finance and Operations-serveren via Azure AD-applikationen . Dette gøres ved at gennemføre følgende trin .
+&#124; Arrangere gennemløb for produktionsjob til processfremstilling &#124; Globalt &#124;
+# # # &lt; a name = &quot; warehouse-and-transportation &quot; &gt; &lt; / a &gt; Lagersted og transport
+* De samlede omkostninger har ingen indflydelse på værdien af anlægsaktivet og bruges udelukkende til sporing og orientering . Hvis omkostningerne skal kapitaliseres , skal en opskrivningsregulering bogføres separat .
+&#124; Fast løn-handlingstype &#124; Funktionalitet &#124;
+4 . Skriv en værdi i feltet Enhed .
+# # &lt; a name = &quot; add-a-line-to-the-requisition &quot; &gt; &lt; / a &gt; Føj en ny linje til rekvisitionen .
+- Du opretter et anlægsaktiv manuelt , før du føjer anlægsaktivnummeret til linjen på indkøbsordren eller kreditorfakturaen . Der bogføres automatisk en anskaffelsespostering for aktivet , når du bogfører kreditorfakturaen . Dette er standardmetoden .
+5 . Angiv en dato i feltet Gældende .
+3 . Skriv en værdi i feltet Satsmaster .
+# # &lt; a name = &quot; creating-registering-and-uploading-an-eu-entry-certificate &quot; &gt; &lt; / a &gt; Oprettelse , registrering og overførsel af et EU-indførselscertifikat
+6 . Skriv en værdi i feltet Beskrivelse .
+* Angiv Variabel omkostning .
+3 . Marker billedet som standardbilledet for kataloget ved at markere afkrydsningsfeltet i forhold til det billede , der vises i gitteret .
+Hvis du vil oprette et rapporteringstræ , skal du følge disse trin .
+4 . Indtast en beskrivelse af kompetencesøgningen i feltet Beskrivelse .
+2 . Klik på Konverter til kunde .
+2 . Klik på Medarbejderresultater .
+Hvis du vil opdatere afskrivningsprincippet for aktiver , der allerede er afhændet , skal du først slette eksisterende kassationsposteringer . Du skal også slette alle de posteringer , der blev oprettet på grund af kassationsprocessen .
+- Statistiske dimensioner
+title : Brug af kontinuitetsprogram
+- Egenveksler , der omfatter betalinger , der bruger udstedelse , genudstedelse , remittering og udligning af egenveksler
+# # # # &lt; a name = &quot; governmental-funds--ledger-entries-generated-from-the-posting-definition &quot; &gt; &lt; / a &gt; Midler fra offentlige myndigheder – finansposter genereret fra bogføringsdefinitionen
+&#124; Webtjeneste &#124; Angiv et navn til webtjenesten . &#124;
+2 . Føj en post til din behandling , og tilføj alle tidligere definerede handlinger og et ekstra felt .
+12 . Angiv eller vælg værdien &apos; Til opdatering af programdata &apos; i feltet Definition .
+På denne måde kan et enkelt ER-format bruges til at generere udgående elektroniske dokumenter og derefter opdatere programdataene . Denne funktion kan også anvendes i følgende situationer :
+- Formatering af valuta
+# &lt; a name = &quot; configure-and-run-job-to-post-statements &quot; &gt; &lt; / a &gt; Konfigurer og kør jobbet for at bogføre opgørelser
+- Gennemgå detaljer om en rabataftale
+# # &lt; a name = &quot; define-the-date-format-to-use-on-mobile-devices &quot; &gt; &lt; / a &gt; Definere datoformatet til brug på mobilenheder
+* Hvis der ikke er angivet en procentdel , skal du angive et beløb .
+* Dette vil knytte prisjusteringen til Houston-butikken .
+12 . Klik på Indstillinger i handlingsruden .
+2 . Klik på Ny produktionsordre .
+9. klik på Skjul .
+11 . Vis sektionen Kreditorer .
+1 . Opret bøgerne på siden Bøger .
+4 . Åbn opgaveguiden .
+# # &lt; a name = &quot; controlling-the-level-of-ledger-posting &quot; &gt; &lt; / a &gt; Styre finanskonteringsniveauet
+Du kan kopiere økonomiske dimensioner til dokumentoverskrifter eller til enkelte linjer i en købsaftale . Hvis du ændrer dimensionerne i aftalehovedet eller på aftalelinjen , påvirker ændringen ikke frigivne ordrer , men afspejles i nye ordrer .
+Skabelonoplysninger kan kopieres enten til en serviceaftale eller en serviceordre .
+* Tallet skal være entydigt . En nummerserie kan konfigureres for feltet Produktnummer . I dette tilfælde skal brugeren ikke at angive en værdi .
+- Kravene er blevet overført til den midlertidige debitorsaldo som fradrag .
+2 . Indtast eller vælg en værdi i feltet Behovsplan .
+&gt; Skabelonoprettelse er en del af tilføjelsesprogrammet til omfattende ansættelser i Attract .
+title : Forbind hjælpesystemet
+- Et dimensionsmedlem kan tilknyttes mere end én gang i den hierarkiske struktur .
+De foregående regler viser den fleksibilitet , som dimensionshierarkier giver . Ved at definere regler på højt niveau , kan du minimere vedligeholdelsen . Du kan derefter definere detaljerede regler , som passer til en bestemt forretningsmålsætning .
+6 . Vælg Ja i feltet Brug eksisterende arbejde .
+30 . Markere eller fjerne markeringen af afkrydsningsfeltet Vis på medarbejderselvbetjening .
+Hvis du bruger samme efterspørgselsprognose på 1.000 enheder pr. måned anvendes , overføres følgende behovsantal til behovsplanen .
+# &lt; a name = &quot; set-up-and-generate-accounts-receivable-aging-information &quot; &gt; &lt; / a &gt; Opsætte og generere aldersfordelte oplysninger om debitorer
+* Dette er den hovedkonto , som betalingen skal bogføres på midlertidigt , hvis der anvendes mellemkonto .
+# # # &lt; a name = &quot; example-3-flushing-principle &quot; &gt; &lt; / a &gt; Eksempel 3 : Varetrækprincip
+10 . Klik på fanen Opsætning .
+# # # # &lt; a name = &quot; filter-to-include-only-expense-estimate-lines &quot; &gt; &lt; / a &gt; Filtrere for kun at medtage udgiftsestimatlinjer
+Importér den ER-modelkonfiguration , der indeholder den eksempeldatamodel , der er udviklet til at gemme oplysningerne om den indgående fil .
+1 . Tilknytte et bestemt produkt
+# # &lt; a name = &quot; review-the-settings-of-the-format-mapping-to-the-data-model &quot; &gt; &lt; / a &gt; Gennemse indstillingerne for formattilknytningen til datamodellen
+24 . Klik på Tilknyt model til datakilde .
+17 . Vælg den nødvendige Produkt-komponent .
+1 . Opret en købsordre for en mængde på 2 og en salgspris på 10,00 .
+title : Politikker for lagerstedsarbejde
+I denne artikel beskrives funktionen til konsolidering af leverancer på en hub , når du leverer varer fra forskellige lagersteder til samme kunde , eller når du modtager varer fra flere leverandører på det samme lagersted .
+13 . Udvid sektionen Politikorganisationer .
+title : Oprette en ny samhandelsaftale
+Relationer er nøglen til at få nyansatte hurtigt i gang . Og endnu vigtigere så hjælper de med til at skabe en følelse af fællesskab og tilhørsforhold .
+Med arbejdsområdet * * Udgiftsstyring * * på mobilenheder kan brugerne udføre disse opgaver :
+I dette emne beskrives de forskellige indstillinger , der er tilgængelige for lagerreservation .
+19 . Vælg Ja i feltet Udelukket .
+* Strategien Hændelse er valgt for at oprette overførslen af kanbans ud fra en hændelse . Senere i opgavevejledningen vil vi udløse den ved at forkalkulere en produktionsordre .
+# # &lt; a name = &quot; defaulting-order-of-cash-discount-main-account &quot; &gt; &lt; / a &gt; Standardrækkefølge af hovedkonto for kasserabat
+* Vælg den metode , du vil bruge til at gruppere linjerne i opgørelsen efter .
+Denne procedure fører dig gennem processen med at eksportrembursen .
+6 . Udvid eller skjul sektionen Konfiguration .
+6 . Angiv et tal i feltet Volumen .
+6 . Indtast eller vælg en værdi i feltet Bilagsserie .
+5 . Slå udvidelsen af sektionen Plukliste til / fra .
+Denne opsætning hjælper med til at sikre , at back office-opgørelser medtager de samme posteringer som skift på POS-enehden , og at dataene opsummeres efter dette skift .
+5 . Vælg Ja i feltet Kræv sælger .
+&lt; td &gt; Fast løn-handlinger opfylder to formål :
+# # &lt; a name = &quot; delivery-date-control-methods &quot; &gt; &lt; / a &gt; Leveringsdatokontrolmetoder
+# # &lt; a name = &quot; set-a-production-order-to-reporting-as-finished &quot; &gt; &lt; / a &gt; Konfigurer en produktionsordre , der skal færdigmeldes
+Dette scenario bruger følgende fleksprofil , der repræsenterer en arbejdsdag .
+Følgende indstillinger blev tilføjet som periodiske processer . Med disse indstillinger kan du oprette en budgetplan ved at bruge eksisterende data fra et andet modul som udgangspunkt :
+1 . Gå til Kredit og inkasso &gt; Rente &gt; Opret rentenotaer .
+20 . Vælg Ja til Vil du også godkende ruten ? .
+22 . Markér den valgte række på listen .
+# &lt; a name = &quot; whats-new-or-changed &quot; &gt; &lt; / a &gt; Nyheder eller ændringer
+* Feltet Dokumentstatus er indstillet til Følgeseddel , fordi mindst én af ordrelinjerne er blevet leveret .
+2 . Skriv en værdi i feltet Banknummer .
+# # &lt; a name = &quot; review-the-files-states-for-the-er-format &quot; &gt; &lt; / a &gt; Gennemse filtilstande for ER-formatet
+Standardordretypen bestemmer , hvilken ordre varedisponering genererer .
+* Udlign debitorkontoen for checktransaktionen .
+* Åbn Overskriftsvisning for at åbne oversigtspanelet Variantrute .
+1 . Klik på Produktkvittering .
+* Vælg et job , der ikke er fuldført . Brug statusikoner i feltet Jobstatus til at få vist jobstatus .
+20 . Vælg den tidligere oprettede momsændring på listen .
+title : Omdøbe eller redigere et projektstadie
+Udfør følgende trin , når du er klar til at gemme og aktivere arbejdsgangen .
+title : Power BI-indhold for oversigt over kontanter
+# &lt; a name = &quot; remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast &quot; &gt; &lt; / a &gt; Fjerne afvigende fra historiktransaktionsdata , når du beregner en efterspørgselsprognose
+3 . Skriv en værdi i feltet Pakkeprofil-id .
+- Beløb , som en kunde betaler til dig , før et projekt startes
+# # &lt; a name = &quot; examples-of-bank-statement-formats-and-technical-layouts &quot; &gt; &lt; / a &gt; Eksempler på bankkontoudtogsformater og tekniske layout
+3 . Indtast eller vælg en værdi i feltet Godkendt af .
+5 . Vis eller skjul sektionen Diverse detaljer .
+6 . Indtast eller vælg en værdi i feltet Id for dokstyringsprofil .
+Afmærkning er en proces , som giver dig mulighed for at tilknytte en afgangspostering til en tilgangspostering . Afmærkning kan ske enten før eller efter , at en postering er bogført . Du kan bruge afmærkning , når du vil være sikker på den nøjagtige kostpris for lageret , når posteringen bogføres , eller når lagerlukningen udføres .
+# # # &lt; a name = &quot; screen-resolutions-that-are-provided &quot; &gt; &lt; / a &gt; Skærmopløsninger , der følger
+# # &lt; a name = &quot; create-a-free-text-invoice-from-a-template &quot; &gt; &lt; / a &gt; Oprette en fritekstfaktura fra en skabelon
+# # &lt; a name = &quot; create-a-mobile-device-menu-item &quot; &gt; &lt; / a &gt; Oprette et menupunkt på en mobilenhed
+# # # # &lt; a name = &quot; view-information &quot; &gt; &lt; / a &gt; Vis oplysninger
+# &lt; a name = &quot; set-up-sales-commission-rules &quot; &gt; &lt; / a &gt; Konfigurere salgsprovisionsregler
+# # &lt; a name = &quot; create-cycle-counting-work-manually &quot; &gt; &lt; / a &gt; Oprette cyklusoptællingsarbejde manuelt
+42 . Klik på Tilføj element .
+* Klik på Opdater skabelon , og gennemse for at finde den SampleVendPaymWsReport2.xlsx-fil , du hentede tidligere .
+- Minoritetsinteresse ( i dette scenarie skal der bruges manuel beregning og postering i regnskabet ) .
+title : Konfigurere behovsprognoser
+13 . Indtast eller vælg en værdi i feltet Vare .
+title : Oprette en ny lageropbygning
+# # &lt; a name = &quot; validate-the-production-order &quot; &gt; &lt; / a &gt; Valider produktionsordren
+# # # &lt; a name = &quot; run-missing-account-analysis &quot; &gt; &lt; / a &gt; Kør manglende kontoanalyse
+Følgende begrænsninger hjælper med til at sikre , at standardefterkalkulationsprincipperne overholdes :
+21 . Find og vælg den ønskede post på listen .
+1 . Slå udvidelsen af sektionen Adresser til / fra .
+2 . Der skal oprettes en arbejdscelle .
+35 . Klik på Tekstkonstant .
+* Kun aktive skabeloner kan bruges , når du anvender en skabelon på et nyt salgstilbud .
+6 . Vælg &quot; Efter &quot; i feltet Udskriv .
+# # # # &lt; a name = &quot; hardware-profiles &quot; &gt; &lt; / a &gt; Hardwareprofiler
+# # &lt; a name = &quot; units-for-cycle-counting &quot; &gt; &lt; / a &gt; Enheder til cyklusoptælling
+- Dimensionen for lagerstedet er ikke angivet til disponering . Udbud og efterspørgsel aggregeres derfor efter lokation og måske også andre disponerede dimensioner .
+- Du kan opdele lageret i områder , der passer til forskellige opbevaringsbehov , som temperaturkrav eller forskellige omsætningssatser for varer .
+# # &lt; a name = &quot; retail-sales-marketing-and-customer-service &quot; &gt; &lt; / a &gt; Detailsalg , marketing og kundeservice
+Du skal fuldføre trinnene i proceduren &quot; Opret en konfigurationsudbyder , og markér den som aktiv &quot; for at fuldføre disse trin .
+* Feltet Bestiller kan bruges til at angive , hvem der afgiver ordren . Dette kan være praktisk at dele med kreditoren , i tilfælde af at de har brug at kontakte den pågældende person . Feltet kan tildeles en værdi automatisk , hvis den aktuelle brugerkonto er tilknyttet et navn på siden Brugere .
+11 . I feltet Bogfør transaktioner skal du vælge , hvornår transaktionerne skal bogføres , f.eks. Månedligt .
+- Ved Årligt bogføres d . 31. december .
+16 . Skriv en værdi i feltet Titel .
+&#124; Lokationsforespørgsel &#124; Få vist oplysninger om alle varer og mængder for en lokalitet . &#124;
+I dette emne beskrives de forskellige scenarier , hvor du kan generere konsoliderede regnskaber .
+# # &lt; a name = &quot; configure-catalog-specific-order-and-item-scripts &quot; &gt; &lt; / a &gt; Konfiguration af katalogspecifikke ordre- og varescripts
+- Produkterne og kanalerne i sortimentet kan ændres uden for selve sortimentet . Dynamiske sortimenter , der indeholder referencer til kategorier eller organisationsenheder , skal behandles med jævne mellemrum , så de medtager eller udelukker poster baseret på deres aktuelle tildeling .
+- Brug af databeskyttelse med en digital signatur , der er godkendt af myndigheden .
+Gør kanalen bedre ved at tilføje kanal- og produktattributter . Du skal føje kanalen til organisationens standardhierarki , før du kan definere attributterne .
+1 . Klik på Overskrift for at skifte fra visningen Linjer til Overskrift .
+# # # &lt; a name = &quot; choose-your-support-option &quot; &gt; &lt; / a &gt; Vælge supportmulighed
+- Forkalkulere projektomkostninger .
+title : EUR-00011 Konfigurere rapportering for EU-listesystemet
+# # &lt; a name = &quot; create-a-customer-for-eu-sales-list-reporting-demo-purposes &quot; &gt; &lt; / a &gt; Oprette en kunde med henblik på demonstration af EU-rapportering til EU-listesystemet
+12 . Klik på rullelisten i feltet Prisgrupper for at åbne opslaget .
+- Finans og Konto
+# &lt; a name = &quot; point-of-sale-pos-application-and-user-language-settings &quot; &gt; &lt; / a &gt; Indstillinger for POS-program og brugersprog
+Du kan knytte et godkendelsestrin til følgende deltagergrupper .
+title : Oversigt over kvalitetsstyring
+3 . Angiv en dato i feltet Ikrafttrædelsesdato .
+1 . Klik på Vis filtre .
+* Denne procedurer kræver produktionsflowmodeltypen Gennemløb , som viser definitionen af gennemløbskapaciteten .
+# # &lt; a name = &quot; accessing-the-power-bi-content-pack &quot; &gt; &lt; / a &gt; Adgang til Power BI-indholdspakke
+- Arbejds- eller skolekonto :
+2 . På den viste liste skal du vælge det sprog , du vil bruge , når du indtaster teksten .
+4 . Vælg en indstilling i feltet Enhedsklasse .
+23 . Gå til Produktionsstyring &gt; Konfiguration &gt; Produktionsstyringsparametre .
+Kontrollér , at lejeradministratoren har tildelt en gyldig licens til PowerApps P2 direkte til den bruger , der skal udføre miljøoprettelsestrinnet . Her er de Microsoft Dynamics-serviceplaner , der indeholder denne rettighed .
+Dette emne beskriver , hvordan du kan bruge varesporing til at identificere , hvor varer eller råvarer er blevet brugt , i øjeblikket bruges eller skal bruges i produktions- og salgsprocesser .
+6 . Klik på optællingsgruppen du tidligere har oprettet , på listen .
+- Batchen har ikke tilstrækkelige hyldelevetidsdage tilbage baseret på udløbsdatoen og sidste holdbarhedsdato samt eventuelle salgbare dage for debitor .
+3 . Du modtager fysisk et antal på 101 til kr . 202,00 .
+Derefter bogfører April betalingskladden . Fakturaen udlignes fuldt ud med en betaling på 940,00 og en rabat på 60,00 .
+Før du kan udføre denne opgave , skal du importere elektroniske rapporteringskonfigurationer for elektronisk OIOUBL-fakturering .
+* Dette er den rækkefølge , som arbejdsskabelonerne skal evalueres i . Du kan om nødvendigt ændre rækkefølgen .
+Hvis du planlægger at være væk fra kontoret eller af anden årsag ikke kan udføre workflowopgaver , kan du delegere eller tildele dine workflowopgaver til andre brugere . Denne procedure hjælper dig med at konfigurere systemet til automatisk at delegere dine arbejdselementer til en anden bruger .
+Du kan oprette og tildele enhver type certificering , som kreditorer kan have , til kreditorerne . Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition .
+8 . Udvid sektionen Kopier .
+5 . Angiv antallet af dage i feltet EPE-cyklus .
+# &lt; a name = &quot; create-and-post-a-project-invoice-for-a-public-sector-customer &quot; &gt; &lt; / a &gt; Oprette og bogføre en projektfaktura for en debitor i den offentlige sektor
+- Der er blevet bogført én tilgang og en eller flere afgange i perioden
+&#124; Kompensationsplananalyse &#124; Medarbejdertilmeldning efter valgt frynsegode &#124;
+11 . Indtast en dato i feltet Til dato .
+13 . Vælg &quot; Fast &quot; i feltet Gebyrtype for tillæg .
+7 . Marker eller fjern markeringen i afkrydsningsfeltet Fuld spærring .
+&lt; td &gt; Indkøbsrekvisitionen er lukket , og et eller flere færdiggørelsesdokumenter er blevet oprettet .
+16 . Klik på Tilføj i oversigtspanelet Arbejdere .
+# &lt; a name = &quot; centralized-payments-for-accounts-receivable &quot; &gt; &lt; / a &gt; Centraliserede debitorbetalinger
+- Komme og gå-tider , når de ankommer til eller forlader arbejdet .
+- Funktionaliteten kan udvides til et vilkårligt format .
+Du kan bestille varer fra firmaets lager til forbrug på et projekt . Eller du kan også købe varer fra en ekstern leverandør . Varer kan forbruges i alle typer projekter med undtagelse af tidsprojekter .
+16 . Vælg &quot; Alle &quot; i feltet Antal .
+# # # &lt; a name = &quot; service-components-for-network-printing &quot; &gt; &lt; / a &gt; Servicekomponenter til netværksudskrivning
+4 . Udvid eller skjul sektionen Afskrivning .
+- Få vist forbindelserne mellem handlinger på ordreforslag for at optimere forsyningskæden og lagerreservationer .
+&#124; Konfigurere bankfaciliteter og posteringsprofiler for garanti &#124; Globalt &#124;
+&#124; Tilpas tysk konfiguration af overvågningsfil &#124; Tyskland &#124;
+&#124; Foreslå og bogfør beløbet for forringelse pr. batch &#124; Japan &#124;
+&#124; Sælge et anlægsaktiv vha. en fritekstfaktura &#124; Globalt &#124;
+&#124; Definere fordelsberettigelsesregler og -politikker &#124; Globalt &#124;
+&#124; Vedligehold stregkodetyper &#124; Globalt &#124;
+&#124; Gendan status for Kanban-job &#124; Globalt &#124;
+&#124; Opret en faktureringskode til den offentlige sektor &#124; Globalt &#124;
+&#124; Bogføring af onlinesalg og betalinger &#124; Globalt &#124;
+&#124; Elektronisk rapportering &#124; Globalt &#124;
+6 . Vælg hovedkontoen til udligning .
+5 . Angiv eventuelle supplerende betingelser , hvis det er påkrævede .
+* Handlingen Ryd og send er kun gældende , når du bruger callcenter-funktionalitet .
+- Produktdimensioner og dimensionsgrupper
+# # &lt; a name = &quot; currency-exchange-gains-or-losses &quot; &gt; &lt; / a &gt; Valutakursvinding eller -tab
+25 . Skriv en værdi i feltet Produktkvittering .
+title : Tilføje en foregående aktivitet til en produktionsflowversion
+10 . Indtast eller vælg en værdi i feltet Dimensionshierarki for omkostningsobjekt .
+# # &lt; a name = &quot; set-up-an-item-allocation-key &quot; &gt; &lt; / a &gt; Oprette en varefordelingsnøgle
+&gt; Du kan ændre lagringsdimensionsgruppen for varer , også selv om åbne lagertransaktioner findes .
+Denne artikel beskriver , hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer .
+title : Beregne afskrivning af anlægsaktiver på tværs af juridiske enheder
+2 . Klik på Udfør budgetkontrol .
+En påmindelsesregel har fem komponenter
+Medarbejdere , deres chefer og Personale kan få vist saldi for orlov og fravær . Personale kan bruge interaktive rapporter til at spore tilmeldinger til planer og fritidssaldi efter type .
+* Hændelses-kanbans genereres , når behovsmængden er lig med eller mere end dette felt . Dette er nyttigt , hvis du vil producere en ordremængde , der er mindre end dette felt på én maskine , og mere end dette felt på en anden maskine .
+&lt; a name = &quot; what-is-an-electronic-signature &quot; &gt; &lt; / a &gt; Hvad er en elektronisk signatur ?
+2 . Vælg en eksisterende serviceordre , eller opret en ny .
+# # &lt; a name = &quot; how-do-i-create-translations-for-product-related-information &quot; &gt; &lt; / a &gt; Hvordan kan jeg oprette oversættelser for produkt-relaterede oplysninger ?
+Bemærk , at der kun kan oprettes en ny post , hvis alle de nøglefelter og obligatoriske felter er bundet i regnearket , eller hvis standardværdier blev udfyldt ved hjælp af filterbetingelsen .
+* Lad feltet være tomt , hvis indtjeningsreglen skal gælde for alle produkter .
+6 . Skriv &quot; LedgerJournalTrans &quot; i feltet Tabel .
+En lokal produktsøgning søger i følgende produktegenskaber :
+Tilpasningsværktøjslinjen vises .
+41 . Markér den valgte række på listen .
+* For elementer i denne gruppe vil varedisponering oprette genopfyldningsforslag for op til 90 dage ud i fremtiden .
+3 . Udvid sektionen Postcertifikat .
+10 . Vælg &apos; Eksempelmodelkonfiguration &apos; i træet .
+19 . Klik på Varepris .
+title : Kontrollere tilgængelighed af lagerbeholdning
+&#124; &#124; Saldo pr. sted &#124;
+&#124; &#124; Afvigelse pr. varegruppe &#124;
+* Vælge Andre driftsudgifter , og vælg derefter 605150 Leje .
+De resterende afsnit i denne artikel beskriver de Kreditor-funktioner , der er tilgængelige for den offentlige sektor .
+Dette emne beskriver de funktioner , som Attract indeholder .
+* Hvis du har markeret bestemte linjer og ikke andre , vil accepten kun omfatte de markerede linjer . Hvis du vil acceptere alle linjer i et bud , behøver du ikke at markere linjerne .
+30 . Klik på Anvend på gitter .
+8 . Angiv indstillingen Finansieringskilde med indberetning til Ja eller Nej .
+Dette er den tredje procedure ud af otte , som forklarer , hvordan du kan opbygge kombinationer til dimensionsbaseret konfiguration . Det demodatafirma , der bruges til at oprette denne procedure , er USMF .
+&#124; Anmodningen er sendt &#124; Kreditoranmodningen er sendt , og det første trin i arbejdsgangen behandles . &#124;
+# # # &lt; a name = &quot; generate-budget-plan-from-supply-forecast &quot; &gt; &lt; / a &gt; Opret budgetplan fra forsyningsprognose
+4 . Indtast eller vælg en værdi i feltet Kalender .
+9 . Angiv de ønskede værdier i feltet Clearingkonto til A-skat .
+# &lt; a name = &quot; cost-categories-used-in-production-control-and-project-management-accounting &quot; &gt; &lt; / a &gt; Omkostningsarter , der bruges i Produktionsstyring og Projektstyring og regnskab
+* Hvis produktdimensionsfelterne allerede indeholder en værdi , er det fordi , værdien blev kopieret fra produktposten , hvor den er defineret som standardproduktdimension . Du kan når som helst ændre standardværdien .
+&#124; Opret en scoremetode for tilbudsanmodninger &#124; Globalt &#124;
+7 . Skriv &apos; Eksempelmeddelelse i elektronisk faktura &apos; i feltet navn .
+* Antalsfeltet , der bestemmer , hvor meget af dette produkt , der forbruges i det konfigurerede produkt .
+6 . Udvid sektionen Udenrigshandel .
+3 . Udvid sektionen Udenrigshandel .
+Indstillingen * * Vis detaljer * * er tilgængelig på flere måder :
+7 . Indtast eller vælg en værdi i feltet Forsendelsesnummer .
+8 . Fjern markeringen af den valgte række på listen .
+* Kompensationsniveauet definerer den minimum- og maksimumkompensation , en medarbejder kan få for jobbet . Kompensationsregler bestemmer , om medarbejderes kompensation kan være uden for rammen .
+7 . Vælg Ja i feltet Spørg efter forespørgsel .
+60 . Klik på Tilføj rod .
+8 . Vælg &quot; Anskaffelsesregulering &quot; i feltet Transaktionstype .
+49 . I feltet Modkonto skal du specificere de ønskede værdier .
+Konfigurationens produktdimension bruges til at identificere produktvarianter for en produktmaster med den dimensionsbaserede konfigurationsteknologi . Konfigurationens dimensionsværdi er angivet af brugeren og skal hjælpe med at identificere de enkelte produktvarianter .
+- Om der kræves yderligere bemærkninger til at tydeliggøre formålet med spørgeskemaet for svarpersonerne .
+En direkte SEPA-debitering gør det muligt for en kreditor at indsamle midler fra en debitors bankkonto , forudsat at der er tildelt en signeret bemyndigelse af kunden til kreditor . Kunden signerer en bemyndigelse , som autoriserer kreditoren til at opkræve en betaling og beder kundens bank om at betale opkrævningen .
+&#124; Kasserabatbeløb , der skal medtages &#124; -7,00 &#124;
+* Tilføj en ny datakilde for at hente en liste over huskede blokke .
+4 . På siden Kreditorposteringsprofiler skal du definere , hvordan kreditorposter bogføres i finansmodulet .
+# &lt; a name = &quot; set-up-rules-and-parameters-for-cross-docking-and-buyers-push &quot; &gt; &lt; / a &gt; Konfigurere regler og parametre for cross-docking og centraliseret indkøb
+# # &lt; a name = &quot; find-the-kanban &quot; &gt; &lt; / a &gt; Find kanban .
+# # &lt; a name = &quot; view-compliance-with-a-service-level-agreement &quot; &gt; &lt; / a &gt; Få vist overholdelse af en serviceniveauaftale
+title : Tilpassede produktanbefalinger
+3 . Klik på Reguler posteringer .
+- Flytte værdier fra Microsoft Excel til bestemte celler .
+- Tildel kreditoren til indkøbskategorier .
+13 . Skjul sektionen Gebyrkonvertering .
+7 . Skriv en værdi i feltet Lokalitet .
+14 . Marker afkrydsningsfeltet Brug et indbetalingsbilag .
+15 . Klik på fanen Oversigt .
+Ved at bruge en årsagskode kan du angive , hvorfor en serviceniveauaftale er annulleret , eller hvorfor en serviceniveauaftale har overskredet den tidsgrænse , der er angivet i serviceniveauaftalen .
+6 . Hvis du vil kontrollere , at de angivne betingelser er konfigureret korrekt , skal du følge disse trin :
+3 . Angiv navnet på rentekoden i feltet Rentekode .
+Afledte finansielle hierarkier giver dig en mere fleksibel tilgang i forhold til at gruppere posteringer til ad hoc-analyse . De giver dig mulighed for at kategorisere posteringer uden at skulle udvide kontostrukturen , så den omfatter de ekstra kategorier eller dimensioner , du vil spore .
+# # &lt; a name = &quot; schedule-two-kanban-jobs-for-a-specific-day &quot; &gt; &lt; / a &gt; Planlæg to kanban-job for en bestemt dag
+&#124; Vedligehold kontoplan / Konfigurere obligatoriske betalingsreferencer &#124; Island &#124;
+&#124; Oprettelse af en middeltype &#124; Globalt &#124;
+Du kan konfigurere , at en momskode skal beregnes på grundlag af hele beløbet eller et intervalbeløb . På siden Momskoder skal du bruge feltet Beregningsmåde på oversigtspanelet Beregning til at vælge , hvordan en momskode skal beregnes .
+title : Indkøbsordrer til et projekt
+- Visning af brugerdefinerede felter på dataenheder .
+- Ændre elementets etiket .
+En kladde , der bruges til at registrere de økonomiske konsekvenser af regnskabshændelser i et regnskabssystem .
+En delegeret er en type , der repræsenterer referencer til metoder med en bestemt parameterliste og returtype .
+En organisation , der opdeler administrationen af økonomiske ressourcer og driftsprocesser mellem personer , der er forpligtet til at maksimere brugen af knappe ressourcer , til at forbedre processer og til at redegøre for deres præstation .
+Det produktantal , der er dokumenteret på en kildedokumentlinje og genererer et udligningskrav .
+5 . Klik på Prismodeller .
+De enkelte juridiske enheder har sin egen regnskabskalender . Hvis dine interne organisationer bruger forskellige regnskabsår og regnskabskalendere , skal du udforme organisationerne som juridiske enheder .
+12 . I feltet Modkonto skal du specificere de ønskede værdier .
+En planlægningstavle er den centrale placering , hvorfra du kan få vist status for aktiviteter i en serviceordre . På en planlægningstavle kan du udføre følgende opgaver :
+title : Konfigurere anlægsaktiver
+* Dimensionsaktivering kan planlægges til at køre i batch på en bestemt dato og et bestemt klokkelslæt .
+# # # # &lt; a name = &quot; production-control &quot; &gt; &lt; / a &gt; Produktionsstyring
+Et anlægsaktivet har følgende karakteristika .
+15 . Vælg &apos; Nøjagtig én &apos; i feltet Multiplicitet .
+I denne artikel beskrives periodiseringer , og hvordan du konfigurerer dem og opretter transaktioner .
+- Få detaljeadgang og adgang til at se de sider , der understøtter detaljeadgangsoplevelsen .
+3 . Tilføj en stopbetingelse , og luk siden .
+* Vælg den tilføjede datakilde af typen &apos; Liste over poster &apos; , der repræsenterer de poster , du vil gruppere .
+4 . Klik på knappen Filtrer .
+# # &lt; a name = &quot; enter-registration-ids-for-global-address-book-records &quot; &gt; &lt; / a &gt; Angiv registrering-id &apos; er for poster i globalt adressekartotek
+3 . Skriv en værdi i feltet Afskrivningsmodel .
+title : Knyt en salgsordre til en købsordre til direkte levering &#124; Microsoft Docs
+# &lt; a name = &quot; prepare-to-migrate-customer-data &quot; &gt; &lt; / a &gt; Forberede overflytning af debitordata
+title : Sådan arbejder du med servicekontrakter og servicekontrakttilbud &#124; Microsoft Docs
+Følgende procedurer viser , hvordan du tilføjer og tilpasser tabeloplysninger for din konfiguration .
+# # &lt; a name = &quot; to-add-an-extended-item-text-on-a-sales-order-line &quot; &gt; &lt; / a &gt; Sådan tilføjes en udvidet varetekst på en salgsordrelinje
+# # &lt; a name = &quot; is-the-filter-pane-available-for-filtering-reports &quot; &gt; &lt; / a &gt; Kan rapporter filtreres i filterruden ?
+Det er vigtigt at planlægge , hvilke kapaciteter der udgør den samlede kapacitet , når der angives produktionsressourcer og arbejdscentre .
+title : Sådan kombineres leverancer på én enkelt faktura &#124; Microsoft Docs
+# &lt; a name = &quot; add-comments-to-cards-and-documents &quot; &gt; &lt; / a &gt; Føje bemærkninger til kort og dokumenter
+Du kan bruge et spørgeskema til at hjælpe dig med at afgøre omfanget af og behovet for konfiguration . Du kan oprette et nyt spørgeskema eller redigere et eksisterende spørgeskema ved at tilføje nye spørgsmål eller spørgeområder .
+# # # &lt; a name = &quot; rules-concerning-actions-for-supply-events &quot; &gt; &lt; / a &gt; Regler for handlinger for forsyningshændelser
+2 . Åbn kortet for en kreditor , hvis bankkonto du vil eksportere betalingsbankfiler til .
+Ved hjælp af fanerækkefølgen kan du også skifte mellem hovedbrowservinduet og dialogbokse , der anmoder om bekræftelse , for eksempel logonvinduet .
+# &lt; a name = &quot; create-and-modify-a-custom-report-or-document-layout &quot; &gt; &lt; / a &gt; Oprette og ændre et brugerdefineret rapport- eller dokumentlayout
+&gt; Varer på dedikerede placeringer er ikke beskyttet , når de plukkes og forbruges som produktionskomponenter på siden Pluk .
+* Overførsel af QuickBooks-data
+Kostmetode = Gennemsnit
+Nedenfor vises en oversigt over konceptet for tildeling af bogføringsdatoer til reguleringsværdier i kørslen Juster kostpris - vareposter siden version 3.0 .
+Du kan konfigurere flere enheder for en vare , så du kan knytte enheder til varen til følgende formål :
+&gt; Hvis du foretager ændringer i en kalender , hvori der er foretaget tilpassede kalenderændringer , opdateres alle eksisterende tilpassede kalendere automatisk .
+Nedenstående procedure beskriver , hvordan du sporer fra en salgsordrelinje . Trinene er de samme for købsordre- og rammeordrelinjer .
+title : Oversigt over opgaver til administration af betalinger til kreditorer &#124; Microsoft Docs
+Brugene tilpasser brugergrænsefladen i deres personlige version ved at tilpasse brugergrænsefladen under deres egne brugerlogon . Denne tilpasning kan slettes af administratoren .
+Inden du kan bogføre forudbetalingsfakturaer , skal du oprette bogføringskonti i finansposterne , og du skal oprette nummerserier for forudbetalingsdokumenterne .
+title : Modtagelse og placering på lager i avanceret logistik &#124; Microsoft Docs
+Hvis tabellerne ikke opfylder dine behov , kan du oprette en eller flere nye dataoverflytningsfiler . Hvis filerne opfylder dine behov , kan du fortsætte med dataoverflytningen ved hjælp af Excel- eller XML-filer .
+# # # &lt; a name = &quot; locations--transfer-level-priority &quot; &gt; &lt; / a &gt; Lokationer / prioritet af overførselsniveau
+# # &lt; a name = &quot; to-assign-standard-sales-lines-to-a-customers &quot; &gt; &lt; / a &gt; Sådan tildeles standardsalgslinjer til en debitor
+title : Sådan spærres varer mod salg eller køb
+title : Få mere at vide om Finans og kontoplan &#124; Microsoft Docs
+title : Sådan sælger du en vare , der er monteret til ordre &#124; Microsoft Docs
+Du er nu klar til at udfylde salgsordrelinjerne med lagervarer eller services , som du ønsker at sælge til debitoren .
+title : Bruge fordelingsnøgler i finanskladder &#124; Microsoft Docs
+title : Oversigt over rapporter som hjælp til forberedelsen af regnskabsafslutning &#124; Microsoft Docs
+I følgende tabel beskrives den indsigt , som udvidelsen sender til hvert rollecenter .
+Eksempler på formler :
+title : Oprette en debitor eller kreditor fra en kontakt &#124; Microsoft Docs
+3 . Hvis du vil bruge mere end én kombination af rentebetingelser , kan du angive en kode for hver enkelt .
+9 . Udlæs pakken som en .rapidstart-fil .
+- Planlægningssystemet vedrører hele forsynings- og behovsmønstret for en bestemt vare , hvorimod ordresporing beskæftiger sig med den ordre , der aktiverede den .
+# &lt; a name = &quot; manage-budgets-for-fixed-assets &quot; &gt; &lt; / a &gt; Administrere budgetter for anlægsaktiver
+# &lt; a name = &quot; set-up-locations-to-use-bins &quot; &gt; &lt; / a &gt; Oprette lokationer til brug af placeringer
+title : Åbn vareposter
+2 . Vælg den relevante filtrerede visning .
+&#91; Overføre finansposter til omkostningsposter &#93; ( finance-how-to-transfer-general-ledger-entries-to-cost-entries.md )
+Salgsordrer på erstatningsvarer , købsreturvareordrer og erstatningskøbsordrer kan oprettes automatisk under salgsreturvareprosssen . Dette er nyttigt f.eks. i situationer , hvor du vil håndtere varer med garantier fra leverandører .
+&#124; `t-1` &#124; Tirsdag i uge 1 i året for arbejdsdatoen &#124;
+Hvis du vil begrænse eller præcisere de data , der indgår i en rapport , yderligere , kan du angive flere indstillinger og filtre .
+title : Arbejde med regnskabsperioder og regnskabsår &#124; Microsoft Docs
+Føjer flere betingelser til en if- eller unless-blok .
+# # &lt; a name = &quot; navigating-through-stages-of-a-process &quot; &gt; &lt; / a &gt; Naviger gennem faser i en proces
+# &lt; a name = &quot; add-and-configure-a-sub-grid-component-on-a-form &quot; &gt; &lt; / a &gt; Tilføje og konfigurere en undergitterkomponent i en formular
+# # &lt; a name = &quot; connect-to-office-365-outlook &quot; &gt; &lt; / a &gt; Oprette forbindelse til Office 365 Outlook
+I følgende tabel vises de trin , du skal følge for at oprette en app .
+En fane i browseren åbnes sammen med standardformularen i Power Apps Studio .
+Har du brug for at holde systemer og data aktive , klargjorte og sikre døgnet rundt ?
+# # # &lt; a name = &quot; create-a-table-that-shows-the-time-between-project-approval-and-projected-start-date &quot; &gt; &lt; / a &gt; Oprette en tabel , der viser tiden mellem projektets godkendelse og projektets forventede startdato
+# # &lt; a name = &quot; configure-icons-on-the-view-screen &quot; &gt; &lt; / a &gt; Konfigurer ikoner på visningsskærmbilledet
+Åbner standardformularen til hurtig oprettelse af et objekt .
+I dette scenarie får du oplysninger om , hvordan du kan bruge en rulleliste med valgmuligheder fra en opslagskolonne i en SharePoint-liste .
+# # # &lt; a name = &quot; delete-a-single-property-value &quot; &gt; &lt; / a &gt; Slet en enkelt egenskabsværdi
+title : Opdatering fra Dynamics 365-domæne til Power Apps-portaldomæne &#124; Microsoft Docs
+I følgende tabel vises de indstillinger , du kan aktivere for et objekt , men når disse elementer er aktiveret , kan de ikke deaktiveres :
+Når du har brugerdefinerede aktiviteter , som du vil have vist for mobilbrugere , skal du aktivere funktionen . Følg disse trin for at aktivere funktionen .
+# # &lt; a name = &quot; data-disappears-after-i-refresh-the-imported-excel-file &quot; &gt; &lt; / a &gt; Data forsvinder , når jeg har opdateret den importerede Excel-fil
+En margentekst oprettes i to trin :
+&#124; Vist navn &#124; Vist navn for indholdskodestykket . &#124;
+Egenskaber , der returnerer poster :
+# # &lt; a name = &quot; further-customize-your-form &quot; &gt; &lt; / a &gt; Tilpasse formularen yderligere
+* hvor lang en tekststreng kan være
+Vigtige ting at huske , når du opretter visualiseringer :
+Du kan også angive id &apos; et for en visning ( gemt forespørgsel ) , hvis du vil filtrere forespørgslen . Eksempel :
+6 . Klik eller tryk på dashboardnavnet i navigationsruden til venstre .
+&gt; Hvis posten er en ny post , der endnu ikke er gemt , returneres fejlen Ugyldigt argument , når du forsøger at ændre billedet .
+title : Føje et felt til en formular i modelbaserede apps i Power Apps &#124; Microsoft Docs
+5 . Hvis du beslutter at løse et problem , skal du vælge det for at åbne den påvirkede egenskab .
+1 . Kopier og Indsæt tabellen i en ny Excel-projektmappe .
+Denne meddelelse vises i den klassiske formulardesigner , når en udvikler åbner en hovedformular til redigering , og den er konfigureret til at bruge et sidehoved med høj tæthed .
+&gt; Den alternative nøgle er ikke straks tilgængelig . Et systemjob startes , når du har gemt objektet , og der oprettes databaseindekser til understøttelse af den alternative nøgle .
+Se &#91; Oprettelse og redigering af relationer mellem objekter &#93; ( create-edit-entity-relationships.md )
+4 . Når eksempeldataene er importeret , kan du se de importerede poster i objektet :
+1 . Vælg ikonet Gem i nederste højre hjørne .
+# # # &lt; a name = &quot; values-in-formulas &quot; &gt; &lt; / a &gt; Værdier i formler
+&#124; Anvende vidensartikler &#124; Ja &#124; Ja &#124;
+2 . Vælg den sektion i formularen , hvor den integrerede lærred-app skal vises .
+5 . Angiv værdier for de angivne felter .
+* Projektkontraktlinjes ressourcekategori
+* Når du har sendt mødeindkaldelsen , ryddes alle oplysninger om mødet .
+&gt; Frigivelserne rulles ud i løbet af flere dage . Nye eller opdaterede funktioner vises muligvis ikke med det samme .
+# # # # &lt; a name = &quot; race-condition &quot; &gt; &lt; / a &gt; Konkurrencetilstand
+Med denne formel oprettes der en tabel med én kolonne , som bruges til fem gentagelser , hvilket resulterer i fem GUID &apos; er .
+3 . Vælg den type af diagram , du vil se detailudledning af .
+&#91; Undervisningskatalog for beslutningstagere på forretningsmæssige og tekniske områder &#93; ( bdm.md )
+&#124; Tillad flere filer &#124; Markér afkrydsningsfeltet , hvis du vil tillade flere vedhæftede filer .
+3 . Brugeren undersøger , om mailen indeholder en bekræftelse .
+I rullemenuen skal du vælge den type formular , du vil oprette .
+&#124; Læs &#124; Rettighed , der styrer , om brugeren kan læse en post . &#124;
+5 . Gentag trin 2-4 for at konfigurere flere komponenter på det samme eller et andet felt .
+Anne opretter to lærred-apps :
+1 . Mens du trykker på Alt-tasten , skal du vælge sorteringsikonet en eller flere gange for at ændre sorteringsrækkefølgen .
+# # # # &lt; a name = &quot; application-settings &quot; &gt; &lt; / a &gt; Programindstillinger
+- Centrér teksten .
+&gt; - Forretningsregler og klient-API kan aktivere låste felter i en skrivebeskyttet formular .
+- Vind salgsmulighedshandling ( salgsmulighed )
+Hvis du vil sikre , at elementet indsættes i galleriets skabelon og ikke uden for galleriet , skal du sikre dig , at du følger dette trin , før du går videre til næste trin .
+Angiv en * * Beskrivelse * * til den globale grupperede indstilling .
+# &lt; a name = &quot; using-relevance-search-to-search-for-records &quot; &gt; &lt; / a &gt; Brug af relevanssøgning til at søge efter poster
+# &lt; a name = &quot; add-or-edit-power-bi-visualizations-on-your-dashboard &quot; &gt; &lt; / a &gt; Tilføj eller rediger Power BI-visualiseringer på dit dashboard
+- Der vises følgende fejlmeddelelse , når du konfigurerer eller bruger objektfelter :
+Du kan give programmet besked om at fjerne alle foranstillede eller efterstillede blanktegn ved at føje en bindestreg ( - ) til start- eller slutblokmærket .
+Vælg ét kildeobjektfelt og ét destinationsobjektfelt med værdier , du vil tilknytte .
+Du kan også administrere de typer af forbindelsesroller , du vil knytte til forbindelsesrollen .
+# &lt; a name = &quot; errors-function-in-power-apps &quot; &gt; &lt; / a &gt; Funktionen Errors i Power Apps
+5 . Vælg eller angiv en sammenligningsværdi .
+Portaler består af følgende komponenter :
+Portal Checker-værktøjet kontrollerer , om outputcache for sidefod er deaktiveret på din portal , og viser en mislykket kontrol , hvis funktionen er deaktiveret . Sådan aktiverer du funktionen :
+# # &lt; a name = &quot; to-assign-a-form-order &quot; &gt; &lt; / a &gt; Sådan tildeles en formularrækkefølge
+I denne artikel har du lært at oprette et brugerdefineret objekt . Derefter skal du lære , hvordan du definerer relationer mellem objekter .
+Hvis websiden for detaljeret opslagsvisning indstilles til en webside , kan detaljer om en post , der er angivet i gitteret , vises som skrivebeskyttede eller redigerede , afhængigt af konfigurationen af den tilknyttede formular eller side .
+# &lt; a name = &quot; quick-start-for-transitioning-your-legacy-web-client-application-to-unified-interface &quot; &gt; &lt; / a &gt; Startvejledning for overførsel af dit ældre webklientprogram til Unified Interface
+De eksterne komponenter , som indgår i funktionaliteten for Relationsassistent , er beskrevet nærmere i nedenstående afsnit .
+Runder en værdi op til det nærmeste heltal .
+&gt; Dette filter skal bruges med forsigtighed og bør normalt kun anvendes til værdier , der udelukkende styres af portalens indholdsforfattere eller andre brugere , der har forstand på at skrive Liquid-kode .
+&#124; Syntaks for funktion &#124; Beskrivelse &#124; Returtype &#124;
+- Power BI-rapportserver understøtter ikke det visuelle Power Apps-element .
+# # &lt; a name = &quot; rollup-fields-benefits-and-capabilities &quot; &gt; &lt; / a &gt; Fordele og funktioner ved akkumuleringsfelter
+Du kan også tilsidesætte det standardformat for dato / klokkeslæt , der skal bruges på portaler , ved at oprette følgende webstedsindstillinger :
+- Når der oprettes eller opdateres en post .
+# # &lt; a name = &quot; sign-up-for-the-text-analytics-api &quot; &gt; &lt; / a &gt; Tilmelde dig Tekstanalyse-API
+# # &lt; a name = &quot; section-properties-in-form-designer &quot; &gt; &lt; / a &gt; Egenskaber for sektion i formulardesigner
+# &lt; a name = &quot; define-and-query-hierarchically-related-data &quot; &gt; &lt; / a &gt; Definere og forespørge på hierarkisk relaterede data
+Størrelsen på den søgeresultatside , som skal returneres . Hvis værdien ikke er angivet , bruges en standardstørrelse på 10 .
+Du kan vælge mellem fire forskellige layout til multistrømsdashboards .
+- Åbne poster direkte for at finde eller angive mere detaljerede oplysninger .
+Hvis en kolonne i tabellen indeholder billeder , kan du medtage ordet &quot; billede &quot; i kolonnens navn . Dette nøgleord forbinder den pågældende kolonne med et billedkontrolelement i et galleri .
+1 . Kopiér og indsæt antaletiketten , og tilpas derefter størrelsen på og flyt kopien over kolonnen for enhedspris .
+# # &lt; a name = &quot; embed-your-app-in-a-website &quot; &gt; &lt; / a &gt; Integrer din app på et websted
+* * Når man taler om mobil ... * *
+title : Begrænse adgangen til en portal ved hjælp af IP-adresse &#124; Microsoft Docs
+Forbindelsen til Office 365 Brugere er nu blevet oprettet og føjet til din app . Den er nu klar til at blive brugt .
+# &lt; a name = &quot; add-data-to-an-entity-in-common-data-service-by-using-power-query &quot; &gt; &lt; / a &gt; Føje data til et objekt i Common Data Service ved hjælp af Power-forespørgsel
+&gt; Dette er ikke et godt eksempel på virkeligt arbejde , men det viser , hvordan statusstadier kan gennemtvinges via statusårsagsovergange .
+# # # &lt; a name = &quot; create-additional-portals-in-an-environment &quot; &gt; &lt; / a &gt; Oprette ekstra portaler i et miljø
+3 . Angiv et navn og en etiket til webressourcen .
+&#124; Navn &#124; Det beskrivende navn på webrollen &#124;
+Du kan også vælge ikonet Annuller for at kassere ændringerne .
+# &lt; a name = &quot; add-a-screen-to-a-canvas-app-and-navigate-between-screens &quot; &gt; &lt; / a &gt; Tilføje et skærmbillede til en lærredapp , og naviger mellem skærmbilleder
+Alle hovedformularer , der findes til et objekt , kan vises anderledes afhængigt af faktorer i tabellen nedenfor . Når du designer en hovedformular , skal du overveje , hvordan den fungerer i de enkelte præsentationer .
+Når extends bruges , skal det være det første indhold i skabelonen og kan kun efterfølges af et eller flere block-mærker .
+# # # &lt; a name = &quot; bullets-and-numbered-lists &quot; &gt; &lt; / a &gt; Opstillinger med punkttegn og tal
+- Hvis værdien er navnet på en `iframe` , åbnes linket i den pågældende iframe .
+1 . Gem og publicer appen .
+- Hvis biblioteket indeholder mapper , kan du filtrere listen over filer ved at vælge et filterikon på listen over mapper lige under titellinjen .
+# # &lt; a name = &quot; using-liquid-templates-to-place-advertisements &quot; &gt; &lt; / a &gt; Bruge Liquid-skabeloner til at placere reklamer
+- Indbygget redigering af poster på objekt- eller undergitterniveau ( omfatter brugerdefinerede objekter )
+# # &lt; a name = &quot; lookup-field-column &quot; &gt; &lt; / a &gt; Opslagsfeltkolonne
+- Ryd feltværdier
+Hent følger : Henter de følgere , som den angivne bruger følger .
+# # &lt; a name = &quot; share-and-run-an-app &quot; &gt; &lt; / a &gt; Del og kør en app
+# # # &lt; a name = &quot; step-1-block-case-entity-from-getting-indexed &quot; &gt; &lt; / a &gt; Trin 1 : Bloker for , at sagsobjektet kan indekseres
+title : Tilpas en formular i en lærredapp &#124; Microsoft Docs
+&#124; Tillad planlagt synkronisering &#124; Angiver , om planlagte synkroniseringer med Outlook er tilladt . &#124;
+# # # &lt; a name = &quot; open-the-tree-view &quot; &gt; &lt; / a &gt; Åbne trævisningen
+2 . Ruden i midten , som indeholder det appskærmbillede , du arbejder på
+# # # &lt; a name = &quot; change-the-data-source-for-the-browsegallery1-gallery &quot; &gt; &lt; / a &gt; Skifte datakilden for galleriet BrowseGallery1
+Med RDL-sandkassefunktionen kan du oprette en liste over godkendte typer og en liste over afviste medlemmer . Listen over godkendte typer kaldes en tillad-liste . Listen over afviste medlemmer , der ikke er tilladt i RDL-udtryk , kaldes en blokeringsliste .
+# &lt; a name = &quot; install-northwind-traders-database-and-apps &quot; &gt; &lt; / a &gt; Installer Northwind Traders-database og -apps
+# # &lt; a name = &quot; web-templates-as-website-headers-and-footers &quot; &gt; &lt; / a &gt; Webskabeloner som websteds sidehoveder og sidefødder
+&#91; Opret eller rediger formularer til hurtig oprettelse &#93; ( create-edit-quick-create-forms.md )
+- Understøttelse af lokalisering .
+I eksemplet i dette selvstudium beskrives det , hvordan du kan arbejde med en lærredapp , der opretter forbindelse til SharePoint med en sådan brudt nedarvning .
+* Hvis du vil søge efter brugere i din organisation , skal du begynde at skrive navnet i tekstinput feltet nedenfor &quot; Til &quot; .
+3 . Træk kolonnen til den ønskede bredde .
+# # # &lt; a name = &quot; navigate-to-a-form &quot; &gt; &lt; / a &gt; Navigere til en formular
+# &lt; a name = &quot; use-the-model-driven-app-main-form-and-its-components &quot; &gt; &lt; / a &gt; Bruge hovedformularen og dens komponenter til den modelbaserede app
+Sådan sker dataoverførslen :
+# # &lt; a name = &quot; edit-the-canvas-app-directly &quot; &gt; &lt; / a &gt; Rediger lærred-appen direkte
+Dialogboksen * * Rediger placering * * åbnes .
+title : Sende mail til flere modtagere &#124; MicrosoftDocs
+# # # &lt; a name = &quot; create-and-delete-records-from-the-calendar &quot; &gt; &lt; / a &gt; Oprette og slette poster i kalenderen
+4 . I ruden til højre kan du skjule hvert af disse felter ved at fjerne markeringen i afkrydsningsfeltet :
+# &lt; a name = &quot; configure-open-id-connect-provider-settings-for-portals &quot; &gt; &lt; / a &gt; Konfigurere OpenID Connect-udbyderindstillinger for portaler
+&gt; Hvis din applikation er meget stor , kan det tage et stykke tid at tilføje datakildeforbindelser . Du må ikke lukke applikationen under processen .
+&gt; Der stilles muligvis yderligere licenskrav for at aktivere denne funktion .
+# # &lt; a name = &quot; view-a-list-of-properties-by-category &quot; &gt; &lt; / a &gt; Vise en liste over egenskaber efter kategori
+- Se og reagere på mails .
+- Mad og drikkevarer
+Du kan identificere afhængigheder , der forhindrer , at et objekt slettes , før du forsøger at slette det .
+&#124; Grupperet indstilling &#124; Vælg grupperet indstilling til dette felt . &#124;
+1 . Klik i øverste venstre hjørne af galleriet , eller tryk på blyanten for at vælge galleriskabelonen .
+# # &lt; a name = &quot; add-a-rollup-field--to-the-entity-form-to-show-the-ratings &quot; &gt; &lt; / a &gt; Føje et akkumuleringsfelt til objektformularen for at vise klassificeringer
+# # # &lt; a name = &quot; frequently-asked-questions &quot; &gt; &lt; / a &gt; Ofte stillede spørgsmål
+- Du kan kun aktivere én integreret lærred-app pr. formular .
+# # &lt; a name = &quot; move-fields-on-a-form &quot; &gt; &lt; / a &gt; Flytte felter i en formular
+Oplysningerne om godkendelser vises på Power Apps Portals Administration og portalen .
+Angiver en regel , der registrerer den type præsentation , der anvendes .
+# # &lt; a name = &quot; view-many-to-many-entity-relationships &quot; &gt; &lt; / a &gt; Se mange til mange-objektrelationer
+# &lt; a name = &quot; automate-tests-with-azure-pipelines-using-yaml &quot; &gt; &lt; / a &gt; Automatisere test med Azure-pipelines ved hjælp af YAML
+# # &lt; a name = &quot; add-a-new-record &quot; &gt; &lt; / a &gt; Tilføje en ny post
+1 . Tilføj en formular i din app , og angiv en SharePoint-liste som datakilde til formularen .
+&#124; Instruktioner &#124; Vis en tekstblok øverst i formularen . &#124;
+Når du har aktiveret brugerdefineret hjælp på globalt niveau , kan systemtilpassere tilsidesætte URL-adressen til den global hjælp for et objekt i objektdefinitionen .
+# &lt; a name = &quot; split-function-in-power-apps &quot; &gt; &lt; / a &gt; Funktionen Split i Power Apps
+4 . Vælg det formularnavn , du vil redigere .
+3 . Angiv et udtryk for at navigere til det første skærmbillede og hente testdataene til testen .
+# # &lt; a name = &quot; share-data-in-google-drive &quot; &gt; &lt; / a &gt; Dele data på Google Drev
+Placeret i højre rude af den modelbaserede formulardesigner findes egenskabsruden , hvor du hurtigt kan se og opdatere egenskaberne for alle elementer , der er valgt fra eksempelruden eller trævisningen .
+# # &lt; a name = &quot; ai-builder-community-forums &quot; &gt; &lt; / a &gt; AI Builder-communityforummer
+- * * OriginalImage * * : Det oprindelige billede før behandling .
+* Sortér markering stigende ( A til Å )
+&gt; * Konfigurer upstream-fjernforbindelsesværdien
+&gt; Dine foreslåede forbedringer får ikke kun positiv effekt på artikler på dit eget sprog , men også på de øvrige tilgængelige sprog .
+2 . Du tilføjer den første gren for en fase ved at tilføje feltet Fase i &quot; Ja &quot; -stien i betingelsesfeltet
+&#124; Planlægningsleder &#124; Afdeling &#124;
+# &lt; a name = &quot; work-with-business-process-flows-using-code &quot; &gt; &lt; / a &gt; Arbejd med forretningsprocesflows ved hjælp af kode
+# &lt; a name = &quot; use-adaptive-cards-in-microsoft-teams &quot; &gt; &lt; / a &gt; Brug tilpassede kort i Microsoft Teams
+&gt; Du skal logge på Teams , hvis du ikke allerede er logget på .
+# # &lt; a name = &quot; using-the-active-stage-to-run-logic &quot; &gt; &lt; / a &gt; Brug af den aktive fase til kørsel af logik
+Der kræves ingen handling , før du enten opdaterer programmet til flow for brugergrænsefladen eller forbindelsen til gatewayen . Du skal opdatere begge dele samtidigt .
+Hvis du vil give andre mulighed for at bruge et forretningsprocesforløb , skal du sortere procesforløbet , aktivere sikkerhedsroller og aktivere det .
+Parameteren `AccessMask` er et felt med følgende værdier for forskellige tilladelsesniveauer :
+For alle felter kan du angive en statisk værdi , som angives af arbejdsprocessen .
+Du kan dele et link til en knap , der er blevet delt med dig .
+2 . Hvis navigationslinjen til venstre ikke vises som standard , skal du klikke eller trykke på ikonet med tre vandrette streger i øverste venstre hjørne .
+1 . Mit flow mislykkedes . Hvordan løser jeg det ?
+# # &lt; a name = &quot; business-process-flow-entity-customization-support &quot; &gt; &lt; / a &gt; Understøttelse af tilpasning af objekter i forretningsprocesforløb
+# # &lt; a name = &quot; create-an-approval-request-flow &quot; &gt; &lt; / a &gt; Opret et flow for en godkendelsesanmodning
+# # # &lt; a name = &quot; add-an-action-to-delay-posting &quot; &gt; &lt; / a &gt; Tilføj en handling for at forsinke et opslag
+Start med at identificere antallet af skærmbilleder , der skal bruges . I dette eksempel kan du beslutte , at der skal være fem skærmbilleder .
+&gt; Brug filterattributter for at undgå , at dit flow kører unødvendigt .
+Brugerdefinerede connectorer supplerer standardconnectorer og tillader forbindelse til andre API &apos; er , SaaS-systemer og specialudviklede systemer . Du kan overføre ejerskabet af en brugerdefineret connector eller slette den .
+&gt; Rolletildelinger for ejer kan ikke slettes uden at slette forbindelsesressourcen .
+På det næste skærmbillede vises den udløsende hændelse og alle de deraf følgende handlinger .
+# # &lt; a name = &quot; currently-available-actions-for-flows &quot; &gt; &lt; / a &gt; Aktuelt tilgængelige handlinger til flows
+Mailen med reparationstip indeholder følgende afsnit :
+* Opdater anmodningen om ferie i SharePoint med afgørelsen om godkendelse .
+Når du har eksporteret din løsning , kan du importere den til et hvilket som helst miljø , der opfylder forudsætningerne . Følg disse trin for at importere en løsning :
+7 . Til sidst bliver brugeren bedt om at slette de poster , der er oprettet i løbet af kørselseksemplet .
+# # &lt; a name = &quot; customize-your-flow-template &quot; &gt; &lt; / a &gt; Tilpas din flow-skabelon
+Hvert output har :
+Du kan kontrollere kørselsoversigten på webstedet Power Automate eller på din mobilenhed .
+2 . Vælg et område , hvor miljøet skal hostes .
+Du kan finde flere oplysninger , der er relateret til denne artikel , i følgende ressourcer :
+# # &lt; a name = &quot; add-an-image-video-or-other-tile &quot; &gt; &lt; / a &gt; Tilføj et billede , en video eller et andet felt
+- Datasæt for Excel-projektmapper .
+Bemærk at for kategorien 010-Damer nåede Allans distrikt ikke samme mængde som sidste år .
+Du skal dog være omhyggelig med at sikre , at filtre på måneds- eller datoniveau giver et meningsfyldt resultat . Uden nogen speciel beregningslogik kan den første dag i hvert år bogstaveligt talt blive rapporteret som måldatoer i rapportvisualiseringer . Alle andre dage – og alle måneder undtagen januar – vil opsummere målantallet som TOMT .
+# # # &lt; a name = &quot; assigning-workspaces-to-capacities &quot; &gt; &lt; / a &gt; Tildeling af arbejdsområder til kapaciteter
+title : Opret forbindelse til Dashboard til understøttelse af beslutninger i forbindelse med hospitalernes akutberedskab
+URL-reservationer består af et præfiks , værtsnavn , en port og en virtuel mappe :
+Lad os se , hvordan tabeludvidelse fungerer i et animeret eksempel .
+&#124; Error &#124; Registrerer alle programfejlhændleser , siden sporingen startede . &#124;
+# # &lt; a name = &quot; sensitivity-label-persistence-in-embedded-reports-and-dashboards &quot; &gt; &lt; / a &gt; Fastholdelse af følsomhedsmærkater i integrerede rapporter og dashboards
+# # # &lt; a name = &quot; the-ribbon-chart &quot; &gt; &lt; / a &gt; Bånddiagrammet
+# # &lt; a name = &quot; other-situations-that-can-cause-import-issues &quot; &gt; &lt; / a &gt; Andre situationer , der kan medføre importproblemer
+* Redigere gruppenavn , billede , beskrivelse og andre indstillinger .
+I følgende tabel beskrives forskelle mellem en datagateway i det lokale miljø og en datagateway i det lokale miljø ( personlig tilstand ) .
+1 . Vælg linket for at åbne elementet i Power BI-tjenesten .
+- Fortsæt med at udforske ruden Analyse for at se mere om dine data .
+* Ungarsk – magyar
+- Tilføj eller fjern en forklaring
+- - Tryk på ESC for at gennemse stakken af rapportelementer , der optager den samme plads i designområdet .
+Parametrene `clauses` kan indeholde flere objekter med to parametre :
+Ét datasæt ...
+Følg disse trin for at bekræfte det effektive brugernavn .
+Hvis du er i tvivl om , hvorvidt dataene er opdateret , skal du kontakte designeren .
+# # # &lt; a name = &quot; use-the-data-source-with-directquery-connections &quot; &gt; &lt; / a &gt; Brug datakilden med DirectQuery-forbindelser
+Hvis fokus- eller spotlighttilstanden er markeret , når du tilføjer et bogmærke , bevares den pågældende tilstand i bogmærket .
+&#124; Top 5-dataflow efter Gennemsnitlig ventetid &#124; De fem dataflow med den længstvarende gennemsnitlige opdateringsventetid i minutter . &#124;
+I dette selvstudium lærer du , hvordan du kan :
+# &lt; a name = &quot; use-quick-measures-for-common-calculations &quot; &gt; &lt; / a &gt; Brug hurtigmålinger til almindelige beregninger
+Den opdateringslogik , der anvendes som standard for linkede objekter , ændres alt efter , om kildedataflowet er placeret i samme arbejdsområde som destinationsdataflowet . I følgende afsnit beskrives funktionaliteten af hver enkelt af disse .
+# # # # &lt; a name = &quot; max-intermediate-row-set-count &quot; &gt; &lt; / a &gt; Maks. antal mellemliggende rækker
+title : Punktdiagrammer med høj tæthed i Power BI
+- I øverste højre hjørne giver det globale søgefelt dig mulighed for at søge efter indhold efter titel , navn eller nøgleord .
+Vi anbefaler , at du opgraderer uden for arbejdstiden , når der kun er få brugere , der aktivt får vist eller redigerer elementer i arbejdsområdet .
+Der er flere kendte problemer , som kan opstå :
+title : Få mere at vide om , hvilke Python-pakker der understøttes
+Det er alt , der skal til for at publicere Power BI-rapporten på internettet , og dele den med verden . Det er nemt !
+# &lt; a name = &quot; scan-a-barcode-with-your-device-from-the-power-bi-mobile-app &quot; &gt; &lt; / a &gt; Scan en stregkode med din enhed fra Power BI-mobilappen
+Modellen med arbejdsområdebaseret isolation fungerer godt sammen med kapaciteter af følgende årsager :
+# # # &lt; a name = &quot; delete-a-capacity-with-azure-cli &quot; &gt; &lt; / a &gt; Slet en kapacitet med Azure-kommandolinjegrænsefladen
+KPI &apos; er er også tilgængelige i Power BI-tjenesten og på dine mobilenheder . Det giver dig mulighed for altid at have fingeren på pulsen i virksomheden .
+Vi har nu været omkring arbejdsområder og komponenter . Lad os opsummere og gennemse de dele , der udgør dashboardet i Power BI-tjenesten .
+Hvis du ejer dashboardet , kan du se en liste over kolleger , som du har delt dette dashboard eller denne rapport med .
+- Pålidelighed af åben rapport
+# # &lt; a name = &quot; publish-your-excel-workbook &quot; &gt; &lt; / a &gt; Publicer din Excel-projektmappe
+# &lt; a name = &quot; create-a-paginated-report-for-power-bi-report-server &quot; &gt; &lt; / a &gt; Opret en sideinddelt rapport til Power BI-rapportserver
+&gt; Sammenligner områder efter farve .
+title : Tabelvisualiseringer i Power BI-rapporter og -dashboards
+Se denne video for at få mere at vide om , hvordan du opretter en visualisering for nøglefaktorer med en kategorisk metrikværdi . Derefter skal du følge disse trin for at oprette en .
+- I eksemplet nedenfor bruger kunde 10000000 både en browser og en tablet til at interagere med tjenesten .
+# # &lt; a name = &quot; enhance-your-qa-virtual-analyst-results &quot; &gt; &lt; / a &gt; Udvid dine resultater fra den virtuelle Spørgsmål og svar-analytiker
+# # &lt; a name = &quot; delete-an-organizational-content-pack-from-appsource &quot; &gt; &lt; / a &gt; Slet en organisationsindholdspakke fra AppSource
+Bemærk , at der er nogle indstillinger i den viste menu , der udløser forskellige resultater :
+1 . Åbn appen Firmaportal .
+# # # &lt; a name = &quot; manage-alerts-on-your-iphone-or-ipad &quot; &gt; &lt; / a &gt; Administrer beskeder på din iPhone eller iPad
+# # &lt; a name = &quot; add-a-numeric-range-slicer &quot; &gt; &lt; / a &gt; Tilføj udsnitsværktøj til numeriske områder
+I nedenstående tabel vises betalings- og forbrugsovervejelser pr. kapacitet .
+1 . Vælg en visualisering .
+title : Brug det forbedrede beregningsprogram med dataflows
+1 . Rul ned til det ønskede datasæt , eller skriv * Rapport til forbrugsdata * i søgefeltet .
+2 . Dine integreringskoder vises .
+- Hvor mange farver blev solgt til australske kunder ?
+4 . Knappen Flyt op i lag
+title : Få en rundvisning af ruden Rapportfiltre
+- Slet den aktuelle kapacitet , hvor arbejdsområdet er placeret . Derved flyttes arbejdsområdet tilbage til delt kapacitet i det lokale område .
+# # # &lt; a name = &quot; can-i-create-these-roles-for-analysis-services-data-sources &quot; &gt; &lt; / a &gt; Kan jeg oprette disse roller til Analysis Services-datakilder ?
+* til at vise proportionerne mellem de enkelte dele og en helhed
+Designere af Power BI-rapporter styrer , hvilke typer eksportindstillinger af data der er tilgængelige for deres forbrugere . Valgmulighederne er :
+* Beregnede medlemmer i attributhierarkier , der ikke er sidestillet med * Alle *
+# # # &lt; a name = &quot; opportunity-count-by-region-and-stage &quot; &gt; &lt; / a &gt; Antal salgsmuligheder efter område og fase
+# # &lt; a name = &quot; share-a-dashboard-or-report &quot; &gt; &lt; / a &gt; Del et dashboard eller en rapport
+# # &lt; a name = &quot; creating-a-schedule-refresh-plan &quot; &gt; &lt; / a &gt; Oprettelse af en plan for planlagt opdatering
+Denne metode til oprettelse af en rapport starter med et datasæt og et tomt rapportlærred . Du kan følge med ved at se Excel-datasættet med Retail Analysis-eksemplet .
+# # &lt; a name = &quot; editing-power-bi-reports &quot; &gt; &lt; / a &gt; Redigering af Power BI-rapporter
+2 . Brugeren accepterer invitationen til organisationen .
+# # # &lt; a name = &quot; dynamic-row-level-security &quot; &gt; &lt; / a &gt; Dynamisk sikkerhed på rækkeniveau
+Slutbrugeren skal altid klikke sig videre til samtykkeerklæringen , før vedkommende kan få adgang til indhold .
+- Modellerne behøver ikke at blive opdateret
+Hvis du har brug for mere lodret plads , kan du konvertere udsnittet til en rullemenu . Fjern overskriften i udsnittet , og tilføj et tekstfelt med titlen ved siden af :
+* Se en introduktion af , hvordan Excel og Power BI-tjenesten arbejder sammen *
+title : Udvid visualiseringer med værktøjstip til rapportsider
+3 . Beslut , hvilke af disse indstillinger du eventuelt vil bruge :
+title : Tilmeld dig prøveversionsfunktioner
+Følgende tabel indeholder oplysninger om den aktuelle support af SAP BW .
+Du kan indstille algoritmen i `categories` og / eller gruppesektionen af `values` til tilknytning af kategoridata .
+# # # &lt; a name = &quot; color-related-helper-methods &quot; &gt; &lt; / a &gt; Farverelaterede hjælpemetoder
+# # # &lt; a name = &quot; access-token-with-a-master-account &quot; &gt; &lt; / a &gt; Adgangstoken med en masterkonto
+Når eksporten er fuldført , indlæses PDF-filen i PDF-fremviseren på computeren .
+&#124; Tal &#124; Hvad er det &#124;
+* udfører stavekontrol .
+title : Brug visuelle elementer til at forbedre Power BI-rapporter
+title : Hvad er Power BI-mobilapps ?
+- Den medtager ikke BLANKs i nogen af tabellens kolonner .
+# # &lt; a name = &quot; use-your-browser-to-change-page-display &quot; &gt; &lt; / a &gt; Brug din browser til at ændre sidevisningen
+Efterhånden som problemer opstår , opdateres denne artikel med oplysninger for at hjælpe dig .
+* Brugerne bør opdatere alle åbne browservinduer .
+# &lt; a name = &quot; guidance-for-deploying-a-data-gateway-for-power-bi &quot; &gt; &lt; / a &gt; Vejledning i at installere en datagateway til Power BI
+title : Kortvisualiseringer ( felter med store tal )
+* Funktionen * * Tilknyttede elementer * * understøttes kun blandt arbejdsområder på samme lagerkonto
+# # &lt; a name = &quot; get-a-new-app &quot; &gt; &lt; / a &gt; Hent en ny app
+Når du er færdig med disse trin , har du et målerdiagram , der ser nogenlunde sådan ud :
+&#124; Det vestlige Europa &#124; Det vestlige Europa &#124;
+# # # &lt; a name = &quot; why-are-reports-slow &quot; &gt; &lt; / a &gt; Hvorfor er rapporterne langsomme ?
+# # # &lt; a name = &quot; optimizing-externally-hosted-models &quot; &gt; &lt; / a &gt; Optimering af eksternt hostede modeller
+* Anmeldelse af koder
+Fremhæv datapunkter på kortet ved at tilføje nåle .
+Oplæring af AutoML-modeller er en del af dataflowopdateringen . AutoML klargør først dine data til oplæring .
+Opdateringer udløses , når visualiseringen kalder metoden `update` .
+title : Typer af filtre i Power BI-rapporter
+# # &lt; a name = &quot; copy-and-paste-between-reports &quot; &gt; &lt; / a &gt; Kopiér og indsæt mellem rapporter
+Der er også nogle få kendte problemer , som beskrevet i dette afsnit .
+# &lt; a name = &quot; change-log-for-power-bi-report-server &quot; &gt; &lt; / a &gt; Ændringslog for Power BI-rapportserver
+- Sideinddelte rapporter
+- Rettelse af fastgørelse af Power BI-rapportserver til startmenuen , som medfører sort tekst på et sort ikon
+# &lt; a name = &quot; use-gridlines-and-snap-to-grid-in-power-bi-desktop-reports &quot; &gt; &lt; / a &gt; Brug gitterlinjer og fastgørelse til gitter i Power BI Desktop-rapporter
+Du kan gengive data ved hjælp af React . Komponenten kan vise data fra sin egen fase .
+# # &lt; a name = &quot; enable-sso-for-sap-hana &quot; &gt; &lt; / a &gt; Aktivér SSO til SAP HANA
+# # &lt; a name = &quot; review-the-refresh-history &quot; &gt; &lt; / a &gt; Gennemgå opdateringshistorikken
+I følgende tabel vises de anbefalede SKU &apos; er for upload af .pbix-filer eller publicering til Power BI-tjenesten :
+Sådan registrerer du dit program ved hjælp af værktøjet Power BI App Registration :
+- tilføje en Y-aksetitel
+# # # &lt; a name = &quot; add-selection-to-each-data-point &quot; &gt; &lt; / a &gt; Føj markering til hvert datapunkt
+# # &lt; a name = &quot; data-storage-and-movement &quot; &gt; &lt; / a &gt; Datalager og -flytning
+# &lt; a name = &quot; visual-types-in-power-bi &quot; &gt; &lt; / a &gt; Visualiseringstyper i Power BI
+- til at vise fordelingsmønsteret for målingen på tværs af hvert niveau af kategorier i hierarkiet
+# &lt; a name = &quot; dax-use-selectedvalue-instead-of-values &quot; &gt; &lt; / a &gt; DAX : Brug SELECTEDVALUE i stedet for VALUES
+* Afbildningsenhed – kun afbildning til standardenheden understøttes .
+&#91; Introduktion til farveformatering og akseegenskaber &#93; ( service-getting-started-with-color-formatting-and-axis-properties.md )
+title : Angiv geografiske filtre i Power BI Desktop til mobilapps
+# # &lt; a name = &quot; your-copy-of-the-report &quot; &gt; &lt; / a &gt; Din kopi af rapporten
+Linket fjernes i Power BI Desktop , men teksten beholdes .
+- Downloadet Power BI-rapport
+Dimensionstabeller indeholder generelt et relativt lille antal rækker . Faktatabeller kan omvendt indeholde et meget stort antal rækker og fortsætte med at vokse over tid .
+Der er faktisk to relationer her :
+title : Udforsk rapporter i Power BI-mobilappsene
+title : &apos; Selvstudium : Opret en sideinddelt rapport , og upload den til Power BI-tjenesten &apos;
+Du skal starte med at oprette en ny overførselsplan . Du kan oprette en ny overførselsplan ved at gøre følgende :
+# # # &lt; a name = &quot; classic-apps-and-workspaces &quot; &gt; &lt; / a &gt; Klassiske apps og arbejdsområder
+- Indstillingen Automatisk dato / klokkeslæt
+Du kan returnere værdien af en kolonne , eller du kan returnere alle rækker i en relation , ved hjælp af DAX-funktioner .
+* Et navn på en parameter , der er blevet ændret
+Følgende Live Connect-kilder ( flerdimensionelle ) kan ikke bruges sammen med sammensatte modeller :
+# # &lt; a name = &quot; when-is-directquery-useful &quot; &gt; &lt; / a &gt; Hvornår er DirectQuery nyttig ?
+Flere DAX-forespørgsler kan køre parallelt , så hændelser fra forskellige grupper kan indskydes . Værdien af `ActivityID` kan bruges til at afgøre , hvilke hændelser der tilhører samme gruppe .
+Sammenkædede celler har tilføjede indstillinger til genvejsmenuen . Højreklik på en celle . Sammen med de sædvanlige indstillinger kan du også se følgende :

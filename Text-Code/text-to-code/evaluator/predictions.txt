@@ -1,0 +1,100 @@
+void function ( ) { _total ++ ; }
+void function ( boolean arg0 ) { fStatementsRecovery = arg0 ; }
+boolean function ( ) { return true ; }
+String function ( ) { return IDENTITIES_ZNODE_NAME ; }
+boolean function ( C arg0 , LexicogaphicalComparator < C > arg1 ) { return arg1 . compareTo ( arg0 ) ; }
+void function ( Region arg0 ) { fPosition = arg0 ; }
+double function ( double arg0 ) { return factory . getReal ( arg0 ) ; }
+boolean function ( ) { return false ; }
+SqlIntervalQualifier function ( ) { return intervalQualifier ; }
+byte [ ] function ( Drawable arg0 ) { return arg0 . toByteArray ( ) ; }
+void function ( ) { disableMigrations = false ; }
+void function ( int arg0 ) { }
+Dialog function ( ) { return createRefactoringStatusDialog ( ) ; }
+BaseColor function ( ) { return strokeColor ; }
+void function ( ) { SecurityConfiguration . getApplicationPolicy ( ) ; }
+Predicate [ ] function ( ) { return null ; }
+void function ( int arg0 ) { this . marcador = arg0 ; }
+IJavaElement function ( IJavaEditor arg0 ) { return null ; }
+LoadPlan function ( ) { return loadPlan ( ) ; } concode_elem_sep LoadPlan function ( ) { return loadPlan ( ) ; }
+Body function ( ) { return pskip ; }
+void function ( String arg0 ) { this . catalogName = arg0 ; }
+Iterator < String > function ( ) { return columnsByName . iterator ( ) ; }
+void function ( ) { setSyncResultSoftError ( "srini_string" ) ; }
+String function ( IType arg0 ) { return fRefactoredSimilarElements . get ( arg0 ) ; }
+int function ( ) { return 0 ; }
+boolean function ( ) { return useRanks ; }
+List function ( ) { return list ; }
+boolean function ( ResourceEntity arg0 ) { if ( arg0 instanceof ReleaseEntity ) { return true ; } return false ; }
+URI function ( ) { return uri ; }
+Getcontentlanguage function ( ) { return getContentlanguage ; }
+boolean function ( ) { return coalescing ; }
+int function ( ) { return lease ; }
+void function ( String arg0 , Throwable arg1 ) { getLogger ( ) . error ( arg0 , arg1 ) ; }
+Element function ( String arg0 ) { for ( Element loc0 : getAllChildElemsMatching ( ) ) { if ( loc0 . getTagName ( ) . equals ( arg0 ) ) { return loc0 ; } } return null ; } concode_elem_sep Element function ( String arg0 ) { return null ; }
+String function ( ) { return fcLink ; }
+boolean function ( ) { return type == NAME ; }
+void function ( int arg0 ) { this . i = arg0 ; }
+boolean function ( List < GenSolvablePolynomial < C >> arg0 , List < GenSolvablePolynomial < C >> arg1 ) { return arg0 . contains ( arg1 ) ; }
+void function ( boolean arg0 ) { fBindingsRecovery = arg0 ; }
+void function ( KeyEvent arg0 ) { }
+Local < C > function ( ) { return ring ; }
+int function ( Object arg0 ) { return arg0 . compareTo ( this ) ; }
+void function ( boolean [ ] arg0 ) { this . probes = arg0 ; }
+ProvidedPort function ( ) { return new ProvidedPort ( ) ; }
+void function ( ISourceFileLocator arg0 ) { delegates . add ( arg0 ) ; }
+UnivPowerSeries < C > function ( int arg0 ) { return new UnivPowerSeries < C > ( arg0 ) ; }
+void function ( Shell arg0 ) { }
+void function ( Limit arg0 ) { this . limits . add ( arg0 ) ; }
+void function ( ) { pos ++ ; }
+void function ( ) { }
+String function ( ) { return name ; }
+void function ( boolean arg0 ) { this . useCriterion4 = arg0 ; }
+Set < ClassDoc > function ( String arg0 ) { return cmap . get ( arg0 ) ; }
+Violation function ( ) { return this . violationsMap . get ( this . time ) ; }
+boolean function ( ) { return lookupEnabled ; }
+void function ( ) { receivedMsg ++ ; }
+void function ( Exception arg0 ) { System . err . println ( arg0 . getMessage ( ) ) ; } concode_elem_sep void function ( Exception arg0 ) { System . exit ( 0 ) ; }
+ArrayList function ( ) { return items ; }
+String function ( ) { return name ; }
+StackKeeper function ( ) { return queue . peek ( ) ; }
+GenVector < C > function ( ) { return ZERO ; }
+void function ( int arg0 ) { this . level = arg0 ; }
+void function ( ) { }
+void function ( String arg0 , String arg1 ) { mParameters . put ( arg0 , arg1 ) ; }
+String function ( String arg0 ) { return factory . getNamespaceURI ( arg0 ) ; }
+void function ( List < List < Integer >> arg0 ) { taskIdsQueue . addAll ( arg0 ) ; }
+void function ( boolean arg0 ) { debug = arg0 ; }
+String function ( String arg0 ) { return "srini_string" ; }
+ConditionMonitor function ( ) { return INSTANCE ; }
+long function ( ) { return theirs ; }
+void function ( ) { }
+void function ( ) { } concode_elem_sep void function ( ) { }
+void function ( Map < String , String > arg0 ) { mapper . putAllFonts ( arg0 ) ; }
+void function ( String arg0 , Object arg1 ) { log ( arg0 , arg1 , null ) ; }
+void function ( BigInteger arg0 ) { this . nresults = arg0 ; } concode_elem_sep void function ( BigInteger arg1 ) { this . nresults = arg1 ; }
+Throwable function ( ) { return invalidScriptError ; }
+boolean function ( ) { return locator != null ; }
+VectorXZ function ( double arg0 , double arg1 ) { return new VectorXZ ( arg0 , arg1 ) ; }
+int function ( InputStream arg0 ) { int loc0 = 0 ; for ( int loc1 = 0 ; loc1 < 16 ; loc1 ++ ) { loc0 |= ( byteBuf [ loc1 ] & 0xff ) << 8 | ( byteBuf [ loc1 ] & 0xff ) << 16 | ( byteBuf [ loc1 ] & 0xff ) << 16 | ( byteBuf [ loc1 ] & 0xff ) ; } return loc0 ; }
+boolean function ( Closure arg0 ) { return iClosures [ arg0 . getPredicate ( ) ] ; }
+ArrayList < Byte > function ( ) { return bytes ; }
+PolynomialFunction function ( ) { return polynomialSplineDerivative ( ) ; }
+void function ( ) { throw new RuntimeException ( "srini_string" ) ; }
+int function ( ) { return type ; }
+double function ( ) { return mu ; }
+DoubleListIterator function ( ListIterator arg0 ) { return new DoubleListIterator ( arg0 ) ; }
+void function ( ) { countryLookup . clear ( ) ; }
+Parser function ( Class arg0 ) { return getParser ( arg0 , null ) ; }
+List < T > function ( Collection < T > arg0 ) { return new ArrayList < T > ( ) ; }
+int function ( ) { return backendConfig . getKdcPort ( ) ; }
+int function ( ) { return chars . size ( ) ; }
+void function ( String arg0 ) { File loc0 = new File ( arg0 ) ; loc0 . delete ( ) ; }
+ModInteger function ( int arg0 ) { return ring . compareTo ( arg0 ) ; }
+RemittanceInformation5 function ( String arg0 ) { return new RemittanceInformation5 ( arg0 ) ; }
+Unmarshaller function ( ) { return factory . createUnmarshaller ( ) ; }
+String function ( byte [ ] arg0 ) { return discardNonBase64Chars ( arg0 ) ; }
+String function ( String arg0 ) { return getMessage ( arg0 , null ) ; }
+void function ( PropertyChangeListener arg0 ) { pcsDelegate . addPropertyChangeListener ( arg0 ) ; }
+ReflectConstructorSpec function ( ) { return new ReflectConstructorSpec ( ) ; }
+byte [ ] function ( short arg0 ) { return toLong ( arg0 ) ; }

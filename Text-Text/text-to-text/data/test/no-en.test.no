@@ -1,0 +1,1000 @@
+&#91; Analysere kontantstrømmen i firmaet &#93; ( finance-analyze-cash-flow.md )
+&gt; Hvis komponentene har et standard leverandørnummer angitt på varekortene , blir linjene forhåndsdefinert .
+# &lt; a name = &quot; how-to-process-sales-opportunities &quot; &gt; &lt; / a &gt; Behandle salgsmuligheter
+&#124; Alternativer for linjekostnad &#124; Beskrivelse &#124;
+7 . Definer rutekoblingskoder fra hver forekomst av komponenten til operasjonen der den er brukt .
+# &lt; a name = &quot; how-to-set-up-fixed-asset-maintenance &quot; &gt; &lt; / a &gt; Definere vedlikehold av aktiva
+# &lt; a name = &quot; design-details-general-journal-post-line &quot; &gt; &lt; / a &gt; Designdetaljer : Finanskladd – bokfør linje
+En planleggingslinje kan være én av følgende typer :
+Tidsgyldigheten for versjonen angis i feltet * * Startdato * * .
+title : Bruke utvidelsen Quickbooks Payroll-filimport
+Gjennomgangen introduserer funksjonen for håndtering av kampanje og segment i avdelingen Salg og markedsføring . Denne gjennomgangen tar for seg følgende oppgaver :
+- Beregne et standardkostbeløp for den ferdige varen og definere det på varekortet .
+# &lt; a name = &quot; design-details-item-tracking-design &quot; &gt; &lt; / a &gt; Designdetaljer : Varesporingsutforming
+title : Aktiver kundebetalinger gjennom PayPal
+# &lt; a name = &quot; how-to-create-remittance-suggestions &quot; &gt; &lt; / a &gt; Opprette remitteringsforslag
+# # &lt; a name = &quot; exchange-rates-by-settlement &quot; &gt; &lt; / a &gt; Valutakurser ved oppgjør
+Fremgangsmåten nedenfor beskriver hva ulike brukere gjør , og det relaterte svaret :
+Du kan også gjøre en dimensjon obligatorisk , slik at det ikke er mulig å bokføre en post med en bestemt kontotype hvis ikke kontoen har en dimensjonsverdi tilordnet seg .
+# &lt; a name = &quot; how-to-set-up-approval-users &quot; &gt; &lt; / a &gt; Konfigurere godkjenningsbrukere
+# &lt; a name = &quot; how-to-set-up-electronic-document-sending-and-receiving &quot; &gt; &lt; / a &gt; Konfigurere sending og mottak av elektroniske dokumenter
+# # &lt; a name = &quot; to-record-resource-usage-for-a-job &quot; &gt; &lt; / a &gt; Slik registrerer du ressursforbruk for et prosjekt
+Følgende tabell viser resultatet i varens verdiposter hvis trinn 2 i forrige scenario utføres uten en fastsatt utligning .
+# &lt; a name = &quot; design-details-dealing-with-orders-before-the-planning-starting-date &quot; &gt; &lt; / a &gt; Designdetaljer : Håndtere ordrer før den planlagte startdatoen
+# &lt; a name = &quot; how-to-revalue-inventory &quot; &gt; &lt; / a &gt; Revaluere beholdning
+title : Definere dokumentutskrift
+Behovet er gitt av selskapets kunder . Forsyning er det selskapet kan opprette og fjerne for å skape balanse . Planleggingssystemet starter med det uavhengige behovet og sporer deretter bakover til forsyningen .
+5 . Rett opp feilen eller feilene som beskrevet i hver feilmelding .
+- Slik importerer du en XML-port til Object Designer :
+For selskaper som vil holde styr på varene allerede fra begynnelsen , er bestillingen ofte det sentrale dokumentet . I dette tilfellet er ofte bestillingsordren det sentrale dokumentet , men varesporing kan imidlertid håndteres fra et hvilket som helst inngående dokument , og bokførte poster kan vises i de tilhørende varepostene .
+# # # &lt; a name = &quot; to-register-the-warehouse-movement &quot; &gt; &lt; / a &gt; Slik registrerer du lagerflyttingen
+I en analyserapport vises analyseobjektene på linjene . Du kan definere linjene du vil inkludere i analyserapporten , ved å definere maler for analyselinjen .
+title : Opprette kostbudsjetter
+- Planlagte produksjonsordrer er som frigitte produksjonsordrer og sender inndata til kapasitetsplanlegging ved å vise samlet kapasitetsbehov etter arbeidssenter eller produksjonsressurs .
+- Ingen rutekoblingskoder kan defineres .
+title : Norske salgsdokumenter
+title : Tilordne en annen kontaktadresse
+6 . Du kan nå finne plukktilordningen du nettopp opprettet , ved å velge plukkingen med det høyeste nummeret .
+Hvis du planlegger å selge aktiva i budsjettperioden , kan du angi opplysninger om salgsprisen og salgsdatoen .
+# # &lt; a name = &quot; purchases-and-payables &quot; &gt; &lt; / a &gt; Kjøp
+# # &lt; a name = &quot; to-create-a-purchase-allowance &quot; &gt; &lt; / a &gt; Slik oppretter du en kjøpsrabatt
+Vi anbefaler at du ikke endrer oppsettet av avskrivningstablåer med poster som allerede er bokført . Endringene påvirker ikke poster som allerede er bokført , noe som ville forårsaket feilaktig statistikk for avskrivningstablåene .
+&gt; Hvis det fortsatt er advarsler på noen av monteringsordrelinjene , blokkeres bokføring . Det vises en melding om hvilke komponenter som ikke er i lageret .
+# # # &lt; a name = &quot; calculating-the-quantity-available-to-reserve &quot; &gt; &lt; / a &gt; Beregne antall tilgjengelig for reservasjon
+Over tid kommer dynamiske sporingskoblinger ut av balanse fordi hele ordrensporingsnettverket ikke endres på nytt før en behovs- eller forsyningshendelse faktisk er lukket .
+# # &lt; a name = &quot; what-is-the-integration-with-office-365-about &quot; &gt; &lt; / a &gt; Hvordan fungerer integreringen med Office 365 ?
+title : &quot; Kriterier for overføring av finansposter til kostposter &quot;
+# # # &lt; a name = &quot; to-receive-and-put-the-items-away &quot; &gt; &lt; / a &gt; Slik mottar og plasserer du varene :
+Fremgangsmåten nedenfor beskriver hvordan du fakturerer et forskudd for en ordre . Trinnene er de samme for bestillinger .
+Microsoft har publisert følgende innholdspakker :
+Formålet med tidsperioden er å samle inn behovshendelser i tidsrammen for å opprette en felles forsyningsordre .
+Følgende fremgangsmåte beskriver hvordan du korrigerer en faktura for en forhåndsbetalt servicekontrakt som er opprettet et år i forveien .
+# &lt; a name = &quot; design-details-average-cost &quot; &gt; &lt; / a &gt; Designdetaljer : Gjennomsnittskost
+Denne informasjonen blir bare benyttet hvis kontoen brukes til betalinger utland . Ikke bruk denne hurtigfanene ved remittering til BBS .
+title : Definere varer og lokasjoner for lagerstyring
+title : &quot; Definere organisasjonsnivåer for kontaktpersoner &quot;
+1 . De midlertidige kontiene fjernes . ( Avgang )
+Du kan gruppere aktiva i hovedaktiva og komponenter i hovedaktivaene . Det kan for eksempel tenkes at du har en produksjonsmaskin som består av mange deler som du vil gruppere på denne måten .
+title : Skrive ut rapporten OCR-kladd - test
+title : &quot; Konfigurer SEPA-kredittoverføring &quot;
+Hvis du må runde av fakturabeløp når du oppretter fakturaer , kan du bruke funksjonen for automatisk avrunding . Når en faktura rundes av , legges det til en ekstra linje med avrundingsbeløpet , og denne linjen bokføres sammen med de andre fakturalinjene .
+# &lt; a name = &quot; how-to-subcontract-manufacturing &quot; &gt; &lt; / a &gt; Underleveranse av produksjon
+# # &lt; a name = &quot; to-create-tasks-for-a-job &quot; &gt; &lt; / a &gt; Slik oppretter du oppgaver for et prosjekt :
+- Hvis datoen du vil angi ligger i intervallet 01.01.1930 til og med 31.12.2029 , kan du angi året med to eller fire sifre .
+&#124; -1Å &#124; 1 år siden fra i dag &#124;
+# # &lt; a name = &quot; understanding-vat-rounding-for-documents &quot; &gt; &lt; / a &gt; Om mva-avrunding for dokumenter
+Diagrammet over kostnadstypene inneholder nå alle resultatkontiene i finans og inkluderer overskrifter og delsummer . Du kan endre diagrammet med kosttyper etter behov . Du kan for eksempel slette eksisterende kosttypeduplikater .
+title : &quot; Overføre data fra Dynamics GP med utvidelsen for datamigrering &quot;
+I fremgangsmåten nedenfor brukes det en fast planlagt produksjonsordre .
+- Beregner den tidligste leveringsdatoen når kunden ikke har bedt om en bestemt leveringsdato .
+title : &quot; Behandle leverandørgjeld &quot;
+# # &lt; a name = &quot; to-create-a-sales-quote-for-an-assemble-to-order-item &quot; &gt; &lt; / a &gt; Slik oppretter du et tilbud for en montere-til-ordre-vare :
+Du kan bruke en ekstern tjeneste for å få de siste valutakursene i vinduet Valutaer . Hvis du vil oppdatere valutakurser , må du først konfigurere tjenesten .
+title : Planlegge serviceprosesser
+Tilsyn-advarselen vises i to situasjoner :
+&gt; En varekryssreferansepost opprettes automatisk for leverandøren av varen mellom leverandørens varenummer og det nye varenummeret ditt .
+Linjene i * * Sporing * * -vinduet viser hvilke dokumenter som er knyttet til den aktuelle produksjonsordrelinjen .
+&gt; Følgende fremgangsmåte gjelder testing før du bokfører et kjøpsdokument . Funksjonen fungerer på samme måte for salgsdokumenter .
+# # # &lt; a name = &quot; table-480-dimension-set-entry &quot; &gt; &lt; / a &gt; Tabell 480 Dimensjonssettpost
+Når du endrer antallet på en eksisterende overføringsordrelinje , må du huske at den nedre grensen defineres som høyeste reserverte antall på den utgående og inngående overføringslinjen .
+# # &lt; a name = &quot; creating-a-regenerative-supply-plan &quot; &gt; &lt; / a &gt; Opprette en replanlegging for forsyning
+- Tilbakeføring av en VIA-bokføring
+Hvis du angir en fast årlig prosentsats , bruker programmet følgende formel til å beregne avskrivningsbeløpet :
+title : Importere og eksportere arbeidsflyter
+* Trekker fra tilgodehavende og legger til skyldig beløp
+6 . Åpne kortet for lokasjonen du vil konfigurere hyller for .
+# # # # &lt; a name = &quot; to-specify-an-account-for-sales-prepayments-in-general-posting-setup &quot; &gt; &lt; / a &gt; Slik angir du en konto for salgsforskudd i generelt bokføringsoppsett :
+Dette er det vanligste av de tre scenariene som støttes . I slike tilfeller vil funksjonen for sen sikre at en bruker kan angi et serie- eller partinummer , som faktisk er plukket , på et utgående dokument som allerede har en ikke-spesifikk reservasjon på et annet serie- eller partinummer .
+# # &lt; a name = &quot; to-unapply-an-application-of-vendor-entries &quot; &gt; &lt; / a &gt; Oppheve utligning av utlignede leverandørposter
+# # &lt; a name = &quot; to-set-up-payment-line-information &quot; &gt; &lt; / a &gt; Definere betalingslinjeinformasjon
+title : &quot; Arbeide med mva på kjøp og salg &quot;
+# # # &lt; a name = &quot; to-set-up-commodity-codes &quot; &gt; &lt; / a &gt; Slik definerer du varekoder
+# &lt; a name = &quot; how-to-work-with-bills-of-material &quot; &gt; &lt; / a &gt; Arbeide med stykklister
+* Endre kompetansekodene til den valgte verdien : Velg dette alternativet hvis du vil erstatte den gamle kompetansekoden med den nye for alle relaterte servicevarer .
+# # &lt; a name = &quot; to-define-work-types-and-add-one-to-a-time-sheet &quot; &gt; &lt; / a &gt; Slik definerer du arbeidstyper og legger til en til en timeliste
+7 . Last opp filen til det elektroniske bankområdet .
+2 . Angi koder og navn for klassene du vil opprette .
+- Forstå advarsler om ATO-tilgjengelighet .
+4 . Velg ordrelinjen for tre enheter av sett B .
+Legg merke til at feltet * * Levert ( antall ) * * inneholder hele antallet på begge linjer .
+# # &lt; a name = &quot; to-set-up-the-warehouse-for-cross-docking &quot; &gt; &lt; / a &gt; Slik definerer du lageret for kryssoverføring
+&gt; Følgende viktige forskjeller finnes mellom lagerplukkinger og lagerflyttinger :
+# # &lt; a name = &quot; to-allocate-a-resource-using-resource-or-resource-group-availability &quot; &gt; &lt; / a &gt; Slik tildeler du en ressurs ved hjelp av ressurs eller ressursgruppedisponering
+# &lt; a name = &quot; how-to-work-with-responsibility-centers &quot; &gt; &lt; / a &gt; Arbeide med ansvarssentre
+# # &lt; a name = &quot; calculating-without-a-requested-delivery-date &quot; &gt; &lt; / a &gt; Beregne uten en ønsket leveringsdato
+Taksonomiene vedlikeholdes av www.xbrl.org. Du kan laste ned taksonomiene og få mer detaljerte opplysninger på webområdet for XBRL .
+Gjenkjenningsfunksjonen for ordrenivå brukes i konverteringsscenarier , produksjon og montering . Funksjonen fungerer som følger :
+title : Designdetaljer - Lageroppsett
+# # # &lt; a name = &quot; to-add-a-label-or-data-field &quot; &gt; &lt; / a &gt; Legge til en etikett eller et datafelt
+- Angir og bokfør faktisk opptalt lagerbeholdning .
+Du må kanskje overføre et aktiva til en annen avdeling når for eksempel du plasserer et aktiva i produksjonsavdelingen mens aktivaet er under bygging , og deretter flytter det til administrasjonsavdelingen når det er ferdig .
+9 . Legg deretter til rutekoblingskoder i andre komponenter i henhold til de unike operasjonene de brukes i .
+title : Definere hylletyper
+* Andre planleggingsparametre på varekortet :
+Det opprettes positive vareposter som gjenspeiler de bokførte kjøpsmottakene for tilbehør fra leverandør 10000 og 20000 , og elementene er klare til å bli plassert i lageret fra mottakshyllen .
+# # # &lt; a name = &quot; situation-after-sales-decrease &quot; &gt; &lt; / a &gt; Situasjonen etter salgsreduksjon
+13 . Opprett en ny frigitt produksjonsordre ved å fylle ut følgende felt i hodet .
+&#124; Tom &#124; Angir at tillatelsestypen ikke gis for objektet . &#124;
+# # &lt; a name = &quot; searching-by-using-column-filters &quot; &gt; &lt; / a &gt; Søke ved hjelp av kolonnefiltre
+title : &quot; Bruke kjørselen Betalingsforslag - leverandør &quot;
+title : &quot; Søke etter dokumenter uten vedlegg &quot;
+title : &quot; Slik massebokfører du produksjonsavgang og operasjonstider &quot;
+- Så lenge du fortsette å bruke Windows-klienten til å tilpasse siden , vil tilpasningsendringer du gjør , også tre i kraft på siden i webklienten .
+# # &lt; a name = &quot; to-set-up-activities-with-tasks &quot; &gt; &lt; / a &gt; Definere aktiviteter med oppgaver
+3 . Velg nummerserien som skal brukes for hver rapport .
+1 . Betalingsforslaget kjøres i den elektroniske betalingsfunksjonen og overføres til banken ved hjelp av bankens programvare .
+# # &lt; a name = &quot; to-assign-an-item-category-to-an-item &quot; &gt; &lt; / a &gt; Slik tilordner du en varekategori til en vare :
+* PayPal Payments Standard-tjenesten omfatter ikke månedlige avgifter eller etableringsgebyrer .
+Den beregnede beholdningen brukes av planleggingssystemet til å overvåke gjenbestillingspunktet , og til å bestemme gjenbestillingsantallet når gjenbestillingsprinsippet Maks.ant. brukes .
+title : &quot; Angi når og hvor du kan motta varsler &quot;
+Du kan definere dine egne personlige kladder som en kladd for hver enkelt kladdemal . Du kan for eksempel definere din egen kladd for betalingskladden som har personlig oppsett og innstillinger . Tipset nedenfor er et eksempel på hvordan du kan tilpasse en kladd .
+# # &lt; a name = &quot; to-create-a-sales-order-from-a-blanket-sales-order &quot; &gt; &lt; / a &gt; Slik oppretter du en ordre fra en rammeordre
+# &lt; a name = &quot; how-to-maintain-fixed-assets &quot; &gt; &lt; / a &gt; Vedlikeholde aktiva
+&#91; Låne ut og mottar utlånsobjekter &#93; ( service-how-to-lend-receive-loaners.md )
+# # &lt; a name = &quot; to-set-up-an-employee &quot; &gt; &lt; / a &gt; Slik konfigurerer du ansatte
+- Endre rekkefølgen på handlinger .
+# # # &lt; a name = &quot; add-a-new-menu-button &quot; &gt; &lt; / a &gt; Legge til en ny menyknapp
+2 . Opprett en ny servicekontraktmal .
+Et generelt prinsipp i monteringsstyring er at når montere til ordre-antall er satt sammen på en ordrelinje , må de leveres før lagerantallene .
+Alle prosjektrelaterte poster registreres i prosjektjournaler og nummereres fortløpende og starter med 1 . I prosjektjournalen kan du få en oversikt over alle prosjektpostene .
+# &lt; a name = &quot; design-details-loading-the-inventory-profiles &quot; &gt; &lt; / a &gt; Designdetaljer : Laste inn lagerprofiler
+# # &lt; a name = &quot; to-adjust-item-costs-manually &quot; &gt; &lt; / a &gt; Justere varekost manuelt
+title : Konfigurere navn på appfelt i lagerapp
+1 . Opprett en import- eller eksportjobb der du fullfører følgende oppgaver :
+Jobbhistorikken er tilgjengelig for feilsøking og etterforskning på både import- og eksportjobber . Historiske jobber er organisert av tidsintervall .
+Arbeidere anses som fraværende i timer de ikke arbeider i den vanlige arbeidstiden . Vanlig arbeidstid defineres i profilen for standard arbeidstid for en arbeider .
+- Stil-ID eller navn
+# &lt; a name = &quot; configure-and-run-job-to-calculate-statements &quot; &gt; &lt; / a &gt; Konfigurere og kjøre jobb for å beregne utdrag
+2 . Klikk Ny for å åpne nedtrekksdialogen .
+Du kan vise alle byggeblokker som er tilordnet til en byggeblokkgruppe . Du kan også eksportere eller importere en byggeblokkgruppe .
+# # &lt; a name = &quot; define-the-transfer-locations &quot; &gt; &lt; / a &gt; Definere overføringslokasjonene
+# &lt; a name = &quot; manage-leave-of-absence &quot; &gt; &lt; / a &gt; Administrere permisjon
+3 . Merk av eller fjern merket for Oppdater fakturahodestatus automatisk .
+3 . Skriv inn Eksempeltilordning i Navn-feltet .
+* Alle utstedte poeng vil ha den valgte valutaen for fordelspoeng av typen Beløp . Dette feltet gjelder ikke for fordelspoeng av typen Antall . Hopp over dette trinnet .
+11 . Angi et tall i feltet Til-antall .
+22 . Sett Tabell-feltet til Lokasjoner .
+8 . Klikk rullegardinknappen i feltet Leveringsmåte for å åpne oppslaget .
+# # &lt; a name = &quot; substituting-material-by-date &quot; &gt; &lt; / a &gt; Erstatte materiale etter dato
+# &lt; a name = &quot; purchase-spend-analysis-power-bi-content &quot; &gt; &lt; / a &gt; Kjøps- og forbruksanalyse-innhold for Power BI
+6 . Oppdater verdiene for de obligatoriske attributtene på følgende hurtigfaner :
+4 . Råvareforbruk
+5 . Skriv inn en verdi i Emne-feltet .
+Listesiden støtter følgende handlinger :
+5 . Velg Ja eller Nei for Sett regnskapsårsstatusen til permanent lukket .
+Du kan velge å koble ett avvik til et annet og opprette et nytt avvik fra et eksisterende avvik . Koblingen kan for eksempel reflektere sammenhengen mellom kvalitetsproblemer .
+- Opprette målinger av prognosenøyaktighet .
+* Fordi det utførte ER-fomatet ikke inneholder innstillinger for oppdatering av programdata , ble detaljer om den fullførte Intrastat-rapporten ikke arkivert .
+4 . Velg Ja i Standard når frigitt til juridisk enhet-feltet .
+- Navn på leverandør
+# # # &lt; a name = &quot; i-cant-find-a-page-on-the-field-descriptions-page &quot; &gt; &lt; / a &gt; Jeg finner ikke en side på siden Feltbeskrivelser
+# # &lt; a name = &quot; find-a-released-product-master &quot; &gt; &lt; / a &gt; Finne en frigitt produktstandard
+# # &lt; a name = &quot; workflow-for-material-replenishment-that-uses-the-withdrawal-kanban &quot; &gt; &lt; / a &gt; Arbeidsflyt for etterfylling av materialer som bruker kanban for uttak
+4 . Klikk Plan i handlingsruten .
+Hvis en vare sendes tilbake fra karantene til forsendelses- eller mottaksavdelingen , for eksempel når karanteneinspektøren ikke vet hvor på lageret varene skal lagres , må den tilsvarende følgeseddelen oppdateres for sikre at disposisjonskoden som er angitt som et resultat av karantenen , registreres og følges opp på riktig måte .
+# # # &lt; a name = &quot; purchase-requisition-rfq-rule &quot; &gt; &lt; / a &gt; Regel for tilbudsforespørsel for innkjøpsrekvisisjon
+* Dette vil opprette linjer for dimensjonene som har lagertransaksjoner .
+# # &lt; a name = &quot; setting-up-a-working-time-calendar &quot; &gt; &lt; / a &gt; Definere en driftskalender
+Den synkrone overføringsmodusen avskrives i Økonomimodulparametere . Denne modusen erstattes bare av asynkron og planlagt parti , som allerede finnes som alternativer for overføring .
+# # # &lt; a name = &quot; payment-file-archive-for-norway &quot; &gt; &lt; / a &gt; Betalingsfilarkiv for Norge
+Generering av forhåndsmerknad kan ikke kan utføres ved hjelp av et parti , men kan fremdeles utføres av en bruker .
+10 . Angi et tall i Område til-feltet .
+&#124; Databehandling og integrering &#124; &#124; Ja &#124; Ja &#124;
+title : Frigi produkt / produktstandard til juridiske enheter
+49 . Skriv inn Dimensjoner i Navn-feltet .
+Dette emnet beskriver hvordan du oppretter et fordelingsteam . Når du har opprettet et fordelingsteam , kan du tilordne arbeidere til teamet . Når du oppretter en serviceordre , kan du deretter relatere et medlem av et fordelingsteam til en aktivitet i serviceordren .
+* Aktiver dette alternativet hvis du vil tillate syklustellingbehandling i alle lokasjoner som skal grupperes etter denne lokasjonsprofilen .
+# # &lt; a name = &quot; define-pack-size-categories &quot; &gt; &lt; / a &gt; Definere kategorier for pakkestørrelse
+title : Alternativer for anleggsmiddeltransaksjon
+* Velg hierarkiet .
+* Dette kan ta noen minutter .
+- Bestem hvor mange innkjøpskataloger du trenger . Tilgang til en innkjøpskatalog bestemmes av katalogpolicyregelen som du konfigurerer for den juridiske enheten og driftsenheten som en ansatt er tilordnet .
+8 . Skriv inn en verdi i Navn-feltet .
+- Små domener først
+3 . Velg et alternativ i Type-feltet .
+Det er gjort endringer , slik at ny ansattilordning nå kan tilordnes eksisterende stillinger .
+Åpne arbeidsområdet * * Leverandørbud * * for å få tilgang til følgende informasjon :
+4 . Klikk Ny salgsordre .
+# # &lt; a name = &quot; run-the-batch-event-creation-job &quot; &gt; &lt; / a &gt; Kjøre den satsvise jobben for oppretting av hendelse
+Når integreringen er slått på , opprettes dataeksportpakken og -filene , og frekvensen angis . Du kan endre denne frekvensen etter behov .
+# # # # &lt; a name = &quot; personal-information &quot; &gt; &lt; / a &gt; Personlige opplysninger
+Du kan bruke stillingstyper til å beskrive om stillingen er heltid , deltid eller et annet navn . Posisjonstyper er tilordnet til Dayforce som lønnsklasser som angir om en ansatt er fulltid eller deltid .
+Betalingsmåter gir den ansatte og firmaet en måte å beskrive hvordan ansatte skal betales . Betalingsmåter tilordnes til Dayforce og oversettes , etter behov , til de godkjente verdiene ved integrering .
+* Legg merke til at standardtype er Produksjon , og etterfyllingsstrategi er Fast . Du trenger ikke å endre disse parameterne .
+2 . Klikk Utvikling i handlingsruten .
+- Utligninger som skjer før lagerlukking , vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang .
+7 . Velg modell \ Betalinger i treet .
+&gt; Denne funksjonen er en del av en bestemt versjon , og den er bare tilgjengelig for brukere som har valgt privat forhåndsvisning . Denne funksjonen vil inkluderes i en kommende versjon som blir generelt tilgjengelig .
+* Eventuelt kan du finne konfigurasjonen i listen , merke den og hoppe over dette trinnet .
+# # &lt; a name = &quot; configure-retail-to-support-exchanges-on-return-orders &quot; &gt; &lt; / a &gt; Konfigurere Retail til å støtte utvekslinger på returordrer
+title : Systemgruppering i en åpen arbeidsliste
+Du kan bruke * * Tjenestefordeling * * -skjemaet til å vise statusen for serviceaktiviteter i serviceordrer .
+* Relaterte ordrer-siden viser alle ordrene som ble opprettet fra salgsordren . I dette eksemplet finnes det to bestillinger generert for to ulike leverandører henholdsvis .
+Vurder følgende fleksiprofil som representerer en arbeidsdag .
+Tabellen nedenfor viser sidene som støtter konfigurasjon og vedlikehold av Kunder og Kreditt og innkreving . Tabelloppføringene er organisert etter oppgave og deretter alfabetisk etter sidenavn .
+16 . Vis eller skjul delen Ressurser .
+# # &lt; a name = &quot; can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute &quot; &gt; &lt; / a &gt; Kan jeg skrive over verdien som er beregnet for målattributtet ?
+Posteringslogikken er endret for alle transaksjoner som genererer en regnskapsoppføring i økonomimodulen . Slik ble rapporteringsvalutaen tidligere beregnet :
+# # &lt; a name = &quot; two-way-net-unit-price-matching &quot; &gt; &lt; / a &gt; Toveis nettoenhetspriskontroll
+* Det utformede formatet representerer den forventet strukturen for den eksterne filen i CSV-format .
+# # # &lt; a name = &quot; activate-the-feature &quot; &gt; &lt; / a &gt; Aktivere funksjonen
+Vi har lagt til funksjonen for hurtigimport / -eksport for å la brukere importere eller eksportere enkle jobber som skal utføres raskt . Ideelt sett brukes denne funksjonen i situasjoner som automatisk tilordner en fil til systemet og brukeren ikke trenger å gå gjennom avansert tilordning eller opprette gjentatte import- eller eksportjobber .
+# # # # &lt; a name = &quot; depreciation-effect &quot; &gt; &lt; / a &gt; Avskrivningseffekt
+Eksempelvis tilordnes Eriks reiseregningen til Jon . Jon delegerer beslutningen til Maria , som er hans assistent .
+# &lt; a name = &quot; create-electronic-reporting-er-model-mapping-configurations &quot; &gt; &lt; / a &gt; Opprette konfigurasjoner av modelltilordning for elektronisk rapportering ( ER )
+* Standardverdien for Planlagt retur-feltet på siden Lånt utstyr blir beregnet som gjeldende dato pluss dette antallet .
+- Vi anbefaler at du kjører lagerlukkingen utenfor vanlig arbeidstid for å sørge for en mer jevn fordeling av datamaskinressurser
+3 . Velg Ja i feltet Oppdater betalings-ID for faktura .
+Merk av i denne boksen for å utelate overlappingstid i planleggingen .
+* Velg standard POS-skjermoppsettet for denne butikken .
+title : Resultat av salg og fortjeneste for Power BI-innhold
+- Velg diagramtypen som skal brukes når du viser resultatene .
+19 . Angi stedet mandatet ble signert .
+- Er det underkategorier i denne utgiftskategorien ? Hvis det er underkategorier , må du også gjøre følgende beslutninger :
+Du kan definere reparasjonsstadiene for en reparasjonslinje for å spore fremdriften til en reparasjon .
+2 . Angi eller velg en verdi i Dato-feltet .
+11 . Velg Tekst \ Streng i treet .
+- Etikettutskrift og etikettruting med Zebra ZPL-støtte
+5 . Merk av eller fjern merket for Samsvar fakturatotaler for å samsvare faktiske fakturatotaler med forventede summer .
+Definer avskrivningskontoen som anvendes for økonomimodulens avskrivingsoppføring når en transaksjon skrives av . Denne kontoen lagres på kundeposteringsprofilen .
+* Velg den dimensjonsbaserte produktstandarden som du opprettet i den første registreringen i disse trinnene med 8 registreringer .
+Basisprisen er bare egenskapen for produktet og er den samme for alle overalt .
+I kategorien * * Tilordne budsjettmodeller * * tilordner du deretter budsjettmodeller til budsjettsyklustidsrom som skal tas med i budsjettkontrollen .
+- Tabeller som brukes som datakilder
+# &lt; a name = &quot; straight-line-service-life-depreciation &quot; &gt; &lt; / a &gt; Lineær levetidsavskrivning
+# &lt; a name = &quot; set-up-human-resources-hr-parameters-across-legal-entities &quot; &gt; &lt; / a &gt; Definere parametere for Personale ( HR ) på tvers av juridiske enheter
+13 . I Varenummer-feltet skriver du inn eller velger varen som er angitt på den tilknyttede salgsavtalen .
+# # # &lt; a name = &quot; cancel-an-order &quot; &gt; &lt; / a &gt; Annullere en ordre
+3 . Angi følgende egenskaper for den dedikerte maskinvarestasjonen :
+En komponent for datamodellen er utformet for hvert firmadomene som skal brukes som en felles datakilde for rapportering som isolerer rapportene fra fysisk implementering av datakilder . Den representerer domenespesifikke forretningsbegreper og funksjoner i et skjema som gjør et rapporteringsformats opprinnelige utforming og ytterligere vedlikehold mer effektivt .
+# # &lt; a name = &quot; test-this-configuration-for-generation-of-the-intrastat-reports &quot; &gt; &lt; / a &gt; Teste denne konfigurasjonen for generering av Intrastat-rapporter
+* Angi om du vil at det skal sendes varslingsmeldinger når den satsvise jobben avsluttes , har en feil eller avbrytes . Angi deretter om du vil at varslene skal vises som popup-meldinger .
+5 . Klikk rullegardinknappen i Budsjettkode-feltet for å åpne oppslaget .
+17 . Angi eller velg en verdi i Alvorlighetsnivå-feltet .
+Når gjentakende fakturaer er postert , kan du skrive ut fakturaene på listesiden for fritekstfakturaer . Du kan skrive ut fakturaene som er valgt , eller du kan velge et område med fakturaer som skal skrives ut .
+- Når en ny post opprettes , skal brukere varsles hvis det finnes en lik post i den globale adresseboken ?
+# # # &lt; a name = &quot; date-and-time-functions &quot; &gt; &lt; / a &gt; Dato- og klokkeslettfunksjoner
+- Be om at leverandøren krediterer hele beløpet og gir deg en ny , korrigert faktura .
+6 . Velg et alternativ i Tidssone-feltet .
+&#124; Strøm &#124; Strømforbruk &#124; Statistiske elementer &#124;
+&#124; Kostnadsobjekt &#124; Navn &#124; Størrelse &#124; Tildelingsfaktor &#124;
+* Vær oppmerksom på standardprisen og innstillingene som er valgt for kabelen .
+9 . Angi eller velg en verdi i Bankgrupper-feltet .
+- Avhengig av utskriftsbehandlingsinnstillingene inneholder genererte fakturaer egendefinert bunntekst når den er konfigurert for fakturaspråket , ER-formatet og FTI-dokumentområdet .
+Tabellen nedenfor viser den vanlige utvekslingen av informasjon , avhengig av hvordan leverandøren svarer når du sender dem en bestilling for bekreftelse .
+5 . Velg Ja for å be om ordrestartdato .
+# # &lt; a name = &quot; set-up-the-sales-tax-period-code &quot; &gt; &lt; / a &gt; Definere koden for mva-perioden
+72 . I treet velger du Betalinger = Transaksjoner \ Beskrivelse .
+12 . Angi en dato i Fra dato-feltet .
+- Ken angir statusen for automatisk oppdatering av hodekontroll for den juridiske enheten til Ja .
+* Velg Kostgruppe M1 for dette eksemplet .
+- Vis lagerbeholdning per beholdningsstatus
+title : Definere komponentene for en jobb
+10 . Angi eller velg en verdi i feltet Årsakskode for overbetaling .
+Når du oppretter en systemdefinert tabellbegrensning , velger du en tabell , definerer eventuelt spørringen som skal brukes , og knytter deretter attributtyper til feltene i den valgte tabellen . Felttypene må samsvare med typene attributtyper .
+title : Konsernintern fakturering
+2 . Opprett en ny servicemalgruppe .
+# # &lt; a name = &quot; change-product-quantity-and-calculate-again &quot; &gt; &lt; / a &gt; Endre produktantallet og beregne på nytt
+&#124; Kontantrabattdato &#124; Kontantrabattbeløp &#124; Beløp i transaksjonsvaluta &#124;
+- Blokkeringsflagg for uavsluttede kostnader − Et blokkeringsflagg kan hindre stykklisteberegninger av uavsluttede kostnader for produserte varer .
+# &lt; a name = &quot; accounting-distributions-and-subledger-journal-entries-for-vendor-invoices &quot; &gt; &lt; / a &gt; Regnskapsdistribusjoner og underfinansjournaloppføringer for leverandørfakturaer
+# # &lt; a name = &quot; replicate-working-times-to-all-week-days &quot; &gt; &lt; / a &gt; Replikere arbeidstider til alle ukedager
+Etter at disse kravene er bekreftet vil utgiftsrapporten legges ut .
+11 . Velg en bankkonto eller en bankgruppe .
+8 . Angi et beløp i Debet-feltet .
+* Hvis du sletter en betaling , slettes bare betalingen . Alle fakturaer som er merket for betaling vil fremdeles være tilgjengelig for betaling med en annen betaling .
+5 . I Navn-feltet angir du det brukervennlige navnet på komponenten for utdata .
+Disse justeringene påvirker bare rentenotaer og rente og gebyrer som de inkluderer . Bruk fremgangsmåten i delen Opprette avskrivningstransaksjoner i ett trinn for å skrive av alle tilleggene som en kunde skylder .
+15 . Skriv inn en verdi i feltet Kode .
+# # &lt; a name = &quot; fifo-with-the-include-physical-value-option &quot; &gt; &lt; / a &gt; FIFO når alternativet Ta med fysisk verdi brukes
+Tabellen HcmEmployment inneholder en liste over alle ansatte i forekomsten . Dette er en global tabell . Derfor ikke er postene relatert til en bestemt dataområde-ID .
+# # # &lt; a name = &quot; overriding-existing-values-with-derived-dimensions &quot; &gt; &lt; / a &gt; Overstyre eksisterende verdier med avledede dimensjoner
+* Denne e-postadressen brukes til å generere e-postkommunikasjon med søkeren .
+2 . I Navn-feltet skriver du inn Betalinger ( forenklet modell ) .
+5 . I Søk-feltet skriver du inn CustomerCreditTransferInitiation .
+51 . Velg Dato i Varetype-feltet .
+- Betalte fakturaer er de som er fullstendig betalte i Finance and Operations .
+- Resultatregnskap med avvik
+* Velg en dato som er et par måneder fremover .
+7 . Åpne faktaboksen , og vis deretter delen Relaterte dokumenter .
+Denne funksjonen er tilgjengelig i :
+* Dette alternativet betyr at lageret blir automatisk justert til 0 på lokasjonen med mangler .
+# # # &lt; a name = &quot; bom-calculations-that-use-planned-costs &quot; &gt; &lt; / a &gt; Stykklisteberegninger som bruker planlagte kostnader
+* Hvis du ikke ser dette alternativet , er det fordi du ikke har angitt alternativet Aktiver prisdetaljer som Ja før du startet veiledningen .
+* Hovedkontoer blir importert til kostnadsregnskap og brukt som kostnadselementer .
+Med denne oppdateringen vises avsluttede ansatte som er ansatt på nytt , bare én gang i listen over avsluttede .
+&#124; Slett kolonne &#124; Slett den valgte kolonnen fra kolonnedefinisjonen . Denne kommandoen er tilgjengelig fra en kolonnedefinisjon . &#124;
+5 . Endre basisåret til 2012 .
+Når du har fullført én opplæringsøkt , kan du opprette en faktura på 10 000 for den første enheten som ble levert , og sende fakturaen til kunden .
+3 . Klikk for å følge koblingen for den valgte fakturaen .
+# # # &lt; a name = &quot; adjust-columns-while-you-design-reports &quot; &gt; &lt; / a &gt; Justere kolonner mens du utformer rapporter
+# &lt; a name = &quot; project-service-automation-integration-parameters &quot; &gt; &lt; / a &gt; Integreringsparametere for Project Service Automation
+8 . Sett verdien for Antall til 75 .
+18 . Gå til Hovedplanlegging &gt; Oppsett &gt; Parametere for hovedplanlegging .
+7 . Skriv inn Inngangspunkt i Navn-feltet .
+- Detaljer for hittil i år
+&#124; Opprette en plan for et område &#124; Globalt &#124;
+&#124; Definere en prosess for minimums / maksimumsetterfylling &#124; Globalt &#124;
+* Den totale kostnaden har ingen innvirkning på verdien til anleggsmidlet og er bare til sporings- og informasjonsformål . Hvis kostnaden skal kapitaliseres , må en oppskrivingsjusteringstransaksjon posteres separat .
+10 . Utvid modell \ Fakturavedlegg i treet .
+2 . Angi et nummer i Sekvensnummer-feltet .
+2 . Dobbeltklikk serviceavtalen der du vil slette en servicestykkliste fra en objektrelasjon .
+17 . Klikk rullegardinknappen i Leverandørkonto-feltet for å åpne oppslaget .
+- En produksjonsflyt og versjon i utkastmodus .
+2 . Vis delen Fakturadetaljer .
+16 . I feltet &lt; 100,00 kg skriver du inn 1000 .
+&#124; Opprett en ny rad nederst i rutenettet &#124; Pil ned ( fra den siste raden ) &#124;
+8 . Skriv inn en verdi i Modell-feltet .
+* Reglene er datoeffektive , og en bruker eller systemet kan utløpe en regel hvis det opprettes en nyere versjon .
+Du kan velge en økonomisk kalender for en verdimodell eller et avskrivningstablå , og denne økonomiske kalenderen brukes av anleggsmidlene som bruker den valgte verdimodellen eller det valgte avskrivningstablået . Du kan velge en hvilken som helst regnskapskapender som er definert på siden Regnskapskalendere .
+# # # &lt; a name = &quot; remove-access-to-a-reporting-unit &quot; &gt; &lt; / a &gt; Fjerne tilgang til en rapporteringsenhet
+- Vurdere om kursdeltakere har lært kursmateriellet .
+* Tidspunktdatoen brukes for variable kompensasjonsplaner som bestemmer den ansattes belønningsbeløp basert på kompensasjonssatsen til den ansatte på dette tidspunktet .
+11 . Skriv inn en verdi i Valuta-feltet .
+17 . Angi eller velg en verdi i feltet Juridisk enhet som låner .
+# # &lt; a name = &quot; components-you-can-include-in-performance-reviews &quot; &gt; &lt; / a &gt; Komponenter som kan inkluderes i ytelsesvurderinger
+15 . Gå til Detaljhandel og handel &gt; Kontinuitet &gt; Behandle kontinuitetsbetalinger .
+En exe-klasse er en X + + -metode eller -klasse som en elektronisk meldingsbehandling kan kalle i forhold til en handling , hvis en evaluering kreves for prosessen .
+For å kontrollere følgende aspekter av rapporteringsprosessen , må du definere behandling av elektroniske meldinger :
+- Alle butikker
+* Legg til denne varen for å angi antallet Intrastat-transaksjoner som er rapportert under gjeldende rapporteringsprosessen .
+Dette emnet forklarer hvordan du bruker formeldesigneren til å analysere og vedlikehold formler i en trevisning .
+&#124; LINJE3 &#124; Prikket linje &#124; Tegner en enkel prikket linje på tvers av siden . &#124;
+# # # &lt; a name = &quot; account-and-transaction-attributes &quot; &gt; &lt; / a &gt; Konto- og transaksjonsattributter
+Dette emnet forklarer hvordan du konfigurerer egenskapene for en automatisert oppgave .
+- Reduser administrasjonsbelastningen og feilene som er knyttet til overvåking av kampanjeresultater og behandlingskrav .
+- Implementer et lean-pullsystem ved å bruke kanbaner til å signalisere behovskrav .
+* Standard for prosenten eller beløpet hentes fra oppsettet for særskilte avskrivningsfradrag .
+3 . Angi et tall i feltet Antall .
+# # &lt; a name = &quot; set-up-customers-for-bills-of-exchange &quot; &gt; &lt; / a &gt; Definere kunder for veksler
+7 . Velg Datamaskiner i treet .
+9 . Gå til Innkjøp og leverandører &gt; Innkjøpskategorier .
+6 . Klikk Opprinnelig budsjett i listen .
+- Trevisningen av stykklistestrukturen .
+title : Konfigurere leveringsmåter og tillegg for telefonsenter
+title : Opprette en operasjonsressurs
+Malinformasjon kan kopieres til en serviceavtale eller en serviceordre .
+26 . Klikk Bruk verdi fra firma 1 .
+# # &lt; a name = &quot; perform-sales-under-the-planned-merchandising-event-and-generate-bill-back-claims &quot; &gt; &lt; / a &gt; Gjennomføre salg under den planlagte varehandelshendelsen og generere tilbakebetalingskrav
+9 . Velg Ja i feltet Beregnede forsinkelser .
+35 . Skriv inn &quot; Markedsføringskampanje &quot; i feltet Nodenavn .
+11 . Angi et tall i Debet-feltet .
+3 . Opprett en ny knapp .
+Dimensjonshierarkier er viktig for rapportering . De lar deg definere den bestemte strukturen som passer inn i den enkelte organisasjonen . Med aggregeringene som gjøres på nodenivå i dimensjonshierarkiet , kan interessenter på alle nivåer i organisasjonen se data på et hvilket som helst nivå .
+1 . Gå til Lagerstyring &gt; Oppsett &gt; Lagerstyringsparametere .
+* Hvis du bruker vare M9201 , kan du velge lager 51 .
+2 . Opprett en bankkonto .
+title : i9-verifisering for ansettelsebekreftelse
+# # &lt; a name = &quot; view-the-balances-on-the-aged-balances-list-and-on-the-collection-page &quot; &gt; &lt; / a &gt; Se på saldoene på listen over aldersfordelte saldoer og på innkrevingssiden
+9 . Klikk avmerkingsboksen Poster plukkliste nå .
+10 . Gå til Parametere for beholdnings- og lagerstyring .
+* Legg merke til at det ikke er utført kontroll etter at du har gjort endringene .
+&#124; Kompetanseprofil &#124; Kompetanseprofil for den valgte ansatte &#124;
+* Se gjennom strukturen i format-datakilden . Legg merke til at alle tre svartypene tilbys separat .
+2 . Velg Gruppe i feltet Type varerelasjon
+# # &lt; a name = &quot; review-the-settings-for-the-model-mapping-to-the-destinations &quot; &gt; &lt; / a &gt; Se gjennom innstillingene for modelltilordningen til målene
+2 . Velg Houston-butikken fra listen .
+8 . Angi LCS i feltet Type konfigurasjonsrepositorium .
+# # &lt; a name = &quot; moving-average-with-production &quot; &gt; &lt; / a &gt; Glidende gjennomsnitt med produksjon
+Fremgangsmåtene nedenfor inneholder trinnvise instruksjoner om hvordan du definerer lagerarbeidspolicyen i dette scenariet . Et eksempeloppsett som viser hvordan du rapporterer en produksjonsordre som ferdig til en lokasjon som ikke er nummerskiltkontrollert beskrives også .
+- finne ut hvordan du bruker lands- / områdespesifikk funksjonalitet
+# # &lt; a name = &quot; design-a-receipt-format &quot; &gt; &lt; / a &gt; Utforme et kvitteringsformat
+59 . Finn og velg ønsket post i listen .
+- Hva en skal ha med seg , slik som bilde-ID og bankinformasjon .
+7 . Angi dato og klokkeslett i feltet Sluttdato for dekning .
+1 . Angi navnet på gjesten .
+# &lt; a name = &quot; modify-formats-to-generate-documents-that-have-application-data &quot; &gt; &lt; / a &gt; Endre formater for å generere dokumenter med programdata
+# # &lt; a name = &quot; more-than-7-criteria-needed &quot; &gt; &lt; / a &gt; Mer enn 7 kriterier er nødvendig
+# &lt; a name = &quot; report-a-production-order-as-finished &quot; &gt; &lt; / a &gt; Rapportere en produksjonsordre som avsluttet
+Denne artikkelen definerer termer og begreper som er relevante for produktkonfigurasjonsmodeller . Produktkonfigurasjonsmodeller lar deg bygge en generell produktstruktur som kan brukes til å konfigurere mange produktvarianter for ett enkelt produkt .
+- Logg på med en ikke-skuff-operasjon eller et nytt skift .
+24 . Klikk Remburs .
+# &lt; a name = &quot; generate-reports-by-adding-content-as-raw-xml &quot; &gt; &lt; / a &gt; Generere rapporter ved å legge til innhold som rå XML
+# # &lt; a name = &quot; set-up-a-container-group &quot; &gt; &lt; / a &gt; Konfigurere en containergruppe
+# &lt; a name = &quot; foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable &quot; &gt; &lt; / a &gt; Revaluering av utenlandsk valuta for leverandører og kunder
+Undertittelen på siden viser nivået på prognoseaggregering .
+4 . Klikk Produkt i handlingsruten .
+4 . Merk av for Opprett anleggsmiddel under postering av produktkvittering eller faktura .
+11 . Klikk Alternativer i handlingsruten .
+# # &lt; a name = &quot; track-time-on-a-service-order-against-an-sla &quot; &gt; &lt; / a &gt; Spor tid på en serviceordre mot en servicenivåavtale
+# # &lt; a name = &quot; open-the-dispatch-board-form &quot; &gt; &lt; / a &gt; Åpne Tjenestefordeling-skjemaet
+- Budsjettplanmaler ( budsjettplanleggingskonfigurasjon )
+- Opprett budsjettplaner for å definere de forventede inntektene og utgiftene for en budsjettsyklus .
+# # &lt; a name = &quot; import-cost-object-dimension-members-through-data-connectors &quot; &gt; &lt; / a &gt; Importere medlemmer av kostnadsobjektdimensjon gjennom datakoblinger
+# # &lt; a name = &quot; enable-automatic-consumption-of-setup-time &quot; &gt; &lt; / a &gt; Aktiver automatisk forbruk av oppstillingstid
+* Fortsett til alle kostsentre er tilordnet de tilhørende sekundære kostnadselementer .
+- Alle tilbudsproduktene i salgstilbudet vedlikeholdes eksternt .
+- Definere bankfasiliteter og posteringsprofiler for et garantibrev .
+6 . Klikk Øk verdi for å åpne nedtrekksdialogen .
+Tabellen nedenfor gir en oversikt over effektene som er inkludert .
+9 . Klikk rullegardinknappen i feltet Datointervall for å åpne oppslaget .
+6 . Angi kunden som du har mottatt betalingen fra .
+# # &lt; a name = &quot; costing-versions-for-standard-or-planned-costs &quot; &gt; &lt; / a &gt; Etterkalkuleringsversjoner for standard kostnader eller planlagte kostnader
+Du kan oppdatere tilordningsdefinisjonene for en kostnadselementdimensjon når som helst . Siden tilordningene ikke er datoeffektive , brukes endringene neste gang du behandler kostnadstransaksjoner eller kjøre kostnadsberegninger .
+Følgende prosedyre viser hvordan systemansvarlige kan oppdatere banneret eller logobilde som vises for en juridisk enhet . Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten .
+8 . Angi eller velg en verdi i Størrelse-feltet .
+# # &lt; a name = &quot; trace-an-item-backwards-using-a-known-batch-number &quot; &gt; &lt; / a &gt; Spore en vare bakover ved hjelp av et kjent partinummer
++ Søke etter eller bla gjennom alle frigitte produkter .
+# &lt; a name = &quot; create-a-repeat-purchase-order &quot; &gt; &lt; / a &gt; Opprette en innkjøpsgjentakelsesordre
+title : Fjerne utestående fra historiske transaksjonsdata ved beregning av en behovsprognose
+5 . Angi eller velg en verdi i feltet Containerlukkingsprofil .
+# # # &lt; a name = &quot; creating-invoice-proposals &quot; &gt; &lt; / a &gt; Opprette fakturaforslag
+# # &lt; a name = &quot; look-up-the-purchase-agreement &quot; &gt; &lt; / a &gt; Slå opp kjøpsavtalen
+3 . Angi eller velg en verdi i feltet Godkjent av .
+# # &lt; a name = &quot; batch-processing-for-change-based-events &quot; &gt; &lt; / a &gt; Satsvis behandling for endringsbaserte hendelser
+- Summert utligning med dato for avveid gjennomsnitt når alternativet * * Ta med fysisk verdi * * ikke brukes
+Standard ordreinnstillinger for lager brukes ved opprettelse av :
+Vis eldre lageret er konfigurert på mobil enhet , menyelementer og påvirker plukkingen for partiet under elementene .
+12 . Angi eller velg en verdi i feltet Måling .
+9 . Skriv inn en verdi i feltet Systemgrupperingsetikett .
+# # &lt; a name = &quot; update-arrival-information-and-process-a-product-receipt &quot; &gt; &lt; / a &gt; Oppdatere ankomstinformasjon og behandle en mottaksseddel
+3 . Skriv inn en verdi i feltet Gruppe .
+# # &lt; a name = &quot; automatically-create-cycle-counting-work &quot; &gt; &lt; / a &gt; Opprett syklustellingsarbeid automatisk
+32 . I Navn-feltet skriver du inn Leverandør .
+2 . Utvid Betalingsmodell i treet .
+# # &lt; a name = &quot; benefits-of-using-consolidate-online &quot; &gt; &lt; / a &gt; Fordelene ved å bruke Konsolider på nettet
+title : Estimere en produksjonsordre
+# &lt; a name = &quot; create-a-new-warehouse-layout &quot; &gt; &lt; / a &gt; Opprette et nytt lageroppsett
+5 . Sett verdien for Antall til 20 .
+# # # &lt; a name = &quot; credentials-and-report-schedules &quot; &gt; &lt; / a &gt; Legitimasjon og rapportplaner
+Kostnadsobjekt CC004 Emballasje bidrar til flere kostnadsobjekter . Et statistisk dimensjonsmedlem med navnet Emballasjetjenester opprettes for å måle den brukte størrelsen .
+5 . Klikk rullegardinknappen i feltet Varemodellgruppe for å åpne oppslaget .
+3 . Klikk rullegardinknappen i feltet Leverandør for å åpne oppslaget .
+- Fremover fra dato for materialtilgjengelighet
+25 . Angi eller velg en verdi i feltet Attributt .
+13 . Klikk Bytt visning .
+# # &lt; a name = &quot; create-an-invoice-from-a-sales-order &quot; &gt; &lt; / a &gt; Opprette en faktura fra en salgsordre
+- Aktivere tidsregistrering gjennom salgsstedet .
+- Hvis du vil angi sidestørrelsen , velger du en sidestørrelse i listen .
+3 . Behandle sortimenter for å generere listen over produkter som er inkludert i sortimentet og gjøre varene tilgjengelige i detaljhandelsbutikken .
+44 . Klikk Rediger-knappen for feltet Navn på innsamlet datanøkkel .
+2 . I Handling-feltet velger du en fast kompensasjonshandling av typen Ansette / ansette på nytt for å beskrive endringen i den ansattes kompensasjon .
+&lt; td &gt; Utvidelsesbindinger er forbedret på tvers av de forskjellige komponentene for å gi bedre støtte for kodeisolering og tilgjengelighet . Her er noen av funksjonene som følger med :
+30 . Skriv inn Parti i Navn-feltet .
+9 . Velg kategorien Levering .
+1 . Gå til Kontant- og bankbehandling &gt; Bankkontoer .
+# # &lt; a name = &quot; example-of-reducing-balance-depreciation &quot; &gt; &lt; / a &gt; Eksempel på redusert saldoavskrivning
+19 . Klikk Skjul alle .
+&#124; Skriv ut etikett på nytt &#124; Skriv ut en nummerskiltetikett på nytt . &#124;
+# # &lt; a name = &quot; single-level-and-multilevel-consolidations-across-legal-entities &quot; &gt; &lt; / a &gt; Enkeltnivå- og flernivåkonsolideringer på tvers av juridiske enheter
+title : Telefonsenterkataloger
+Den generelle produktsammensetningen av en kanal bestemmes av de publiserte sortimentene som er tilordnet til kanalen . Derfor kan du konfigurere flere aktive sortimenter per kanal .
+8 . Utvid Intrastat-modell i treet .
+* * Navnet på oppgaven i Dataintegrasjonprosjektet : * *
+5 . Angi eller velg en verdi i feltet Innkjøpskategori .
+I volumlisensiering er Finance and Operations tilgjengelig via :
+2 . Sett alternativene i følgende tabell .
+- Fortjenestemargin i inneværende år
+12 . Klikk rullegardinknappen i Prisgrupper-feltet for å åpne oppslaget .
+&#124; Vis finansrapporter &#124; Vis finansrapporter . &#124; FinansrapporterVis &#124;
+&#124; Konto &#124; Debetbeløp &#124; Kreditbeløp &#124;
+Noen organisasjoner krever at innkjøpsrekvisisjoner og bestillinger er godkjent av en annen bruker enn den som registrerte transaksjonen . Hvis du vil konfigurere en godkjenningsprosess , kan du opprette en arbeidsflyt .
+Alle bilagstransaksjoner for bestillingsdisposisjoner må være i balanse ( det vil si debet må være lik kredit ) i hver unike dimensjon på et bilag .
+# # &lt; a name = &quot; create-an-item-requirement-for-a-service-agreement &quot; &gt; &lt; / a &gt; Opprette et varebehov for en serviceavtale
+Last ned følgende filer for å fullføre oppgaveveiledning :
+# &lt; a name = &quot; define-lean-manufacturing-work-cells &quot; &gt; &lt; / a &gt; Definere arbeidsceller for lean manufacturing
+# # &lt; a name = &quot; monitor-the-master-planning-run &quot; &gt; &lt; / a &gt; Overvåke kjøringen av hovedplanlegging
+Magnus klikker kategorien * * Kontantrabatt * * for å vise rabattbeløpet .
+# # # &lt; a name = &quot; enroll-the-employee &quot; &gt; &lt; / a &gt; Registrere den ansatte
+title : Definere et lager ved hjelp av en mal for lagerkonfigurasjon
+* Definere regler for å konvertere måleenheten til og fra andre enheter i den valgte enhetsklassen .
+5 . Gå gjennom informasjonen i skjemaet , og gjør eventuelle nødvendige endringer .
+- Forskjellige datoer for salgsordren , for eksempel ønsket forsendelsesdato og bekreftet forsendelsesdato
+# # &lt; a name = &quot; how-many-levels-can-i-trace-up-or-down-in-a-bom-or-formula &quot; &gt; &lt; / a &gt; Hvor mange nivåer kan jeg spore opp eller ned i en stykkliste eller formel ?
+12 . Klikk Legg til rot .
+Denne artikkelen beskriver hvordan du konfigurerer et produkt til å godta reservasjon for lager mot en enkelt satsvis jobb for lager .
+&#124; Betingelse &#124; Systemet bruker den estimerte løpende gjennomsnittlige kostprisen &#124; Systemet bruker kostprisen som er definert i hovedposten for varen &#124;
+Denne artikkelen leder deg gjennom et scenario der en kontantrabatt tas for et beløp som er større enn rabatten som var opprinnelig tilgjengelig på fakturaen . Denne situasjonen kan oppstå hvis en organisasjon inngår en avtale med leverandøren om å betale et mindre beløp på fakturaen .
+title : Definere en arbeidsmal for bestillinger
+5 . Angi eller velg en verdi i Ressurs-feltet .
+# # &lt; a name = &quot; adding-purchase-order-lines &quot; &gt; &lt; / a &gt; Legge til bestillingslinjer
+10 . Angi &quot; Skriv ut vannmerke som Annuller &quot; i feltet Vannmerker .
+# # # &lt; a name = &quot; calculation-that-is-based-on-the-production-flow &quot; &gt; &lt; / a &gt; Beregning som er basert på produksjonsflyten
+- 2a . Fysisk lageravgang oppdatert for et antall på 2 til NOK 60,00 per stykk
+&#124; Oversikt over kompensasjon &#124; Sammendrag av andre rapporter &#124;
+9 . Klikk Definer driftstid .
+title : Definere tilbehørstilordninger
+3 . Sett alternativet Bruk kvalitetsstyring til Ja .
+11 . Klikk rullegardinknappen i feltet Hendelsesblokkering for å åpne oppslaget .
+- Returner varen til lageret , og krediter kunden for varens kostnad .
+11 . Angi gebyret som skal belastes når denne purringen posteres .
+title : Timeregistrering
+Denne artikkelen beskriver flyten for den avanserte bankavstemmingsprosessen . Funksjonen for den avanserte bankavstemmingen lar deg importere bankkontoutdrag som kan avstemmes automatisk fra banktransaksjoner .
+Bruk én av følgende metoder avhengig av kombinasjonene av disse faktorene :
+# # # &lt; a name = &quot; printing-scenarios-in-finance-and-operations-applications &quot; &gt; &lt; / a &gt; Utskriftsscenarioer i Finance and Operations-programmer
+* Du kan bruke definisjoner av aldersfordelingsperiode til å analysere modenheten til kundekontoer og leverandørkontoer , basert på en dato du angir . Hver aldersfordelingsperiode du angir i definisjonen av aldersfordelingsperiode , svarer til en kolonne på listesiden eller i skjemaet eller rapporten når analysen blir utført .
+- Total banksaldo i systemvaluta
+&#124; Opprette kundebetalingsbetingelser &#124; Globalt &#124;
+&#124; Definere en betalingsmåte for SEPA-avtalegiro &#124; Europa &#124;
+&#124; Vedlikehold forringelsesindikatorer for individuelle anleggsmidler &#124; Japan &#124;
+&#124; Opprett avskrivningsforslag &#124; Globalt &#124;
+&#124; Opprett utlånsvarer &#124; Globalt &#124;
+&#124; Vedlikeholde strekkodetyper &#124; Globalt &#124;
+&#124; Tilbakestille Kanban-jobbstatus &#124; Globalt &#124;
+&#124; Opprette en faktureringsklassifisering for offentlig sektor &#124; Globalt &#124;
+&#124; Parameterkonfigurasjoner for detaljhandelsutdrag &#124; Globalt &#124;
+&#124; Analyser finanssaldoer &#124; Globalt &#124;
+13 . I feltet Fasilitetens art velger du arten for bankfasiliteten .
+Følg denne fremgangsmåten for å sette et navn på arbeidsflyten for linjeelement .
+3 . Klikk Sperre - utsjekking i handlingsruten .
+* Det er viktig at antallet er høyere enn 24 for å utløse Kanban-regelen for hendelse .
+- Revalueringer av utenlandsk valuta ( inkluderer realiserte og urealiserte revalueringer av utenlandsk valuta )
+* Leveringsdato og bekreftet leveringsdato for bestillingslinjen er satt til henholdsvis ønsket leveringsdato og bekreftet leveringsdato for den opprinnelige salgsordrelinjen .
+# # &lt; a name = &quot; viewing-and-managing-orders-that-are-on-hold &quot; &gt; &lt; / a &gt; Vise og behandle ordrer på vent
+Bruk denne fremgangsmåten til å konfigurere kostnadskontrollarbeidsområdet slik at ledere på ulike nivåer i en organisasjon kan få innsikt i sin kostobjekter , for eksempel kostsentre og produktgrupper . USP2-demofirmaet ble brukt til å opprette denne registreringen .
+7 . Velg Ja i feltet Opprett avskrivningsjusteringer med basisjusteringer .
+title : Definere og opprette avskrivningsprofiler
+På samme måte kan en betingelse for en stykklistelinje eller ruteoperasjon valideres isolert .
+I dette scenarioet registreres en faktura for 105,00 , og en kontantrabatt er tilgjengelig hvis fakturaen betales innen sju dager .
+5 . Klikk fanen Definer budsjettgrupper .
+17 . Vis hurtigkategorien Finansrapportering .
+Permisjons- og fraværsplaner kan avbrytes for å gjøre dem inaktive og forhindre flere avsetninger . Avsetninger deaktiveres for ansatte hvis ansettelsen avsluttes .
+# # &lt; a name = &quot; create-a-kanban-rule &quot; &gt; &lt; / a &gt; Opprette en Kanban-regel
+16 . Angi hovedkontoen som kontantrabatten skal posteres til for kundefakturaer .
+8 . Angi eller velg en verdi i Lønnsavtale-feltet .
+9 . Angi en passende konto som er basert på motkontotypen i feltet Motkonto .
+2 . Vis eller skjul delen Bankkontoinformasjon .
+- Commerce-kjøretidsprosjekter blir nå forseglet fra Retail SDK .
+* Innløsingsregler brukes når fordelsbetalingsmåten brukes .
+# # &lt; a name = &quot; start-to-enter-another-new-er-format-configuration &quot; &gt; &lt; / a &gt; Start for å angi en annen ny ER-formatkonfigurasjon
+Ansatte kan søke etter produkter i sortimentene og katalogene som er knyttet til det gjeldende lageret . De kan også søke i sortimentene og katalogene som er knyttet til andre lager i firmaet . Derfor kan kasserere selge og returnere produkter utenfor butikkens sortiment . På samme måte kan ansatte søke etter kunder som er knyttet til nåværende butikk eller annen butikk i selskapet . I tillegg kan ansatte søke etter kunder som er tilknyttet et annet selskap i morselskapet .
+# &lt; a name = &quot; embed-powerapps-apps-in-core-hr &quot; &gt; &lt; / a &gt; Bygge inn PowerApps-apper i Core HR
+17 . Angi dato og klokkeslett i Sluttdato-feltet .
+2 . Klikk rullegardinknappen i Dekningsgruppe-feltet for å åpne oppslaget .
+11 . Angi eller velg en verdi i feltet Innkjøpssite .
+# # # &lt; a name = &quot; staff-card-logon &quot; &gt; &lt; / a &gt; Kortpålogging for stab
+* I kategorien Dimensjonsvisning kan du velge hvor mange detaljer du vil se om lagerbeholdningen .
+&#124; &#124; VIA-oppgave etter kategori &#124;
+title : Stykkplukkingsbekreftelse
+# # &lt; a name = &quot; configure-an-exchange-rate-provider &quot; &gt; &lt; / a &gt; Konfigurer en valutakursleverandør
+title : Initialisere lagernivåer i lageret
+4 . Angi et nummer i poengsumfeltet .
+8 . Angi et tall i Justeringsbeløp-feltet .
+# &lt; a name = &quot; release-a-dimension-based-product-master &quot; &gt; &lt; / a &gt; Frigi en dimensjonsbasert produktstandard
+* Velg produktstandarden du har frigitt i den andre prosedyren . Denne produktstandarden opprettes ved hjelp av dimensjonsbasert konfigurasjon-teknologi .
+En leverandørforespørsel inneholder informasjonen som den potensielle leverandørbrukeren har angitt i registreringsveiviseren for leverandører .
+Prosessen * * Generer budsjettplan fra prosjektprognoser * * tilordner også kildeprosjektet til budsjettplanlinjen .
+10 . Angi en dato i feltet Gyldighetsdato .
+16 . Velg Bank i feltet Kontotype .
+- Angi lengre sikkerhetsmarginer for å beskytte mot upålitelige leverandører .
+1 . Klikk Salgsordrelinje .
+&#124; Godkjenne leverandører for spesifikke innkjøpskategorier &#124; Globalt &#124;
+* Du kan vise bilagstransaksjonene for provisjonsbeløpene som er postert til de forhåndsdefinerte provisjonsutgifts- og provisjonsbetalingskontoene .
+* Problemløserstrategien bestemmer hvordan restriksjonene i en restriksjonsbasert produktkonfigurasjonsmodell skal behandles . Dette valget kan ha innvirkning på ytelsen til produktkonfigurasjonsmodellen .
+&gt; På denne siden kan du gå gjennom simuleringsresultatene og vurdere hvor mange produkter og produktvarianter som skal være tilknyttet en ny produktlivssyklustilstand når du kjører oppdateringen uten simulering .
+21 . Angi et tall i feltet Enhetspris .
+9 . Vis delen Totaler .
+# # &lt; a name = &quot; action-search-for-keyboard-only-users-or-for-heads-down-data-entry &quot; &gt; &lt; / a &gt; Handlingssøk for brukere som bare bruker tastatur eller for direkte dataregistrering
+# &lt; a name = &quot; register-material-consumption-using-a-mobile-device &quot; &gt; &lt; / a &gt; Registrere materialforbruk med en mobil enhet
+* Legg til det beregnede feltet i denne datakilden .
+1 . Gå til Systemadministrasjon &gt; Oppsett &gt; Lisenskonfigurasjon .
+* For avskrivningsjusteringstransaksjoner vil vi bruke de samme kontoene som brukes for avskrivingstransaksjoner .
+62 . Angi eller velg en verdi i feltet Tablå .
+- Pass på at spørreskjemaet har en logisk flyt , slik at respondenter holdes engasjert .
+- Slette og legge til spørsmål
+- Kunden har ikke rett til å få refundert ent godkjent transaksjon .
+5 . Utvid kategorien Fakturalinjer .
+23 . Velg Tekst \ Sekvens i treet .
+# # &lt; a name = &quot; setup-pages-for-accounts-payable &quot; &gt; &lt; / a &gt; Konfigurasjonssider for Leverandører
+- På siden Koder for betalingsformål definerer du sentralbankens formålskode .
+15 . Angi antall arbeidstimer for hver dag .
+# # # # &lt; a name = &quot; salesinvoiceline-task &quot; &gt; &lt; / a &gt; SalesInvoiceLine-oppgave
+Du må fullføre følgende oppgaver hvis du vil definere betalingsmåter .
+12 . Velg en verdi i feltet Arbeidsklasse-ID .
+# &lt; a name = &quot; advanced-formatting-options-in-financial-reporting &quot; &gt; &lt; / a &gt; Avanserte formateringsalternativer i finansrapportering
+# &lt; a name = &quot; set-up-vendor-accounts &quot; &gt; &lt; / a &gt; Definere leverandørkontoer
+* Siden Leveringsplan lar deg angi antall leveranser der det totale antallet på ordrelinjen skal leveres fra leverandøren .
+# &lt; a name = &quot; register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal &quot; &gt; &lt; / a &gt; Registrere varer for en vare for avanserte lageraktiviteter ved hjelp av en journal for vareankomst
+4 . Velg betalingsjournalen .
+&#124; Avslag &#124; Det kan sendes et avslagsbrev til søkeren . &#124;
+- Når tidsregistrering stoppes manuelt .
+1 . Klikk i feltet for å angi hvor plassholderen skal vises .
+Rentekoder kan defineres til å beregne forskjellige rentebeløp basert på et verdiområde . Denne prosedyren viser hvordan du legger til en rentekode og legger til et område i den .
+* Du kan gjenta denne fremgangsmåten for så mange korttyper du ønsker .
+title : Nye eller oppdaterte oppgaveveiledninger ( november 2016 )
+&#124; Endre aktivagruppe &#124; Globalt &#124;
+&#124; Definere regler og parametere for direkteoverføring og sentralt innkjøp &#124; Globalt &#124;
+# &lt; a name = &quot; foreign-currency-revaluation-for-general-ledger &quot; &gt; &lt; / a &gt; Revaluering av utenlandsk valuta for finans
+5 . Velg rad 1 i listen .
+# # # &lt; a name = &quot; what-tables-support-custom-fields &quot; &gt; &lt; / a &gt; Hvilke tabeller støtter egendefinerte felt ?
+- Hvis du vil skjule eller gi nytt navn til den valgte flisen , kan du gjøre denne endringen direkte i egenskapsvinduet .
+En kombinasjon av aktive finansdimensjonsverdier som brukes til å tildele budsjettmidler for å betale for planlagte aktiviteter .
+Rapport som dokumenterer en organisasjons økonomiske og finansielle stilling .
+En konfigurasjon av en produktstandard .
+title : Definere nye avdelinger
+11 . Klikk Last fra XML-fil .
+# # # &lt; a name = &quot; inquiry-and-reporting &quot; &gt; &lt; / a &gt; Forespørsel og rapportering
+* Velg en sluttdato når denne produktmodellversjonen skal utløpe , eller velg Aldri .
+Denne artikkelen gir råd for å oppdatere standardkostnader for en ny produsert vare .
+&#124; Integreringsenhet for kategorier &#124; Transaksjonskategorier &#124;
+# # &lt; a name = &quot; validate-the-quality-order &quot; &gt; &lt; / a &gt; Valider kvalitetsordren
+* Når du tilordner en arbeider til en stilling som rapporterer til en annen stilling , oppretter du en direkterapporteringsrelasjon mellom arbeidere som er tilordnet de to stillingene .
+# # &lt; a name = &quot; create-a-power-bi-dataset-by-using-the-output-result-of-the-er-format &quot; &gt; &lt; / a &gt; Opprette et Power BI-datasett ved hjelp av utdataresultatet av ER-formatet
+27 . Klikk Rediger betingelse .
+7 . Angi levetiden for anleggsmidlet i år .
+* Velg Kanban-regelen som ble opprettet tidligere . Dette er Kanban-regelen med det høyeste nummeret .
+Oppdateringer av prognosestillinger kan også komme fra andre områder , for eksempel konfigurasjonssidene for budsjettkostnadselementet og kompensasjonsgruppen . Du kan også endre prognosestillingene ved hjelp av masseoppdateringsprosessen .
+27 . Skriv inn SumOfAmountMST i Navn-feltet .
+14 . Klikk den tilordnede for å se en oversikt over alle produksjonsjobber .
+&#124; Utstedt dato &#124; Utstedelsesdatoen for registreringsnummeret . &#124;
+12 . Merk av eller fjern merket i boksen Opprett avskrivningsjusteringer med basisjusteringer .
+title : Definere utlånsobjekter &#124; Microsoft-dokumentasjon
+title : Definere hvordan data utveksles elektronisk &#124; Microsoft-dokumentasjon
+# &lt; a name = &quot; create-electronic-documents-for-ehf &quot; &gt; &lt; / a &gt; Opprette elektroniske dokumenter for EHF
+title : Konfigurere arbeidsflyter &#124; Microsoft-dokumentasjon
+# &lt; a name = &quot; set-up-fixed-asset-insurance &quot; &gt; &lt; / a &gt; Definere aktivaforsikring
+# # # &lt; a name = &quot; the-key-didnt-match-any-rows-in-the-table &quot; &gt; &lt; / a &gt; Nøkkelen samsvarer ikke med en rad i tabellen
+title : Serviceprisstyring &#124; Microsoft-dokumentasjon
+Bare for å nevne noen eksempler inneholder vil videoene som kommer , vise hvordan du gjør følgende :
+# &lt; a name = &quot; the-paypal-payments-standard-extension &quot; &gt; &lt; / a &gt; PayPal Payments Standard-utvidelsen
+# &lt; a name = &quot; add-comments-to-cards-and-documents &quot; &gt; &lt; / a &gt; Legge til kommentarer i kort og dokumenter
+title : Samle oppsettsverdier for kunde &#124; Microsoft-dokumentasjon
+# # # &lt; a name = &quot; priorities-on-the-supply-side &quot; &gt; &lt; / a &gt; Prioriteter på forsyningssiden
+Du kan utforme sjekkene dine slik at de samsvarer med standardene som er angitt av de lokale myndighetene . Sjekkbilder kan skrives ut på engelsk , fransk eller spansk .
+title : Koble dataene med Flow &#124; Microsoft-dokumentasjon
+Hvis du overfører konti , overføres også følgende data :
+title : Konvertere eksisterende lokasjoner til lagerlokasjoner &#124; Microsoft-dokumentasjon
+&gt; * Økten har utløpt og ble oppdatert .
+# # &lt; a name = &quot; keyboard-shortcuts-in-lists &quot; &gt; &lt; / a &gt; Hurtigtaster i lister
+Den første verdiposten ( 379 ) nedenfor representerer leveringen og har samme bokføringsdato som den overordnede vareposten .
+Brukergrupper som ikke kan bokføre i desember , men i januar , som sannsynligvis var ment å være begrenset av finansoppsettet i dette scenarioet , bør i stedet løses via brukeroppsettet .
+# # # &lt; a name = &quot; to-select-the-premium-experience &quot; &gt; &lt; / a &gt; Slik velger du Premium-opplevelsen
+# # &lt; a name = &quot; to-set-up-a-unit-of-measure &quot; &gt; &lt; / a &gt; Slik definerer du en enhet :
+# # # &lt; a name = &quot; order-to-order-links-and-past-due-dates &quot; &gt; &lt; / a &gt; Odre-til-ordre-koblinger og tidligere forfallsdatoer
+Vent noen minutter . Vi kan foreta flere endringer i den underliggende databasen , og det tar litt tid .
+I tillegg finnes følgende interne kildedokumenter som fungerer som utgående kilder :
+title : Lagertrekke komponenter i henhold til operasjonsavgang &#124; Microsoft-dokumentasjon
+Når lokasjonen er satt opp til å bruke plukkbehandling og i tillegg lagerleveringsbehandling , kan du bruke plukkdokumentene til å opprette og behandle plukkopplysningene før lagerleveringen bokføres .
+# &lt; a name = &quot; sell-inventory-items-in-assemble-to-order-flows &quot; &gt; &lt; / a &gt; Selge lagervarer i monter-til-ordre-flyter
+# # &lt; a name = &quot; to-add-prepayment-accounts-to-the-general-posting-setup &quot; &gt; &lt; / a &gt; Slik legger du til forskuddskonti til generelt bokføringsoppsett
+For å sikre at lagerkost registreres riktig , må du definere ulike felt og sider før du begynner å opprette varetransaksjoner .
+# &lt; a name = &quot; track-relations-between-demand-and-supply &quot; &gt; &lt; / a &gt; Spore relasjoner mellom behov og forsyning
+Oppsettsfeltene for global planlegging på * * Produksjonsoppsett * * -siden omfatter følgende :
+- Når produksjonsordrer opprettes for ordrer med funksjonen Ordreplanlegging .
+# # &lt; a name = &quot; how-to-define-and-preview-vat-statements &quot; &gt; &lt; / a &gt; Definerer og forhåndsvisning mva-oppgaver
+Når hver mal er brukt , brukes bare feltverdiene som er definert i malen , på felt som ikke allerede har fått en verdi definert , enten eksplisitt i API-et eller i en mal som er brukt tidligere i rekkefølgen .
+En salgskreditnota opprettes og bokføres automatisk for å annullere den første bokførte salgsfakturaen .
+title : Opprette hylleinnhold &#124; Microsoft-dokumentasjon
+title : Flere språk og oversettelse &#124; Microsoft-dokumentasjon
+# &lt; a name = &quot; set-up-resource-allocation &quot; &gt; &lt; / a &gt; Definere ressurstildeling
+# &lt; a name = &quot; use-automated-data-capture-systems-adcs &quot; &gt; &lt; / a &gt; Bruk ADCS ( Se automatisk datahentesystem )
+title : Metoder for å feilsøke eller omgå problemer med registrering for Self-Service &#124; Microsoft-dokumentasjon
+3 . Du kan angi et filter for å velge bestemte serviceordrenumre eller en rekke med ordrenumre som kjørselen skal behandle .
+title : Opprette serviceordrer &#124; Microsoft-dokumentasjon
+title : Levere varer &#124; Microsoft-dokumentasjon
+title : Slik sperrer du varer fra salg eller kjøp ved salg til kunder
+- Én post for rente og / eller én post for tilleggsgebyr på relevant finanskonto
+title : Opprette egendefinerte konfigurasjonspakker for selskap &#124; Microsoft-dokumentasjon
+På dette tidspunktet i scenariet overføres de 100 enhetene av PARTIA og PARTIB til BLÅ lokasjon av en overføringsordre .
+title : Klargjøre en konfigurasjonspakke &#124; Microsoft-dokumentasjon
+10 . Angi om brukere skal kunne sette inn , endre eller slette poster i tabeller som er registrert for hvert objekt i listen over registrerte .
+# # &lt; a name = &quot; to-locate-and-identify-a-configuration-error &quot; &gt; &lt; / a &gt; Slik finner og identifiserer du en konfigurasjonsfeil :
+title : Designdetaljer – Lageroppsett &#124; Microsoft-dokumentasjon
+title : Bruke rollesenteret for RapidStart Services-implementerer &#124; Microsoft-dokumentasjon
+Du refunderer ansatte ved bokføring av betalinger til deres bankkontoer på siden * * Utbetalingskladd * * .
+# &lt; a name = &quot; set-up-fixed-asset-depreciation &quot; &gt; &lt; / a &gt; Definere avskrivning for aktiva
+title : Om fullførte produksjonsordrekostnader &#124; Microsoft-dokumentasjon
+Hvis du vil kopiere flere rader , kan du :
+title : Behandle salgsmuligheter i salgssykluser &#124; Microsoft-dokumentasjon
+Følgende fremgangsmåte viser hvordan du deler ressurslinjer på siden * * Servicefakturalinjer * * .
+&#124; Lagre og lukk &#124; I / T &#124;
+&gt; Prosessnavnet er et ikon nederst på siden , ikke øverst .
+title : Legge til og konfigurere en delrutenettkomponent i et skjema &#124; MicrosoftDocs
+&gt; I skrivende stund støtter ikke kalenderfunksjonen gjentakende hendelser .
+&#124; `orglcid` &#124; Standard ID for nasjonale innstillinger for organisasjonen . &#124;
+&#91; Tilpasse innhold ved hjelp av innholdssnutter &#93; ( customize-content-snippets.md )
+title : Eksport til en Excel-pivottabell i modelldrevet PowerApp &#124; MicrosoftDocs
+# # # &lt; a name = &quot; create-a-bar-chart-to-show-projected-versus-actual &quot; &gt; &lt; / a &gt; Opprette et stolpediagram for å vise forventet kontra faktisk
+&#124; Lørdag &#124; 14 : 00 – 16 : 00 &#124; Koch &#124; Kolstad &#124;
+Vi bruker den samme tabellbearbeidingen som i de to forrige eksemplene , men vi registrerer resultatet i en samling :
+5 . Angi navnet på en Oracle-server , et brukernavn og et passord .
+# # &lt; a name = &quot; create-an-entity-record &quot; &gt; &lt; / a &gt; Opprette en enhetsoppføring
+- Egenskapsrute – viser egenskapene for det valgte elementet og gjør det mulig å gjøre endringer .
+# # # &lt; a name = &quot; change-the-icons-used-for-custom-entities &quot; &gt; &lt; / a &gt; Endre ikonene som brukes for egendefinerte enheter
+Når du oppretter en egendefinert enhet , vil du kanskje vise den egendefinerte enheten som en aktivitet for brukerne på tidslinjen . Hvis du vil vise den egendefinerte enheten som en aktivitet , må du aktivere bestemte alternativer under opprettingen av en egendefinert enhet .
+Du kan eksportere komponenter til en fil og laste dem ned for import til en annen app .
+# # &lt; a name = &quot; create-a-guided-task &quot; &gt; &lt; / a &gt; Opprette en veiledet oppgave
+1 . Velg kontrollen du vil lokalisere i innholdsbiblioteket .
+&#124; Skift + pil ned &#124; Reduser høyden . &#124;
+Kategorier inneholder opptil tre kolonner , og bredden på hver kolonne kan settes til en prosentandel av den totale bredden . Når du oppretter en ny kategori , blir hver kolonne forhåndsutfylt med en inndeling .
+2 . Endre informasjonen etter behov &gt;
+# # # &lt; a name = &quot; audio-and-video-alternatives &quot; &gt; &lt; / a &gt; Lyd- og videoalternativer
+&#124; PMAssigned &#124; En enkelt linje med tekst &#124; Prosjektleder &#124;
+# # &lt; a name = &quot; unsupported-charts-and-chart-types &quot; &gt; &lt; / a &gt; Diagrammer og diagramtyper som ikke støttes
+# # # &lt; a name = &quot; results-page-for-additional-entities &quot; &gt; &lt; / a &gt; Resultatside for ekstra enheter
+2 . Åpne den uadministrerte løsningen du ønsker .
+I dette emnet legger du til et felt i et skjema .
+5 . Hvis du bestemmer deg for å ta for deg et problem , merker du det for å åpne den berørte egenskapen .
+Du kan kopiere følgende eksempeldata for å teste denne funksjonaliteten :
+Meldingen informerer utvikleren om at de prøver å legge til et felt med en tilknyttet egendefinert komponent i overskriften , og de må fjerne den egendefinerte komponenten før feltet legges til i overskriften . Dette er fordi brukerne ikke vil kunne se den egendefinerte komponenten i overskriften .
+* I Dropbox eller Google Drive kan du dele enten filen eller mappen .
+Legg merke til at vi ikke trengte å dele opp grupper med denne tabellen .
+- Opprett og behandle portalbrukere ( kontakter ) Disse brukerne er vanligvis administratorer fra overordnede medisinske organisasjoner som administrerer ett eller flere sykehussystemer .
+&#124; E-post &#124; E-postadressen til brukeren der invitasjonen skal sendes . &#124;
+Power Automate lar deg opprette automatiserte prosesser mellom favorittprogrammer og tjenester . Du kan kjøre en flyt på én eller flere oppføringer i appen .
+&#124; Spore og angi som angående for avtaler &#124; Ja &#124; Ja &#124;
+Dette eksemplet trekker ut timer , minutter og sekunder fra en ISO 8601-varighetsverdi og bruker disse deltreffene til å opprette en dato / klokkeslett-verdi .
+For mer informasjon om tilpassing av individuelle komponenter i en løsning , kan du se følgende emner :
+* Overføring av lagerbeholdning
+* Når du søker etter personer , returneres bare de 15 første resultatene .
+Utvid funksjonene til appene ved å utføre disse oppgavene :
+5 . Lagre , lukk , og åpne appen på nytt .
+Denne formelen angir bredden på kontrollen til halvparten av skjermbredden på en liten skjerm , tre tideler av skjermbredden på et middels skjermbilde , og en fjerdedel av skjermbredden på alle andre skjermer .
+Hvis du vil ha mer informasjon om nettleseren din , kan du gå til følgende nettsteder :
+- Detaljert bruksinformasjon for kontroller på skjermene .
+&#124; Tom melding &#124; Overstyrer meldingen som vises når gjeldende enhet ikke har notater som kan vises . &#124;
+# # # &lt; a name = &quot; sign-in-by-using-a-local-identity-or-external-identity &quot; &gt; &lt; / a &gt; Logge på med en lokal identitet eller eksterne identitet
+&#124; Navn på webområdeinnstilling &#124; Beskrivelse &#124;
+Active Directory-brukere og -datamaskiner
+* Login-AzureRmAccount ( og logg på som leieradministratoren )
+- Pekere til metadata for system og data når synkroniseringen endres
+En global variabel inneholder verdien til appen lukkes . Når appen lukkes , går verdien til den globale variabelen tapt , og den må opprettes på nytt når appen er lastet inn på nytt .
+Verdi : En omregning av starttidspunktet som skal vises i brukerens lokale klokkeslett :
+&#124; E-post , URL-adresse &#124; Vises som Generelt &#124;
+# # &lt; a name = &quot; use-a-many-to-one-relationship &quot; &gt; &lt; / a &gt; Bruk en én-til-mange-relasjon
+&#124; eller webside &#124; Krever at Hvis vellykket er satt til Omdiriger . Velg en nettside fra gjeldende nettsted . &#124;
+- * * Ny aktivitet * * Legg til en ny aktivitet
+Hvis du vil bruke kontrollen i et skjema , velger du kortet « Rediger flerlinjet tekst » , og tilpasser den ved å sette inn RTE-kontrollen .
+* Angi feltverdier
+# # &lt; a name = &quot; set-a-default-search-experience &quot; &gt; &lt; / a &gt; Angi en standard søkeopplevelse
+Tidtakeren kjøres i ett sekund , startes automatisk på nytt og fortsetter dette mønstret .
+Felt der grensen kan være nødvendig å øke :
+# &lt; a name = &quot; create-and-manage-page-templates &quot; &gt; &lt; / a &gt; Opprette og behandle sidemaler
+- Lengden på målfeltet må være lik eller større enn lengden på kildefeltet .
+# &lt; a name = &quot; overview-of-model-driven-app-special-field-properties &quot; &gt; &lt; / a &gt; Oversikt over egenskaper for spesialfelt for modelldrevne apper
+# &lt; a name = &quot; power-apps-patterns-real-world-stories &quot; &gt; &lt; / a &gt; Power Apps-mønstre : Ekte historier
+# # # &lt; a name = &quot; add-a-related-entity-to-a-condition &quot; &gt; &lt; / a &gt; Legge til en relatert enhet i en betingelse
+Hvis portalopprettelse er blokkert i en leietaker av den globale administratoren , vises en feilmelding som følger :
+Verktøyet portalkontroll viser alle websidene ( både rot- og innholdsside ) som er aktivert for sidesporing . Disse sidene må deaktiveres ved å følge disse trinnene :
+Du kan løse dette problemet ved å kontrollere at enheten har nødvendig sikkerhetstillatelse .
+&#124; Kan vise alle data i systemet &#124; Kan bare vise oppføringer for systemenheter de oppretter &#124;
+&#124; Er bekreftelse obligatorisk ? &#124; Bestemmer om en bekreftelse ber brukeren om å bekrefte når handlingen velges . &#124;
+Oppslagssettet bruker følgende attributter :
+Etiketten viser summen av alle verdiene som ble angitt for glidebryterne .
+Grupper elementene i en matrise etter et angitt attributt .
+Fjerner den første forekomster av en delstreng fra en streng .
+# &lt; a name = &quot; define-calculated-fields-to-automate-manual-calculations &quot; &gt; &lt; / a &gt; Definere beregnede felt for å automatisere manuelle beregninger
+- Du kan ikke utløse arbeidsflyter eller plugin-moduler på beregnede felt .
+&#124; Alle andre weblesere
+- Du kan konfigurere felt for beregnet verdi for å bruke egendefinerte kontroller .
+# # &lt; a name = &quot; key-properties-icons-and-shapes &quot; &gt; &lt; / a &gt; Nøkkelegenskaper ( ikoner og figurer )
+En streng deklareres ved å omslutte tekst i enkle eller doble anførselstegn .
+* Angi riktige parametere i hvert oppkall :
+# # # &lt; a name = &quot; navigation-link-properties &quot; &gt; &lt; / a &gt; Egenskaper for navigasjonskobling
+# # # &lt; a name = &quot; query-account-hierarchy &quot; &gt; &lt; / a &gt; Spørre forretningsforbindelseshierarki
+Navnet på webskjemaet som du vil laste inn .
+Du kan velge mellom fire ulike oppsett for instrumentbord for enkeltstrøm .
+- Legg til en telefonsamtale , aktivitet eller avtale .
+# # # &lt; a name = &quot; manage-the-power-bi-embedded-service &quot; &gt; &lt; / a &gt; Administrere Power BI Embedded-tjenesten
+1 . Endre størrelse på etiketten , slik at hele teksten vises :
+Konfigurer teksten som vises på en kontroll som et tips når brukeren skriver inn data og angi andre tekstrelaterte egenskaper .
+Filtrering av SQL-spørringer støtter følgende operatorer .
+Noen få kontroller og funksjoner bruker formler på enkeltoppføringer i en tabell . Hvis du vil referere til den enkelte oppføringen i en formel , bruker du ett av følgende :
+Dette emnet viser deg hvordan du oppretter Microsoft Translator-tilkoblingen og bruker Microsoft Translator-tilkoblingen i en app . Her finner du også en oversikt over de tilgjengelige funksjonene .
+Konfigurere stilen for en kontroll basert på hvordan brukeren samhandler med den .
+Denne formelen bestemmer om enheten er koblet til Internett :
+I hver fase stiger antallet personer som bruker funksjonen , noe som hjelper oss med å validere at funksjonen er det du trenger , og at vi ikke introduserer utilsiktede bivirkninger .
+# # # &lt; a name = &quot; userbrowsegallery-title-control &quot; &gt; &lt; / a &gt; UserBrowseGallery Title-kontroll
+Du kan teste for tomme strenger og matriser ved hjelp av spesialverdien empty hvis det er nødvendig .
+Dette betyr vanligvis at for hvert enhetspar er det bare én overordnet relasjon . Det finnes enkelte tilfeller der oppslaget på den relaterte enheten kan tillate en relasjon til mer enn én type enhet .
+# # # &lt; a name = &quot; hide-nonblocking-events &quot; &gt; &lt; / a &gt; Skjul ikke-blokkeringshendelser
+# # # &lt; a name = &quot; change-a-solution-publisher &quot; &gt; &lt; / a &gt; Endre en løsningsutgiver
+Resultater-attributtet i den angitte variabelen ( for eksempel &quot; resultVariable &quot; i det ovenstående eksemplet ) inneholder FetchXML-spørringsresultater og noen andre attributter .
+- Lagring av hjelpeinnhold i Common Data Service som en del av løsningen .
+Presenterer en tittel på en hjelpeside .
+1 . Opprett en ny tom telefonapp .
+1 . Velg tittelen på skjermen ved å klikke eller trykke på den .
+8 . Hvis det finnes andre hendelsesbehandlinger for den `OnSave`-hendelsen , kan du bruke de grønne pilene til å flytte denne til toppen .
+&gt; Dokumentopplasting krever at den overordnede oppføringen finnes . Hvis du angir modusen til å sette inn , vil dokumentopplastingen ikke fungere , fordi den overordnede enhetsoppføringen ikke blir opprettet før skjemaet sendes .
+Forretningsregler i et redigerbart rutenett støttes bare hvis det betingede feltet også er en kolonne i rutenettet . Hvis feltet ikke er en kolonne , vil ikke forretningsreglene fungere . Kontroller at hvert felt som det refereres til i forretningsregelen , også er inkludert i skjemaet . Legg merke til at forretningsregler i et redigerbart rutenett ikke aktiveres hvis det redigerbare rutenettet er konfigurert på et instrumentbord .
+Hovedkomponentene i den regionale offentlige portalen for nødberedskap og overvåking er følgende :
+* Hvordan feilsøker jeg en forretningsregel som ikke fungerer ? *
+- Tilpasse et skjema
+Blant fordelene med globalt søk er muligheten til å :
+# # &lt; a name = &quot; specify-the-storage-container &quot; &gt; &lt; / a &gt; Angi Storage-beholderen
+1 . Åpne forhåndsvisningsmodus ved å trykke på ESC ( eller ved å velge Lukk-ikonet nær hjørnet øverst til venstre ) .
+&gt; Feil konfigurasjon av en hendelsesbehandling kan det føre til skriptfeil som kan føre til at skjemaet ikke laste inn eller fungerer slik det skal . Hvis du ikke er utvikleren av skriptet , må du passe på at du må vite nøyaktig hva slags konfigurasjonsalternativer skriptet krever .
+1 . Åpne skjemautformingen for å opprette eller redigere et skjema .
+# &lt; a name = &quot; create-a-canvas-app-to-manage-projects &quot; &gt; &lt; / a &gt; Opprett en lerretsapp for å administrere prosjekter
+1 . Klikk eller trykk utenfor galleriet du har arbeidet i .
+# # # &lt; a name = &quot; concatenate-function-and-the--operator &quot; &gt; &lt; / a &gt; Concatenate-funksjon og &amp; -operatoren
+9 . I delen under listen over kontroller ser du listen over egenskaper som svarer til lerretappkontrollen , og merker deg følgende :
+# # &lt; a name = &quot; tips-and-solutions-for-reporting &quot; &gt; &lt; / a &gt; Tips og løsninger for rapportering
+# &lt; a name = &quot; create-a-model-driven-app-quick-view-form-to-view-information-about-a-related-entity &quot; &gt; &lt; / a &gt; Opprette et hurtigvisningsskjema for modelldrevne apper for å vise informasjon om en relatert enhet
+Alle disse funksjonene har de samme argumentene :
+# # # &lt; a name = &quot; delete-a-solution &quot; &gt; &lt; / a &gt; Slette en løsning
+&gt; Bruk et ikon med firkantet form for best resultat .
+1 . Velg kolonneoverskriften du vil fjerne .
+# # &lt; a name = &quot; edit-a-web-resource &quot; &gt; &lt; / a &gt; Redigere en webressurs
+&#124; Støtter datapolicyer etablert av Office 365-administrator &#124; Ja &#124;
+- Finne ressursene som støtter prosessen .
+1 . Velg sykehusmiljøet fra øvre høyre hjørne .
+Ved hjelp av * * Egenskaper * * -fanen kan du angi et større utvalg alternativer enn du kan ved å konfigurere en kontroll fra verktøylinjen .
+# # &lt; a name = &quot; power-apps-per-app-plan &quot; &gt; &lt; / a &gt; Power Apps per-app-plan
+RDL-filen inneholder fetchXML-en som rapporten er basert på .
+Bekreftelsesdialogboksen vises i alle situasjoner der data kan gå tapt , som i disse eksemplene :
+La oss gjøre feilmeldingen litt lengre , slik at kontrollen og kortet igjen vokser for å lage plass . Hele raden vokser i høyden , mens den bevarer loddrett justering mellom kortene :
+* * Bruk så få felt som mulig * *
+# # # # &lt; a name = &quot; editing-option-set-patch-statements-to-use-new-syntax &quot; &gt; &lt; / a &gt; Redigere oppdateringsuttrykk for alternativsett for å bruke ny syntaks
+Følgende tabell beskriver de forskjellige typene portaler som vises i Power Platform-administrasjonssenteret .
+Noen ganger trenger du en variabel for at appen skal oppføre seg slik du ønsker . Men tilnærmingen leveres med advarsler :
+Følgende trinn viser detaljer om hvordan du oppretter en e-post .
+# # # &lt; a name = &quot; edit-title-column &quot; &gt; &lt; / a &gt; Å redigere Tittel-kolonne
+&gt; En vanlig avhengighet er at et annet enhetsskjema har et oppslagsfelt for enheten du sletter . Hvis du fjerner oppslagsfeltet fra skjemaet , løses avhengigheten .
+&#124; Felt &#124; Velg at feltet for visningens primære enhet skal brukes som datakilden . &#124;
+# # &lt; a name = &quot; show-the-product-images &quot; &gt; &lt; / a &gt; Vis produktbildene
+# &lt; a name = &quot; embed-the-power-bi-project-report-in-sharepoint-online &quot; &gt; &lt; / a &gt; Bygge inn Power BI-prosjektrapporten i SharePoint Online
+&#124; Sponset program &#124; Navnet på det sponsede programmet . &#124;
+# &lt; a name = &quot; guidelines-on-working-with-embedded-canvas-apps &quot; &gt; &lt; / a &gt; Retningslinjer for arbeid med innebygde lerretapper
+6 . Gjenta trinn 2-5 ovenfor hvis du vil legge til flere felt .
+Meldingen på skjermbildet for kontooverføring kan endres ved hjelp av de følgende innholdssnuttene :
+1 . Angi et SQL-godkjenningspassord , og endre deretter det automatisk utfylte brukernavnet om nødvendig .
+- Flytte en gruppe til en ny plassering i et annet område .
+1 . Å åpne appen .
+title : Gjengi enhetslisten som er knyttet til gjeldende side i en portal &#124; MicrosoftDocs
+# # &lt; a name = &quot; web-form-metadata-type--section &quot; &gt; &lt; / a &gt; Metadatatype for webskjema = Inndeling
+Skann strekkoder , QR-koder og datamatrisekoder på en Android- eller iOS-enhet .
+title : Del ressurser som brukes i lerretsappen &#124; Microsoft Docs
+Du kan åpne filen CrmTranslations.xml med Microsoft Office Excel .
+3 . Bla deg frem til malen du vil bruke . Velg malen , og forhåndsvis innholdet i malen .
+4 . Skriv inn et uttrykk eller en formel i inndatafeltet for handling for å telle oppføringene i databasen før du kjører testen .
+# # &lt; a name = &quot; text-hyperlink-image-and-media &quot; &gt; &lt; / a &gt; Tekst , hyperkobling , bilde og media
+&#124; Knappeetikett &#124; Overstyrer HTML-etiketten som vises på Opprett handling-knappen over delrutenettet . &#124;
+1 . Lukk forhåndsvisningsbildet ved å trykke på ESC .
+&#124; * * Fornavn * * &#124; Kontaktens fornavn &#124; * * SingleLine.Text * * &#124;
+Hvis du velger alternativet * * Distribuer den valgte tabellen jevnt * * , vil hver lengste verdi i hver kolonne beregnes , og alle andre verdier vil distribueres jevnt i samsvar med plass .
+Før din pull-forespørsel kan flettes inn i sin mål-gren , kan det være nødvendig å kjøre den gjennom en eller flere PR-valideringsprosesser . Valideringsprosesser kan variere avhengig av omfanget av foreslåtte endringer og reglene for mål-repositoriet . Etter at pull-forespørselen er sendt , kan du forvente at et eller flere av følgende skjer :
+3 . Når du blir bedt om det , kan du angi koden for to-faktor-godkjenning .
+# # # &lt; a name = &quot; display-commonly-used-dev-langs &quot; &gt; &lt; / a &gt; Vis ofte brukte utviklerspråk
+Du må sørge for en arbeidsflyt for å synkronisere beslutningen om godkjenning / avslag fra undersøkelsesposten til forespørselsposten .
+Du kan kjøre Power Automate på alle moderne enheter og nettlesere .
+# # &lt; a name = &quot; activate-business-process-flow &quot; &gt; &lt; / a &gt; Aktiver forretningsprosessflyt
+&gt; Bruk enkle datablokker i stedet for komplekse tabellmatriser .
+Hver inndata i skjemaet for adaptivt kort har en ID . Du kan bruke ID-en senere i flyten via dynamiske tokener til å referere til inndata som en bruker har lagt inn , som en del av kjøringen av flyten .
+1 . Ettersom rapporteringen drives av den relaterte enheten , er det ikke mulig å opprette én enkelt visning som rapporterer om forretningsprosessflyter som spenner over flere enheter .
+Vi har endret flere underliggende komponenter og lagt til flere funksjoner i februarutgivelsen med støtte for uovervåket modus . Du må oppdatere den lokale grensesnittflytappen og gatewaytilkoblinger for å bruke de nye funksjonene . Gjelder også for uovervåkede funksjoner .
+# # &lt; a name = &quot; edit-a-business-process-flow &quot; &gt; &lt; / a &gt; Redigere en forretningsprosessflyt
+&#124; modifiedon &#124; Sist gang flyten ble oppdatert . &#124;
+# # # &lt; a name = &quot; configure-the-sheet &quot; &gt; &lt; / a &gt; Å konfigurere regnearket
+# # # &lt; a name = &quot; ui-flows-or-connectors &quot; &gt; &lt; / a &gt; Brukergrensesnittflyter eller koblinger ?
+# # # &lt; a name = &quot; functional-application-consultants &quot; &gt; &lt; / a &gt; Funksjonell app-konsulenter
+5 . Klikk eller trykk på avmerkingsikonet for å lagre endringene og gå tilbake til detaljskjermen , i øvre høyre hjørne .
+# # # &lt; a name = &quot; system-business-process-flows &quot; &gt; &lt; / a &gt; Forretningsprosessflyter for systemet
+Hvis du har brukt andre Microsoft-produkter på nettet , enten på jobben eller privat , trenger du bare å logge deg på .
+&gt; Hvis du redigerer en prosessmal , endres ikke virkemåten til andre arbeidsflytprosesser som er opprettet tidligere med den som en mal . En ny arbeidsflyt som er opprettet ved hjelp av en mal , er en kopi av innholdet i malen .
+# # &lt; a name = &quot; remove-services-from-a-data-group &quot; &gt; &lt; / a &gt; Fjerne tjenester fra en datagruppe
+Kan jeg starte en lerretsapp som en hurtigmeny fra en knapp på kommandolinjen ?
+&#124; User &#124; En handling utføres på en post som eies av deg &#124;
+# # &lt; a name = &quot; export-a-list-of-a-users-connection-permissions &quot; &gt; &lt; / a &gt; Eksportere en liste over tilkoblingstillatelsene til en bruker
+&#124; Tillatelser for egendefinert kobling &#124; &#124;
+Du må først velge hvilken hendelse eller * utløser * som skal starter flyten .
+1 . Trykk på en oppføring i aktivitetssammendraget for å vise detaljer for den siste kjøringen .
+- Når du velger Handling.Send inn-knapper på et kort som ikke inkluderer suffikset « vent på et svar » , vil det oppstå en feil .
+* En Slack-konto
+&#91; ! INCLUDE &#91; add-get-manager-action &#93; ( includes / add-get-manager-action.md ) &#93;
+Du kan for eksempel bruke Velg-handlingen hvis dataene kommer inn i flyten via en nettforespørsel i dette formatet :
+&#124; Fra &#124; Utløse en flyt basert på avsenderens e-postadresse . &#124;
+Du vil se følgende underkategorier :
+&#124; Brukernavn &#124; Brukernavnet til personen som er logget på enheten som kjører flyten . &#124;
+1 . ( Valgfritt ) Angi en verdi i inndatafeltet .
+3 . Du kan også bekrefte at e-postmeldingen ble sendt til kundestøtteteamet .
+1 . Gi navn til miljøet ditt .
+Du kan laste ned og konfigurere en selvstudiepakke som inneholder presentasjonsinnholdet og åtte praktiske øvelser på nettet :
+title : Legg til blant annet bilder og videoer på instrumentbordet
+Når du kobler til et arbeidsområde , kan det ta noen minutter før endringer for nye , slettede og endrede navn vises i datasettet .
+# # &lt; a name = &quot; try-out-the-slicer &quot; &gt; &lt; / a &gt; Bli kjent med sliceren
+Å ta seg tid til å bruk stjerneskjema-utformingsprinsipper gir følgende fordeler :
+- Legg til eller fjern brukere som har tilordningstillatelser .
+Sørg for å bevare følgende :
+Les videre for mer informasjon .
+Hver modellrelasjon må defineres med en kryssfiltreringsretning . Valget ditt bestemmer retningen ( e ) som filtrene skal overføre i . De mulige alternativene for krysseringsfiltrering avhenger av kardinalitetstypen .
+# # # &lt; a name = &quot; resource-manager-template &quot; &gt; &lt; / a &gt; Ressursbehandlingsmal
+For å heve nivået til en dataflyt må du ha skrivetilgang til arbeidsområdet der dataflyten du ønsker å heve nivået til befinner seg .
+La oss ta en kjapp gjennomgang av det vi tok for oss i den første delen .
+I denne opplæringen lærer du hvordan du kan :
+De kan deretter brukes i en rekke ulike scenarioer i rapportoppsettene :
+* * Styr dataene i sideformaterte rapporter * *
+title : Feilsøk delrapporter i Power BI paginerte rapporter
+Importer CSS-filen som en `.less` fil , fordi Power BI visuelle verktøyet pakker inn eksterne CSS-regler .
+Oppdateringssammendrag-siden har to visninger :
+Hjelp er lokalisert på disse ti språkene :
+- Hvis du planlegger å levere rapporten i et bestemt eksportformat , kan du teste eksportformatet tidlig i utformingen . Funksjonsstøtten varierer etter hvilken gjengiver du velger .
+# # # &lt; a name = &quot; the-addtooltip-method &quot; &gt; &lt; / a &gt; addTooltip-metoden
+Mulige verdier er :
+Når du har installert appen din , velger du den fra listen over apper , og velger hvilket instrumentbord eller hvilken rapport du vil åpne og utforske først .
+Det kan være mange sporingsfiler i mappen . Sørg for at du bare sender filer fra den siste tiden til administratoren , siden det gjør det enklere å identifisere feilen raskt .
+# # &lt; a name = &quot; it-spend-analysis-sample-dashboard &quot; &gt; &lt; / a &gt; Instrumentbord for Eksempel på IT-utgiftsanalyse
+1 . Velg en visualisering for å aktivere den .
+Det å angi nøyaktige relasjoner mellom dataene dine , gjør at du kan opprette omfattende beregninger i mange dataelementer .
+# # # # &lt; a name = &quot; workspaces-area &quot; &gt; &lt; / a &gt; Arbeidsområder
+- Hvis du har firmaportalappen installert på enheten , må enheten være registrert .
+title : Bruk av raske opprettinger av mål til vanlige og omfattende beregninger
+Standard oppdateringslogikk for koblede enheter endres basert på om kilde-dataflyten ligger i samme arbeidsområde som mål-dataflyten . De neste avsnittene beskriver virkemåten til hver av disse .
+Arbeidsbelastningen for datasett er aktivert og kan ikke deaktiveres . Bruk følgende innstillinger til å kontrollere virkemåten for arbeidsbelastninger . Det finnes ytterligere bruksinformasjon under tabellen for noen av innstillingene .
+Angi legitimasjonen for Smartsheet når du blir bedt om det , og følg godkjenningsprosessen .
+# # # &lt; a name = &quot; configure-excel-workbook-maximum-size &quot; &gt; &lt; / a &gt; Konfigurere maksimal størrelse for Excel-arbeidsboken
+* Legg til en ny handling , en funksjon , en handlingsimport eller en funksjonsimport
+Hvis du vil gå tilbake , må du være eier av arbeidsområdet Microsoft 365-gruppen var tilknyttet før det ble oppgradert . Følg disse trinnene .
+# # &lt; a name = &quot; make-a-dashboard-or-report-a-favorite-in-the-android-mobile-apps &quot; &gt; &lt; / a &gt; Legge til et instrumentbord eller en rapport som favoritt i Android-mobilappene
+# # &lt; a name = &quot; find-the-data-source &quot; &gt; &lt; / a &gt; Finn datakilden
+# # &lt; a name = &quot; caches-should-be-kept-in-sync &quot; &gt; &lt; / a &gt; Hurtigbuffere bør være synkronisert
+# &lt; a name = &quot; manage-multi-tenancy-with-power-bi-embedded-analytics &quot; &gt; &lt; / a &gt; Administrer flere leiere med innbygd analyse i Power BI
+Følgende RLS-regel gjelder for * * Selger * * -tabellen :
+1 . Vis en rapportside .
+* Hvis du vil angi et antall måneder fra dagens dato , kan du bruke * numberOfMonth *
+Spørsmål og svar ser etter et svar i datasettet ( -ene ) som er koblet til instrumentbordet . Et tilkoblet datasett er et som har minst én flis festet til instrumentbordet .
+# &lt; a name = &quot; the-visual-filters-api-in-power-bi-visuals &quot; &gt; &lt; / a &gt; API for filter i Power BI-visualobjekter
+- Oppdater modell-pålitelighet
+Når operasjonen er fullført , kan du gå til Power BI direkte fra Excel .
+Som navnet antyder , kan paginerte rapporter kjøre på mange sider . De er satt opp i et fast format og kan tilpasses med nøyaktighet . Paginerte rapporter er .rdl-filer .
+# # # &lt; a name = &quot; maps-shape-maps &quot; &gt; &lt; / a &gt; Azure Maps : Figurkart
+Det siste du må bestemme deg for er hvilken klassifiseringstype som skal være standard .
+# # &lt; a name = &quot; add-images-to-your-report &quot; &gt; &lt; / a &gt; Legg til bilder i rapporten
+- Direktespørring støttes ikke
+title : Virtuell spørsmål og svar-analytiker i iOS-apper – Power BI
+# &lt; a name = &quot; manage-update-and-delete-organizational-content-packs &quot; &gt; &lt; / a &gt; Administrere , oppdatere og slette organisatoriske innholdspakker
+Hvis et heltall brukes sammen med valutadata i en addisjon , konverteres begge verdiene til REELL , og resultatene returneres som REELLE .
+# # &lt; a name = &quot; cross-highlighting-with-matrix-visuals &quot; &gt; &lt; / a &gt; Kryssutheving med matrisevisualobjekt
+Modellen inneholder ingen DAX-beregninger .
+4 . Velg å motta varsler over eller under en verdi , og skriv inn verdien .
+&gt; Denne videoen bruker en eldre versjon av Power BI Desktop .
+Tabellen nedenfor viser en oversikt over vurderinger i forbindelse med betaling og bruk per kapasitet .
+I en rapporttema-JSON-fil definerer du bare formateringen du vil endre . Det du ikke angir i JSON-filen tilbakestilles til standardinnstillingene i Power BI Desktop .
+Hvis du bruker et av de berørte temaene og ikke trenger å endre tekstinnstillingene , kan du trygt bruke de andre fanene i dialogboksen , uten problemer . Hvis du imidlertid vil bruke tekstklassene med ett av de berørte temaene , har du et par alternativer :
+Hvis brukerinformasjon utelates , refererer bruksrapporten til brukere uten navn .
+2 . Hvis Power BI-administratoren ikke har gitt deg tillatelse til å opprette innebyggingskoder , kan det være du må kontakte vedkommende .
+title : Veiledning for toveisrelasjoner
+1 . Objekter på lerretet
+# # &lt; a name = &quot; use-sql-server-profiler &quot; &gt; &lt; / a &gt; Bruk SQL Server Profiler
+Hvis du vil gjøre matrisedataene lettere å lese ved å utheve dataene du vil fremheve , kan du slå sammen celler eller dele horisontalt og vertikalt og bruke formatering på data- og gruppeoverskrifter .
+1 . Fest også kartet til instrumentbordet for økonomieksemplet .
+# # # &lt; a name = &quot; managing-impact-on-a-premium-capacity &quot; &gt; &lt; / a &gt; Behandle påvirkning på en Premium-kapasitet
+- visualiseringer for R og Python støttes ikke .
+I denne opplæringen går vi nærmere inn på datasett for detaljhandelanalyse og oppretter et par viktige visualiseringer .
+Se en video om dette trinnet :
+- Opprette et arbeidsområde i Power BI uten å opprette en Microsoft 365-gruppe .
+Bare eieren av instrumentbordet eller rapporten kan aktivere eller deaktivere videredeling .
+5 . Du advares mot å importere et egendefinert visualobjekt , som vist i illustrasjonen nedenfor :
+- Kan ikke bruke funksjoner som skanner eller returnerer en tabell
+# # &lt; a name = &quot; search-within-the-analytics-pane &quot; &gt; &lt; / a &gt; Søk i Analyse-ruten
+# # # &lt; a name = &quot; case-2-parent-and-its-subsidiaries-or-affiliates &quot; &gt; &lt; / a &gt; Tilfelle 2 : overordnede og dets representasjons kontorer eller tilknyttede selskaper
+Når gjeste brukerne åpner rapporten , ser de bare salg fra gruppe A :
+title : Bruk Analyser-funksjonen for å forklare fluktueringer i visualobjekter for rapporter
+- Modelldata er bare like oppdaterte som den siste oppdateringen , så importmodeller må vanligvis oppgraderes jevnlig
+Hvis brukeren ikke har valgt ett produkt eller én enkelt butikk , returnerer målet : « Velg ett produkt og CTRL + klikk for også å velge én enkelt butikk . »
+title : Få Excel-data til å fungere bra med spørsmål og svar i Power BI
+# &lt; a name = &quot; visualizations-in-power-bi-reports &quot; &gt; &lt; / a &gt; Visualiseringer i Power BI-rapporter
+&gt; * Laste ned eksempeldata .
+Følg disse trinnene for å bruke tjenestekontohaver og en program-ID med innebygd analyse :
+* En tokenvariabel for å kalle operasjoner :
+&gt; Denne datatilordningen kan ikke brukes sammen med andre datatilordninger . Den er ment å redusere data til én numerisk verdi .
+4 . Nå kan du bruke datatypen du valgte og opprette et tegneområde :
+&gt; Disse flimringene er mer synlige på IE og med et stort antall nettvisninger , og anbefales ikke for iOS .
+* Når man skal sammenligne flere mål med ulike verdiområder
+&#124; Angi varsler &#124; Kan opprette varsler for å sende deg e-post når instrumentbordet oppfyller visse betingelser &#124; Nei &#124;
+1 . Velg USA-blokken på trekartet for å se hvordan den uthever relaterte verdier i andre visualobjekter .
+Hold samtalen i gang etter at Spørsmål og svar viser resultatene . Bruk de interaktive funksjonene til visualiseringen og Spørsmål og svar for å få mer innsikt .
+# # &lt; a name = &quot; using-wallpaper-in-power-bi-reports &quot; &gt; &lt; / a &gt; Å bruke bakgrunn i Power BI-rapporter
+Denne modellutformingen støtter produksjon av følgende rapportutforming .
+Når du oppretter datamodeller , kan det hende at du må skrive et DAX-uttrykk som teller tabellrader . Tabellen kan være en modelltabell eller et uttrykk som returnerer en tabell .
+Bruk en av følgende strategier for å unngå dette problemet :
+- Manuell oppdatering .
+Nå ser du hvordan den ser ut på en utskrevet side .
+For å få en større visning av visualobjektene kan du minimere * * redigeringsprogrammet for Python-skript * * .
+Hvis du vil opprette en hurtigmeny , må du lagre `host`-objektet i egenskapene for visualobjektet og kalle `createSelectionManager`-metoden til Opprett valgbehandling for å vise en hurtigmeny ved å bruke API for Power BI-visualobjekter .
+Power BI velger e-postadressen som brukes basert på følgende sekvens :
+# # &lt; a name = &quot; working-with-filter-cards &quot; &gt; &lt; / a &gt; Arbeid med filterkort
+# # # &lt; a name = &quot; use-canvas-or-webgl &quot; &gt; &lt; / a &gt; Bruk lerret eller WebGL
+Si at du har et diagram som summerer solgte enheter for ulike produkter , men du ønsker å finne gjennomsnittet .
+* Aliqui vokser , men produktvolumet deres er lavt sammenlignet med vårt .
+Oppdateringer kan være trege eller oppfattes som trege ( som det forrige vanlige spørsmålet tar for seg ) .
+title : Opprette og publisere en organisatorisk innholdspakke – Power BI
+Det kan ta opptil tre uker å sertifisere en oppdatert versjon av et Power BI-visualobjekt .
+2 . Skriv inn søkeord , og velg deretter et kartlag . I dette eksemplet har vi valgt kongressdistrikter for USA .
+# # # &lt; a name = &quot; automl-model-report &quot; &gt; &lt; / a &gt; Rapport for AutoML-modell
+* Bruker samhandler med visualobjektet direkte .
+# # &lt; a name = &quot; cant-drag-anything-to-the-pivottable-values-area-no-measures &quot; &gt; &lt; / a &gt; Kan ikke dra noe til verdiområdet i Pivottabell ( ingen mål )
+Her ser vi at oppretteren av instrumentbordet allerede har lagt til en generell kommentar . Alle som har tilgang til dette instrumentbordet , kan se denne kommentaren .
+2 . Lagringskontoen må opprettes i den samme AAD-leieren som Power BI-leieren .
+* Kommersielle logoer kan ikke vises i visningsmodus .
+- Løsning for CustomHeaders-standardverdi som forårsaker feil ved innebygging i rapporter

@@ -1,0 +1,60 @@
+============================================
+Numbers
+============================================
+
+04000
+400
+100n
+0xffffffffn
+0b00111n
+0o1234n
+0xa_b_c
+0o1_1
+0b1_000_000
+1_2_3
+12_3.4_5e6_7
+0b1_000_000n
+01
+00000123
+
+---
+
+(program
+  (expression_statement (number))
+  (expression_statement (number))
+  (expression_statement (number))
+  (expression_statement (number))
+  (expression_statement (number))
+  (expression_statement (number))
+  (expression_statement (number))
+  (expression_statement (number))
+  (expression_statement (number))
+  (expression_statement (number))
+  (expression_statement (number))
+  (expression_statement (number))
+  (expression_statement (number))
+  (expression_statement (number)))
+
+============================================
+Unicode identifiers
+============================================
+
+const últimaVez = 1
+{ 県: '大阪府', '': '' }
+
+---
+
+(program
+  (lexical_declaration (variable_declarator (identifier) (number)))
+  (expression_statement (object (pair (property_identifier) (string)) (pair (string) (string)))))
+
+==========================================
+Strings containing comment-like content
+==========================================
+
+"//ok\n//what"
+
+---
+
+(program
+  (expression_statement (string (escape_sequence))))

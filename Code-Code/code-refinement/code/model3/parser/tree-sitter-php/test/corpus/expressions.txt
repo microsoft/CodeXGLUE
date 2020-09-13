@@ -1,0 +1,497 @@
+==========================
+Dynamic variable names
+==========================
+
+<?php
+$$k = $v;
+
+---
+
+(program
+  (php_tag)
+  (expression_statement (assignment_expression
+    (dynamic_variable_name (variable_name (name)))
+    (variable_name (name)))))
+
+==========================
+Exponentiation
+==========================
+
+<?php
+$foo = 2 ** 2;
+
+---
+
+(program
+  (php_tag)
+  (expression_statement (assignment_expression
+    (variable_name (name))
+    (exponentiation_expression (integer) (integer)))))
+
+==========================
+Reserved Identifiers as Names
+==========================
+
+<?php
+$foo = new self();
+
+---
+
+(program
+  (php_tag)
+  (expression_statement (assignment_expression
+    (variable_name (name))
+    (object_creation_expression
+      (qualified_name (name))
+      (arguments)))))
+
+==========================
+Unary op with assignment expressions
+==========================
+
+<?php
+
+if (!$foo = $bar) {
+}
+
+---
+(program
+  (php_tag)
+  (if_statement
+    (parenthesized_expression (unary_op_expression
+      (assignment_expression
+        (variable_name (name))
+        (variable_name (name)))))
+    (compound_statement)))
+
+===============================
+Capitalized logical operators
+===============================
+
+<?php
+a() OR b() XOR C();
+
+---
+
+(program
+  (php_tag)
+  (expression_statement
+    (binary_expression
+      (function_call_expression (qualified_name (name)) (arguments))
+      (binary_expression
+        (function_call_expression (qualified_name (name)) (arguments))
+        (function_call_expression (qualified_name (name)) (arguments))))))
+
+=================================
+Cast expressions in assignments
+=================================
+
+<?php
+
+(int) $foo = (integer)$bar;
+(int) $foo += 5;
+
+---
+
+(program
+  (php_tag)
+  (expression_statement
+    (assignment_expression
+      (cast_expression (cast_type) (variable_name (name)))
+      (cast_expression (cast_type) (variable_name (name)))))
+   (expression_statement
+    (augmented_assignment_expression
+      (cast_expression (cast_type) (variable_name (name)))
+      (integer))))
+
+==========================
+Reserved words as function calls
+==========================
+
+<?php
+$foo = new static($this->current());
+
+---
+
+(program
+  (php_tag)
+  (expression_statement (assignment_expression
+    (variable_name (name))
+    (object_creation_expression
+      (qualified_name (name))
+      (arguments
+        (member_call_expression (variable_name (name)) (name) (arguments)))))))
+
+==========================
+Scoped self call expressions
+==========================
+
+<?php
+
+m::self();
+
+---
+
+(program
+  (php_tag)
+  (expression_statement
+    (scoped_call_expression
+      (qualified_name (name))
+      (name)
+      (arguments))))
+
+==========================
+Destructuring
+==========================
+
+<?php
+[$error, $canonicalized] = Json::canonicalize($actual);
+
+---
+
+(program
+  (php_tag)
+  (expression_statement (assignment_expression
+    (array_creation_expression
+      (array_element_initializer (variable_name (name)))
+      (array_element_initializer (variable_name (name))))
+    (scoped_call_expression
+      (qualified_name (name))
+      (name)
+      (arguments (variable_name (name)))))))
+
+================================================================
+Precedence of assignment, `or`, `xor`, and `and`
+================================================================
+
+<?php
+$x = true and false;
+$x = true or false;
+$x = true xor false;
+$x = true and true or true xor true and true;
+
+---
+
+(program
+  (php_tag)
+  (expression_statement
+    (binary_expression
+      (assignment_expression
+        (variable_name (name))
+        (boolean))
+      (boolean)))
+  (expression_statement
+    (binary_expression
+      (assignment_expression
+        (variable_name (name))
+        (boolean))
+      (boolean)))
+  (expression_statement
+    (binary_expression
+      (assignment_expression
+        (variable_name (name))
+        (boolean))
+      (boolean)))
+  (expression_statement
+    (binary_expression
+      (binary_expression
+        (assignment_expression
+          (variable_name (name))
+          (boolean))
+        (boolean))
+      (binary_expression
+        (boolean)
+        (binary_expression
+          (boolean)
+          (boolean))))))
+
+============================================
+Associativity of conditional
+============================================
+
+<?php
+true ? false : true ? "a" : "b";
+?>
+
+---
+
+(program
+  (php_tag)
+  (expression_statement
+    (conditional_expression
+      (conditional_expression
+        (boolean)
+        (boolean)
+        (boolean))
+      (string)
+      (string)))
+  (text_interpolation))
+
+=================================================
+Associativity of null-coalescence
+=================================================
+
+<?php
+NULL ?? NULL ?? 1;
+?>
+
+---
+
+(program
+  (php_tag)
+  (expression_statement
+    (binary_expression
+      (null)
+      (binary_expression
+        (null)
+        (integer))))
+  (text_interpolation))
+
+=========================================
+Associativity of negation
+=========================================
+
+<?php
+-1 * -1;
+!$i instanceof object;
+?>
+
+---
+
+(program
+  (php_tag)
+  (expression_statement
+    (binary_expression
+      (unary_op_expression
+        (integer))
+      (unary_op_expression
+        (integer))))
+  (expression_statement
+    (unary_op_expression
+      (binary_expression
+        (variable_name
+          (name))
+        (qualified_name
+          (name)))))
+  (text_interpolation))
+
+====================================
+Augmented assignment
+====================================
+
+<?php
+$i .= $j = "a";
+$i += $j += 3;
+$i .= "a" . "b";
+"a" . $i .= "b";
+?>
+
+---
+
+(program
+  (php_tag)
+  (expression_statement
+    (augmented_assignment_expression
+      (variable_name
+        (name))
+      (assignment_expression
+        (variable_name
+          (name))
+        (string))))
+  (expression_statement
+    (augmented_assignment_expression
+      (variable_name
+        (name))
+      (augmented_assignment_expression
+        (variable_name
+          (name))
+        (integer))))
+  (expression_statement
+    (augmented_assignment_expression
+      (variable_name
+        (name))
+      (binary_expression
+        (string)
+        (string))))
+  (expression_statement
+    (binary_expression
+      (string)
+      (augmented_assignment_expression
+        (variable_name
+          (name))
+        (string))))
+  (text_interpolation))
+
+=======================================
+Nested assignemnts
+==============================
+
+<?php
+$c = $d[0] = $d[2] = $i;
+
+---
+
+(program
+  (php_tag)
+  (expression_statement
+    (assignment_expression
+      (variable_name (name))
+      (assignment_expression
+        (subscript_expression (variable_name (name)) (integer))
+        (assignment_expression
+          (subscript_expression (variable_name (name)) (integer))
+          (variable_name (name)))))))
+
+===============================================
+All binary op precedence levels
+===============================================
+
+<?php
+1 or 2 xor 3 and $i .= 4 ?? 5 || 6 && 7 | 8 ^ 9 & 10 == 11 > 12 << 13 + 14 * (int) 15 instanceof foo;
+(int) 1 instanceof foo / 3 - 4 >> 5 <= 6 <=> 7 & 8 ^ 9 | 10 && 11 || 12 ?? $i += 13 and 14 xor 15 or 16;
+
+---
+
+(program
+  (php_tag)
+  (expression_statement
+    (binary_expression
+      (integer)
+      (binary_expression
+        (integer)
+        (binary_expression
+          (integer)
+          (augmented_assignment_expression
+            (variable_name
+              (name))
+            (binary_expression
+              (integer)
+              (binary_expression
+                (integer)
+                (binary_expression
+                  (integer)
+                  (binary_expression
+                    (integer)
+                    (binary_expression
+                      (integer)
+                      (binary_expression
+                        (integer)
+                        (binary_expression
+                          (integer)
+                          (binary_expression
+                            (integer)
+                            (binary_expression
+                              (integer)
+                              (binary_expression
+                                (integer)
+                                (binary_expression
+                                  (integer)
+                                  (binary_expression
+                                    (cast_expression
+                                      (cast_type)
+                                      (integer))
+                                    (qualified_name
+                                      (name)))))))))))))))))))
+  (expression_statement
+    (binary_expression
+      (binary_expression
+        (binary_expression
+          (binary_expression
+            (binary_expression
+              (binary_expression
+                (binary_expression
+                  (binary_expression
+                    (binary_expression
+                      (binary_expression
+                        (binary_expression
+                          (binary_expression
+                            (binary_expression
+                              (binary_expression
+                                (binary_expression
+                                  (cast_expression
+                                    (cast_type)
+                                    (integer))
+                                  (qualified_name
+                                    (name)))
+                                (integer))
+                              (integer))
+                            (integer))
+                          (integer))
+                        (integer))
+                      (integer))
+                    (integer))
+                  (integer))
+                (integer))
+              (integer))
+            (augmented_assignment_expression
+              (variable_name
+                (name))
+              (integer)))
+          (integer))
+        (integer))
+      (integer))))
+
+==============================
+Arrays
+==============================
+
+<?php
+print_r([1, 2, 3]);
+print_r(["foo" => "orange", "bar" => "apple", "baz" => "lemon"]);
+?>
+
+---
+
+(program
+  (php_tag)
+  (expression_statement (function_call_expression
+    (qualified_name (name))
+    (arguments
+      (array_creation_expression
+        (array_element_initializer (integer))
+        (array_element_initializer (integer))
+        (array_element_initializer (integer))))))
+  (expression_statement
+    (function_call_expression
+      (qualified_name (name))
+      (arguments
+        (array_creation_expression
+          (array_element_initializer (string) (string))
+          (array_element_initializer (string) (string))
+          (array_element_initializer (string) (string))))))
+  (text_interpolation))
+
+===============================================
+Anonymous functions
+===============================================
+
+<?php
+header_register_callback(
+  function() { echo "sent";}
+);
+
+ob_start(function($buffer) use (&$storage) { $storage .= $buffer; }, 20);
+
+---
+
+(program
+  (php_tag)
+  (expression_statement
+    (function_call_expression
+      function: (qualified_name (name))
+      arguments: (arguments
+        (anonymous_function_creation_expression
+          parameters: (formal_parameters)
+          body: (compound_statement
+            (echo_statement (string)))))))
+  (expression_statement
+    (function_call_expression
+      function: (qualified_name (name))
+      arguments: (arguments
+        (anonymous_function_creation_expression
+          parameters: (formal_parameters (simple_parameter name: (variable_name (name))))
+          (anonymous_function_use_clause (variable_name (name)))
+          body: (compound_statement (expression_statement (augmented_assignment_expression
+            left: (variable_name (name))
+            right: (variable_name (name))))))
+        (integer)))))

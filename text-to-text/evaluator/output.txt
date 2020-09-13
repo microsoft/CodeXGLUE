@@ -1,4 +1,0 @@
-- Warehouse , channel , rack , stock , and Inbox location
-3 . Click BOM versions .
-4 . Expand the Details section .
-On the * * Change catalogs * * page , employees can easily select any store , or you can search products across all stores .

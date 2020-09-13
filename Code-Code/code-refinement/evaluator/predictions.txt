@@ -1,0 +1,10 @@
+private TYPE_1 getType ( TYPE_2 VAR_1 ) { return new TYPE_1 ( VAR_2 , VAR_1 ) ; }
+public TYPE_1 METHOD_1 ( ) { TYPE_1 output = VAR_1 [ VAR_2 ] ; if ( ( VAR_2 ) > 0 ) { VAR_2 = ( VAR_2 ) - 1 ; } else { } return output ; }
+public void METHOD_1 ( java.lang.Class VAR_1 ) { android.content.Intent intent = new android.content.Intent ( this , VAR_1 ) ; METHOD_2 ( intent ) ; }
+public void METHOD_1 ( ) { METHOD_3 ( ) ; if ( ( VAR_3 ) != null ) VAR_3 . METHOD_1 ( ) ; }
+public void METHOD_1 ( ) { }
+public TYPE_1 METHOD_1 ( TYPE_1 VAR_1 ) { VAR_2 [ ( ( VAR_1 . position ) + 1 ) ] = isEmpty ( ) ; VAR_1 . position += 1 ; VAR_3 = METHOD_2 ( VAR_1 . position ) ; return VAR_1 ; }
+private static boolean METHOD_1 ( final int status ) { return status == ( VAR_1 ) ; }
+public void METHOD_1 ( int VAR_1 , TYPE_1 VAR_2 ) { this . VAR_3 . add ( VAR_1 , VAR_2 ) ; }
+public char getColor ( ) throws java.io.IOException { VAR_1 . METHOD_1 ( ( STRING_1 + "\n" ) ) ; java.lang.String response = VAR_2 . METHOD_2 ( ) ; return response . METHOD_3 ( 0 ) ; }
+public void METHOD_1 ( final java.lang.String ... VAR_1 ) { if ( VAR_1 != null ) format . METHOD_2 ( ) . METHOD_3 ( VAR_2 , VAR_1 ) ; }

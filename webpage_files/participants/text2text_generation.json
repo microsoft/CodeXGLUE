@@ -1,0 +1,31 @@
+{"code":0,"msg":"","count":1000,
+  "data":[{"Rank":1,
+        "id":101,
+        "Model":"Pretrained Transformer",
+        "Organization":"CodeXGLUE Team",
+        "Submission Date":"2020-08-30",
+        "EN->DA":69.46,
+        "EN->LV":55.92,
+        "EN->NO":70.23,
+        "EN->ZH":73.54,
+        "DA->EN":75.85,
+        "LV->EN":70.73,
+        "NO->EN":74.63,
+        "ZH->EN":67.01
+      },
+      {"Rank":2,
+        "id":102,
+        "Model":"Transformer",
+        "Organization":"CodeXGLUE Team",
+        "Submission Date":"2020-08-30",
+        "EN->DA":61.60,
+        "EN->LV":44.06,
+        "EN->NO":61.17,
+        "EN->ZH":64.69,
+        "DA->EN":64.88,
+        "LV->EN":56.50,
+        "NO->EN":63.05,
+        "ZH->EN":55.29
+      }
+      
+        ]}

@@ -1,0 +1,48 @@
+{"code":0,"msg":"","count":1000,
+  "data":[{"Rank":1,
+        "id":101,
+        "Model":"Transformer w/ CodeGPT(12L)",
+        "Organization":"CodeXGLUE Team",
+        "Submission Date":"2020-08-30",
+        "EM":18.25,
+        "BLEU":28.69,
+        "CodeBLEU":25.69
+      },
+      {"Rank":2,
+        "id":102,
+        "Model":"Transformer w/ GPT-2(12L)",
+        "Organization":"CodeXGLUE Team",
+        "Submission Date":"2020-08-30",
+        "EM":17.35,
+        "BLEU":25.37,
+        "CodeBLEU":22.79
+      },
+      {"Rank":3,
+        "id":103,
+        "Model":"Iyer-Simp+200 idoms",
+        "Organization":"CodeXGLUE Team",
+        "Submission Date":"2020-08-30",
+        "EM":"12.20",
+        "BLEU":"26.60",
+        "CodeBLEU":""
+      },
+      {"Rank":4,
+        "id":104,
+        "Model":"Seq2Action+MAML",
+        "Organization":"CodeXGLUE Team",
+        "Submission Date":"2020-08-30",
+        "EM":10.05,
+        "BLEU":"24.40",
+        "CodeBLEU":20.99
+      },
+      {"Rank":5,
+        "id":105,
+        "Model":"Seq2Seq",
+        "Organization":"CodeXGLUE Team",
+        "Submission Date":"2020-08-30",
+        "EM":3.05,
+        "BLEU":21.31,
+        "CodeBLEU":17.61
+      }
+      
+        ]}

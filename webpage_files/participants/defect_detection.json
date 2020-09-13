@@ -1,0 +1,30 @@
+{"code":0,"msg":"","count":1000,
+  "data":[{"Rank":1,
+        "id":101,
+        "Model":"CodeBERT",
+        "Organization":"CodeXGLUE Team",
+        "Submission Date":"2020-08-30",
+        "Accuracy":62.08
+      },
+      {"Rank":2,
+        "id":102,
+        "Model":"RoBERTa",
+        "Organization":"CodeXGLUE Team",
+        "Submission Date":"2020-08-30",
+        "Accuracy":61.05
+      },
+      {"Rank":3,
+        "id":103,
+        "Model":"TextCNN",
+        "Organization":"CodeXGLUE Team",
+        "Submission Date":"2020-08-30",
+        "Accuracy":60.69
+      },
+      {"Rank":4,
+        "id":104,
+        "Model":"BiLSTM",
+        "Organization":"CodeXGLUE Team",
+        "Submission Date":"2020-08-30",
+        "Accuracy":59.37
+      }
+        ]}

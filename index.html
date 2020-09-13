@@ -102,40 +102,441 @@
 				</div>
 			</div>
 		</section>
+
+
 		<section id="leaderboard" class="bg-light">
 			<div class="container">
-	
-				<table id="demo" lay-filter="test"></table>
+				<div class="row">
+					<div class="table-responsive">
 
-				<script src="./webpage_files/layui/layui.js"></script>
-				<script>
-					layui.use('table', function(){
-						var myTable = layui.table;
-				
-						//第一个实例
-						myTable.render({
-							elem: '#demo'
-							,height: 312
-							,url: './webpage_files/participants/user.json' //数据接口
-							,page: false //开启分页
-							,cols: [[{align: 'center', title: '地址', colspan: 3}
-								,{align: 'center', title: '123', colspan: 6}],
-								[ //表头
-								{field: 'id', title: 'ID', width:80, sort: true}
-								,{field: 'username', title: '用户名', width:80}
-								,{field: 'sex', title: '性别', width:80, sort: true}
-								,{field: 'city', title: '城市', width:80}
-								,{field: 'sign', title: '签名', width: 177}
-								,{field: 'experience', title: '积分', width: 80, sort: true}
-								,{field: 'score', title: '评分', width: 80, sort: true}
-								,{field: 'classify', title: '职业', width: 80}
-								,{field: 'wealth', title: '财富', width: 135, sort: true}
-							]]
-						});
-				
-					});
-				</script>
-				
+						<h2>Leaderboard-Overall</h2>
+							<table id="LB-overall" lay-filter="test"></table>
+							<script src="./webpage_files/layui/layui.js"></script>
+							<script>
+								layui.use('table', function(){
+									var myTable = layui.table;
+							
+									//第一个实例
+									myTable.render({
+										elem: '#LB-overall'
+										,height: 312
+										,url: 'webpage_files/participants/overall.json' //数据接口
+										,page:  false//开启分页
+										,cols: [[ //表头
+											{field: 'Rank', title: 'Rank', align: 'right', width: 70}
+											,{field: 'Model', title: 'Model', width: 220}
+											,{field: 'Organization', title: 'Organization', width: 150}
+											,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
+																					
+											,{field: 'completion', title: 'completion', width: 120, sort: true}
+											,{field: 'clone detection', title: 'clone detection', width: 150, sort: true}
+											,{field: 'translation', title: 'translation', width: 120, sort: true}
+											,{field: 'defect detection', title: 'defect detections', width: 150, sort: true}
+											,{field: 'refinement', title: 'refinements', width: 120, sort: true}
+											,{field: 'cloze test', title: 'cloze test', width: 120, sort: true}
+											,{field: 'natural languag search', title: 'natural languag search', width: 180, sort: true}
+											,{field: 'code summarization', title: 'code summarization', width: 150, sort: true}
+											,{field: 'code change summarization', title: 'code change summarization', width: 180, sort: true}
+											,{field: 'documentation translation', title: 'documentation translation', width: 180, sort: true}
+											,{field: 'Overall Score-1 (ACC)', title: 'Overall Score-1 (ACC)', width: 150, sort: true}
+											,{field: 'Overall Score-2 (MRR)', title: 'Overall Score-2 (MRR)', width: 150, sort: true}
+											,{field: 'Overall Score-3 (BLEU)', title: 'Overall Score-3 (BLEU)', width: 150, sort: true}
+										]]
+									});
+								});
+							</script>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="table-responsive">
+						<h2>Leaderboard-CloneCompletion</h2>
+							<table id="LB-CloneCompletion" lay-filter="test"></table>
+							<script>
+								layui.use('table', function(){
+									var myTable = layui.table;
+	
+									//第一个实例
+									myTable.render({
+										elem: '#LB-CloneCompletion'
+										,height: 312
+										,url: 'webpage_files/participants/code_completion.json' //数据接口
+										,page:  false//开启分页
+										,cols: [[{align: 'center', title: '', colspan: 4}
+												,{align: 'center', title: 'CodeCompletion-line', colspan: 4}
+												,{align: 'center', title: 'CodeCompletion-line', colspan: 2}],
+											[ //表头
+											{field: 'Rank', title: 'Rank', align: 'right', width: 70}
+											,{field: 'Model', title: 'Model', width: 220}
+											,{field: 'Organization', title: 'Organization', width: 150}
+											,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
+	
+											,{field: 'py150-EM', title: 'py150-EM', width: 150, sort: true}
+											,{field: 'py150-ES', title: 'py150-ES', width: 150, sort: true}
+											,{field: 'java-EM', title: 'java-EM', width: 150, sort: true}
+											,{field: 'java-ES', title: 'java-ES', width: 150, sort: true}
+											,{field: 'py150-Acc', title: 'py150-Acc', width: 150, sort: true}
+											,{field: 'java-Acc', title: 'java-Acc', width: 150, sort: true}
+										]]
+									});
+								});
+							</script>
+					</div>
+				</div>
+			</div>
+	
+		<div class="container">
+			<div class="row">
+				<div class="table-responsive">
+					<h2>Leaderboard-CloneDetection</h2>
+						<table id="LB-CloneDetection" lay-filter="test"></table>
+						<script>
+							layui.use('table', function(){
+								var myTable = layui.table;
+
+								//第一个实例
+								myTable.render({
+									elem: '#LB-CloneDetection'
+									,height: 312
+									,url: 'webpage_files/participants/clone_detection.json' //数据接口
+									,page:  false//开启分页
+									,cols: [[{align: 'center', title: '', colspan: 4}
+											,{align: 'center', title: 'BigCloneBench', colspan: 3}
+											,{align: 'center', title: 'POJ-104', colspan: 1, colGroup:true}],
+										[ //表头
+										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
+										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Organization', title: 'Organization', width: 150}
+										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
+
+										,{field: 'Precision', title: 'Precision', width: 140, sort: true}
+										,{field: 'Recall', title: 'Recall', width: 140, sort: true}
+										,{field: 'F1', title: 'F1', width: 140, sort: true}
+										,{field: 'MAP(%)', title: 'MAP(%)', width: 150, sort: true}
+									]]
+								});
+							});
+						</script>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="table-responsive">
+					<h2>Leaderboard-ClozeTest</h2>
+						<table id="LB-ClozeTest" lay-filter="test"></table>
+						<script>
+							layui.use('table', function(){
+								var myTable = layui.table;
+
+								//第一个实例
+								myTable.render({
+									elem: '#LB-ClozeTest'
+									,height: 312
+									,url: 'webpage_files/participants/cloze_test.json' //数据接口
+									,page:  false//开启分页
+									,cols: [[{align: 'center', title: '', colspan: 4}
+											,{align: 'center', title: 'ClozeTest-all', colspan: 7}
+											,{align: 'center', title: 'ClozeTest-maxmin', colspan: 7}],
+										[ //表头
+										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
+										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Organization', title: 'Organization', width: 150}
+										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
+
+										,{field: 'aAll', title: 'All', width: 70, sort: true}
+										,{field: 'aRuby', title: 'Ruby', width: 80, sort: true}
+										,{field: 'aJavaScript', title: 'JavaScript', width: 110, sort: true}
+										,{field: 'aGo', title: 'Go', width: 70, sort: true}
+										,{field: 'aPython', title: 'Python', width: 90, sort: true}
+										,{field: 'aJava', title: 'Java', width: 80, sort: true}
+										,{field: 'aPHP', title: 'PHP', width: 80, sort: true}
+
+										,{field: 'mAll', title: 'All', width: 70, sort: true}
+										,{field: 'mRuby', title: 'Ruby', width: 80, sort: true}
+										,{field: 'mJavaScript', title: 'JavaScript', width: 110, sort: true}
+										,{field: 'mGo', title: 'Go', width: 70, sort: true}
+										,{field: 'mPython', title: 'Python', width: 90, sort: true}
+										,{field: 'mJava', title: 'Java', width: 80, sort: true}
+										,{field: 'mPHP', title: 'PHP', width: 80, sort: true}
+									]]
+								});
+							});
+						</script>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="table-responsive">
+					<h2>Leaderboard-NL-code-search</h2>
+						<table id="LB-NL-code-search" lay-filter="test"></table>
+						<script>
+							layui.use('table', function(){
+								var myTable = layui.table;
+
+								//第一个实例
+								myTable.render({
+									elem: '#LB-NL-code-search'
+									,height: 312
+									,url: 'webpage_files/participants/code_search.json' //数据接口
+									,page:  false//开启分页
+									,cols: [[{align: 'center', title: '', colspan: 4}
+											,{align: 'center', title: 'NL-code-search-Adv', colspan: 1, colGroup:true}
+											,{align: 'center', title: 'NL-code-search-WebQuery', colspan: 4}],
+										[ //表头
+										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
+										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Organization', title: 'Organization', width: 150}
+										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
+
+										,{field: 'MRR', title: 'MRR', width: 160, sort: true}
+										,{field: 'Acc-WebQuery', title: 'Acc-WebQuery', width: 140, sort: true}
+										,{field: 'F1-WebQuery', title: 'F1-WebQuery', width: 140, sort: true}
+										,{field: 'Acc-StaQC', title: 'Acc-StaQC', width: 120, sort: true}
+										,{field: 'F1-StaQC', title: 'F1-StaQC', width: 120, sort: true}
+									]]
+								});
+							});
+						</script>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="table-responsive">
+					<h2>Leaderboard-DefectDetection</h2>
+						<table id="LB-DefectDetection" lay-filter="test"></table>
+						<script>
+							layui.use('table', function(){
+								var myTable = layui.table;
+
+								//第一个实例
+								myTable.render({
+									elem: '#LB-DefectDetection'
+									,height: 312
+									,url: 'webpage_files/participants/defect_detection.json' //数据接口
+									,page:  false//开启分页
+									,cols: [
+										[ //表头
+										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
+										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Organization', title: 'Organization', width: 150}
+										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
+
+										,{field: 'Accuracy', title: 'Accuracy', width: 550, sort: true}
+									]]
+								});
+							});
+						</script>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="table-responsive">
+					<h2>Leaderboard-CodeRefinement</h2>
+						<table id="LB-CodeRefinement" lay-filter="test"></table>
+						<script>
+							layui.use('table', function(){
+								var myTable = layui.table;
+
+								//第一个实例
+								myTable.render({
+									elem: '#LB-CodeRefinement'
+									,height: 312
+									,url: 'webpage_files/participants/code_refinement.json' //数据接口
+									,page:  false//开启分页
+									,cols: [[{align: 'center', title: '', colspan: 4}
+											,{align: 'center', title: 'small test set', colspan: 3}
+											,{align: 'center', title: 'medium test set', colspan: 3}],
+										[ //表头
+										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
+										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Organization', title: 'Organization', width: 150}
+										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
+
+										,{field: 'sBLEU', title: 'BLEU', width: 90, sort: true}
+										,{field: 'sAcc(%)', title: 'Acc(%)', width: 90, sort: true}
+										,{field: 'sCodeBLEU', title: 'CodeBLEU', width: 120, sort: true}
+
+										,{field: 'mBLEU', title: 'BLEU', width: 90, sort: true}
+										,{field: 'mAcc(%)', title: 'Acc(%)', width: 90, sort: true}
+										,{field: 'mCodeBLEU', title: 'CodeBLEU', width: 120, sort: true}
+									]]
+								});
+							});
+						</script>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="table-responsive">
+					<h2>Leaderboard-Code2Code Translation</h2>
+						<table id="LB-Code2CodeTranslation" lay-filter="test"></table>
+						<script>
+							layui.use('table', function(){
+								var myTable = layui.table;
+
+								//第一个实例
+								myTable.render({
+									elem: '#LB-Code2CodeTranslation'
+									,height: 312
+									,url: 'webpage_files/participants/code2code_translation.json' //数据接口
+									,page:  false//开启分页
+									,cols: [[{align: 'center', title: '', colspan: 4}
+											,{align: 'center', title: 'Java to C#', colspan: 3}
+											,{align: 'center', title: 'C# to Java', colspan: 3}],
+										[ //表头
+										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
+										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Organization', title: 'Organization', width: 150}
+										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
+
+										,{field: 'jBLEU', title: 'BLEU', width: 90, sort: true}
+										,{field: 'jAcc(%)', title: 'Acc(%)', width: 90, sort: true}
+										,{field: 'jCodeBLEU', title: 'CodeBLEU', width: 120, sort: true}
+										
+										,{field: 'cBLEU', title: 'BLEU', width: 90, sort: true}
+										,{field: 'cAcc(%)', title: 'Acc(%)', width: 90, sort: true}
+										,{field: 'cCodeBLEU', title: 'CodeBLEU', width: 120, sort: true}
+									]]
+								});
+							});
+						</script>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="table-responsive">
+					<h2>Leaderboard-Code2Text Generation</h2>
+						<table id="LB-Code2TextGeneration" lay-filter="test"></table>
+						<script>
+							layui.use('table', function(){
+								var myTable = layui.table;
+
+								//第一个实例
+								myTable.render({
+									elem: '#LB-Code2TextGeneration'
+									,height: 312
+									,url: 'webpage_files/participants/code2text_generation.json' //数据接口
+									,page:  false//开启分页
+									,cols: [[ //表头
+										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
+										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Organization', title: 'Organization', width: 150}
+										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
+
+										,{field: 'All', title: 'All', width: 70, sort: true}
+										,{field: 'Ruby', title: 'Ruby', width: 80, sort: true}
+										,{field: 'JavaScript', title: 'JavaScript', width: 110, sort: true}
+										,{field: 'Go', title: 'Go', width: 70, sort: true}
+										,{field: 'Python', title: 'Python', width: 90, sort: true}
+										,{field: 'Java', title: 'Java', width: 90, sort: true}
+										,{field: 'PHP', title: 'PHP', width: 80, sort: true}
+									]]
+								});
+							});
+						</script>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="table-responsive">
+					<h2>Leaderboard-Text2Code Generation</h2>
+						<table id="LB-Text2CodeGeneration" lay-filter="test"></table>
+						<script>
+							layui.use('table', function(){
+								var myTable = layui.table;
+
+								//第一个实例
+								myTable.render({
+									elem: '#LB-Text2CodeGeneration'
+									,height: 312
+									,url: 'webpage_files/participants/text2code_generation.json' //数据接口
+									,page:  false//开启分页
+									,cols: [[{align: 'center', title: '', colspan: 4}
+											,{align: 'center', title: 'Text2Code Generation', colspan: 3}],
+										[ //表头
+										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
+										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Organization', title: 'Organization', width: 150}
+										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
+
+										,{field: 'EM', title: 'EM', sort: true}
+										,{field: 'BLEU', title: 'BLEU', sort: true}
+										,{field: 'CodeBLEU', title: 'CodeBLEU', sort: true}
+										
+									]]
+									,done: function (res, curr, count) {
+										$('.layui-table').css("width","100%");
+										$("th[data-field='bar']").css("border-right",'none');
+									}
+								});
+							});
+						</script>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="table-responsive">
+					<h2>Leaderboard-Text2Text Generation</h2>
+						<table id="LB-Text2TextGeneration" lay-filter="test"></table>
+						<script>
+							layui.use('table', function(){
+								var myTable = layui.table;
+
+								//第一个实例
+								myTable.render({
+									elem: '#LB-Text2TextGeneration'
+									,height: 312
+									,url: 'webpage_files/participants/text2text_generation.json' //数据接口
+									,page:  false//开启分页
+									,cols: [[{align: 'center', title: '', colspan: 4}
+											,{align: 'center', title: 'Translation Direction', colspan: 8}],
+										[ //表头
+										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
+										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Organization', title: 'Organization', width: 150}
+										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
+
+										,{field: 'EN->DA', title: 'EN->DA', width: 100, sort: true}
+										,{field: 'EN->LV', title: 'EN->LV', width: 100, sort: true}
+										,{field: 'EN->NO', title: 'EN->NO', width: 100, sort: true}
+										,{field: 'EN->ZH', title: 'EN->ZH', width: 100, sort: true}
+										,{field: 'DA->EN', title: 'DA->EN', width: 100, sort: true}
+										,{field: 'LV->EN', title: 'LV->EN', width: 100, sort: true}
+										,{field: 'NO->EN', title: 'NO->EN', width: 100, sort: true}
+										,{field: 'ZH->EN', title: 'ZH->EN', width: 100, sort: true}
+										
+									]]
+								});
+							});
+						</script>
+				</div>
+			</div>
+		</div>
+
+
+					
+	
 
 		</section>
 		<section id="contact" class="bg-light">

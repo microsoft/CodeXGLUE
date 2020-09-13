@@ -4,7 +4,7 @@ We present two kinds of ClozeTest: ClozeTest-maxmin and ClozeTest-all. Here is t
 
 ## Task Description
 
-Cloze tests are widely adopted in natural languages to evaluate models' understanding of language, which can be formulated as a multi-choice classification problem. 
+Cloze tests are widely adopted in Natural Languages Processing to evaluate the performance of the trained language models. The task is aimed to predict the answers for the blank with the context of the blank, which can be formulated as a multi-choice classification problem. 
 
 Here we present the two cloze test datasets in code domain with six different programming languages: ClozeTest-maxmin and ClozeTest-all. Each instance in the dataset contains a masked code function, its docstring and the target word. 
 

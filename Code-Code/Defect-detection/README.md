@@ -129,7 +129,7 @@ python run.py \
 python ../evaluator/evaluator.py -a ../dataset/test.jsonl -p saved_models/predictions.txt
 ```
 
-{'Acc': 0.6255490483162518}
+{'Acc': 0.6207906295754027}
 
 ## Result
 
@@ -140,5 +140,5 @@ The results on the test set are shown as below:
 | BiLSTM   |   59.37   |
 | TextCNN  |   60.69   |
 | RoBERTa  |   61.05   |
-| CodeBERT | **62.55** |
+| CodeBERT | **62.08** |
 

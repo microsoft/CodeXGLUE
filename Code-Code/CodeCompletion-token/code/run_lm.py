@@ -41,7 +41,6 @@ try:
 except:
     from tensorboardX import SummaryWriter
 
-from fuzzywuzzy import fuzz
 from transformers import (WEIGHTS_NAME, AdamW, get_linear_schedule_with_warmup,
                           BertConfig, BertForMaskedLM, BertTokenizer,
                           GPT2Config, GPT2LMHeadModel, GPT2Tokenizer,
@@ -432,94 +431,36 @@ def eval_acc(args, model, tokenizer, file_type='test'):
             logger.info(f"{step} are done!")
             logger.info(f"{total}, {correct/total}")
 
-    pickle.dumps(total_pred, open(os.path.join(args.output_dir, "preds.pkl"), "wb"))
-    pickle.dumps(total_gt, open(os.path.join(args.output_dir, "gts.pkl"), "wb"))
+    # pickle.dump(total_pred, open(os.path.join(args.output_dir, "preds.pkl"), "wb"))
+    # pickle.dump(total_gt, open(os.path.join(args.output_dir, "gts.pkl"), "wb"))
+
+    saved_file = os.path.join(args.output_dir, "predictions.txt")
+    total_samples = post_process(args, total_pred, total_gt, open(os.path.join(args.data_dir, f"{file_type}.txt")).readlines(), saved_file)
+    logger.info(f"Eval on {total_samples}, saved at {saved_file}")
     
     return total, correct
 
-def eval_line_completion(args, model, tokenizer, file_type='test'):
-    """
-    Evaluate line level code completion on exact match and edit similarity.
+def post_process(args, preds, gts, true_gts, saved_file):
+    wf = open(saved_file, "w")
 
-    It is recommanded to use single GPU because it could not be batched.
-    """
-    dataset = lineDataset(tokenizer, args, logger, file_type=file_type, block_size=args.block_size-100)
-    test_sampler = SequentialSampler(dataset)
-    test_dataloader = DataLoader(dataset, sampler=test_sampler, batch_size=1)
-    model.to(args.device)
-    # model.zero_grad()
-    model.eval()
-
-    def repackage_hidden(h):
-        """Wraps hidden states in new Tensors, to detach them from their history."""
-        if isinstance(h, torch.Tensor):
-            return h.detach()
-        else:
-            return tuple(repackage_hidden(v) for v in h)
-
-    if args.langs == "python":
-        break_ids = [tokenizer.sep_token_id]
-    else:
-        break_ids = [tokenizer.convert_tokens_to_ids('Ġ;'), tokenizer.convert_tokens_to_ids('Ġ}')]
-    preds = []
-    gts = []
-    edit_sim = 0.0
-    em = 0.0
-    for step, (inputs, gt) in enumerate(test_dataloader):
-        inputs = inputs.to(args.device)
-        with torch.no_grad():
-            beam_size = 5
-            m = torch.nn.LogSoftmax(dim=-1)
-            outputs = model(inputs[:, :-1])[1]
-            p = []       
-            zero = torch.cuda.LongTensor(1).fill_(0)
-            for i in range(inputs.shape[0]):
-                if args.model_type == "rnn":
-                    past_hidden = tuple(x[:, i:i+1].expand(-1, beam_size, -1).contiguous() for x in outputs)
-                else:
-                    past_hidden = [x[:, i:i+1].expand(-1, beam_size, -1, -1, -1) for x in outputs]
-                beam = Beam(beam_size, inputs[i][-1].cpu().data, break_ids)
-                input_ids = None
-                for _ in range(100): 
-                    if beam.done():
-                        break
-                    input_ids = beam.getCurrentState()
-                    if args.model_type == "rnn":
-                        outputs = model(input_ids, hidden=repackage_hidden(past_hidden))
-                    else:
-                        outputs = model(input_ids, past=past_hidden)
-                    out = m(outputs[0][:, -1, :]).data
-                    beam.advance(out)
-                    if args.model_type == "rnn":
-                        past_hidden = tuple(x.data.index_select(1, beam.getCurrentOrigin()).contiguous() for x in outputs[1])
-                    else:
-                        past_hidden = [x.data.index_select(1, beam.getCurrentOrigin()) for x in outputs[1]]
-                hyp = beam.getHyp(beam.getFinal())
-                pred = beam.buildTargetTokens(hyp)[:beam_size]
-
-                pred = [torch.cat([x.view(-1) for x in p]+[zero]*(100-len(p))).view(1,-1) for p in pred]
-                p.append(torch.cat(pred, 0).unsqueeze(0))
-            p = torch.cat(p, 0)
-            for pred in p:
-                t = pred[0].cpu().numpy()
-                t = list(t)
-                if 0 in t:
-                    t = t[:t.index(0)]
-                text = tokenizer.decode(t, clean_up_tokenization_spaces=False).strip("<EOL>").strip()
-                # print(text)
-                # print(gt[0])
-                # exit()
-                preds.append(text)
-                gts.append(gt[0])
-                edit_sim += fuzz.ratio(text, gt[0])
-                em += 1 if text == gt[0] else 0
-        if step % args.logging_steps == 0:
-            logger.info(f"{step} are done!")
-            
-    logger.info(f"Test {len(preds)} samples")
-    logger.info(f"Edit sim: {edit_sim/len(preds)}, EM: {em/len(preds)}")
-    # print(len(preds))
-    # print(edit_sim/len(preds), em/len(preds))
+    cnt = 0
+    new_gt = []
+    new_pred = []
+    for i, (pred,gt) in enumerate(zip(preds,gts)):
+        if gt in ["", "<pad>"]:
+            continue
+        new_gt.append(gt)
+        new_pred.append(pred.replace(" ", ""))
+        if gt == "</s>":
+            gt_str = " ".join(new_gt)
+            pred_str = " ".join(new_pred)
+            assert gt_str == true_gts[cnt].strip(), f"{cnt} sample gt_str != true_gt"
+            wf.write(pred_str+"\n")
+            cnt += 1
+            new_gt = []
+            new_pred = []
+    
+    return cnt
 
 
 def main():
@@ -560,8 +501,6 @@ def main():
                         help="Whether to run training.")
     parser.add_argument("--do_eval", action='store_true',
                         help="Whether to run eval on the dev set.")
-    parser.add_argument("--eval_line", action='store_true',
-                        help="Whether to run eval for line completion.")
     parser.add_argument("--evaluate_during_training", action='store_true',
                         help="Run evaluation during training at each logging step.")
     parser.add_argument("--do_lower_case", action='store_true',
@@ -700,7 +639,7 @@ def main():
     # Load pre-trained model
     config_class, model_class, tokenizer_class = MODEL_CLASSES[args.model_type]
     pretrained = args.pretrain_dir
-    if pretrained and os.path.exists(pretrained) and os.listdir(pretrained):
+    if pretrained:
         tokenizer = tokenizer_class.from_pretrained(pretrained, do_lower_case=args.do_lower_case, sep_token='<EOL>', bos_token='<s>', eos_token='</s>', pad_token='<pad>', unk_token='<|UNKNOWN|>')
         if args.model_type == "rnn":
             model = model_class(len(tokenizer), 768, 768, 1)
@@ -743,10 +682,6 @@ def main():
         # logger.info(f"Dev total tokens: {dev_total}, accuracy: {dev_cr/dev_total}")
         test_total, test_cr = eval_acc(args, model, tokenizer, 'test')
         logger.info(f"Test total tokens: {test_total}, accuracy: {test_cr/test_total}")
-    
-    # Only works on single GPU
-    if args.eval_line:
-        eval_line_completion(args, model, tokenizer, file_type="test")
 
 
 if __name__ == "__main__":

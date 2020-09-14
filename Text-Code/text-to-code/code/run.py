@@ -220,7 +220,7 @@ def train(args, train_dataset, model, tokenizer, fh, pool):
                         #     tb_writer.add_scalar('eval_{}'.format(key), value, global_step)
                         #     logger.info("  %s = %s", key, round(value,4))
                         # output_dir = os.path.join(args.output_dir, '{}-{}-{}'.format(checkpoint_prefix, global_step, round(results['perplexity'],4)))
-                        dev_bleu, dev_EM = eval_bleu(args, model, tokenizer, file_type='dev', num=500)
+                        dev_bleu, dev_EM = eval_bleu(args, model, tokenizer, file_type='dev', num=100)
                         logger.info(f"dev bleu: {dev_bleu}, dev EM: {dev_EM}")
                         output_dir = os.path.join(args.output_dir, '{}-{}-{}'.format(checkpoint_prefix, global_step, round(dev_bleu,2)))
                         if dev_bleu > best_bleu:
@@ -404,6 +404,9 @@ def eval_bleu(args, model, tokenizer, file_type='test', num=2000):
             f.write(pred+'\n')
             f1.write(gold+'\n')   
             EM.append(pred.split() == gold.split())
+    
+    if file_type == "test":
+        return 0, 0
 
     bleu_score = round(_bleu(os.path.join(args.output_dir, f"{file_type}.gold"), os.path.join(args.output_dir, f"{file_type}.output")), 2)
     EM = round(np.mean(EM) * 100, 2)
@@ -449,6 +452,8 @@ def main():
                         help="Whether to run training.")
     parser.add_argument("--do_eval", action='store_true',
                         help="Whether to run eval on the dev set.")
+    parser.add_argument("--do_infer", action='store_true',
+                        help="Whether to run inference on test set.")
     parser.add_argument("--evaluate_during_training", action='store_true',
                         help="Run evaluation during training at each logging step.")
     parser.add_argument("--do_lower_case", action='store_true',
@@ -585,7 +590,7 @@ def main():
     # Load pre-trained model
     config_class, model_class, tokenizer_class = MODEL_CLASSES[args.model_type]
     pretrained = args.pretrain_dir
-    if pretrained and os.path.exists(pretrained) and os.listdir(pretrained):
+    if pretrained:
         tokenizer = tokenizer_class.from_pretrained(pretrained, do_lower_case=args.do_lower_case, bos_token='<s>', eos_token='</s>', pad_token='<pad>', unk_token='<|UNKNOWN|>', sep_token='concode_elem_sep')
         logger.info(tokenizer.encode("<s> hello world <pad> </s>"))
         model = model_class.from_pretrained(pretrained)
@@ -616,15 +621,14 @@ def main():
         global_step, tr_loss = train(args, train_dataset, model, tokenizer, fh, pool)
         logger.info(" global_step = %s, average loss = %s", global_step, tr_loss)
 
-    if args.local_rank not in [-1, 0]:
-        torch.distributed.barrier()
-
     if args.do_eval:            # only works on 1 GPU
+        dev_bleu, dev_EM = eval_bleu(args, model, tokenizer, file_type='dev', num=2000)
+        logger.info(f"dev bleu: {dev_bleu}, dev EM: {dev_EM}")
+
+    if args.do_infer:            # only works on 1 GPU
         test_bleu, test_EM = eval_bleu(args, model, tokenizer, file_type='test', num=2000)
         logger.info(f"test bleu: {test_bleu}, test EM: {test_EM}")
 
-    if args.local_rank == 0:
-        torch.distributed.barrier()
 
 if __name__ == "__main__":
     main()

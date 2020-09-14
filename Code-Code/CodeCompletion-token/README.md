@@ -92,12 +92,14 @@ The accuracy on this line is 62.5%
 
 ## Pipeline
 
-We provide a pipeline that fine-tunes our pre-trained GPT-2 model on this task.
+We provide a pipeline that fine-tunes our pre-trained GPT-2 model, which we called CodeGPT, on this task.
+
+CodeGPT is a "dessert" GPT-2 model which is pre-trained on CodeSearchNet dataset w/o OpenAI GPT-2 initializing. So it has its own vocabulary on code. We provide two versions of CodeGPT, one is on java, the other is on python. You can easily load them by huggingface transformers.
 
 ### Dependency
 
 - python 3.6 or 3.7
-- torch==1.4.0
+- torch>=1.4.0
 - transformers>=2.5.0
 - fuzzywuzzy
 
@@ -108,7 +110,7 @@ To fine-tune CodeGPT on javaCorpus dataset for code completion in multi-GPU on a
 LANG=java                       # set python for py150
 DATADIR=../dataset/javaCorpus/token_completion
 OUTPUTDIR=../save/javaCorpus
-PRETRAINDIR=../pretrained/CodeGPT/java/checkpoint
+PRETRAINDIR=microsoft/CodeGPT-small-java        # microsoft/CodeGPT-small-py for py150
 LOGFILE=completion_javaCorpus.log
 PER_NODE_GPU=YOUR_GPU_NUM       # modify YOUR_GPU_NUM
 
@@ -123,13 +125,13 @@ python -m torch.distributed.launch --nproc_per_node=$PER_NODE_GPU run_lm.py \
         --do_train \
         --node_index 0 \
         --gpu_per_node $PER_NODE_GPU \
-        --learning_rate=5e-5 \
+        --learning_rate=8e-5 \
         --weight_decay=0.01 \
         --evaluate_during_training \
-        --per_gpu_train_batch_size=4 \
-        --per_gpu_eval_batch_size=12 \
-        --gradient_accumulation_steps=2 \
-        --num_train_epochs=50 \
+        --per_gpu_train_batch_size=2 \
+        --per_gpu_eval_batch_size=4 \
+        --gradient_accumulation_steps=4 \
+        --num_train_epochs=5 \            # We set 20 epochs for py150
         --logging_steps=100 \
         --save_steps=1000 \
         --overwrite_output_dir \
@@ -137,17 +139,17 @@ python -m torch.distributed.launch --nproc_per_node=$PER_NODE_GPU run_lm.py \
         --not_pretrain
 ```
 
-It might take 20 hours for fine-tuning on py150 dataset and 2 hours on java Corpus on 4 32G NVIDIA V100.
+It might take 75 hours for fine-tuning on py150 dataset and 8 hours on java Corpus on 2 NVIDIA P100.
 
-### Evaluation
+### Evaluation && Inference
 
-It's recommanded to run evaluation on single GPU
+It's recommanded to run evaluation on single GPU. The predictions will be saved at `$OUTPUTDIR/predictions.txt`
 
 ```shell
 LANG=java                       # set python for py150
 DATADIR=../dataset/javaCorpus/token_completion
 OUTPUTDIR=../save/javaCorpus
-PRETRAINDIR=../save/javaCorpus/checkpoint
+PRETRAINDIR=../save/javaCorpus/checkpoint       # directory of your saved model
 LOGFILE=completion_javaCorpus_eval.log
 
 python -u run_lm.py \
@@ -164,7 +166,7 @@ python -u run_lm.py \
         --seed=42 
 ```
 
-It might take 60 minutes for inferencing on py150 dataset and 15 minutes on java Corpus on a single 16G NVIDIA P100.
+It might take 60 minutes for inferencing on py150 dataset and 15 minutes on java Corpus on a single NVIDIA P100.
 
 
 ## Result
@@ -177,8 +179,7 @@ It might take 60 minutes for inferencing on py150 dataset and 15 minutes on java
 | Transformer (Facebook, 6L) (Kim, 2020)                |    68.1    |
 | Transformer (12L)                                     |    73.46   |
 | Transformer w/ GPT-2 (12L)                            |    74.61   |
-| Transformer w/ CodeGPT (12L)                          |    75.19   |
-| Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |  **75.38** |
+| Transformer w/ CodeGPT (12L)                          |  **75.19** |
 
 ### javaCorpus
 
@@ -187,9 +188,26 @@ It might take 60 minutes for inferencing on py150 dataset and 15 minutes on java
 | BPE+LSTM (ICSE 2020*)                                 |    56.02   |
 | Transformer (12L)                                     |    64.16   |
 | Transformer w/ GPT-2 (12L)                            |    74.89   |
-| Transformer w/ CodeGPT (12L)                          |    76.45   |
-| Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |  **77.31** |
+| Transformer w/ CodeGPT (12L)                          |  **76.45** |
 
 \* We reproduced his experiment since this paper only reported MRR on the first 1,000,000 tokens in test set.
 
+## Reference
 
+<pre><code>@article{raychev2016probabilistic,
+  title={Probabilistic Model for Code with Decision Trees},
+  author={Raychev, Veselin and Bielik, Pavol and Vechev, Martin},
+  journal={ACM SIGPLAN Notices},
+  pages={731--747},
+  year={2016},
+  publisher={ACM New York, NY, USA}
+}</code></pre>
+
+<pre><code>@inproceedings{allamanis2013mining,
+  title={Mining Source Code Repositories at Massive Scale using Language Modeling},
+  author={Allamanis, Miltiadis and Sutton, Charles},
+  booktitle={2013 10th Working Conference on Mining Software Repositories (MSR)},
+  pages={207--216},
+  year={2013},
+  organization={IEEE}
+}</code></pre>

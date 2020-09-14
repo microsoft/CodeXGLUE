@@ -67,7 +67,9 @@ public void inc ( ) { this . add ( 1 ) ; }
 
 ## Pipeline
 
-We provide a pipeline that fine-tunes our pre-trained GPT-2 model on this task.
+We provide a pipeline that fine-tunes our pre-trained GPT-2 model, which we called CodeGPT,  on this task. 
+
+CodeGPT is a "dessert" GPT-2 model which is pre-trained on CodeSearchNet dataset w/o OpenAI GPT-2 initializing. So it has its own vocabulary on code. We provide two versions of CodeGPT, one is on java, the other is on python. You can easily load them by huggingface transformers.
 
 ## Dependency
 
@@ -82,7 +84,7 @@ To fine-tune CodeGPT on concode dataset for text2code generation on multi-GPUs a
 LANG=java
 DATADIR=../dataset/concode
 OUTPUTDIR=../save/concode
-PRETRAINDIR=../pretrained/CodeGPT/java/checkpoint
+PRETRAINDIR=microsoft/CodeGPT-small-java    # will download pre-trained CodeGPT model
 LOGFILE=text2code_concode.log
 PER_NODE_GPU=YOUR_GPU_NUM       # modify YOUR_GPU_NUM
 
@@ -100,21 +102,21 @@ python -m torch.distributed.launch --nproc_per_node=$PER_NODE_GPU run.py \
         --learning_rate=4e-5 \
         --weight_decay=0.01 \
         --evaluate_during_training \
-        --per_gpu_train_batch_size=8 \
+        --per_gpu_train_batch_size=6 \
         --per_gpu_eval_batch_size=12 \
-        --gradient_accumulation_steps=1 \
-        --num_train_epochs=50 \
-        --logging_steps=200 \
-        --save_steps=1000 \
+        --gradient_accumulation_steps=2 \
+        --num_train_epochs=30 \
+        --logging_steps=100 \
+        --save_steps=5000 \
         --overwrite_output_dir \
         --seed=42
 ```
 
-It might take 15 hours for fine-tuning on 4 32G NVIDIA V100.
+It might take 45 hours for fine-tuning on 2 NVIDIA P100.
 
 ### Evaluation
 
-It's recommanded to run evaluation on single GPU
+It's recommanded to run evaluation on dev set on single GPU. The predictions on dev set will be saved in `$OUTPUTDIR/dev.output`.
 
 ```shell
 LANG=java
@@ -136,7 +138,31 @@ python -u run.py \
         --seed=42
 ```
 
-It might take 40 minutes for inferencing on a single 16G NVIDIA P100.
+### Inference
+
+It's recommanded to run inference on test set on single GPU. The predictions will be saved in `$OUTPUTDIR/test.output`.
+
+```shell
+LANG=java
+DATADIR=../dataset/concode
+OUTPUTDIR=../save/concode
+PRETRAINDIR=../save/concode/checkpoint
+LOGFILE=text2code_concode_infer.log
+
+python -u run.py \
+        --data_dir=$DATADIR \
+        --langs=$LANG \
+        --output_dir=$OUTPUTDIR \
+        --pretrain_dir=$PRETRAINDIR \
+        --log_file=$LOGFILE \
+        --model_type=gpt2 \
+        --block_size=512 \
+        --do_infer \
+        --logging_steps=100 \
+        --seed=42
+```
+
+It might take 40 minutes for inferencing on a single NVIDIA P100.
 
 ## Result
 
@@ -148,6 +174,14 @@ The results on concode test set are shown as below:
 | Seq2Action+MAML (ACL 2019)                            |  10.05  |  24.40   |   20.99  |
 | Iyer-Simp+200 idoms (EMNLP 2020)                      |  12.20  |  26.60   |     -    |
 | Transformer w/ GPT-2 (12L)                            |  17.35  |  25.37   |   22.79  |
-| Transformer w/ CodeGPT (12L)                          |  18.25  |  28.69   |   25.69  |
-| Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |**20.10**|**32.79** | **27.74**|
+| Transformer w/ CodeGPT (12L)                          |**18.25**|**28.69** | **25.69**|
+
+## Reference
+
+<pre><code>@article{iyer2018mapping,
+  title={Mapping language to code in programmatic context},
+  author={Iyer, Srinivasan and Konstas, Ioannis and Cheung, Alvin and Zettlemoyer, Luke},
+  journal={arXiv preprint arXiv:1808.09588},
+  year={2018}
+}</code></pre>
 

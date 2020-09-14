@@ -90,7 +90,9 @@ We provide a pipeline that evaluate line completion on our fine-tuned GPT-2 mode
 - transformers>=2.5.0
 - fuzzywuzzy
 
-### Evaluation
+### Inference
+
+It's recommanded to run inference on single GPU. The predictions will be saved at `$OUTPUTDIR/predictions_line.txt`
 
 ```shell
 LANG=java                       # set python for py150
@@ -112,7 +114,7 @@ python -u run_lm.py \
         --seed=42 
 ```
 
-It might take 45 minutes for inferencing on py150 dataset and 15 minutes on java Corpus on a single 16G NVIDIA P100.
+It might take 45 minutes for inferencing on py150 dataset and 15 minutes on java Corpus on a single NVIDIA P100.
 
 ## Result
 
@@ -123,8 +125,7 @@ It might take 45 minutes for inferencing on py150 dataset and 15 minutes on java
 | BPE+LSTM                                              |    17.93   |       50.05       |
 | Transformer (12L)                                     |    36.80   |       67.66       |
 | Transformer w/ GPT-2 (12L)                            |    38.96   |       69.29       |
-| Transformer w/ CodeGPT (12L)                          |    39.37   |       70.02       |
-| Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |  **40.48** |     **70.48**     |
+| Transformer w/ CodeGPT (12L)                          |  **39.37** |     **70.02**     |
 
 ### javaCorpus
 
@@ -133,6 +134,25 @@ It might take 45 minutes for inferencing on py150 dataset and 15 minutes on java
 | BPE+LSTM                                              |    10.30   |       41.55       |
 | Transformer (12L)                                     |    15.33   |       50.39       |
 | Transformer w/ GPT-2 (12L)                            |    24.30   |       60.70       |
-| Transformer w/ CodeGPT (12L)                          |    25.30   |       61.54       |
-| Transformer w/ CodeGPT (domain adapt from GPT-2, 12L) |  **26.43** |     **63.03**     |
+| Transformer w/ CodeGPT (12L)                          |  **25.30** |     **61.54**     |
 
+
+## Reference
+
+<pre><code>@article{raychev2016probabilistic,
+  title={Probabilistic Model for Code with Decision Trees},
+  author={Raychev, Veselin and Bielik, Pavol and Vechev, Martin},
+  journal={ACM SIGPLAN Notices},
+  pages={731--747},
+  year={2016},
+  publisher={ACM New York, NY, USA}
+}</code></pre>
+
+<pre><code>@inproceedings{allamanis2013mining,
+  title={Mining Source Code Repositories at Massive Scale using Language Modeling},
+  author={Allamanis, Miltiadis and Sutton, Charles},
+  booktitle={2013 10th Working Conference on Mining Software Repositories (MSR)},
+  pages={207--216},
+  year={2013},
+  organization={IEEE}
+}</code></pre>

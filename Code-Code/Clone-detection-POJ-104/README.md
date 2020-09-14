@@ -168,7 +168,7 @@ python ../evaluator/extract_answers.py -c ../dataset/test.jsonl -o saved_models/
 python ../evaluator/evaluator.py -a saved_models/answers.jsonl   -p saved_models/predictions.jsonl 
 ```
 
-{'MAP': 0.8674}
+{'MAP': 0.8429}
 
 ## Result
 
@@ -182,5 +182,5 @@ The results on the test set are shown as below:
 | Aroma-Dot        |   52.08   |
 | Aroma-Cos        |   55.12   |
 | MISIM-GNN        |   82.45   |
-| CodeBERT         | **86.74** |
+| CodeBERT         | **84.29** |
 

@@ -121,7 +121,7 @@ python run.py \
 python ../evaluator/evaluator.py -a ../dataset/test.txt -p saved_models/predictions.txt
 ```
 
-{'Recall': 0.9682320983785608, 'Prediction': 0.9629657681566349, 'F1': 0.9655770570168183}
+{'Recall': 0.9687694680849823, 'Prediction': 0.9603497142447242, 'F1': 0.9645034096215225}
 
 ## Result
 
@@ -134,5 +134,5 @@ The results on the test set are shown as below:
 | CDLH       |   0.92    |   0.74    |   0.82    |
 | ASTNN      |   0.92    |   0.94    |   0.93    |
 | FA-AST-GMN |   0.96    |   0.94    |   0.95    |
-| CodeBERT   | **0.963** | **0.968** | **0.966** |
+| CodeBERT   | **0.960** | **0.969** | **0.965** |
 

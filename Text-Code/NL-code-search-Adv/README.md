@@ -162,7 +162,7 @@ python run.py \
 python ../evaluator/evaluator.py -a ../dataset/test.jsonl  -p saved_models/predictions.jsonl 
 ```
 
-{'MRR': 0.2719}
+{'MRR': 0.2891}
 
 ## Result
 
@@ -171,4 +171,4 @@ The results on the test set are shown as below:
 | Method   |     F1     |
 | -------- | :--------: |
 | Roberta  |   0.1833   |
-| CodeBERT | **0.2719** |
+| CodeBERT | **0.2891** |

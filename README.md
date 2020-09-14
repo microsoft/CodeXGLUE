@@ -31,6 +31,9 @@ Three pipelines including CodeBERT, CodeGPT and Encoder-Decoder are given below.
 9.	**Code summarization**. A model is tasked to generate natural language comments for a code. [Existing datasets](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Text/code-to-text) are included.  
 10.	**Documentation translation**. A model is tasked to translate code documentation between human languages. [A dataset](https://github.com/microsoft/CodeXGLUE/tree/main/Text-Text/text-to-text), focusing on low-resource multilingual translation, is newly created.
 
+# Training and Inference Time Cost
+We calculate the training and inference time cost for each dataset and share the results in the following table.
+![time-cost](https://github.com/microsoft/CodeXGLUE/blob/main/time-cost.jpg)
 # LICENSE
 Our codes follow MIT License.
 

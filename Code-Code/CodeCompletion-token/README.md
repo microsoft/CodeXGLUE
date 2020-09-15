@@ -139,13 +139,14 @@ python -m torch.distributed.launch --nproc_per_node=$PER_NODE_GPU run_lm.py \
         --not_pretrain
 ```
 
-It might take 75 hours for fine-tuning on py150 dataset and 8 hours on java Corpus on 2 NVIDIA P100.
+We stop at 50000 steps on py150 experiment, which takes 25 hours. And 2 hours with 2000 steps on java dataset. Both experiments run on 2 NVIDIA P100.
 
 ### Evaluation && Inference
 
 It's recommanded to run evaluation on single GPU. The predictions will be saved at `$OUTPUTDIR/predictions.txt`
 
 ```shell
+export CUDA_VISIBLE_DEVICES=0
 LANG=java                       # set python for py150
 DATADIR=../dataset/javaCorpus/token_completion
 OUTPUTDIR=../save/javaCorpus
@@ -166,7 +167,7 @@ python -u run_lm.py \
         --seed=42 
 ```
 
-It might take 60 minutes for inferencing on py150 dataset and 15 minutes on java Corpus on a single NVIDIA P100.
+It might take 60 minutes for inference on py150 dataset and 15 minutes on java Corpus on a single NVIDIA P100.
 
 
 ## Result
@@ -177,9 +178,9 @@ It might take 60 minutes for inferencing on py150 dataset and 15 minutes on java
 | ----------------------------------------------------- | :--------: |
 | LSTM (Kim, 2020)                                      |    58.0    |
 | Transformer (Facebook, 6L) (Kim, 2020)                |    68.1    |
-| Transformer (12L)                                     |    73.46   |
-| Transformer w/ GPT-2 (12L)                            |    74.61   |
-| Transformer w/ CodeGPT (12L)                          |  **75.19** |
+| Transformer (12L)                                     |    73.26   |
+| Transformer w/ GPT-2 (12L)                            |    74.22   |
+| Transformer w/ CodeGPT (12L)                          |  **74.93** |
 
 ### javaCorpus
 

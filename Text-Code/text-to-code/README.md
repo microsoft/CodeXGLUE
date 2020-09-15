@@ -99,7 +99,7 @@ python -m torch.distributed.launch --nproc_per_node=$PER_NODE_GPU run.py \
         --do_train \
         --node_index 0 \
         --gpu_per_node $PER_NODE_GPU \
-        --learning_rate=4e-5 \
+        --learning_rate=5e-5 \
         --weight_decay=0.01 \
         --evaluate_during_training \
         --per_gpu_train_batch_size=6 \
@@ -112,13 +112,14 @@ python -m torch.distributed.launch --nproc_per_node=$PER_NODE_GPU run.py \
         --seed=42
 ```
 
-It might take 45 hours for fine-tuning on 2 NVIDIA P100.
+We stop at 80000 steps, which takes 30 hours on 2 NVIDIA P100.
 
 ### Evaluation
 
 It's recommanded to run evaluation on dev set on single GPU. The predictions on dev set will be saved in `$OUTPUTDIR/dev.output`.
 
 ```shell
+export CUDA_VISIBLE_DEVICES=0
 LANG=java
 DATADIR=../dataset/concode
 OUTPUTDIR=../save/concode
@@ -143,6 +144,7 @@ python -u run.py \
 It's recommanded to run inference on test set on single GPU. The predictions will be saved in `$OUTPUTDIR/test.output`.
 
 ```shell
+export CUDA_VISIBLE_DEVICES=0
 LANG=java
 DATADIR=../dataset/concode
 OUTPUTDIR=../save/concode
@@ -162,7 +164,7 @@ python -u run.py \
         --seed=42
 ```
 
-It might take 40 minutes for inferencing on a single NVIDIA P100.
+It might take 40 minutes for inference on a single NVIDIA P100.
 
 ## Result
 

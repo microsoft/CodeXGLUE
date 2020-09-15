@@ -47,4 +47,3 @@ If you use this code or CodeXGLUE, please consider citing us.
   year={2020},
 }</code></pre>
 
-This research was conducted by Ambrosio Blanco, Colin Clement, Shao Kun Deng, Dawn Drain, Nan Duan, Shengyu Fu, Ming Gong, Daya Guo, Niklas Gustafsson, Junjie Huang, Daxin Jiang,  Shujie Liu, Shuai Lu, Shuo Ren, Linjun Shou, Neel Sundaresan, Alexey Svyatkovskiy, Duyu Tang, Michele Tufano, Lidong Zhou, Long Zhou, Ming Zhou (authors in alphabet order). 

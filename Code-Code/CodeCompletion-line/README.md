@@ -124,7 +124,7 @@ It might take 45 minutes for inferencing on py150 dataset and 15 minutes on java
 | Model                                                 |     EM     |  Edit similarity  |
 | ----------------------------------------------------- | :--------: | :---------------: |
 | BPE+LSTM                                              |    17.93   |       50.05       |
-| Transformer (12L)                                     |    36.60   |       67.46       |
+| Transformer (12L)                                     |    36.65   |       67.51       |
 | Transformer w/ GPT-2 (12L)                            |    38.55   |       68.94       |
 | Transformer w/ CodeGPT (12L)                          |  **39.11** |     **69.69**     |
 

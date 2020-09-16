@@ -112,7 +112,7 @@ python -m torch.distributed.launch --nproc_per_node=$PER_NODE_GPU run.py \
         --seed=42
 ```
 
-We stop at 80000 steps, which takes 30 hours on 2 NVIDIA P100.
+We stop at 60000 steps, which takes 22 hours on 2 NVIDIA P100.
 
 ### Evaluation
 

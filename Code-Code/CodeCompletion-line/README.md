@@ -95,6 +95,7 @@ We provide a pipeline that evaluate line completion on our fine-tuned GPT-2 mode
 It's recommanded to run inference on single GPU. The predictions will be saved at `$OUTPUTDIR/predictions_line.txt`
 
 ```shell
+export CUDA_VISIBLE_DEVICES=0
 LANG=java                       # set python for py150
 DATADIR=../dataset/javaCorpus/line_completion
 OUTPUTDIR=../save/javaCorpus
@@ -123,9 +124,9 @@ It might take 45 minutes for inferencing on py150 dataset and 15 minutes on java
 | Model                                                 |     EM     |  Edit similarity  |
 | ----------------------------------------------------- | :--------: | :---------------: |
 | BPE+LSTM                                              |    17.93   |       50.05       |
-| Transformer (12L)                                     |    36.80   |       67.66       |
-| Transformer w/ GPT-2 (12L)                            |    38.96   |       69.29       |
-| Transformer w/ CodeGPT (12L)                          |  **39.37** |     **70.02**     |
+| Transformer (12L)                                     |    36.65   |       67.51       |
+| Transformer w/ GPT-2 (12L)                            |    38.55   |       68.94       |
+| Transformer w/ CodeGPT (12L)                          |  **39.11** |     **69.69**     |
 
 ### javaCorpus
 

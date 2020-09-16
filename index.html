@@ -87,7 +87,7 @@
 					CodeXGLUE stands for General Language Understanding Evaluation benchmark for CODE. It includes 14 datasets for 10 diversified programming language tasks covering code-code (clone detection, defect detection, cloze test, code completion, code refinement, and code-to-code translation), text-code (natural language code search, text-to-code generation), code-text (code summarization) and text-text (documentation translation) scenarios. We provide three baseline models to support these tasks, including BERT-style pre-trained model (i.e. <a href="https://github.com/microsoft/CodeBERT">CodeBERT</a>) which is good at understanding problems, GPT-style pre-trained model which we call CodeGPT to support completion and generation problems, and Encoder-Decoder framework that supports sequence-to-sequence generation problems.
 					</p>
 				</div>
-				<div class="row">
+				<!-- <div class="row">
 					<h2>Terms and Conditions</h2>
 					<p>The CodeXGLUE datasets are intended for non-commercial research purposes only to promote advancement in the field of artificial intelligence and related areas, and is made available free of charge without extending any license or other intellectual property rights.  The dataset is provided “as is” without warranty and usage of the data has risks since we may not own the underlying rights in the documents.  We are not be liable for any damages related to use of the dataset.  Feedback is voluntarily given and can be used as we see fit. Upon violation of any of these terms, your rights to use the dataset will end automatically. <br> If you have questions about use of the dataset or any research outputs in your products or services, we encourage you to undertake your own independent legal review.  For other questions, please feel free to contact us.</p>            
 					<div class="checkbox">
@@ -99,7 +99,7 @@
 				</div>
 				<div class="row">
 					<button type="button" class="btn btn-primary btn-default" onclick="return addDownloadLink()">Submit</button>
-				</div>
+				</div> -->
 			</div>
 		</section>
 
@@ -545,20 +545,20 @@
 					<div class="col-md-12 mx-auto">
 						<h2>CodeXGLUE Submission Instructions</h2>
 						<p>Once you have built a model that meets your expectations on evaluation with the dev set, you can submit your test results to get official evaluation on the test set. To ensure the integrity of the official test results, we do not release the correct answers for test set to the public. To submit your model for official evaluation on the test set, follow the below steps:</p>
-						<ol>
-							<li>Generate your prediction output for the dev set.</li>
-							<li>Run the official evaluation methodologies found in the task specific git repo and verify your systems are running as expected.</li>
-							<li>Generate your prediction output for the test set and submit the following information by </script><a href="">emailing us</a>.</li>
+						<ol style="margin-left: 30px;">
+							<li>1. Generate your prediction output for the dev set.</li>
+							<li>2. Run the official evaluation methodologies found in the task specific git repo and verify your systems are running as expected.</li>
+							<li>3. Generate your prediction output for the test set and submit the following information by </script><a href="">emailing us</a>.</li>
 						</ol>
 						<p>Your email should include:</p>
-						<ol>
-							<li>Prediction results on test set. [Required]</li>
-							<li>Prediction results on dev set. [Recommended]</li>
-							<li>Individual/Team Name: Name of the individual or the team to appear in the leaderboard. [Required]</li>
-							<li>Individual/Team Institution: Name of the institution of the individual or the team to appear in the leaderboard. [Optional]</li>
-							<li>Model code: Training code for the model. [Recommended]</li>
-							<li>Model information: Name of the model/technique to appear in the leaderboard. [Required]</li>
-							<li>Paper Information: Name, Citation, URL of the paper if model is from a published work to appear in the leaderboard. [Optional]</li>
+						<ol style="margin-left: 30px;">
+							<li>1. Prediction results on test set. [Required]</li>
+							<li>2. Prediction results on dev set. [Recommended]</li>
+							<li>3. Individual/Team Name: Name of the individual or the team to appear in the leaderboard. [Required]</li>
+							<li>4. Individual/Team Institution: Name of the institution of the individual or the team to appear in the leaderboard. [Optional]</li>
+							<li>5. Model code: Training code for the model. [Recommended]</li>
+							<li>6. Model information: Name of the model/technique to appear in the leaderboard. [Required]</li>
+							<li>7. Paper Information: Name, Citation, URL of the paper if model is from a published work to appear in the leaderboard. [Optional]</li>
 						</ol>
 						<p>To avoid "P-hacking" we discourage too many submissions from the same group in a short period of time.</p>
            	 		</div>
@@ -570,10 +570,10 @@
 				<div class="row">
 					<div class="col-md-12 mx-auto">				
 						<h2>Relevant Links</h2>
-						<a class="btn btn-primary btn-md" style="margin-right: 3px;" href="https://github.com/microsoft/CodeXGLUE">CodeXGLUE Submission Guideline/Github</a>
+						<a class="btn btn-primary btn-md" style="margin-right: 3px;" href="https://github.com/microsoft/CodeXGLUE">CodeXGLUE Github</a>
 						<a class="btn btn-primary btn-md" style="margin-right: 3px;" href="5https://arxiv.org/abs/???">CodeXGLUE Paper</a>
-						<a class="btn btn-primary btn-md" style="margin-right: 3px;" href="5https://arxiv.org/abs/2002.0815">CodeBERT Paper</a>
-						<a class="btn btn-primary btn-md" style="margin-right: 3px;" href="https://github.com/microsoft/CodeBERT">Baselines</a>
+						<a class="btn btn-primary btn-md" style="margin-right: 3px;" href="https://arxiv.org/abs/2002.08155">CodeBERT Paper</a>
+						<a class="btn btn-primary btn-md" style="margin-right: 3px;" href="https://github.com/microsoft/CodeBERT">CodeBERT Github</a>
 						<div class="row">&nbsp;</div>
 						<div id="codexgluedata"> </div>
 					</div>
@@ -597,7 +597,7 @@
 						
 						</div>
 						<p></p>
-						<p>CodeXGLUE is built out of the following 9 datasets. Please ensure you cite all of them.</p>
+						<p>CodeXGLUE is built out of the following 12 datasets. Please ensure you cite all of them.</p>
 						<div style="overflow-x:scroll; white-space: nowrap">
 						
 <code>@article{husain2019codesearchnet,<br>
@@ -638,6 +638,28 @@
   booktitle={Proceedings of the 2014 International Symposium on Software Testing and Analysis},<br>
   pages={437--440},<br>
   year={2014}<br>
+}</code> <br><br>
+
+<code>@inproceedings{Zhou2019DevignEV,<br>
+	title={Devign: Effective Vulnerability Identification by Learning Comprehensive Program Semantics via Graph Neural Networks},<br>
+	author={YaQin Zhou and Shangqing Liu and Jingkai Siow and Xiaoning Du and Yang Liu},<br>
+	booktitle={NeurIPS},<br>
+	year={2019}<br>
+}</code> <br><br>
+
+<code>@inproceedings{Mou2016ConvolutionalNN,<br>
+	title={Convolutional Neural Networks over Tree Structures for Programming Language Processing},<br>
+	author={Lili Mou and G. Li and L. Zhang and T. Wang and Zhi Jin},<br>
+	booktitle={AAAI},<br>
+	year={2016}<br>
+}</code> <br><br>
+
+<code>@article{Wang2020DetectingCC,<br>
+	title={Detecting Code Clones with Graph Neural Network and Flow-Augmented Abstract Syntax Tree},<br>
+	author={Wenhan Wang and Ge Li and Bo Ma and Xin Xia and Zhi Jin},<br>
+	journal={2020 IEEE 27th International Conference on Software Analysis, Evolution and Reengineering (SANER)},<br>
+	year={2020},<br>
+	pages={261-271}<br>
 }</code> <br><br>
 
 <code>@article{iyer2018mapping,<br>

@@ -4,7 +4,7 @@
         "Model":"CodeBERT",
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",
-        "MRR":0.2891,
+        "MRR":0.2719,
         "Acc-WebQuery":0.504,
         "F1-WebQuery":0.572,
         "Acc-StaQC":0.827,

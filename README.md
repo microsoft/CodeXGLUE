@@ -14,6 +14,20 @@ To address this, Microsoft researchers from Microsoft Research Asia, Developer D
 * **code-text** (code summarization) 
 * **text-text** (documentation translation) 
 
+A brief summary of CodeXGLUE is given below, including tasks, datasets, language, sizes in various states, baseline systems, providers, and short definitions of each task. Datasets highlighted in BLUE are newly introduced. 
+![A brief summary of CodeXGLUE, including tasks, datasets, baseline systems, etc.](https://github.com/microsoft/CodeXGLUE/blob/main/tasks.jpg)
+
+
+
+We provide three baseline models to support these tasks, including BERT-style pre-trained model (i.e. [CodeBERT](https://github.com/microsoft/CodeBERT)) which is good at understanding problems, GPT-style pre-trained model which we call CodeGPT to support completion and generation problems, and Encoder-Decoder framework that supports sequence-to-sequence generation problems. 
+Three pipelines including CodeBERT, CodeGPT and Encoder-Decoder are given below.
+![baselines](https://github.com/microsoft/CodeXGLUE/blob/main/baselines.jpg)
+
+# Relevant Links
+[Leaderboard](https://microsoft.github.io/CodeXGLUE/) | [CodeXGLUE paper](arxivpaper-to-be-added)
+
+# Tasks and Datasets
+
 Below, we elaborate on the task definition for each task and newly introduced datasets that are highlighted in the table above.
 1.	Clone detection (BigCloneBench, POJ-104). A model is tasked with measure the semantic similarity between codes. Two existing datasets are included. One is for binary classification between codes and the other is for retrieving semantically similar code given code as the query. 
 
@@ -34,32 +48,6 @@ Below, we elaborate on the task definition for each task and newly introduced da
 9.	Code summarization (CodeSearchNet). A model is given the task to generate natural language comments for a code. Existing datasets are included.
   
 10.	Documentation translation (Microsoft Docs). A model is given the task to translate code documentation between human languages. A dataset, focusing on low-resource multilingual translation, is newly created.
-
-
-To address this, we introduce CodeXGLUE, a benchmark dataset and open challenge for code intelligence. It includes a collection of code intelligence tasks and a platform for model evaluation and comparison. CodeXGLUE stands for General Language Understanding Evaluation benchmark for CODE. It includes 14 datasets for 10 diversified code intelligence tasks covering code-code (clone detection, defect detection, cloze test, code completion, code refinement, and code-to-code translation), text-code (natural language code search, text-to-code generation), code-text (code summarization) and text-text (documentation translation) scenarios. With CodeXGLUE, we seek to support the development of models that can be applied to various code intelligence problems, and finally increase the development productivity for software developers.  
-
-A brief summary of CodeXGLUE is given below, including tasks, datasets, baseline systems, etc. Datasets highlighed in BLUE are newly introduced. 
-![A brief summary of CodeXGLUE, including tasks, datasets, baseline systems, etc.](https://github.com/microsoft/CodeXGLUE/blob/main/tasks.jpg)
-
-We provide three baseline models to support these tasks, including BERT-style pre-trained model (i.e. [CodeBERT](https://github.com/microsoft/CodeBERT)) which is good at understanding problems, GPT-style pre-trained model which we call CodeGPT to support completion and generation problems, and Encoder-Decoder framework that supports sequence-to-sequence generation problems. 
-Three pipelines including CodeBERT, CodeGPT and Encoder-Decoder are given below.
-![baselines](https://github.com/microsoft/CodeXGLUE/blob/main/baselines.jpg)
-
-# Relevant Links
-[Leaderboard](https://microsoft.github.io/CodeXGLUE/) | [CodeXGLUE paper](arxivpaper-to-be-added)
-
-# Tasks and Datasets
-
-1.	**Clone detection**. A model is tasked with measure the semantic similarity between codes. Two existing datasets are included. [One](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/Clone-detection-BigCloneBench) is for binary classification between codes and [the other](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/Clone-detection-POJ-104) is for retrieving semantically similar code given code as the query. 
-2.	**Defect detection**. A model is tasked with identifying whether a source code is an insecure code that may attack software systems, such as resource leaks, use-after-free vulnerabilities and DoS attack. [An existing dataset](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/Defect-detection) is included.
-3.	**Cloze test**. A model is tasked with predicting the masked token from a code, formulated as a multi-choice classification problem. Two datasets are newly created, [one](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/ClozeTest-all) with candidates from the (filtered) vocabulary and [the other](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/ClozeTest-maxmin) with candidates among “max” and “min”. 
-4.	**Code completion**. A model is tasked with predicting following tokens given contexts of codes. Both [token-level](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/CodeCompletion-token) and [line-level](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/CodeCompletion-line) completion are covered. Token-level task is analogous to language modeling, and we include two influential datasets here. Line-level datasets are newly created to test model’s ability to autocomplete a line. 
-5.	**Code translation**.  A model is tasked to translate the code in one programming language to the code in another one. [A dataset](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/code-to-code-trans) between Java and C# is newly created.
-6.	**Code search**. A model is tasked to measure the semantic similarity between text and code. In retrieval scenario, [a test set](https://github.com/microsoft/CodeXGLUE/tree/main/Text-Code/NL-code-search-Adv) is newly created where function names and variables in test sets are replaced to test the generalization ability of a model. In text-code classification scenario, [a test set](https://github.com/microsoft/CodeXGLUE/tree/main/Text-Code/NL-code-search-WebQuery) where natural language queries come from Bing query log is created to test on real user queries.
-7.	**Code refinement**. A model is tasked to try to automatically refine the code, which could be buggy or complex. [An existing dataset](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/code-refinement) is included.
-8.	**Text-to-code generation**. A model is tasked to generate a code given natural language description. [An existing dataset](https://github.com/microsoft/CodeXGLUE/tree/main/Text-Code/text-to-code) is included.
-9.	**Code summarization**. A model is tasked to generate natural language comments for a code. [Existing datasets](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Text/code-to-text) are included.  
-10.	**Documentation translation**. A model is tasked to translate code documentation between human languages. [A dataset](https://github.com/microsoft/CodeXGLUE/tree/main/Text-Text/text-to-text), focusing on low-resource multilingual translation, is newly created.
 
 # Training and Inference Time Cost
 We calculate the training and inference time cost for each dataset with 2 P100 GPUs. Results are shared in the following table.

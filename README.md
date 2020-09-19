@@ -19,8 +19,9 @@ A brief summary of CodeXGLUE is given below, including tasks, datasets, language
 
 
 
-We provide three baseline models to support these tasks, including BERT-style pre-trained model (i.e. [CodeBERT](https://github.com/microsoft/CodeBERT)) which is good at understanding problems, GPT-style pre-trained model which we call CodeGPT to support completion and generation problems, and Encoder-Decoder framework that supports sequence-to-sequence generation problems. 
-Three pipelines including CodeBERT, CodeGPT and Encoder-Decoder are given below.
+To make it easy for participants, we provide three baseline models to support these tasks, including a BERT-style pre-trained model (in this case, CodeBERT), which is good at understanding problems. We also include a  GPT-style pre-trained model, which we call CodeGPT, to support completion and generation problems. Finally, we include an Encoder-Decoder framework that supports sequence-to-sequence generation problems.
+
+Three pipelines including CodeBERT, CodeGPT, and Encoder-Decoder are provided to make it easy for participants.
 ![baselines](https://github.com/microsoft/CodeXGLUE/blob/main/baselines.jpg)
 
 # Relevant Links

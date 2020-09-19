@@ -9,10 +9,10 @@ Past years have seen a surge of applying of statistical models, including neural
 
 To address this, Microsoft researchers from Microsoft Research Asia, Developer Division, and Bing introduce CodeXGLUE, a benchmark dataset and open challenge for code intelligence. It includes a collection of code intelligence tasks and a platform for model evaluation and comparison. CodeXGLUE stands for General Language Understanding Evaluation benchmark for CODE. It includes 14 datasets for 10 diversified code intelligence tasks covering the following scenarios: 
 
-*	**code-code** (clone detection, defect detection, cloze testing, code completion, code refinement, and code-to-code translation)
-* **text-code** (natural language code search, text-to-code generation) 
-* **code-text** (code summarization) 
-* **text-text** (documentation translation) 
+*	**[code-code](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code)** (clone detection, defect detection, cloze testing, code completion, code refinement, and code-to-code translation)
+* **[text-code](https://github.com/microsoft/CodeXGLUE/tree/main/Text-Code)** (natural language code search, text-to-code generation) 
+* **[code-text](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Text/)** (code summarization) 
+* **[text-text](https://github.com/microsoft/CodeXGLUE/tree/main/Text-Text)** (documentation translation) 
 
 A brief summary of CodeXGLUE is given below, including tasks, datasets, language, sizes in various states, baseline systems, providers, and short definitions of each task. Datasets highlighted in BLUE are newly introduced. 
 ![A brief summary of CodeXGLUE, including tasks, datasets, baseline systems, etc.](https://github.com/microsoft/CodeXGLUE/blob/main/tasks.jpg)

@@ -9,7 +9,7 @@ Past years have seen a surge of applying of statistical models, including neural
 
 To address this, Microsoft researchers from Microsoft Research Asia, Developer Division, and Bing introduce CodeXGLUE, a benchmark dataset and open challenge for code intelligence. It includes a collection of code intelligence tasks and a platform for model evaluation and comparison. CodeXGLUE stands for General Language Understanding Evaluation benchmark for CODE. It includes 14 datasets for 10 diversified code intelligence tasks covering the following scenarios: 
 
-*	**[code-code](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code)** (clone detection, defect detection, cloze testing, code completion, code refinement, and code-to-code translation)
+*	**[code-code](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code)** (clone detection, defect detection, cloze test, code completion, code refinement, and code-to-code translation)
 * **[text-code](https://github.com/microsoft/CodeXGLUE/tree/main/Text-Code)** (natural language code search, text-to-code generation) 
 * **[code-text](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Text/)** (code summarization) 
 * **[text-text](https://github.com/microsoft/CodeXGLUE/tree/main/Text-Text)** (documentation translation) 
@@ -34,7 +34,7 @@ Below, we elaborate on the task definition for each task and newly introduced da
 
 2.	Defect detection (Defects4J). A model is tasked with identifying whether a source code is an insecure code that may attack software systems, such as resource leaks, use-after-free vulnerabilities and DoS attack. An existing dataset is included.
 
-3.	Cloze testing (CT-all, CT-max/min). A model is tasked with predicting the masked token from a code, formulated as a multi-choice classification problem. The two datasets are newly created, one with candidates from the (filtered) vocabulary and the other with candidates among “max” and “min.”
+3.	Cloze test (CT-all, CT-max/min). A model is tasked with predicting the masked token from a code, formulated as a multi-choice classification problem. The two datasets are newly created, one with candidates from the (filtered) vocabulary and the other with candidates among “max” and “min.”
  
 4.	Code completion (PY150, GitHub Java Corpus). A model is tasked with predicting following tokens given contexts of codes. Both token-level and line-level completion are covered. The token-level task is analogous to language modeling, and we include two influential datasets here. Line-level datasets are newly created to test a model’s ability to autocomplete a line. 
 

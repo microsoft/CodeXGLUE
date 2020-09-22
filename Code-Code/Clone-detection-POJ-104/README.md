@@ -183,7 +183,8 @@ The results on the test set are shown as below:
 | Aroma-Cos        |   55.12   |
 | MISIM-GNN        |   82.45   |
 | CodeBERT         | **84.29** |
-# Reference
+
+## Reference
 <pre><code>@inproceedings{mou2016convolutional,
   title={Convolutional neural networks over tree structures for programming language processing},
   author={Mou, Lili and Li, Ge and Zhang, Lu and Wang, Tao and Jin, Zhi},

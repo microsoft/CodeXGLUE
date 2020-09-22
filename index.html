@@ -109,7 +109,7 @@
 				<div class="row">
 					<div class="table-responsive">
 
-						<h2>Leaderboard-Overall</h2>
+						<h2>Overall Leaderboard</h2>
 							<table id="LB-overall" lay-filter="test"></table>
 							<script src="./webpage_files/layui/layui.js"></script>
 							<script>
@@ -122,25 +122,29 @@
 										,height: 312
 										,url: 'webpage_files/participants/overall.json' //数据接口
 										,page:  false//开启分页
-										,cols: [[ //表头
+										,cols: [[{align: 'center', title: '', colspan: 4}
+											,{align: 'center', title: 'Code2Code', colspan: 6}
+											,{align: 'center', title: 'Text2Code', colspan: 2}
+											,{align: 'center', title: 'Code2Text', colspan: 1, colGroup:true}
+											,{align: 'center', title: 'Text2Text', colspan: 1, colGroup:true}
+											,{align: 'center', title: '', colspan: 1, colGroup:true}],
+											[ //表头
 											{field: 'Rank', title: 'Rank', align: 'right', width: 70}
 											,{field: 'Model', title: 'Model', width: 220}
 											,{field: 'Organization', title: 'Organization', width: 150}
 											,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 																					
-											,{field: 'completion', title: 'completion', width: 120, sort: true}
 											,{field: 'clone detection', title: 'clone detection', width: 150, sort: true}
-											,{field: 'translation', title: 'translation', width: 120, sort: true}
 											,{field: 'defect detection', title: 'defect detections', width: 150, sort: true}
-											,{field: 'refinement', title: 'refinements', width: 120, sort: true}
 											,{field: 'cloze test', title: 'cloze test', width: 120, sort: true}
-											,{field: 'natural languag search', title: 'natural languag search', width: 180, sort: true}
-											,{field: 'code summarization', title: 'code summarization', width: 150, sort: true}
-											,{field: 'code change summarization', title: 'code change summarization', width: 180, sort: true}
+											,{field: 'code completion', title: 'code completion', width: 120, sort: true}
+											,{field: 'code refinement', title: 'code refinement', width: 120, sort: true}
+											,{field: 'code translation', title: 'code translation', width: 120, sort: true}
+											,{field: 'natural language code search', title: 'natural language code search', width: 180, sort: true}
+											,{field: 'code generation', title: 'code generation', width: 150, sort: true}
+											,{field: 'code summarization', title: 'code summarization', width: 180, sort: true}
 											,{field: 'documentation translation', title: 'documentation translation', width: 180, sort: true}
-											,{field: 'Overall Score-1 (ACC)', title: 'Overall Score-1 (ACC)', width: 150, sort: true}
-											,{field: 'Overall Score-2 (MRR)', title: 'Overall Score-2 (MRR)', width: 150, sort: true}
-											,{field: 'Overall Score-3 (BLEU)', title: 'Overall Score-3 (BLEU)', width: 150, sort: true}
+											,{field: 'CodeXGLUE Score', title: 'CodeXGLUE Score', width: 180, sort: true}
 										]]
 									});
 								});
@@ -149,48 +153,10 @@
 				</div>
 			</div>
 
-			<div class="container">
-				<div class="row">
-					<div class="table-responsive">
-						<h2>Leaderboard-CodeCompletion</h2>
-							<table id="LB-CodeCompletion" lay-filter="test"></table>
-							<script>
-								layui.use('table', function(){
-									var myTable = layui.table;
-	
-									//第一个实例
-									myTable.render({
-										elem: '#LB-CodeCompletion'
-										,height: 312
-										,url: 'webpage_files/participants/code_completion.json' //数据接口
-										,page:  false//开启分页
-										,cols: [[{align: 'center', title: '', colspan: 4}
-												,{align: 'center', title: 'CodeCompletion-line', colspan: 4}
-												,{align: 'center', title: 'CodeCompletion-line', colspan: 2}],
-											[ //表头
-											{field: 'Rank', title: 'Rank', align: 'right', width: 70}
-											,{field: 'Model', title: 'Model', width: 220}
-											,{field: 'Organization', title: 'Organization', width: 150}
-											,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
-	
-											,{field: 'py150-EM', title: 'py150-EM', width: 150, sort: true}
-											,{field: 'py150-ES', title: 'py150-ES', width: 150, sort: true}
-											,{field: 'java-EM', title: 'java-EM', width: 150, sort: true}
-											,{field: 'java-ES', title: 'java-ES', width: 150, sort: true}
-											,{field: 'py150-Acc', title: 'py150-Acc', width: 150, sort: true}
-											,{field: 'java-Acc', title: 'java-Acc', width: 150, sort: true}
-										]]
-									});
-								});
-							</script>
-					</div>
-				</div>
-			</div>
-	
 		<div class="container">
 			<div class="row">
 				<div class="table-responsive">
-					<h2>Leaderboard-CloneDetection</h2>
+					<h2><font color="red">Code2Code</font>-Clone Detection</h2>
 						<table id="LB-CloneDetection" lay-filter="test"></table>
 						<script>
 							layui.use('table', function(){
@@ -223,10 +189,42 @@
 			</div>
 		</div>
 
+
 		<div class="container">
 			<div class="row">
 				<div class="table-responsive">
-					<h2>Leaderboard-ClozeTest</h2>
+					<h2><font color="red">Code2Code</font>-Defect Detection</h2>
+						<table id="LB-DefectDetection" lay-filter="test"></table>
+						<script>
+							layui.use('table', function(){
+								var myTable = layui.table;
+
+								//第一个实例
+								myTable.render({
+									elem: '#LB-DefectDetection'
+									,height: 312
+									,url: 'webpage_files/participants/defect_detection.json' //数据接口
+									,page:  false//开启分页
+									,cols: [
+										[ //表头
+										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
+										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Organization', title: 'Organization', width: 150}
+										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
+
+										,{field: 'Accuracy', title: 'Accuracy', width: 550, sort: true}
+									]]
+								});
+							});
+						</script>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="table-responsive">
+					<h2><font color="red">Code2Code</font>-Cloze Test</h2>
 						<table id="LB-ClozeTest" lay-filter="test"></table>
 						<script>
 							layui.use('table', function(){
@@ -270,68 +268,36 @@
 			</div>
 		</div>
 
-
 		<div class="container">
 			<div class="row">
 				<div class="table-responsive">
-					<h2>Leaderboard-NL-code-search</h2>
-						<table id="LB-NL-code-search" lay-filter="test"></table>
+					<h2><font color="red">Code2Code</font>-Code Completion</h2>
+						<table id="LB-CodeCompletion" lay-filter="test"></table>
 						<script>
 							layui.use('table', function(){
 								var myTable = layui.table;
 
 								//第一个实例
 								myTable.render({
-									elem: '#LB-NL-code-search'
+									elem: '#LB-CodeCompletion'
 									,height: 312
-									,url: 'webpage_files/participants/code_search.json' //数据接口
+									,url: 'webpage_files/participants/code_completion.json' //数据接口
 									,page:  false//开启分页
 									,cols: [[{align: 'center', title: '', colspan: 4}
-											,{align: 'center', title: 'NL-code-search-Adv', colspan: 1, colGroup:true}
-											,{align: 'center', title: 'NL-code-search-WebQuery', colspan: 4}],
+											,{align: 'center', title: 'CodeCompletion-line', colspan: 4}
+											,{align: 'center', title: 'CodeCompletion-token', colspan: 2}],
 										[ //表头
 										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
 										,{field: 'Model', title: 'Model', width: 220}
 										,{field: 'Organization', title: 'Organization', width: 150}
 										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 
-										,{field: 'MRR', title: 'MRR', width: 160, sort: true}
-										,{field: 'Acc-WebQuery', title: 'Acc-WebQuery', width: 140, sort: true}
-										,{field: 'F1-WebQuery', title: 'F1-WebQuery', width: 140, sort: true}
-										,{field: 'Acc-StaQC', title: 'Acc-StaQC', width: 120, sort: true}
-										,{field: 'F1-StaQC', title: 'F1-StaQC', width: 120, sort: true}
-									]]
-								});
-							});
-						</script>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container">
-			<div class="row">
-				<div class="table-responsive">
-					<h2>Leaderboard-DefectDetection</h2>
-						<table id="LB-DefectDetection" lay-filter="test"></table>
-						<script>
-							layui.use('table', function(){
-								var myTable = layui.table;
-
-								//第一个实例
-								myTable.render({
-									elem: '#LB-DefectDetection'
-									,height: 312
-									,url: 'webpage_files/participants/defect_detection.json' //数据接口
-									,page:  false//开启分页
-									,cols: [
-										[ //表头
-										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
-										,{field: 'Model', title: 'Model', width: 220}
-										,{field: 'Organization', title: 'Organization', width: 150}
-										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
-
-										,{field: 'Accuracy', title: 'Accuracy', width: 550, sort: true}
+										,{field: 'py150-EM', title: 'py150-EM', width: 150, sort: true}
+										,{field: 'py150-ES', title: 'py150-ES', width: 150, sort: true}
+										,{field: 'java-EM', title: 'java-EM', width: 150, sort: true}
+										,{field: 'java-ES', title: 'java-ES', width: 150, sort: true}
+										,{field: 'py150-Acc', title: 'py150-Acc', width: 150, sort: true}
+										,{field: 'java-Acc', title: 'java-Acc', width: 150, sort: true}
 									]]
 								});
 							});
@@ -343,7 +309,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="table-responsive">
-					<h2>Leaderboard-CodeRefinement</h2>
+					<h2><font color="red">Code2Code</font>-Code Refinement</h2>
 						<table id="LB-CodeRefinement" lay-filter="test"></table>
 						<script>
 							layui.use('table', function(){
@@ -383,7 +349,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="table-responsive">
-					<h2>Leaderboard-Code2Code Translation</h2>
+					<h2><font color="red">Code2Code</font>-Code Translation</h2>
 						<table id="LB-Code2CodeTranslation" lay-filter="test"></table>
 						<script>
 							layui.use('table', function(){
@@ -419,34 +385,36 @@
 			</div>
 		</div>
 
+
 		<div class="container">
 			<div class="row">
 				<div class="table-responsive">
-					<h2>Leaderboard-Code2Text Generation</h2>
-						<table id="LB-Code2TextGeneration" lay-filter="test"></table>
+					<h2><font color="blue">Text2Code</font>-Natural Language Code Search</h2>
+						<table id="LB-NL-code-search" lay-filter="test"></table>
 						<script>
 							layui.use('table', function(){
 								var myTable = layui.table;
 
 								//第一个实例
 								myTable.render({
-									elem: '#LB-Code2TextGeneration'
+									elem: '#LB-NL-code-search'
 									,height: 312
-									,url: 'webpage_files/participants/code2text_generation.json' //数据接口
+									,url: 'webpage_files/participants/code_search.json' //数据接口
 									,page:  false//开启分页
-									,cols: [[ //表头
+									,cols: [[{align: 'center', title: '', colspan: 4}
+											,{align: 'center', title: 'NL-code-search-Adv', colspan: 1, colGroup:true}
+											,{align: 'center', title: 'NL-code-search-WebQuery', colspan: 4}],
+										[ //表头
 										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
 										,{field: 'Model', title: 'Model', width: 220}
 										,{field: 'Organization', title: 'Organization', width: 150}
 										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 
-										,{field: 'All', title: 'All', width: 70, sort: true}
-										,{field: 'Ruby', title: 'Ruby', width: 80, sort: true}
-										,{field: 'JavaScript', title: 'JavaScript', width: 110, sort: true}
-										,{field: 'Go', title: 'Go', width: 70, sort: true}
-										,{field: 'Python', title: 'Python', width: 90, sort: true}
-										,{field: 'Java', title: 'Java', width: 90, sort: true}
-										,{field: 'PHP', title: 'PHP', width: 80, sort: true}
+										,{field: 'MRR', title: 'MRR', width: 160, sort: true}
+										,{field: 'Acc-WebQuery', title: 'Acc-WebQuery', width: 140, sort: true}
+										,{field: 'F1-WebQuery', title: 'F1-WebQuery', width: 140, sort: true}
+										,{field: 'Acc-StaQC', title: 'Acc-StaQC', width: 120, sort: true}
+										,{field: 'F1-StaQC', title: 'F1-StaQC', width: 120, sort: true}
 									]]
 								});
 							});
@@ -458,7 +426,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="table-responsive">
-					<h2>Leaderboard-Text2Code Generation</h2>
+					<h2><font color="blue">Text2Code</font>-Code Generation</h2>
 						<table id="LB-Text2CodeGeneration" lay-filter="test"></table>
 						<script>
 							layui.use('table', function(){
@@ -497,7 +465,43 @@
 		<div class="container">
 			<div class="row">
 				<div class="table-responsive">
-					<h2>Leaderboard-Text2Text Generation</h2>
+					<h2><font color="green">Code2Text</font>-Code Summarization</h2>
+						<table id="LB-Code2TextGeneration" lay-filter="test"></table>
+						<script>
+							layui.use('table', function(){
+								var myTable = layui.table;
+
+								//第一个实例
+								myTable.render({
+									elem: '#LB-Code2TextGeneration'
+									,height: 312
+									,url: 'webpage_files/participants/code2text_generation.json' //数据接口
+									,page:  false//开启分页
+									,cols: [[ //表头
+										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
+										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Organization', title: 'Organization', width: 150}
+										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
+
+										,{field: 'All', title: 'All', width: 70, sort: true}
+										,{field: 'Ruby', title: 'Ruby', width: 80, sort: true}
+										,{field: 'JavaScript', title: 'JavaScript', width: 110, sort: true}
+										,{field: 'Go', title: 'Go', width: 70, sort: true}
+										,{field: 'Python', title: 'Python', width: 90, sort: true}
+										,{field: 'Java', title: 'Java', width: 90, sort: true}
+										,{field: 'PHP', title: 'PHP', width: 80, sort: true}
+									]]
+								});
+							});
+						</script>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="table-responsive">
+					<h2><font color="orange">Text2Text</font>-Documentation Translation</h2>
 						<table id="LB-Text2TextGeneration" lay-filter="test"></table>
 						<script>
 							layui.use('table', function(){
@@ -597,10 +601,10 @@
 						
 						</div>
 						<p></p>
-						<p>CodeXGLUE is built out of the following 12 datasets. Please ensure you cite all of them.</p>
-						<div style="overflow-x:scroll; white-space: nowrap">
+						<p>If you only use part of the CodeXGLUE dataset, please also cite each seperated dataset.</p>
+<!-- <div style="overflow-x:scroll; white-space: nowrap"> -->
 						
-<code>@article{husain2019codesearchnet,<br>
+<!-- <code>@article{husain2019codesearchnet,<br>
   title={CodeSearchNet Challenge: Evaluating the State of Semantic Code Search},<br>
   author={Husain, Hamel and Wu, Ho-Hsiang and Gazit, Tiferet and Allamanis, Miltiadis and Brockschmidt, Marc},<br>
   journal={arXiv preprint arXiv:1909.09436},<br>
@@ -631,14 +635,6 @@
   year={2013},<br>
   organization={IEEE}<br>
 } </code> <br><br>
-
-<code>@inproceedings{just2014defects4j,<br>
-  title={Defects4J: A Database of Existing Faults to Enable Controlled Testing Studies for Java Programs},<br>
-  author={Just, Ren{\'e} and Jalali, Darioush and Ernst, Michael D},<br>
-  booktitle={Proceedings of the 2014 International Symposium on Software Testing and Analysis},<br>
-  pages={437--440},<br>
-  year={2014}<br>
-}</code> <br><br>
 
 <code>@inproceedings{Zhou2019DevignEV,<br>
 	title={Devign: Effective Vulnerability Identification by Learning Comprehensive Program Semantics via Graph Neural Networks},<br>
@@ -678,22 +674,14 @@
   year={2018}<br>
 } </code> <br><br>
 
-<code>@inproceedings{PanthaplackelETAL20CommentUpdate,<br>
-  author = {Panthaplackel, Sheena and Nie, Pengyu and Gligoric, Milos and Li, Junyi Jessy and Mooney, Raymond J.},<br>
-  title = {Learning to Update Natural Language Comments Based on Code Changes},<br>
-  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},<br>
-  pages = {1853--1868},<br>
-  year = {2020},<br>
-}</code> <br> <br>
-
 <code>@article{feng2020codebert,<br>
   title={CodeBERT: A Pre-Trained Model for Programming and Natural Languages},<br>
   author={Feng, Zhangyin and Guo, Daya and Tang, Duyu and Duan, Nan and Feng, Xiaocheng and Gong, Ming and Shou, Linjun and Qin, Bing and Liu, Ting and Jiang, Daxin and others},<br>
   journal={arXiv preprint arXiv:2002.08155},<br>
   year={2020}<br>
-}</code>
+}</code> -->
 
-</div>
+<!-- </div> -->
 						<h2>&nbsp;</h2>
 						
 					</div>

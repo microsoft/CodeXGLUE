@@ -26,10 +26,10 @@
         "Model":"Code-HNN",
         "Organization":"OSU Team",
         "Submission Date":"2018-10-31",
-        "MRR":"",
-        "Acc-WebQuery":"",
-        "F1-WebQuery":"",
-        "Acc-StaQC":"",
+        "MRR":"/",
+        "Acc-WebQuery":"/",
+        "F1-WebQuery":"/",
+        "Acc-StaQC":"/",
         "F1-StaQC":0.812
       }      
         ]}

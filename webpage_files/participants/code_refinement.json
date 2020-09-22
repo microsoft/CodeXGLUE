@@ -30,10 +30,10 @@
         "Submission Date":"2020-08-30",
         "sBLEU":76.76,
         "sAcc(%)":"10.00",
-        "sCodeBLEU":"",
+        "sCodeBLEU":"/",
         "mBLEU":72.08,
         "mAcc(%)":"2.50",
-        "mCodeBLEU":""
+        "mCodeBLEU":"/"
       },
       {"Rank":4,
         "id":104,
@@ -42,10 +42,10 @@
         "Submission Date":"2020-08-30",
         "sBLEU":78.06,
         "sAcc(%)":0,
-        "sCodeBLEU":"",
+        "sCodeBLEU":"/",
         "mBLEU":90.91,
         "mAcc(%)":0,
-        "mCodeBLEU":""
+        "mCodeBLEU":"/"
       }
       
         ]}

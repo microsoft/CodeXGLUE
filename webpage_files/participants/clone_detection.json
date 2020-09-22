@@ -17,7 +17,7 @@
         "Precision":0.96,
         "Recall":0.94,
         "F1":0.95,
-        "MAP(%)":""
+        "MAP(%)":"/"
       },
       {"Rank":3,
         "id":103,
@@ -27,7 +27,7 @@
         "Precision":0.92,
         "Recall":0.94,
         "F1":0.94,
-        "MAP(%)":""
+        "MAP(%)":"/"
       },
       {"Rank":4,
         "id":104,
@@ -37,7 +37,7 @@
         "Precision":0.92,
         "Recall":0.74,
         "F1":0.82,
-        "MAP(%)":""
+        "MAP(%)":"/"
       },
       {"Rank":5,
         "id":105,
@@ -47,7 +47,7 @@
         "Precision":0.95,
         "Recall":0.01,
         "F1":0.01,
-        "MAP(%)":""
+        "MAP(%)":"/"
       },
       {"Rank":6,
         "id":106,
@@ -57,16 +57,16 @@
         "Precision":0.93,
         "Recall":0.02,
         "F1":0.03,
-        "MAP(%)":""
+        "MAP(%)":"/"
       },
       {"Rank":7,
         "id":107,
         "Model":"MISIM-GNN",
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",
-        "Precision":"",
-        "Recall":"",
-        "F1":"",
+        "Precision":"/",
+        "Recall":"/",
+        "F1":"/",
         "MAP(%)":82.45
       },
       {"Rank":8,
@@ -74,9 +74,9 @@
         "Model":"Aroma-Cos",
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",
-        "Precision":"",
-        "Recall":"",
-        "F1":"",
+        "Precision":"/",
+        "Recall":"/",
+        "F1":"/",
         "MAP(%)":55.12
       },
       {"Rank":9,
@@ -84,9 +84,9 @@
         "Model":"Aroma-Dot",
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",
-        "Precision":"",
-        "Recall":"",
-        "F1":"",
+        "Precision":"/",
+        "Recall":"/",
+        "F1":"/",
         "MAP(%)":52.08
       },
       {"Rank":10,
@@ -94,9 +94,9 @@
         "Model":"NCC-w/0-inst2vec",
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",
-        "Precision":"",
-        "Recall":"",
-        "F1":"",
+        "Precision":"/",
+        "Recall":"/",
+        "F1":"/",
         "MAP(%)":54.19
       },
       {"Rank":11,
@@ -104,9 +104,9 @@
         "Model":"NCC",
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",
-        "Precision":"",
-        "Recall":"",
-        "F1":"",
+        "Precision":"/",
+        "Recall":"/",
+        "F1":"/",
         "MAP(%)":39.95
       },
       {"Rank":12,
@@ -114,9 +114,9 @@
         "Model":"code2vec",
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",
-        "Precision":"",
-        "Recall":"",
-        "F1":"",
+        "Precision":"/",
+        "Recall":"/",
+        "F1":"/",
         "MAP(%)":1.98
       }      
         ]}

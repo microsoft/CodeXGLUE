@@ -172,3 +172,11 @@ The results on the test set are shown as below:
 | -------- | :--------: |
 | Roberta  |   0.1833   |
 | CodeBERT | **0.2719** |
+
+## Reference
+<pre><code>@article{husain2019codesearchnet,
+  title={Codesearchnet challenge: Evaluating the state of semantic code search},
+  author={Husain, Hamel and Wu, Ho-Hsiang and Gazit, Tiferet and Allamanis, Miltiadis and Brockschmidt, Marc},
+  journal={arXiv preprint arXiv:1909.09436},
+  year={2019}
+}</code></pre>

@@ -137,7 +137,7 @@ The results on the test set are shown as below:
 | CodeBERT   | **0.960** | **0.969** | **0.965** |
 
 
-# Reference
+## Reference
 <pre><code>@inproceedings{svajlenko2014towards,
   title={Towards a big data curated benchmark of inter-project code clones},
   author={Svajlenko, Jeffrey and Islam, Judith F and Keivanloo, Iman and Roy, Chanchal K and Mia, Mohammad Mamun},

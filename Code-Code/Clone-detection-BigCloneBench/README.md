@@ -138,8 +138,7 @@ The results on the test set are shown as below:
 
 
 # Reference
-<pre><code>
-@inproceedings{svajlenko2014towards,
+<pre><code>@inproceedings{svajlenko2014towards,
   title={Towards a big data curated benchmark of inter-project code clones},
   author={Svajlenko, Jeffrey and Islam, Judith F and Keivanloo, Iman and Roy, Chanchal K and Mia, Mohammad Mamun},
   booktitle={2014 IEEE International Conference on Software Maintenance and Evolution},
@@ -155,5 +154,4 @@ The results on the test set are shown as below:
   pages={261--271},
   year={2020},
   organization={IEEE}
-}
-</code></pre>
+}</code></pre>

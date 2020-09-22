@@ -142,3 +142,11 @@ The results on the test set are shown as below:
 | RoBERTa  |   61.05   |
 | CodeBERT | **62.08** |
 
+## Reference
+<pre><code>@inproceedings{zhou2019devign,
+  title={Devign: Effective vulnerability identification by learning comprehensive program semantics via graph neural networks},
+  author={Zhou, Yaqin and Liu, Shangqing and Siow, Jingkai and Du, Xiaoning and Liu, Yang},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={10197--10207},
+  year={2019}
+}</code></pre>

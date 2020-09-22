@@ -136,3 +136,24 @@ The results on the test set are shown as below:
 | FA-AST-GMN |   0.96    |   0.94    |   0.95    |
 | CodeBERT   | **0.960** | **0.969** | **0.965** |
 
+
+# Reference
+<pre><code>
+@inproceedings{svajlenko2014towards,
+  title={Towards a big data curated benchmark of inter-project code clones},
+  author={Svajlenko, Jeffrey and Islam, Judith F and Keivanloo, Iman and Roy, Chanchal K and Mia, Mohammad Mamun},
+  booktitle={2014 IEEE International Conference on Software Maintenance and Evolution},
+  pages={476--480},
+  year={2014},
+  organization={IEEE}
+}
+
+@inproceedings{wang2020detecting,
+  title={Detecting Code Clones with Graph Neural Network and Flow-Augmented Abstract Syntax Tree},
+  author={Wang, Wenhan and Li, Ge and Ma, Bo and Xia, Xin and Jin, Zhi},
+  booktitle={2020 IEEE 27th International Conference on Software Analysis, Evolution and Reengineering (SANER)},
+  pages={261--271},
+  year={2020},
+  organization={IEEE}
+}
+</code></pre>

@@ -180,6 +180,8 @@ The results on concode test set are shown as below:
 
 ## Reference
 
+If you use concode dataset, please also cite this paper in addition to our CodeXGLUE:
+
 <pre><code>@article{iyer2018mapping,
   title={Mapping language to code in programmatic context},
   author={Iyer, Srinivasan and Konstas, Ioannis and Cheung, Alvin and Zettlemoyer, Luke},

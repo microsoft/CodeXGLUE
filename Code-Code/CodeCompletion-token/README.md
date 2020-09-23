@@ -195,6 +195,8 @@ It might take 60 minutes for inference on py150 dataset and 15 minutes on java C
 
 ## Reference
 
+If you use code completion datasets, please also cite the following papers in addition to our CodeXGLUE:
+
 <pre><code>@article{raychev2016probabilistic,
   title={Probabilistic Model for Code with Decision Trees},
   author={Raychev, Veselin and Bielik, Pavol and Vechev, Martin},

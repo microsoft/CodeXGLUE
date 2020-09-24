@@ -61,8 +61,7 @@ Our datasets follow Computational Use of Data Agreement (C-UDA) License.
 # Reference
 If you use this code or CodeXGLUE, please consider citing us.
 <pre><code>@article{CodeXGLUE,
-  title={CodeXGLUE: An Open Challenge for Code Intelligence},
-  journal={arXiv},
+  title={CodeXGLUE: A Benchmark Dataset and Open Challenge for Code Intelligence},
   year={2020},
 }</code></pre>
 

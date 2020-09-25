@@ -4,6 +4,7 @@ import logging
 import sys, json, os
 import numpy as np
 import argparse
+from sklearn.metrics import recall_score, precision_score, f1_score, accuracy_score
 
 
 def read_answers(filename):
@@ -11,7 +12,7 @@ def read_answers(filename):
     with open(filename, 'r', encoding='utf-8') as f:
         for line in f.readlines():
             line = line.strip()
-            answers[line.split('\t')[0]] = line.split('\t')[1]
+            answers[line.split('\t')[0]] = int(line.split('\t')[1])
     return answers
 
 
@@ -20,21 +21,24 @@ def read_predictions(filename):
     with open(filename, 'r', encoding='utf-8') as f:
         for line in f.readlines():
             line = line.strip()
-            predictions[line.split('\t')[0]] = line.split('\t')[1]
+            predictions[line.split('\t')[0]] = int(line.split('\t')[1])
     return predictions
 
 
 def calculate_scores(answers, predictions):
-    scores = []
+    y_trues, y_preds = [], []
     for key in answers:
         if key not in predictions:
             logging.error("Missing prediction for index {}.".format(key))
             sys.exit()
-        a = answers[key]
-        p = predictions[key]
-        scores.append(a==p)
-    result = sum(scores) / len(scores)
-    return result
+        y_trues.append(answers[key])
+        y_preds.append(predictions[key])
+    scores={}
+    scores['Precision']=precision_score(y_trues, y_preds)
+    scores['Recall']=recall_score(y_trues, y_preds)
+    scores['F1']=f1_score(y_trues, y_preds)
+    scores['Accuracy']=accuracy_score(y_trues, y_preds)
+    return scores
 
 
 def main():
@@ -48,12 +52,16 @@ def main():
     answers = read_answers(args.answers_staqc)
     predictions = read_predictions(args.predictions_staqc)
     acc_staqc = calculate_scores(answers, predictions)
-    print('NL-code-search-WebQuery on staqc test set, acc: {}'.format(acc_staqc))
+    # print('NL-code-search-WebQuery on staqc test set, acc: {}'.format(acc_staqc))
+    print('NL-code-search-WebQuery on staqc test set:')
+    print(acc_staqc)
 
     answers = read_answers(args.answers_webquery)
     predictions = read_predictions(args.predictions_webquery)
     acc_webquery = calculate_scores(answers, predictions)
-    print('NL-code-search-WebQuery on WebQuery test set, acc: {}'.format(acc_webquery))
+    # print('NL-code-search-WebQuery on WebQuery test set, acc: {}'.format(acc_webquery))
+    print('NL-code-search-WebQuery on WebQuery test set:')
+    print(acc_webquery)
 
 
 if __name__ == '__main__':

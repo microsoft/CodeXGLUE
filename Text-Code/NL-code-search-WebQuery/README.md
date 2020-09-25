@@ -14,7 +14,7 @@ Here we present a test set where natural language queries come from Bing query l
 
 - python 3.6 or 3.7
 - torch==1.5.0
-- transformers>=2.1.0
+- transformers>=2.5.0
 
 
 ## Data
@@ -23,7 +23,16 @@ The training and validation sets of NL-code-search-WebQuery data are collected f
 
 As for test set, we include the original test set of StaQC. Also to apply to a wider scenario, we create a new test set where each instance contains a Bing Search query, a python code function and a 0/1 annotation of whether the code answers the query. The newly created test set is in `./data/test_webquery.json` .
 
-For original StaQC dataset, you can download it in [this repo](https://github.com/LittleYUYU/StackOverflow-Question-Code-Dataset). For better usage, we provide a preprocessed version of StaQC dataset in `./data` directory. 
+#### Download and Preprocess
+
+For original StaQC dataset, you can download it in [this repo](https://github.com/LittleYUYU/StackOverflow-Question-Code-Dataset) or you can run the following command: 
+
+```shell
+git clone https://github.com/LittleYUYU/StackOverflow-Question-Code-Dataset.git
+python code/data_preprocess.py 
+```
+
+#### Data statistics
 
 Data statistics of NL-code-search-WebQuery are shown in the below table:
 
@@ -51,10 +60,10 @@ python code/run_classifier.py \
 			--max_seq_length 200 \
 			--per_gpu_train_batch_size 16 \
 			--per_gpu_eval_batch_size 16 \
-			--learning_rate 1e-5 \
+			--learning_rate 1e-4 \
 			--num_train_epochs 10 \
 			--gradient_accumulation_steps 1  \
-			--warmup_steps 100 \
+			--warmup_steps 180 \
 			--overwrite_output_dir \
 			--data_dir ./data/ \
 			--output_dir ./model/ \
@@ -117,10 +126,10 @@ The results on NL-code-search-WebQuery are shown as below:
 |    testset    |  model   | Precision | Recall |  F1   | Accuracy |
 | :-----------: | :------: | :-------: | :----: | :---: | :------: |
 |  test-StaQC   | Code-HNN |   0.770   | 0.859  | 0.812 |   N/A    |
-|  test-StaQC   | RoBERTa  |   0.812   | 0.785  | 0.798 |  0.813   |
-|  test-StaQC   | CodeBERT |   0.839   | 0.803  | 0.821 |  0.827   |
-| test-WebQuery | RoBERTa  |   0.415   | 0.689  | 0.518 |  0.483   |
-| test-WebQuery | CodeBERT |   0.438   | 0.822  | 0.572 |  0.504   |
+|  test-StaQC   | RoBERTa  |   0.785   | 0.853  | 0.791 |  0.801   |
+|  test-StaQC   | CodeBERT |   0.792   | 0.798  | 0.821 |  0.825   |
+| test-WebQuery | RoBERTa  |   0.408   | 0.756  | 0.530 |  0.459   |
+| test-WebQuery | CodeBERT |   0.422   | 0.910  | 0.576 |  0.460   |
 
 ## Cite
 

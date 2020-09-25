@@ -1,14 +1,14 @@
-# CodeXGLUE -- ClozeTesting-all
+# CodeXGLUE -- ClozeTest-all
 
-We present two kinds of cloze testing: ClozeTesting-maxmin and ClozeTesting-all. Here is the ClozeTesting-all task.
+We present two kinds of cloze testing: ClozeTest-maxmin and ClozeTest-all. Here is the ClozeTest-all task.
 
 ## Task Description
 
-Cloze testings are widely adopted in Natural Languages Processing to evaluate the performance of the trained language models. The task is aimed to predict the answers for the blank with the context of the blank, which can be formulated as a multi-choice classification problem. 
+Cloze tests are widely adopted in Natural Languages Processing to evaluate the performance of the trained language models. The task is aimed to predict the answers for the blank with the context of the blank, which can be formulated as a multi-choice classification problem. 
 
-Here we present the two cloze testing datasets in code domain with six different programming languages: ClozeTesting-maxmin and ClozeTesting-all. Each instance in the dataset contains a masked code function, its docstring and the target word. 
+Here we present the two cloze testing datasets in code domain with six different programming languages: ClozeTest-maxmin and ClozeTest-all. Each instance in the dataset contains a masked code function, its docstring and the target word. 
 
-The only difference between ClozeTesting-maxmin and ClozeTesting-all is their selected words sets, where ClozeTesting-maxmin only contains two words while ClozeTesting-all contains 930 words.
+The only difference between ClozeTest-maxmin and ClozeTest-all is their selected words sets, where ClozeTest-maxmin only contains two words while ClozeTest-all contains 930 words.
 
 ## Dependency
 
@@ -21,18 +21,18 @@ The only difference between ClozeTesting-maxmin and ClozeTesting-all is their se
 
 The data for cloze testing are collected from the the validation and test sets of CodeSearchNet, which contains six different programming languages including RUBY, JAVASCRIPT, GO, PYTHON, JAVA and PHP. Each instance contains a masked code function, its docstring and the target word. 
 
-We present the preprocessed data in `data/cloze-all` directory. And the selected words for ClozeTesting is in `data/cloze-all/cloze_test_words.txt`. 
+We present the preprocessed data in `data/cloze-all` directory. And the selected words for ClozeTest is in `data/cloze-all/cloze_test_words.txt`. 
 
-Data statistics of ClozeTesting-all are shown in the below table:
+Data statistics of ClozeTest-all are shown in the below table:
 
 | RUBY | JAVASCRIPT |  GO   | PYTHON | JAVA  |  PHP  |  ALL   |
 | :--: | :--------: | :---: | :----: | :---: | :---: | :----: |
 | 4437 |   13837    | 25282 | 40137  | 40492 | 51930 | 176115 |
 
 
-## Run ClozeTesting
+## Run ClozeTest
 
-You can run ClozeTesting-all by the following command. It will automatically generate predictions to ` --output_dir`.
+You can run ClozeTest-all by the following command. It will automatically generate predictions to ` --output_dir`.
 
 ```shell
 python code/run_cloze.py \
@@ -43,7 +43,7 @@ python code/run_cloze.py \
 
 ## Evaluator
 
-We provide a script to evaluate predictions for ClozeTesting-all, and report accuracy for the task. You can run by the following command:
+We provide a script to evaluate predictions for ClozeTest-all, and report accuracy for the task. You can run by the following command:
 
 ```shell
 python evaluator/evaluator.py \
@@ -53,16 +53,16 @@ python evaluator/evaluator.py \
 
 ## Result
 
-The results on ClozeTesting-all are shown as below:
+The results on ClozeTest-all are shown as below:
 
 |               | RUBY  | JAVASCRIPT |  GO   | PYTHON | JAVA  |  PHP  |  ALL  |
 | :-----------: | :---: | :--------: | :---: | :----: | :---: | :---: | :---: |
-| RoBERTa-base  | 47.64 |   59.97    | 40.98 | 54.49  | 50.75 | 60.38 | 53.69 |
+| RoBERTa-base  | 47.44 |   59.96    | 40.77 | 54.35  | 50.73 | 60.16 | 53.55 |
 | CodeBERT(MLM) | 80.17 |   81.77    | 83.31 | 87.21  | 80.63 | 85.05 | 83.89 |
 
 ## Cite
 
-ClozeTesting-all is built upon CodeSearchNet dataset. If you use this code or our ClozeTesting-all dataset, please considering citing CodeXGLUE and CodeSearchNet:	
+ClozeTest-all is built upon CodeSearchNet dataset. If you use this code or our ClozeTest-all dataset, please considering citing CodeXGLUE and CodeSearchNet:	
 
 <pre><code>@article{CodeXGLUE,
   title={CodeXGLUE: An Open Challenge for Code Intelligence},

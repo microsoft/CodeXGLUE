@@ -1,14 +1,14 @@
-# CodeXGLUE -- ClozeTesting-maxmin
+# CodeXGLUE -- ClozeTest-maxmin
 
-We present two kinds of cloze testing: ClozeTesting-maxmin and ClozeTesting-all. Here is the ClozeTesting-maxmin task.
+We present two kinds of cloze testing: ClozeTest-maxmin and ClozeTest-all. Here is the ClozeTest-maxmin task.
 
 ## Task Description
 
-Cloze testings are widely adopted in Natural Languages Processing to evaluate the performance of the trained language models. The task is aimed to predict the answers for the blank with the context of the blank, which can be formulated as a multi-choice classification problem. 
+Cloze tests are widely adopted in Natural Languages Processing to evaluate the performance of the trained language models. The task is aimed to predict the answers for the blank with the context of the blank, which can be formulated as a multi-choice classification problem. 
 
-Here we present the two cloze testing datasets in code domain with six different programming languages: ClozeTesting-maxmin and ClozeTesting-all. Each instance in the dataset contains a masked code function, its docstring and the target word. 
+Here we present the two cloze testing datasets in code domain with six different programming languages: ClozeTest-maxmin and ClozeTest-all. Each instance in the dataset contains a masked code function, its docstring and the target word. 
 
-The only difference between ClozeTesting-maxmin and ClozeTesting-all is their selected words sets, where ClozeTesting-maxmin only contains two words while ClozeTesting-all contains 930 words.
+The only difference between ClozeTest-maxmin and ClozeTest-all is their selected words sets, where ClozeTest-maxmin only contains two words while ClozeTest-all contains 930 words.
 
 ## Dependency
 
@@ -23,16 +23,16 @@ The data for cloze testing are collected from the the validation and test sets o
 
 We present the preprocessed data in `data/cloze-maxmin` directory. 
 
-Data statistics of ClozeTesting-maxmin are shown in the below table:
+Data statistics of ClozeTest-maxmin are shown in the below table:
 
 | RUBY | JAVASCRIPT |  GO  | PYTHON | JAVA | PHP  | ALL  |
 | :--: | :--------: | :--: | :----: | :--: | :--: | :--: |
 |  38  |    272     | 152  |  1264  | 482  | 407  | 2615 |
 
 
-## Run ClozeTesting
+## Run ClozeTest
 
-You can run ClozeTesting-maxmin by the following command. It will automatically generate predictions to ` --output_dir`.
+You can run ClozeTest-maxmin by the following command. It will automatically generate predictions to ` --output_dir`.
 
 ```shell
 python code/run_cloze.py \
@@ -43,7 +43,7 @@ python code/run_cloze.py \
 
 ## Evaluator
 
-We provide a script to evaluate predictions for ClozeTesting-maxmin, and report accuracy for the task. You can run by the following command:
+We provide a script to evaluate predictions for ClozeTest-maxmin, and report accuracy for the task. You can run by the following command:
 
 ```shell
 python evaluator/evaluator.py \
@@ -53,16 +53,16 @@ python evaluator/evaluator.py \
 
 ## Result
 
-The results on ClozeTesting-maxmin are shown as below:
+The results on ClozeTest-maxmin are shown as below:
 
 |               | RUBY  | JAVASCRIPT |  GO   | PYTHON | JAVA  |  PHP  |  ALL  |
 | :-----------: | :---: | :--------: | :---: | :----: | :---: | :---: | :---: |
-| RoBERTa-base  | 73.68 |   65.81    | 73.68 | 59.18  | 59.75 | 69.78 | 62.68 |
-| CodeBERT(MLM) | 86.84 |   84.93    | 92.76 | 81.25  | 91.70 | 89.93 | 85.66 |
+| RoBERTa-base  | 73.68 |   64.71    | 71.71 | 59.18  | 59.75 | 69.78 | 62.45 |
+| CodeBERT(MLM) | 86.84 |   86.40    | 90.79 | 82.20  | 90.46 | 88.21 | 85.66 |
 
 ## Cite
 
-ClozeTesting-maxmin is built upon CodeSearchNet dataset. If you use this code or our ClozeTesting-maxmin dataset, please considering citing CodeXGLUE, CodeBERT and CodeSearchNet:	
+ClozeTest-maxmin is built upon CodeSearchNet dataset. If you use this code or our ClozeTest-maxmin dataset, please considering citing CodeXGLUE, CodeBERT and CodeSearchNet:	
 
 <pre><code>@article{CodeXGLUE,
   title={CodeXGLUE: An Open Challenge for Code Intelligence},

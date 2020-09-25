@@ -5,9 +5,9 @@
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",
         "MRR":0.2719,
-        "Acc-WebQuery":0.504,
-        "F1-WebQuery":0.572,
-        "Acc-StaQC":0.827,
+        "Acc-WebQuery":"0.460",
+        "F1-WebQuery":0.576,
+        "Acc-StaQC":0.825,
         "F1-StaQC":0.821
       },
       {"Rank":2,
@@ -16,10 +16,10 @@
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",
         "MRR":0.1833,
-        "Acc-WebQuery":0.483,
-        "F1-WebQuery":0.518,
-        "Acc-StaQC":0.813,
-        "F1-StaQC":0.798
+        "Acc-WebQuery":0.459,
+        "F1-WebQuery":0.530,
+        "Acc-StaQC":0.801,
+        "F1-StaQC":0.791
       },
       {"Rank":3,
         "id":103,

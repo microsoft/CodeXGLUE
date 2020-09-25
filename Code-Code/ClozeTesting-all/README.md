@@ -14,7 +14,7 @@ The only difference between ClozeTest-maxmin and ClozeTest-all is their selected
 
 - python 3.6 or 3.7
 - torch==1.5.0
-- transformers>=2.1.0
+- transformers>=2.5.0
 
 
 ## Data

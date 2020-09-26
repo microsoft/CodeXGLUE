@@ -69,4 +69,4 @@ If you use this code or CodeXGLUE, please consider citing us.
   year={2020},
 }</code></pre>
 
-This research was conducted by Alexey Svyatkovskiy, Ambrosio Blanco, Daxin Jiang, Daya Guo, Duyu Tang, Junjie Huang, Lidong Zhou, Linjun Shou, Long Zhou, Ming Gong, Ming Zhou, Nan Duan, Neel Sundaresan, Shengyu Fu, Shuai Lu, Shujie Liu, Shuo Ren.
+This research was conducted by Alexey Svyatkovskiy, Ambrosio Blanco, Daxin Jiang, Daya Guo, Duyu Tang, Junjie Huang, Lidong Zhou, Linjun Shou, Long Zhou, Ming Gong, Ming Zhou, Nan Duan, Neel Sundaresan, Shengyu Fu, Shuai Lu, Shujie Liu, and Shuo Ren.

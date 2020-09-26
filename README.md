@@ -1,5 +1,7 @@
 # Introduction
 
+
+
 According to [Evans Data Corporation](https://evansdata.com/press/viewRelease.php?pressID=278), there are 23.9 million professional developers in 2019, and the population is expected to reach 28.7 million in 2024. With the growing population of developers, code intelligence, which aims at using AI tools to help enormous software developers improve the productivity of developments, is increasingly important in both communities of software engineering and artificial intelligence. When developers want to find codes written by others with the same intent, [code search](https://arxiv.org/abs/1909.09436) systems could help on automatically retrieving semantically relevant codes given natural language queries. When developers are confused about what tokens to write next, [code completion](https://arxiv.org/abs/1912.00742) systems could help on autocompleting following tokens given contexts of codes. When developers want to implement Java codes with the same function of existing Python codes, [code-to-code translation](https://arxiv.org/abs/2006.03511) systems could help on translating codes from one programming language to another programming language. 
 
 Code intelligence plays a vital role in Microsoft’s mission to empower developers. As highlighted by Microsoft CEO Satya Nadella at Microsoft [Build 2020](https://mybuild.microsoft.com/sessions/23912de2-1531-4684-b85a-d57ac30af09e), the role of developers is more important than ever. GitHub is the home for developers, and Visual Studio Code is the most popular code editor. Microsoft is building the most complete toolchain for developers, bringing together the best of GitHub, Visual Studio, and Microsoft Azure to help developers to go from idea to code and code to cloud. 
@@ -19,10 +21,12 @@ A brief summary of CodeXGLUE is given below, including tasks, datasets, language
 
 
 
-To make it easy for participants, we provide three baseline models to support these tasks, including a BERT-style pre-trained model (in this case, CodeBERT), which is good at understanding problems. We also include a  GPT-style pre-trained model, which we call CodeGPT, to support completion and generation problems. Finally, we include an Encoder-Decoder framework that supports sequence-to-sequence generation problems.
+To make it easy for participants, we provide three baseline models to support these tasks, including a BERT-style pre-trained model (in this case, CodeBERT), which is good at understanding problems. We also include a GPT-style pre-trained model, which we call CodeGPT, to support completion and generation problems. Finally, we include an Encoder-Decoder framework that supports sequence-to-sequence generation problems.
 
 Three pipelines including CodeBERT, CodeGPT, and Encoder-Decoder are provided to make it easy for participants.
 ![baselines](https://github.com/microsoft/CodeXGLUE/blob/main/baselines.jpg)
+
+With CodeXGLUE, we seek to support the development of models that can be applied to various code intelligence problems, with the goal of increasing the productivity of software developers. We encourage researchers to participate in the open challenges to continue progress in code intelligence. Moving forward, we’ll extend CodeXGLUE to more programming languages and downstream tasks while continuing to push forward pre-trained models by exploring new model structures, introducing new pre-training tasks, using different types of data, and more.
 
 # Relevant Links
 [Leaderboard](https://microsoft.github.io/CodeXGLUE/) | [CodeXGLUE paper](arxivpaper-to-be-added)
@@ -30,21 +34,22 @@ Three pipelines including CodeBERT, CodeGPT, and Encoder-Decoder are provided to
 # Tasks and Datasets
 
 Below, we elaborate on the task definition for each task and newly introduced datasets that are highlighted in the table above.
-1.	Clone detection (BigCloneBench, POJ-104). A model is tasked with measure the semantic similarity between codes. Two existing datasets are included. One is for binary classification between codes and the other is for retrieving semantically similar code given code as the query. 
 
-2.	Defect detection (Defects4J). A model is tasked with identifying whether a source code is an insecure code that may attack software systems, such as resource leaks, use-after-free vulnerabilities and DoS attack. An existing dataset is included.
+1.	Clone detection (BigCloneBench, POJ-104). A model is tasked with measure the semantic similarity between codes. Two existing datasets are included. One is for binary classification between code and the other is for retrieving semantically similar code given code as the query. 
 
-3.	Cloze test (CT-all, CT-max/min). A model is tasked with predicting the masked token from a code, formulated as a multi-choice classification problem. The two datasets are newly created, one with candidates from the (filtered) vocabulary and the other with candidates among “max” and “min.”
+2.	Defect detection (Defects4J). A model is tasked with identifying whether a body of source code contains defects that may be used to attack software systems, such as resource leaks, use-after-free vulnerabilities and DoS attack. An existing dataset is included.
+
+3.	Cloze test (CT-all, CT-max/min). A model is tasked with predicting the masked token from  code, formulated as a multi-choice classification problem. The two datasets are newly created, one with candidates from the (filtered) vocabulary and the other with candidates among “max” and “min”.
  
-4.	Code completion (PY150, GitHub Java Corpus). A model is tasked with predicting following tokens given contexts of codes. Both token-level and line-level completion are covered. The token-level task is analogous to language modeling, and we include two influential datasets here. Line-level datasets are newly created to test a model’s ability to autocomplete a line. 
+4.	Code completion (PY150, GitHub Java Corpus). A model is tasked with predicting following tokens given a code context. Both token-level and line-level completion are covered. The token-level task is analogous to language modeling, and we include two influential datasets here. Line-level datasets are newly created to test a model’s ability to autocomplete a line. 
 
 5.	Code translation (CodeTrans). A model is tasked with translating the code in one programming language to the code in another one. A dataset between Java and C# is newly created.
 
-6.	Code search (CodeSearchNet, AdvTest; StacQC, WebQueryTest). A model is given the task of  measuring the semantic similarity between text and code. In the retrieval scenario, a test set is newly created where function names and variables in test sets are replaced to test the generalization ability of a model. In text-code classification scenario, a test set where natural language queries come from Bing query log is created to test on real user queries.
+6.	Code search (CodeSearchNet, AdvTest; StacQC, WebQueryTest). ). A model is given the task of  measuring  semantic similarity between text and code. In the retrieval scenario, a test set is newly created where function names and variables in test sets are replaced to test the generalization ability of a model. In text-code classification scenario, a test set where natural language queries come from Bing query log is created to test on real user queries.
 
 7.	Code refinement (Bugs2Fix). A model is tasked with trying to automatically refine the code, which could be buggy or complex. An existing dataset is included.
 
-8.	Text-to-code generation (CONCODE). A model is given the task to generate a code given natural language description. An existing dataset is included.
+8.	Text-to-code generation (CONCODE). A model is given the task to generate code given natural language description. An existing dataset is included.
 
 9.	Code summarization (CodeSearchNet). A model is given the task to generate natural language comments for a code. Existing datasets are included.
   
@@ -65,4 +70,4 @@ If you use this code or CodeXGLUE, please consider citing us.
   year={2020},
 }</code></pre>
 
-Feel free to contact Duyu Tang (dutang@microsoft.com) and Shujie Liu (shujliu@microsoft.com) with any questions or comments.
+This research was conducted by Alexey Svyatkovskiy, Ambrosio Blanco, Daxin Jiang, Daya Guo, Duyu Tang, Junjie Huang, Lidong Zhou, Linjun Shou, Long Zhou, Ming Gong, Ming Zhou, Nan Duan, Neel Sundaresan, Shengyu Fu, Shuai Lu, Shujie Liu, Shuo Ren.

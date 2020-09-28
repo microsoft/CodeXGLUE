@@ -16,7 +16,7 @@ To address this, researchers from Microsoft Research Asia, Developer Division, a
 * **[text-text](https://github.com/microsoft/CodeXGLUE/tree/main/Text-Text)** (documentation translation) 
 
 A brief summary of CodeXGLUE is given below, including tasks, datasets, language, sizes in various states, baseline systems, providers, and short definitions of each task. Datasets highlighted in BLUE are newly introduced. 
-![A brief summary of CodeXGLUE, including tasks, datasets, baseline systems, etc.](https://github.com/microsoft/CodeXGLUE/blob/main/tasks.jpg)
+![A brief summary of CodeXGLUE, including tasks, datasets, baseline systems, etc.](https://tse1-mm.cn.bing.net/th/id/OIP.Xyr9Zw5XAPMmiamYfxaelwHaE8?pid=Api&rs=1)
 
 
 

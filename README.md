@@ -56,7 +56,7 @@ Below, we elaborate on the task definition for each task and newly introduced da
 
 # Training and Inference Time Cost
 We calculate the training and inference time cost for each dataset with 2 P100 GPUs. Results are shared in the following table.
-![time-cost](https://github.com/microsoft/CodeXGLUE/blob/main/time-cost.jpg)
+![time-cost](https://github.com/microsoft/CodeXGLUE/blob/main/tasks.jpg)
 # LICENSE
 Our codes follow MIT License.
 

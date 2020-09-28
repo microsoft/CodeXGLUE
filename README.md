@@ -16,7 +16,7 @@ To address this, researchers from Microsoft Research Asia, Developer Division, a
 * **[text-text](https://github.com/microsoft/CodeXGLUE/tree/main/Text-Text)** (documentation translation) 
 
 A brief summary of CodeXGLUE is given below, including tasks, datasets, language, sizes in various states, baseline systems, providers, and short definitions of each task. Datasets highlighted in BLUE are newly introduced. 
-![A brief summary of CodeXGLUE, including tasks, datasets, baseline systems, etc.](https://tse1-mm.cn.bing.net/th/id/OIP.Xyr9Zw5XAPMmiamYfxaelwHaE8?pid=Api&rs=1)
+![A brief summary of CodeXGLUE, including tasks, datasets, baseline systems, etc.](https://github.com/microsoft/CodeXGLUE/blob/main/tasks.jpg)
 
 
 
@@ -56,7 +56,7 @@ Below, we elaborate on the task definition for each task and newly introduced da
 
 # Training and Inference Time Cost
 We calculate the training and inference time cost for each dataset with 2 P100 GPUs. Results are shared in the following table.
-![time-cost](https://github.com/microsoft/CodeXGLUE/blob/main/tasks.jpg)
+![time-cost](https://github.com/microsoft/CodeXGLUE/blob/main/time-cost.jpg)
 # LICENSE
 Our codes follow MIT License.
 

@@ -28,7 +28,7 @@ Three pipelines including CodeBERT, CodeGPT, and Encoder-Decoder are provided to
 With CodeXGLUE, we seek to support the development of models that can be applied to various code intelligence problems, with the goal of increasing the productivity of software developers. We encourage researchers to participate in the open challenges to continue progress in code intelligence. Moving forward, we’ll extend CodeXGLUE to more programming languages and downstream tasks while continuing to push forward pre-trained models by exploring new model structures, introducing new pre-training tasks, using different types of data, and more.
 
 # Relevant Links
-[Leaderboard](https://microsoft.github.io/CodeXGLUE/) | [CodeXGLUE paper](arxivpaper-to-be-added)
+[Leaderboard](https://microsoft.github.io/CodeXGLUE/) | CodeXGLUE paper (coming soon)
 
 # Tasks and Datasets
 

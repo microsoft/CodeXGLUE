@@ -119,7 +119,7 @@ The results on the test set are shown as below:
 
 Small:
 
-| Method     |    BLEU   | Acc (100%) |  [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.MD)  |  
+| Method     |    BLEU   | Acc (100%) |  [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/Code-Code/code-to-code-trans/CodeBLEU.MD)  |  
 | ---------- | :-------: | :-------:  | :-------:  |
 | Naive copy |   78.06   |     0.0    |     -      |
 | LSTM       |   76.76   |    10.0    |     -      |
@@ -128,7 +128,7 @@ Small:
 
 Medium:
 
-| Method     |    BLEU   | Acc (100%) |  [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.MD)  |  
+| Method     |    BLEU   | Acc (100%) |  [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/Code-Code/code-to-code-trans/CodeBLEU.MD)  |  
 | ---------- | :-------: | :-------:  | :-------:  |
 | Naive copy |   90.91   |    0.0     |     -      |
 | LSTM       |   72.08   |    2.5     |     -      |

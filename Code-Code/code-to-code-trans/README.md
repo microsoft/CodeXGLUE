@@ -135,7 +135,7 @@ The results on the test set are shown as below:
 
 Java to C#:
 
-|     Method     |    BLEU    | Acc (100%) |  [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.MD) |  
+|     Method     |    BLEU    | Acc (100%) |  [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/Code-Code/code-to-code-trans/CodeBLEU.MD) |  
 |    ----------  | :--------: | :-------:  | :-------: |
 | Naive copy     |   18.54    |    0.0     |      -    |
 | PBSMT      	 |   43.53    |   12.5     |   42.71   |
@@ -145,7 +145,7 @@ Java to C#:
 
 C# to Java:
 
-|     Method     |    BLEU    | Acc (100%) |  [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.MD) | 
+|     Method     |    BLEU    | Acc (100%) |  [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/Code-Code/code-to-code-trans/CodeBLEU.MD) | 
 |    ----------  | :--------: | :-------:  | :-------: |
 | Naive copy     |   18.69    |     0.0    |      -    |
 | PBSMT          |   40.06    |    16.1    |   43.48   |

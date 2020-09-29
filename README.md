@@ -16,14 +16,14 @@ To address this, researchers from Microsoft Research Asia, Developer Division, a
 * **[text-text](https://github.com/microsoft/CodeXGLUE/tree/main/Text-Text)** (documentation translation) 
 
 A brief summary of CodeXGLUE is given below, including tasks, datasets, language, sizes in various states, baseline systems, providers, and short definitions of each task. Datasets highlighted in BLUE are newly introduced. 
-![A brief summary of CodeXGLUE, including tasks, datasets, baseline systems, etc.](https://github.com/microsoft/CodeXGLUE/blob/main/tasks.jpg)
+![A brief summary of CodeXGLUE, including tasks, datasets, baseline systems, etc.](tasks.jpg)
 
 
 
 To make it easy for participants, we provide three baseline models to support these tasks, including a BERT-style pre-trained model (in this case, CodeBERT), which is good at understanding problems. We also include a GPT-style pre-trained model, which we call CodeGPT, to support completion and generation problems. Finally, we include an Encoder-Decoder framework that supports sequence-to-sequence generation problems.
 
 Three pipelines including CodeBERT, CodeGPT, and Encoder-Decoder are provided to make it easy for participants.
-![baselines](https://github.com/microsoft/CodeXGLUE/blob/main/baselines.jpg)
+![baselines](baselines.jpg)
 
 With CodeXGLUE, we seek to support the development of models that can be applied to various code intelligence problems, with the goal of increasing the productivity of software developers. We encourage researchers to participate in the open challenges to continue progress in code intelligence. Moving forward, we’ll extend CodeXGLUE to more programming languages and downstream tasks while continuing to push forward pre-trained models by exploring new model structures, introducing new pre-training tasks, using different types of data, and more.
 
@@ -56,7 +56,7 @@ Below, we elaborate on the task definition for each task and newly introduced da
 
 # Training and Inference Time Cost
 We calculate the training and inference time cost for each dataset with 2 P100 GPUs. Results are shared in the following table.
-![time-cost](https://github.com/microsoft/CodeXGLUE/blob/main/time-cost.jpg)
+![time-cost](time-cost.jpg)
 # LICENSE
 Our codes follow MIT License.
 

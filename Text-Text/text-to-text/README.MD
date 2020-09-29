@@ -66,7 +66,7 @@ We also provide a pipeline that use Transformer architecture or fine-tunes [XLM-
 ```shell
 
 lr=5e-5
-batch_size=64
+batch_size=32
 beam_size=5
 source_length=256
 target_length=256
@@ -79,7 +79,7 @@ train_steps=50000
 pretrained_model=xlm-roberta-base #CodeBERT: path to CodeBERT. Roberta: roberta-base
 
 
-CUDA_VISIBLE_DEVICES=0,1,2,3 python run.py \
+CUDA_VISIBLE_DEVICES=0,1 python run.py \
 --do_train \
 --do_eval \
 --using_pretrain_model \
@@ -107,7 +107,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python run.py \
 ```shell
 
 beam_size=5
-batch_size=64
+batch_size=32
 source_length=256
 target_length=256
 output_dir=saved_models/multi_model
@@ -116,7 +116,7 @@ dev_file=$data_dir/dev.all.src,$data_dir/dev.all.tgt
 test_file=$data_dir/test.all.src,$data_dir/test.all.tgt
 test_model=$output_dir/checkpoint-best-bleu/pytorch_model.bin #checkpoint for test
 
-CUDA_VISIBLE_DEVICES=0,1,2,3 python run.py \
+CUDA_VISIBLE_DEVICES=0,1 python run.py \
 --do_test \
 --model_type roberta \
 --model_name_or_path xlm-roberta-base \

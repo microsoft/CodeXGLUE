@@ -168,7 +168,7 @@ python ../evaluator/evaluator.py -a ../dataset/test.jsonl  -p saved_models/predi
 
 The results on the test set are shown as below:
 
-| Method   |     F1     |
+| Method   |     MRR    |
 | -------- | :--------: |
 | Roberta  |   0.1833   |
 | CodeBERT | **0.2719** |

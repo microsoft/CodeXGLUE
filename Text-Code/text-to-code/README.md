@@ -67,9 +67,15 @@ public void inc ( ) { this . add ( 1 ) ; }
 
 ## Pipeline
 
-We provide a pipeline that fine-tunes our pre-trained GPT-2 model, which we called CodeGPT,  on this task. 
+We provide a pipeline that fine-tunes our pre-trained GPT-2 model, which we called CodeGPT, on this task.
 
-CodeGPT is a "dessert" GPT-2 model which is pre-trained on CodeSearchNet dataset w/o OpenAI GPT-2 initializing. So it has its own vocabulary on code. We provide two versions of CodeGPT, one is on java, the other is on python. You can easily load them by huggingface transformers.
+CodeGPT is a "dessert" GPT-2 model which is pre-trained on Python and Java dataset (PL data only) from CodeSearchNet w/o OpenAI GPT-2 initializing. Below are the statistics for training datasets.
+|            | #Functions |   #Tokens   |
+| ---------- | :--------: | :---------: |
+|   Python   | 1,144,977  |   119.0M    |
+|    Java    | 1,554,613  |   169.4M    |
+
+We provide two versions of CodeGPT, one is for Java, the other is for Python. Each of them has its own vocabulary on code. You can easily load them by huggingface transformers.
 
 ## Dependency
 

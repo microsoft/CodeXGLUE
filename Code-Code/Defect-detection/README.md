@@ -35,7 +35,7 @@ For each file, each line in the uncompressed file represents one function.  One 
 
    - **func:** the source code
    - **target:** 0 or 1 (vulnerability or not)
-   - **index:** the index of example
+   - **idx:** the index of example
 
 ### Data Statistics
 
@@ -73,7 +73,7 @@ A predications file that has predictions in TXT format, such as evaluator/predic
 
 ## Pipeline-CodeBERT
 
-We also provide a pipeline that fine-tunes [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf) on this task. 
+We also provide a pipeline that fine-tunes [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf) on this task.
 
 ### Fine-tune
 

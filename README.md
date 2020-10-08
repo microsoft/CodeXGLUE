@@ -16,14 +16,14 @@ To address this, researchers from Microsoft Research Asia, Developer Division, a
 * **[text-text](https://github.com/microsoft/CodeXGLUE/tree/main/Text-Text)** (documentation translation) 
 
 A brief summary of CodeXGLUE is given below, including tasks, datasets, language, sizes in various states, baseline systems, providers, and short definitions of each task. Datasets highlighted in BLUE are newly introduced. 
-![avatar](https://uc66743fa042b33be6a5f8751b7a.previews.dropboxusercontent.com/p/thumb/AA7p-u2Sh3UZmRW2o1RAtKAM5cSK-sp6ezfrzBwSHT8Av3w8zEd1Ye8NvFB4T0pl-Je50wsDJ-9ZXy5SvvxF8a_fUGPt9TQrYHa5ndIxpVJtlYesaBTOZKh7QVeM2MRjU5LzbiLC0TZkOScg1uY_uvHdBvuK1LEOY4qgxwHV9gTRECrPgmxHrkpwdf0dZPKlPqBWyTJM4OCIB2QpNDQtc6fOTKB4XhBnNTPugEyePDTqiWTcrKmz7uVfY9rHgNsdGuCKvkGHYLhgflrXu7h1EDTnqTIvjH5QcyWIaa9s8s1nvcOw212Iq7SfJnqiB72r2Hp-yZfLGZ55nc998__cO6wmPaC8lBeBk6xSmm9hAcVLymdx66rovBWBDIcVxXqfr4JHNr7TmhGpXcI0XNjR-H8h/p.jpeg?fv_content=true&size_mode=5)
+![avatar](https://www.msra.cn/wp-content/uploads/2020/09/codexglue-1.jpg)
 
 
 
 To make it easy for participants, we provide three baseline models to support these tasks, including a BERT-style pre-trained model (in this case, CodeBERT), which is good at understanding problems. We also include a GPT-style pre-trained model, which we call CodeGPT, to support completion and generation problems. Finally, we include an Encoder-Decoder framework that supports sequence-to-sequence generation problems.
 
 Three pipelines including CodeBERT, CodeGPT, and Encoder-Decoder are provided to make it easy for participants.
-![avatar](https://uc719a554a8036546eb8129862cb.previews.dropboxusercontent.com/p/thumb/AA6654nQpuvSGaLUuAhLT3BVBI1ZER0JDJpxW4nsSMsz2Z6i3gq6eaTW8GA5Pb6jHAhH1Xoz-3ui2nhCqBqTWZzHNffFfBkrF7KdnZpWQgYrrrpsKEnsBgO9qFRjfjcFySXCn0RURELAhGH-ReHIy5b9MuOxn0y1oJ8GVmuKQX88o6uOUXIAtJVfYD2kS42HM1gdZF8pC1Ou3X_okbltKgTcEC6sG6PU2Rr1ObTUXEebJ4yQMAdKQXLbjR8b6fK_Y20ihS3YbREMULWyDhxqAYYZaCOaD4P8rfk6V55lCpWmPfKsIHuWFzl4dvaKlCSIeu5820mf1Hi_w4kMCdS23M7CqPQsqhhgmF56FDG6OFmPGUCrEy8HcBz3c9SEatnlxF3AUqGG4wBRX7flkWAzpBf7/p.jpeg?fv_content=true&size_mode=5)
+![avatar](https://www.microsoft.com/en-us/research/uploads/prod/2020/09/Figure-2_CodeXGLUE.png)
 
 
 With CodeXGLUE, we seek to support the development of models that can be applied to various code intelligence problems, with the goal of increasing the productivity of software developers. We encourage researchers to participate in the open challenges to continue progress in code intelligence. Moving forward, we’ll extend CodeXGLUE to more programming languages and downstream tasks while continuing to push forward pre-trained models by exploring new model structures, introducing new pre-training tasks, using different types of data, and more.

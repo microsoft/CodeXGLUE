@@ -37,7 +37,7 @@ Below, we elaborate on the task definition for each task and newly introduced da
 
 1.	Clone detection (BigCloneBench, POJ-104). A model is tasked with measure the semantic similarity between codes. Two existing datasets are included. One is for binary classification between code and the other is for retrieving semantically similar code given code as the query. 
 
-2.	Defect detection (Defects4J). A model is tasked with identifying whether a body of source code contains defects that may be used to attack software systems, such as resource leaks, use-after-free vulnerabilities and DoS attack. An existing dataset is included.
+2.	Defect detection (Defects4C). A model is tasked with identifying whether a body of source code contains defects that may be used to attack software systems, such as resource leaks, use-after-free vulnerabilities and DoS attack. An existing dataset is included.
 
 3.	Cloze test (CT-all, CT-max/min). A model is tasked with predicting the masked token from  code, formulated as a multi-choice classification problem. The two datasets are newly created, one with candidates from the (filtered) vocabulary and the other with candidates among “max” and “min”.
  
@@ -45,7 +45,7 @@ Below, we elaborate on the task definition for each task and newly introduced da
 
 5.	Code translation (CodeTrans). A model is tasked with translating the code in one programming language to the code in another one. A dataset between Java and C# is newly created.
 
-6.	Code search (CodeSearchNet, AdvTest; StacQC, WebQueryTest). ). A model is given the task of  measuring  semantic similarity between text and code. In the retrieval scenario, a test set is newly created where function names and variables in test sets are replaced to test the generalization ability of a model. In text-code classification scenario, a test set where natural language queries come from Bing query log is created to test on real user queries.
+6.	Code search (CodeSearchNet, AdvTest; StaQC, WebQueryTest). ). A model is given the task of  measuring  semantic similarity between text and code. In the retrieval scenario, a test set is newly created where function names and variables in test sets are replaced to test the generalization ability of a model. In text-code classification scenario, a test set where natural language queries come from Bing query log is created to test on real user queries.
 
 7.	Code refinement (Bugs2Fix). A model is tasked with trying to automatically refine the code, which could be buggy or complex. An existing dataset is included.
 

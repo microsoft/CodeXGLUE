@@ -6,9 +6,7 @@
         "Submission Date":"2020-08-30",
         "MRR":0.2719,
         "Acc-WebQuery":"0.460",
-        "F1-WebQuery":0.576,
-        "Acc-StaQC":0.825,
-        "F1-StaQC":0.821
+        "F1-WebQuery":0.576
       },
       {"Rank":2,
         "id":102,
@@ -17,19 +15,6 @@
         "Submission Date":"2020-08-30",
         "MRR":0.1833,
         "Acc-WebQuery":0.459,
-        "F1-WebQuery":0.530,
-        "Acc-StaQC":0.801,
-        "F1-StaQC":0.791
-      },
-      {"Rank":3,
-        "id":103,
-        "Model":"Code-HNN",
-        "Organization":"OSU Team",
-        "Submission Date":"2018-10-31",
-        "MRR":"/",
-        "Acc-WebQuery":"/",
-        "F1-WebQuery":"/",
-        "Acc-StaQC":"/",
-        "F1-StaQC":0.812
-      }      
+        "F1-WebQuery":"0.530"
+      }
         ]}

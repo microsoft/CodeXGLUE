@@ -43,18 +43,9 @@ def calculate_scores(answers, predictions):
 
 def main():
     parser = argparse.ArgumentParser(description='Evaluate leaderboard predictions for ClozeTest-maxmin dataset.')
-    parser.add_argument('--answers_staqc', '-as', help="filename of the labels on staqc test set, in txt format.")
-    parser.add_argument('--predictions_staqc', '-ps', help="filename  of the leaderboard predictions on staqc test set, in txt format.")
-    parser.add_argument('--answers_webquery', '-aw', help="filename of the labels on staqc test set, in txt format.")
-    parser.add_argument('--predictions_webquery', '-pw', help="filename  of the leaderboard predictions on staqc test set, in txt format.")
+    parser.add_argument('--answers_webquery', '-aw', help="filename of the labels on webquery test set, in txt format.")
+    parser.add_argument('--predictions_webquery', '-pw', help="filename  of the leaderboard predictions on webquery test set, in txt format.")
     args = parser.parse_args()
-
-    answers = read_answers(args.answers_staqc)
-    predictions = read_predictions(args.predictions_staqc)
-    acc_staqc = calculate_scores(answers, predictions)
-    # print('NL-code-search-WebQuery on staqc test set, acc: {}'.format(acc_staqc))
-    print('NL-code-search-WebQuery on staqc test set:')
-    print(acc_staqc)
 
     answers = read_answers(args.answers_webquery)
     predictions = read_predictions(args.predictions_webquery)

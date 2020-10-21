@@ -403,18 +403,16 @@
 									,page:  false//开启分页
 									,cols: [[{align: 'center', title: '', colspan: 4}
 											,{align: 'center', title: 'NL-code-search-Adv', colspan: 1, colGroup:true}
-											,{align: 'center', title: 'NL-code-search-WebQuery', colspan: 4}],
+											,{align: 'center', title: 'NL-code-search-WebQuery', colspan: 2}],
 										[ //表头
 										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
 										,{field: 'Model', title: 'Model', width: 220}
 										,{field: 'Organization', title: 'Organization', width: 150}
 										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 
-										,{field: 'MRR', title: 'MRR', width: 160, sort: true}
-										,{field: 'Acc-WebQuery', title: 'Acc-WebQuery', width: 140, sort: true}
-										,{field: 'F1-WebQuery', title: 'F1-WebQuery', width: 140, sort: true}
-										,{field: 'Acc-StaQC', title: 'Acc-StaQC', width: 120, sort: true}
-										,{field: 'F1-StaQC', title: 'F1-StaQC', width: 120, sort: true}
+										,{field: 'MRR', title: 'MRR', sort: true}
+										,{field: 'Acc-WebQuery', title: 'Accuracy', sort: true}
+										,{field: 'F1-WebQuery', title: 'F1', sort: true}
 									]]
 								});
 							});

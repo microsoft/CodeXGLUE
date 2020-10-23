@@ -5,7 +5,6 @@ import torch.nn as nn
 import torch
 from torch.autograd import Variable
 import copy
-from transformers.modeling_bert import BertLayerNorm
 import torch.nn.functional as F
 from torch.nn import CrossEntropyLoss, MSELoss
 

@@ -326,7 +326,7 @@ def evaluate(args, model, tokenizer,eval_when_training=False):
         score=scores[i,i]
         rank=1
         for j in range(len(scores)):
-            if i!=j and scores[i,j]>score:
+            if i!=j and scores[i,j]>=score:
                 rank+=1
         ranks.append(1/rank)    
     

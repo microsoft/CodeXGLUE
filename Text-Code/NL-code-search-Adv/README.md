@@ -170,8 +170,8 @@ The results on the test set are shown as below:
 
 | Method   |     MRR    |
 | -------- | :--------: |
-| Roberta  |   0.1833   |
-| CodeBERT | **0.2719** |
+| [Roberta](https://arxiv.org/pdf/1907.11692.pdf)  |   0.1833   |
+| [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf) | **0.2719** |
 
 ## Reference
 <pre><code>@article{husain2019codesearchnet,

@@ -139,8 +139,8 @@ The results on the test set are shown as below:
 | -------- | :-------: |
 | BiLSTM   |   59.37   |
 | TextCNN  |   60.69   |
-| RoBERTa  |   61.05   |
-| CodeBERT | **62.08** |
+| [RoBERTa](https://arxiv.org/pdf/1907.11692.pdf)  |   61.05   |
+| [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf) | **62.08** |
 
 ## Reference
 <pre><code>@inproceedings{zhou2019devign,

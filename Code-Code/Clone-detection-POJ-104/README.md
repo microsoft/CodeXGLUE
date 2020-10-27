@@ -176,13 +176,13 @@ The results on the test set are shown as below:
 
 | Method           |  MAP(%)   |
 | ---------------- | :-------: |
-| code2vec         |   1.98    |
-| NCC              |   39.95   |
-| NCC-w/0-inst2vec |   54.19   |
-| Aroma-Dot        |   52.08   |
-| Aroma-Cos        |   55.12   |
-| MISIM-GNN        |   82.45   |
-| CodeBERT         | **84.29** |
+| [code2vec](https://dl.acm.org/doi/pdf/10.1145/3290353)         |   1.98    |
+| [NCC](https://papers.nips.cc/paper/7617-neural-code-comprehension-a-learnable-representation-of-code-semantics.pdf)              |   39.95   |
+| [NCC-w/0-inst2vec](https://papers.nips.cc/paper/7617-neural-code-comprehension-a-learnable-representation-of-code-semantics.pdf) |   54.19   |
+| [Aroma-Dot](https://dl.acm.org/doi/pdf/10.1145/3360578)        |   52.08   |
+| [Aroma-Cos](https://dl.acm.org/doi/pdf/10.1145/3360578)        |   55.12   |
+| [MISIM-GNN](https://arxiv.org/pdf/2006.05265.pdf)        |   82.45   |
+| [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf)         | **84.29** |
 
 ## Reference
 <pre><code>@inproceedings{mou2016convolutional,

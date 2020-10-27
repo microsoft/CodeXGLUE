@@ -134,6 +134,7 @@ The results on the test set are shown as below:
 | CDLH       |   0.92    |   0.74    |   0.82    |
 | ASTNN      |   0.92    |   0.94    |   0.93    |
 | FA-AST-GMN |   0.96    |   0.94    |   0.95    |
+| TBBCD      |   0.94    |   0.96    |   0.95    |
 | CodeBERT   | **0.960** | **0.969** | **0.965** |
 
 

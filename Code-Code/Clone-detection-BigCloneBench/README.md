@@ -129,13 +129,13 @@ The results on the test set are shown as below:
 
 | Method     | Precision |  Recall   |    F1     |
 | ---------- | :-------: | :-------: | :-------: |
-| Deckard    |   0.93    |   0.02    |   0.03    |
-| RtvNN      |   0.95    |   0.01    |   0.01    |
-| CDLH       |   0.92    |   0.74    |   0.82    |
-| ASTNN      |   0.92    |   0.94    |   0.93    |
-| FA-AST-GMN |   0.96    |   0.94    |   0.95    |
-| TBBCD      |   0.94    |   0.96    |   0.95    |
-| CodeBERT   | **0.960** | **0.969** | **0.965** |
+| [Deckard](https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?referer=https://scholar.google.com/&httpsredir=1&article=2010&context=sis_research)    |   0.93    |   0.02    |   0.03    |
+| [RtvNN](https://tufanomichele.com/publications/C5.pdf)      |   0.95    |   0.01    |   0.01    |
+| [CDLH](https://www.ijcai.org/Proceedings/2017/0423.pdf)       |   0.92    |   0.74    |   0.82    |
+| [ASTNN](https://ieeexplore.ieee.org/abstract/document/8812062)      |   0.92    |   0.94    |   0.93    |
+| [FA-AST-GMN](https://arxiv.org/pdf/2002.08653.pdf) |   0.96    |   0.94    |   0.95    |
+| [TBBCD](http://taoxie.cs.illinois.edu/publications/icpc19-clone.pdf)      |   0.94    |   0.96    |   0.95    |
+| [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf)   | **0.960** | **0.969** | **0.965** |
 
 
 ## Reference

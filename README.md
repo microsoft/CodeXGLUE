@@ -36,26 +36,39 @@ With CodeXGLUE, we seek to support the development of models that can be applied
 Below, we elaborate on the task definition for each task and newly introduced datasets that are highlighted in the table above.
 
 1.	Clone detection (BigCloneBench, POJ-104). A model is tasked with measure the semantic similarity between codes. Two existing datasets are included. One is for binary classification between code and the other is for retrieving semantically similar code given code as the query. 
-
 2.	Defect detection (Defects4C). A model is tasked with identifying whether a body of source code contains defects that may be used to attack software systems, such as resource leaks, use-after-free vulnerabilities and DoS attack. An existing dataset is included.
-
 3.	Cloze test (CT-all, CT-max/min). A model is tasked with predicting the masked token from  code, formulated as a multi-choice classification problem. The two datasets are newly created, one with candidates from the (filtered) vocabulary and the other with candidates among “max” and “min”.
- 
 4.	Code completion (PY150, GitHub Java Corpus). A model is tasked with predicting following tokens given a code context. Both token-level and line-level completion are covered. The token-level task is analogous to language modeling, and we include two influential datasets here. Line-level datasets are newly created to test a model’s ability to autocomplete a line. 
-
 5.	Code translation (CodeTrans). A model is tasked with translating the code in one programming language to the code in another one. A dataset between Java and C# is newly created.
-
 6.	Code search (CodeSearchNet, AdvTest; StaQC, WebQueryTest). ). A model is given the task of  measuring  semantic similarity between text and code. In the retrieval scenario, a test set is newly created where function names and variables in test sets are replaced to test the generalization ability of a model. In text-code classification scenario, a test set where natural language queries come from Bing query log is created to test on real user queries.
-
 7.	Code refinement (Bugs2Fix). A model is tasked with trying to automatically refine the code, which could be buggy or complex. An existing dataset is included.
-
 8.	Text-to-code generation (CONCODE). A model is given the task to generate code given natural language description. An existing dataset is included.
-
 9.	Code summarization (CodeSearchNet). A model is given the task to generate natural language comments for a code. Existing datasets are included.
-  
 10.	Documentation translation (Microsoft Docs). A model is given the task to translate code documentation between human languages. A dataset, focusing on low-resource multilingual translation, is newly created.
 
+# Submission Instructions
+
+Once you have built a model that meets your expectations on evaluation with the dev set, you can submit your test results to get official evaluation on the test set. To ensure the integrity of the official test results, we do not release the correct answers for test set to the public. To submit your model for official evaluation on the test set, follow the below steps:
+
+1. Generate your prediction output for the dev set.
+2. Run the official evaluation methodologies found in the task specific git repo and verify your systems are running as expected.
+3. Generate your prediction output for the test set.
+4. Submit the following information by emailing to `codexglue@microsoft.com`.
+
+Your email should include:
+
+1. Prediction results on test set. **[Required]**
+2. Prediction results on dev set. **[Recommended]**
+3. Individual/Team Name: Name of the individual or the team to appear in the leaderboard. **[Required]**
+4. Individual/Team Institution: Name of the institution of the individual or the team to appear in the leaderboard. **[Optional]**
+5. Model code: Training code for the model. **[Recommended]**
+6. Model information: Name of the model/technique to appear in the leaderboard. **[Required]**
+7. Paper Information: Name, Citation, URL of the paper if model is from a published work to appear in the leaderboard. **[Optional]**
+
+To avoid "P-hacking" we discourage too many submissions from the same group in a short period of time.
+
 # Training and Inference Time Cost
+
 We calculate the training and inference time cost for each dataset with 2 P100 GPUs. Results are shared in the following table.
 ![time-cost](time-cost.jpg)
 

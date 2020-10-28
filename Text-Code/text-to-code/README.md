@@ -67,15 +67,7 @@ public void inc ( ) { this . add ( 1 ) ; }
 
 ## Pipeline
 
-We provide a pipeline that fine-tunes our pre-trained GPT-2 model, which we called CodeGPT, on this task.
-
-CodeGPT is a "dessert" GPT-2 model which is pre-trained on Python and Java dataset (PL data only) from CodeSearchNet w/o OpenAI GPT-2 initializing. Below are the statistics for training datasets.
-|            | #Functions |   #Tokens   |
-| ---------- | :--------: | :---------: |
-|   Python   | 1,144,977  |   119.0M    |
-|    Java    | 1,554,613  |   169.4M    |
-
-We provide two versions of CodeGPT, one is for Java, the other is for Python. Each of them has its own vocabulary on code. You can easily load them by huggingface transformers.
+We provide a pipeline for this task with [CodeGPT and CodeGPT-adapted](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/CodeCompletion-token#codegpt) model. 
 
 ## Dependency
 
@@ -90,7 +82,7 @@ To fine-tune CodeGPT on concode dataset for text2code generation on multi-GPUs a
 LANG=java
 DATADIR=../dataset/concode
 OUTPUTDIR=../save/concode
-PRETRAINDIR=microsoft/CodeGPT-small-java    # will download pre-trained CodeGPT model
+PRETRAINDIR=microsoft/CodeGPT-small-java-adapted    # will download pre-trained CodeGPT model
 LOGFILE=text2code_concode.log
 PER_NODE_GPU=YOUR_GPU_NUM       # modify YOUR_GPU_NUM
 
@@ -179,10 +171,11 @@ The results on concode test set are shown as below:
 | Model                                                 |   EM    |   BLEU   | CodeBLEU |
 | ----------------------------------------------------- | :-----: | :------: | :------: |
 | Seq2Seq                                               |  3.05   |  21.31   |   17.61  |
-| Seq2Action+MAML (ACL 2019)                            |  10.05  |  24.40   |   20.99  |
-| Iyer-Simp+200 idoms (EMNLP 2020)                      |  12.20  |  26.60   |     -    |
-| Transformer w/ GPT-2 (12L)                            |  17.35  |  25.37   |   22.79  |
-| Transformer w/ CodeGPT (12L)                          |**18.25**|**28.69** | **25.69**|
+| [Seq2Action+MAML](https://arxiv.org/pdf/1906.07108.pdf)                            |  10.05  |  24.40   |   20.99  |
+| [Iyer-Simp+200 idoms](https://www.aclweb.org/anthology/D19-1545.pdf)                      |  12.20  |  26.60   |     -    |
+| [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)                          |  17.35  |  25.37   |   22.79  |
+| CodeGPT                                               |  18.25  |  28.69   |   25.69  |
+| CodeGPT-adapted                                       |**20.10**|**32.79** | **27.74**|
 
 ## Reference
 

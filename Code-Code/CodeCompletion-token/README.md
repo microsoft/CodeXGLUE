@@ -201,7 +201,6 @@ It might take 60 minutes for inference on py150 dataset and 15 minutes on java C
 | CodeGPT                                               |    76.45   |
 | CodeGPT-adapted                                       |  **77.13** |
 
-\* We reproduced his experiment since this paper only reported MRR on the first 1,000,000 tokens in test set.
 
 ## Reference
 

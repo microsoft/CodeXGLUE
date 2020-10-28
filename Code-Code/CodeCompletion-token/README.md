@@ -1,6 +1,6 @@
 # CodeXGLUE -- Code Completion (token level)
 
-Here is the pipeline for token level code completion task.
+Here is the introduction and pipeline for token level code completion task.
 
 ## Task Definition
 
@@ -41,7 +41,7 @@ Code corpus are saved in txt format files. one line is a tokenized code snippets
 <s> from django . utils . translation import ugettext_lazy as _ <EOL> import horizon <EOL> from openstack_dashboard . dashboards . project import dashboard <EOL> class Stacks ( horizon . Panel ) : <EOL> name = _ ( "Stacks" ) <EOL> slug = "stacks" <EOL> permissions = ( '' , ) <EOL> dashboard . Project . register ( Stacks ) </s>
 ```
 
-We have added `<s>` and `</s>` to indicate the start and the end of one piece of code. `<EOL>` is also added in python corpus to mark end of a line since in python there is no `;` or `}` to mark the end of a statement like in java.
+We have added `<s>` and `</s>` to indicate the start and the end of one piece of code. `<EOL>` is also added in python corpus to mark the ending of a line since in python there is no `;` or `}` to mark the ending of a statement like in java.
 
 
 ### Data Statistics
@@ -92,15 +92,18 @@ The accuracy on this line is 62.5%
 
 ## Pipeline
 
-We provide a pipeline that fine-tunes our pre-trained GPT-2 model, which we called CodeGPT, on this task.
 
-CodeGPT is a "dessert" GPT-2 model which is pre-trained on Python and Java dataset (PL data only) from CodeSearchNet w/o OpenAI GPT-2 initializing. Below are the statistics for training datasets.
+### CodeGPT
+
+we provide CodeGPT, which is a Transformer-based language model pre-trained on programming language (PL). CodeGPT shares the same model architecture and training object with GPT-2, consisting 12 layers of Transformer decoders. We pre-train monolingual models respectively on Python and Java corpus from the CodeSearchNet dataset, which includes 1.1M Python functions and 1.6M Java methods. A function or method in training dataset consists function signature and function body. Some functions also contain NL docstrings. The dataset statistics are shown below:
 |            | #Functions |   #Tokens   |
 | ---------- | :--------: | :---------: |
 |   Python   | 1,144,977  |   119.0M    |
 |    Java    | 1,554,613  |   169.4M    |
 
-We provide two versions of CodeGPT, one is for Java, the other is for Python. Each of them has its own vocabulary on code. You can easily load them by huggingface transformers.
+We release two CodeGPT models for each programming language. One model is pre-trained from scratch, in a way that the BPE (byte pair encoder) vocabulary is newly obtained on code corpus and that model parameters are randomly initialized. The other model is a domain-adaptive one, which uses GPT-2 model as the starting point and is continually trained on code corpus. Therefore, the second model has the same vocabulary with GPT-2, and inherits the natural language understanding ability of GPT-2. It might perform better on natural language related tasks. We call the second model CodeGPT-adapted and regard it as the default one. 
+Both models are publicly available at [huggingface website](https://huggingface.co/models?search=microsoft).
+
 
 ### Dependency
 
@@ -182,20 +185,21 @@ It might take 60 minutes for inference on py150 dataset and 15 minutes on java C
 
 | Model                                                 |  Accuracy  |
 | ----------------------------------------------------- | :--------: |
-| LSTM (Kim, 2020)                                      |    58.0    |
-| Transformer (Facebook, 6L) (Kim, 2020)                |    68.1    |
+| LSTM + BPE                                            |    58.0    |
 | Transformer (12L)                                     |    73.26   |
-| Transformer w/ GPT-2 (12L)                            |    74.22   |
-| Transformer w/ CodeGPT (12L)                          |  **74.93** |
+| [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)                            |    74.22   |
+| CodeGPT                                               |    74.93   |
+| CodeGPT-adapted                                       |  **75.11** |
 
 ### javaCorpus
 
 | Model                                                 |  Accuracy  |
 | ----------------------------------------------------- | :--------: |
-| BPE+LSTM (ICSE 2020*)                                 |    56.02   |
+| LSTM + BPE                                            |    56.02   |
 | Transformer (12L)                                     |    64.16   |
-| Transformer w/ GPT-2 (12L)                            |    74.89   |
-| Transformer w/ CodeGPT (12L)                          |  **76.45** |
+| [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)                           |    74.89   |
+| CodeGPT                                               |    76.45   |
+| CodeGPT-adapted                                       |  **77.13** |
 
 \* We reproduced his experiment since this paper only reported MRR on the first 1,000,000 tokens in test set.
 

@@ -1,6 +1,6 @@
 # CodeXGLUE -- Code Completion (line level)
 
-Here is the pipeline for line level code completion task.
+Here is the introduction and pipeline for line level code completion task.
 
 ## Task Definition
 
@@ -15,13 +15,14 @@ Line level code completion task shares the train/dev dataset with token level co
 
 ### py150 line completion test set
 
-We create test set from py150 token level code comepltion test set. We select a file (one line in test.txt) and randomly cut it as two part. The former part is inputs, while all the tokens until the first `<EOL>` token (excluding `<EOL>`) in the latter part is outputs.
+We create test set from py150 token level code comepltion test set. Since we intend to test model's ability to autocomplete an arbitrary line, we select the line to be predicted at random. To generate an example, we randomly cut a file as two parts. The former part is the input context, models are expected to generating the code sequence in the latter part until the first $<EOL>$ token (excluding $<EOL>$).
+
 
 Test set is already at `dataset/py150/line_completion/test.json`.
 
 ### Github Java Corpus line completion test set
 
-We create test set from Github Java Corpus token level code comepltion test set. We select a file (one line in test.txt) and randomly cut it as two part. The former part is inputs, while all the tokens until the first `;` or `}` token (including `;` or `}`) in the latter part is outputs.
+We create test set from Github Java Corpus token level code comepltion test set. In the same way as for Python, we randomly cut a file as two parts. The former part is the input context, outputs is the code sequence in the latter part until the first ; or \} token (including ; or \} token).
 
 Test set is already at `dataset/javaCorpus/line_completion/test.json`.
 
@@ -81,7 +82,7 @@ def __init__ ( self ) :
 
 ## Pipeline
 
-We provide a pipeline that evaluate line completion on our fine-tuned GPT-2 model. You could directly use the model trained on token level code completion to test on line-level completion. 
+We provide a pipeline that evaluate line completion on [CodeGPT](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/CodeCompletion-token#codegpt) model. You could directly use the model trained on token level code completion to test on line-level completion. 
 
 ### Dependency
 
@@ -123,19 +124,21 @@ It might take 45 minutes for inferencing on py150 dataset and 15 minutes on java
 
 | Model                                                 |     EM     |  Edit similarity  |
 | ----------------------------------------------------- | :--------: | :---------------: |
-| BPE+LSTM                                              |    17.93   |       50.05       |
-| Transformer (12L)                                     |    36.65   |       67.51       |
-| Transformer w/ GPT-2 (12L)                            |    38.55   |       68.94       |
-| Transformer w/ CodeGPT (12L)                          |  **39.11** |     **69.69**     |
+| LSTM+BPE                                              |    17.93   |       50.05       |
+| Transformer                                           |    36.65   |       67.51       |
+| [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)                               |    38.55   |       68.94       |
+| CodeGPT                                               |    39.11   |       69.69       |
+| CodeGPT-adapted                                       |  **39.65** |     **69.84**     |
 
 ### javaCorpus
 
 | Model                                                 |     EM     |  Edit similarity  |
 | ----------------------------------------------------- | :--------: | :---------------: |
 | BPE+LSTM                                              |    10.30   |       41.55       |
-| Transformer (12L)                                     |    15.33   |       50.39       |
-| Transformer w/ GPT-2 (12L)                            |    24.30   |       60.70       |
-| Transformer w/ CodeGPT (12L)                          |  **25.30** |     **61.54**     |
+| Transformer                                           |    15.33   |       50.39       |
+| [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)                            |    24.30   |       60.70       |
+| CodeGPT                                               |    25.30   |       61.54       |
+| CodeGPT-adapted                                       |  **26.43** |     **63.03**     |
 
 
 ## Reference

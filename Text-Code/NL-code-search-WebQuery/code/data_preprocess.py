@@ -21,11 +21,8 @@ path = './StackOverflow-Question-Code-Dataset/data/data_hnn/python/train/data_pa
 train_data = pickle.load(open(path, 'rb'))  # 2932
 path = './StackOverflow-Question-Code-Dataset/data/data_hnn/python/valid/data_partialcontext_shared_text_vocab_in_buckets.pickle'
 dev_data = pickle.load(open(path, 'rb'))  # 976
-path = './StackOverflow-Question-Code-Dataset/data/data_hnn/python/test/data_partialcontext_shared_text_vocab_in_buckets.pickle'
-test_data = pickle.load(open(path, 'rb'))  # 976
 train_data = [i for inst in train_data for i in inst]
 dev_data = [i for inst in dev_data for i in inst]
-test_data = [i for inst in test_data for i in inst]
 
 
 def format_str(string):
@@ -54,7 +51,6 @@ def generate_my_format(data, type, quests, qc_merge):
 
 my_train_data = generate_my_format(train_data, 'train', questions, questions_code_merge)
 my_dev_data = generate_my_format(dev_data, 'dev', questions, questions_code_merge)
-my_test_data = generate_my_format(test_data, 'test', questions, questions_code_merge)
 
 
 def write(path, data):
@@ -63,4 +59,3 @@ def write(path, data):
 
 write('./data/train_staqc.json', my_train_data)
 write('./data/dev_staqc.json', my_dev_data)
-write('./data/test_staqc.json', my_test_data)

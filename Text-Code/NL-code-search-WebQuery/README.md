@@ -21,7 +21,7 @@ Most  existing  code search datasets use code documentations or questions from o
 
 Here we present NL-code-searhc-WebQuery dataset,  a  testing  set  of  real  code  search  for Python of 1,046  query-code pairs with code search intent and their human annotations. The real user queries are collected from Bing query logs and the code for queries are from CodeSearchNet. You can find our testing set in `./data/test_webquery.json` .
 
-Since there's no direct training set for our WebQueryTest set, we finetune a pre-trained model in a set zero-shot setting. The training and validation sets of NL-code-search-WebQuery data are collected from StaQC python dataset, where each instance contains a StackOverflow title, a python code snippet and a 0/1 annotation of whether the code answers the title.
+Since there's no direct training set for our WebQueryTest set, we can finetune a pre-trained model in a zero-shot setting. The training and validation sets of NL-code-search-WebQuery data are collected from the StaQC python dataset, where each instance contains a StackOverflow title, a python code snippet and a 0/1 annotation of whether the code answers the title.
 
 #### Download and Preprocess
 
@@ -43,7 +43,7 @@ Data statistics of NL-code-search-WebQuery are shown in the table below:
 
 ## Fine-tuning
 
-You can use the following command to finetune:
+You can use the following command to finetune a pre-trained model on the StaQC training set:
 
 ```shell
 python code/run_classifier.py \

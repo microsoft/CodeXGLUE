@@ -102,7 +102,8 @@ we provide CodeGPT, which is a Transformer-based language model pre-trained on p
 |    Java    | 1,554,613  |   169.4M    |
 
 We release two CodeGPT models for each programming language. One model is pre-trained from scratch, in a way that the BPE (byte pair encoder) vocabulary is newly obtained on code corpus and that model parameters are randomly initialized. The other model is a domain-adaptive one, which uses GPT-2 model as the starting point and is continually trained on code corpus. Therefore, the second model has the same vocabulary with GPT-2, and inherits the natural language understanding ability of GPT-2. It might perform better on natural language related tasks. We call the second model CodeGPT-adapted and regard it as the default one. 
-Both models are publicly available at [huggingface website](https://huggingface.co/models?search=microsoft).
+
+All the models are publicly available at [huggingface website](https://huggingface.co/models?search=microsoft). Model names are `CodeGPT-small-py`, `CodeGPT-small-java`, `CodeGPT-small-py-adaptedGPT2`, `CodeGPT-small-java-adaptedGPT2`
 
 
 ### Dependency

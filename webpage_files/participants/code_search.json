@@ -4,17 +4,17 @@
         "Model":"CodeBERT",
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",
-        "MRR":0.2719,
-        "Acc-WebQuery":"0.460",
-        "F1-WebQuery":0.576
+        "MRR":27.19,
+        "Acc-WebQuery":59.98,
+        "F1-WebQuery":59.56
       },
       {"Rank":2,
         "id":102,
         "Model":"RoBERTa-base",
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",
-        "MRR":0.1833,
-        "Acc-WebQuery":0.459,
-        "F1-WebQuery":"0.530"
+        "MRR":18.33,
+        "Acc-WebQuery":"58.20",
+        "F1-WebQuery":59.56
       }
         ]}

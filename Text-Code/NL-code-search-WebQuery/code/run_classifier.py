@@ -91,9 +91,9 @@ def train(args, train_dataset, model, tokenizer, optimizer):
                             disable=args.local_rank not in [-1, 0])
     set_seed(args)  # Added here for reproductibility (even between python 2 and 3)
     model.train()
-    for idx, _ in enumerate(train_iterator):
+    for idx, _ in enumerate(tqdm(train_iterator)):
         tr_loss = 0.0
-        for step, batch in enumerate(train_dataloader):
+        for step, batch in enumerate(tqdm(train_dataloader)):
 
             batch = tuple(t.to(args.device) for t in batch)
             inputs = {'input_ids': batch[0],
@@ -487,7 +487,7 @@ def main():
     config = config_class.from_pretrained(args.config_name if args.config_name else args.model_name_or_path,
                                           num_labels=num_labels, finetuning_task=args.task_name)
     if args.tokenizer_name:
-        tokenizer_name = args.tokenzier_name
+        tokenizer_name = args.tokenizer_name
     elif args.model_name_or_path:
         tokenizer_name = 'roberta-base'
     tokenizer = tokenizer_class.from_pretrained(tokenizer_name, do_lower_case=args.do_lower_case)

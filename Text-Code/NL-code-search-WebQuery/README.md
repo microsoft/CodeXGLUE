@@ -19,17 +19,19 @@ Most  existing  code search datasets use code documentations or questions from o
 
 ## Data
 
-Here we present NL-code-searhc-WebQuery dataset,  a  testing  set  of  real  code  search  for Python of 1,046  query-code pairs with code search intent and their human annotations. The real user queries are collected from Bing query logs and the code for queries are from CodeSearchNet. You can find our testing set in `./data/test_webquery.json` .
+Here we present NL-code-search-WebQuery dataset,  a  testing  set  of  Python code  search of 1,046  query-code pairs with code search intent and their human annotations. The realworld user queries are collected from Bing query logs and the code for queries are from CodeSearchNet. You can find our testing set in `./data/test_webquery.json` .
 
-Since there's no direct training set for our WebQueryTest set, we can finetune a pre-trained model in a zero-shot setting. The training and validation sets of NL-code-search-WebQuery data are collected from the StaQC python dataset, where each instance contains a StackOverflow title, a python code snippet and a 0/1 annotation of whether the code answers the title.
-
-#### Download and Preprocess
-
-For original StaQC dataset, you can download it in [this repo](https://github.com/LittleYUYU/StackOverflow-Question-Code-Dataset) or you can run the following command: 
+Since there's no direct training set for our WebQueryTest set, we finetune the models on an external training set by using the documentation-function pairs in the training set o fCodeSearchNet AdvTest as positive instances. For each documentation, we also randomly sample 31 more functions to form negative instances. You can run the following command to download and preprocess the data:
 
 ```shell
-git clone https://github.com/LittleYUYU/StackOverflow-Question-Code-Dataset.git
-python code/data_preprocess.py 
+cd data
+wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/python.zip
+unzip python.zip
+python preprocess.py
+rm -r python
+rm -r *.pkl
+rm python.zip
+cd ..
 ```
 
 #### Data statistics
@@ -43,29 +45,30 @@ Data statistics of NL-code-search-WebQuery are shown in the table below:
 
 ## Fine-tuning
 
-You can use the following command to finetune a pre-trained model on the StaQC training set:
+You can use the following command to finetune:
 
 ```shell
 python code/run_classifier.py \
 			--model_type roberta \
-			--task_name staqc \
+			--task_name webquery \
 			--do_train \
 			--do_eval \
 			--eval_all_checkpoints \
-			--train_file train_staqc.json \
-			--dev_file dev_staqc.json \
+			--train_file train_codesearchnet_31.json \
+			--dev_file dev_codesearch_net.json \
 			--max_seq_length 200 \
-			--per_gpu_train_batch_size 16 \
-			--per_gpu_eval_batch_size 16 \
-			--learning_rate 1e-4 \
-			--num_train_epochs 10 \
+			--per_gpu_train_batch_size 32 \
+			--per_gpu_eval_batch_size 32 \
+			--learning_rate 1e-5 \
+			--num_train_epochs 3 \
 			--gradient_accumulation_steps 1  \
-			--warmup_steps 180 \
+			--warmup_steps 5000 \
 			--overwrite_output_dir \
 			--data_dir ./data/ \
 			--output_dir ./model/ \
 			--model_name_or_path microsoft/codebert-base \
 			--config_name roberta-base
+
 ```
 
 ## Evaluation
@@ -102,12 +105,12 @@ The results on NL-code-search-WebQuery are shown as below:
 
 |    testset    |  model   | Precision | Recall |  F1   | Accuracy |
 | :-----------: | :------: | :-------: | :----: | :---: | :------: |
-| test-WebQuery | RoBERTa  |   0.408   | 0.756  | 0.530 |  0.459   |
-| test-WebQuery | CodeBERT |   0.422   | 0.910  | 0.576 |  0.460   |
+| test-WebQuery | RoBERTa  |   49.50   | 70.62  | 58.20 |  58.64   |
+| test-WebQuery | CodeBERT |   49.92   | 75.12  | 59.98 |  59.56   |
 
 ## Cite
 
-If you use this code or our NL-code-search-WebQuery dataset, please considering citing CodeXGLUE and StaQC:	
+If you use this code or our NL-code-search-WebQuery dataset, please considering citing CodeXGLUE:	
 
 <pre><code>@article{CodeXGLUE,
   title={CodeXGLUE: An Open Challenge for Code Intelligence},
@@ -115,13 +118,5 @@ If you use this code or our NL-code-search-WebQuery dataset, please considering 
   year={2020},
 }</code>
 </pre>
-<pre>
-<code>@inproceedings{yao2018staqc,
-  title={StaQC: A Systematically Mined Question-Code Dataset from Stack Overflow},
-  author={Yao, Ziyu and Weld, Daniel S and Chen, Wei-Peng and Sun, Huan},
-  booktitle={Proceedings of the 2018 World Wide Web Conference},
-  pages={1693--1703},
-  year={2018}
-} </code>
-</pre>
+
 

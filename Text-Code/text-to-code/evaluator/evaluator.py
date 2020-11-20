@@ -22,13 +22,13 @@ def main():
 
     total = len(gts)
     EM = 0.0
-    wf = open("ground_truth.txt", "w")
-    for pred, gt in zip(preds, gts):
-        pred = pred.strip()
-        gt = json.loads(gt)["code"]
-        wf.write(gt+"\n")
-        if pred.split() == gt.split():
-            EM += 1
+    with open("ground_truth.txt", "w") as wf:
+        for pred, gt in zip(preds, gts):
+            pred = pred.strip()
+            gt = json.loads(gt)["code"]
+            wf.write(gt+"\n")
+            if pred.split() == gt.split():
+                EM += 1
 
     bleu_score = round(_bleu("ground_truth.txt", args.predictions), 2)
     logger.info(f"BLEU: {bleu_score}, EM: {round(EM/total*100, 2)}")

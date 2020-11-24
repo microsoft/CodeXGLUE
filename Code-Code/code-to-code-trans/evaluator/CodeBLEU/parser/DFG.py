@@ -250,6 +250,7 @@ def DFG_java(root_node,index_to_code,states):
         current_states=states.copy()
         others_states=[]
         flag=False
+        tag=False
         if 'else' in root_node.type:
             tag=True
         for child in root_node.children:
@@ -429,6 +430,7 @@ def DFG_csharp(root_node,index_to_code,states):
         current_states=states.copy()
         others_states=[]
         flag=False
+        tag=False
         if 'else' in root_node.type:
             tag=True
         for child in root_node.children:
@@ -609,6 +611,7 @@ def DFG_ruby(root_node,index_to_code,states):
         DFG=[]
         current_states=states.copy()
         others_states=[]
+        tag=False
         if 'else' in root_node.type:
             tag=True
         for child in root_node.children:
@@ -765,6 +768,7 @@ def DFG_go(root_node,index_to_code,states):
         current_states=states.copy()
         others_states=[]
         flag=False
+        tag=False
         if 'else' in root_node.type:
             tag=True
         for child in root_node.children:
@@ -909,6 +913,7 @@ def DFG_php(root_node,index_to_code,states):
         current_states=states.copy()
         others_states=[]
         flag=False
+        tag=False
         if 'else' in root_node.type:
             tag=True
         for child in root_node.children:
@@ -1094,6 +1099,7 @@ def DFG_javascript(root_node,index_to_code,states):
         current_states=states.copy()
         others_states=[]
         flag=False
+        tag=False
         if 'else' in root_node.type:
             tag=True
         for child in root_node.children:

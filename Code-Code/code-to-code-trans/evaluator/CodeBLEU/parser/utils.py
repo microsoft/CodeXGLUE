@@ -64,7 +64,7 @@ def remove_comments_and_docstrings(source,lang):
         return '\n'.join(temp)
 
 def tree_to_token_index(root_node):
-    if (len(root_node.children)==0 or root_node.type=='string') and root_node.type!='comment':
+    if (len(root_node.children)==0 or root_node.type in ['string_literal','string','character_literal']) and root_node.type!='comment':
         return [(root_node.start_point,root_node.end_point)]
     else:
         code_tokens=[]
@@ -73,7 +73,7 @@ def tree_to_token_index(root_node):
         return code_tokens
     
 def tree_to_variable_index(root_node,index_to_code):
-    if (len(root_node.children)==0 or root_node.type=='string') and root_node.type!='comment':
+    if (len(root_node.children)==0 or root_node.type in ['string_literal','string','character_literal']) and root_node.type!='comment':
         index=(root_node.start_point,root_node.end_point)
         _,code=index_to_code[index]
         if root_node.type!=code:

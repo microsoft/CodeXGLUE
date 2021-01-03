@@ -42,7 +42,7 @@ def calculate_scores(answers,predictions):
 
 def main():
     import argparse
-    parser = argparse.ArgumentParser(description='Evaluate leaderboard predictions for POJ-104 dataset.')
+    parser = argparse.ArgumentParser(description='Evaluate leaderboard predictions for NL-code-search-Adv dataset.')
     parser.add_argument('--answers', '-a',help="filename of the labels, in txt format.")
     parser.add_argument('--predictions', '-p',help="filename of the leaderboard predictions, in txt format.")
     

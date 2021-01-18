@@ -13,7 +13,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-""" Finetuning the library models for sequence classification on GLUE (Bert, XLM, XLNet)."""
+
+from __future__ import absolute_import, division, print_function
+
 import argparse
 import glob
 import logging
@@ -23,49 +25,84 @@ import random
 
 import numpy as np
 import torch
-from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,
-                              TensorDataset)
+from torch.utils.data import DataLoader, SequentialSampler, RandomSampler, TensorDataset
 from torch.utils.data.distributed import DistributedSampler
-# from tensorboardX import SummaryWriter
+try:
+    from torch.utils.tensorboard import SummaryWriter
+except:
+    from tensorboardX import SummaryWriter
 from tqdm import tqdm, trange
 
 from transformers import (WEIGHTS_NAME, get_linear_schedule_with_warmup, AdamW,
                           RobertaConfig,
-                          RobertaForSequenceClassification,
+                          RobertaModel,
                           RobertaTokenizer)
 
-from utils import (compute_metrics, convert_examples_to_features,
-                        output_modes, processors)
+from models import Model
+from utils import acc_and_f1, TextDataset
+import multiprocessing
+cpu_cont = multiprocessing.cpu_count()
 
 logger = logging.getLogger(__name__)
 
-MODEL_CLASSES = {'roberta': (RobertaConfig, RobertaForSequenceClassification, RobertaTokenizer)}
+MODEL_CLASSES = {'roberta': (RobertaConfig, RobertaModel, RobertaTokenizer)}
 
 
-def set_seed(args):
-    random.seed(args.seed)
-    np.random.seed(args.seed)
-    torch.manual_seed(args.seed)
-    if args.n_gpu > 0:
-        torch.cuda.manual_seed_all(args.seed)
+def set_seed(seed=42):
+    random.seed(seed)
+    os.environ['PYHTONHASHSEED'] = str(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.backends.cudnn.deterministic = True
 
 
-def train(args, train_dataset, model, tokenizer, optimizer):
+def train(args, train_dataset, model, tokenizer):
     """ Train the model """
     # if args.local_rank in [-1, 0]:
     #     tb_writer = SummaryWriter()
 
     args.train_batch_size = args.per_gpu_train_batch_size * max(1, args.n_gpu)
     train_sampler = RandomSampler(train_dataset) if args.local_rank == -1 else DistributedSampler(train_dataset)
-    train_dataloader = DataLoader(train_dataset, sampler=train_sampler, batch_size=args.train_batch_size)
+    train_dataloader = DataLoader(train_dataset, sampler=train_sampler, batch_size=args.train_batch_size, num_workers=4, pin_memory=True)
+
+    args.save_steps = len(train_dataloader) if args.save_steps<=0 else args.save_steps
+    args.warmup_steps = len(train_dataloader) if args.warmup_steps<=0 else args.warmup_steps
+    args.logging_steps = len(train_dataloader)
 
     if args.max_steps > 0:
         t_total = args.max_steps
-        args.num_train_epochs = args.max_steps // (len(train_dataloader) // args.gradient_accumulation_steps) + 1
+        args.num_train_epochs = args.max_steps // (len(train_dataloader) // args.gradient_accumulation_steps)
     else:
         t_total = len(train_dataloader) // args.gradient_accumulation_steps * args.num_train_epochs
 
+    # Prepare optimizer and schedule (linear warmup and decay)
+    no_decay = ['bias', 'LayerNorm.weight']
+    optimizer_grouped_parameters = [
+        {'params': [p for n, p in model.named_parameters() if not any(nd in n for nd in no_decay)],
+         'weight_decay': args.weight_decay},
+        {'params': [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
+    ]
+    optimizer = AdamW(optimizer_grouped_parameters, lr=args.learning_rate, eps=args.adam_epsilon)
     scheduler = get_linear_schedule_with_warmup(optimizer, args.warmup_steps, t_total)
+
+    model.to(args.device)
+    if args.fp16:
+        try:
+            from apex import amp
+        except ImportError:
+            raise ImportError("Please install apex from https://www.github.com/nvidia/apex to use fp16 training.")
+        model, optimizer = amp.initialize(model, optimizer, opt_level=args.fp16_opt_level)
+
+    # multi-gpu training (should be after apex fp16 initialization)
+    if args.n_gpu > 1:
+        model = torch.nn.DataParallel(model)
+
+    # Distributed training (should be after apex fp16 initialization)
+    if args.local_rank != -1:
+        model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[args.local_rank],
+                                                          output_device=args.local_rank,
+                                                          find_unused_parameters=True)
 
     checkpoint_last = os.path.join(args.output_dir, 'checkpoint-last')
     scheduler_last = os.path.join(checkpoint_last, 'scheduler.pt')
@@ -84,25 +121,24 @@ def train(args, train_dataset, model, tokenizer, optimizer):
     logger.info("  Total optimization steps = %d", t_total)
 
     global_step = args.start_step
-    tr_loss, logging_loss = 0.0, 0.0
-    best_acc = 0.0
+    tr_loss, logging_loss, avg_loss, tr_nb, tr_num, train_loss = 0.0, 0.0, 0.0, 0, 0, 0
+    best_results = {"acc": 0.0, "precision": 0.0, "recall": 0.0, "f1": 0.0, "acc_and_f1": 0.0}
     model.zero_grad()
     train_iterator = trange(args.start_epoch, int(args.num_train_epochs), desc="Epoch",
                             disable=args.local_rank not in [-1, 0])
-    set_seed(args)  # Added here for reproductibility (even between python 2 and 3)
     model.train()
-    for idx, _ in enumerate(tqdm(train_iterator)):
-        tr_loss = 0.0
-        for step, batch in enumerate(tqdm(train_dataloader)):
+    logger.info(model)
 
-            batch = tuple(t.to(args.device) for t in batch)
-            inputs = {'input_ids': batch[0],
-                      'attention_mask': batch[1],
-                      'token_type_ids': batch[2] if args.model_type in ['bert', 'xlnet'] else None,
-                      # XLM don't use segment_ids
-                      'labels': batch[3]}
-            ouputs = model(**inputs)
-            loss = ouputs[0]  # model outputs are always tuple in pytorch-transformers (see doc)
+    for idx in train_iterator:
+        bar = tqdm(enumerate(train_dataloader))
+        tr_num=0
+        train_loss=0
+        for step, batch in bar:
+
+            code_inputs = batch[0].to(args.device)
+            nl_inputs = batch[1].to(args.device)
+            labels = batch[2].to(args.device)
+            loss, predictions = model(code_inputs, nl_inputs, labels)
 
             if args.n_gpu > 1:
                 loss = loss.mean()  # mean() to average on multi-gpu parallel training
@@ -123,210 +159,157 @@ def train(args, train_dataset, model, tokenizer, optimizer):
                 torch.nn.utils.clip_grad_norm_(model.parameters(), args.max_grad_norm)
 
             tr_loss += loss.item()
+            tr_num += 1
+            train_loss += loss.item()
+            if avg_loss == 0:
+                avg_loss = tr_loss
+            avg_loss = round(train_loss/tr_num, 5)
+            bar.set_description("epoch {} step {} loss {}".format(idx, step+1, avg_loss))
+
             if (step + 1) % args.gradient_accumulation_steps == 0:
                 optimizer.step()
-                scheduler.step()  # Update learning rate schedule
-                model.zero_grad()
+                optimizer.zero_grad()
+                scheduler.step()
                 global_step += 1
-
+                avg_loss = round(np.exp((tr_loss - logging_loss) / (global_step - tr_nb)), 4)
                 if args.local_rank in [-1, 0] and args.logging_steps > 0 and global_step % args.logging_steps == 0:
-                    # Log metrics
-                    if args.local_rank == -1 and args.evaluate_during_training:  # Only evaluate when single GPU otherwise metrics may not average well
-                        results = evaluate(args, model, tokenizer, checkpoint=str(global_step))
-                        for key, value in results.items():
-                            # tb_writer.add_scalar('eval_{}'.format(key), value, global_step)
-                            logger.info('loss %s', str(tr_loss - logging_loss))
-                    # tb_writer.add_scalar('lr', scheduler.get_lr()[0], global_step)
-                    # tb_writer.add_scalar('loss', (tr_loss - logging_loss) / args.logging_steps, global_step)
                     logging_loss = tr_loss
+                    tr_nb = global_step
+
+                if args.local_rank in [-1, 0] and args.save_steps > 0 and global_step % args.save_steps == 0:
+
+                    if args.local_rank == -1 and args.evaluate_during_training:  # Only evaluate when single GPU otherwise metrics may not average well
+                        results = evaluate(args, model, tokenizer, eval_when_training=True)
+                        for key, value in results.items():
+                            logger.info("  %s = %s", key, round(value,4))
+                        # Save model checkpoint
+                        if results['acc_and_f1'] >= best_results['acc_and_f1']:
+                            best_results = results
+
+                            # save
+                            checkpoint_prefix = 'checkpoint-best-aver'
+                            output_dir = os.path.join(args.output_dir, checkpoint_prefix)
+                            if not os.path.exists(output_dir):
+                                os.makedirs(output_dir)
+                            model_to_save = model.module if hasattr(model, 'module') else model  # Take care of distributed/parallel training
+
+                            torch.save(model_to_save.state_dict(), os.path.join(output_dir, 'pytorch_model.bin'))
+                            tokenizer.save_pretrained(output_dir)
+                            torch.save(args, os.path.join(output_dir, 'training_{}.bin'.format(idx)))
+                            logger.info("Saving model checkpoint to %s", output_dir)
+                            torch.save(optimizer.state_dict(), os.path.join(output_dir, "optimizer.pt"))
+                            torch.save(scheduler.state_dict(), os.path.join(output_dir, "scheduler.pt"))
+                            logger.info("Saving optimizer and scheduler states to %s", output_dir)
+
+                    if args.local_rank == -1:
+                        checkpoint_prefix = 'checkpoint-last'
+                        output_dir = os.path.join(args.output_dir, checkpoint_prefix)
+                        if not os.path.exists(output_dir):
+                            os.makedirs(output_dir)
+                        model_to_save = model.module if hasattr(model, 'module') else model
+                        torch.save(model_to_save.state_dict(), os.path.join(output_dir, 'pytorch_model.bin'))
+                        tokenizer.save_pretrained(output_dir)
+
+                        idx_file = os.path.join(output_dir, 'idx_file.txt')
+                        with open(idx_file, 'w', encoding='utf-8') as idxf:
+                            idxf.write(str(args.start_epoch + idx) + '\n')
+                        logger.info("Saving model checkpoint to %s", output_dir)
+                        torch.save(optimizer.state_dict(), os.path.join(output_dir, "optimizer.pt"))
+                        torch.save(scheduler.state_dict(), os.path.join(output_dir, "scheduler.pt"))
+                        logger.info("Saving optimizer and scheduler states to %s", output_dir)
+                        step_file = os.path.join(output_dir, 'step_file.txt')
+                        with open(step_file, 'w', encoding='utf-8') as stepf:
+                            stepf.write(str(global_step) + '\n')
+
             if args.max_steps > 0 and global_step > args.max_steps:
-                # epoch_iterator.close()
+                train_iterator.close()
                 break
 
-        if args.do_eval and (args.local_rank == -1 or torch.distributed.get_rank() == 0):
-            results = evaluate(args, model, tokenizer, checkpoint=str(args.start_epoch + idx))
+def evaluate(args, model, tokenizer,eval_when_training=False):
+    eval_output_dir = args.output_dir
+    eval_data_path = os.path.join(args.data_dir, args.dev_file)
+    eval_dataset = TextDataset(tokenizer, args, eval_data_path, type='eval')
 
-            last_output_dir = os.path.join(args.output_dir, 'checkpoint-last')
-            if not os.path.exists(last_output_dir):
-                os.makedirs(last_output_dir)
-            model_to_save = model.module if hasattr(model,
-                                                    'module') else model  # Take care of distributed/parallel training
-            model_to_save.save_pretrained(last_output_dir)
-            logger.info("Saving model checkpoint to %s", last_output_dir)
-            idx_file = os.path.join(last_output_dir, 'idx_file.txt')
-            with open(idx_file, 'w', encoding='utf-8') as idxf:
-                idxf.write(str(args.start_epoch + idx) + '\n')
+    if not os.path.exists(eval_output_dir) and args.local_rank in [-1, 0]:
+        os.makedirs(eval_output_dir)
 
-            torch.save(optimizer.state_dict(), os.path.join(last_output_dir, "optimizer.pt"))
-            torch.save(scheduler.state_dict(), os.path.join(last_output_dir, "scheduler.pt"))
-            logger.info("Saving optimizer and scheduler states to %s", last_output_dir)
+    args.eval_batch_size = args.per_gpu_eval_batch_size * max(1, args.n_gpu)
+    # Note that DistributedSampler samples randomly
+    eval_sampler = SequentialSampler(eval_dataset) if args.local_rank == -1 else DistributedSampler(eval_dataset)
+    eval_dataloader = DataLoader(eval_dataset, sampler=eval_sampler, batch_size=args.eval_batch_size, num_workers=4, pin_memory=True)
 
-            step_file = os.path.join(last_output_dir, 'step_file.txt')
-            with open(step_file, 'w', encoding='utf-8') as stepf:
-                stepf.write(str(global_step) + '\n')
+    # multi-gpu evaluate
+    if args.n_gpu > 1 and eval_when_training is False:
+        model = torch.nn.DataParallel(model)
 
-            if (results['acc'] > best_acc):
-                best_acc = results['acc']
-                output_dir = os.path.join(args.output_dir, 'checkpoint-best')
-                if not os.path.exists(output_dir):
-                    os.makedirs(output_dir)
-                model_to_save = model.module if hasattr(model,
-                                                        'module') else model  # Take care of distributed/parallel training
-                model_to_save.save_pretrained(output_dir)
-                torch.save(args, os.path.join(output_dir, 'training_{}.bin'.format(idx)))
-                logger.info("Saving model checkpoint to %s", output_dir)
+    # Eval!
+    logger.info("***** Running evaluation *****")
+    logger.info("  Num examples = %d", len(eval_dataset))
+    logger.info("  Batch size = %d", args.eval_batch_size)
+    eval_loss = 0.0
+    nb_eval_steps = 0
+    model.eval()
+    all_predictions = []
+    all_labels = []
+    for batch in eval_dataloader:
+        code_inputs = batch[0].to(args.device)
+        nl_inputs = batch[1].to(args.device)
+        labels = batch[2].to(args.device)
+        with torch.no_grad():
+            lm_loss, predictions = model(code_inputs, nl_inputs, labels)
+            # lm_loss,code_vec,nl_vec = model(code_inputs,nl_inputs)
+            eval_loss += lm_loss.mean().item()
+            all_predictions.append(predictions.cpu())
+            all_labels.append(labels.cpu())
+        nb_eval_steps += 1
+    all_predictions = torch.cat(all_predictions, 0).squeeze().numpy()
+    all_labels = torch.cat(all_labels, 0).squeeze().numpy()
+    eval_loss = torch.tensor(eval_loss / nb_eval_steps)
 
-                torch.save(optimizer.state_dict(), os.path.join(output_dir, "optimizer.pt"))
-                torch.save(scheduler.state_dict(), os.path.join(output_dir, "scheduler.pt"))
-                logger.info("Saving optimizer and scheduler states to %s", output_dir)
-
-        if args.max_steps > 0 and global_step > args.max_steps:
-            train_iterator.close()
-            break
-
-    # if args.local_rank in [-1, 0]:
-    #     tb_writer.close()
-
-    return global_step, tr_loss / global_step
-
-
-def accuracy(out, labels):
-    outputs = np.argmax(out, axis=1)
-    return np.sum(outputs == labels)
-
-
-def evaluate(args, model, tokenizer, checkpoint=None, prefix="", mode='dev'):
-    # Loop to handle MNLI double evaluation (matched, mis-matched)
-    eval_task_names = (args.task_name,)
-    eval_outputs_dirs = (args.output_dir,)
-
-    results = {}
-    for eval_task, eval_output_dir in zip(eval_task_names, eval_outputs_dirs):
-        if (mode == 'dev'):
-            eval_dataset = load_and_cache_examples(args, eval_task, tokenizer, ttype='dev')
-        elif (mode == 'test'):
-            eval_dataset, instances = load_and_cache_examples(args, eval_task, tokenizer, ttype='test')
-
-        if not os.path.exists(eval_output_dir) and args.local_rank in [-1, 0]:
-            os.makedirs(eval_output_dir)
-
-        args.eval_batch_size = args.per_gpu_eval_batch_size * max(1, args.n_gpu)
-        # Note that DistributedSampler samples randomly
-        eval_sampler = SequentialSampler(eval_dataset) if args.local_rank == -1 else DistributedSampler(eval_dataset)
-        eval_dataloader = DataLoader(eval_dataset, sampler=eval_sampler, batch_size=args.eval_batch_size)
-
-        # Eval!
-        logger.info("***** Running evaluation {} *****".format(prefix))
-        logger.info("  Num examples = %d", len(eval_dataset))
-        logger.info("  Batch size = %d", args.eval_batch_size)
-        eval_loss = 0.0
-        nb_eval_steps = 0
-        preds = None
-        out_label_ids = None
-        for batch in tqdm(eval_dataloader, desc="Evaluating"):
-            model.eval()
-            batch = tuple(t.to(args.device) for t in batch)
-
-            with torch.no_grad():
-                inputs = {'input_ids': batch[0],
-                          'attention_mask': batch[1],
-                          'token_type_ids': batch[2] if args.model_type in ['bert', 'xlnet'] else None,
-                          # XLM don't use segment_ids
-                          'labels': batch[3]}
-
-                outputs = model(**inputs)
-                tmp_eval_loss, logits = outputs[:2]
-
-                eval_loss += tmp_eval_loss.mean().item()
-            nb_eval_steps += 1
-            if preds is None:
-                preds = logits.detach().cpu().numpy()
-                out_label_ids = inputs['labels'].detach().cpu().numpy()
-            else:
-
-                preds = np.append(preds, logits.detach().cpu().numpy(), axis=0)
-
-                out_label_ids = np.append(out_label_ids, inputs['labels'].detach().cpu().numpy(), axis=0)
-        # eval_accuracy = accuracy(preds,out_label_ids)
-        eval_loss = eval_loss / nb_eval_steps
-        if args.output_mode == "classification":
-            preds_label = np.argmax(preds, axis=1)
-        result = compute_metrics(eval_task, preds_label, out_label_ids)
-        results.update(result)
-        if (mode == 'dev'):
-            output_eval_file = os.path.join(eval_output_dir, "eval_results.txt")
-            with open(output_eval_file, "a+") as writer:
-                logger.info("***** Eval results {} *****".format(prefix))
-                writer.write('evaluate %s\n' % checkpoint)
-                for key in sorted(result.keys()):
-                    logger.info("  %s = %s", key, str(result[key]))
-                    writer.write("%s = %s\n" % (key, str(result[key])))
-        elif (mode == 'test'):
-            with open(args.prediction_file, "w", encoding='utf-8') as writer_prediction:
-                logger.info("***** Output test results *****")
-                for i, (preds_i, example) in enumerate(zip(preds_label, instances)):
-                    writer_prediction.write(example[0] + '\t' + str(preds_i) + '\n')
-
+    results = acc_and_f1(all_predictions, all_labels)
+    results.update({"eval_loss": float(eval_loss)})
     return results
 
 
-def load_and_cache_examples(args, task, tokenizer, ttype='train'):
-    processor = processors[task]()
-    output_mode = output_modes[task]
-    # Load data features from cache or dataset file
-    if ttype == 'train':
-        file_name = args.train_file.split('.')[0]
-    elif ttype == 'dev':
-        file_name = args.dev_file.split('.')[0]
-    elif ttype == 'test':
-        file_name = args.test_file.split('.')[0]
-    cached_features_file = os.path.join(args.data_dir, 'cached_{}_{}_{}_{}_{}'.format(
-        ttype,
-        file_name,
-        list(filter(None, args.model_name_or_path.split('/'))).pop(),
-        str(args.max_seq_length),
-        str(task)))
+def test(args, model, tokenizer):
+    if not args.prediction_file:
+        args.prediction_file = os.path.join(args.output_dir, 'predictions.txt')
+    if not os.path.exists(os.path.dirname(args.prediction_file)):
+        os.makedirs(os.path.dirname(args.prediction_file))
 
-    # if os.path.exists(cached_features_file):
-    try:
-        logger.info("Loading features from cached file %s", cached_features_file)
-        features = torch.load(cached_features_file)
-        if ttype == 'test':
-            examples, instances = processor.get_test_examples(args.data_dir, args.test_file)
-    except:
-        logger.info("Creating features from dataset file at %s", args.data_dir)
-        label_list = processor.get_labels()
-        if ttype == 'train':
-            examples = processor.get_train_examples(args.data_dir, args.train_file)
-        elif ttype == 'dev':
-            examples = processor.get_dev_examples(args.data_dir, args.dev_file)
-        elif ttype == 'test':
-            examples, instances = processor.get_test_examples(args.data_dir, args.test_file)
+    test_data_path = os.path.join(args.data_dir, args.test_file)
+    eval_dataset = TextDataset(tokenizer, args, test_data_path, type='test')
 
-        features = convert_examples_to_features(examples, label_list, args.max_seq_length, tokenizer, output_mode,
-                                                cls_token_at_end=bool(args.model_type in ['xlnet']),
-                                                # xlnet has a cls token at the end
-                                                cls_token=tokenizer.cls_token,
-                                                sep_token=tokenizer.sep_token,
-                                                cls_token_segment_id=2 if args.model_type in ['xlnet'] else 1,
-                                                pad_on_left=bool(args.model_type in ['xlnet']),
-                                                # pad on the left for xlnet
-                                                pad_token_segment_id=4 if args.model_type in ['xlnet'] else 0)
-        if args.local_rank in [-1, 0]:
-            logger.info("Saving features into cached file %s", cached_features_file)
-            torch.save(features, cached_features_file)
-    # Convert to Tensors and build dataset
-    all_input_ids = torch.tensor([f.input_ids for f in features], dtype=torch.long)
-    all_input_mask = torch.tensor([f.input_mask for f in features], dtype=torch.long)
-    all_segment_ids = torch.tensor([f.segment_ids for f in features], dtype=torch.long)
-    if output_mode == "classification":
-        all_label_ids = torch.tensor([f.label_id for f in features], dtype=torch.long)
+    args.eval_batch_size = args.per_gpu_eval_batch_size * max(1, args.n_gpu)
+    # Note that DistributedSampler samples randomly
+    eval_sampler = SequentialSampler(eval_dataset) if args.local_rank == -1 else DistributedSampler(eval_dataset)
+    eval_dataloader = DataLoader(eval_dataset, sampler=eval_sampler, batch_size=args.eval_batch_size)
 
-    dataset = TensorDataset(all_input_ids, all_input_mask, all_segment_ids, all_label_ids)
-    if (ttype == 'test'):
-        return dataset, instances
-    else:
-        return dataset
+    # multi-gpu evaluate
+    if args.n_gpu > 1:
+        model = torch.nn.DataParallel(model)
+
+    # Eval!
+    logger.info("***** Running Test *****")
+    logger.info("  Num examples = %d", len(eval_dataset))
+    logger.info("  Batch size = %d", args.eval_batch_size)
+
+    nb_eval_steps = 0
+    all_predictions = []
+    for batch in eval_dataloader:
+        code_inputs = batch[0].to(args.device)
+        nl_inputs = batch[1].to(args.device)
+        labels = batch[2].to(args.device)
+        with torch.no_grad():
+            _, predictions = model(code_inputs, nl_inputs, labels)
+            all_predictions.append(predictions.cpu())
+        nb_eval_steps += 1
+    all_predictions = torch.cat(all_predictions, 0).squeeze().numpy()
+
+    logger.info("***** Running Test *****")
+    with open(args.prediction_file,'w') as f:
+        for example, pred in zip(eval_dataset.examples, all_predictions.tolist()):
+            f.write(example.idx+'\t'+str(int(pred))+'\n')
 
 
 def main():
@@ -335,25 +318,41 @@ def main():
     ## Required parameters
     parser.add_argument("--data_dir", default=None, type=str, required=True,
                         help="The input data dir. Should contain the .tsv files (or other data files) for the task.")
-    parser.add_argument("--model_type", default=None, type=str, required=True,
-                        help="Model type selected in the list: " + ", ".join(MODEL_CLASSES.keys()))
-    parser.add_argument("--model_name_or_path", default=None, type=str, required=True,
-                        help="Path to pre-trained model or shortcut name")
-    parser.add_argument("--task_name", default='webquery', type=str, required=True,
-                        help="The name of the task to train selected in the list: " + ", ".join(processors.keys()))
+    parser.add_argument("--train_file", default=None, type=str,
+                        help="The input training data file (a text file).")
     parser.add_argument("--output_dir", default=None, type=str, required=True,
                         help="The output directory where the model predictions and checkpoints will be written.")
 
     ## Other parameters
+    parser.add_argument("--dev_file", default=None, type=str,
+                        help="An optional input evaluation data file to evaluate the perplexity on (a text file).")
+    parser.add_argument("--test_file", default=None, type=str,
+                        help="An optional input evaluation data file to evaluate the perplexity on (a text file).")
+
+    parser.add_argument("--model_type", default="roberta", type=str,
+                        help="The model architecture to be fine-tuned.")
+    parser.add_argument("--pn_weight", type=float, default=1.0,
+                        help="Ratio of positive examples in the sum of bce loss")
+    parser.add_argument("--encoder_name_or_path", default=None, type=str,
+                        help="The model checkpoint for weights initialization.")
+    parser.add_argument("--checkpoint_path", default=None, type=str,
+                        help="The checkpoint path of model to continue training.")
+
+    parser.add_argument("--mlm", action='store_true',
+                        help="Train with masked-language modeling loss instead of language modeling.")
+    parser.add_argument("--mlm_probability", type=float, default=0.15,
+                        help="Ratio of tokens to mask for masked language modeling loss")
+
     parser.add_argument("--config_name", default="", type=str,
                         help="Pretrained config name or path if not the same as model_name")
     parser.add_argument("--tokenizer_name", default="", type=str,
                         help="Pretrained tokenizer name or path if not the same as model_name")
     parser.add_argument("--cache_dir", default="", type=str,
-                        help="Where do you want to store the pre-trained models downloaded from s3")
-    parser.add_argument("--max_seq_length", default=128, type=int,
-                        help="The maximum total input sequence length after tokenization. Sequences longer "
-                             "than this will be truncated, sequences shorter will be padded.")
+                        help="Optional directory to store the pre-trained models downloaded from s3 (instread of the default one)")
+    parser.add_argument("--max_seq_length", default=-1, type=int,
+                        help="Optional input sequence length after tokenization."
+                             "The training dataset will be truncated in block of this size for training."
+                             "Default to the model max input length for single sentence inputs (take into account special tokens).")
     parser.add_argument("--do_train", action='store_true',
                         help="Whether to run training.")
     parser.add_argument("--do_eval", action='store_true',
@@ -379,7 +378,7 @@ def main():
                         help="Epsilon for Adam optimizer.")
     parser.add_argument("--max_grad_norm", default=1.0, type=float,
                         help="Max gradient norm.")
-    parser.add_argument("--num_train_epochs", default=3.0, type=float,
+    parser.add_argument("--num_train_epochs", default=3, type=int,
                         help="Total number of training epochs to perform.")
     parser.add_argument("--max_steps", default=-1, type=int,
                         help="If > 0: set total number of training steps to perform. Override num_train_epochs.")
@@ -388,8 +387,10 @@ def main():
 
     parser.add_argument('--logging_steps', type=int, default=50,
                         help="Log every X updates steps.")
-    parser.add_argument('--save_steps', type=int, default=50,
+    parser.add_argument('--save_steps', type=int, default=0,
                         help="Save checkpoint every X updates steps.")
+    parser.add_argument('--save_total_limit', type=int, default=None,
+                        help='Limit the total amount of checkpoints, delete the older checkpoints in the output_dir, does not delete by default')
     parser.add_argument("--eval_all_checkpoints", action='store_true',
                         help="Evaluate all checkpoints starting with the same prefix as model_name ending and ending with step number")
     parser.add_argument("--no_cuda", action='store_true',
@@ -410,12 +411,6 @@ def main():
                         help="For distributed training: local_rank")
     parser.add_argument('--server_ip', type=str, default='', help="For distant debugging.")
     parser.add_argument('--server_port', type=str, default='', help="For distant debugging.")
-    parser.add_argument("--train_file", default="train_top10_concat.tsv", type=str,
-                        help="train file")
-    parser.add_argument("--dev_file", default="shared_task_dev_top10_concat.tsv", type=str,
-                        help="dev file")
-    parser.add_argument("--test_file", default="shared_task_dev_top10_concat.tsv", type=str,
-                        help="test file")
     parser.add_argument("--pred_model_dir", default=None, type=str,
                         help='model for prediction')
     parser.add_argument("--test_result_dir", default='test_results.tsv', type=str,
@@ -451,15 +446,7 @@ def main():
                    args.local_rank, device, args.n_gpu, bool(args.local_rank != -1), args.fp16)
 
     # Set seed
-    set_seed(args)
-
-    args.task_name = args.task_name.lower()
-    if args.task_name not in processors:
-        raise ValueError("Task not found: %s" % (args.task_name))
-    processor = processors[args.task_name]()
-    args.output_mode = output_modes[args.task_name]
-    label_list = processor.get_labels()
-    num_labels = len(label_list)
+    set_seed(args.seed)
 
     # Load pretrained model and tokenizer
     if args.local_rank not in [-1, 0]:
@@ -469,7 +456,7 @@ def main():
     args.start_step = 0
     checkpoint_last = os.path.join(args.output_dir, 'checkpoint-last')
     if os.path.exists(checkpoint_last) and os.listdir(checkpoint_last):
-        args.model_name_or_path = os.path.join(checkpoint_last, 'pytorch_model.bin')
+        # args.encoder_name_or_path = os.path.join(checkpoint_last, 'pytorch_model.bin')
         args.config_name = os.path.join(checkpoint_last, 'config.json')
         idx_file = os.path.join(checkpoint_last, 'idx_file.txt')
         with open(idx_file, encoding='utf-8') as idxf:
@@ -482,105 +469,73 @@ def main():
 
         logger.info("reload model from {}, resume from {} epoch".format(checkpoint_last, args.start_epoch))
 
-    args.model_type = args.model_type.lower()
     config_class, model_class, tokenizer_class = MODEL_CLASSES[args.model_type]
-    config = config_class.from_pretrained(args.config_name if args.config_name else args.model_name_or_path,
-                                          num_labels=num_labels, finetuning_task=args.task_name)
-    if args.tokenizer_name:
-        tokenizer_name = args.tokenizer_name
-    elif args.model_name_or_path:
-        tokenizer_name = 'roberta-base'
-    tokenizer = tokenizer_class.from_pretrained(tokenizer_name, do_lower_case=args.do_lower_case)
-    model = model_class.from_pretrained(args.model_name_or_path, from_tf=bool('.ckpt' in args.model_name_or_path),
-                                        config=config)
+    config = config_class.from_pretrained(args.config_name if args.config_name else args.encoder_name_or_path,
+                                          cache_dir=args.cache_dir if args.cache_dir else None)
+    config.num_labels = 2
+    tokenizer = tokenizer_class.from_pretrained(args.tokenizer_name if args.tokenizer_name else args.encoder_name_or_path,
+                                                do_lower_case=args.do_lower_case,
+                                                cache_dir=args.cache_dir if args.cache_dir else None)
+    if args.max_seq_length <= 0:
+        args.max_seq_length = tokenizer.max_len_single_sentence  # Our input block size will be the max possible for the model
+    args.max_seq_length = min(args.max_seq_length, tokenizer.max_len_single_sentence)
+    if args.encoder_name_or_path:
+        model = model_class.from_pretrained(args.encoder_name_or_path,
+                                            from_tf=bool('.ckpt' in args.encoder_name_or_path),
+                                            config=config,
+                                            cache_dir=args.cache_dir if args.cache_dir else None)
+    else:
+        model = model_class(config)
 
+    model = Model(model, config, tokenizer, args)
+
+    if args.checkpoint_path:
+        model.load_state_dict(torch.load(os.path.join(args.checkpoint_path, 'pytorch_model.bin')))
     if args.local_rank == 0:
-        torch.distributed.barrier()  # Make sure only the first process in distributed training will download model & vocab
-
-    # Distributed and parallel training
-    model.to(args.device)
-
-    # Prepare optimizer and schedule (linear warmup and decay)
-    no_decay = ['bias', 'LayerNorm.weight']
-    optimizer_grouped_parameters = [
-        {'params': [p for n, p in model.named_parameters() if not any(nd in n for nd in no_decay)],
-         'weight_decay': args.weight_decay},
-        {'params': [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
-    ]
-    optimizer = AdamW(optimizer_grouped_parameters, lr=args.learning_rate, eps=args.adam_epsilon)
-
-    optimizer_last = os.path.join(checkpoint_last, 'optimizer.pt')
-    if os.path.exists(optimizer_last):
-        optimizer.load_state_dict(torch.load(optimizer_last))
-
-    if args.fp16:
-        try:
-            from apex import amp
-        except ImportError:
-            raise ImportError("Please install apex from https://www.github.com/nvidia/apex to use fp16 training.")
-        model, optimizer = amp.initialize(model, optimizer, opt_level=args.fp16_opt_level)
-
-    if args.n_gpu > 1:
-        model = torch.nn.DataParallel(model)
-
-    if args.local_rank != -1:
-        model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[args.local_rank],
-                                                          output_device=args.local_rank,
-                                                          find_unused_parameters=True)
+        torch.distributed.barrier()  # End of barrier to make sure only the first process in distributed training download model & vocab
 
     logger.info("Training/evaluation parameters %s", args)
 
     # Training
     if args.do_train:
-        train_dataset = load_and_cache_examples(args, args.task_name, tokenizer, ttype='train')
-        global_step, tr_loss = train(args, train_dataset, model, tokenizer, optimizer)
-        logger.info(" global_step = %s, average loss = %s", global_step, tr_loss)
-
-    # Saving best-practices: if you use defaults names for the model, you can reload it using from_pretrained()
-    if args.do_train and (args.local_rank == -1 or torch.distributed.get_rank() == 0):
-        # Create output directory if needed
-        if not os.path.exists(args.output_dir) and args.local_rank in [-1, 0]:
-            os.makedirs(args.output_dir)
-
-        logger.info("Saving model checkpoint to %s", args.output_dir)
-        # Save a trained model, configuration and tokenizer using `save_pretrained()`.
-        # They can then be reloaded using `from_pretrained()`
-        model_to_save = model.module if hasattr(model,
-                                                'module') else model  # Take care of distributed/parallel training
-        model_to_save.save_pretrained(args.output_dir)
-        tokenizer.save_pretrained(args.output_dir)
-
-        # Good practice: save your training arguments together with the trained model
-        torch.save(args, os.path.join(args.output_dir, 'training_args.bin'))
-
-        # Load a trained model and vocabulary that you have fine-tuned
-        model = model_class.from_pretrained(args.output_dir)
-        tokenizer = tokenizer_class.from_pretrained(args.output_dir)
-        model.to(args.device)
+        if args.local_rank not in [-1, 0]:
+            torch.distributed.barrier()  # Barrier to make sure only the first process in distributed training process the dataset, and the others will use the cache
+        train_data_path = os.path.join(args.data_dir, args.train_file)
+        train_dataset = TextDataset(tokenizer, args, train_data_path, type='train')
+        train(args, train_dataset, model, tokenizer)
 
     # Evaluation
     results = {}
     if args.do_eval and args.local_rank in [-1, 0]:
-        checkpoints = [args.output_dir]
-        if args.eval_all_checkpoints:
-            checkpoints = list(
-                os.path.dirname(c) for c in sorted(glob.glob(args.output_dir + '/**/' + WEIGHTS_NAME, recursive=True)))
-            logging.getLogger("pytorch_transformers.modeling_utils").setLevel(logging.WARN)  # Reduce logging
-        logger.info("Evaluate the following checkpoints: %s", checkpoints)
-        for checkpoint in checkpoints:
-            print(checkpoint)
-            global_step = checkpoint.split('-')[-1] if len(checkpoints) > 1 else ""
-            model = model_class.from_pretrained(checkpoint)
-            model.to(args.device)
-            result = evaluate(args, model, tokenizer, checkpoint=checkpoint, prefix=global_step)
-            result = dict((k + '_{}'.format(global_step), v) for k, v in result.items())
-            results.update(result)
-
-    if args.do_predict:
-        print('testing')
-        model = model_class.from_pretrained(args.pred_model_dir)
+        checkpoint_prefix = 'checkpoint-best-aver'
+        output_dir = os.path.join(args.output_dir, checkpoint_prefix)
+        model.load_state_dict(torch.load(os.path.join(output_dir, 'pytorch_model.bin')))
+        tokenizer = tokenizer.from_pretrained(output_dir)
         model.to(args.device)
-        evaluate(args, model, tokenizer, checkpoint=None, prefix='', mode='test')
+        results = evaluate(args, model, tokenizer)
+        logger.info("***** Eval results *****")
+        for key in results.keys():
+            logger.info("  Eval %s = %s", key, str(results[key]))
+        logger.info("Eval Model From: {}".format(os.path.join(output_dir, 'pytorch_model.bin')))
+        logger.info("***** Eval results *****")
+
+    if args.do_predict and args.local_rank in [-1, 0]:
+        logger.info("***** Testing results *****")
+        checkpoint_prefix = 'checkpoint-best-aver'
+        if checkpoint_prefix not in args.output_dir and \
+                os.path.exists(os.path.join(args.output_dir, checkpoint_prefix)):
+            output_dir = os.path.join(args.output_dir, checkpoint_prefix)
+        else:
+            output_dir = args.output_dir
+        if not args.pred_model_dir:
+            model_path = os.path.join(output_dir, 'pytorch_model.bin')
+        else:
+            model_path = os.path.join(args.pred_model_dir, 'pytorch_model.bin')
+        model.load_state_dict(torch.load(model_path))
+        tokenizer = tokenizer.from_pretrained(output_dir)
+        model.to(args.device)
+        test(args, model, tokenizer)
+        logger.info("Test Model From: {}".format(model_path))
     return results
 
 

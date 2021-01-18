@@ -65,7 +65,7 @@ length = len(train_data)
 print(len(train_data))
 
 # num_negative = int(sys.argv[1])
-num_negative = 31
+num_negative = 7
 print(num_negative)
 train_data_withneg = copy.deepcopy(train_data)
 print(len(train_data_withneg))

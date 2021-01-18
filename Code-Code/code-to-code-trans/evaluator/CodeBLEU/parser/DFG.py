@@ -16,7 +16,7 @@ def DFG_python(root_node,index_to_code,states):
     do_first_statement=['for_in_clause'] 
     def_statement=['default_parameter']
     states=states.copy() 
-    if (len(root_node.children)==0 or root_node.type=='string') and root_node.type!='comment':        
+    if (len(root_node.children)==0 or root_node.type in ['string_literal','string','character_literal']) and root_node.type!='comment':        
         idx,code=index_to_code[(root_node.start_point,root_node.end_point)]
         if root_node.type==code:
             return [],states
@@ -187,7 +187,7 @@ def DFG_java(root_node,index_to_code,states):
     while_statement=['while_statement']
     do_first_statement=[]    
     states=states.copy()
-    if (len(root_node.children)==0 or root_node.type=='string') and root_node.type!='comment':
+    if (len(root_node.children)==0 or root_node.type in ['string_literal','string','character_literal']) and root_node.type!='comment':
         idx,code=index_to_code[(root_node.start_point,root_node.end_point)]
         if root_node.type==code:
             return [],states
@@ -250,6 +250,7 @@ def DFG_java(root_node,index_to_code,states):
         current_states=states.copy()
         others_states=[]
         flag=False
+        tag=False
         if 'else' in root_node.type:
             tag=True
         for child in root_node.children:
@@ -362,7 +363,7 @@ def DFG_csharp(root_node,index_to_code,states):
     while_statement=['while_statement']
     do_first_statement=[]    
     states=states.copy()
-    if (len(root_node.children)==0 or root_node.type=='string') and root_node.type!='comment':
+    if (len(root_node.children)==0 or root_node.type in ['string_literal','string','character_literal']) and root_node.type!='comment':
         idx,code=index_to_code[(root_node.start_point,root_node.end_point)]
         if root_node.type==code:
             return [],states
@@ -429,6 +430,7 @@ def DFG_csharp(root_node,index_to_code,states):
         current_states=states.copy()
         others_states=[]
         flag=False
+        tag=False
         if 'else' in root_node.type:
             tag=True
         for child in root_node.children:
@@ -541,7 +543,7 @@ def DFG_ruby(root_node,index_to_code,states):
     while_statement=['while_modifier','until']
     do_first_statement=[] 
     def_statement=['keyword_parameter']
-    if (len(root_node.children)==0 or root_node.type=='string') and root_node.type!='comment':
+    if (len(root_node.children)==0 or root_node.type in ['string_literal','string','character_literal']) and root_node.type!='comment':
         states=states.copy()
         idx,code=index_to_code[(root_node.start_point,root_node.end_point)]
         if root_node.type==code:
@@ -609,6 +611,7 @@ def DFG_ruby(root_node,index_to_code,states):
         DFG=[]
         current_states=states.copy()
         others_states=[]
+        tag=False
         if 'else' in root_node.type:
             tag=True
         for child in root_node.children:
@@ -702,7 +705,7 @@ def DFG_go(root_node,index_to_code,states):
     while_statement=[]
     do_first_statement=[]    
     states=states.copy()
-    if (len(root_node.children)==0 or root_node.type=='string') and root_node.type!='comment':
+    if (len(root_node.children)==0 or root_node.type in ['string_literal','string','character_literal']) and root_node.type!='comment':
         idx,code=index_to_code[(root_node.start_point,root_node.end_point)]
         if root_node.type==code:
             return [],states
@@ -765,6 +768,7 @@ def DFG_go(root_node,index_to_code,states):
         current_states=states.copy()
         others_states=[]
         flag=False
+        tag=False
         if 'else' in root_node.type:
             tag=True
         for child in root_node.children:
@@ -846,7 +850,7 @@ def DFG_php(root_node,index_to_code,states):
     while_statement=['while_statement']
     do_first_statement=[]    
     states=states.copy()
-    if (len(root_node.children)==0 or root_node.type=='string') and root_node.type!='comment':
+    if (len(root_node.children)==0 or root_node.type in ['string_literal','string','character_literal']) and root_node.type!='comment':
         idx,code=index_to_code[(root_node.start_point,root_node.end_point)]
         if root_node.type==code:
             return [],states
@@ -909,6 +913,7 @@ def DFG_php(root_node,index_to_code,states):
         current_states=states.copy()
         others_states=[]
         flag=False
+        tag=False
         if 'else' in root_node.type:
             tag=True
         for child in root_node.children:
@@ -1031,7 +1036,7 @@ def DFG_javascript(root_node,index_to_code,states):
     while_statement=['while_statement']
     do_first_statement=[]    
     states=states.copy()
-    if (len(root_node.children)==0 or root_node.type=='string') and root_node.type!='comment':
+    if (len(root_node.children)==0 or root_node.type in ['string_literal','string','character_literal']) and root_node.type!='comment':
         idx,code=index_to_code[(root_node.start_point,root_node.end_point)]
         if root_node.type==code:
             return [],states
@@ -1094,6 +1099,7 @@ def DFG_javascript(root_node,index_to_code,states):
         current_states=states.copy()
         others_states=[]
         flag=False
+        tag=False
         if 'else' in root_node.type:
             tag=True
         for child in root_node.children:

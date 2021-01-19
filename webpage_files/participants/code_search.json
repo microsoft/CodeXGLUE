@@ -5,8 +5,8 @@
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",
         "MRR":27.19,
-        "Acc-WebQuery":59.98,
-        "F1-WebQuery":59.56
+        "Acc-WebQuery":53.37,
+        "F1-WebQuery":58.95
       },
       {"Rank":2,
         "id":102,
@@ -14,7 +14,7 @@
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",
         "MRR":18.33,
-        "Acc-WebQuery":"58.20",
-        "F1-WebQuery":59.56
+        "Acc-WebQuery":"40.92",
+        "F1-WebQuery":57.49
       }
         ]}

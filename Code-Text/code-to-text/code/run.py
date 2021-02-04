@@ -303,10 +303,11 @@ def main():
              'weight_decay': args.weight_decay},
             {'params': [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
         ]
+        t_total = len(train_dataloader) // args.gradient_accumulation_steps * args.num_train_epochs
         optimizer = AdamW(optimizer_grouped_parameters, lr=args.learning_rate, eps=args.adam_epsilon)
-        scheduler = get_linear_schedule_with_warmup(optimizer, 
-                                                    num_warmup_steps=int(len(train_dataloader)*args.num_train_epochs*0.1),
-                                                    num_training_steps=len(train_dataloader)*args.num_train_epochs)
+        scheduler = get_linear_schedule_with_warmup(optimizer,
+                                                    num_warmup_steps=int(t_total*0.1),
+                                                    num_training_steps=t_total)
     
         #Start training
         logger.info("***** Running training *****")

@@ -82,7 +82,7 @@ To fine-tune CodeGPT on concode dataset for text2code generation on multi-GPUs a
 LANG=java
 DATADIR=../dataset/concode
 OUTPUTDIR=../save/concode
-PRETRAINDIR=microsoft/CodeGPT-small-java-adapted    # will download pre-trained CodeGPT model
+PRETRAINDIR=microsoft/CodeGPT-small-java-adaptedGPT2    # will download pre-trained CodeGPT model
 LOGFILE=text2code_concode.log
 PER_NODE_GPU=YOUR_GPU_NUM       # modify YOUR_GPU_NUM
 

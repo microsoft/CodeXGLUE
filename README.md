@@ -107,13 +107,7 @@ If you use this code or CodeXGLUE, please consider citing us.
                and Generation},
   journal   = {CoRR},
   volume    = {abs/2102.04664},
-  year      = {2021},
-  url       = {https://arxiv.org/abs/2102.04664},
-  archivePrefix = {arXiv},
-  eprint    = {2102.04664},
-  timestamp = {Thu, 18 Feb 2021 15:26:00 +0100},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2102-04664.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  year      = {2021}
 }</code></pre>
 
 This research was conducted by Alexey Svyatkovskiy, Ambrosio Blanco, Colin Clement, Dawn Drain, Daxin Jiang, Daya Guo, Duyu Tang, Junjie Huang, Lidong Zhou, Linjun Shou, Long Zhou, Michele Tufano, Ming Gong, Ming Zhou, Nan Duan, Neel Sundaresan, Shao Kun Deng, Shengyu Fu, Shuai Lu, Shujie Liu, and Shuo Ren.

@@ -80,9 +80,40 @@ Our datasets follow Computational Use of Data Agreement (C-UDA) License.
 
 # Reference
 If you use this code or CodeXGLUE, please consider citing us.
-<pre><code>@article{CodeXGLUE,
-  title={CodeXGLUE: A Benchmark Dataset and Open Challenge for Code Intelligence},
-  year={2020},
+<pre><code>@article{DBLP:journals/corr/abs-2102-04664,
+  author    = {Shuai Lu and
+               Daya Guo and
+               Shuo Ren and
+               Junjie Huang and
+               Alexey Svyatkovskiy and
+               Ambrosio Blanco and
+               Colin B. Clement and
+               Dawn Drain and
+               Daxin Jiang and
+               Duyu Tang and
+               Ge Li and
+               Lidong Zhou and
+               Linjun Shou and
+               Long Zhou and
+               Michele Tufano and
+               Ming Gong and
+               Ming Zhou and
+               Nan Duan and
+               Neel Sundaresan and
+               Shao Kun Deng and
+               Shengyu Fu and
+               Shujie Liu},
+  title     = {CodeXGLUE: {A} Machine Learning Benchmark Dataset for Code Understanding
+               and Generation},
+  journal   = {CoRR},
+  volume    = {abs/2102.04664},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2102.04664},
+  archivePrefix = {arXiv},
+  eprint    = {2102.04664},
+  timestamp = {Thu, 18 Feb 2021 15:26:00 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2102-04664.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }</code></pre>
 
 This research was conducted by Alexey Svyatkovskiy, Ambrosio Blanco, Colin Clement, Dawn Drain, Daxin Jiang, Daya Guo, Duyu Tang, Junjie Huang, Lidong Zhou, Linjun Shou, Long Zhou, Michele Tufano, Ming Gong, Ming Zhou, Nan Duan, Neel Sundaresan, Shao Kun Deng, Shengyu Fu, Shuai Lu, Shujie Liu, and Shuo Ren.

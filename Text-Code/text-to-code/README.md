@@ -170,12 +170,12 @@ The results on concode test set are shown as below:
 
 | Model                                                 |   EM    |   BLEU   | CodeBLEU |
 | ----------------------------------------------------- | :-----: | :------: | :------: |
-| Seq2Seq                                               |  3.05   |  21.31   |   17.61  |
-| [Seq2Action+MAML](https://arxiv.org/pdf/1906.07108.pdf)                            |  10.05  |  24.40   |   20.99  |
+| Seq2Seq                                               |  3.05   |  21.31   |   26.39  |
+| [Seq2Action+MAML](https://arxiv.org/pdf/1906.07108.pdf)                            |  10.05  |  24.40   |   29.46  |
 | [Iyer-Simp+200 idoms](https://www.aclweb.org/anthology/D19-1545.pdf)                      |  12.20  |  26.60   |     -    |
-| [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)                          |  17.35  |  25.37   |   22.79  |
-| CodeGPT                                               |  18.25  |  28.69   |   25.69  |
-| CodeGPT-adapted                                       |**20.10**|**32.79** | **27.74**|
+| [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)                          |  17.35  |  25.37   |   29.69  |
+| CodeGPT                                               |  18.25  |  28.69   |  32.71   |
+| CodeGPT-adapted                                       |**20.10**|**32.79** | **35.98**|
 
 ## Reference
 

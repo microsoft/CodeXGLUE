@@ -49,6 +49,8 @@ The outputs are:
 BLEU: 20.21, EM: 17.0
 ```
 
+The CodeBLEU score can be calculated by this [script](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/code-to-code-trans/evaluator/CodeBLEU)
+
 ### Input Format
 
 Answer file is in the same format of the dev set json lines file. A legal prediction file is expected to be a txt format file. It should have the same number of lines as answer file. Each line is the model prediction for the corresponding input in answer file. For example, one line in the answer file is:

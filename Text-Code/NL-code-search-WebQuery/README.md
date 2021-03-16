@@ -101,7 +101,7 @@ The results on WebQueryTest are shown as below:
 |   dataset    |  model   |  F1   | Accuracy |
 | :----------: | :------: | :---: | :------: |
 | WebQueryTest | RoBERTa  | 57.49 |  40.92   |
-| WebQueryTest | CodeBERT | 58.95 |  53.37   |
+| WebQueryTest | CodeBERT | 58.95 |  47.80   |
 
 ## Cite
 

@@ -3,7 +3,7 @@
 
 ## Task Definition
 
-Given a code and a collection of candidates as the input, the task is to return Top K codes with the same semantic. Models are evaluated by MAP score.
+Given a code and a collection of candidates as the input, the task is to return Top K codes with the same semantic. Models are evaluated by MAP@R score. MAP@R is defined as the mean of average precision scores, each of which is evaluated for retrieving R most similar samples given a query. For a code (query), R is the number of codes in the same class, i.e. R=499 in this dataset.
 
 
 ## Dataset
@@ -52,7 +52,7 @@ Data statistics of the dataset are shown in the below table:
 
 ## Evaluator
 
-We provide a script to evaluate predictions for this task, and report MAP score.
+We provide a script to evaluate predictions for this task, and report MAP@R score.
 
 ### Example
 
@@ -85,13 +85,13 @@ cat evaluator/answers.jsonl
 {"index": "5", "answers": ["4", "3"]}
 ```
 
-Report MAP score
+Report MAP@R score
 
 ```shell
 python evaluator/evaluator.py -a evaluator/answers.jsonl  -p evaluator/predictions.jsonl 
 ```
 
-{'MAP': 0.6667}
+{'MAP@R': 0.6667}
 
 ### Input Predictions
 
@@ -168,13 +168,13 @@ python ../evaluator/extract_answers.py -c ../dataset/test.jsonl -o saved_models/
 python ../evaluator/evaluator.py -a saved_models/answers.jsonl   -p saved_models/predictions.jsonl 
 ```
 
-{'MAP': 0.8429}
+{'MAP@R': 0.8429}
 
 ## Result
 
 The results on the test set are shown as below:
 
-| Method           |  MAP(%)   |
+| Method           |  MAP@R(%)   |
 | ---------------- | :-------: |
 | [code2vec](https://dl.acm.org/doi/pdf/10.1145/3290353)         |   1.98    |
 | [NCC](https://papers.nips.cc/paper/7617-neural-code-comprehension-a-learnable-representation-of-code-semantics.pdf)              |   39.95   |

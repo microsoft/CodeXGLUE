@@ -3,7 +3,7 @@
 
 ## Task Definition
 
-Given a code and a collection of candidates as the input, the task is to return Top K codes with the same semantic. Models are evaluated by MAP@R score. MAP@R is defined as the mean of average precision scores, each of which is evaluated for retrieving R most similar samples given a query. For a code (query), R is the number of codes in the same class, i.e. R=499 in this dataset.
+Given a code and a collection of candidates as the input, the task is to return Top K codes with the same semantic. Models are evaluated by MAP@R score. MAP@R is defined as the mean of average precision scores, each of which is evaluated for retrieving R most similar samples given a query. For a code (query), R is the number of other codes in the same class, i.e. R=499 in this dataset.
 
 
 ## Dataset

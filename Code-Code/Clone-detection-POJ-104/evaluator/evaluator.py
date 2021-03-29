@@ -35,7 +35,7 @@ def calculate_scores(answers,predictions):
 				sys.exit()		
 		scores.append(len(set(a&p))/len(a))
 	result={}
-	result['MAP']=round(np.mean(scores),4)
+	result['MAP@R']=round(np.mean(scores),4)
 	return result
 
 def main():

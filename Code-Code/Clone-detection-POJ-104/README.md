@@ -182,7 +182,7 @@ The results on the test set are shown as below:
 | [Aroma-Dot](https://dl.acm.org/doi/pdf/10.1145/3360578)        |   52.08   |
 | [Aroma-Cos](https://dl.acm.org/doi/pdf/10.1145/3360578)        |   55.12   |
 | [MISIM-GNN](https://arxiv.org/pdf/2006.05265.pdf)        |   82.45   |
-| [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf)         | **84.29** |
+| [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf)         | **82.67** |
 
 ## Reference
 <pre><code>@inproceedings{mou2016convolutional,

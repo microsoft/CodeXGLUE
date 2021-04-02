@@ -181,6 +181,7 @@ The results on the test set are shown as below:
 | [NCC-w/0-inst2vec](https://papers.nips.cc/paper/7617-neural-code-comprehension-a-learnable-representation-of-code-semantics.pdf) |   54.19   |
 | [Aroma-Dot](https://dl.acm.org/doi/pdf/10.1145/3360578)        |   52.08   |
 | [Aroma-Cos](https://dl.acm.org/doi/pdf/10.1145/3360578)        |   55.12   |
+| [RoBERTa](https://arxiv.org/pdf/1907.11692.pdf)         | 76.67|
 | [MISIM-GNN](https://arxiv.org/pdf/2006.05265.pdf)        |   82.45   |
 | [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf)         | **82.67** |
 

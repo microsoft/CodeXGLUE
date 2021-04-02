@@ -334,11 +334,12 @@ def evaluate(args, model, tokenizer,eval_when_training=False):
     for i in range(scores.shape[0]):
         cont=0
         label=int(labels[i])
+        Avep = []
         for j in range(dic[label]):
             index=sort_ids[i,j]
             if int(labels[index])==label:
-                cont+=1
-        MAP.append(cont/dic[label])
+                Avep.append((len(Avep)+1)/(j+1))
+        MAP.append(sum(Avep)/dic[label])
           
     result = {
         "eval_loss": float(perplexity),
@@ -598,7 +599,7 @@ def main():
     if args.do_eval and args.local_rank in [-1, 0]:
         checkpoint_prefix = 'checkpoint-best-map/model.bin'
         output_dir = os.path.join(args.output_dir, '{}'.format(checkpoint_prefix))  
-        model.load_state_dict(torch.load(output_dir))      
+        model.load_state_dict(torch.load(output_dir),strict=False)      
         model.to(args.device)
         result=evaluate(args, model, tokenizer)
         logger.info("***** Eval results *****")
@@ -608,7 +609,7 @@ def main():
     if args.do_test and args.local_rank in [-1, 0]:
         checkpoint_prefix = 'checkpoint-best-map/model.bin'
         output_dir = os.path.join(args.output_dir, '{}'.format(checkpoint_prefix))  
-        model.load_state_dict(torch.load(output_dir))                  
+        model.load_state_dict(torch.load(output_dir),strict=False)                  
         model.to(args.device)
         test(args, model, tokenizer)
 
@@ -617,5 +618,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 

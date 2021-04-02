@@ -23,20 +23,24 @@ def read_predictions(filename):
 	return predictions
 
 def calculate_scores(answers,predictions):
-	scores=[]
-	for key in answers:
-		if key not in predictions:
-				logging.error("Missing prediction for index {}.".format(key))
-				sys.exit()
-		a=set(answers[key])
-		p=set(predictions[key])
-		if len(a)!=len(p):
-				logging.error("Mismatch the number of answers for index {}.".format(key))
-				sys.exit()		
-		scores.append(len(set(a&p))/len(a))
-	result={}
-	result['MAP@R']=round(np.mean(scores),4)
-	return result
+    scores=[]
+    for key in answers:
+        if key not in predictions:
+            logging.error("Missing prediction for index {}.".format(key))
+            sys.exit()
+
+        answer = set(answers[key])   
+
+        Avep = []
+        for k, p in enumerate(predictions[key]):
+            if p in answer:
+                Avep.append((len(Avep)+1)/(k+1))
+
+        scores.append(sum(Avep)/len(answer))
+
+    result={}
+    result['MAP@R']= round(np.mean(scores),4)
+    return result
 
 def main():
     import argparse

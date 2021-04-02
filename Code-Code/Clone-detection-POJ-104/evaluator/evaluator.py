@@ -3,24 +3,25 @@
 import logging
 import sys,json
 import numpy as np
+from tqdm import tqdm
 
 def read_answers(filename):
-	answers={}
-	with open(filename) as f:
-		for line in f:
-			line=line.strip()
-			js=json.loads(line)
-			answers[js['index']]=js['answers']
-	return answers
+    answers={}
+    with open(filename) as f:
+        for line in f:
+            line=line.strip()
+            js=json.loads(line)
+            answers[js['index']]=js['answers']
+    return answers
 
 def read_predictions(filename):
-	predictions={}
-	with open(filename) as f:
-		for line in f:
-			line=line.strip()
-			js=json.loads(line)
-			predictions[js['index']]=js['answers']
-	return predictions
+    predictions={}
+    with open(filename) as f:
+        for line in f:
+            line=line.strip()
+            js=json.loads(line)
+            predictions[js['index']]=js['answers']
+    return predictions
 
 def calculate_scores(answers,predictions):
     scores=[]
@@ -28,7 +29,11 @@ def calculate_scores(answers,predictions):
         if key not in predictions:
             logging.error("Missing prediction for index {}.".format(key))
             sys.exit()
-
+            
+        if len(answers[key])!=len(predictions[key]):
+            logging.error("Mismatch the number of answers for index {}.".format(key))
+            sys.exit()
+                
         answer = set(answers[key])   
 
         Avep = []

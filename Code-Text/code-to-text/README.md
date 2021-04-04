@@ -13,7 +13,7 @@ The dataset we use comes from [CodeSearchNet](https://arxiv.org/pdf/1909.09436.p
 - Remove examples that documents contain special tokens (e.g. <img ...> or https:...)
 - Remove examples that documents are not English.
 
-### Download data and preprocess
+### Download data and preprocess (not in a notebook)
 
 ```shell
 unzip dataset.zip
@@ -38,6 +38,34 @@ python preprocess.py
 rm -r */final
 cd ..
 ```
+### Download data and preprocess (in a notebook)
+
+```shell
+!unzip dataset.zip
+!cd dataset
+!wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/python.zip
+!wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/java.zip
+!wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/ruby.zip
+!wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/javascript.zip
+!wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/go.zip
+!wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/php.zip
+
+!unzip python.zip
+!unzip java.zip
+!unzip ruby.zip
+!unzip javascript.zip
+!unzip go.zip
+!unzip php.zip
+!rm *.zip
+!rm *.pkl
+
+import os
+os.chdir("/content/dataset")
+!python preprocess.py
+!rm -r */final
+os.chdir("../")
+```
+
 
 ### Data Format
 

@@ -168,7 +168,7 @@ python ../evaluator/extract_answers.py -c ../dataset/test.jsonl -o saved_models/
 python ../evaluator/evaluator.py -a saved_models/answers.jsonl   -p saved_models/predictions.jsonl 
 ```
 
-{'MAP@R': 0.8429}
+{'MAP@R': 0.8267}
 
 ## Result
 

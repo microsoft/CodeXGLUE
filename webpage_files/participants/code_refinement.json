@@ -10,7 +10,8 @@
         "sCodeBLEU":75.58,
         "mBLEU":91.07,
         "mAcc(%)":5.16,
-        "mCodeBLEU":87.52
+        "mCodeBLEU":87.52,
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       },
       {"Rank":2,
         "id":102,
@@ -22,7 +23,8 @@
         "sCodeBLEU":"/",
         "mBLEU":88.50,
         "mAcc(%)":8.98,
-        "mCodeBLEU":"/"
+        "mCodeBLEU":"/",
+        "url":"microsoft.github.io/CodeXGLUE/"
       },
       {"Rank":3,
         "id":103,
@@ -34,7 +36,8 @@
         "sCodeBLEU":73.31,
         "mBLEU":89.25,
         "mAcc(%)":"3.70",
-        "mCodeBLEU":81.72
+        "mCodeBLEU":81.72,
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       },
       {"Rank":4,
         "id":104,
@@ -46,7 +49,8 @@
         "sCodeBLEU":"/",
         "mBLEU":72.08,
         "mAcc(%)":"2.50",
-        "mCodeBLEU":"/"
+        "mCodeBLEU":"/",
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       },
       {"Rank":5,
         "id":105,
@@ -58,7 +62,8 @@
         "sCodeBLEU":"/",
         "mBLEU":90.91,
         "mAcc(%)":0,
-        "mCodeBLEU":"/"
+        "mCodeBLEU":"/",
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       }
       
         ]}

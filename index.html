@@ -113,6 +113,11 @@
 							<table id="LB-overall" lay-filter="test"></table>
 							<script src="./webpage_files/layui/layui.js"></script>
 							<script>
+								var showModelName = function (d) {
+									// var html = '<a style="color:#1E9FFF" href="javascript:void(0);" lay-event="click" >'+d.Model+'</a>';
+									var html = '<a style="color:#1E9FFF" href=//'+d.url+'  >'+d.Model+'</a>';
+									return html;
+								}
 								layui.use('table', function(){
 									var myTable = layui.table;
 							
@@ -130,7 +135,7 @@
 											,{align: 'center', title: '', colspan: 1, colGroup:true}],
 											[ //表头
 											{field: 'Rank', title: 'Rank', align: 'right', width: 70}
-											,{field: 'Model', title: 'Model', width: 220}
+											,{field: 'Model', title: 'Model', width: 220, templet: showModelName }
 											,{field: 'Organization', title: 'Organization', width: 150}
 											,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 																					
@@ -159,6 +164,11 @@
 					<h2>Clone Detection (Code-Code)</h2>
 						<table id="LB-CloneDetection" lay-filter="test"></table>
 						<script>
+							var showModelName = function (d) {
+								var html = '<a style="color:#1E9FFF" href=//'+d.url+'  >'+d.Model+'</a>';
+								return html;
+							}
+
 							layui.use('table', function(){
 								var myTable = layui.table;
 
@@ -173,7 +183,7 @@
 											,{align: 'center', title: 'POJ-104', colspan: 1, colGroup:true}],
 										[ //表头
 										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
-										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Model', title: 'Model', width: 220, templet: showModelName }
 										,{field: 'Organization', title: 'Organization', width: 150}
 										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 
@@ -184,6 +194,7 @@
 									]]
 								});
 							});
+
 						</script>
 				</div>
 			</div>
@@ -196,6 +207,10 @@
 					<h2>Defect Detection (Code-Code)</h2>
 						<table id="LB-DefectDetection" lay-filter="test"></table>
 						<script>
+							var showModelName = function (d) {
+								var html = '<a style="color:#1E9FFF" href=//'+d.url+'  >'+d.Model+'</a>';
+								return html;
+							}
 							layui.use('table', function(){
 								var myTable = layui.table;
 
@@ -208,7 +223,7 @@
 									,cols: [
 										[ //表头
 										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
-										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Model', title: 'Model', width: 220, templet: showModelName }
 										,{field: 'Organization', title: 'Organization', width: 150}
 										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 
@@ -227,6 +242,10 @@
 					<h2>Cloze Test (Code-Code)</h2>
 						<table id="LB-ClozeTest" lay-filter="test"></table>
 						<script>
+							var showModelName = function (d) {
+								var html = '<a style="color:#1E9FFF" href=//'+d.url+'  >'+d.Model+'</a>';
+								return html;
+							}
 							layui.use('table', function(){
 								var myTable = layui.table;
 
@@ -241,7 +260,7 @@
 											,{align: 'center', title: 'ClozeTest-maxmin', colspan: 7}],
 										[ //表头
 										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
-										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Model', title: 'Model', width: 220, templet: showModelName }
 										,{field: 'Organization', title: 'Organization', width: 150}
 										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 
@@ -274,6 +293,10 @@
 					<h2>Code Completion (Code-Code)</h2>
 						<table id="LB-CodeCompletion" lay-filter="test"></table>
 						<script>
+							var showModelName = function (d) {
+								var html = '<a style="color:#1E9FFF" href=//'+d.url+'  >'+d.Model+'</a>';
+								return html;
+							}
 							layui.use('table', function(){
 								var myTable = layui.table;
 
@@ -288,7 +311,7 @@
 											,{align: 'center', title: 'CodeCompletion-token', colspan: 2}],
 										[ //表头
 										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
-										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Model', title: 'Model', width: 220, templet: showModelName }
 										,{field: 'Organization', title: 'Organization', width: 150}
 										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 
@@ -312,6 +335,10 @@
 					<h2>Code Refinement (Code-Code)</h2>
 						<table id="LB-CodeRefinement" lay-filter="test"></table>
 						<script>
+							var showModelName = function (d) {
+								var html = '<a style="color:#1E9FFF" href=//'+d.url+'  >'+d.Model+'</a>';
+								return html;
+							}
 							layui.use('table', function(){
 								var myTable = layui.table;
 
@@ -326,7 +353,7 @@
 											,{align: 'center', title: 'medium test set', colspan: 3}],
 										[ //表头
 										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
-										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Model', title: 'Model', width: 220, templet: showModelName }
 										,{field: 'Organization', title: 'Organization', width: 150}
 										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 
@@ -352,6 +379,10 @@
 					<h2>Code Translation (Code-Code)</h2>
 						<table id="LB-Code2CodeTranslation" lay-filter="test"></table>
 						<script>
+							var showModelName = function (d) {
+								var html = '<a style="color:#1E9FFF" href=//'+d.url+'  >'+d.Model+'</a>';
+								return html;
+							}
 							layui.use('table', function(){
 								var myTable = layui.table;
 
@@ -366,7 +397,7 @@
 											,{align: 'center', title: 'C# to Java', colspan: 3}],
 										[ //表头
 										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
-										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Model', title: 'Model', width: 220, templet: showModelName }
 										,{field: 'Organization', title: 'Organization', width: 150}
 										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 
@@ -392,6 +423,10 @@
 					<h2>Natural Language Code Search (Text-Code)</h2>
 						<table id="LB-NL-code-search" lay-filter="test"></table>
 						<script>
+							var showModelName = function (d) {
+								var html = '<a style="color:#1E9FFF" href=//'+d.url+'  >'+d.Model+'</a>';
+								return html;
+							}
 							layui.use('table', function(){
 								var myTable = layui.table;
 
@@ -406,7 +441,7 @@
 											,{align: 'center', title: 'NL-code-search-WebQuery', colspan: 2}],
 										[ //表头
 										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
-										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Model', title: 'Model', width: 220, templet: showModelName }
 										,{field: 'Organization', title: 'Organization', width: 150}
 										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 
@@ -427,6 +462,10 @@
 					<h2>Code Generation (Text-Code)</h2>
 						<table id="LB-Text2CodeGeneration" lay-filter="test"></table>
 						<script>
+							var showModelName = function (d) {
+								var html = '<a style="color:#1E9FFF" href=//'+d.url+'  >'+d.Model+'</a>';
+								return html;
+							}
 							layui.use('table', function(){
 								var myTable = layui.table;
 
@@ -440,7 +479,7 @@
 											,{align: 'center', title: 'Text2Code Generation', colspan: 3}],
 										[ //表头
 										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
-										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Model', title: 'Model', width: 220, templet: showModelName }
 										,{field: 'Organization', title: 'Organization', width: 150}
 										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 
@@ -466,6 +505,10 @@
 					<h2>Code Summarization (Code-Text)</h2>
 						<table id="LB-Code2TextGeneration" lay-filter="test"></table>
 						<script>
+							var showModelName = function (d) {
+								var html = '<a style="color:#1E9FFF" href=//'+d.url+'  >'+d.Model+'</a>';
+								return html;
+							}
 							layui.use('table', function(){
 								var myTable = layui.table;
 
@@ -477,7 +520,7 @@
 									,page:  false//开启分页
 									,cols: [[ //表头
 										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
-										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Model', title: 'Model', width: 220, templet: showModelName }
 										,{field: 'Organization', title: 'Organization', width: 150}
 										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 
@@ -502,6 +545,10 @@
 					<h2>Documentation Translation (Text-Text)</h2>
 						<table id="LB-Text2TextGeneration" lay-filter="test"></table>
 						<script>
+							var showModelName = function (d) {
+								var html = '<a style="color:#1E9FFF" href=//'+d.url+'  >'+d.Model+'</a>';
+								return html;
+							}
 							layui.use('table', function(){
 								var myTable = layui.table;
 
@@ -515,7 +562,7 @@
 											,{align: 'center', title: 'Translation Direction', colspan: 8}],
 										[ //表头
 										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
-										,{field: 'Model', title: 'Model', width: 220}
+										,{field: 'Model', title: 'Model', width: 220, templet: showModelName }
 										,{field: 'Organization', title: 'Organization', width: 150}
 										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 

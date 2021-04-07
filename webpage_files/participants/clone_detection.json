@@ -8,7 +8,8 @@
         "Precision":"/",
         "Recall":"/",
         "F1":0.972,
-        "MAP@R(%)":"/"
+        "MAP@R(%)":"/",
+        "url":"microsoft.github.io/CodeXGLUE/"
       },
       {"Rank":2,
         "id":102,
@@ -18,7 +19,8 @@
         "Precision":"0.960",
         "Recall":0.969,
         "F1":0.965,
-        "MAP@R(%)":82.67
+        "MAP@R(%)":82.67,
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       },
       {"Rank":3,
         "id":103,
@@ -28,6 +30,7 @@
         "Precision":0.935,
         "Recall":0.965,
         "F1":0.949,
-        "MAP@R(%)":76.67
+        "MAP@R(%)":76.67,
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       }
         ]}

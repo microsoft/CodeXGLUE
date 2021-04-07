@@ -6,7 +6,8 @@
         "Submission Date":"2020-08-30",
         "MRR":27.19,
         "Acc-WebQuery":53.37,
-        "F1-WebQuery":58.95
+        "F1-WebQuery":58.95,
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       },
       {"Rank":2,
         "id":102,
@@ -15,6 +16,7 @@
         "Submission Date":"2020-08-30",
         "MRR":18.33,
         "Acc-WebQuery":"40.92",
-        "F1-WebQuery":57.49
+        "F1-WebQuery":57.49,
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       }
         ]}

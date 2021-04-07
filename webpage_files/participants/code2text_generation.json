@@ -11,7 +11,8 @@
         "Go":18.91,
         "Python":19.30,
         "Java":18.45,
-        "PHP":23.58
+        "PHP":23.58,
+        "url":"microsoft.github.io/CodeXGLUE/"
       },
       {"Rank":2,
         "id":102,
@@ -24,7 +25,8 @@
         "Go":18.07,
         "Python":19.06,
         "Java":17.65,
-        "PHP":25.16
+        "PHP":25.16,
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       },
       {"Rank":3,
         "id":103,
@@ -37,7 +39,8 @@
         "Go":17.72,
         "Python":18.14,
         "Java":16.47,
-        "PHP":24.02
+        "PHP":24.02,
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       },
       {"Rank":4,
         "id":104,
@@ -50,7 +53,8 @@
         "Go":16.38,
         "Python":15.81,
         "Java":16.26,
-        "PHP":22.12
+        "PHP":22.12,
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       },
       {"Rank":5,
         "id":105,
@@ -63,7 +67,8 @@
         "Go":13.98,
         "Python":15.93,
         "Java":15.09,
-        "PHP":21.08
+        "PHP":21.08,
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       }
       
         ]}

@@ -7,7 +7,8 @@
         "Submission Date":"2021-04-02",
         "EM":18.75,
         "BLEU":36.69,
-        "CodeBLEU":38.52
+        "CodeBLEU":38.52,
+        "url":"microsoft.github.io/CodeXGLUE/"
       },
       {"Rank":2,
         "id":102,
@@ -16,7 +17,8 @@
         "Submission Date":"2020-08-30",
         "EM":20.10,
         "BLEU":32.79,
-        "CodeBLEU":35.98
+        "CodeBLEU":35.98,
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       },
       {"Rank":3,
         "id":103,
@@ -25,7 +27,8 @@
         "Submission Date":"2020-08-30",
         "EM":18.25,
         "BLEU":28.69,
-        "CodeBLEU":32.71
+        "CodeBLEU":32.71,
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       },
       {"Rank":4,
         "id":104,
@@ -34,7 +37,8 @@
         "Submission Date":"2020-08-30",
         "EM":17.35,
         "BLEU":25.37,
-        "CodeBLEU":29.69
+        "CodeBLEU":29.69,
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       },
       {"Rank":5,
         "id":105,
@@ -43,7 +47,8 @@
         "Submission Date":"2020-08-30",
         "EM":"12.20",
         "BLEU":"26.60",
-        "CodeBLEU":"/"
+        "CodeBLEU":"/",
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       },
       {"Rank":6,
         "id":106,
@@ -52,7 +57,8 @@
         "Submission Date":"2020-08-30",
         "EM":10.05,
         "BLEU":"24.40",
-        "CodeBLEU":29.46
+        "CodeBLEU":29.46,
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       },
       {"Rank":7,
         "id":107,
@@ -61,7 +67,8 @@
         "Submission Date":"2020-08-30",
         "EM":3.05,
         "BLEU":21.31,
-        "CodeBLEU":26.39
+        "CodeBLEU":26.39,
+        "url":"arxiv.org/pdf/2102.04664.pdf"
       }
       
         ]}

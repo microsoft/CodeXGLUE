@@ -11,7 +11,7 @@
         "mBLEU":91.07,
         "mAcc(%)":5.16,
         "mCodeBLEU":87.52,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":2,
         "id":102,
@@ -24,7 +24,7 @@
         "mBLEU":88.50,
         "mAcc(%)":8.98,
         "mCodeBLEU":"/",
-        "url":"arxiv.org/pdf/2103.06333.pdf"
+        "url":"arxiv.org/abs/2103.06333"
       },
       {"Rank":3,
         "id":103,
@@ -37,7 +37,7 @@
         "mBLEU":89.25,
         "mAcc(%)":"3.70",
         "mCodeBLEU":81.72,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":4,
         "id":104,
@@ -50,7 +50,7 @@
         "mBLEU":72.08,
         "mAcc(%)":"2.50",
         "mCodeBLEU":"/",
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":5,
         "id":105,
@@ -63,7 +63,7 @@
         "mBLEU":90.91,
         "mAcc(%)":0,
         "mCodeBLEU":"/",
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       }
       
         ]}

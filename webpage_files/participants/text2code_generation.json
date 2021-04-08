@@ -8,7 +8,7 @@
         "EM":18.75,
         "BLEU":36.69,
         "CodeBLEU":38.52,
-        "url":"arxiv.org/pdf/2103.06333.pdf"
+        "url":"arxiv.org/abs/2103.06333"
       },
       {"Rank":2,
         "id":102,
@@ -18,7 +18,7 @@
         "EM":20.10,
         "BLEU":32.79,
         "CodeBLEU":35.98,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":3,
         "id":103,
@@ -28,7 +28,7 @@
         "EM":18.25,
         "BLEU":28.69,
         "CodeBLEU":32.71,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":4,
         "id":104,
@@ -38,7 +38,7 @@
         "EM":17.35,
         "BLEU":25.37,
         "CodeBLEU":29.69,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":5,
         "id":105,
@@ -48,7 +48,7 @@
         "EM":"12.20",
         "BLEU":"26.60",
         "CodeBLEU":"/",
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":6,
         "id":106,
@@ -58,7 +58,7 @@
         "EM":10.05,
         "BLEU":"24.40",
         "CodeBLEU":29.46,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":7,
         "id":107,
@@ -68,7 +68,7 @@
         "EM":3.05,
         "BLEU":21.31,
         "CodeBLEU":26.39,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       }
       
         ]}

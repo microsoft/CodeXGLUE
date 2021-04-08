@@ -7,7 +7,7 @@
         "MRR":27.19,
         "Acc-WebQuery":53.37,
         "F1-WebQuery":58.95,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":2,
         "id":102,
@@ -17,6 +17,6 @@
         "MRR":18.33,
         "Acc-WebQuery":"40.92",
         "F1-WebQuery":57.49,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       }
         ]}

@@ -10,7 +10,7 @@
         "java-ES":61.54,
         "py150-Acc":74.93,
         "java-Acc":76.45,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":2,
         "id":102,
@@ -23,7 +23,7 @@
         "java-ES":"60.70",
         "py150-Acc":74.22,
         "java-Acc":74.89,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":3,
         "id":103,
@@ -36,7 +36,7 @@
         "java-ES":50.39,
         "py150-Acc":73.26,
         "java-Acc":64.16,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":4,
         "id":104,
@@ -49,6 +49,6 @@
         "java-ES":41.55,
         "py150-Acc":"58.00",
         "java-Acc":56.02,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       }
         ]}

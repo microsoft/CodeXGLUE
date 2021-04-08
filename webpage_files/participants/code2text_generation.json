@@ -12,7 +12,7 @@
         "Python":19.30,
         "Java":18.45,
         "PHP":23.58,
-        "url":"arxiv.org/pdf/2103.06333.pdf"
+        "url":"arxiv.org/abs/2103.06333"
       },
       {"Rank":2,
         "id":102,
@@ -26,7 +26,7 @@
         "Python":19.06,
         "Java":17.65,
         "PHP":25.16,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":3,
         "id":103,
@@ -40,7 +40,7 @@
         "Python":18.14,
         "Java":16.47,
         "PHP":24.02,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":4,
         "id":104,
@@ -54,7 +54,7 @@
         "Python":15.81,
         "Java":16.26,
         "PHP":22.12,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":5,
         "id":105,
@@ -68,7 +68,7 @@
         "Python":15.93,
         "Java":15.09,
         "PHP":21.08,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       }
       
         ]}

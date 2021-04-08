@@ -9,7 +9,7 @@
         "Recall":"/",
         "F1":0.972,
         "MAP@R(%)":"/",
-        "url":"arxiv.org/pdf/2103.06333.pdf"
+        "url":"arxiv.org/abs/2103.06333"
       },
       {"Rank":2,
         "id":102,
@@ -20,7 +20,7 @@
         "Recall":0.969,
         "F1":0.965,
         "MAP@R(%)":82.67,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       },
       {"Rank":3,
         "id":103,
@@ -31,6 +31,6 @@
         "Recall":0.965,
         "F1":0.949,
         "MAP@R(%)":76.67,
-        "url":"arxiv.org/pdf/2102.04664.pdf"
+        "url":"arxiv.org/abs/2102.04664"
       }
         ]}

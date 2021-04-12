@@ -54,7 +54,10 @@ def corpus_dataflow_match(references, candidates, lang):
                 for dataflow in normalized_ref_dfg:
                     if dataflow in normalized_cand_dfg:
                             match_count += 1
-                            normalized_cand_dfg.remove(dataflow)      
+                            normalized_cand_dfg.remove(dataflow)  
+    if total_count == 0:
+        print("WARNING: There is no reference data-flows extracted from the whole corpus, and the data-flow match score degenerates to 0. Please consider ignoring this score.")
+        return 0
     score = match_count / total_count
     return score
 
@@ -136,5 +139,4 @@ def normalize_dataflow(dataflow):
             i+= 1
         normalized_dataflow.append((var_dict[var_name], relationship, [var_dict[x] for x in par_vars_name_list]))
     return normalized_dataflow
-
-
+    

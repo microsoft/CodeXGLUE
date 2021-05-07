@@ -173,6 +173,9 @@ The results on the test set are shown as below:
 | [Roberta](https://arxiv.org/pdf/1907.11692.pdf)  |   0.1833   |
 | [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf) | **0.2719** |
 
+## Model and Demo
+A pretrained model, additional training script with dataset, and demo of a finetuned CodeBERT model for the task of Code Search can be found here: https://drive.google.com/file/d/1ZO-xVIzGcNE6Gz9DEg2z5mIbBv4Ft1cK/view.
+
 ## Reference
 <pre><code>@article{husain2019codesearchnet,
   title={Codesearchnet challenge: Evaluating the state of semantic code search},

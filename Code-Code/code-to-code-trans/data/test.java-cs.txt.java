@@ -115,7 +115,7 @@ public static byte[] toBigEndianUtf16Bytes(char[] chars, int offset, int length)
 public UploadArchiveResult uploadArchive(UploadArchiveRequest request) {request = beforeClientExecution(request);return executeUploadArchive(request);}
 public List<Token> getHiddenTokensToLeft(int tokenIndex) {return getHiddenTokensToLeft(tokenIndex, -1);}
 public boolean equals(Object obj) {if (this == obj)return true;if (!super.equals(obj))return false;if (getClass() != obj.getClass())return false;AutomatonQuery other = (AutomatonQuery) obj;if (!compiled.equals(other.compiled))return false;if (term == null) {if (other.term != null)return false;} else if (!term.equals(other.term))return false;return true;}
-public SpanQuery makeSpanClause() {SpanQuery [] spanQueries = new SpanQuery[size()];Iterator<SpanQuery> sqi = weightBySpanQuery.keySet().iterator();int i = 0;while (sqi.hasNext()) {SpanQuery sq = sqi.next();float boost = weightBySpanQuery.get(sq);if (boost != 1f) {sq = new SpanBoostQuery(sq, boost);}spanQueries[i++] = sq;}if (spanQueries.length == 1)return spanQueries[0];elsereturn new SpanOrQuery(spanQueries);}
+public SpanQuery makeSpanClause() {SpanQuery [] spanQueries = new SpanQuery[size()];Iterator<SpanQuery> sqi = weightBySpanQuery.keySet().iterator();int i = 0;while (sqi.hasNext()) {SpanQuery sq = sqi.next();float boost = weightBySpanQuery.get(sq);if (boost != 1f) {sq = new SpanBoostQuery(sq, boost);}spanQueries[i++] = sq;}if (spanQueries.length == 1)return spanQueries[0];else return new SpanOrQuery(spanQueries);}
 public StashCreateCommand stashCreate() {return new StashCreateCommand(repo);}
 public FieldInfo fieldInfo(String fieldName) {return byName.get(fieldName);}
 public DescribeEventSourceResult describeEventSource(DescribeEventSourceRequest request) {request = beforeClientExecution(request);return executeDescribeEventSource(request);}
@@ -186,7 +186,7 @@ public final boolean hasPassedThroughNonGreedyDecision() {return passedThroughNo
 public int end() {return end(0);}
 public void traverse(CellHandler handler) {int firstRow = range.getFirstRow();int lastRow = range.getLastRow();int firstColumn = range.getFirstColumn();int lastColumn = range.getLastColumn();final int width = lastColumn - firstColumn + 1;SimpleCellWalkContext ctx = new SimpleCellWalkContext();Row currentRow = null;Cell currentCell = null;for (ctx.rowNumber = firstRow; ctx.rowNumber <= lastRow; ++ctx.rowNumber) {currentRow = sheet.getRow(ctx.rowNumber);if (currentRow == null) {continue;}for (ctx.colNumber = firstColumn; ctx.colNumber <= lastColumn; ++ctx.colNumber) {currentCell = currentRow.getCell(ctx.colNumber);if (currentCell == null) {continue;}if (isEmpty(currentCell) && !traverseEmptyCells) {continue;}long rowSize = ArithmeticUtils.mulAndCheck((long)ArithmeticUtils.subAndCheck(ctx.rowNumber, firstRow), (long)width);ctx.ordinalNumber = ArithmeticUtils.addAndCheck(rowSize, (ctx.colNumber - firstColumn + 1));handler.onCell(currentCell, ctx);}}}
 public int getReadIndex() {return pos;}
-public int compareTo(ScoreTerm other) {if (this.boost == other.boost)return other.bytes.get().compareTo(this.bytes.get());elsereturn Float.compare(this.boost, other.boost);}
+public int compareTo(ScoreTerm other) {if (this.boost == other.boost) return other.bytes.get().compareTo(this.bytes.get());else return Float.compare(this.boost, other.boost);}
 public int normalize(char s[], int len) {for (int i = 0; i < len; i++) {switch (s[i]) {case FARSI_YEH:case YEH_BARREE:s[i] = YEH;break;case KEHEH:s[i] = KAF;break;case HEH_YEH:case HEH_GOAL:s[i] = HEH;break;case HAMZA_ABOVE: len = delete(s, i, len);i--;break;default:break;}}return len;}
 public void serialize(LittleEndianOutput out) {out.writeShort(_options);}
 public DiagnosticErrorListener(boolean exactOnly) {this.exactOnly = exactOnly;}
@@ -219,7 +219,7 @@ public SubmoduleStatusType getType() {return type;}
 public DescribeGameServerGroupResult describeGameServerGroup(DescribeGameServerGroupRequest request) {request = beforeClientExecution(request);return executeDescribeGameServerGroup(request);}
 public Pattern pattern() {return pattern;}
 public V setValue(V object) {throw new UnsupportedOperationException();}
-public StringBuilder stem(CharSequence word) {CharSequence cmd = stemmer.getLastOnPath(word);if (cmd == null)return null;buffer.setLength(0);buffer.append(word);Diff.apply(buffer, cmd);if (buffer.length() > 0)return buffer;elsereturn null;}
+public StringBuilder stem(CharSequence word) {CharSequence cmd = stemmer.getLastOnPath(word);if (cmd == null)return null;buffer.setLength(0);buffer.append(word);Diff.apply(buffer, cmd);if (buffer.length() > 0)return buffer;else return null;}
 public RenameFaceRequest() {super("CloudPhoto", "2017-07-11", "RenameFace", "cloudphoto");setProtocol(ProtocolType.HTTPS);}
 public char requireChar(Map<String,String> args, String name) {return require(args, name).charAt(0);}
 public static String toStringTree(Tree t) {return toStringTree(t, (List<String>)null);}
@@ -296,7 +296,7 @@ public boolean isNewFragment() {return false;}
 public GetCloudFrontOriginAccessIdentityConfigResult getCloudFrontOriginAccessIdentityConfig(GetCloudFrontOriginAccessIdentityConfigRequest request) {request = beforeClientExecution(request);return executeGetCloudFrontOriginAccessIdentityConfig(request);}
 public boolean matches(int symbol, int minVocabSymbol, int maxVocabSymbol) {return label == symbol;}
 public DeleteTransitGatewayResult deleteTransitGateway(DeleteTransitGatewayRequest request) {request = beforeClientExecution(request);return executeDeleteTransitGateway(request);}
-public static byte[] grow(byte[] array, int minSize) {assert minSize >= 0: "size must be positive (got " + minSize + "): likely integer overflow?";if (array.length < minSize) {return growExact(array, oversize(minSize, Byte.BYTES));} elsereturn array;}
+public static byte[] grow(byte[] array, int minSize) {assert minSize >= 0: "size must be positive (got " + minSize + "): likely integer overflow?";if (array.length < minSize) {return growExact(array, oversize(minSize, Byte.BYTES));} else return array;}
 public CreateTransactionRequest() {super("CloudPhoto", "2017-07-11", "CreateTransaction", "cloudphoto");setProtocol(ProtocolType.HTTPS);}
 public BatchRefUpdate setRefLogIdent(PersonIdent pi) {refLogIdent = pi;return this;}
 public GetLaunchTemplateDataResult getLaunchTemplateData(GetLaunchTemplateDataRequest request) {request = beforeClientExecution(request);return executeGetLaunchTemplateData(request);}
@@ -637,7 +637,7 @@ public StartContentModerationResult startContentModeration(StartContentModeratio
 public static String quoteReplacement(String s) {StringBuilder result = new StringBuilder(s.length());for (int i = 0; i < s.length(); i++) {char c = s.charAt(i);if (c == '\\' || c == '$') {result.append('\\');}result.append(c);}return result.toString();}
 public final void set(V newValue) {value = newValue;}
 public QueryParserTokenManager(CharStream stream){input_stream = stream;}
-public long valueFor(double elapsed) {double val;if (modBy == 0)val = elapsed / factor;elseval = elapsed / factor % modBy;if (type == '0')return Math.round(val);elsereturn (long) val;}
+public long valueFor(double elapsed) {double val;if (modBy == 0)val = elapsed / factor;elseval = elapsed / factor % modBy;if (type == '0')return Math.round(val);else return (long) val;}
 public LongBuffer get(long[] dst, int dstOffset, int longCount) {byteBuffer.limit(limit * SizeOf.LONG);byteBuffer.position(position * SizeOf.LONG);if (byteBuffer instanceof DirectByteBuffer) {((DirectByteBuffer) byteBuffer).get(dst, dstOffset, longCount);} else {((HeapByteBuffer) byteBuffer).get(dst, dstOffset, longCount);}this.position += longCount;return this;}
 public void removeErrorListeners() {_listeners.clear();}
 public CommonTokenStream(TokenSource tokenSource, int channel) {this(tokenSource);this.channel = channel;}
@@ -787,7 +787,7 @@ public Hashtable(int capacity, float loadFactor) {this(capacity);if (loadFactor 
 public Object get(CharSequence key) {final int bucket = normalCompletion.getBucket(key);return bucket == -1 ? null : Long.valueOf(bucket);}
 public ListHyperParameterTuningJobsResult listHyperParameterTuningJobs(ListHyperParameterTuningJobsRequest request) {request = beforeClientExecution(request);return executeListHyperParameterTuningJobs(request);}
 public DeleteTableResult deleteTable(String tableName) {return deleteTable(new DeleteTableRequest().withTableName(tableName));}
-public final boolean lessThan(TextFragment fragA, TextFragment fragB){if (fragA.getScore() == fragB.getScore())return fragA.fragNum > fragB.fragNum;elsereturn fragA.getScore() < fragB.getScore();}
+public final boolean lessThan(TextFragment fragA, TextFragment fragB){if (fragA.getScore() == fragB.getScore())return fragA.fragNum > fragB.fragNum;else return fragA.getScore() < fragB.getScore();}
 public void freeBefore(int pos) {assert pos >= 0;assert pos <= nextPos;final int newCount = nextPos - pos;assert newCount <= count: "newCount=" + newCount + " count=" + count;assert newCount <= buffer.length: "newCount=" + newCount + " buf.length=" + buffer.length;count = newCount;}
 public UpdateHITTypeOfHITResult updateHITTypeOfHIT(UpdateHITTypeOfHITRequest request) {request = beforeClientExecution(request);return executeUpdateHITTypeOfHIT(request);}
 public UpdateRecommenderConfigurationResult updateRecommenderConfiguration(UpdateRecommenderConfigurationRequest request) {request = beforeClientExecution(request);return executeUpdateRecommenderConfiguration(request);}
@@ -812,7 +812,7 @@ public String toString() {StringBuilder buffer = new StringBuilder();buffer.appe
 public SubmoduleInitCommand(Repository repo) {super(repo);paths = new ArrayList<>();}
 public void include(String name, AnyObjectId id) {boolean validRefName = Repository.isValidRefName(name) || Constants.HEAD.equals(name);if (!validRefName)throw new IllegalArgumentException(MessageFormat.format(JGitText.get().invalidRefName, name));if (include.containsKey(name))throw new IllegalStateException(JGitText.get().duplicateRef + name);include.put(name, id.toObjectId());}
 public Cluster enableSnapshotCopy(EnableSnapshotCopyRequest request) {request = beforeClientExecution(request);return executeEnableSnapshotCopy(request);}
-public ValueFiller getValueFiller() {return new ValueFiller() {private final MutableValueFloat mval = new MutableValueFloat();@Override
+public ValueFiller getValueFiller() {return new ValueFiller();}
 public void serialize(LittleEndianOutput out) {out.writeByte(getPane());out.writeShort(getActiveCellRow());out.writeShort(getActiveCellCol());out.writeShort(getActiveCellRef());int nRefs = field_6_refs.length;out.writeShort(nRefs);for (CellRangeAddress8Bit field_6_ref : field_6_refs) {field_6_ref.serialize(out);}}
 public static Counter newCounter() {return newCounter(false);}
 public boolean get(String name, boolean dflt) {boolean vals[] = (boolean[]) valByRound.get(name);if (vals != null) {return vals[roundNumber % vals.length];}String sval = props.getProperty(name, "" + dflt);if (sval.indexOf(":") < 0) {return Boolean.valueOf(sval).booleanValue();}int k = sval.indexOf(":");String colName = sval.substring(0, k);sval = sval.substring(k + 1);colForValByRound.put(name, colName);vals = propToBooleanArray(sval);valByRound.put(name, vals);return vals[roundNumber % vals.length];}

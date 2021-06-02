@@ -215,18 +215,18 @@ def train(args, train_dataset, model, tokenizer, fh, pool):
                     checkpoint_prefix = "checkpoint"
                     # Save model checkpoint
                     if args.evaluate_during_training:  # Only evaluate when single GPU otherwise metrics may not average well
-                        # results = evaluate(args, model, tokenizer, eval_when_training=True)
-                        # for key, value in results.items():
-                        #     tb_writer.add_scalar('eval_{}'.format(key), value, global_step)
-                        #     logger.info("  %s = %s", key, round(value,4))
-                        # output_dir = os.path.join(args.output_dir, '{}-{}-{}'.format(checkpoint_prefix, global_step, round(results['perplexity'],4)))
-                        dev_bleu, dev_EM = eval_bleu(args, model, tokenizer, file_type='dev', num=100)
-                        logger.info(f"dev bleu: {dev_bleu}, dev EM: {dev_EM}")
-                        output_dir = os.path.join(args.output_dir, '{}-{}-{}'.format(checkpoint_prefix, global_step, round(dev_bleu,2)))
-                        if dev_bleu > best_bleu:
-                            best_bleu = dev_bleu
-                            logger.info(f"best bleu updated. saved in {output_dir}")
-                            logger.info(f"best bleu: {best_bleu}")
+                        results = evaluate(args, model, tokenizer, eval_when_training=True)
+                        for key, value in results.items():
+                            tb_writer.add_scalar('eval_{}'.format(key), value, global_step)
+                            logger.info("  %s = %s", key, round(value,4))
+                        output_dir = os.path.join(args.output_dir, '{}-{}-{}'.format(checkpoint_prefix, global_step, round(results['perplexity'],4)))
+                        # dev_bleu, dev_EM = eval_bleu(args, model, tokenizer, file_type='dev', num=100)
+                        # logger.info(f"dev bleu: {dev_bleu}, dev EM: {dev_EM}")
+                        # output_dir = os.path.join(args.output_dir, '{}-{}-{}'.format(checkpoint_prefix, global_step, round(dev_bleu,2)))
+                        # if dev_bleu > best_bleu:
+                        #     best_bleu = dev_bleu
+                        #     logger.info(f"best bleu updated. saved in {output_dir}")
+                        #     logger.info(f"best bleu: {best_bleu}")
                     else:
                         output_dir = os.path.join(args.output_dir, "{}-{}".format(checkpoint_prefix, global_step))
                     if not os.path.exists(output_dir):
@@ -301,14 +301,32 @@ def evaluate(args, model, tokenizer, prefix="", eval_when_training=False):
     model.eval()
     
     for step, (batch, token_labels) in enumerate(eval_dataloader):
+
         inputs = batch.to(args.device)
         attn_mask = torch.tensor(token_labels.clone().detach() != 0, dtype=torch.uint8, device=args.device)
         loss_mask = torch.tensor(token_labels.clone().detach() == 2, dtype=torch.uint8, device=args.device)
         with torch.no_grad():
-            outputs = model(inputs, attention_mask=attn_mask, labels=inputs, loss_mask=loss_mask)
-            loss = outputs[0]
+            outputs = model(inputs, attention_mask=attn_mask)
+            logits = outputs[0]
+            labels = inputs
+            shift_logits = logits[..., :-1, :].contiguous()
+            shift_labels = labels[..., 1:].contiguous()
+            # Flatten the tokens
+            loss_fct = CrossEntropyLoss()
+            flatten_shift_loss_mask = loss_mask[..., :-1].contiguous().view(-1)
+            ids = torch.nonzero(flatten_shift_loss_mask).view(-1)
+            loss = loss_fct(shift_logits.view(-1, shift_logits.size(-1))[ids], shift_labels.view(-1)[ids])
             eval_loss += loss.mean().item()
         nb_eval_steps += 1
+
+        # inputs = batch.to(args.device)
+        # attn_mask = torch.tensor(token_labels.clone().detach() != 0, dtype=torch.uint8, device=args.device)
+        # loss_mask = torch.tensor(token_labels.clone().detach() == 2, dtype=torch.uint8, device=args.device)
+        # with torch.no_grad():
+        #     outputs = model(inputs, attention_mask=attn_mask, labels=inputs, loss_mask=loss_mask)
+        #     loss = outputs[0]
+        #     eval_loss += loss.mean().item()
+        # nb_eval_steps += 1
 
     eval_loss = eval_loss / nb_eval_steps
     perplexity = torch.exp(torch.tensor(eval_loss))
@@ -335,6 +353,7 @@ def eval_bleu(args, model, tokenizer, file_type='test', num=2000):
     model.eval()
 
     preds = []
+    max_gen_len = 100
     for step, (batch, token_labels) in enumerate(test_dataloader):
         if step >= num:
             break
@@ -360,7 +379,7 @@ def eval_bleu(args, model, tokenizer, file_type='test', num=2000):
                 # context_mask=source_mask[i:i+1,:].expand(beam_size,-1)
                 beam = Beam(beam_size, tokenizer.bos_token_id, tokenizer.eos_token_id)
                 input_ids = None
-                for _ in range(162): 
+                for _ in range(max_gen_len): 
                     if beam.done():
                         break
                     input_ids = beam.getCurrentState()    
@@ -374,7 +393,7 @@ def eval_bleu(args, model, tokenizer, file_type='test', num=2000):
                 hyp = beam.getHyp(beam.getFinal())
                 pred  =beam.buildTargetTokens(hyp)[:beam_size]
 
-                pred = [torch.cat([x.view(-1) for x in p]+[zero]*(162-len(p))).view(1,-1) for p in pred]
+                pred = [torch.cat([x.view(-1) for x in p]+[zero]*(max_gen_len-len(p))).view(1,-1) for p in pred]
                 p.append(torch.cat(pred, 0).unsqueeze(0))
             p = torch.cat(p, 0)
             for pred in p:

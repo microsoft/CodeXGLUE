@@ -15,7 +15,7 @@ class Beam(object):
         # The outputs at each time-step.
         self.nextYs = [self.tt.LongTensor(size)
                        .fill_(0)]
-        self.nextYs[0][0] = sos
+        self.nextYs[0][:] = sos
         # Has EOS topped the beam yet.
         self._eos = eos
         self.eosTop = False

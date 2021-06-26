@@ -46,7 +46,7 @@ python evaluator/evaluator.py -a=evaluator/answers.json -p=evaluator/predictions
 
 The outputs are:
 ```
-BLEU: 20.21, EM: 17.0
+BLEU: 16.68, EM: 17.0
 ```
 
 The CodeBLEU score can be calculated by this [script](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/code-to-code-trans/evaluator/CodeBLEU)

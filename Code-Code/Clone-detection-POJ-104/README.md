@@ -91,7 +91,7 @@ Report MAP@R score
 python evaluator/evaluator.py -a evaluator/answers.jsonl  -p evaluator/predictions.jsonl 
 ```
 
-{'MAP@R': 0.6667}
+{'MAP@R': 0.5833}
 
 ### Input Predictions
 

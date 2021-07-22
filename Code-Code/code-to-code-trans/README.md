@@ -101,8 +101,6 @@ python run.py \
 
 ### Evaluation
 
-Model1 (Roberta(Code)):
-
 (1) Java to C#
 ```shell
 python evaluator/evaluator.py -ref data/test.java-cs.txt.cs -pre code/saved_models/java-cs-model1.output
@@ -114,20 +112,6 @@ BLEU: 77.46 ; Acc: 56.1
 python evaluator/evaluator.py -ref data/test.java-cs.txt.java -pre code/saved_models/cs-java-model1.output
 ```
 BLEU: 71.99 ; Acc: 57.9
-
-Model2 (CodeBERT):
-
-(1) Java to C#
-```shell
-python evaluator/evaluator.py -ref data/test.java-cs.txt.cs -pre code/saved_models/java-cs-model2.output
-```
-BLEU: 79.92 ; Acc: 59.0
-
-(2) C# to Java
-```shell
-python evaluator/evaluator.py -ref data/test.java-cs.txt.java -pre code/saved_models/cs-java-model2.output
-```
-BLEU: 72.14 ; Acc: 58.0
 
 ## Result
 

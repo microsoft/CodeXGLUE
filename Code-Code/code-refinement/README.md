@@ -103,13 +103,13 @@ python run.py \
 
 Small:
 ```shell
-python evaluator/evaluator.py -ref data/small/test.buggy-fixed.fixed -pre code/Model1&2/saved_models/small-model.output
+python evaluator/evaluator.py -ref data/small/test.buggy-fixed.fixed -pre code/saved_models/small-model.output
 ```
 BLEU: 77.42 ; Acc: 16.4
 
 Medium: 
 ```shell
-python evaluator/evaluator.py -ref data/medium/test.buggy-fixed.fixed -pre code/Model1&2/saved_models/medium-model.output
+python evaluator/evaluator.py -ref data/medium/test.buggy-fixed.fixed -pre code/saved_models/medium-model.output
 ```
 BLEU: 91.07 ; Acc: 5.16
 

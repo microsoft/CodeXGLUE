@@ -127,7 +127,7 @@ BLEU: 79.92 ; Acc: 59.0
 ```shell
 python evaluator/evaluator.py -ref data/test.java-cs.txt.java -pre code/saved_models/cs-java-model2.output
 ```
-BLEU: 72.14 ; Acc: 58.8
+BLEU: 72.14 ; Acc: 58.0
 
 ## Result
 

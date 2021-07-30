@@ -105,16 +105,19 @@ The results on WebQueryTest are shown as below:
 If you use this code or our WebQueryTest dataset, please considering citing CodeXGLUE and CodeSearchNet:	
 
 ```
-@article{CodeXGLUE,
-  title={CodeXGLUE: An Open Challenge for Code Intelligence},
-  journal={arXiv},
-  year={2020},
+@article{Lu2021CodeXGLUEAM,
+  title={CodeXGLUE: A Machine Learning Benchmark Dataset for Code Understanding and Generation},
+  author={Shuai Lu and Daya Guo and Shuo Ren and Junjie Huang and Alexey Svyatkovskiy and Ambrosio Blanco and Colin Clement and Dawn Drain and Daxin Jiang and Duyu Tang and Ge Li and Lidong Zhou and Linjun Shou and Long Zhou and Michele Tufano and Ming Gong and Ming Zhou and Nan Duan and Neel Sundaresan and Shao Kun Deng and Shengyu Fu and Shujie Liu},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2102.04664}
 }
 
-@article{CoSQA,
-  title={[CoSQA: 20,000+ Web Queries for Code Search and Question Answering},
-  journal={arXiv},
-  year={2021},
+@inproceedings{Huang2020CoSQA20,
+  title={CoSQA: 20, 000+ Web Queries for Code Search and Question Answering},
+  author={Junjie Huang and Duyu Tang and Linjun Shou and Ming Gong and Ke Xu and Daxin Jiang and Ming Zhou and Nan Duan},
+  booktitle={ACL/IJCNLP},
+  year={2020}
 }
 
 @article{husain2019codesearchnet,

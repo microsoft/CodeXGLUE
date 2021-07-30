@@ -5,9 +5,18 @@ import logging
 import argparse
 from fuzzywuzzy import fuzz
 import json
+import re
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
+
+def post_process(code):
+    code = code.replace("<NUM_LIT>", "0").replace("<STR_LIT>", "").replace("<CHAR_LIT>", "")
+    pattern = re.compile(r"<(STR|NUM|CHAR)_LIT:(.*?)>", re.S)
+    lits = re.findall(pattern, code)
+    for lit in lits:
+        code = code.replace(f"<{lit[0]}_LIT:{lit[1]}>", lit[1])
+    return code
 
 def main():
     parser = argparse.ArgumentParser(description='Evaluate leaderboard predictions for code completion (line level).')
@@ -24,8 +33,8 @@ def main():
     EM = 0.0
     edit_sim = 0.0
     for pred, gt in zip(preds, gts):
-        pred = pred.strip()
-        gt = json.loads(gt)["gt"]
+        pred = post_process(pred.strip())
+        gt = post_process(json.loads(gt)["gt"])
         edit_sim += fuzz.ratio(pred, gt)
         if pred.split() == gt.split():
             EM += 1

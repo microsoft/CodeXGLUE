@@ -22,7 +22,7 @@ Test set is already at `dataset/py150/line_completion/test.json`.
 
 ### Github Java Corpus line completion test set
 
-We create test set from Github Java Corpus token level code comepltion test set. In the same way as for Python, we randomly cut a file as two parts. The former part is the input context, outputs is the code sequence in the latter part until the first ; or \} token (including ; or \} token).
+We create test set from Github Java Corpus token level code comepltion test set. In the same way as for Python, we randomly cut a file as two parts. The former part is the input context, outputs is the code sequence in the latter part until the first ; or \{ and \} token (including ; or \} token, but excluding \{ token).
 
 Test set is already at `dataset/javaCorpus/line_completion/test.json`.
 
@@ -43,13 +43,13 @@ Data statistics of py150 line completion test set are shown in the below table:
 
 | Data Split |  #Examples  | Average tokens of inputs | Average tokens of outputs |
 | ---------- | :---------: | :----------------------: | :-----------------------: |
-|    Test    |    10,000   |          489.11          |          6.56             |
+|    Test    |    10,000   |          477.81          |          6.61             |
 
 Data statistics of Github Java Corpus line completion test set are shown in the below table:
 
 | Data Split |  #Examples  | Average tokens of inputs | Average tokens of outputs |
 | ---------- | :---------: | :----------------------: | :-----------------------: |
-|    Test    |    3,000    |          350.62          |          10.49            |
+|    Test    |    3,000    |          365.00          |          7.13             |
 
 ## Evaluator
 
@@ -61,8 +61,10 @@ python evaluator/evaluator.py -a=evaluator/answers.json -p=evaluator/predictions
 
 The outputs are:
 ```
-Edit sim: 71.05, EM: 39.0
+Edit sim: 43.8, EM: 0.0
 ```
+
+**Note** that when evaluating, the normalized literals will be converted to the original format, e.g. <NUM_LIT:1> => 1, '<STR_LIT>' => ''
 
 ### Input Format
 
@@ -88,7 +90,7 @@ We provide a pipeline that evaluate line completion on [CodeGPT](https://github.
 
 - python 3.6 or 3.7
 - torch==1.4.0
-- transformers>=2.5.0
+- transformers>=2.5.0 and < 4.0.0
 - fuzzywuzzy
 
 ### Inference
@@ -99,12 +101,14 @@ It's recommanded to run inference on single GPU. The predictions will be saved a
 export CUDA_VISIBLE_DEVICES=0
 LANG=java                       # set python for py150
 DATADIR=../dataset/javaCorpus/line_completion
+LITFILE=../dataset/javaCorpus/literals.json
 OUTPUTDIR=../save/javaCorpus
 PRETRAINDIR=../../CodeCompletion-token/save/javaCorpus/checkpoint
 LOGFILE=completion_javaCorpus_eval.log
 
 python -u run_lm.py \
         --data_dir=$DATADIR \
+        --lit_file=$LITFILE \
         --langs=$LANG \
         --output_dir=$OUTPUTDIR \
         --pretrain_dir=$PRETRAINDIR \
@@ -124,21 +128,21 @@ It might take 45 minutes for inferencing on py150 dataset and 15 minutes on java
 
 | Model                                                 |     EM     |  Edit similarity  |
 | ----------------------------------------------------- | :--------: | :---------------: |
-| LSTM+BPE                                              |    17.93   |       50.05       |
-| Transformer                                           |    36.65   |       67.51       |
-| [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)                               |    38.55   |       68.94       |
-| CodeGPT                                               |    39.11   |       69.69       |
-| CodeGPT-adapted                                       |  **39.65** |     **69.84**     |
+| LSTM+BPE                                              |    23.77   |       56.26       |
+| Transformer                                           |    38.51   |       69.01       |
+| [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)                               |    41.73   |       70.60       |
+| CodeGPT                                               |    42.18   |       71.23       |
+| CodeGPT-adapted                                       |  **42.37** |     **71.59**     |
 
 ### javaCorpus
 
 | Model                                                 |     EM     |  Edit similarity  |
 | ----------------------------------------------------- | :--------: | :---------------: |
-| BPE+LSTM                                              |    10.30   |       41.55       |
-| Transformer                                           |    15.33   |       50.39       |
-| [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)                            |    24.30   |       60.70       |
-| CodeGPT                                               |    25.30   |       61.54       |
-| CodeGPT-adapted                                       |  **26.43** |     **63.03**     |
+| BPE+LSTM                                              |    12.97   |       42.10       |
+| Transformer                                           |    17.00   |       50.23       |
+| [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)                            |    27.50   |       60.36       |
+| CodeGPT                                               |    28.23   |       61.81       |
+| CodeGPT-adapted                                       |  **30.60** |     **63.45**     |
 
 
 ## Reference

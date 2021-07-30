@@ -36,11 +36,6 @@ from torch.utils.data.distributed import DistributedSampler
 from dataset import TextDataset, finetuneDataset, EvalDataset, lineDataset
 from beam import Beam
 
-try:
-    from torch.utils.tensorboard import SummaryWriter
-except:
-    from tensorboardX import SummaryWriter
-
 from fuzzywuzzy import fuzz
 from transformers import (WEIGHTS_NAME, AdamW, get_linear_schedule_with_warmup,
                           BertConfig, BertForMaskedLM, BertTokenizer,
@@ -50,6 +45,9 @@ from transformers import (WEIGHTS_NAME, AdamW, get_linear_schedule_with_warmup,
                           DistilBertConfig, DistilBertForMaskedLM, DistilBertTokenizer)
 from model import RNNModel
 
+# logging.basicConfig(format='%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
+#                     datefmt='%m/%d/%Y %H:%M:%S',
+#                     level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 MODEL_CLASSES = {
@@ -83,6 +81,18 @@ def update_config(args, config):
     # config.n_positions = config.n_ctx = args.block_size
     config.vocab_size = args.vocab_size
 
+def get_special_tokens(path):
+    lits = json.load(open(path))
+    tokens = ["<STR_LIT>", "<NUM_LIT>", "<CHAR_LIT>"]
+    for lit in lits["str"]:
+        tokens.append(f"<STR_LIT:{lit}>")
+    for lit in lits["num"]:
+        tokens.append(f"<NUM_LIT:{lit}>")
+    for lit in lits["char"]:
+        tokens.append(f"<CHAR_LIT:{lit}>")
+    return tokens
+
+
 
 def train(args, train_dataset, model, tokenizer, fh, pool):
     """ Train the model """
@@ -90,7 +100,6 @@ def train(args, train_dataset, model, tokenizer, fh, pool):
         args.tensorboard_dir = os.path.join(args.output_dir, 'tensorboard')
         if not os.path.exists(args.tensorboard_dir):
             os.makedirs(args.tensorboard_dir)
-        tb_writer = SummaryWriter(args.tensorboard_dir)
     
     args.batch_size = args.per_gpu_train_batch_size * max(1, args.n_gpu)
     train_sampler = RandomSampler(train_dataset)
@@ -143,8 +152,7 @@ def train(args, train_dataset, model, tokenizer, fh, pool):
     # Distributed training (should be after apex fp16 initialization)
     if args.local_rank != -1:
         model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[args.local_rank%args.gpu_per_node],
-                                                          output_device=args.local_rank%args.gpu_per_node,
-                                                          find_unused_parameters=True)
+                                                          output_device=args.local_rank%args.gpu_per_node)
 
     # Train!
     logger.info("***** Running training *****")
@@ -193,11 +201,9 @@ def train(args, train_dataset, model, tokenizer, fh, pool):
                 output_flag=True
                 avg_loss=round(np.exp((tr_loss - logging_loss) /(global_step- tr_nb)),4)
                 if global_step % args.logging_steps == 0:
-                    logger.info("  steps: %s  ppl: %s", global_step, round(avg_loss,5))
+                    logger.info("  steps: %s  ppl: %s  lr: %s", global_step, round(avg_loss,5), scheduler.get_last_lr()[0])
                 if args.local_rank in [-1, 0] and args.logging_steps > 0 and global_step % args.logging_steps == 0:
                     # Log metrics
-                    tb_writer.add_scalar('lr', scheduler.get_last_lr()[0], global_step)
-                    tb_writer.add_scalar('loss', (tr_loss - logging_loss) / args.logging_steps, global_step)
                     logging_loss = tr_loss
                     tr_nb=global_step
 
@@ -207,7 +213,6 @@ def train(args, train_dataset, model, tokenizer, fh, pool):
                     if args.evaluate_during_training:  # Only evaluate when single GPU otherwise metrics may not average well
                         results = evaluate(args, model, tokenizer, eval_when_training=True)
                         for key, value in results.items():
-                            tb_writer.add_scalar('eval_{}'.format(key), value, global_step)
                             logger.info("  %s = %s", key, round(value,4))                    
                         output_dir = os.path.join(args.output_dir, '{}-{}-{}'.format(checkpoint_prefix, global_step, round(results['perplexity'],4)))
                     else:
@@ -252,9 +257,6 @@ def train(args, train_dataset, model, tokenizer, fh, pool):
                 break
         if args.max_steps > 0 and global_step > args.max_steps:
             break
-
-    if args.local_rank in [-1, 0]:
-        tb_writer.close()
 
     return global_step, tr_loss / global_step
 
@@ -318,6 +320,25 @@ def eval_line_completion(args, model, tokenizer, file_type='test'):
 
     It is recommanded to use single GPU because it could not be batched.
     """
+
+    def DecodeIds(idxs):
+        codes = ""
+        for idx in idxs:
+            to_add = tokenizer.convert_ids_to_tokens(idx)
+            if tokenizer.convert_ids_to_tokens(idx)[0] == '\u0120':
+                if not codes.endswith(" "):
+                    codes += " " + to_add[1:]
+                else:
+                    codes += to_add[1:]
+            elif (
+                idx in [tokenizer.bos_token_id, tokenizer.eos_token_id, tokenizer.sep_token_id, tokenizer.pad_token_id] or
+                tokenizer.convert_ids_to_tokens(idx).startswith("<NUM_LIT")
+            ):
+                codes += " " + to_add + " "
+            else:
+                codes += to_add
+        return codes.strip(" ")
+
     dataset = lineDataset(tokenizer, args, logger, file_type=file_type, block_size=args.block_size-100)
     test_sampler = SequentialSampler(dataset)
     test_dataloader = DataLoader(dataset, sampler=test_sampler, batch_size=1)
@@ -335,7 +356,7 @@ def eval_line_completion(args, model, tokenizer, file_type='test'):
     if args.langs == "python":
         break_ids = [tokenizer.sep_token_id]
     else:
-        break_ids = [tokenizer.convert_tokens_to_ids('Ġ;'), tokenizer.convert_tokens_to_ids('Ġ}')]
+        break_ids = [tokenizer.convert_tokens_to_ids('Ġ;'), tokenizer.convert_tokens_to_ids('Ġ}'), tokenizer.convert_tokens_to_ids('Ġ{')]
     preds = []
     gts = []
     edit_sim = 0.0
@@ -377,12 +398,14 @@ def eval_line_completion(args, model, tokenizer, file_type='test'):
             p = torch.cat(p, 0)
             for pred in p:
                 t = pred[0].cpu().numpy()
-                t = list(t)
+                t = t.tolist()
                 if 0 in t:
                     t = t[:t.index(0)]
-                text = tokenizer.decode(t, clean_up_tokenization_spaces=False).strip("<EOL>").strip()
+                if args.langs == "python":
+                    text = DecodeIds(t).strip("<EOL>").strip()
+                else:
+                    text = DecodeIds(t).strip("{").strip()
                 # print(text)
-                # print(gt[0])
                 # exit()
                 preds.append(text)
                 gts.append(gt[0])
@@ -398,8 +421,6 @@ def eval_line_completion(args, model, tokenizer, file_type='test'):
             
     logger.info(f"Test {len(preds)} samples")
     logger.info(f"Edit sim: {edit_sim/len(preds)}, EM: {em/len(preds)}")
-    # print(len(preds))
-    # print(edit_sim/len(preds), em/len(preds))
 
 
 def main():
@@ -422,6 +443,8 @@ def main():
                         help="config name. Required when training from scratch")
     parser.add_argument("--tokenizer_dir", type=str,
                         help="Pre-trained tokenizer dir. Required when training from scratch")
+    parser.add_argument("--lit_file", type=str,
+                        help="literals json file")
     parser.add_argument("--load_name", type=str, default="pretrained", 
                         help="Load pretrained model name")
 
@@ -438,10 +461,8 @@ def main():
                              "Default to the model max input length for single sentence inputs (take into account special tokens).")
     parser.add_argument("--do_train", action='store_true',
                         help="Whether to run training.")
-    parser.add_argument("--do_eval", action='store_true',
-                        help="Whether to run eval on the dev set.")
     parser.add_argument("--eval_line", action='store_true',
-                        help="Whether to run eval for line completion.")
+                        help="Whether to run eval on the dev set.")
     parser.add_argument("--evaluate_during_training", action='store_true',
                         help="Run evaluation during training at each logging step.")
     parser.add_argument("--do_lower_case", action='store_true',
@@ -577,11 +598,14 @@ def main():
 
         logger.info("reload model from {}, resume from {} steps".format(checkpoint_last, args.start_step))
 
+    # get special tokens
+    special_tokens = get_special_tokens(args.lit_file)
+
     # Load pre-trained model
     config_class, model_class, tokenizer_class = MODEL_CLASSES[args.model_type]
     pretrained = args.pretrain_dir
-    if pretrained and os.path.exists(pretrained) and os.listdir(pretrained):
-        tokenizer = tokenizer_class.from_pretrained(pretrained, do_lower_case=args.do_lower_case, sep_token='<EOL>', bos_token='<s>', eos_token='</s>', pad_token='<pad>', unk_token='<|UNKNOWN|>')
+    if pretrained:
+        tokenizer = tokenizer_class.from_pretrained(pretrained, do_lower_case=args.do_lower_case, sep_token='<EOL>', bos_token='<s>', eos_token='</s>', pad_token='<pad>', unk_token='<|UNKNOWN|>', additional_special_tokens=special_tokens)
         if args.model_type == "rnn":
             model = model_class(len(tokenizer), 768, 768, 1)
             model_last = os.path.join(pretrained, 'model.pt')
@@ -592,7 +616,7 @@ def main():
             model = model_class.from_pretrained(pretrained)
             model.resize_token_embeddings(len(tokenizer))
     else:
-        tokenizer = tokenizer_class.from_pretrained(args.tokenizer_dir, sep_token='<EOL>', bos_token='<s>', eos_token='</s>', pad_token='<pad>', unk_token='<|UNKNOWN|>')
+        tokenizer = tokenizer_class.from_pretrained(args.tokenizer_dir, sep_token='<EOL>', bos_token='<s>', eos_token='</s>', pad_token='<pad>', unk_token='<|UNKNOWN|>', additional_special_tokens=special_tokens)
         args.vocab_size = len(tokenizer)
         if args.model_type == "rnn":
             model = model_class(len(tokenizer), 768, 768, 1)
@@ -600,6 +624,7 @@ def main():
             config = config_class.from_pretrained(args.config_dir)
             model = model_class(config)
             model.resize_token_embeddings(len(tokenizer))
+
 
     model_parameters = model.parameters()
     num_params = sum([np.prod(p.size()) for p in model_parameters])

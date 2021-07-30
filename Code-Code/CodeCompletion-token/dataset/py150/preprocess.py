@@ -6,8 +6,11 @@ import argparse
 import re
 from tokenize import tokenize, untokenize, COMMENT, STRING, NEWLINE, ENCODING, ENDMARKER, NL, INDENT, NUMBER
 from io import BytesIO
+import json
 
-def process_string(token):
+lits = json.load(open("literals.json"))
+
+def process_string(token, special_chars={" ": "U+0020", ",": "U+002C"}):
     str_quote_options = ["'''", '"""', "'", '"']
     start_quote = ""
     end_quote = ""
@@ -27,12 +30,14 @@ def process_string(token):
                 end_quote = q
                 str_lit = str_lit[: -len(q)]
             break
-    if start_quote in str_quote_options[:2]:
-        return ""
+    # if start_quote in str_quote_options[:2]:
+    #     return ""
+    for sc in special_chars:
+        str_lit = str_lit.replace(sc, special_chars[sc])
     return (
-        f"{qualifier}{start_quote}{str_lit}{end_quote}"
-        if len(str_lit) < 15 and "\n" not in str_lit and "</s>" not in str_lit and "<s>" not in str_lit and "<pad>" not in str_lit and "<EOL>" not in str_lit
-        else f"{qualifier}{start_quote}{end_quote}"
+        f"{qualifier}{start_quote}<STR_LIT:{str_lit}>{end_quote}"
+        if str_lit in lits['str']
+        else f"{qualifier}{start_quote}<STR_LIT>{end_quote}"
     )
 
 def py_tokenize(args, file_name, file_type):
@@ -46,17 +51,16 @@ def py_tokenize(args, file_name, file_type):
             prev_eol = False
             for toknum, tokval, _, _, _ in token_gen:
                 tokval = " ".join(tokval.split())
-                if len(tokval) > 100:
-                    continue
                 if toknum == STRING:
                     add_token = process_string(tokval)
-                    if len(add_token) > 0:
-                        out_tokens.append(add_token)
-                        prev_eol = False
+                    out_tokens.append(add_token)
+                    prev_eol = False
                 elif toknum == NUMBER:
-                    if len(tokval) < 50:
-                        out_tokens.append(tokval)
-                        prev_eol = False
+                    if tokval in lits['num']:
+                        out_tokens.append(f"<NUM_LIT:{tokval}>")
+                    else:
+                        out_tokens.append(f"<NUM_LIT>")
+                    prev_eol = False
                 elif toknum in [NEWLINE, NL]:
                     if not prev_eol:
                         out_tokens.append("<EOL>")
@@ -92,13 +96,18 @@ def main():
     if not os.path.exists(args.output_dir):
         os.makedirs(args.output_dir)
 
-    dev_paths = open(os.path.join(args.base_dir, "python50k_eval.txt")).readlines()[:5000]
+    train_paths = open(os.path.join(args.base_dir, "python100k_train.txt")).readlines()[:-5000]
+    dev_paths = open(os.path.join(args.base_dir, "python100k_train.txt")).readlines()[-5000:]
+    wf = open(os.path.join(args.base_dir, "python95k_train.txt"), "w")
+    for path in train_paths:
+        wf.write(path)
+    wf.close()
     wf = open(os.path.join(args.base_dir, "python5k_dev.txt"), "w")
     for path in dev_paths:
         wf.write(path)
     wf.close()
 
-    py_tokenize(args, file_name="python100k_train.txt", file_type="train")
+    py_tokenize(args, file_name="python95k_train.txt", file_type="train")
     py_tokenize(args, file_name="python5k_dev.txt", file_type="dev")
     py_tokenize(args, file_name="python50k_eval.txt", file_type="test")
 

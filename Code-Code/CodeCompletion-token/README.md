@@ -1,5 +1,7 @@
 # CodeXGLUE -- Code Completion (token level)
 
+**Update 2021.07.30:** We update the code completion dataset with literals normalized to avoid sensitive information. 
+
 Here is the introduction and pipeline for token level code completion task.
 
 ## Task Definition
@@ -14,6 +16,12 @@ Code completion is a one of the most widely used features in software developmen
 We collect and provide two datasets for code completion. One in python, the other in java.
 
 
+### Dependency
+
+- python 3.7
+- javalang == 0.13.0
+
+
 ### py150 dataset
 
 We use py150 dataset from Raychev's OOPSLA 2016 paper [Probabilistic Model for Code with Decision Trees](https://files.sri.inf.ethz.ch/website/papers/oopsla16-dt.pdf).
@@ -26,7 +34,7 @@ python preprocess.py --base_dir=py150_files --output_dir=token_completion
 
 ### Github Java Corpus
 
-We use java corpus dataset mined by Allamanis, in his MSR 2013 paper [Mining Source Code Repositories at Massive Scale using Language Modeling](https://homepages.inf.ed.ac.uk/csutton/publications/msr2013.pdf). We follow the same split and preprocessing in Karampatsis's ICSE 2020 paper [Big Code != Big Vocabulary: Open-Vocabulary Models for Source Code](http://homepages.inf.ed.ac.uk/s1467463/documents/icse20-main-1325.pdf).
+We use java corpus dataset mined by Allamanis and Sutton, in their MSR 2013 paper [Mining Source Code Repositories at Massive Scale using Language Modeling](https://homepages.inf.ed.ac.uk/csutton/publications/msr2013.pdf). We follow the same split and preprocessing in Karampatsis's ICSE 2020 paper [Big Code != Big Vocabulary: Open-Vocabulary Models for Source Code](http://homepages.inf.ed.ac.uk/s1467463/documents/icse20-main-1325.pdf).
 
 To download the preprocessed dataset, navigate to `dataset/javaCorpus` directory, and run
 ```shell
@@ -34,33 +42,38 @@ bash download.sh
 python preprocess.py --base_dir=token_completion --output_dir=token_completion
 ```
 
+### Data Preprocessing
+
+- Tokenization is applied since we focus the token-level completion. 
+- We normalize uncommon literals for better user experience. Developers sometimes leave their names, IP address, phone numbers in their codes, and we don't encourage models to focus on these string or numeric literals. So we normalized these literals by some special tokens. Considering that frequently used literals may contain useful information, e.g. "\_\_main\_\_" or "utf-8", we preserve the 200 most frequent string and 30 most frequent numeric literals. These literals will be normalized by tokens in `"<STR_LIT:utf-8>"` format, while uncommon literals are replaced by `<STR_LIT>` or `<NUM_LIT>`. 
+- We add `<s>` and `</s>` to indicate the start and the end of one piece of code. 
+- `<EOL>` is added in python corpus to mark the ending of a line since in python there is no `;` or `}` to mark the ending of a statement like in java.
+
 ### Data Format
 
 Code corpus are saved in txt format files. one line is a tokenized code snippets:
 ```
-<s> from django . utils . translation import ugettext_lazy as _ <EOL> import horizon <EOL> from openstack_dashboard . dashboards . project import dashboard <EOL> class Stacks ( horizon . Panel ) : <EOL> name = _ ( "Stacks" ) <EOL> slug = "stacks" <EOL> permissions = ( '' , ) <EOL> dashboard . Project . register ( Stacks ) </s>
+<s> from __future__ import unicode_literals <EOL> from django . db import models , migrations <EOL> class Migration ( migrations . Migration ) : <EOL> dependencies = [ <EOL> ] <EOL> operations = [ <EOL> migrations . CreateModel ( <EOL> name = '<STR_LIT>' , <EOL> fields = [ <EOL> ( '<STR_LIT:id>' , models . AutoField ( verbose_name = '<STR_LIT>' , serialize = False , auto_created = True , primary_key = True ) ) , <EOL> ( '<STR_LIT:name>' , models . CharField ( help_text = b'<STR_LIT>' , max_length = <NUM_LIT> ) ) , <EOL> ( '<STR_LIT:image>' , models . ImageField ( help_text = b'<STR_LIT>' , null = True , upload_to = b'<STR_LIT>' , blank = True ) ) , <EOL> ] , <EOL> options = { <EOL> '<STR_LIT>' : ( '<STR_LIT:name>' , ) , <EOL> '<STR_LIT>' : '<STR_LIT>' , <EOL> } , <EOL> bases = ( models . Model , ) , <EOL> ) , <EOL> ] </s>
 ```
-
-We have added `<s>` and `</s>` to indicate the start and the end of one piece of code. `<EOL>` is also added in python corpus to mark the ending of a line since in python there is no `;` or `}` to mark the ending of a statement like in java.
 
 
 ### Data Statistics
 
-Data statistics of py150 dataset are shown in the below table, note that there doesn't exist dev set in the origin py150 dataset, we choose the first 5,000 files in test set as dev set.
+Data statistics of py150 dataset are shown in the below table, note that there doesn't exist dev set in the origin py150 dataset, we select 5,000 files in the original train set as dev set.
 
 | Data Split  |   #Files    |   #Tokens   |
 | ----------- | :---------: | :---------: |
-|    Train    |   100,000   |    76.3M    |
-|     Dev     |    5,000    |     3.8M    |
-|    Test     |    50,000   |    37.2M    |
+|    Train    |    95,000   |    72.1M    |
+|     Dev     |    5,000    |     4.4M    |
+|    Test     |    50,000   |    37.3M    |
 
 Data statistics of Github Java Corpus dataset are shown in the below table:
 
 | Data Split  |   #Files   |   #Tokens   |
 | ----------- | :--------: | :---------: |
-|    Train    |   12,934   |   15.74M    |
-|     Dev     |    7,189   |    3.83M    |
-|    Test     |    8,268   |    5.32M    |
+|    Train    |   12,934   |    15.7M    |
+|     Dev     |    7,176   |     3.8M    |
+|    Test     |    8,268   |     5.3M    |
 
 
 ## Evaluator
@@ -83,7 +96,7 @@ Answer file is in the same format of the preprocessed dev dataset file. A legal 
 <s> import json <EOL> json . load ( f ) </s>
 ```
 
-And the corresponding line in your prediction file is:
+And the corresponding line in your prediction file may be:
 ```
 . import numpy <EOL> json . dump ( open ) <EOL>
 ```
@@ -110,7 +123,7 @@ All the models are publicly available at [huggingface website](https://huggingfa
 
 - python 3.6 or 3.7
 - torch>=1.4.0
-- transformers>=2.5.0
+- transformers>=2.5.0 and < 4.0.0
 - fuzzywuzzy
 
 ### Fine-tune
@@ -119,6 +132,7 @@ To fine-tune CodeGPT on javaCorpus dataset for code completion in multi-GPU on a
 ```shell
 LANG=java                       # set python for py150
 DATADIR=../dataset/javaCorpus/token_completion
+LITFILE=../dataset/javaCorpus/literals.json
 OUTPUTDIR=../save/javaCorpus
 PRETRAINDIR=microsoft/CodeGPT-small-java        # microsoft/CodeGPT-small-py for py150
 LOGFILE=completion_javaCorpus.log
@@ -126,6 +140,7 @@ PER_NODE_GPU=YOUR_GPU_NUM       # modify YOUR_GPU_NUM
 
 python -m torch.distributed.launch --nproc_per_node=$PER_NODE_GPU run_lm.py \
         --data_dir=$DATADIR \
+        --lit_file=$LITFILE \
         --langs=$LANG \
         --output_dir=$OUTPUTDIR \
         --pretrain_dir=$PRETRAINDIR \
@@ -133,7 +148,6 @@ python -m torch.distributed.launch --nproc_per_node=$PER_NODE_GPU run_lm.py \
         --model_type=gpt2 \
         --block_size=1024 \
         --do_train \
-        --node_index 0 \
         --gpu_per_node $PER_NODE_GPU \
         --learning_rate=8e-5 \
         --weight_decay=0.01 \
@@ -141,11 +155,11 @@ python -m torch.distributed.launch --nproc_per_node=$PER_NODE_GPU run_lm.py \
         --per_gpu_train_batch_size=2 \
         --per_gpu_eval_batch_size=4 \
         --gradient_accumulation_steps=4 \
-        --num_train_epochs=5 \            # We set 20 epochs for py150
+        --num_train_epochs=5 \
         --logging_steps=100 \
         --save_steps=1000 \
-        --overwrite_output_dir \
         --seed=42 \
+        --overwrite_output_dir \
         --not_pretrain
 ```
 
@@ -159,12 +173,14 @@ It's recommanded to run evaluation on single GPU. The predictions will be saved 
 export CUDA_VISIBLE_DEVICES=0
 LANG=java                       # set python for py150
 DATADIR=../dataset/javaCorpus/token_completion
+LITFILE=../dataset/javaCorpus/literals.json
 OUTPUTDIR=../save/javaCorpus
 PRETRAINDIR=../save/javaCorpus/checkpoint       # directory of your saved model
 LOGFILE=completion_javaCorpus_eval.log
 
 python -u run_lm.py \
         --data_dir=$DATADIR \
+        --lit_file=$LITFILE \
         --langs=$LANG \
         --output_dir=$OUTPUTDIR \
         --pretrain_dir=$PRETRAINDIR \
@@ -186,21 +202,21 @@ It might take 60 minutes for inference on py150 dataset and 15 minutes on java C
 
 | Model                                                 |  Accuracy  |
 | ----------------------------------------------------- | :--------: |
-| LSTM + BPE                                            |    58.0    |
-| Transformer (12L)                                     |    73.26   |
-| [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)                            |    74.22   |
-| CodeGPT                                               |    74.93   |
-| CodeGPT-adapted                                       |  **75.11** |
+| LSTM + BPE                                            |    61.94   |
+| Transformer (12L)                                     |    74.48   |
+| [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)                            |    75.90   |
+| CodeGPT                                               |    76.58   |
+| CodeGPT-adapted                                       |  **76.60** |
 
 ### javaCorpus
 
 | Model                                                 |  Accuracy  |
 | ----------------------------------------------------- | :--------: |
-| LSTM + BPE                                            |    56.02   |
-| Transformer (12L)                                     |    64.16   |
-| [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)                           |    74.89   |
-| CodeGPT                                               |    76.45   |
-| CodeGPT-adapted                                       |  **77.13** |
+| LSTM + BPE                                            |    58.92   |
+| Transformer (12L)                                     |    65.18   |
+| [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)                           |    75.40   |
+| CodeGPT                                               |    76.79   |
+| CodeGPT-adapted                                       |  **77.73** |
 
 
 ## Reference

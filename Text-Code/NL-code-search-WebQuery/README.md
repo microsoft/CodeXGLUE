@@ -1,6 +1,6 @@
 # CodeXGLUE -- Code Search (WebQueryTest)
 
-**Update 2021.05.27:** We add CoSQA into CodeXGLUE, and recommend you to use this dataset as the training and development set of CodeXGLUE -- Code Search (WebQueryTest) Challenge. The dataset can be found in `./cosqa`. For more details about the dataset collection and usage, please refer to the [ACL 2021 paper](https://arxiv.org/abs/2105.13239) and the [GitHub repo](https://github.com/Jun-jie-Huang/CoCLR). 
+**Update 2021.07.30:** We add CoSQA into CodeXGLUE, and recommend you to use this dataset as the training and development set of CodeXGLUE -- Code Search (WebQueryTest) Challenge. The dataset can be found in `./cosqa`. For more details about the dataset collection and usage, please refer to the [ACL 2021 paper](https://arxiv.org/abs/2105.13239) and the [GitHub repo](https://github.com/Jun-jie-Huang/CoCLR). 
 
 ## Task Description
 

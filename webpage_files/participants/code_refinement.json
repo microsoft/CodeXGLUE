@@ -29,7 +29,7 @@
       {"Rank":3,
         "id":103,
         "Model":"PLBART",
-        "Organization":"PLBART(UCLA, Columbia University)",
+        "Organization":"UCLA & Columbia University",
         "Submission Date":"2021-04-02",
         "sBLEU":77.02,
         "sAcc(%)":"19.21",

@@ -19,10 +19,10 @@
         "Organization":"Noah's Ark Lab, Huawei & Wuhan University ",
         "Submission Date":"2021-08-03",
         "jBLEU":80.75,
-        "jAcc(%)":60.40,
+        "jAcc(%)":"60.40",
         "jCodeBLEU":84.85,
-        "cBLEU":76.50,
-        "cAcc(%)":61.30,
+        "cBLEU":"76.50",
+        "cAcc(%)":"61.30",
         "cCodeBLEU":82.22,
         "url":""
       },

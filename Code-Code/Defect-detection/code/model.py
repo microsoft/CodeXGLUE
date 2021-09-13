@@ -5,7 +5,6 @@ import torch.nn as nn
 import torch
 from torch.autograd import Variable
 import copy
-import torch.nn.functional as F
 from torch.nn import CrossEntropyLoss, MSELoss
 
     
@@ -22,7 +21,7 @@ class Model(nn.Module):
     def forward(self, input_ids=None,labels=None): 
         outputs=self.encoder(input_ids,attention_mask=input_ids.ne(1))[0]
         logits=outputs
-        prob=F.sigmoid(logits)
+        prob=torch.sigmoid(logits)
         if labels is not None:
             labels=labels.float()
             loss=torch.log(prob[:,0]+1e-10)*labels+torch.log((1-prob)[:,0]+1e-10)*(1-labels)

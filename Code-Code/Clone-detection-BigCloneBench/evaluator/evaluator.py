@@ -10,7 +10,7 @@ def read_answers(filename):
         for line in f:
             line=line.strip()
             idx1,idx2,label=line.split()
-            answers[(idx1,idx2)]=label
+            answers[(idx1,idx2)]=int(label)
     return answers
 
 def read_predictions(filename):
@@ -19,7 +19,7 @@ def read_predictions(filename):
         for line in f:
             line=line.strip()
             idx1,idx2,label=line.split()
-            predictions[(idx1,idx2)]=label
+            predictions[(idx1,idx2)]=int(label)
     return predictions
 
 def calculate_scores(answers,predictions):
@@ -31,9 +31,9 @@ def calculate_scores(answers,predictions):
         y_trues.append(answers[key])
         y_preds.append(predictions[key])
     scores={}
-    scores['Recall']=recall_score(y_trues, y_preds, average='macro')
-    scores['Prediction']=precision_score(y_trues, y_preds, average='macro')
-    scores['F1']=f1_score(y_trues, y_preds, average='macro')
+    scores['Recall']=recall_score(y_trues, y_preds)
+    scores['Prediction']=precision_score(y_trues, y_preds)
+    scores['F1']=f1_score(y_trues, y_preds)
     return scores
 
 def main():

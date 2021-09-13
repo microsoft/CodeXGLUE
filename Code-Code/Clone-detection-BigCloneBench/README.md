@@ -4,6 +4,8 @@
 
 Given two codes as the input, the task is to do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by F1 score.
 
+***!News: we have update the evaluater script. Since it's a binary classification, we use binary F1 score instead of "marco" F1 score.***
+
 ## Dataset
 
 The dataset we use is [BigCloneBench](https://www.cs.usask.ca/faculty/croy/papers/2014/SvajlenkoICSME2014BigERA.pdf) and filtered following the paper [Detecting Code Clones with Graph Neural Network and Flow-Augmented Abstract Syntax Tree](https://arxiv.org/pdf/2002.08653.pdf).
@@ -121,8 +123,6 @@ python run.py \
 python ../evaluator/evaluator.py -a ../dataset/test.txt -p saved_models/predictions.txt
 ```
 
-{'Recall': 0.9687694680849823, 'Prediction': 0.9603497142447242, 'F1': 0.9645034096215225}
-
 ## Result
 
 The results on the test set are shown as below:
@@ -133,9 +133,9 @@ The results on the test set are shown as below:
 | [RtvNN](https://tufanomichele.com/publications/C5.pdf)      |   0.95    |   0.01    |   0.01    |
 | [CDLH](https://www.ijcai.org/Proceedings/2017/0423.pdf)       |   0.92    |   0.74    |   0.82    |
 | [ASTNN](https://ieeexplore.ieee.org/abstract/document/8812062)      |   0.92    |   0.94    |   0.93    |
-| [FA-AST-GMN](https://arxiv.org/pdf/2002.08653.pdf) |   0.96    |   0.94    |   0.95    |
-| [TBBCD](http://taoxie.cs.illinois.edu/publications/icpc19-clone.pdf)      |   0.94    |   0.96    |   0.95    |
-| [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf)   | **0.960** | **0.969** | **0.965** |
+| [FA-AST-GMN](https://arxiv.org/pdf/2002.08653.pdf) |   **0.96**    |   0.94    |   0.95    |
+| [TBBCD](http://taoxie.cs.illinois.edu/publications/icpc19-clone.pdf)      |   0.94    |   **0.96**    |   **0.95**    |
+| [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf)   | 0.947 | 0.934 | 0.941 |
 
 
 ## Reference

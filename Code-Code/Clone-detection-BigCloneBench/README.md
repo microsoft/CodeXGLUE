@@ -4,7 +4,9 @@
 
 Given two codes as the input, the task is to do binary classification (0/1), where 1 stands for semantic equivalence and 0 for others. Models are evaluated by F1 score.
 
-***!News: we have update the evaluater script. Since it's a binary classification, we use binary F1 score instead of "marco" F1 score.***
+## Updates
+
+2021-9-13: We have update the evaluater script. Since it's a binary classification, we use binary F1 score instead of "marco" F1 score.
 
 ## Dataset
 

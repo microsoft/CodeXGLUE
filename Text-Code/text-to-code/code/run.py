@@ -360,7 +360,7 @@ def eval_bleu(args, model, tokenizer, file_type='test', num=2000):
         inputs = batch.to(args.device)
         # with torch.no_grad():
         #     outputs = model.generate(inputs, max_length=args.block_size, num_beams=10, temperature=0.7, early_stopping=False, top_k=70, \
-        #               bos_token_id=tokenizer.bos_token_id, eos_token_id=tokenizer.pad_token_id, pad_token_id=tokenizer.pad_token_id)
+        #               bos_token_id=tokenizer.bos_token_id, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.pad_token_id)
         #     # outputs = model.generate(inputs, max_length=args.block_size, do_sample=True, temperature=0.7, top_k=70, top_p=0.95, \
         #     #         bos_token_id=tokenizer.bos_token_id, eos_token_id=tokenizer.pad_token_id, pad_token_id=tokenizer.pad_token_id)
         #     # outputs = model.generate(inputs, max_length=args.block_size, num_beams=10, temperature=0.7, early_stopping=False, top_k=70)

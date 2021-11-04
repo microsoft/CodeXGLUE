@@ -1,0 +1,100 @@
+logger.debug(message)
+user.SUCCESS(message)
+if hasattr(request, ' '): messages = request.messages else: messages = self.get_messages(request) return messages
+if auth is None: auth = get_auth() if eager: return get_table(name) else: return get_table(name, auth=auth)
+def decorator(func): @wraps(func) def wrapper(*args, **kwargs): if require_token: token = request.headers.get(' ') if token: token = token.lower() if not token: token = request.headers.get(' ') if not token: token = request.headers.get(' ') if not token: token = request.headers.get(' ') if not token: token = request.headers.get(' ') if not token: token = request.headers.get(' ') if not token: token = request.headers.get(' ') if not token: token = request.headers.get(' ') if not token: token = request.headers.get(' ') if not token: token = request.headers.get(' ') if not token: token = request.headers.get(' ') if not token: token = request.headers.get(' ') if
+return get_tweets(user, pages)
+for chn_name in chn_names: if chn_name not in data: data[chn_name] = np.nan return data
+return [self]
+return self.get_node_by_label(label)
+return [n.name for n in self.get_descendants()]
+node = cls(name, length, descendants, **kw) return node
+return self._newick
+if strip_comments: return [node.create(**kw) for node in parse_tree(s)] else: return [node.create(**kw) for node in parse_tree(s)]
+if predicate is None: predicate = lambda n: True for n in self.walk(visitor, predicate, **kw): yield n
+if strict: return self.ascii_art_strict(show_internal=show_internal) else: return self.ascii_art_internal(show_internal=show_internal)
+self.socket.close()
+self.timeout = timeout
+while True: try: data = self.socket.recv(buffer_size) except socket.error as e: if e.errno == errno.EWOULDBLOCK or e.errno == errno.EAGAIN: return else: raise
+while True: try: data = await self.queue.get(block=True, timeout= 0 ) except asyncio.QueueEmpty: break if not data: break await self.queue.put(data)
+self.write_message(msg)
+if value is None: return await self.wait_for(cmd, timeout=timeout) else: return await self.wait_for(cmd, timeout=timeout)
+await self.connect_async()
+if isinstance(commands, bytes): commands = commands.decode(' utf-8 ') if isinstance(commands, str): commands = [commands] for command in commands: await self.send(command) return len(commands)
+self.stream.close()
+@wraps(function) def wrapper(*args, **kwargs): logger = logging.getLogger(function.__name__) logger.addHandler(logging.NullHandler()) return function(*args, **kwargs) return wrapper
+if self._autofocus_job is not None: self._autofocus_job.start()
+self.socket.close()
+if q == " ' ": return " " elif q == " ' ": return " " else: return " " % q
+return self.filter(**params)
+if ' ' in result: return result[' '] elif ' ' in result: return result[' '] else: return None
+return SearchResult(self, **params)
+if create: with open(os.path.join(os.path.dirname(__file__), ' '), ' w ') as f: f.write(str(value)) else: with open(os.path.join(os.path.dirname(__file__), ' '), ' w ') as f: f.write(str(value))
+if not os.path.exists(os.path.join(os.path.dirname(os.path.realpath(__file__)), ' ')): os.makedirs(os.path.join(os.path.dirname(os.path.realpath(__file__)), ' ')) if not os.path.exists(os.path.join(os.path.dirname(os.path.realpath(__file__)), ' ')): os.makedirs(os.path.join(os.path.dirname(os.path.realpath(__file__)), ' ')) if not os.path.exists(os.path.join(os.path.dirname(os.path.realpath(__file__)), ' ')): os.makedirs(os.path.join(os.path.dirname(os.path.realpath(__file__)), ' ')) if not os.path.exists(os.path.join(os.path.dirname(os.path.realpath(__file
+click.echo(ctx.bitshares.edit(edit, create))
+if not os.path.exists(os.path.dirname(remote_file)): os.makedirs(os.path.dirname(remote_file)) if not os.path.exists(os.path.join(os.path.dirname(remote_file), ' ')): os.makedirs(os.path.join(os.path.dirname(remote_file), ' ')) if not os.path.exists(os.path.join(os.path.dirname(remote_file), ' ')): os.makedirs(os.path.join(os.path.dirname(remote_file), ' '))
+if version is None: version = get_djfrontend_version() return ' '.format(version)
+if version is None: version = get_djfrontend_version() if not version: return ' ' return ' '.format(version)
+if files is None: files = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '
+params = { ' ': kwargs.get(' '), ' ': kwargs.get(' count '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), ' ': kwargs.get(' '), <EOL
+params = {' ': restaurant_id} return self._get(' ', params)
+params = {' ': city_id} return self._get(' ', params, **kwargs)
+try: self.feed = json.loads(self.feed) except ValueError: self.feed = {}
+return self.__event_fields
+return True
+return self._get_items(category, offset)
+if filter_classified: self._metadata = item else: self._metadata = item.metadata
+return True
+return self._fetch_items(category, **kwargs)
+parser = argparse.ArgumentParser(description=' ') parser.add_argument(' ', help=' ') return parser
+return self.get_c crates(from_page=from_page)
+return True
+if payload is None: payload = self.payload return self._fetch(url, payload)
+return self.__fetch(path, page)
+if not from_archive: self.archive = archive.Archive(self.archive_path) else: self.archive = archive
+summary = item[' '] crate = item[' '] return summary, crate
+return CratesArgumentParser()
+return self._fetch(category, from_date)
+return Crates.io.get_summary()
+return self._get_answers(question_id)
+questions = self.get_questions(offset) return questions
+if not from_archive: self.archive = archive.Archive(self.archive_path) else: self.archive = archive
+if filter_classified: item[' '] = ' ' return item
+token = self.get_token_from_post_data(data) return token
+if not uri.startswith(' http '): uri = ' ' % uri if not uri.startswith(' '): uri = ' ' % uri if not uri.startswith(' '): uri = ' ' % uri if not uri.startswith(' '): uri = ' ' % uri if not uri.startswith(' '): uri = ' ' % uri return requests.get(uri)
+return self._invalid_redirect_uri_response
+params[' '] = grant_type params[' '] = client_id params[' '] = client_secret params[' '] = redirect_uri params[' code '] = code return self.request(' ', params)
+return self._token_length
+self.logger.exception(exc)
+params[' code '] = code return self._get(' ', params)
+return { ' ': url, ' ': ' ', }
+self.config_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), ' ') self.build_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), ' ') self.cleanup_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), ' ')
+
+with open(fname) as f: return json.load(f)
+return self.events.remove(name)
+
+
+self.content = content
+return self._request(method, url, headers, body)
+return self.args
+def checker_decorator(func): @wraps(func) def wrapper(*args, **kwargs): try: return receiver(*args, **kwargs) except Exception as e: logger.exception(e) raise return wrapper return checker_decorator
+def decorator(func): @wraps(func) def wrapper(*args, **kwargs): try: return receiver(*args, **kwargs) finally: del receiver return wrapper return decorator
+
+
+
+if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if
+checker(restarter)
+try: return reactor.runProcess(args, timeout, grace) except KeyboardInterrupt: return defer.succeed(None)
+
+
+if myEnv is None: myEnv = os.environ try: os.environ[case] = myEnv except KeyError: pass
+if master is None: return if isinstance(master, IServiceCollector): return if isinstance(master, IServiceCollection): return if isinstance(master, IService): return if isinstance(master, IService): master.addHeart(master)
+if contents == ' ': return ' ' elif contents == ' ': return ' ' else: return contents
+if name in self.processes: del self.processes[name]
+parser = argparse.ArgumentParser( description=' ') parser.add_argument( ' ', help=' ') parser.add_argument( ' ', help=' ') parser.add_argument( ' ', help=' ') parser.add_argument( ' ', help=' ') parser.add_argument( ' ', help=' ') parser.add_argument( ' ', help=' ') parser.add_argument( ' ', help=' ') parser.add_argument( ' ', help=' ') parser.add_argument( ' ', help=' ') parser.add_argument( ' ', help=' ') parser.add_argument( ' ', help=' ') parser.add_argument( ' ', help=' ') parser.add_argument( ' ', help=' ') parser.add_argument( ' ', help=' ') parser.add_argument( ' ', help=' ') parser.add_argument( ' ', help=' ') parser
+if not isinstance(places, Places): raise TypeError(" ") if not isinstance(name, string_types): raise TypeError(" ") places.restart(name)
+if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if not opt[' ']: raise RuntimeError(" ") if
+if checker is None: raise ValueError(" ") if timer is None: raise ValueError(" ") checker(restarter)
+if not isinstance(opt, dict): raise TypeError(" " % type(opt).__name__) if ' ' not in opt: raise ValueError(" ") if ' ' not in opt: raise ValueError(" ") if ' ' not in opt: raise ValueError(" ") if ' ' not in opt: raise ValueError(" ") if ' ' not in opt: raise ValueError(" ") if ' ' not in opt: raise ValueError(" ") if ' ' not in opt: raise ValueError(" ") if ' ' not in opt: raise ValueError(" ") if ' ' not in opt: raise ValueError(" ") if ' ' not in opt: raise ValueError(" ") return restarter(opt[' '], opt[' '])
+return keccak256_hash(data)
+access_request = { ' ': pid_value, ' ': users, ' ': confirmed } return access_request

@@ -21,7 +21,22 @@ Most  existing  code search datasets use code documentations or questions from o
 
 Here we present WebQueryTest dataset,  a  testing  set  of  Python code  search of 1,046  query-code pairs with code search intent and their human annotations. The realworld user queries are collected from Bing query logs and the code for queries are from CodeSearchNet. You can find our testing set in `./data/test_webquery.json` .
 
-Since there's no direct training set for our WebQueryTest dataset, we use the CoSQA dataset as the training set and dev set. CoSQA includes 20,604 labels for pairs of natural language queries and Python codes, with almost the same collections and data format as the 1,046 pairs in WebQueryTest. You can find the CoSQA training and dev set in `./data/cosqa_train.json` and   `./data/cosqa_dev.json` . The detailed construction of CoSQA can be found in the paper [CoSQA: 20,000+ Web Queries for Code Search and Question Answering (In Proceedings of ACL 2021)]().
+Since there's no direct training set for our WebQueryTest dataset, we suggest using two external training sets: 1. CodeSearchNet; 2. CoSQA.
+
+1. To finetune the models on CodeSearchNet, we provide scripts to obtain the documentation-function pairs in the training set o CodeSearchNet AdvTest as positive instances. For each documentation, we also randomly sample 7 more functions to form negative instances. The following command is used to download and preprocess the data:
+
+```shell
+cd data
+wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/python.zip
+unzip python.zip
+python preprocess.py
+rm -r python
+rm -r *.pkl
+rm python.zip
+cd ..
+```
+
+2. You can also continue finetuning the model on CoSQA dataset. CoSQA includes 20,604 labels for pairs of natural language queries and Python codes, with almost the same collections and data format as the 1,046 pairs in WebQueryTest. You can find the CoSQA training and dev set in `./data/cosqa_train.json` and   `./data/cosqa_dev.json` . The detailed construction of CoSQA can be found in the paper [CoSQA: 20,000+ Web Queries for Code Search and Question Answering (In Proceedings of ACL 2021)]().
 
 #### Data statistics
 
@@ -40,7 +55,30 @@ Data statistics of CoSQA are shown in the table below:
 
 ## Fine-tuning
 
-You can use the following command to finetune:
+You can use the following command to finetune the model on CodeSearchNet:
+
+```shell
+python code/run_classifier.py \
+			--model_type roberta \
+			--do_train \
+			--do_eval \
+			--eval_all_checkpoints \
+			--train_file train_codesearchnet_7.json \
+			--dev_file dev_codesearchnet.json \
+			--max_seq_length 200 \
+			--per_gpu_train_batch_size 16 \
+			--per_gpu_eval_batch_size 16 \
+			--learning_rate 1e-5 \
+			--num_train_epochs 3 \
+			--gradient_accumulation_steps 1 \
+			--warmup_steps 1000 \
+			--evaluate_during_training \
+			--data_dir ./data/ \
+			--output_dir ./model_codesearchnet \
+			--encoder_name_or_path microsoft/codebert-base 
+```
+
+You can then use the following command to continue finetuning the model on CoSQA:
 
 ```shell
 python code/run_classifier.py \
@@ -59,8 +97,8 @@ python code/run_classifier.py \
 			--warmup_steps 5000 \
 			--evaluate_during_training \
 			--data_dir ./data/ \
-			--output_dir ./model \
-			--encoder_name_or_path microsoft/codebert-base 
+			--output_dir ./model_cosqa_continue_training \
+			--encoder_name_or_path ./model_codesearchnet 
 
 ```
 
@@ -76,9 +114,9 @@ python code/run_classifier.py \
 			--max_seq_length 200 \
 			--per_gpu_eval_batch_size 2 \
 			--data_dir ./data \
-			--output_dir ./model/checkpoint-best-aver/ \
+			--output_dir ./model_cosqa_continue_training/checkpoint-best-aver/ \
 			--encoder_name_or_path microsoft/codebert-base \
-			--pred_model_dir ./model/checkpoint-last/ \
+			--pred_model_dir ./model_cosqa_continue_training/checkpoint-last/ \
 			--prediction_file ./evaluator/webquery_predictions.txt 
 			
 ```
@@ -95,10 +133,11 @@ python evaluator/evaluator.py \
 
 The results on WebQueryTest are shown as below:
 
-|   dataset    |  model   |  F1   | Accuracy |
-| :----------: | :------: | :---: | :------: |
-| WebQueryTest | RoBERTa  | 57.49 |  40.92   |
-| WebQueryTest | CodeBERT | 58.95 |  47.80   |
+|       dataset        |  model   | Accuracy |
+| :------------------: | :------: | :------: |
+|    CodeSearchNet     | RoBERTa  |  40.92   |
+|    CodeSearchNet     | CodeBERT |  47.80   |
+| CodeSearchNet+ CoSQA | CodeBERT |  52.87   |
 
 ## Cite
 

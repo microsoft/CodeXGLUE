@@ -377,7 +377,7 @@ def eval_bleu(args, model, tokenizer, file_type='test', num=2000):
             for i in range(inputs.shape[0]):
                 # Compatible with transformers version 3.3.0 and 4.13.0
                 past = [torch.cat([x[0].unsqueeze(0),x[1].unsqueeze(0)],dim=0) if type(x)==tuple else x for x in outputs]
-                past_hidden = [x.data.index_select(1, beam.getCurrentOrigin()) for x in past]
+                past_hidden = [x[:, i:i+1].expand(-1, beam_size, -1, -1, -1) for x in past]
                 # context_mask=source_mask[i:i+1,:].expand(beam_size,-1)
                 beam = Beam(beam_size, tokenizer.bos_token_id, tokenizer.eos_token_id)
                 input_ids = None

@@ -69,6 +69,8 @@ def preprocess(args, file_name, file_type):
                 new_data.append(token)
         except Exception:
             continue
+        if len(new_data) == 0:
+            continue
         data = "<s> " + " ".join(new_data) + " </s>"
         wf.write(data+"\n")
     

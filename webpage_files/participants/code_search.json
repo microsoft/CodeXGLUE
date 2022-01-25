@@ -2,6 +2,16 @@
   "data":[
       {"Rank":1,
         "id":101,
+        "Model":" Cascaded Fast and Slow models",
+        "Organization":"Salesforce Research",
+        "Submission Date":"2022-01-25",
+        "MRR":43.98,
+        "Acc-WebQuery":"/",
+        "F1-WebQuery":"/",
+        "url":"arxiv.org/abs/2110.07811"
+      },    
+      {"Rank":2,
+        "id":102,
         "Model":"CodeBERT",
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",
@@ -10,8 +20,8 @@
         "F1-WebQuery":58.95,
         "url":"arxiv.org/abs/2102.04664"
       },
-      {"Rank":2,
-        "id":102,
+      {"Rank":3,
+        "id":103,
         "Model":"RoBERTa-base",
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",

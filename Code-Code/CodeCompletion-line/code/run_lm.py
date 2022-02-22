@@ -373,7 +373,8 @@ def eval_line_completion(args, model, tokenizer, file_type='test'):
                 if args.model_type == "rnn":
                     past_hidden = tuple(x[:, i:i+1].expand(-1, beam_size, -1).contiguous() for x in outputs)
                 else:
-                    past_hidden = [x[:, i:i+1].expand(-1, beam_size, -1, -1, -1) for x in outputs]
+                    past = [torch.cat([x[0].unsqueeze(0),x[1].unsqueeze(0)],dim=0) if type(x)==tuple else x for x in outputs]
+                    past_hidden = [x[:, i:i+1].expand(-1, beam_size, -1, -1, -1) for x in past]
                 beam = Beam(beam_size, inputs[i][-1].cpu().data, break_ids)
                 input_ids = None
                 for _ in range(100): 
@@ -383,13 +384,14 @@ def eval_line_completion(args, model, tokenizer, file_type='test'):
                     if args.model_type == "rnn":
                         outputs = model(input_ids, hidden=repackage_hidden(past_hidden))
                     else:
-                        outputs = model(input_ids, past=past_hidden)
+                        outputs = model(input_ids, past_key_values=past_hidden)
                     out = m(outputs[0][:, -1, :]).data
                     beam.advance(out)
                     if args.model_type == "rnn":
                         past_hidden = tuple(x.data.index_select(1, beam.getCurrentOrigin()).contiguous() for x in outputs[1])
                     else:
-                        past_hidden = [x.data.index_select(1, beam.getCurrentOrigin()) for x in outputs[1]]
+                        past = [torch.cat([x[0].unsqueeze(0),x[1].unsqueeze(0)],dim=0) if type(x)==tuple else x for x in outputs[1]]
+                        past_hidden = [x.data.index_select(1, beam.getCurrentOrigin()) for x in past]
                 hyp = beam.getHyp(beam.getFinal())
                 pred = beam.buildTargetTokens(hyp)[:beam_size]
 

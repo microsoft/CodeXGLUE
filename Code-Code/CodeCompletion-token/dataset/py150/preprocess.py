@@ -14,7 +14,7 @@ def process_string(token, special_chars={" ": "U+0020", ",": "U+002C"}):
     str_quote_options = ["'''", '"""', "'", '"']
     start_quote = ""
     end_quote = ""
-    qualifier_regex = r"^[a-z]+"
+    qualifier_regex = r"^[a-zA-Z]+"
     qualifier_match = re.search(qualifier_regex, token)
     # string qualifiers like 'r' for regex, 'f' for formatted string, 'b' for bytes, 'u' for unicode, etc (or combination of them)
     qualifier = "" if not qualifier_match else qualifier_match[0]

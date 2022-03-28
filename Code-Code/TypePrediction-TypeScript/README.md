@@ -36,7 +36,7 @@ pip install -r requirements.txt
 3. Preprocess dataset Use the process_datafiles.py in dataset folder.
 
 ```shell
-python3 process_datafiles.py -v <vocab-size> 
+python process_datafiles.py -v <vocab-size> 
 ```
 
 A vocabulary of 50,000 was used in ManyTypes4TypeScript paper.
@@ -128,8 +128,7 @@ occuring types.
 | --- | ----------- | --- | --- | --- | --- | --- | --- | --- |
 | |Precision | Recall | F1 | Accuracy | Precision | Recall | F1 | Accuracy|
 | [CodeBERT](https://arxiv.org/pdf/2002.08155.pdf) | 84.58 | 85.98 | 85.27 | 87.94 | 59.34 | 59.80 | 59.57 | 61.72|
-| [GraphCodeBERT](https://arxiv.org/pdf/2009.08366.pdf)| **84.67**  | **86.41**  | **85.53** | **88.08** | **
-60.06** | **61.08** | **60.57** | **62.51** |
+| [GraphCodeBERT](https://arxiv.org/pdf/2009.08366.pdf)| **84.67**  | **86.41**  | **85.53** | **88.08** | **60.06** | **61.08** | **60.57** | **62.51** |
 | [CodeBERTa](https://huggingface.co/huggingface/CodeBERTa-small-v1) | 81.31 | 82.72| 82.01  | 85.94|56.57|56.85|56.71| 59.81|
 | [PolyGot](https://arxiv.org/pdf/2112.02043.pdf) | 84.45 | 85.45 | 84.95 | 87.72 | 58.81 | 58.91 | 58.86 | 61.29   |
 | [GraphPolyGot](https://arxiv.org/pdf/2112.02043.pdf)  | 83.80  | 85.23 |  84.51  | 87.40 | 58.36 | 58.91 | 58.63 | 61.00  |

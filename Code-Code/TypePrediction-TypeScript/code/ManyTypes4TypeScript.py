@@ -16,8 +16,9 @@
 # Lint as: python3
 """Introduction to the typing task"""
 
-import datasets
 import json
+
+import datasets
 
 logger = datasets.logging.get_logger(__name__)
 
@@ -34,9 +35,10 @@ _TRAINING_FILE1 = "../dataset/train1.jsonl"
 _TRAINING_FILE2 = "../dataset/train2.jsonl"
 _DEV_FILE = "../dataset/valid.jsonl"
 _TEST_FILE = "../dataset/test.jsonl"
-_VOCAB_FILE = "../dataset/vocab_50000.txt" #your models vocabulary
+_VOCAB_FILE = "../dataset/vocab_50000.txt"  # your models vocabulary
 _HOMEPAGE = "https://huggingface.co/datasets/kevinjesse/ManyTypes4TypeScript"
 _VERSION = datasets.Version("1.0.0")
+
 
 class ManyTypes4TypeScript2022Config(datasets.BuilderConfig):
     """BuilderConfig for ManyTypes4TypeScript 2022"""
@@ -65,7 +67,7 @@ class ManyTypes4TypeScript(datasets.GeneratorBasedBuilder):
             vocab = file.readlines()
             vocab = [line.rstrip() for line in vocab]
             return vocab
-        
+
     def _info(self):
         return datasets.DatasetInfo(
             description=_DESCRIPTION,
@@ -95,15 +97,15 @@ class ManyTypes4TypeScript(datasets.GeneratorBasedBuilder):
             "test": f"{_URL}{_TEST_FILE}",
         }
         downloaded_files = dl_manager.download_and_extract(urls_to_download)
-        
-        return [
-            datasets.SplitGenerator(name=datasets.Split.TRAIN, gen_kwargs={"filepaths": [downloaded_files["train0"], 
-                                                                                         downloaded_files["train1"], 
-                                                                                         downloaded_files["train2"]]}),
-            datasets.SplitGenerator(name=datasets.Split.VALIDATION, gen_kwargs={"filepaths": [downloaded_files["dev"],]}),
-            datasets.SplitGenerator(name=datasets.Split.TEST, gen_kwargs={"filepaths": [downloaded_files["test"],]}),
-        ]
 
+        return [
+            datasets.SplitGenerator(name=datasets.Split.TRAIN, gen_kwargs={"filepaths": [downloaded_files["train0"],
+                                                                                         downloaded_files["train1"],
+                                                                                         downloaded_files["train2"]]}),
+            datasets.SplitGenerator(name=datasets.Split.VALIDATION,
+                                    gen_kwargs={"filepaths": [downloaded_files["dev"], ]}),
+            datasets.SplitGenerator(name=datasets.Split.TEST, gen_kwargs={"filepaths": [downloaded_files["test"], ]}),
+        ]
 
     def load_jsonl(self, input_path):
         """
@@ -115,7 +117,7 @@ class ManyTypes4TypeScript(datasets.GeneratorBasedBuilder):
                 data.append(json.loads(line.rstrip('\n|\r')))
         # print('Loaded {} records from {}'.format(len(data), input_path))
         return data
-    
+
     def _generate_examples(self, filepaths):
         """
         Generates examples from train, test, valid, files.
@@ -129,4 +131,4 @@ class ManyTypes4TypeScript(datasets.GeneratorBasedBuilder):
                     "tokens": line['tokens'],
                     "labels": line['labels'],
                 }
-                guid+=1
+                guid += 1

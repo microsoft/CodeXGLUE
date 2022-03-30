@@ -420,6 +420,51 @@
 		<div class="container">
 			<div class="row">
 				<div class="table-responsive">
+					<h2>Type Prediction (Code-Code)</h2>
+						<table id="LB-TypePrediction" lay-filter="test"></table>
+						<script>
+							var showModelName = function (d) {
+								var html = '<a style="color:#1E9FFF" href=//'+d.url+'  >'+d.Model+'</a>';
+								return html;
+							}
+							layui.use('table', function(){
+								var myTable = layui.table;
+
+								//第一个实例
+								myTable.render({
+									elem: '#LB-TypePrediction'
+									,height: 312
+									,url: 'webpage_files/participants/type_prediction.json' //数据接口
+									,page:  false//开启分页
+									,cols: [[{align: 'center', title: '', colspan: 4}
+											,{align: 'center', title: 'Top 100', colspan: 4}
+											,{align: 'center', title: 'Overall', colspan: 4}],
+										[ //表头
+										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
+										,{field: 'Model', title: 'Model', width: 160, templet: showModelName }
+										,{field: 'Organization', title: 'Organization', width: 150}
+										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
+
+										,{field: 'tPrec', title: 'Precision', width: 120, sort: true}
+										,{field: 'tRecall', title: 'Recall', width: 90, sort: true}
+										,{field: 'tF1', title: 'F1', width: 90, sort: true}
+										,{field: 'tAcc', title: 'Accuracy', width: 120, sort: true}
+
+										,{field: 'Prec', title: 'Precision', width: 120, sort: true}
+										,{field: 'Recall', title: 'Recall', width: 90, sort: true}
+										,{field: 'F1', title: 'F1', width: 90, sort: true}
+										,{field: 'Acc', title: 'Accuracy', width: 120, sort: true}
+									]]
+								});
+							});
+						</script>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="table-responsive">
 					<h2>Natural Language Code Search (Text-Code)</h2>
 						<table id="LB-NL-code-search" lay-filter="test"></table>
 						<script>

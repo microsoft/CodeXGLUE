@@ -481,17 +481,16 @@
 									,height: 312
 									,url: 'webpage_files/participants/code_search.json' //数据接口
 									,page:  false//开启分页
-									,cols: [[{align: 'center', title: '', colspan: 4}
-											,{align: 'center', title: 'NL-code-search-Adv', colspan: 1, colGroup:true}
-											,{align: 'center', title: 'NL-code-search-WebQuery', colspan: 1}],
+									,cols: [
 										[ //表头
 										{field: 'Rank', title: 'Rank', align: 'right', width: 70}
 										,{field: 'Model', title: 'Model', width: 220, templet: showModelName }
 										,{field: 'Organization', title: 'Organization', width: 150}
 										,{field: 'Submission Date', title: 'Date', width: 120, sort: true}
 
-										,{field: 'MRR', title: 'MRR', sort: true}
-										,{field: 'Acc-WebQuery', title: 'Accuracy', sort: true}
+										,{field: 'MRR', title: 'Adv Test (MRR)', width: 280, sort: true}
+										,{field: 'Acc-WebQuery', title: 'WebQuery Test (Accuracy)', width: 280, sort: true}
+
 									]]
 								});
 							});

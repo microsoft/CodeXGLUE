@@ -117,7 +117,7 @@ CUDA_VISIBLE_DEVICES=0 accelerate launch train.py --output_dir type-model --do_t
 python evaluator.py -p example-codebert-predictions.txt -a gold_labels.txt
 ```
 
-{'Acc': 0.6207906295754027}
+{'Acc': 0.6280417975625515}
 
 ## Results
 

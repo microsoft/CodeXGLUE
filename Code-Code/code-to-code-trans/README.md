@@ -44,7 +44,7 @@ We also provide a pipeline that fine-tunes [CodeBERT](https://arxiv.org/pdf/2002
 ### Dependency
 
 - python 3.6 or 3.7
-- torch==1.4.0
+- torch>=1.4.0
 - transformers>=2.5.0
 - pip install scikit-learn
 

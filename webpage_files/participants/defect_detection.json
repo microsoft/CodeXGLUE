@@ -19,7 +19,7 @@
       {"Rank":3,
         "id":103,
         "Model":"VulBERTa-MLP",
-        "Organization":"ACS Group",
+        "Organization":"Imperial College London",
         "Submission Date":"2021-11-10",
         "Accuracy":64.75,
         "url":""
@@ -27,7 +27,7 @@
       {"Rank":4,
         "id":104,
         "Model":"VulBERTa-CNN",
-        "Organization":"ACS Group",
+        "Organization":"Imperial College London",
         "Submission Date":"2021-11-10",
         "Accuracy":64.42,
         "url":""

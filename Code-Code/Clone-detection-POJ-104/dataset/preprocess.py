@@ -35,7 +35,7 @@ with open("valid.jsonl",'w') as f:
             cont+=1
             
 with open("test.jsonl",'w') as f:
-    for i in tqdm(range(81,195),total=24):
+    for i in tqdm(range(81,105),total=24):
         items=files("ProgramData/{}".format(i))
         for item in items:
             js={}

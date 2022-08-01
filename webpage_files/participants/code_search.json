@@ -2,6 +2,15 @@
   "data":[
       {"Rank":1,
         "id":101,
+        "Model":" Cascaded Fast and Slow models",
+        "Organization":"Salesforce Research",
+        "Submission Date":"2022-01-25",
+        "MRR":43.98,
+        "Acc-WebQuery":"/",
+        "url":"arxiv.org/abs/2110.07811"
+      }, 
+      {"Rank":2,
+        "id":102,
         "Model":"CodeRoBERTa",
         "Organization":"IDEA AIPT",
         "Submission Date":"2022-08-01",
@@ -9,15 +18,6 @@
         "Acc-WebQuery":58.99,
         "url":""
       },
-      {"Rank":2,
-        "id":102,
-        "Model":" Cascaded Fast and Slow models",
-        "Organization":"Salesforce Research",
-        "Submission Date":"2022-01-25",
-        "MRR":43.98,
-        "Acc-WebQuery":"/",
-        "url":"arxiv.org/abs/2110.07811"
-      },    
       {"Rank":3,
         "id":103,
         "Model":"CodeBERT",

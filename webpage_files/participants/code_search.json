@@ -2,6 +2,15 @@
   "data":[
       {"Rank":1,
         "id":101,
+        "Model":"RetrieverELECTRA",
+        "Organization":"Huawei Noah’s Ark Lab",
+        "Submission Date":"2022-09-12",
+        "MRR":"50.90",
+        "Acc-WebQuery":"/",
+        "url":""
+      }, 
+      {"Rank":2,
+        "id":102,
         "Model":" Cascaded Fast and Slow models",
         "Organization":"Salesforce Research",
         "Submission Date":"2022-01-25",
@@ -9,8 +18,8 @@
         "Acc-WebQuery":"/",
         "url":"arxiv.org/abs/2110.07811"
       }, 
-      {"Rank":2,
-        "id":102,
+      {"Rank":3,
+        "id":103,
         "Model":"CodeRoBERTa",
         "Organization":"IDEA AIPT",
         "Submission Date":"2022-08-01",
@@ -18,8 +27,8 @@
         "Acc-WebQuery":58.99,
         "url":""
       },
-      {"Rank":3,
-        "id":103,
+      {"Rank":4,
+        "id":104,
         "Model":"CodeBERT",
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",
@@ -27,8 +36,8 @@
         "Acc-WebQuery":"47.80",
         "url":"arxiv.org/abs/2102.04664"
       },
-      {"Rank":4,
-        "id":104,
+      {"Rank":5,
+        "id":105,
         "Model":"RoBERTa-base",
         "Organization":"CodeXGLUE Team",
         "Submission Date":"2020-08-30",

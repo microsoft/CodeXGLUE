@@ -12,7 +12,7 @@
       },
       {"Rank":2,
         "id":102,
-        "Model":"Text2Java-BigJavaDataSet",
+        "Model":"JaCoText",
         "Organization":"Novelis.io",
         "Submission Date":"2021-12-07",
         "EM":22.15,

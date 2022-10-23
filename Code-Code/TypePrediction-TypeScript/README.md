@@ -10,7 +10,7 @@ sequence tagging task, similar to Named-Entity Recognition (NER) in NLP.
 ### Dataset
 
 The dataset originates from the MSR '22
-paper [ManyTypes4TypeScript: A Comprehensive TypeScript Dataset for Sequence-Based Type Inference](). The dataset is
+paper [ManyTypes4TypeScript: A Comprehensive TypeScript Dataset for Sequence-Based Type Inference](https://www.kevinrjesse.com/pdfs/ManyTypes4TypeScript.pdf). The dataset is
 available for download on Zenodo.
 
 ### Download and Preprocess
@@ -139,6 +139,9 @@ occuring types.
 
 Please cite the original paper.
 <pre><code>
+@article{jesse2022manytypes4typescript,
+  title={ManyTypes4TypeScript: A Comprehensive TypeScript Dataset for Sequence-Based Type Inference},
+  author={Jesse, Kevin and Devanbu, Premkumar T},
+  year={2022}
+}
 </code></pre>
-
-

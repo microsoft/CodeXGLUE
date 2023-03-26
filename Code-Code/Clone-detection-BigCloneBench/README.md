@@ -42,7 +42,7 @@ We provide a script to evaluate predictions for this task, and report F1 score
 python evaluator/evaluator.py -a evaluator/answers.txt -p evaluator/predictions.txt
 ```
 
-{'Recall': 0.25, 'Prediction': 0.5, 'F1': 0.3333333333333333}
+{'Recall': 0.25, 'Precision': 0.5, 'F1': 0.3333333333333333}
 
 ### Input predictions
 

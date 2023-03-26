@@ -32,7 +32,7 @@ def calculate_scores(answers,predictions):
         y_preds.append(predictions[key])
     scores={}
     scores['Recall']=recall_score(y_trues, y_preds)
-    scores['Prediction']=precision_score(y_trues, y_preds)
+    scores['Precision']=precision_score(y_trues, y_preds)
     scores['F1']=f1_score(y_trues, y_preds)
     return scores
 

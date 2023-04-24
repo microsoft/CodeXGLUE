@@ -18,12 +18,12 @@ The dataset we use comes from [CodeSearchNet](https://arxiv.org/pdf/1909.09436.p
 ```shell
 unzip dataset.zip
 cd dataset
-wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/python.zip
-wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/java.zip
-wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/ruby.zip
-wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/javascript.zip
-wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/go.zip
-wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/php.zip
+wget https://zenodo.org/record/7857872/files/go.zip
+wget https://zenodo.org/record/7857872/files/java.zip
+wget https://zenodo.org/record/7857872/files/javascript.zip
+wget https://zenodo.org/record/7857872/files/php.zip
+wget https://zenodo.org/record/7857872/files/python.zip
+wget https://zenodo.org/record/7857872/files/ruby.zip
 
 unzip python.zip
 unzip java.zip
@@ -45,12 +45,12 @@ cd ..
 import os
 !unzip dataset.zip
 os.chdir("/content/dataset")
-!wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/python.zip
-!wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/java.zip
-!wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/ruby.zip
-!wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/javascript.zip
-!wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/go.zip
-!wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/php.zip
+!wget https://zenodo.org/record/7857872/files/go.zip
+!wget https://zenodo.org/record/7857872/files/java.zip
+!wget https://zenodo.org/record/7857872/files/javascript.zip
+!wget https://zenodo.org/record/7857872/files/php.zip
+!wget https://zenodo.org/record/7857872/files/python.zip
+!wget https://zenodo.org/record/7857872/files/ruby.zip
 
 !unzip python.zip
 !unzip java.zip

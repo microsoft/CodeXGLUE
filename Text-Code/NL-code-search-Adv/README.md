@@ -20,7 +20,7 @@ Besides, to test the generalization ability of a model,  function names and vari
 ```shell
 unzip dataset.zip
 cd dataset
-wget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/python.zip
+wget https://zenodo.org/record/7857872/files/python.zip
 unzip python.zip
 python preprocess.py
 rm -r python

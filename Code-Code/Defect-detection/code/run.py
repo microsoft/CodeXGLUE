@@ -45,20 +45,20 @@ import multiprocessing
 from model import Model
 cpu_cont = multiprocessing.cpu_count()
 from transformers import (WEIGHTS_NAME, AdamW, get_linear_schedule_with_warmup,
-                          BertConfig, BertForMaskedLM, BertTokenizer,
+                          BertConfig, BertForMaskedLM, BertTokenizer, BertForSequenceClassification,
                           GPT2Config, GPT2LMHeadModel, GPT2Tokenizer,
                           OpenAIGPTConfig, OpenAIGPTLMHeadModel, OpenAIGPTTokenizer,
                           RobertaConfig, RobertaForSequenceClassification, RobertaTokenizer,
-                          DistilBertConfig, DistilBertForMaskedLM, DistilBertTokenizer)
+                          DistilBertConfig, DistilBertForMaskedLM, DistilBertForSequenceClassification, DistilBertTokenizer)
 
 logger = logging.getLogger(__name__)
 
 MODEL_CLASSES = {
     'gpt2': (GPT2Config, GPT2LMHeadModel, GPT2Tokenizer),
     'openai-gpt': (OpenAIGPTConfig, OpenAIGPTLMHeadModel, OpenAIGPTTokenizer),
-    'bert': (BertConfig, BertForMaskedLM, BertTokenizer),
+    'bert': (BertConfig, BertForSequenceClassification, BertTokenizer),
     'roberta': (RobertaConfig, RobertaForSequenceClassification, RobertaTokenizer),
-    'distilbert': (DistilBertConfig, DistilBertForMaskedLM, DistilBertTokenizer)
+    'distilbert': (DistilBertConfig, DistilBertForSequenceClassification, DistilBertTokenizer)
 }
 
 

@@ -119,7 +119,7 @@ def set_seed(seed=42):
     torch.backends.cudnn.deterministic = True
 
 
-def train(args, train_dataset, model, tokenizer):
+def train(args, train_dataset, model, tokenizer, patience=3):
     """ Train the model """ 
     args.train_batch_size = args.per_gpu_train_batch_size * max(1, args.n_gpu)
     train_sampler = RandomSampler(train_dataset) if args.local_rank == -1 else DistributedSampler(train_dataset)
@@ -181,9 +181,11 @@ def train(args, train_dataset, model, tokenizer):
     tr_loss, logging_loss,avg_loss,tr_nb,tr_num,train_loss = 0.0, 0.0,0.0,0,0,0
     best_mrr=0.0
     best_acc=0.0
+    early_stopping_counter = 0
+    best_val_loss = float('inf')
     # model.resize_token_embeddings(len(tokenizer))
     model.zero_grad()
- 
+
     for idx in range(args.start_epoch, int(args.num_train_epochs)): 
         bar = tqdm(train_dataloader,total=len(train_dataloader))
         tr_num=0
@@ -238,6 +240,8 @@ def train(args, train_dataset, model, tokenizer):
                         
                     if results['eval_acc']>best_acc:
                         best_acc=results['eval_acc']
+                        best_val_loss = results['eval_loss']
+                        early_stopping_counter = 0
                         logger.info("  "+"*"*20)  
                         logger.info("  Best acc:%s",round(best_acc,4))
                         logger.info("  "+"*"*20)                          
@@ -250,9 +254,12 @@ def train(args, train_dataset, model, tokenizer):
                         output_dir = os.path.join(output_dir, '{}'.format('model.bin')) 
                         torch.save(model_to_save.state_dict(), output_dir)
                         logger.info("Saving model checkpoint to %s", output_dir)
-                        
-
-
+                    else: 
+                        early_stopping_counter += 1
+                    
+                    if early_stopping_counter >= patience:
+                        logger.info("Early stopping triggered. Stopping training.")
+                        break
 
 def evaluate(args, model, tokenizer,eval_when_training=False):
     # Loop to handle MNLI double evaluation (matched, mis-matched)

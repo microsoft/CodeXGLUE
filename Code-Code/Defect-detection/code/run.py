@@ -259,14 +259,15 @@ def train(args, train_dataset, model, tokenizer):
         avg_loss = train_loss / tr_num
 
         # Check for early stopping condition
-        if best_loss is None or avg_loss < best_loss - args.min_delta:
-            best_loss = avg_loss
-            early_stopping_counter = 0
-        else:
-            early_stopping_counter += 1
-            if early_stopping_counter >= args.early_stopping_patience:
-                logger.info("Early stopping")
-                break  # Exit the loop early
+        if args.early_stopping_patience is not None:
+            if best_loss is None or avg_loss < best_loss - args.min_loss_delta:
+                best_loss = avg_loss
+                early_stopping_counter = 0
+            else:
+                early_stopping_counter += 1
+                if early_stopping_counter >= args.early_stopping_patience:
+                    logger.info("Early stopping")
+                    break  # Exit the loop early
                         
 
 
@@ -459,11 +460,11 @@ def main():
     parser.add_argument('--server_port', type=str, default='', help="For distant debugging.")
 
     # Add early stopping parameters and dropout probability parameters
-    parser.add_argument("--early_stopping_patience", default=3, type=int,
+    parser.add_argument("--early_stopping_patience", type=int, default=None,
                         help="Number of epochs with no improvement after which training will be stopped.")
-    parser.add_argument("--min_delta", default=0.001, type=float,
-                        help="Minimum change in the monitored quantity to qualify as an improvement.")
-    parser.add_argument('--dropout_probability', type=float, default=0.1, help='dropout probability')
+    parser.add_argument("--min_loss_delta", type=float, default=0.001,
+                        help="Minimum change in the loss required to qualify as an improvement.")
+    parser.add_argument('--dropout_probability', type=float, default=0, help='dropout probability')
 
 
     

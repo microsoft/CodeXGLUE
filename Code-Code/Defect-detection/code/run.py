@@ -183,6 +183,10 @@ def train(args, train_dataset, model, tokenizer):
     best_acc=0.0
     # model.resize_token_embeddings(len(tokenizer))
     model.zero_grad()
+
+    # Initialize early stopping parameters at the start of training
+    early_stopping_counter = 0
+    best_loss = None
  
     for idx in range(args.start_epoch, int(args.num_train_epochs)): 
         bar = tqdm(train_dataloader,total=len(train_dataloader))
@@ -250,6 +254,19 @@ def train(args, train_dataset, model, tokenizer):
                         output_dir = os.path.join(output_dir, '{}'.format('model.bin')) 
                         torch.save(model_to_save.state_dict(), output_dir)
                         logger.info("Saving model checkpoint to %s", output_dir)
+
+        # Calculate average loss for the epoch
+        avg_loss = train_loss / tr_num
+
+        # Check for early stopping condition
+        if best_loss is None or avg_loss < best_loss - args.min_delta:
+            best_loss = avg_loss
+            early_stopping_counter = 0
+        else:
+            early_stopping_counter += 1
+            if early_stopping_counter >= args.early_stopping_patience:
+                logger.info("Early stopping")
+                break  # Exit the loop early
                         
 
 
@@ -440,6 +457,13 @@ def main():
                         help="For distributed training: local_rank")
     parser.add_argument('--server_ip', type=str, default='', help="For distant debugging.")
     parser.add_argument('--server_port', type=str, default='', help="For distant debugging.")
+
+    # Add early stopping parameters and dropout probability parameters
+    parser.add_argument("--early_stopping_patience", default=3, type=int,
+                        help="Number of epochs with no improvement after which training will be stopped.")
+    parser.add_argument("--min_delta", default=0.001, type=float,
+                        help="Minimum change in the monitored quantity to qualify as an improvement.")
+    parser.add_argument('--dropout_probability', type=float, default=0.1, help='dropout probability')
 
 
     

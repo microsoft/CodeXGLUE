@@ -17,9 +17,16 @@ class Model(nn.Module):
         self.tokenizer=tokenizer
         self.args=args
     
+        # Define dropout layer, dropout_probability is taken from args.
+        self.dropout = nn.Dropout(args.dropout_probability)
+
         
     def forward(self, input_ids=None,labels=None): 
         outputs=self.encoder(input_ids,attention_mask=input_ids.ne(1))[0]
+
+        # Apply dropout
+        outputs = self.dropout(outputs)
+
         logits=outputs
         prob=torch.sigmoid(logits)
         if labels is not None:

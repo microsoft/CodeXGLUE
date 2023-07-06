@@ -23,7 +23,11 @@ class Model(nn.Module):
         bs,_=input_ids.size()
         input_ids=torch.cat((input_ids,p_input_ids,n_input_ids),0)
         
-        outputs=self.encoder(input_ids,attention_mask=input_ids.ne(1))[1]
+        outputs=self.encoder(input_ids,attention_mask=input_ids.ne(1))
+        if len(outputs) > 1:
+            outputs = outputs[1]
+        else:
+            outputs = outputs[0][:, 0, :]
         outputs=outputs.split(bs,0)
         
         prob_1=(outputs[0]*outputs[1]).sum(-1)

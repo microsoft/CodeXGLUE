@@ -29,10 +29,13 @@ def main():
             wf.write(gt+"\n")
             if pred.split() == gt.split():
                 EM += 1
+    for i in range(1,5):
+        bleu_score = round(_bleu("ground_truth.txt", args.predictions, max_order = i), 2)
+        logger.info(f"BLEU-{i}: {bleu_score}")
+        
+    logger.info(f"EM: {round(EM/total*100, 2)}")
 
-    bleu_score = round(_bleu("ground_truth.txt", args.predictions), 2)
-    logger.info(f"BLEU-4: {bleu_score}, EM: {round(EM/total*100, 2)}")
-
+    
     try:
         os.remove("ground_truth.txt")
     except Exception:

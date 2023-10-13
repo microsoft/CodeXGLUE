@@ -387,7 +387,7 @@ def eval_bleu(args, model, tokenizer, file_type='test', num=2000):
                     input_ids = beam.getCurrentState()    
                     # context_mask=torch.cat((context_mask,input_ids*0+1),-1)
                     # mask=context_mask.unsqueeze(0).unsqueeze(-2).unsqueeze(-2).expand(self.config.n_layer, -1, -1, -1, -1)
-                    transformer_outputs = model(input_ids, past=past_hidden)
+                    transformer_outputs = model(input_ids, past_key_values=past_hidden)
                     out = m(transformer_outputs[0][:, -1, :]).data
                     # out = self.lsm(self.lm_head(transformer_outputs[0][:,-1,:])).data
                     beam.advance(out)

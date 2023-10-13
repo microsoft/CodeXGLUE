@@ -31,7 +31,7 @@ def main():
                 EM += 1
 
     bleu_score = round(_bleu("ground_truth.txt", args.predictions), 2)
-    logger.info(f"BLEU: {bleu_score}, EM: {round(EM/total*100, 2)}")
+    logger.info(f"BLEU-4: {bleu_score}, EM: {round(EM/total*100, 2)}")
 
     try:
         os.remove("ground_truth.txt")

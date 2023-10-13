@@ -112,8 +112,7 @@ def compute_bleu(reference_corpus, translation_corpus, max_order=4,
   return (bleu, precisions, bp, ratio, translation_length, reference_length)
 
 
-def _bleu(ref_file, trans_file, subword_option=None):
-    max_order = 4
+def _bleu(ref_file, trans_file, subword_option=None, max_order = 4):
     smooth = True
     ref_files = [ref_file]
     reference_text = []

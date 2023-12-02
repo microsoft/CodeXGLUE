@@ -215,18 +215,20 @@ def train(args, train_dataset, model, tokenizer, fh, pool):
                     checkpoint_prefix = "checkpoint"
                     # Save model checkpoint
                     if args.evaluate_during_training:  # Only evaluate when single GPU otherwise metrics may not average well
-                        results = evaluate(args, model, tokenizer, eval_when_training=True)
-                        for key, value in results.items():
-                            tb_writer.add_scalar('eval_{}'.format(key), value, global_step)
-                            logger.info("  %s = %s", key, round(value,4))
-                        output_dir = os.path.join(args.output_dir, '{}-{}-{}'.format(checkpoint_prefix, global_step, round(results['perplexity'],4)))
-                        # dev_bleu, dev_EM = eval_bleu(args, model, tokenizer, file_type='dev', num=100)
-                        # logger.info(f"dev bleu: {dev_bleu}, dev EM: {dev_EM}")
-                        # output_dir = os.path.join(args.output_dir, '{}-{}-{}'.format(checkpoint_prefix, global_step, round(dev_bleu,2)))
-                        # if dev_bleu > best_bleu:
-                        #     best_bleu = dev_bleu
-                        #     logger.info(f"best bleu updated. saved in {output_dir}")
-                        #     logger.info(f"best bleu: {best_bleu}")
+                        #results = evaluate(args, model, tokenizer, eval_when_training=True)
+                        #dev_bleu, dev_EM = eval_bleu(args, model, tokenizer, file_type='dev', num=2000)
+                        #logger.info(f"dev bleu: {dev_bleu}, dev EM: {dev_EM}")
+                        #for key, value in results.items():
+                        #    tb_writer.add_scalar('eval_{}'.format(key), value, global_step)
+                        #    logger.info("  %s = %s", key, round(value,4))
+                        #output_dir = os.path.join(args.output_dir, '{}-{}-{}'.format(checkpoint_prefix, global_step, round(results['perplexity'],4)))
+                        dev_bleu, dev_EM = eval_bleu(args, model, tokenizer, file_type='dev', num=100)
+                        logger.info(f"dev bleu: {dev_bleu}, dev EM: {dev_EM}")
+                        output_dir = os.path.join(args.output_dir, '{}-{}-{}'.format(checkpoint_prefix, global_step, round(dev_bleu,2)))
+                        if dev_bleu > best_bleu:
+                            best_bleu = dev_bleu
+                            logger.info(f"best bleu updated. saved in {output_dir}")
+                            logger.info(f"best bleu: {best_bleu}")
                     else:
                         output_dir = os.path.join(args.output_dir, "{}-{}".format(checkpoint_prefix, global_step))
                     if not os.path.exists(output_dir):
@@ -387,7 +389,7 @@ def eval_bleu(args, model, tokenizer, file_type='test', num=2000):
                     input_ids = beam.getCurrentState()    
                     # context_mask=torch.cat((context_mask,input_ids*0+1),-1)
                     # mask=context_mask.unsqueeze(0).unsqueeze(-2).unsqueeze(-2).expand(self.config.n_layer, -1, -1, -1, -1)
-                    transformer_outputs = model(input_ids, past=past_hidden)
+                    transformer_outputs = model(input_ids, past_key_values=past_hidden)
                     out = m(transformer_outputs[0][:, -1, :]).data
                     # out = self.lsm(self.lm_head(transformer_outputs[0][:,-1,:])).data
                     beam.advance(out)

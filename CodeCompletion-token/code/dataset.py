@@ -131,7 +131,7 @@ class finetuneDataset(Dataset):
                 else:
                     x = "<s> " + x + " </s>"
                 try:
-                    input_ids.extend(tokenizer.encode(x))
+                    self.inputs.append(tokenizer.encode(x))
                 except Exception:
                     pass
                 if idx % (length//10) == 0:
@@ -140,14 +140,14 @@ class finetuneDataset(Dataset):
             del data
             gc.collect()
 
-            length = len(input_ids) // world_size
-            logger.info(f"tokens: {length*world_size}")
-            input_ids = input_ids[local_rank*length: (local_rank+1)*length]
+            # length = len(input_ids) // world_size
+            # logger.info(f"tokens: {length*world_size}")
+            # input_ids = input_ids[local_rank*length: (local_rank+1)*length]
 
-            for i in range(0, length-block_size, block_size):
-                self.inputs.append(input_ids[i : i + block_size])            
-            del input_ids
-            gc.collect()
+            # for i in range(0, length-block_size, block_size):
+            #     self.inputs.append(input_ids[i : i + block_size])            
+            # del input_ids
+            # gc.collect()
 
             if file_type == 'train':
                 logger.warning("Rank %d Training %d token, %d samples"%(local_rank, length, len(self.inputs)))

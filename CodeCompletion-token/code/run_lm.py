@@ -659,14 +659,11 @@ def main():
 
         logger.info("reload model from {}, resume from {} steps".format(checkpoint_last, args.start_step))
 
-    # get special tokens
-    special_tokens = get_special_tokens(args.lit_file)
-
     # Load pre-trained model
     config_class, model_class, tokenizer_class = MODEL_CLASSES[args.model_type]
     pretrained = args.pretrain_dir
     if pretrained:
-        tokenizer = tokenizer_class.from_pretrained(pretrained, do_lower_case=args.do_lower_case, sep_token='<EOL>', bos_token='<s>', eos_token='</s>', pad_token='<pad>', unk_token='<|UNKNOWN|>', additional_special_tokens=special_tokens)
+        tokenizer = tokenizer_class.from_pretrained(pretrained, do_lower_case=args.do_lower_case, sep_token='<EOL>', bos_token='<s>', eos_token='</s>', pad_token='<pad>', unk_token='<|UNKNOWN|>')
         if args.model_type == "rnn":
             model = model_class(len(tokenizer), 768, 768, 1)
             model_last = os.path.join(pretrained, 'model.pt')
@@ -677,7 +674,7 @@ def main():
             model = model_class.from_pretrained(pretrained)
             model.resize_token_embeddings(len(tokenizer))
     else:
-        tokenizer = tokenizer_class.from_pretrained(args.tokenizer_dir, sep_token='<EOL>', bos_token='<s>', eos_token='</s>', pad_token='<pad>', unk_token='<|UNKNOWN|>', additional_special_tokens=special_tokens)
+        tokenizer = tokenizer_class.from_pretrained(args.tokenizer_dir, sep_token='<EOL>', bos_token='<s>', eos_token='</s>', pad_token='<pad>', unk_token='<|UNKNOWN|>')
         args.vocab_size = len(tokenizer)
         if args.model_type == "rnn":
             model = model_class(len(tokenizer), 768, 768, 1)

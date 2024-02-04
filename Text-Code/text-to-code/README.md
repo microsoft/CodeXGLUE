@@ -49,7 +49,7 @@ The outputs are:
 BLEU: 16.68, EM: 17.0
 ```
 
-The CodeBLEU score can be calculated by this [script](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/code-to-code-trans/evaluator/CodeBLEU)
+The CodeBLEU score can be calculated by this [script](/Code-Code/code-to-code-trans/evaluator/CodeBLEU)
 
 ### Input Format
 
@@ -69,7 +69,7 @@ public void inc ( ) { this . add ( 1 ) ; }
 
 ## Pipeline
 
-We provide a pipeline for this task with [CodeGPT and CodeGPT-adapted](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/CodeCompletion-token#codegpt) model. 
+We provide a pipeline for this task with [CodeGPT and CodeGPT-adapted](/Code-Code/CodeCompletion-token#codegpt) model. 
 
 ## Dependency
 

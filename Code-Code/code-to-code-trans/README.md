@@ -4,7 +4,7 @@
 
 Code translation aims to migrate legacy software from one programming language in a platform toanother.
 In CodeXGLUE, given a piece of Java (C#) code, the task is to translate the code into C# (Java) version. 
-Models are evaluated by BLEU scores, accuracy (exactly match), and [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.MD) scores.
+Models are evaluated by BLEU scores, accuracy (exactly match), and [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/Code-Code/code-to-code-trans/CodeBLEU.MD) scores.
 
 ## Dataset
 

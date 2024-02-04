@@ -28,13 +28,13 @@ BLEU, but can also consider the grammatical correctness and the logic correctnes
 
 An ideal evaluation metric should consider the grammatical correctness and the logic correctness.
 We propose weighted n-gram match and syntactic AST match to measure grammatical correctness, and introduce semantic data-flow match to calculate logic correctness.
-![CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.jpg)
+![CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/Code-Code/code-to-code-trans/CodeBLEU.jpg)
 
 ### Examples
 
 Here we will give two toy examples and show the qualitative advantages of CodeBLEU compared with the traditional BLEU score.
 
-![Example](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/example.png)
+![Example](https://github.com/microsoft/CodeXGLUE/blob/main/Code-Code/code-to-code-trans/example.png)
 
 
 

@@ -4,7 +4,7 @@
 
 Code refinement aims to automatically fix bugs in the code, which can contribute to reducing the cost of bug-fixes for developers.
 In CodeXGLUE, given a piece of Java code with bugs, the task is to remove the bugs to output the refined code. 
-Models are evaluated by BLEU scores, accuracy (exactly match) and [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/code-to-code-trans/CodeBLEU.MD).
+Models are evaluated by BLEU scores, accuracy (exactly match) and [CodeBLEU](https://github.com/microsoft/CodeXGLUE/blob/main/Code-Code/code-to-code-trans/CodeBLEU.MD).
 
 ## Dataset
 

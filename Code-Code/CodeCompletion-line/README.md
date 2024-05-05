@@ -84,7 +84,7 @@ def __init__ ( self ) :
 
 ## Pipeline
 
-We provide a pipeline that evaluate line completion on [CodeGPT](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/CodeCompletion-token#codegpt) model. You could directly use the model trained on token level code completion to test on line-level completion. 
+We provide a pipeline that evaluate line completion on [CodeGPT](/Code-Code/CodeCompletion-token#codegpt) model. You could directly use the model trained on token level code completion to test on line-level completion. 
 
 ### Dependency
 
